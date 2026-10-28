@@ -1,0 +1,61 @@
+{
+  "description": "Start the choir and catch every drifting wall chime. Arrows advance, reverse at walls and turn clockwise on encounters. Pulses slide while flying outward; their dots show recent motion and the next 1.6 seconds. Steer each wall’s brass resonator, then click its STRIKE button while the arriving pulse’s centre is inside the brass rectangle. The receiver travels at bounded speed. Release a held receiver before striking. Receiver aiming and steering corrections are allowed; disabled STRIKE clicks do not submit. A wrong enabled strike, an escaped pulse or END ATTEMPT submits a failed performance and ends this episode. Later resets or submissions cannot replace that failure with a pass. All arrows and pulses continue while you drag, hold or choose an action. Solve only from screenshots and visible task controls. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or hidden-state access. Use only the task tab and visible controls; no unrelated tabs.",
+  "difficulty": "medium",
+  "env_id": "gym_anything_rt.collision_chimes_v2_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/collision_chimes_v2_d3_full_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/collision_chimes_v2_d3_full_seed_0001/setup_task.sh"
+  },
+  "id": "collision_chimes_v2_d3_full_seed_0001@0.2",
+  "init": {
+    "max_steps": 400,
+    "reward_type": "sparse",
+    "timeout_sec": 900
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/collision_chimes_v2_v0.json",
+    "benchmark": "gym_anything_rt",
+    "capabilities": [
+      "visual understanding (2D)",
+      "temporal understanding and memory",
+      "reasoning and planning"
+    ],
+    "control_condition": {
+      "difficulty": 3,
+      "difficulty_parameters": {
+        "cell_count": 4,
+        "beat_ms": 2100,
+        "beats": 28,
+        "note_count": 12,
+        "flight_ms": 5600,
+        "pickup_width": 1.6,
+        "pickup_speed": 6.0,
+        "drift": 3.2,
+        "drift_span_ms": 3800,
+        "pickup_depth_px": 24
+      },
+      "interaction": "full",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "implementation_revision": "drifting-wall-pulses-v2-strike",
+    "mechanic_id": "collision_chimes_v2"
+  },
+  "name": "Collision Chimes V2 · Difficulty 3 · Full Interaction",
+  "natural_language": "Start the choir and catch every drifting wall chime. Arrows advance, reverse at walls and turn clockwise on encounters. Pulses slide while flying outward; their dots show recent motion and the next 1.6 seconds. Steer each wall’s brass resonator, then click its STRIKE button while the arriving pulse’s centre is inside the brass rectangle. The receiver travels at bounded speed. Release a held receiver before striking. Receiver aiming and steering corrections are allowed; disabled STRIKE clicks do not submit. A wrong enabled strike, an escaped pulse or END ATTEMPT submits a failed performance and ends this episode. Later resets or submissions cannot replace that failure with a pass. All arrows and pulses continue while you drag, hold or choose an action. Solve only from screenshots and visible task controls. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or hidden-state access. Use only the task tab and visible controls; no unrelated tabs.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "linux",
+    "browser",
+    "visual-puzzle",
+    "gym-anything-rt",
+    "cellular-automaton",
+    "live-interception"
+  ],
+  "version": "0.2"
+}

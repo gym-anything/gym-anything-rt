@@ -1,0 +1,22 @@
+{
+  "collection": "lanternwing_roundup_v0",
+  "created": "2026-09-09",
+  "policy": "The survey source supplies the first-person creature-capture and projectile-flight mechanic only. The sanctuary, creature forms, capsule appearance, projection, dynamics, controls, generator, grader, solver, and evidence are original benchmark work; no third-party media or game code is redistributed.",
+  "mechanic": "lanternwing_roundup",
+  "source_anchors": [
+    {
+      "survey_id": "CAPW-133",
+      "source": "https://github.com/arumes31/mon-captcha",
+      "source_repository": "https://github.com/arumes31/mon-captcha",
+      "mechanic_used": "A first-person 3D world with wandering creatures and thrown capture objects whose flight and collision are physically simulated.",
+      "transformation": "Lanternwing Roundup is a self-contained original sanctuary with deterministic contact capture. It preserves three-coordinate moving-target interception and gravity-driven flight while excluding the source's names, art, branded capture-ball design, chance-only capture, and backend token flow."
+    }
+  ],
+  "original_assets": {
+    "visuals": "Canvas-rendered terraced sanctuary, paper-and-light wing creatures, obelisks, wanted cards, and capsule trails authored for this benchmark.",
+    "runtime": "No third-party runtime or source-game code shipped.",
+    "license_note": "The cited source repository is inspiration and evidence only; no source assets are bundled."
+  },
+  "implementation_boundary": "The browser receives generated visible world geometry and dynamics needed for honest local rendering and collision. Target identity, generated condition, and replay truth are independently checked by the server grader and exported verifier.",
+  "asset_status": "procedural_original_no_third_party_media"
+}

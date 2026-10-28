@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "slot_reel_capture",
+  "baseline": {
+    "difficulty": 4,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Capture three reels with four symbols per cycle, roughly one-second symbol holds, and five visible strikes.",
+      "natural_language": "Type each letter or number while it is centered. Capture all three reels.",
+      "parameters": {
+        "reel_count": 3,
+        "token_count": 4,
+        "interval_ms_values": [900, 960, 1020, 1080],
+        "max_strikes": 5,
+        "capture_window_ratio": 1.0
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Capture four reels with five symbols per cycle, 720 to 900 millisecond holds, and four visible strikes.",
+      "natural_language": "Type each letter or number while it is centered. Capture all four reels.",
+      "parameters": {
+        "reel_count": 4,
+        "token_count": 5,
+        "interval_ms_values": [720, 780, 840, 900],
+        "max_strikes": 4,
+        "capture_window_ratio": 1.0
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Capture five reels with six symbols per cycle, 540 to 720 millisecond holds, and four visible strikes.",
+      "natural_language": "Type each letter or number while it is centered. Capture all five reels.",
+      "parameters": {
+        "reel_count": 5,
+        "token_count": 6,
+        "interval_ms_values": [540, 600, 660, 720],
+        "max_strikes": 4,
+        "capture_window_ratio": 1.0
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Capture the original five reels with seven symbols per cycle, 360 to 540 millisecond holds, and three visible strikes.",
+      "natural_language": "Type each letter or number while it is centered. Capture all five reels.",
+      "parameters": {
+        "reel_count": 5,
+        "token_count": 7,
+        "interval_ms_values": [360, 390, 420, 450, 480, 510, 540],
+        "max_strikes": 3,
+        "capture_window_ratio": 1.0
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Capture six reels with nine symbols per cycle, 270 to 360 millisecond motion, a visibly bounded center window, and two visible strikes.",
+      "natural_language": "Type each letter or number while its center is between the capture lines. Capture all six reels.",
+      "parameters": {
+        "reel_count": 6,
+        "token_count": 9,
+        "interval_ms_values": [270, 300, 330, 360],
+        "max_strikes": 2,
+        "capture_window_ratio": 0.68
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Click one visible CAPTURE SYMBOL button when the active reel's alphanumeric target is centered."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Type the active reel's alphanumeric target on the physical keyboard while it is centered."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 90,
+    "observation_window_ms": 800,
+    "frames_per_observation": 6
+  }
+}

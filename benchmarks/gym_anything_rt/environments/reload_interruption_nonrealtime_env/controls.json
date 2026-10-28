@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "reload_interruption_nonrealtime",
+  "baseline": {
+    "difficulty": 4,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Replay a three-gesture reel and clear one stable, forgiving overload hold.",
+      "parameters": {
+        "sequence_length": 3,
+        "interruption_steps": [2],
+        "preview_step_ms": 560,
+        "max_gesture_step": 180,
+        "overload_center_jitter_x": 16,
+        "overload_center_jitter_y": 12,
+        "overload_radius_x_min": 110,
+        "overload_radius_x_max": 134,
+        "overload_radius_y_min": 62,
+        "overload_radius_y_max": 84,
+        "overload_rate_min": 0.0027,
+        "overload_rate_max": 0.0032,
+        "overload_hold_ms": 900,
+        "overload_tolerance": 52,
+        "overload_min_samples": 8,
+        "overload_max_gap_ms": 220
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Replay a four-gesture reel and clear one stable overload with a sustained hold.",
+      "parameters": {
+        "sequence_length": 4,
+        "interruption_steps": [2],
+        "preview_step_ms": 500,
+        "max_gesture_step": 180,
+        "overload_center_jitter_x": 20,
+        "overload_center_jitter_y": 14,
+        "overload_radius_x_min": 108,
+        "overload_radius_x_max": 136,
+        "overload_radius_y_min": 60,
+        "overload_radius_y_max": 85,
+        "overload_rate_min": 0.0033,
+        "overload_rate_max": 0.004,
+        "overload_hold_ms": 1000,
+        "overload_tolerance": 48,
+        "overload_min_samples": 9,
+        "overload_max_gap_ms": 200
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Replay a five-gesture reel while resuming correctly after two stable overload holds.",
+      "parameters": {
+        "sequence_length": 5,
+        "interruption_steps": [2, 4],
+        "preview_step_ms": 460,
+        "max_gesture_step": 180,
+        "overload_center_jitter_x": 22,
+        "overload_center_jitter_y": 16,
+        "overload_radius_x_min": 106,
+        "overload_radius_x_max": 137,
+        "overload_radius_y_min": 59,
+        "overload_radius_y_max": 86,
+        "overload_rate_min": 0.004,
+        "overload_rate_max": 0.0051,
+        "overload_hold_ms": 1080,
+        "overload_tolerance": 45,
+        "overload_min_samples": 10,
+        "overload_max_gap_ms": 190
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Replay the existing seven-gesture reel and clear two stable overload holds before resuming.",
+      "parameters": {
+        "sequence_length": 7,
+        "interruption_steps": [2, 5],
+        "preview_step_ms": 420,
+        "max_gesture_step": 180,
+        "overload_center_jitter_x": 24,
+        "overload_center_jitter_y": 18,
+        "overload_radius_x_min": 105,
+        "overload_radius_x_max": 138,
+        "overload_radius_y_min": 58,
+        "overload_radius_y_max": 86,
+        "overload_rate_min": 0.0048,
+        "overload_rate_max": 0.0062,
+        "overload_hold_ms": 1150,
+        "overload_tolerance": 42,
+        "overload_min_samples": 10,
+        "overload_max_gap_ms": 180
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Replay a nine-gesture reel, preserve state across three interruptions, and sustain each stable overload hold.",
+      "parameters": {
+        "sequence_length": 9,
+        "interruption_steps": [2, 5, 7],
+        "preview_step_ms": 380,
+        "max_gesture_step": 180,
+        "overload_center_jitter_x": 28,
+        "overload_center_jitter_y": 20,
+        "overload_radius_x_min": 102,
+        "overload_radius_x_max": 141,
+        "overload_radius_y_min": 56,
+        "overload_radius_y_max": 88,
+        "overload_rate_min": 0.0056,
+        "overload_rate_max": 0.007,
+        "overload_hold_ms": 1250,
+        "overload_tolerance": 38,
+        "overload_min_samples": 12,
+        "overload_max_gap_ms": 260
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true
+    },
+    "full": {
+      "implemented": true
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 120,
+    "observation_window_ms": 800,
+    "frames_per_observation": 6
+  }
+}

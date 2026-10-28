@@ -1,0 +1,26 @@
+{
+  "mechanic_id": "unlabeled_drawer_v2",
+  "source_anchors": [
+    "COG-027",
+    "BGAM-659"
+  ],
+  "source_records": [
+    "outputs/selection_round4_20260906/inputs/dashboard/data/entries/13.json#COG-027",
+    "outputs/selection_round4_20260906/inputs/dashboard/data/entries/05.json#BGAM-659"
+  ],
+  "source_urls": [
+    "https://www.psytoolkit.org/experiment-library/wcst.html",
+    "https://arxiv.org/abs/2010.00763",
+    "https://github.com/NVlabs/Bongard-LOGO"
+  ],
+  "transformation": "Feedback-driven discovery of an unstated visual concept becomes calibration of an original specimen cabinet. A live conveyor and smoothly moving drawer mouths require repeated time-sensitive routing after preparation.",
+  "assets": "Original procedural Canvas art; no source presentation assets copied.",
+  "original_environment_preserved": "unlabeled_drawer_env",
+  "revision": "moving-cabinet-3",
+  "license_notes": "Ideas adapted; independent implementation, not a branded WCST or Bongard-LOGO dataset task.",
+  "revision_notes": [
+    "moving-cabinet-1: failed sweep shortcut retained in raw evidence",
+    "moving-cabinet-2: a missed cabinet release ends the case; belt cancellation stays safe",
+    "moving-cabinet-3: independent grader accepts harmless off-canvas pointer-capture cancellations"
+  ]
+}

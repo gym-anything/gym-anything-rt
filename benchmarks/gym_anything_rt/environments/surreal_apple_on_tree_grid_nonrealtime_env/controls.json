@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "surreal_apple_on_tree_grid_nonrealtime",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "3 fruit, 1 true attachments; 210px basket opening, gravity 75, wind acceleration 100. Released fruit must be caught through continuous basket control.",
+      "parameters": {
+        "fruit_count": 3,
+        "attached_count": 1,
+        "depth_gap_min": 110,
+        "depth_gap_max": 140,
+        "view_limit_deg": 75,
+        "fruit_radius_min": 26,
+        "fruit_radius_max": 28,
+        "basket_width": 210,
+        "basket_height": 52,
+        "gravity": 75,
+        "wind_acceleration": 100,
+        "wind_span_ms": 1800
+      },
+      "natural_language": "Inspect the orchard from multiple views. Pluck only fruit whose stems join branches in 3D, then steer the basket to catch each falling fruit in changing wind. A false stem or missed catch ends the attempt."
+    },
+    "2": {
+      "label": "easy",
+      "summary": "4 fruit, 2 true attachments; 185px basket opening, gravity 90, wind acceleration 160. Released fruit must be caught through continuous basket control.",
+      "parameters": {
+        "fruit_count": 4,
+        "attached_count": 2,
+        "depth_gap_min": 90,
+        "depth_gap_max": 125,
+        "view_limit_deg": 68,
+        "fruit_radius_min": 23,
+        "fruit_radius_max": 27,
+        "basket_width": 185,
+        "basket_height": 52,
+        "gravity": 90,
+        "wind_acceleration": 160,
+        "wind_span_ms": 1500
+      },
+      "natural_language": "Inspect the orchard from multiple views. Pluck only fruit whose stems join branches in 3D, then steer the basket to catch each falling fruit in changing wind. A false stem or missed catch ends the attempt."
+    },
+    "3": {
+      "label": "medium",
+      "summary": "5 fruit, 2 true attachments; 158px basket opening, gravity 105, wind acceleration 220. Released fruit must be caught through continuous basket control.",
+      "parameters": {
+        "fruit_count": 5,
+        "attached_count": 2,
+        "depth_gap_min": 80,
+        "depth_gap_max": 120,
+        "view_limit_deg": 66,
+        "fruit_radius_min": 22,
+        "fruit_radius_max": 26,
+        "basket_width": 158,
+        "basket_height": 52,
+        "gravity": 105,
+        "wind_acceleration": 220,
+        "wind_span_ms": 1250
+      },
+      "natural_language": "Inspect the orchard from multiple views. Pluck only fruit whose stems join branches in 3D, then steer the basket to catch each falling fruit in changing wind. A false stem or missed catch ends the attempt."
+    },
+    "4": {
+      "label": "hard",
+      "summary": "5 fruit, 3 true attachments; 132px basket opening, gravity 120, wind acceleration 280. Released fruit must be caught through continuous basket control.",
+      "parameters": {
+        "fruit_count": 5,
+        "attached_count": 3,
+        "depth_gap_min": 68,
+        "depth_gap_max": 112,
+        "view_limit_deg": 62,
+        "fruit_radius_min": 20,
+        "fruit_radius_max": 24,
+        "basket_width": 132,
+        "basket_height": 52,
+        "gravity": 120,
+        "wind_acceleration": 280,
+        "wind_span_ms": 1050
+      },
+      "natural_language": "Inspect the orchard from multiple views. Pluck only fruit whose stems join branches in 3D, then steer the basket to catch each falling fruit in changing wind. A false stem or missed catch ends the attempt."
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "7 fruit, 3 true attachments; 110px basket opening, gravity 140, wind acceleration 340. Released fruit must be caught through continuous basket control.",
+      "parameters": {
+        "fruit_count": 7,
+        "attached_count": 3,
+        "depth_gap_min": 48,
+        "depth_gap_max": 84,
+        "view_limit_deg": 54,
+        "fruit_radius_min": 18,
+        "fruit_radius_max": 22,
+        "basket_width": 110,
+        "basket_height": 52,
+        "gravity": 140,
+        "wind_acceleration": 340,
+        "wind_span_ms": 900
+      },
+      "natural_language": "Inspect the orchard from multiple views. Pluck only fruit whose stems join branches in 3D, then steer the basket to catch each falling fruit in changing wind. A false stem or missed catch ends the attempt."
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true
+    },
+    "full": {
+      "implemented": true
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 600,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  }
+}

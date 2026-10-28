@@ -1,0 +1,66 @@
+{
+  "env_folder": "microgame_gauntlet_env",
+  "all_tasks": [
+    "microgame_gauntlet_d1_full_seed_0001",
+    "microgame_gauntlet_d1_simplified_seed_0001",
+    "microgame_gauntlet_d2_full_seed_0001",
+    "microgame_gauntlet_d2_simplified_seed_0001",
+    "microgame_gauntlet_d3_full_seed_0001",
+    "microgame_gauntlet_d3_simplified_seed_0001",
+    "microgame_gauntlet_d4_full_seed_0001",
+    "microgame_gauntlet_d4_simplified_seed_0001",
+    "microgame_gauntlet_d5_full_seed_0001",
+    "microgame_gauntlet_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "microgame_gauntlet_d1_full_seed_0001",
+    "microgame_gauntlet_d1_simplified_seed_0001",
+    "microgame_gauntlet_d2_full_seed_0001",
+    "microgame_gauntlet_d2_simplified_seed_0001",
+    "microgame_gauntlet_d3_full_seed_0001",
+    "microgame_gauntlet_d3_simplified_seed_0001",
+    "microgame_gauntlet_d4_full_seed_0001",
+    "microgame_gauntlet_d4_simplified_seed_0001",
+    "microgame_gauntlet_d5_full_seed_0001",
+    "microgame_gauntlet_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "microgame_gauntlet_d5_full_seed_0001"
+    ],
+    "full": [
+      "microgame_gauntlet_d1_full_seed_0001",
+      "microgame_gauntlet_d2_full_seed_0001",
+      "microgame_gauntlet_d3_full_seed_0001",
+      "microgame_gauntlet_d4_full_seed_0001",
+      "microgame_gauntlet_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "microgame_gauntlet_d1_simplified_seed_0001",
+      "microgame_gauntlet_d2_simplified_seed_0001",
+      "microgame_gauntlet_d3_simplified_seed_0001",
+      "microgame_gauntlet_d4_simplified_seed_0001",
+      "microgame_gauntlet_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "microgame_gauntlet_d1_full_seed_0001",
+      "microgame_gauntlet_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "microgame_gauntlet_d2_full_seed_0001",
+      "microgame_gauntlet_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "microgame_gauntlet_d3_full_seed_0001",
+      "microgame_gauntlet_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "microgame_gauntlet_d4_full_seed_0001",
+      "microgame_gauntlet_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "microgame_gauntlet_d5_full_seed_0001",
+      "microgame_gauntlet_d5_simplified_seed_0001"
+    ]
+  }
+}

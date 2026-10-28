@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "bomb_manual_from_hell_v2",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "3 simultaneously live drums, 1 independent acetate leaf per drum, 85 degree half-openings, changing rates and cut-induced motor load. Visible cutter recharge keeps later cuts in the moving world.",
+      "natural_language": "Expose each moving fuse through every acetate guard, then snip its collar. The first failed snip, incomplete seal, or engine expiry ends the episode; retries cannot earn a pass. Inspection and manual-leaf adjustments remain allowed. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, or any other implementation or hidden-state access. Do not interact with unrelated, blank, settings, or non-task tabs.",
+      "parameters": {
+        "modules": 3,
+        "layers": 1,
+        "fuse_speed": 0.36,
+        "guard_speed": 0.12,
+        "aperture_half_deg": 85,
+        "rate_variation": 0.65,
+        "load_coupling": 0.04
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "3 simultaneously live drums, 2 independent acetate leaves per drum, 78 degree half-openings, changing rates and cut-induced motor load. Visible cutter recharge keeps later cuts in the moving world.",
+      "natural_language": "Expose each moving fuse through every acetate guard, then snip its collar. The first failed snip, incomplete seal, or engine expiry ends the episode; retries cannot earn a pass. Inspection and manual-leaf adjustments remain allowed. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, or any other implementation or hidden-state access. Do not interact with unrelated, blank, settings, or non-task tabs.",
+      "parameters": {
+        "modules": 3,
+        "layers": 2,
+        "fuse_speed": 0.38,
+        "guard_speed": 0.17,
+        "aperture_half_deg": 78,
+        "rate_variation": 0.65,
+        "load_coupling": 0.07
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "3 simultaneously live drums, 2 independent acetate leaves per drum, 70 degree half-openings, changing rates and cut-induced motor load. Visible cutter recharge keeps later cuts in the moving world.",
+      "natural_language": "Expose each moving fuse through every acetate guard, then snip its collar. The first failed snip, incomplete seal, or engine expiry ends the episode; retries cannot earn a pass. Inspection and manual-leaf adjustments remain allowed. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, or any other implementation or hidden-state access. Do not interact with unrelated, blank, settings, or non-task tabs.",
+      "parameters": {
+        "modules": 3,
+        "layers": 2,
+        "fuse_speed": 0.4,
+        "guard_speed": 0.22,
+        "aperture_half_deg": 70,
+        "rate_variation": 0.65,
+        "load_coupling": 0.1
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "4 simultaneously live drums, 2 independent acetate leaves per drum, 63 degree half-openings, changing rates and cut-induced motor load. Visible cutter recharge keeps later cuts in the moving world.",
+      "natural_language": "Expose each moving fuse through every acetate guard, then snip its collar. The first failed snip, incomplete seal, or engine expiry ends the episode; retries cannot earn a pass. Inspection and manual-leaf adjustments remain allowed. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, or any other implementation or hidden-state access. Do not interact with unrelated, blank, settings, or non-task tabs.",
+      "parameters": {
+        "modules": 4,
+        "layers": 2,
+        "fuse_speed": 0.42,
+        "guard_speed": 0.28,
+        "aperture_half_deg": 63,
+        "rate_variation": 0.65,
+        "load_coupling": 0.14
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "4 simultaneously live drums, 3 independent acetate leaves per drum, 57 degree half-openings, changing rates and cut-induced motor load. Visible cutter recharge keeps later cuts in the moving world.",
+      "natural_language": "Expose each moving fuse through every acetate guard, then snip its collar. The first failed snip, incomplete seal, or engine expiry ends the episode; retries cannot earn a pass. Inspection and manual-leaf adjustments remain allowed. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, or any other implementation or hidden-state access. Do not interact with unrelated, blank, settings, or non-task tabs.",
+      "parameters": {
+        "modules": 4,
+        "layers": 3,
+        "fuse_speed": 0.44,
+        "guard_speed": 0.34,
+        "aperture_half_deg": 57,
+        "rate_variation": 0.65,
+        "load_coupling": 0.18
+      }
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Rotate each manual knob by a rim drag; make a short cutter drag across a moving collar."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Nudge the same leaf by 15 degrees per arrow click; click the two cutter endpoints. Identical motion, collar geometry, openings and load changes."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  }
+}

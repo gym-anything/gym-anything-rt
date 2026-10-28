@@ -1,0 +1,15 @@
+{
+  "mechanic_id": "shadow_crime_lab_v3",
+  "source_anchors": [
+    "arkose-dice-complaint-corpus/wrong-shadow",
+    "nextgen-captchas/Shadow_Plausible"
+  ],
+  "source_urls": [
+    "https://github.com/MetaAgentX/NextGen-CAPTCHAs/tree/main/captcha_data/Shadow_Plausible",
+    "https://news.ycombinator.com/item?id=30413228"
+  ],
+  "original_environment": "shadow_crime_lab_env",
+  "assets": "Original procedural canvas geometry and CSS; no third-party source images embedded.",
+  "transformation": "Static shadow plausibility becomes a moving response experiment plus concurrent tracking of fading camera exposures.",
+  "source_limits": "Legacy wrong-shadow corpus notes missing at supplied path; cited HN discussion does not contain shadow examples. NextGen original shadow image and ground truth inspected."
+}

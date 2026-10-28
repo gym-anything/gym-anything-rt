@@ -1,0 +1,26 @@
+{
+  "collection": "revived_pilots_v2",
+  "created": "2026-07-14",
+  "scope": "Complete interaction-first replacements for the two rejected infrastructure pilots.",
+  "policy": "Survey artifacts seed mechanics only. All shipped presentation, geometry, simulation code, and grading logic are original procedural HTML, CSS, JavaScript, or Python. No third-party media is redistributed.",
+  "mechanics": {
+    "moving_checkbox_evasive_button": {
+      "sources": [
+        "research/collection/sources/github-nicholasdejesse-captcha-game",
+        "research/collection/sources/neal-im-not-a-robot",
+        "research/collection/sources/captcha-hell"
+      ],
+      "influence": "A familiar checkbox that evades direct pointer acquisition.",
+      "transformation": "A four-shaft scroll-topology cage with fixed-step cursor-repulsion physics, aligned portal collision, active herding, and a permanent physical clamp."
+    },
+    "reverse_identity_gate": {
+      "sources": [
+        "research/collection/sources/willardpeng-im-not-a-robot",
+        "research/collection/sources/josi-jami-i-am-not-a-robot",
+        "research/collection/sources/zachshirikjian-are-you-human"
+      ],
+      "influence": "Reverse-CAPTCHA framing in which the participant proves robot identity.",
+      "transformation": "A distributed eight-relay robot handshake across four real browser tabs with live phase tracking, keyboard-driven receivers, mouse contact, and independently replayed temporal state."
+    }
+  }
+}

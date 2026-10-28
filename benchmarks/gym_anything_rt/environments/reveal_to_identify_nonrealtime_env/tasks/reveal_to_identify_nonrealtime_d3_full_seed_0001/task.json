@@ -1,0 +1,58 @@
+{
+  "description": "Reveal procedural specimens with an inertial circular scanner, then intercept only the requested silhouettes with action-triggered delayed localization pulses.",
+  "difficulty": "medium",
+  "env_id": "gym_anything_rt.reveal_to_identify_nonrealtime_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/reveal_to_identify_nonrealtime_d3_full_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/reveal_to_identify_nonrealtime_d3_full_seed_0001/setup_task.sh"
+  },
+  "id": "reveal_to_identify_nonrealtime_d3_full_seed_0001@0.2",
+  "init": {
+    "max_steps": 220,
+    "reward_type": "sparse",
+    "timeout_sec": 300
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/reveal_to_identify_v2_v0.json",
+    "benchmark": "gym_anything_rt",
+    "control_condition": {
+      "difficulty": 3,
+      "difficulty_parameters": {
+        "carrier_radius": 32,
+        "carriers": 5,
+        "current_memory_ms": 2000,
+        "lens_radius": 96,
+        "pulse_lag_ms": 750,
+        "scanner_acceleration": 1300,
+        "scanner_damping": 10,
+        "scanner_speed": 310,
+        "similar_decoys": 1,
+        "speed": 100,
+        "targets": 2
+      },
+      "interaction": "full",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "implementation_revision": "moving-darkroom-7-nonrealtime-1",
+    "mechanic_id": "reveal_to_identify_nonrealtime"
+  },
+  "name": "Reveal to Identify V2 · Non-real-time · Difficulty 3 · Full Interaction",
+  "natural_language": "Start the survey and fully illuminate every shell to optically certify all numbered plates. Then tag only the requested silhouettes. In full mode, grab and drag the crosshair; SPACE emits. In simplified mode, click the tank to steer; PULSE emits. The numbered contact sheet retains exposed pixels and shows full glyphs after optical certification. Pulses arm only when every plate is certified. White arrows show velocity; blue arrows show the changing current. Each deliberate scanner action advances one fixed 120 ms simulation step; waiting leaves positions, flow, recharge and action opportunities unchanged. Firing completes its displayed fixed pulse flight as an action-triggered transition. A miss, protected tag, or incomplete certification ends the episode. Solve only from screenshots and visible controls in the task webpage.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "linux",
+    "browser",
+    "visual-puzzle",
+    "gym-anything-rt",
+    "non-real-time",
+    "active-perception",
+    "interception"
+  ],
+  "version": "0.2"
+}

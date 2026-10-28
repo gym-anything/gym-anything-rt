@@ -1,0 +1,8 @@
+The static browser-play grader loads Pyodide v314.0.2 from jsDelivr:
+
+https://cdn.jsdelivr.net/pyodide/v314.0.2/full/pyodide.mjs
+
+Pyodide is distributed under the Mozilla Public License 2.0. Its source,
+license, and notices are available from the upstream project:
+
+https://github.com/pyodide/pyodide

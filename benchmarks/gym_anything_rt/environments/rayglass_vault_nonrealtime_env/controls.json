@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "rayglass_vault_nonrealtime",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "timing_note": "Receiver and servo physics are frozen while the player waits. START and each deliberate trim action advance one fixed 40 ms transition; held drags settle on release. Charge, heat, expiry, and seal placement use the resulting state.",
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "parameters": {
+        "size": 4,
+        "bead_count": 1,
+        "channels": 1,
+        "receiver_height": 40,
+        "speed_min": 22,
+        "speed_max": 70,
+        "speed_span_ms": 2400,
+        "charge_seconds": 5,
+        "heat_limit_seconds": 5,
+        "servo_speed": 36,
+        "servo_acceleration": 220,
+        "shared_slew_budget": 70
+      },
+      "summary": "One receiver and a responsive action-stepped motor isolate sustained tracking; each trim action advances the visible receiver by one fixed transition.",
+      "natural_language_by_interaction": {
+        "full": "Probe the opaque cabinet ports: H is absorbed, R returns to entry, paired numbers identify an exit. Patch each colored lamp to a port that reaches its numbered receiver. Start the optical run and steer every mirror so its beam remains inside the moving receiver. Charge leaks quickly when light misses; a full red heat bar ends the attempt. All receivers must be fully charged together to unlock the seal key. Waiting preserves stored charge and receiver position; START and each committed trim action advance one fixed transition. Insert the whole seal key inside AMBER's moving opening; a miss ends the attempt. Routing probes before START are safe. There is no in-game stop, reset or retry. Drag each lamp socket onto a cabinet port; drag the round trim handles. When charged, drag the seal key from the cabinet into AMBER's opening. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls.",
+        "simplified": "Probe the opaque cabinet ports: H is absorbed, R returns to entry, paired numbers identify an exit. Patch each colored lamp to a port that reaches its numbered receiver. Start the optical run and steer every mirror so its beam remains inside the moving receiver. Charge leaks quickly when light misses; a full red heat bar ends the attempt. All receivers must be fully charged together to unlock the seal key. Waiting preserves stored charge and receiver position; START and each committed trim action advance one fixed transition. Insert the whole seal key inside AMBER's moving opening; a miss ends the attempt. Routing probes before START are safe. There is no in-game stop, reset or retry. Click a lamp socket, then a cabinet port; click each trim rail to set its target. When charged, click the seal key, then click inside AMBER's opening. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls."
+      },
+      "natural_language": "Probe the opaque cabinet ports: H is absorbed, R returns to entry, paired numbers identify an exit. Patch each colored lamp to a port that reaches its numbered receiver. Start the optical run and steer every mirror so its beam remains inside the moving receiver. Charge leaks quickly when light misses; a full red heat bar ends the attempt. All receivers must be fully charged together to unlock the seal key. Waiting preserves stored charge and receiver position; START and each committed trim action advance one fixed transition. Insert the whole seal key inside AMBER's moving opening; a miss ends the attempt. Routing probes before START are safe. There is no in-game stop, reset or retry. In the full interface, drag each lamp socket onto a cabinet port and drag the round trim handles. When charged, drag the seal key from the cabinet into AMBER's opening. In the simplified interface, click a lamp socket then a cabinet port, and click each trim rail to set its target. When charged, click the seal key, then click inside AMBER's opening. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls."
+    },
+    "2": {
+      "label": "easy",
+      "parameters": {
+        "size": 4,
+        "bead_count": 2,
+        "channels": 2,
+        "receiver_height": 44,
+        "speed_min": 25,
+        "speed_max": 70,
+        "speed_span_ms": 2200,
+        "charge_seconds": 5.5,
+        "heat_limit_seconds": 4.5,
+        "servo_speed": 32,
+        "servo_acceleration": 200,
+        "shared_slew_budget": 55
+      },
+      "summary": "Two independent action-stepped receivers introduce competing control needs.",
+      "natural_language_by_interaction": {
+        "full": "Probe the opaque cabinet ports: H is absorbed, R returns to entry, paired numbers identify an exit. Patch each colored lamp to a port that reaches its numbered receiver. Start the optical run and steer every mirror so its beam remains inside the moving receiver. Charge leaks quickly when light misses; a full red heat bar ends the attempt. All receivers must be fully charged together to unlock the seal key. Waiting preserves stored charge and receiver position; START and each committed trim action advance one fixed transition. Insert the whole seal key inside AMBER's moving opening; a miss ends the attempt. Routing probes before START are safe. There is no in-game stop, reset or retry. Drag each lamp socket onto a cabinet port; drag the round trim handles. When charged, drag the seal key from the cabinet into AMBER's opening. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls.",
+        "simplified": "Probe the opaque cabinet ports: H is absorbed, R returns to entry, paired numbers identify an exit. Patch each colored lamp to a port that reaches its numbered receiver. Start the optical run and steer every mirror so its beam remains inside the moving receiver. Charge leaks quickly when light misses; a full red heat bar ends the attempt. All receivers must be fully charged together to unlock the seal key. Waiting preserves stored charge and receiver position; START and each committed trim action advance one fixed transition. Insert the whole seal key inside AMBER's moving opening; a miss ends the attempt. Routing probes before START are safe. There is no in-game stop, reset or retry. Click a lamp socket, then a cabinet port; click each trim rail to set its target. When charged, click the seal key, then click inside AMBER's opening. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls."
+      },
+      "natural_language": "Probe the opaque cabinet ports: H is absorbed, R returns to entry, paired numbers identify an exit. Patch each colored lamp to a port that reaches its numbered receiver. Start the optical run and steer every mirror so its beam remains inside the moving receiver. Charge leaks quickly when light misses; a full red heat bar ends the attempt. All receivers must be fully charged together to unlock the seal key. Waiting preserves stored charge and receiver position; START and each committed trim action advance one fixed transition. Insert the whole seal key inside AMBER's moving opening; a miss ends the attempt. Routing probes before START are safe. There is no in-game stop, reset or retry. In the full interface, drag each lamp socket onto a cabinet port and drag the round trim handles. When charged, drag the seal key from the cabinet into AMBER's opening. In the simplified interface, click a lamp socket then a cabinet port, and click each trim rail to set its target. When charged, click the seal key, then click inside AMBER's opening. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls."
+    },
+    "3": {
+      "label": "medium",
+      "parameters": {
+        "size": 5,
+        "bead_count": 3,
+        "channels": 2,
+        "receiver_height": 40,
+        "speed_min": 30,
+        "speed_max": 75,
+        "speed_span_ms": 1800,
+        "charge_seconds": 6,
+        "heat_limit_seconds": 4,
+        "servo_speed": 28,
+        "servo_acceleration": 180,
+        "shared_slew_budget": 42
+      },
+      "summary": "Narrower receivers and faster action-stepped rate changes require prediction and servo correction.",
+      "natural_language_by_interaction": {
+        "full": "Probe the opaque cabinet ports: H is absorbed, R returns to entry, paired numbers identify an exit. Patch each colored lamp to a port that reaches its numbered receiver. Start the optical run and steer every mirror so its beam remains inside the moving receiver. Charge leaks quickly when light misses; a full red heat bar ends the attempt. All receivers must be fully charged together to unlock the seal key. Waiting preserves stored charge and receiver position; START and each committed trim action advance one fixed transition. Insert the whole seal key inside AMBER's moving opening; a miss ends the attempt. Routing probes before START are safe. There is no in-game stop, reset or retry. Drag each lamp socket onto a cabinet port; drag the round trim handles. When charged, drag the seal key from the cabinet into AMBER's opening. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls.",
+        "simplified": "Probe the opaque cabinet ports: H is absorbed, R returns to entry, paired numbers identify an exit. Patch each colored lamp to a port that reaches its numbered receiver. Start the optical run and steer every mirror so its beam remains inside the moving receiver. Charge leaks quickly when light misses; a full red heat bar ends the attempt. All receivers must be fully charged together to unlock the seal key. Waiting preserves stored charge and receiver position; START and each committed trim action advance one fixed transition. Insert the whole seal key inside AMBER's moving opening; a miss ends the attempt. Routing probes before START are safe. There is no in-game stop, reset or retry. Click a lamp socket, then a cabinet port; click each trim rail to set its target. When charged, click the seal key, then click inside AMBER's opening. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls."
+      },
+      "natural_language": "Probe the opaque cabinet ports: H is absorbed, R returns to entry, paired numbers identify an exit. Patch each colored lamp to a port that reaches its numbered receiver. Start the optical run and steer every mirror so its beam remains inside the moving receiver. Charge leaks quickly when light misses; a full red heat bar ends the attempt. All receivers must be fully charged together to unlock the seal key. Waiting preserves stored charge and receiver position; START and each committed trim action advance one fixed transition. Insert the whole seal key inside AMBER's moving opening; a miss ends the attempt. Routing probes before START are safe. There is no in-game stop, reset or retry. In the full interface, drag each lamp socket onto a cabinet port and drag the round trim handles. When charged, drag the seal key from the cabinet into AMBER's opening. In the simplified interface, click a lamp socket then a cabinet port, and click each trim rail to set its target. When charged, click the seal key, then click inside AMBER's opening. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls."
+    },
+    "4": {
+      "label": "hard",
+      "parameters": {
+        "size": 6,
+        "bead_count": 4,
+        "channels": 3,
+        "receiver_height": 40,
+        "speed_min": 35,
+        "speed_max": 55,
+        "speed_span_ms": 1800,
+        "charge_seconds": 6.5,
+        "heat_limit_seconds": 3.5,
+        "servo_speed": 24,
+        "servo_acceleration": 160,
+        "shared_slew_budget": 32
+      },
+      "summary": "Three receivers must remain charged together under a shared action-stepped motor speed budget.",
+      "natural_language_by_interaction": {
+        "full": "Probe the opaque cabinet ports: H is absorbed, R returns to entry, paired numbers identify an exit. Patch each colored lamp to a port that reaches its numbered receiver. Start the optical run and steer every mirror so its beam remains inside the moving receiver. Charge leaks quickly when light misses; a full red heat bar ends the attempt. All receivers must be fully charged together to unlock the seal key. Waiting preserves stored charge and receiver position; START and each committed trim action advance one fixed transition. Insert the whole seal key inside AMBER's moving opening; a miss ends the attempt. Routing probes before START are safe. There is no in-game stop, reset or retry. Drag each lamp socket onto a cabinet port; drag the round trim handles. When charged, drag the seal key from the cabinet into AMBER's opening. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls.",
+        "simplified": "Probe the opaque cabinet ports: H is absorbed, R returns to entry, paired numbers identify an exit. Patch each colored lamp to a port that reaches its numbered receiver. Start the optical run and steer every mirror so its beam remains inside the moving receiver. Charge leaks quickly when light misses; a full red heat bar ends the attempt. All receivers must be fully charged together to unlock the seal key. Waiting preserves stored charge and receiver position; START and each committed trim action advance one fixed transition. Insert the whole seal key inside AMBER's moving opening; a miss ends the attempt. Routing probes before START are safe. There is no in-game stop, reset or retry. Click a lamp socket, then a cabinet port; click each trim rail to set its target. When charged, click the seal key, then click inside AMBER's opening. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls."
+      },
+      "natural_language": "Probe the opaque cabinet ports: H is absorbed, R returns to entry, paired numbers identify an exit. Patch each colored lamp to a port that reaches its numbered receiver. Start the optical run and steer every mirror so its beam remains inside the moving receiver. Charge leaks quickly when light misses; a full red heat bar ends the attempt. All receivers must be fully charged together to unlock the seal key. Waiting preserves stored charge and receiver position; START and each committed trim action advance one fixed transition. Insert the whole seal key inside AMBER's moving opening; a miss ends the attempt. Routing probes before START are safe. There is no in-game stop, reset or retry. In the full interface, drag each lamp socket onto a cabinet port and drag the round trim handles. When charged, drag the seal key from the cabinet into AMBER's opening. In the simplified interface, click a lamp socket then a cabinet port, and click each trim rail to set its target. When charged, click the seal key, then click inside AMBER's opening. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls."
+    },
+    "5": {
+      "label": "very_hard",
+      "parameters": {
+        "size": 6,
+        "bead_count": 4,
+        "channels": 3,
+        "receiver_height": 32,
+        "speed_min": 42,
+        "speed_max": 65,
+        "speed_span_ms": 1400,
+        "charge_seconds": 7,
+        "heat_limit_seconds": 3,
+        "servo_speed": 20,
+        "servo_acceleration": 140,
+        "shared_slew_budget": 22
+      },
+      "summary": "Three narrow receivers with faster, independently changing action-stepped motion, bounded acceleration and limited shared slew require sustained prediction and attention.",
+      "natural_language_by_interaction": {
+        "full": "Probe the opaque cabinet ports: H is absorbed, R returns to entry, paired numbers identify an exit. Patch each colored lamp to a port that reaches its numbered receiver. Start the optical run and steer every mirror so its beam remains inside the moving receiver. Charge leaks quickly when light misses; a full red heat bar ends the attempt. All receivers must be fully charged together to unlock the seal key. Waiting preserves stored charge and receiver position; START and each committed trim action advance one fixed transition. Insert the whole seal key inside AMBER's moving opening; a miss ends the attempt. Routing probes before START are safe. There is no in-game stop, reset or retry. Drag each lamp socket onto a cabinet port; drag the round trim handles. When charged, drag the seal key from the cabinet into AMBER's opening. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls.",
+        "simplified": "Probe the opaque cabinet ports: H is absorbed, R returns to entry, paired numbers identify an exit. Patch each colored lamp to a port that reaches its numbered receiver. Start the optical run and steer every mirror so its beam remains inside the moving receiver. Charge leaks quickly when light misses; a full red heat bar ends the attempt. All receivers must be fully charged together to unlock the seal key. Waiting preserves stored charge and receiver position; START and each committed trim action advance one fixed transition. Insert the whole seal key inside AMBER's moving opening; a miss ends the attempt. Routing probes before START are safe. There is no in-game stop, reset or retry. Click a lamp socket, then a cabinet port; click each trim rail to set its target. When charged, click the seal key, then click inside AMBER's opening. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls."
+      },
+      "natural_language": "Probe the opaque cabinet ports: H is absorbed, R returns to entry, paired numbers identify an exit. Patch each colored lamp to a port that reaches its numbered receiver. Start the optical run and steer every mirror so its beam remains inside the moving receiver. Charge leaks quickly when light misses; a full red heat bar ends the attempt. All receivers must be fully charged together to unlock the seal key. Waiting preserves stored charge and receiver position; START and each committed trim action advance one fixed transition. Insert the whole seal key inside AMBER's moving opening; a miss ends the attempt. Routing probes before START are safe. There is no in-game stop, reset or retry. In the full interface, drag each lamp socket onto a cabinet port and drag the round trim handles. When charged, drag the seal key from the cabinet into AMBER's opening. In the simplified interface, click a lamp socket then a cabinet port, and click each trim rail to set its target. When charged, click the seal key, then click inside AMBER's opening. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls."
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "description": "Drag lamp plugs to cabinet ports and drag mirror trim handles. Border probe clicks and START are common controls."
+    },
+    "simplified": {
+      "implemented": true,
+      "description": "Select a lamp then click its input port; click a trim rail to set the same latched mirror target. Identical servo, optical and receiver physics; no interception or automatic tracking."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 300,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  }
+}

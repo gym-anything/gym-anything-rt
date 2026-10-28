@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "last_carbon_isles_v2",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "parameters": {
+        "island_count": 2,
+        "amplitude": 27,
+        "span_s": 9.0,
+        "battery": 58,
+        "inertia_s": 0.2,
+        "cross_amplitude": 0
+      },
+      "summary": "2 isles, 9.0 s demand changes, 58 MJ storage and 0.2 s grid response.",
+      "natural_language": "Retire every coal works while keeping every crew powered. Launch the transition, then share the 100 MW clean grid between the changing island loads. Requests above 100 MW are scaled proportionally. Green supply follows requests with inertia; batteries absorb mismatches. Emptying any battery ends the attempt. Gold is current load; cyan shows the locally forecast load in 1.5 seconds. Drag the green policy cards to set requested power. Inspect and adjust before launch. Live power corrections remain available until a battery empties. CERTIFY NOW commits the current transition. The first empty battery or rejected certification ends the episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Do not interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only as part of the task, using their visible controls.",
+      "natural_language_by_interaction": {
+        "simplified": "Retire every coal works while keeping every crew powered. Launch the transition, then share the 100 MW clean grid between the changing island loads. Requests above 100 MW are scaled proportionally. Green supply follows requests with inertia; batteries absorb mismatches. Emptying any battery ends the attempt. Gold is current load; cyan shows the locally forecast load in 1.5 seconds. Click each rail to set requested power. Inspect and adjust before launch. Live power corrections remain available until a battery empties. CERTIFY NOW commits the current transition. The first empty battery or rejected certification ends the episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Do not interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only as part of the task, using their visible controls."
+      }
+    },
+    "2": {
+      "label": "easy",
+      "parameters": {
+        "island_count": 2,
+        "amplitude": 32,
+        "span_s": 7.0,
+        "battery": 46,
+        "inertia_s": 0.35,
+        "cross_amplitude": 0
+      },
+      "summary": "2 isles, 7.0 s demand changes, 46 MJ storage and 0.35 s grid response.",
+      "natural_language": "Retire every coal works while keeping every crew powered. Launch the transition, then share the 100 MW clean grid between the changing island loads. Requests above 100 MW are scaled proportionally. Green supply follows requests with inertia; batteries absorb mismatches. Emptying any battery ends the attempt. Gold is current load; cyan shows the locally forecast load in 1.5 seconds. Drag the green policy cards to set requested power. Inspect and adjust before launch. Live power corrections remain available until a battery empties. CERTIFY NOW commits the current transition. The first empty battery or rejected certification ends the episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Do not interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only as part of the task, using their visible controls.",
+      "natural_language_by_interaction": {
+        "simplified": "Retire every coal works while keeping every crew powered. Launch the transition, then share the 100 MW clean grid between the changing island loads. Requests above 100 MW are scaled proportionally. Green supply follows requests with inertia; batteries absorb mismatches. Emptying any battery ends the attempt. Gold is current load; cyan shows the locally forecast load in 1.5 seconds. Click each rail to set requested power. Inspect and adjust before launch. Live power corrections remain available until a battery empties. CERTIFY NOW commits the current transition. The first empty battery or rejected certification ends the episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Do not interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only as part of the task, using their visible controls."
+      }
+    },
+    "3": {
+      "label": "medium",
+      "parameters": {
+        "island_count": 3,
+        "amplitude": 25,
+        "span_s": 7.0,
+        "battery": 38,
+        "inertia_s": 0.5,
+        "cross_amplitude": 0
+      },
+      "summary": "3 isles, 7.0 s demand changes, 38 MJ storage and 0.5 s grid response.",
+      "natural_language": "Retire every coal works while keeping every crew powered. Launch the transition, then share the 100 MW clean grid between the changing island loads. Requests above 100 MW are scaled proportionally. Green supply follows requests with inertia; batteries absorb mismatches. Emptying any battery ends the attempt. Gold is current load; cyan shows the locally forecast load in 1.5 seconds. Drag the green policy cards to set requested power. Inspect and adjust before launch. Live power corrections remain available until a battery empties. CERTIFY NOW commits the current transition. The first empty battery or rejected certification ends the episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Do not interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only as part of the task, using their visible controls.",
+      "natural_language_by_interaction": {
+        "simplified": "Retire every coal works while keeping every crew powered. Launch the transition, then share the 100 MW clean grid between the changing island loads. Requests above 100 MW are scaled proportionally. Green supply follows requests with inertia; batteries absorb mismatches. Emptying any battery ends the attempt. Gold is current load; cyan shows the locally forecast load in 1.5 seconds. Click each rail to set requested power. Inspect and adjust before launch. Live power corrections remain available until a battery empties. CERTIFY NOW commits the current transition. The first empty battery or rejected certification ends the episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Do not interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only as part of the task, using their visible controls."
+      }
+    },
+    "4": {
+      "label": "hard",
+      "parameters": {
+        "island_count": 4,
+        "amplitude": 17,
+        "span_s": 6.5,
+        "battery": 29,
+        "inertia_s": 0.65,
+        "cross_amplitude": 0
+      },
+      "summary": "4 isles, 6.5 s demand changes, 29 MJ storage and 0.65 s grid response.",
+      "natural_language": "Retire every coal works while keeping every crew powered. Launch the transition, then share the 100 MW clean grid between the changing island loads. Requests above 100 MW are scaled proportionally. Green supply follows requests with inertia; batteries absorb mismatches. Emptying any battery ends the attempt. Gold is current load; cyan shows the locally forecast load in 1.5 seconds. Drag the green policy cards to set requested power. Inspect and adjust before launch. Live power corrections remain available until a battery empties. CERTIFY NOW commits the current transition. The first empty battery or rejected certification ends the episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Do not interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only as part of the task, using their visible controls.",
+      "natural_language_by_interaction": {
+        "simplified": "Retire every coal works while keeping every crew powered. Launch the transition, then share the 100 MW clean grid between the changing island loads. Requests above 100 MW are scaled proportionally. Green supply follows requests with inertia; batteries absorb mismatches. Emptying any battery ends the attempt. Gold is current load; cyan shows the locally forecast load in 1.5 seconds. Click each rail to set requested power. Inspect and adjust before launch. Live power corrections remain available until a battery empties. CERTIFY NOW commits the current transition. The first empty battery or rejected certification ends the episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Do not interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only as part of the task, using their visible controls."
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "parameters": {
+        "island_count": 4,
+        "amplitude": 18,
+        "span_s": 5.5,
+        "battery": 24,
+        "inertia_s": 0.85,
+        "cross_amplitude": 3
+      },
+      "summary": "4 isles, 5.5 s demand changes, 24 MJ storage and 0.85 s grid response.",
+      "natural_language": "Retire every coal works while keeping every crew powered. Launch the transition, then share the 100 MW clean grid between the changing island loads. Requests above 100 MW are scaled proportionally. Green supply follows requests with inertia; batteries absorb mismatches. Emptying any battery ends the attempt. Gold is current load; cyan shows the locally forecast load in 1.5 seconds. Drag the green policy cards to set requested power. Inspect and adjust before launch. Live power corrections remain available until a battery empties. CERTIFY NOW commits the current transition. The first empty battery or rejected certification ends the episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Do not interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only as part of the task, using their visible controls.",
+      "natural_language_by_interaction": {
+        "simplified": "Retire every coal works while keeping every crew powered. Launch the transition, then share the 100 MW clean grid between the changing island loads. Requests above 100 MW are scaled proportionally. Green supply follows requests with inertia; batteries absorb mismatches. Emptying any battery ends the attempt. Gold is current load; cyan shows the locally forecast load in 1.5 seconds. Click each rail to set requested power. Inspect and adjust before launch. Live power corrections remain available until a battery empties. CERTIFY NOW commits the current transition. The first empty battery or rejected certification ends the episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Do not interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only as part of the task, using their visible controls."
+      }
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Drag each island GRID SHARE policy card along its energy rail; the clean grid keeps running."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Click a point on the same island energy rail to request the same grid share; no automatic matching or interception."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 90,
+    "observation_window_ms": 600,
+    "frames_per_observation": 4
+  }
+}

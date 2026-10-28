@@ -1,0 +1,65 @@
+{
+  "description": "Complete four jade pearls in a straight line in the 4×4×4 gravity lattice before the coral rival. Drag the violet magnet in the overhead casting field, then click RELEASE PEARL below the field. Steer the falling pearl through the upper and lower moving collars of the SAME channel. The upper collar latches a channel and closes the other lower collars. Recent trails show motion; the arrow shows the current. The magnet has inertia, and the pearl keeps falling while you move it. A collar impact, full-column delivery, rival line, or incomplete certification ends the attempt. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs.",
+  "difficulty": "very_hard",
+  "env_id": "gym_anything_rt.pearl_lattice_v2_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/pearl_lattice_v2_d5_simplified_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/pearl_lattice_v2_d5_simplified_seed_0001/setup_task.sh"
+  },
+  "id": "pearl_lattice_v2_d5_simplified_seed_0001@0.2",
+  "init": {
+    "max_steps": 100,
+    "reward_type": "sparse",
+    "timeout_sec": 600
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/pearl_lattice_v2_v0.json",
+    "benchmark": "gym_anything_rt",
+    "capabilities": [
+      "visual understanding: 3D",
+      "temporal understanding and memory",
+      "reasoning and planning"
+    ],
+    "control_condition": {
+      "difficulty": 5,
+      "difficulty_parameters": {
+        "drift_amplitude": 32,
+        "drift_span_ms": 1800,
+        "drift_vertical_amplitude": 24,
+        "extra_noise": 12,
+        "geometry": "spatial_fork",
+        "gravity": 72,
+        "max_player_moves": 10,
+        "mouth_radius": 26,
+        "opponent_policy": "threat_then_block",
+        "prefill_player": 2,
+        "steering_damping": 6,
+        "steering_spring": 17,
+        "wind_acceleration": 165
+      },
+      "interaction": "simplified",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "pearl_lattice_v2"
+  },
+  "name": "Pearl Lattice V2 · Difficulty 5 · Simplified Interaction",
+  "natural_language": "Complete four jade pearls in a straight line in the 4×4×4 gravity lattice before the coral rival. Click the overhead casting field to set the violet magnet target, then click RELEASE PEARL below the field. Steer the falling pearl through the upper and lower moving collars of the SAME channel. The upper collar latches a channel and closes the other lower collars. Recent trails show motion; the arrow shows the current. The magnet has inertia, and the pearl keeps falling while you move it. A collar impact, full-column delivery, rival line, or incomplete certification ends the attempt. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "linux",
+    "browser",
+    "visual-puzzle",
+    "gym-anything-rt",
+    "pearl_lattice_v2",
+    "3d",
+    "continuous-control",
+    "gravity-board"
+  ],
+  "version": "0.2"
+}

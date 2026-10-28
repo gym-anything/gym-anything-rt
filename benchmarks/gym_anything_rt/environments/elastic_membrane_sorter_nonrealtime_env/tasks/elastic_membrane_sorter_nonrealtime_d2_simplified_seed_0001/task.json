@@ -1,0 +1,54 @@
+{
+  "description": "Steer marbles through ordered rings and matching wells by correcting four membrane posts; each correction resolves a finite motion segment, then the marble and posts remain fixed until the next deliberate action.",
+  "difficulty": "easy",
+  "env_id": "gym_anything_rt.elastic_membrane_sorter_nonrealtime_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/elastic_membrane_sorter_nonrealtime_d2_simplified_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/elastic_membrane_sorter_nonrealtime_d2_simplified_seed_0001/setup_task.sh"
+  },
+  "id": "elastic_membrane_sorter_nonrealtime_d2_simplified_seed_0001@0.2",
+  "init": {
+    "max_steps": 900,
+    "reward_type": "sparse",
+    "timeout_sec": 900
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/elastic_membrane_sorter_v2.json",
+    "benchmark": "gym_anything_rt",
+    "control_condition": {
+      "difficulty": 2,
+      "difficulty_parameters": {
+        "capture_speed": 3.5,
+        "checkpoint_radius": 42,
+        "checkpoints_per_round": 2,
+        "drag": 0.96,
+        "initial_height_high": 0.55,
+        "initial_height_low": 0.45,
+        "max_ticks": 720,
+        "round_count": 1,
+        "slope_accel": 0.08,
+        "well_radius": 36
+      },
+      "interaction": "simplified",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "elastic_membrane_sorter_nonrealtime"
+  },
+  "name": "Elastic Membrane Sorter · Difficulty 2 · Simplified Interaction",
+  "natural_language": "Guide one marble through both numbered rings in order, then settle it in the highlighted well.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "elastic_membrane_sorter_nonrealtime",
+    "deformable-surface",
+    "indirect-control",
+    "damped-motion"
+  ],
+  "version": "0.2"
+}

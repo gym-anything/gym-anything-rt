@@ -1,0 +1,13 @@
+{
+  "mechanic_id": "concertina_courier",
+  "source_anchors": [
+    "XAGT-333"
+  ],
+  "sources": [
+    "https://github.com/GAIPS/geometry-friends",
+    "https://github.com/StavrosOrf/Geometry-Friends-Rectangle-AI"
+  ],
+  "transformation": "Original accordion parcel, generated postal shelves and seals; fixed-area nonrotating rectangle, gravity, collision and contact collection.",
+  "assets": "Original code-native CSS and canvas artwork; no third-party assets.",
+  "revision": "Default baseline now uses the previously validated L3 island. The exact original linear configuration remains at L2. Controlled L1–L5 geometry and all physics are unchanged from the preceding revision; no jumping, rotation or higher-ledge climbing is implemented. Formal real-time and human difficulty claims remain unestablished."
+}

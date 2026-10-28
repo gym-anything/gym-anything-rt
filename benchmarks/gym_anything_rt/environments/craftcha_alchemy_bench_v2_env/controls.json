@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "craftcha_alchemy_bench_v2",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "parameters": {
+        "raw_count": 3,
+        "radius": 28,
+        "motion_span_ms": 6500,
+        "hot_lifetime_ms": 60000,
+        "tree": "chain"
+      },
+      "summary": "3 starting reagents; nonperiodic motion span 6.5s; visible circle radius 28px; hot blends last 60s.",
+      "natural_language": "Study the formula. Open the storm, then merge every pictured pair into the Stormglass heart. Reagents keep drifting while you hold another. Dotted paths show the next 2.5 seconds; solid wakes show the last 0.8 seconds. New blends must form for 5 seconds before reuse; their blue inner ring shows readiness. Hot blends crystallize when their rings empty. Selecting empty space with no reagent held is harmless. You may change your aim before placing or releasing. A missed release, wrong or premature mixture, or crystallized blend ends the episode. Rejected certification also ends the episode. Certify only the complete heart.\n\nSolve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Task-opened tabs are allowed only when part of this task and only through their visible controls."
+    },
+    "2": {
+      "label": "easy",
+      "parameters": {
+        "raw_count": 4,
+        "radius": 27,
+        "motion_span_ms": 5600,
+        "hot_lifetime_ms": 48000,
+        "tree": "balanced"
+      },
+      "summary": "4 starting reagents; nonperiodic motion span 5.6s; visible circle radius 27px; hot blends last 48s.",
+      "natural_language": "Study the formula. Open the storm, then merge every pictured pair into the Stormglass heart. Reagents keep drifting while you hold another. Dotted paths show the next 2.5 seconds; solid wakes show the last 0.8 seconds. New blends must form for 5 seconds before reuse; their blue inner ring shows readiness. Hot blends crystallize when their rings empty. Selecting empty space with no reagent held is harmless. You may change your aim before placing or releasing. A missed release, wrong or premature mixture, or crystallized blend ends the episode. Rejected certification also ends the episode. Certify only the complete heart.\n\nSolve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Task-opened tabs are allowed only when part of this task and only through their visible controls."
+    },
+    "3": {
+      "label": "medium",
+      "parameters": {
+        "raw_count": 6,
+        "radius": 26,
+        "motion_span_ms": 4800,
+        "hot_lifetime_ms": 36000,
+        "tree": "balanced"
+      },
+      "summary": "6 starting reagents; nonperiodic motion span 4.8s; visible circle radius 26px; hot blends last 36s.",
+      "natural_language": "Study the formula. Open the storm, then merge every pictured pair into the Stormglass heart. Reagents keep drifting while you hold another. Dotted paths show the next 2.5 seconds; solid wakes show the last 0.8 seconds. New blends must form for 5 seconds before reuse; their blue inner ring shows readiness. Hot blends crystallize when their rings empty. Selecting empty space with no reagent held is harmless. You may change your aim before placing or releasing. A missed release, wrong or premature mixture, or crystallized blend ends the episode. Rejected certification also ends the episode. Certify only the complete heart.\n\nSolve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Task-opened tabs are allowed only when part of this task and only through their visible controls."
+    },
+    "4": {
+      "label": "hard",
+      "parameters": {
+        "raw_count": 8,
+        "radius": 25,
+        "motion_span_ms": 4300,
+        "hot_lifetime_ms": 26000,
+        "tree": "balanced"
+      },
+      "summary": "8 starting reagents; nonperiodic motion span 4.3s; visible circle radius 25px; hot blends last 26s.",
+      "natural_language": "Study the formula. Open the storm, then merge every pictured pair into the Stormglass heart. Reagents keep drifting while you hold another. Dotted paths show the next 2.5 seconds; solid wakes show the last 0.8 seconds. New blends must form for 5 seconds before reuse; their blue inner ring shows readiness. Hot blends crystallize when their rings empty. Selecting empty space with no reagent held is harmless. You may change your aim before placing or releasing. A missed release, wrong or premature mixture, or crystallized blend ends the episode. Rejected certification also ends the episode. Certify only the complete heart.\n\nSolve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Task-opened tabs are allowed only when part of this task and only through their visible controls."
+    },
+    "5": {
+      "label": "very_hard",
+      "parameters": {
+        "raw_count": 10,
+        "radius": 24,
+        "motion_span_ms": 3600,
+        "hot_lifetime_ms": 18000,
+        "tree": "balanced"
+      },
+      "summary": "10 starting reagents; nonperiodic motion span 3.6s; visible circle radius 24px; hot blends last 18s.",
+      "natural_language": "Study the formula. Open the storm, then merge every pictured pair into the Stormglass heart. Reagents keep drifting while you hold another. Dotted paths show the next 2.5 seconds; solid wakes show the last 0.8 seconds. New blends must form for 5 seconds before reuse; their blue inner ring shows readiness. Hot blends crystallize when their rings empty. Selecting empty space with no reagent held is harmless. You may change your aim before placing or releasing. A missed release, wrong or premature mixture, or crystallized blend ends the episode. Rejected certification also ends the episode. Certify only the complete heart.\n\nSolve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Task-opened tabs are allowed only when part of this task and only through their visible controls."
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Hold and drag a reagent; release inside its moving partner. No auto aim."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Click a reagent to carry it, then click inside its moving partner at chosen coordinates. No auto aim."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 210,
+    "observation_window_ms": 800,
+    "frames_per_observation": 6
+  }
+}

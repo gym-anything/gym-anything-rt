@@ -1,0 +1,66 @@
+{
+  "env_folder": "circle_limit_twist_nonrealtime_env",
+  "all_tasks": [
+    "circle_limit_twist_nonrealtime_d1_full_seed_0001",
+    "circle_limit_twist_nonrealtime_d1_simplified_seed_0001",
+    "circle_limit_twist_nonrealtime_d2_full_seed_0001",
+    "circle_limit_twist_nonrealtime_d2_simplified_seed_0001",
+    "circle_limit_twist_nonrealtime_d3_full_seed_0001",
+    "circle_limit_twist_nonrealtime_d3_simplified_seed_0001",
+    "circle_limit_twist_nonrealtime_d4_full_seed_0001",
+    "circle_limit_twist_nonrealtime_d4_simplified_seed_0001",
+    "circle_limit_twist_nonrealtime_d5_full_seed_0001",
+    "circle_limit_twist_nonrealtime_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "circle_limit_twist_nonrealtime_d1_full_seed_0001",
+    "circle_limit_twist_nonrealtime_d1_simplified_seed_0001",
+    "circle_limit_twist_nonrealtime_d2_full_seed_0001",
+    "circle_limit_twist_nonrealtime_d2_simplified_seed_0001",
+    "circle_limit_twist_nonrealtime_d3_full_seed_0001",
+    "circle_limit_twist_nonrealtime_d3_simplified_seed_0001",
+    "circle_limit_twist_nonrealtime_d4_full_seed_0001",
+    "circle_limit_twist_nonrealtime_d4_simplified_seed_0001",
+    "circle_limit_twist_nonrealtime_d5_full_seed_0001",
+    "circle_limit_twist_nonrealtime_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "circle_limit_twist_nonrealtime_d5_full_seed_0001"
+    ],
+    "full": [
+      "circle_limit_twist_nonrealtime_d1_full_seed_0001",
+      "circle_limit_twist_nonrealtime_d2_full_seed_0001",
+      "circle_limit_twist_nonrealtime_d3_full_seed_0001",
+      "circle_limit_twist_nonrealtime_d4_full_seed_0001",
+      "circle_limit_twist_nonrealtime_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "circle_limit_twist_nonrealtime_d1_simplified_seed_0001",
+      "circle_limit_twist_nonrealtime_d2_simplified_seed_0001",
+      "circle_limit_twist_nonrealtime_d3_simplified_seed_0001",
+      "circle_limit_twist_nonrealtime_d4_simplified_seed_0001",
+      "circle_limit_twist_nonrealtime_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "circle_limit_twist_nonrealtime_d1_full_seed_0001",
+      "circle_limit_twist_nonrealtime_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "circle_limit_twist_nonrealtime_d2_full_seed_0001",
+      "circle_limit_twist_nonrealtime_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "circle_limit_twist_nonrealtime_d3_full_seed_0001",
+      "circle_limit_twist_nonrealtime_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "circle_limit_twist_nonrealtime_d4_full_seed_0001",
+      "circle_limit_twist_nonrealtime_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "circle_limit_twist_nonrealtime_d5_full_seed_0001",
+      "circle_limit_twist_nonrealtime_d5_simplified_seed_0001"
+    ]
+  }
+}

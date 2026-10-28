@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "cloudstep_caddie_v2",
+  "source_anchors": [
+    "IND-070"
+  ],
+  "source_records": [
+    "outputs/selection_round4_20260906/inputs/dashboard/data/entries/11.json#IND-070"
+  ],
+  "supplied_source_url": "https://store.steampowered.com/app/1084690/Golf_Peaks/",
+  "corrected_primary_sources": [
+    "https://afterburn.games/press/sheet.php?p=golf_peaks",
+    "https://store.steampowered.com/app/923260/Golf_Peaks/"
+  ],
+  "source_link_note": "Supplied Steam app 1084690 resolves to an unrelated title; the survey is preserved read-only.",
+  "transformation": "Card-limited elevated-terrain golf becomes continuous projectile interception of independently drifting greens, with inherited horizontal velocity and announced wind.",
+  "assets": "Original canvas geometry and CSS only. No copied commercial art, levels, name, code or media.",
+  "license": "Repository license applies to original implementation."
+}

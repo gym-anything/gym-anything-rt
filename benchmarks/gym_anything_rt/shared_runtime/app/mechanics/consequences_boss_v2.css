@@ -1,0 +1,17 @@
+body[data-mechanic="consequences-boss-v2"] { margin:0; background:#10131f; }
+.cb-v2 { width:min(1180px,98vw); margin:8px auto; color:#f2e5ce; background:#191b2c; border:1px solid #807084; box-shadow:0 18px 55px #0008; font-family:Georgia,serif; }
+.cb-head { padding:12px 22px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid #72677b; }
+.cb-head p { margin:0 0 4px; font:11px ui-monospace,monospace; letter-spacing:.18em; color:#bfa4a7; }
+.cb-head h1 { margin:0; font-size:27px; font-weight:normal; }
+.cb-mode { font:11px ui-monospace,monospace; color:#e8bc90; border:1px solid #786d77; padding:9px; }
+.cb-rules { margin:0; padding:9px 22px; font:13px/1.45 system-ui,sans-serif; color:#d5c9cb; background:#292238; }
+#cb-arena { display:block; width:100%; height:auto; touch-action:none; user-select:none; cursor:crosshair; }
+.cb-foot { display:flex; align-items:center; gap:12px; padding:10px 18px; border-top:1px solid #70687a; min-height:48px; }
+.cb-foot .readout { flex:1; font:13px/1.4 ui-monospace,monospace; color:#dec9b6; }
+.cb-foot .readout[data-status="passed"] { color:#9ce4bf; }
+.cb-foot .readout[data-status="error"] { color:#ffafa4; }
+.cb-foot button { background:#3a2b39; color:#f7ddaf; border:1px solid #b7957c; padding:12px 16px; font:12px ui-monospace,monospace; cursor:pointer; }
+.cb-foot button:disabled { opacity:.55; cursor:default; }
+.cb-v2[data-terminal="fail"] { border-color:#f47d7d; }
+.cb-v2[data-terminal="pass"] { border-color:#8dd4b5; }
+@media(max-height:800px) { .cb-v2 { width:min(1100px,96vw); } .cb-head { padding:8px 18px; } .cb-head h1 {font-size:24px;} .cb-rules {padding:7px 18px;} }

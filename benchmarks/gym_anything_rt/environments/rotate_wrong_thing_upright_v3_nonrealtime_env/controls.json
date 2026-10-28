@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "rotate_wrong_thing_upright_v3_nonrealtime",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "parameters": {
+        "axes": 1,
+        "tolerance_deg": 14,
+        "speed_tolerance": 10,
+        "response_s": 0.4,
+        "coupling": 0.0,
+        "gust_rate": 28,
+        "gust_span_ms": 2600
+      },
+      "summary": "1 coupled axes; angle band \u00b114\u00b0, speed band \u00b110\u00b0/s; motor lag 0.4s, coupling 0.0; gust rate 28\u00b0/s changes across 2.6s.",
+      "natural_language": "Keep the sculpture aligned with the dashed world-plumb reference against changing wind. Lift the gear covers to inspect each motor winding and its cross-axis gears: positive dial directions vary between rigs. Inspection is safe before or during motion and stays visible. Each accepted drive action advances one fixed 200ms control interval; between inputs the state is stable. Steer the motor dials and anticipate their inertia. Hold all active angles and speeds inside their visible green bands for ten consecutive seconds. Leaving a band clears progress and allows correction. Early certification or the 90-second run limit ends the episode; later attempts cannot pass."
+    },
+    "2": {
+      "label": "easy",
+      "parameters": {
+        "axes": 2,
+        "tolerance_deg": 12,
+        "speed_tolerance": 9,
+        "response_s": 0.5,
+        "coupling": 0.12,
+        "gust_rate": 30,
+        "gust_span_ms": 2300
+      },
+      "summary": "2 coupled axes; angle band \u00b112\u00b0, speed band \u00b19\u00b0/s; motor lag 0.5s, coupling 0.12; gust rate 30\u00b0/s changes across 2.3s.",
+      "natural_language": "Keep the sculpture aligned with the dashed world-plumb reference against changing wind. Lift the gear covers to inspect each motor winding and its cross-axis gears: positive dial directions vary between rigs. Inspection is safe before or during motion and stays visible. Each accepted drive action advances one fixed 200ms control interval; between inputs the state is stable. Steer the motor dials and anticipate their inertia. Hold all active angles and speeds inside their visible green bands for ten consecutive seconds. Leaving a band clears progress and allows correction. Early certification or the 90-second run limit ends the episode; later attempts cannot pass."
+    },
+    "3": {
+      "label": "medium",
+      "parameters": {
+        "axes": 3,
+        "tolerance_deg": 10,
+        "speed_tolerance": 8,
+        "response_s": 0.55,
+        "coupling": 0.18,
+        "gust_rate": 32,
+        "gust_span_ms": 2100
+      },
+      "summary": "3 coupled axes; angle band \u00b110\u00b0, speed band \u00b18\u00b0/s; motor lag 0.55s, coupling 0.18; gust rate 32\u00b0/s changes across 2.1s.",
+      "natural_language": "Keep the sculpture aligned with the dashed world-plumb reference against changing wind. Lift the gear covers to inspect each motor winding and its cross-axis gears: positive dial directions vary between rigs. Inspection is safe before or during motion and stays visible. Each accepted drive action advances one fixed 200ms control interval; between inputs the state is stable. Steer the motor dials and anticipate their inertia. Hold all active angles and speeds inside their visible green bands for ten consecutive seconds. Leaving a band clears progress and allows correction. Early certification or the 90-second run limit ends the episode; later attempts cannot pass."
+    },
+    "4": {
+      "label": "hard",
+      "parameters": {
+        "axes": 3,
+        "tolerance_deg": 8,
+        "speed_tolerance": 7,
+        "response_s": 0.7,
+        "coupling": 0.22,
+        "gust_rate": 34,
+        "gust_span_ms": 1900
+      },
+      "summary": "3 coupled axes; angle band \u00b18\u00b0, speed band \u00b17\u00b0/s; motor lag 0.7s, coupling 0.22; gust rate 34\u00b0/s changes across 1.9s.",
+      "natural_language": "Keep the sculpture aligned with the dashed world-plumb reference against changing wind. Lift the gear covers to inspect each motor winding and its cross-axis gears: positive dial directions vary between rigs. Inspection is safe before or during motion and stays visible. Each accepted drive action advances one fixed 200ms control interval; between inputs the state is stable. Steer the motor dials and anticipate their inertia. Hold all active angles and speeds inside their visible green bands for ten consecutive seconds. Leaving a band clears progress and allows correction. Early certification or the 90-second run limit ends the episode; later attempts cannot pass."
+    },
+    "5": {
+      "label": "very_hard",
+      "parameters": {
+        "axes": 3,
+        "tolerance_deg": 6,
+        "speed_tolerance": 6,
+        "response_s": 0.85,
+        "coupling": 0.28,
+        "gust_rate": 36,
+        "gust_span_ms": 1750
+      },
+      "summary": "3 coupled axes; angle band \u00b16\u00b0, speed band \u00b16\u00b0/s; motor lag 0.85s, coupling 0.28; gust rate 36\u00b0/s changes across 1.75s.",
+      "natural_language": "Keep the sculpture aligned with the dashed world-plumb reference against changing wind. Lift the gear covers to inspect each motor winding and its cross-axis gears: positive dial directions vary between rigs. Inspection is safe before or during motion and stays visible. Each accepted drive action advances one fixed 200ms control interval; between inputs the state is stable. Steer the motor dials and anticipate their inertia. Hold all active angles and speeds inside their visible green bands for ten consecutive seconds. Leaving a band clears progress and allows correction. Early certification or the 90-second run limit ends the episode; later attempts cannot pass."
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Grab and drag each motor handwheel handle; its position sets a persistent signed motor drive. Lift motor gear covers to inspect winding directions and cross-axis effects; the same facts are exposed in both modes."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Click the same signed motor drive directly on a rail. No aim, braking, alignment or wind compensation is automated. Lift motor gear covers to inspect winding directions and cross-axis effects; the same facts are exposed in both modes."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 600,
+    "observation_window_ms": 600,
+    "frames_per_observation": 4
+  }
+}

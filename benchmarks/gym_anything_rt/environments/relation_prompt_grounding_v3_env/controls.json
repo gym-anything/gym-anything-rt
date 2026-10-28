@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "relation_prompt_grounding_v3",
+  "baseline": {
+    "difficulty": 4,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "parameters": {
+        "object_count": 2,
+        "drift_amplitude": 28,
+        "drift_span_ms": 4500,
+        "tolerance": 26,
+        "coupling": 0.0
+      },
+      "natural_language": "Start the motors. Select a body to reveal its paired target seals and four-second motor forecast; they remain visible for the portfolio. Release without moving (full) or click the same point again (simplified) to inspect safely. Move the sculptures so their center dots enter matching target windows in both FRONT (X/height) and SIDE (depth/height) views. Expose each of the three different plates, then certify. Motors keep drifting during observation and held gestures; the carriages move independently. A misaligned exposure or incomplete certification ends the attempt.",
+      "summary": "2 bodies; amplitude 28 px, spline interval 4500 ms, center tolerance \u00b126 px, cross-carriage gain 0.0. Changes simultaneous calibration, prediction and correction precision; all levels use three plates."
+    },
+    "2": {
+      "label": "easy",
+      "parameters": {
+        "object_count": 3,
+        "drift_amplitude": 36,
+        "drift_span_ms": 4000,
+        "tolerance": 24,
+        "coupling": 0.04
+      },
+      "natural_language": "Start the motors. Select a body to reveal its paired target seals and four-second motor forecast; they remain visible for the portfolio. Release without moving (full) or click the same point again (simplified) to inspect safely. Move the sculptures so their center dots enter matching target windows in both FRONT (X/height) and SIDE (depth/height) views. Expose each of the three different plates, then certify. Motors keep drifting during observation and held gestures; shared tension nudges the other carriages. A misaligned exposure or incomplete certification ends the attempt.",
+      "summary": "3 bodies; amplitude 36 px, spline interval 4000 ms, center tolerance \u00b124 px, cross-carriage gain 0.04. Changes simultaneous calibration, prediction and correction precision; all levels use three plates."
+    },
+    "3": {
+      "label": "medium",
+      "parameters": {
+        "object_count": 3,
+        "drift_amplitude": 44,
+        "drift_span_ms": 3500,
+        "tolerance": 20,
+        "coupling": 0.08
+      },
+      "natural_language": "Start the motors. Select a body to reveal its paired target seals and four-second motor forecast; they remain visible for the portfolio. Release without moving (full) or click the same point again (simplified) to inspect safely. Move the sculptures so their center dots enter matching target windows in both FRONT (X/height) and SIDE (depth/height) views. Expose each of the three different plates, then certify. Motors keep drifting during observation and held gestures; shared tension nudges the other carriages. A misaligned exposure or incomplete certification ends the attempt.",
+      "summary": "3 bodies; amplitude 44 px, spline interval 3500 ms, center tolerance \u00b120 px, cross-carriage gain 0.08. Changes simultaneous calibration, prediction and correction precision; all levels use three plates."
+    },
+    "4": {
+      "label": "hard",
+      "parameters": {
+        "object_count": 4,
+        "drift_amplitude": 55,
+        "drift_span_ms": 3200,
+        "tolerance": 18,
+        "coupling": 0.12
+      },
+      "natural_language": "Start the motors. Select a body to reveal its paired target seals and four-second motor forecast; they remain visible for the portfolio. Release without moving (full) or click the same point again (simplified) to inspect safely. Move the sculptures so their center dots enter matching target windows in both FRONT (X/height) and SIDE (depth/height) views. Expose each of the three different plates, then certify. Motors keep drifting during observation and held gestures; shared tension nudges the other carriages. A misaligned exposure or incomplete certification ends the attempt.",
+      "summary": "4 bodies; amplitude 55 px, spline interval 3200 ms, center tolerance \u00b118 px, cross-carriage gain 0.12. Changes simultaneous calibration, prediction and correction precision; all levels use three plates."
+    },
+    "5": {
+      "label": "very_hard",
+      "parameters": {
+        "object_count": 5,
+        "drift_amplitude": 65,
+        "drift_span_ms": 2800,
+        "tolerance": 14,
+        "coupling": 0.18
+      },
+      "natural_language": "Start the motors. Select a body to reveal its paired target seals and four-second motor forecast; they remain visible for the portfolio. Release without moving (full) or click the same point again (simplified) to inspect safely. Move the sculptures so their center dots enter matching target windows in both FRONT (X/height) and SIDE (depth/height) views. Expose each of the three different plates, then certify. Motors keep drifting during observation and held gestures; shared tension nudges the other carriages. A misaligned exposure or incomplete certification ends the attempt.",
+      "summary": "5 bodies; amplitude 65 px, spline interval 2800 ms, center tolerance \u00b114 px, cross-carriage gain 0.18. Changes simultaneous calibration, prediction and correction precision; all levels use three plates."
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Drag the projected body directly in front or side; release, then expose. The selected plane changes two world axes through the coupled carriage. Selecting a visible body also reveals its paired target seals and live motor forecast; learned information persists in both modes."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Click a projected body, then click the endpoint of the equivalent drag in that plane. Translation uses displacement from the selected point in both modes, preserving continuing drift, coupling, information, tolerances and outcome; no automatic recentering. Selecting a visible body also reveals its paired target seals and live motor forecast; learned information persists in both modes."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 400,
+    "frames_per_observation": 5
+  }
+}

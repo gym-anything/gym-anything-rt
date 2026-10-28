@@ -1,0 +1,66 @@
+{
+  "env_folder": "photograph_eats_the_room_nonrealtime_env",
+  "all_tasks": [
+    "photograph_eats_the_room_nonrealtime_d1_full_seed_0001",
+    "photograph_eats_the_room_nonrealtime_d1_simplified_seed_0001",
+    "photograph_eats_the_room_nonrealtime_d2_full_seed_0001",
+    "photograph_eats_the_room_nonrealtime_d2_simplified_seed_0001",
+    "photograph_eats_the_room_nonrealtime_d3_full_seed_0001",
+    "photograph_eats_the_room_nonrealtime_d3_simplified_seed_0001",
+    "photograph_eats_the_room_nonrealtime_d4_full_seed_0001",
+    "photograph_eats_the_room_nonrealtime_d4_simplified_seed_0001",
+    "photograph_eats_the_room_nonrealtime_d5_full_seed_0001",
+    "photograph_eats_the_room_nonrealtime_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "photograph_eats_the_room_nonrealtime_d1_full_seed_0001",
+    "photograph_eats_the_room_nonrealtime_d1_simplified_seed_0001",
+    "photograph_eats_the_room_nonrealtime_d2_full_seed_0001",
+    "photograph_eats_the_room_nonrealtime_d2_simplified_seed_0001",
+    "photograph_eats_the_room_nonrealtime_d3_full_seed_0001",
+    "photograph_eats_the_room_nonrealtime_d3_simplified_seed_0001",
+    "photograph_eats_the_room_nonrealtime_d4_full_seed_0001",
+    "photograph_eats_the_room_nonrealtime_d4_simplified_seed_0001",
+    "photograph_eats_the_room_nonrealtime_d5_full_seed_0001",
+    "photograph_eats_the_room_nonrealtime_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "photograph_eats_the_room_nonrealtime_d5_full_seed_0001"
+    ],
+    "full": [
+      "photograph_eats_the_room_nonrealtime_d1_full_seed_0001",
+      "photograph_eats_the_room_nonrealtime_d2_full_seed_0001",
+      "photograph_eats_the_room_nonrealtime_d3_full_seed_0001",
+      "photograph_eats_the_room_nonrealtime_d4_full_seed_0001",
+      "photograph_eats_the_room_nonrealtime_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "photograph_eats_the_room_nonrealtime_d1_simplified_seed_0001",
+      "photograph_eats_the_room_nonrealtime_d2_simplified_seed_0001",
+      "photograph_eats_the_room_nonrealtime_d3_simplified_seed_0001",
+      "photograph_eats_the_room_nonrealtime_d4_simplified_seed_0001",
+      "photograph_eats_the_room_nonrealtime_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "photograph_eats_the_room_nonrealtime_d1_full_seed_0001",
+      "photograph_eats_the_room_nonrealtime_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "photograph_eats_the_room_nonrealtime_d2_full_seed_0001",
+      "photograph_eats_the_room_nonrealtime_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "photograph_eats_the_room_nonrealtime_d3_full_seed_0001",
+      "photograph_eats_the_room_nonrealtime_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "photograph_eats_the_room_nonrealtime_d4_full_seed_0001",
+      "photograph_eats_the_room_nonrealtime_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "photograph_eats_the_room_nonrealtime_d5_full_seed_0001",
+      "photograph_eats_the_room_nonrealtime_d5_simplified_seed_0001"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "apothecary_dead_reckoning_v3",
+  "source_anchors": [
+    "VGE-704",
+    "VGE-705",
+    "VGE-706"
+  ],
+  "source_urls": [
+    "https://en.wikipedia.org/wiki/Potion_Craft",
+    "https://store.steampowered.com/app/1210320/Potion_Craft_Alchemist_Simulator/",
+    "https://github.com/xiaoye97/PotionCraft_MoreInformation",
+    "https://github.com/foxwhite25/PotionCraftSaveEditor",
+    "https://github.com/AndrewFahlgren/PotionCraftPourBackIn",
+    "https://github.com/xiaoye97/PotionCraft_AutoHaggle"
+  ],
+  "assets": [],
+  "notes": "All code, atlas geometry, procedural botany and CSS/canvas artwork are original. No source assets or mod code are shipped. VGE-706 remains an anchor, with no haggling mechanic imported."
+}

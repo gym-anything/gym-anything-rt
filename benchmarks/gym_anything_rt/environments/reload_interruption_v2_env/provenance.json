@@ -1,0 +1,25 @@
+{
+  "name": "Reload Interruption V2",
+  "original_mechanic": "reload_interruption",
+  "mechanic_id": "reload_interruption_v2",
+  "source_anchors": [
+    "captcha-the-flag",
+    "modrinth-evil-captcha",
+    "github-ttuples-simplecaptcha"
+  ],
+  "transformation": "Spark angular velocity changes smoothly during overload holds. The grader replays the same path using the recorded pointer-down time.",
+  "validation_status": "automated_checks_passed_human_validation_pending",
+  "human_validation": "pending",
+  "model_evaluation": "pending",
+  "capability_labels": "inherited, pending V2 review",
+  "automated_validation": {
+    "live_configurations_passed": 10,
+    "d5_full_continuous_reference_video": true,
+    "independent_verifier_passed": true,
+    "static_browser_grade_passed": true,
+    "paused_clock_passed": true,
+    "failure_regeneration_passed": true,
+    "evidence": "evidence/incubator_batch_realtime6_v2_v1",
+    "report": "../docs/realtime6-v2-construction-20260923.md"
+  }
+}

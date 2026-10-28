@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "wonky_text_hostile_rendering_v3",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "parameters": {
+        "plate_count": 1,
+        "axes": 1,
+        "tolerance": 23,
+        "span_ms": 10000,
+        "servo_ms": 180,
+        "warp": 0.2
+      },
+      "natural_language": "Each plate has two moving guides, marked with a dot or diamond; one is a reflected ghost. Sweep the loupe over each covered plate sleeve to find its true registration stamp. Discovered stamps stay visible. Inspect and prepare before START PRESS; inspection never pauses a running press. Keep each solid handle's cross inside the guide matching that plate's stamp. The short trail shows recent drift; the dotted line and small bead show the next 600 ms. The square is your commanded position: the solid handle follows with inertia. Clean exposure accumulates only while all crosses are inside their rings; paper keeps feeding otherwise. Color separation outside a ring permanently spoils the paper. Finish 24 seconds of clean exposure within 40 seconds, before the spoil gauge fills. There is one attempt; an early submission ends it.",
+      "summary": "1 independent plates, 1 axes, 23 px tolerance, 180 ms actuator response."
+    },
+    "2": {
+      "label": "easy",
+      "parameters": {
+        "plate_count": 1,
+        "axes": 2,
+        "tolerance": 21,
+        "span_ms": 9400,
+        "servo_ms": 220,
+        "warp": 0.3
+      },
+      "natural_language": "Each plate has two moving guides, marked with a dot or diamond; one is a reflected ghost. Sweep the loupe over each covered plate sleeve to find its true registration stamp. Discovered stamps stay visible. Inspect and prepare before START PRESS; inspection never pauses a running press. Keep each solid handle's cross inside the guide matching that plate's stamp. The short trail shows recent drift; the dotted line and small bead show the next 600 ms. The square is your commanded position: the solid handle follows with inertia. Clean exposure accumulates only while all crosses are inside their rings; paper keeps feeding otherwise. Color separation outside a ring permanently spoils the paper. Finish 24 seconds of clean exposure within 40 seconds, before the spoil gauge fills. There is one attempt; an early submission ends it.",
+      "summary": "1 independent plates, 2 axes, 21 px tolerance, 220 ms actuator response."
+    },
+    "3": {
+      "label": "medium",
+      "parameters": {
+        "plate_count": 2,
+        "axes": 2,
+        "tolerance": 19,
+        "span_ms": 9000,
+        "servo_ms": 260,
+        "warp": 0.4
+      },
+      "natural_language": "Each plate has two moving guides, marked with a dot or diamond; one is a reflected ghost. Sweep the loupe over each covered plate sleeve to find its true registration stamp. Discovered stamps stay visible. Inspect and prepare before START PRESS; inspection never pauses a running press. Keep each solid handle's cross inside the guide matching that plate's stamp. The short trail shows recent drift; the dotted line and small bead show the next 600 ms. The square is your commanded position: the solid handle follows with inertia. Clean exposure accumulates only while all crosses are inside their rings; paper keeps feeding otherwise. Color separation outside a ring permanently spoils the paper. Finish 24 seconds of clean exposure within 40 seconds, before the spoil gauge fills. There is one attempt; an early submission ends it.",
+      "summary": "2 independent plates, 2 axes, 19 px tolerance, 260 ms actuator response."
+    },
+    "4": {
+      "label": "hard",
+      "parameters": {
+        "plate_count": 3,
+        "axes": 2,
+        "tolerance": 17,
+        "span_ms": 8700,
+        "servo_ms": 300,
+        "warp": 0.5
+      },
+      "natural_language": "Each plate has two moving guides, marked with a dot or diamond; one is a reflected ghost. Sweep the loupe over each covered plate sleeve to find its true registration stamp. Discovered stamps stay visible. Inspect and prepare before START PRESS; inspection never pauses a running press. Keep each solid handle's cross inside the guide matching that plate's stamp. The short trail shows recent drift; the dotted line and small bead show the next 600 ms. The square is your commanded position: the solid handle follows with inertia. Clean exposure accumulates only while all crosses are inside their rings; paper keeps feeding otherwise. Color separation outside a ring permanently spoils the paper. Finish 24 seconds of clean exposure within 40 seconds, before the spoil gauge fills. There is one attempt; an early submission ends it.",
+      "summary": "3 independent plates, 2 axes, 17 px tolerance, 300 ms actuator response."
+    },
+    "5": {
+      "label": "very_hard",
+      "parameters": {
+        "plate_count": 3,
+        "axes": 2,
+        "tolerance": 14,
+        "span_ms": 8200,
+        "servo_ms": 340,
+        "warp": 0.65
+      },
+      "natural_language": "Each plate has two moving guides, marked with a dot or diamond; one is a reflected ghost. Sweep the loupe over each covered plate sleeve to find its true registration stamp. Discovered stamps stay visible. Inspect and prepare before START PRESS; inspection never pauses a running press. Keep each solid handle's cross inside the guide matching that plate's stamp. The short trail shows recent drift; the dotted line and small bead show the next 600 ms. The square is your commanded position: the solid handle follows with inertia. Clean exposure accumulates only while all crosses are inside their rings; paper keeps feeding otherwise. Color separation outside a ring permanently spoils the paper. Finish 24 seconds of clean exposure within 40 seconds, before the spoil gauge fills. There is one attempt; an early submission ends it.",
+      "summary": "3 independent plates, 2 axes, 14 px tolerance, 340 ms actuator response."
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Sweep a loupe over plate sleeves to identify their registration marks, then drag each physical color handle on its pad."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Use the same sleeve loupe and registration marks, then click a pad to command the same actuator position; no snapping."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 120,
+    "observation_window_ms": 400,
+    "frames_per_observation": 4
+  }
+}

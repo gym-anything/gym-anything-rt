@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "concertina_courier_v2",
+  "baseline": {
+    "difficulty": 3,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Broad clearance with a reachable overhead seal.",
+      "parameters": {
+        "clearance": 105,
+        "gap": 0,
+        "reach": 100,
+        "alcove": 0,
+        "drag": 0.65
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Original room: two extreme shapes and a reusable linear route; preserved exactly.",
+      "parameters": {
+        "clearance": 58,
+        "gap": 85,
+        "reach": 160,
+        "alcove": 0,
+        "drag": 0.85
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Variable island and delivery direction, a low landing shelf, and a 100\u2013120 unit receiving well.",
+      "parameters": {
+        "layout": "island",
+        "island_width": 240,
+        "gap_range": [
+          80,
+          120
+        ],
+        "opening_range": [
+          100,
+          120
+        ],
+        "clearance": 80,
+        "reach": 160,
+        "drag": 0.85,
+        "well_clearance": 90
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Variable island and delivery direction, a low landing shelf, and a 65\u201380 unit receiving well.",
+      "parameters": {
+        "layout": "island",
+        "island_width": 200,
+        "gap_range": [
+          110,
+          150
+        ],
+        "opening_range": [
+          65,
+          80
+        ],
+        "clearance": 58,
+        "reach": 175,
+        "drag": 0.9,
+        "well_clearance": 115
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Variable island and delivery direction, a low landing shelf, and a 52\u201360 unit receiving well.",
+      "parameters": {
+        "layout": "island",
+        "island_width": 170,
+        "gap_range": [
+          140,
+          175
+        ],
+        "opening_range": [
+          52,
+          60
+        ],
+        "clearance": 42,
+        "reach": 185,
+        "drag": 0.94,
+        "well_clearance": 145
+      }
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true
+    },
+    "simplified": {
+      "implemented": true
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 80,
+    "frames_per_observation": 3
+  }
+}

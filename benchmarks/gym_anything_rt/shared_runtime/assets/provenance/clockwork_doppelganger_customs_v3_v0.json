@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "clockwork_doppelganger_customs_v3",
+  "public_name": "Clockwork Doppelgänger Customs V3",
+  "source_anchors": [
+    "https://pontoco.com/the-last-clockwinder"
+  ],
+  "survey_ids": [],
+  "primary_source": {
+    "url": "https://pontoco.com/the-last-clockwinder",
+    "title": "The Last Clockwinder — Pontoco",
+    "accessed": "2026-10-01",
+    "mechanic": "Record player movement and repeat it with clockwork automatons to construct a production line."
+  },
+  "transformation": "An original 2D customs relay: one recorded hand sweep is replicated by 1–3 workers. Independent moving trays and seal heads require live correction of bounded actuators during overlapping physical parcel handoffs. Each outgoing passport continues on a moving counter and must be physically picked up before its exit; a stale off-card click is a terminal miss.",
+  "assets": "All interface art is native canvas/CSS, drawn from generated geometry. No commercial artwork, branding, maps, dialogue or source code copied.",
+  "original_environment_preserved": "clockwork_doppelganger_customs_env",
+  "construction_revision": "moving-relay-3-inspection-3",
+  "validation_status": "V3 prototype candidate. Current V3 validation uses isolated headless Playwright, numerical fixtures and task-local replay/exported-verifier checks. No V3 native HTTP/action-API evaluation or human/model calibration is established. The October 2 native-check claim belongs to frozen V2 history. Current V3 evidence: environments/clockwork_doppelganger_customs_v3_env/evidence_docs/provenance-caption-repair-20261015/README.md",
+  "renderer_revision": "moving-relay-3-inspection-3",
+  "observable_state": "Labeled housings initially conceal seed-dependent drive facts. LIFT reveals startup waypoints 0 and 1 and a preview confined to that pair. Open housings persist; each later current pair, pins and motion become visible during the deployed relay. Startup captions sit below the housing headers and above the preview panels, separate from CATCH/PASS. Physical controls, profile parameters and relay physics are unchanged.",
+  "renderer_patch": "startup-caption-spacing-1",
+  "historical_v2_validation": {
+    "environment_id": "clockwork_doppelganger_customs_v2_env",
+    "source_manifest": "shared_runtime/assets/provenance/clockwork_doppelganger_customs_v2_v0.json",
+    "source_manifest_sha256": "868b45e298d2326b683335d3acb0cc54713532399f6a96c64a16bd339fca14e3",
+    "construction_revision": "moving-relay-2",
+    "renderer_revision": "observable-register-1",
+    "reported_native_http_checks": {
+      "total": 17,
+      "positive": 15,
+      "negative": 2
+    },
+    "reported_evidence_path": "environments/clockwork_doppelganger_customs_v2_env/evidence_docs/revisions/continuation_audit4_native_20261002T093446Z/CREATOR_RESPONSE.md",
+    "reported_evidence_available_in_workspace": false,
+    "evidence_revalidated_as_v3": false,
+    "scope": "V2 history only: these counts are the frozen V2 provenance claim, not fresh V3 evidence. The old receipt path is unavailable in this workspace; no old native receipt was rerun or revalidated for V3."
+  },
+  "current_v3_validation": {
+    "environment_id": "clockwork_doppelganger_customs_v3_env",
+    "inspection_revision": "moving-relay-3-inspection-3",
+    "report": "environments/clockwork_doppelganger_customs_v3_env/evidence_docs/provenance-caption-repair-20261015/README.md",
+    "validation": "environments/clockwork_doppelganger_customs_v3_env/evidence_docs/provenance-caption-repair-20261015/validation.json",
+    "commands": "environments/clockwork_doppelganger_customs_v3_env/evidence_docs/provenance-caption-repair-20261015/commands.json",
+    "earlier_creator_report": "environments/clockwork_doppelganger_customs_v3_env/evidence_docs/history/before-provenance-caption-repair/README.md",
+    "browser_transport": "Isolated headless Playwright with fresh temporary profiles and loopback servers; privileged planning disclosed.",
+    "native_action_api_executed": false,
+    "limitations": "Native action-API equivalence, human usability/calibration, model evaluation, WebAssembly-browser completion and the aggregate repository suite are not established. Native-named V3 tests exercise numerical command fixtures only. Fresh independent review of this maintenance patch remains separate.",
+    "preserved_audit_discrepancy": {
+      "original_passed": 348,
+      "original_failed": 1,
+      "original_skipped": 0,
+      "original_log": "environments/clockwork_doppelganger_customs_v3_env/evidence_docs/independent-audit-20261015T221223Z/targeted-tests.log",
+      "original_junit": "environments/clockwork_doppelganger_customs_v3_env/evidence_docs/independent-audit-20261015T221223Z/targeted-junit.xml",
+      "unchanged_recheck_log": "environments/clockwork_doppelganger_customs_v3_env/evidence_docs/independent-audit-20261015T221223Z/recheck-feedback.log",
+      "case": "test_pickup_feedback_returns_to_relay_until_next_passport[simplified]",
+      "discrepancy": "The original paused 240-ms window read relay 11750 instead of 11760 after 11520. The unchanged isolated recheck passed. The cause remains unexplained; the passing recheck does not erase the failed original batch."
+    }
+  }
+}

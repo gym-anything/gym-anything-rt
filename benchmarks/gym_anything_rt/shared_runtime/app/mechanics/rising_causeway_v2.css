@@ -1,0 +1,54 @@
+body[data-mechanic="rising-causeway-v2"] {margin:0;background:#0c1720;}
+body[data-mechanic="rising-causeway-v2"] .app-shell {max-width:none;width:100%;padding:0;}
+.rcv2 {box-sizing:border-box;width:100vw;height:100vh;min-height:0;padding:18px 22px;color:#e2ede4;background:radial-gradient(ellipse at 25% 0,#29464e,#0b1824 70%);font-family:ui-sans-serif,system-ui,sans-serif;display:grid;grid-template-rows:auto auto minmax(0,1fr) auto;gap:10px;overflow:hidden;}
+.rcv2 header {display:flex;align-items:center;justify-content:space-between;}
+.rcv2 small {color:#9bb9bd;font:700 10px/1.2 ui-monospace,monospace;letter-spacing:.13em;}
+.rcv2 h1 {font-size:26px;letter-spacing:-.04em;margin:5px 0 0;}
+#rcv2-status {border:1px solid #8baea4;border-radius:6px;padding:10px 14px;color:#d3efdf;font:700 11px ui-monospace,monospace;}
+.rcv2-rule {margin:0;font-size:12px;line-height:1.45;color:#c7d6cf;max-width:1060px;}
+.rcv2 main {min-height:0;display:grid;grid-template-columns:minmax(0,1fr) 247px;gap:14px;}
+.rcv2-world {min-height:0;position:relative;display:flex;flex-direction:column;border:1px solid #678d8c;border-radius:10px;overflow:hidden;box-shadow:0 14px 30px #0004;}
+#rcv2-scene {width:100%;height:0;min-height:0;flex:1;object-fit:fill;cursor:crosshair;}
+#rcv2-forecast {width:100%;height:160px;flex-shrink:0;border-bottom:1px solid #496e78;background:#101e28;}
+#rcv2-measurements {flex-shrink:0;padding:7px 10px;border-bottom:1px solid #496e78;background:#101e28;font:11px/1.35 ui-monospace,monospace;color:#d4e4db;overflow-wrap:anywhere;}
+#rcv2-measurements>strong {display:block;font-size:10px;color:#a6c4c7;letter-spacing:.06em;}
+#rcv2-measurements>small {display:block;margin-top:3px;font-size:9px;letter-spacing:0;color:#a6c4c7;}
+.rcv2-measured-routes {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:4px 0;}
+.rcv2-measured-routes b {display:block;color:#b7d7d2;font-size:10px;}
+.rcv2-measured-routes span {display:block;}
+@media (min-height:950px) {#rcv2-measurements {font-size:13px;padding:9px 14px;}.rcv2-measured-routes b,#rcv2-measurements>strong {font-size:11px;}}
+@media (max-height:760px) {#rcv2-forecast {height:124px;}}
+.rcv2-launch-panel {flex-shrink:0;padding:9px 18px;background:#172e38;border-top:1px solid #769ba2;}
+.rcv2-launch-panel p {margin:6px 0 0;font-size:11px;color:#bed4d3;}
+#rcv2-launch {position:relative;display:flex;justify-content:space-between;align-items:center;height:34px;margin-top:7px;background:linear-gradient(90deg,#25444e,#567779,#25444e);border:1px solid #80afb4;border-radius:8px;touch-action:none;cursor:pointer;padding:0 10px;box-sizing:border-box;}
+#rcv2-launch span {font:600 10px ui-monospace,monospace;pointer-events:none;color:#c6dfda;}
+#rcv2-launch-handle {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:27px;height:27px;border:2px solid #d4ffff;border-radius:8px;background:#78bdc7;box-shadow:0 3px 8px #0007;}
+.rcv2 aside {min-height:0;border:1px solid #43646b;border-radius:10px;background:#11222b;padding:12px;display:flex;flex-direction:column;gap:8px;}
+.rcv2 aside p {font-size:11px;line-height:1.35;margin:0;color:#bccfc9;}
+#rcv2-pad {position:relative;align-self:center;width:162px;height:162px;border:1px solid #8da496;border-radius:50%;background:radial-gradient(circle,#35535a,#14292e);touch-action:none;flex-shrink:0;cursor:pointer;}
+#rcv2-stick {position:absolute;left:50%;top:50%;width:35px;height:35px;border:2px solid #e0e6c6;border-radius:50%;transform:translate(-50%,-50%);background:radial-gradient(circle at 30% 20%,#efeaca,#6c867f);box-shadow:0 4px 8px #0008;z-index:2;}
+.rcv2-axis-v {position:absolute;left:50%;top:12%;height:76%;border-left:1px solid #b4c8ac55;}
+.rcv2-axis-h {position:absolute;top:50%;left:12%;width:76%;border-top:1px solid #b4c8ac55;}
+#rcv2-pad i,#rcv2-pad em {position:absolute;left:50%;transform:translateX(-50%);font:700 9px ui-monospace,monospace;color:#a5b5a2;pointer-events:none;}
+#rcv2-pad i {top:10px;} #rcv2-pad em {bottom:10px;}
+#rcv2-speed {font:600 11px ui-monospace,monospace;color:#d5dfc2;}
+.rcv2 button {min-height:30px;font:650 10px ui-monospace,monospace;color:#d7e8db;border:1px solid #749488;background:#263d41;border-radius:5px;cursor:pointer;padding:5px;}
+.rcv2 button:hover {background:#385552;}
+.rcv2 button:disabled {opacity:.45;cursor:default;}
+#rcv2-start {margin-top:auto;background:#c5dbc1;color:#1a312e;font-weight:900;min-height:35px;}
+#rcv2-abandon {color:#d2a7a0;background:#392e31;}
+.rcv2-proxies {display:grid;grid-template-columns:1fr 1fr;gap:5px;}
+.rcv2-proxies div {display:flex;grid-column:1/-1;gap:5px;}
+.rcv2-proxies div button {flex:1;}
+#rcv2-prime {grid-column:1/-1;}
+.rcv2 [hidden] {display:none!important;}
+.rcv2 footer {display:flex;justify-content:space-between;gap:15px;font:650 11px ui-monospace,monospace;color:#a3bbb8;}
+.rcv2 footer>span {font-size:10px;color:#8aa4a5;}
+#rcv2-verdict {position:absolute;left:50%;top:42%;transform:translate(-50%,-50%);padding:25px 32px;min-width:250px;text-align:center;border:2px solid #bd776b;border-radius:12px;background:#382629ee;box-shadow:0 15px 45px #0008;}
+#rcv2-verdict b {display:block;font:900 33px ui-monospace,monospace;letter-spacing:.1em;color:#ffc9a2;}
+#rcv2-verdict span {display:block;margin-top:8px;font-size:13px;}
+#rcv2-retry-attempt {display:block;margin:16px auto 0;min-width:150px;min-height:38px;font-size:13px;background:#c5dbc1;color:#1a312e;font-weight:900;}
+#rcv2-verdict[data-passed="true"] {background:#203d35ee;border-color:#a3dabd;}
+#rcv2-verdict[data-passed="true"] b {color:#c5f8d3;}
+@media (min-height:950px) {.rcv2 {padding:32px;gap:18px;}.rcv2 main{grid-template-columns:minmax(0,1fr) 340px;}.rcv2 aside {padding:18px;gap:10px;}.rcv2 aside p {font-size:14px;}.rcv2 button {min-height:36px;font-size:13px;}#rcv2-pad {width:220px;height:220px;} .rcv2-rule {font-size:16px;} .rcv2 h1 {font-size:34px;}}
+@media (max-height:760px) {.rcv2[data-interaction="simplified"] aside {gap:5px;padding:10px;}.rcv2[data-interaction="simplified"] #rcv2-pad {width:140px;height:140px;}.rcv2[data-interaction="simplified"] .rcv2-legend {font-size:10px;line-height:1.3;}}

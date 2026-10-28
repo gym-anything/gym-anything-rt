@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "consequences_boss_v2",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "parameters": {
+        "witness_count": 2,
+        "echo_count": 4,
+        "lifetime_ms": 14000,
+        "spawn_gap_ms": 15000,
+        "radius": 48,
+        "drift": 170,
+        "bend_ms": 4200,
+        "protected_count": 0
+      },
+      "summary": "2 covenants; 170px nonperiodic lateral drift, 4200ms bends, 48px radius, 0 protected wisps, 15000ms gaps / 14000ms travel. Higher levels combine narrower moving geometry and concurrent threats.",
+      "natural_language": "Choose MERCY or REBUKE for every witness, then START JUDGMENT. Apply each witness's chosen seal to its moving rune before impact. White-ring wisps are protected. Before START JUDGMENT, covenant choices may be changed and preparation gestures may be retried. The first missed cast, broken covenant, protected-wisp strike, judgment impact, or rejected SUBMIT ends the episode; a later attempt cannot pass. Fine threads show upcoming motion. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, or other implementation or hidden-state access. Do not switch to any pre-existing, unrelated, blank, settings or non-task tab. A tab opened by a visible task control is allowed only as part of this task, using its visible controls."
+    },
+    "2": {
+      "label": "easy",
+      "parameters": {
+        "witness_count": 3,
+        "echo_count": 6,
+        "lifetime_ms": 13000,
+        "spawn_gap_ms": 6500,
+        "radius": 45,
+        "drift": 210,
+        "bend_ms": 3800,
+        "protected_count": 1
+      },
+      "summary": "3 covenants; 210px nonperiodic lateral drift, 3800ms bends, 45px radius, 1 protected wisps, 6500ms gaps / 13000ms travel. Higher levels combine narrower moving geometry and concurrent threats.",
+      "natural_language": "Choose MERCY or REBUKE for every witness, then START JUDGMENT. Apply each witness's chosen seal to its moving rune before impact. White-ring wisps are protected. Before START JUDGMENT, covenant choices may be changed and preparation gestures may be retried. The first missed cast, broken covenant, protected-wisp strike, judgment impact, or rejected SUBMIT ends the episode; a later attempt cannot pass. Fine threads show upcoming motion. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, or other implementation or hidden-state access. Do not switch to any pre-existing, unrelated, blank, settings or non-task tab. A tab opened by a visible task control is allowed only as part of this task, using its visible controls."
+    },
+    "3": {
+      "label": "medium",
+      "parameters": {
+        "witness_count": 4,
+        "echo_count": 8,
+        "lifetime_ms": 12000,
+        "spawn_gap_ms": 4000,
+        "radius": 42,
+        "drift": 250,
+        "bend_ms": 3400,
+        "protected_count": 2
+      },
+      "summary": "4 covenants; 250px nonperiodic lateral drift, 3400ms bends, 42px radius, 2 protected wisps, 4000ms gaps / 12000ms travel. Higher levels combine narrower moving geometry and concurrent threats.",
+      "natural_language": "Choose MERCY or REBUKE for every witness, then START JUDGMENT. Apply each witness's chosen seal to its moving rune before impact. White-ring wisps are protected. Before START JUDGMENT, covenant choices may be changed and preparation gestures may be retried. The first missed cast, broken covenant, protected-wisp strike, judgment impact, or rejected SUBMIT ends the episode; a later attempt cannot pass. Fine threads show upcoming motion. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, or other implementation or hidden-state access. Do not switch to any pre-existing, unrelated, blank, settings or non-task tab. A tab opened by a visible task control is allowed only as part of this task, using its visible controls."
+    },
+    "4": {
+      "label": "hard",
+      "parameters": {
+        "witness_count": 5,
+        "echo_count": 10,
+        "lifetime_ms": 11000,
+        "spawn_gap_ms": 2900,
+        "radius": 39,
+        "drift": 280,
+        "bend_ms": 2900,
+        "protected_count": 3
+      },
+      "summary": "5 covenants; 280px nonperiodic lateral drift, 2900ms bends, 39px radius, 3 protected wisps, 2900ms gaps / 11000ms travel. Higher levels combine narrower moving geometry and concurrent threats.",
+      "natural_language": "Choose MERCY or REBUKE for every witness, then START JUDGMENT. Apply each witness's chosen seal to its moving rune before impact. White-ring wisps are protected. Before START JUDGMENT, covenant choices may be changed and preparation gestures may be retried. The first missed cast, broken covenant, protected-wisp strike, judgment impact, or rejected SUBMIT ends the episode; a later attempt cannot pass. Fine threads show upcoming motion. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, or other implementation or hidden-state access. Do not switch to any pre-existing, unrelated, blank, settings or non-task tab. A tab opened by a visible task control is allowed only as part of this task, using its visible controls."
+    },
+    "5": {
+      "label": "very_hard",
+      "parameters": {
+        "witness_count": 6,
+        "echo_count": 12,
+        "lifetime_ms": 10000,
+        "spawn_gap_ms": 2100,
+        "radius": 36,
+        "drift": 300,
+        "bend_ms": 2500,
+        "protected_count": 4
+      },
+      "summary": "6 covenants; 300px nonperiodic lateral drift, 2500ms bends, 36px radius, 4 protected wisps, 2100ms gaps / 10000ms travel. Higher levels combine narrower moving geometry and concurrent threats.",
+      "natural_language": "Choose MERCY or REBUKE for every witness, then START JUDGMENT. Apply each witness's chosen seal to its moving rune before impact. White-ring wisps are protected. Before START JUDGMENT, covenant choices may be changed and preparation gestures may be retried. The first missed cast, broken covenant, protected-wisp strike, judgment impact, or rejected SUBMIT ends the episode; a later attempt cannot pass. Fine threads show upcoming motion. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, or other implementation or hidden-state access. Do not switch to any pre-existing, unrelated, blank, settings or non-task tab. A tab opened by a visible task control is allowed only as part of this task, using its visible controls."
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Acquire a seal and drag it to the witness or moving judgment."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Select a seal, then click the same witness or moving judgment. No automatic interception."
+    }
+  },
+  "real_time": {
+    "observation_window_ms": 240,
+    "frames_per_observation": 4,
+    "play_time_seconds": 180
+  }
+}

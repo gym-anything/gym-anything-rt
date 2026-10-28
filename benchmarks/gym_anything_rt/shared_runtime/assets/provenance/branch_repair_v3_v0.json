@@ -1,0 +1,34 @@
+{
+  "mechanic_id": "branch_repair_v3",
+  "version": "0",
+  "source_anchors": [
+    "XCOG-252",
+    "XCOG-249",
+    "XCOG-253"
+  ],
+  "sources": [
+    {
+      "id": "XCOG-252",
+      "url": "https://flywire.ai/",
+      "use": "split false merges and join false splits in branching fibres"
+    },
+    {
+      "id": "XCOG-249",
+      "url": "https://github.com/seung-lab/eyewire-public-api",
+      "use": "identify continuation using linked volume views"
+    },
+    {
+      "id": "XCOG-253",
+      "url": "https://github.com/google/neuroglancer",
+      "use": "linked XY/XZ/YZ and projected 3D geometry"
+    }
+  ],
+  "transformation": "A new synthetic living-fibre volume deforms continuously. A leading damage front breaks connections and inserts false bridges ahead of independently moving signals. Players repair actual connection geometry while moving port coordinates become stale. This is not scientific connectome simulation, EM imagery, or source data. Existing Branch Repair is preserved. V7 replaces hidden future knot dependence with visibly headed reflecting deformation. Completed stitches reverse horizontal tissue drift; all radii, depth alternatives and five difficulty parameter values remain intact. Signal rates and material progress are displayed. V6 source and results remain historical evidence.",
+  "assets": {
+    "kind": "procedural_canvas",
+    "external_runtime": false,
+    "network_required": false
+  },
+  "evidence": "environments/branch_repair_v3_env/evidence_docs/report.md",
+  "revision": "living-fibre-7"
+}

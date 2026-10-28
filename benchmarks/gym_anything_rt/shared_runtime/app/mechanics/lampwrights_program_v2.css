@@ -1,0 +1,40 @@
+body[data-mechanic="lampwrights-program-v2"] { margin:0; background:#0a1424; color:#e6e5d7; font-family:system-ui,sans-serif; overflow:hidden; }
+body[data-mechanic="lampwrights-program-v2"] #app { width:100vw; min-height:100vh; padding:0; }
+.lv-shell { box-sizing:border-box; height:100vh; padding:18px 24px; display:grid; grid-template-rows:88px minmax(0,1fr) 38px; gap:12px; background:radial-gradient(ellipse at 25% 0,#263e58,#0c1828 75%); }
+.lv-shell * { box-sizing:border-box; }
+.lv-shell header { display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #68889966; }
+.lv-shell small,.lv-routine>span,.lv-scene-head,.lv-lift>div,.lv-shell footer { font:11px ui-monospace,monospace; letter-spacing:.10em; color:#9db4c3; }
+.lv-shell h1 { margin:5px 0; font:32px Georgia,serif; color:#ffdfaa; }
+.lv-shell header p { margin:0; font-size:13px; color:#a8bfcb; }
+#lv-last-command { margin-top:4px; color:#ffe2ab; font:16px/1.25 "Liberation Mono",monospace; }
+.lv-count { text-align:right; }.lv-count b { display:block; color:#ffdfaa; font:30px Georgia,serif; }
+.lv-shell main { min-height:0; display:grid; grid-template-columns:minmax(0,1fr) 364px; gap:18px; }
+.lv-scene { min-width:0; overflow:hidden; border:1px solid #617a8b; background:#182d42; display:grid; grid-template-rows:38px minmax(0,1fr) auto; }
+.lv-scene-head { display:flex; justify-content:space-between; padding:12px 16px; border-bottom:1px solid #567083; }.lv-scene-head b { color:#f5d397; font-size:10px; }
+#lv-world { width:100%; height:100%; object-fit:contain; min-height:0; }
+.lv-shell aside { min-height:0; display:flex; flex-direction:column; gap:10px; padding:12px; border:1px solid #617a8b; background:#122538; }
+.lv-palette { display:grid; grid-template-columns:repeat(8,1fr); gap:4px; }
+.lv-shell button { touch-action:none; user-select:none; border:1px solid #7793a5; color:#e5dfc9; background:#19344a; cursor:pointer; font:12px ui-monospace,monospace; }
+.lv-token { height:57px; padding:4px 0; }.lv-token b { display:block; font:24px Georgia,serif; color:#ffdb9f; }.lv-token span { font-size:8px; }.lv-token[data-selected="true"] { border-color:#ffdfaa; background:#5d5039; }
+.lv-routine>span { display:block; margin-bottom:5px; color:#ffdfaa; }.lv-routine:last-of-type>span { color:#9dd5ff; }
+.lv-routine>div { display:grid; grid-template-columns:repeat(4,1fr); gap:7px; }.lv-slot { height:37px; font-size:24px!important; }
+#lv-dispatch { height:56px; min-height:56px; border:2px solid #e4be80; background:#59442e; color:#ffe4b7; font-weight:700; letter-spacing:.08em; }#lv-dispatch small { display:block; color:#e8cbae; font-size:9px; margin-top:5px; }
+.lv-lift { border-top:1px solid #506d82; padding-top:10px; }.lv-lift>div { display:flex; justify-content:space-between; font-size:9px; }.lv-lift b { color:#82c9ff; }
+#lv-gauge { display:block; width:100%; height:120px; margin-top:5px; }#lv-motion { white-space:pre-wrap; margin:4px 0; color:#adc5d6; font:9px/1.4 ui-monospace,monospace; }
+.lv-rules { margin:0; font:11px/1.55 system-ui,sans-serif; color:#bdd0d8; }.lv-actions { display:flex; gap:8px; margin-top:auto; }.lv-actions button { min-height:38px; flex:1; background:#2b4a5d; }.lv-actions button:disabled { opacity:.4; cursor:default; }
+.lv-physics { margin:0; color:#9db4c3; font:11px/1.5 ui-monospace,monospace; }
+.lv-board { padding:10px 16px 8px; border-top:1px solid #617a8b; background:#102336; font:16px/1.25 "Liberation Mono",monospace; }
+#lv-robot { padding-bottom:8px; color:#ffe2ab; font-weight:bold; }
+.lv-board-heading { display:flex; justify-content:space-between; gap:12px; font-size:12px; color:#a7c3d2; }
+.lv-board table { width:100%; table-layout:auto; border-collapse:collapse; margin-top:6px; white-space:nowrap; }
+.lv-board th { text-align:left; font-size:11px; color:#9eb9c9; padding:3px 5px; }
+.lv-board td { padding:2px 3px; font-variant-numeric:tabular-nums; color:#d8e5e8; }
+.lv-board tbody tr:nth-child(odd) { background:#20384b; }
+.lv-board tr.lv-here td:first-child { background:#6a5332; color:#ffe4b7; font-weight:bold; }
+.lv-board td.lv-blue { color:#82c9ff; }.lv-board td.lv-gold { color:#ffe899; }
+.lv-board p { margin:7px 0 0; font:11px/1.4 system-ui,sans-serif; color:#a9bfcc; }
+.lv-shell footer { display:flex; align-items:center; justify-content:space-between; letter-spacing:0; font-size:10px; border-top:1px solid #567083; }.lv-shell .readout { font-weight:700; color:#e8d8b6; }
+#lv-ghost { position:fixed; z-index:50; pointer-events:none; transform:translate(-50%,-50%); padding:10px 18px; background:#ffdca9cc; color:#182333; border:1px solid white; font:32px Georgia,serif; }
+#lv-verdict { position:fixed; z-index:30; inset:24% 20%; background:#0b1a2aee; border:2px solid #efb88f; display:flex; justify-content:center; align-items:center; flex-direction:column; gap:25px; text-align:center; padding:30px; }#lv-verdict[hidden],#lv-ghost[hidden] { display:none; }#lv-verdict b { font:100px Georgia,serif; color:#ff9c83; }#lv-verdict span { color:#c4d4d8; }#lv-verdict[data-kind="pass"] b { color:#ffe5a0; }
+@media(min-height:850px) { .lv-shell { grid-template-rows:112px minmax(0,1fr) 46px; }.lv-shell main { grid-template-columns:minmax(0,1fr) 420px; }.lv-shell aside { gap:14px; padding:22px; }.lv-rules { font-size:13px; }#lv-gauge { height:130px; }#lv-motion { font-size:11px; }.lv-token { height:70px; }.lv-token span { font-size:11px; }.lv-slot { height:46px; } }
+@media(max-height:849px) { .lv-shell aside { gap:6px; padding:10px; }.lv-shell aside>small { font-size:9px; }.lv-token { height:43px; }.lv-token b { font-size:20px; }.lv-token span { font-size:7px; }.lv-slot { height:29px; }.lv-routine>span { font-size:9px; margin-bottom:3px; }#lv-dispatch { height:45px; min-height:45px; font-size:11px; }#lv-gauge { height:78px; }.lv-lift { padding-top:6px; }.lv-rules { font-size:10px; line-height:1.4; }.lv-physics { font-size:8px; }.lv-actions button { min-height:32px; font-size:10px; }.lv-board { padding:5px 8px; font-size:10px; line-height:1.2; }.lv-board th { font-size:8px; }.lv-board td { padding:1px 3px; }.lv-board-heading { font-size:8px; }.lv-board p { font-size:8px; margin-top:3px; }#lv-robot { padding-bottom:4px; } }

@@ -1,0 +1,20 @@
+body[data-mechanic="zero_g_cable_autopsy_v2"] { background:#0a151e; color:#dde5df; margin:0; }
+body[data-mechanic="zero_g_cable_autopsy_v2"] #app { padding:14px 24px; }
+.zg2 { width:min(1060px,100%); margin:0 auto; font:14px system-ui,sans-serif; border:1px solid #466070; border-radius:15px; background:#152936; overflow:hidden; box-shadow:0 15px 60px #0007; }
+.zg2 header { display:flex; align-items:center; justify-content:space-between; padding:12px 22px; background:#203b4b; }
+.zg2 header p { font-size:10px; letter-spacing:3px; color:#93c6c5; margin:0 0 3px; }
+.zg2 h1 { font:600 24px Georgia,serif; margin:0; color:#f4e7cf; }
+#zg-collars { color:#efbc80; font-size:12px; letter-spacing:1px; }
+.zg2-instruction { text-align:center; padding:9px; color:#c3d9db; font-size:13px; }
+#zg-canvas { display:block; width:860px; max-width:100%; height:auto; margin:auto; touch-action:none; cursor:crosshair; border:1px solid #38566a; border-radius:8px; }
+.zg2-controls { display:flex; gap:9px; align-items:center; justify-content:center; padding:9px 12px 6px; }
+.zg2 button { font:600 10px system-ui; letter-spacing:.6px; padding:11px 12px; color:#eadfc9; border:1px solid #7c8e94; border-radius:5px; background:#314958; cursor:pointer; }
+.zg2 button:disabled { opacity:.45; cursor:default; }
+.zg2 button[data-selected="true"] { background:#626049; border-color:#d7ba7f; }
+#zg-start { background:#296050; border-color:#77b697; }
+#zg-tool { color:#f2c28a; }
+#zg-isolation { font-size:10px; color:#bccdd2; width:143px; text-align:center; }
+#zg-isolation[data-safe="true"] { color:#89f0b8; }
+.zg2-help { color:#a5bec7; font-size:11px; padding:4px 15px 7px; text-align:center; }
+.zg2 .readout { margin:0; border-top:1px solid #466070; padding:8px 15px; background:#0b202b; color:#f1dfb5; text-align:center; font-size:13px; min-height:17px; }
+.zg2 .readout[data-status="error"] { color:#ff8b97; }

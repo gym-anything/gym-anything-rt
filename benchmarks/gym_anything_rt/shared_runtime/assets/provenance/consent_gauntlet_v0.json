@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "consent_gauntlet",
+  "source_anchors": [
+    "BUI-040"
+  ],
+  "sources": [
+    {
+      "title": "Cookie Consent Speed.Run",
+      "url": "https://cookieconsentspeed.run/",
+      "use": "Mechanic reference for generated deceptive consent labels, mixed-polarity toggles, reset traps, and speed-run framing."
+    }
+  ],
+  "assets": [],
+  "notes": "All HTML, CSS, copy, geometry, motion, generation, coupling, grading, and solver code is original. No source visual or code assets are shipped."
+}

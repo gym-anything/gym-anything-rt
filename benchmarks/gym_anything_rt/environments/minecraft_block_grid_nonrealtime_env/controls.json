@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "minecraft_block_grid_nonrealtime",
+  "baseline": {
+    "difficulty": 3,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "parameters": {
+        "lanes": 1,
+        "waves": 2,
+        "speed": 0.34,
+        "speed_variation": 0.24,
+        "velocity_span_ms": 6000,
+        "plug_depth": 1,
+        "wave_gap_ms": 40000
+      },
+      "natural_language": "Excavate every cyan core from the ore racks. Mine teal-seamed stone, preserve gold striped supports, and exit with all ore. EXIT is a final submission. A broken support or rejected EXIT ends the episode. Missed picks and view changes remain allowed. Use only the visible task UI.",
+      "summary": "1 settled track; 1 geometrically sealed stone layer; donor speed parameters retained for matched generation."
+    },
+    "2": {
+      "label": "easy",
+      "parameters": {
+        "lanes": 1,
+        "waves": 2,
+        "speed": 0.48,
+        "speed_variation": 0.35,
+        "velocity_span_ms": 5000,
+        "plug_depth": 1,
+        "wave_gap_ms": 30000
+      },
+      "natural_language": "Excavate every cyan core from the ore racks. Mine teal-seamed stone, preserve gold striped supports, and exit with all ore. EXIT is a final submission. A broken support or rejected EXIT ends the episode. Missed picks and view changes remain allowed. Use only the visible task UI.",
+      "summary": "1 settled track; 1 geometrically sealed stone layer; donor speed parameters retained for matched generation."
+    },
+    "3": {
+      "label": "medium",
+      "parameters": {
+        "lanes": 2,
+        "waves": 2,
+        "speed": 0.58,
+        "speed_variation": 0.4,
+        "velocity_span_ms": 4200,
+        "plug_depth": 1,
+        "wave_gap_ms": 27000
+      },
+      "natural_language": "Excavate every cyan core from the ore racks. Mine teal-seamed stone, preserve gold striped supports, and exit with all ore. EXIT is a final submission. A broken support or rejected EXIT ends the episode. Missed picks and view changes remain allowed. Use only the visible task UI.",
+      "summary": "2 settled tracks; 1 geometrically sealed stone layer; donor speed parameters retained for matched generation."
+    },
+    "4": {
+      "label": "hard",
+      "parameters": {
+        "lanes": 2,
+        "waves": 2,
+        "speed": 0.7,
+        "speed_variation": 0.45,
+        "velocity_span_ms": 3500,
+        "plug_depth": 2,
+        "wave_gap_ms": 24000
+      },
+      "natural_language": "Excavate every cyan core from the ore racks. Mine teal-seamed stone, preserve gold striped supports, and exit with all ore. EXIT is a final submission. A broken support or rejected EXIT ends the episode. Missed picks and view changes remain allowed. Use only the visible task UI.",
+      "summary": "2 settled tracks; 2 geometrically sealed stone layers; donor speed parameters retained for matched generation."
+    },
+    "5": {
+      "label": "very_hard",
+      "parameters": {
+        "lanes": 3,
+        "waves": 2,
+        "speed": 0.82,
+        "speed_variation": 0.5,
+        "velocity_span_ms": 3000,
+        "plug_depth": 2,
+        "wave_gap_ms": 22000
+      },
+      "natural_language": "Excavate every cyan core from the ore racks. Mine teal-seamed stone, preserve gold striped supports, and exit with all ore. EXIT is a final submission. A broken support or rejected EXIT ends the episode. Missed picks and view changes remain allowed. Use only the visible task UI.",
+      "summary": "3 settled tracks; 2 geometrically sealed stone layers; donor speed parameters retained for matched generation."
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Use quarter-turn VIEW buttons and click visible rack faces to mine."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Right-drag the canvas horizontally to turn the view; left-click visible rack faces to mine."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  }
+}

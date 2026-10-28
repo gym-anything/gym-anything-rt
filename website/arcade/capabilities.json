@@ -1,0 +1,490 @@
+{
+ "source": "Gym-Anything-RT paper, Table: Minigames in Gym-Anything-RT. A capability is listed when the real-time minigame requires it at some difficulty level.",
+ "labels": {
+  "3D": "3D visual understanding",
+  "T": "Temporal reasoning",
+  "R": "Reasoning and planning",
+  "E": "Exploration and interface understanding"
+ },
+ "games": {
+  "after_hours_at_the_reliquary_v2_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "anthill_front_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "apothecary_dead_reckoning_v3_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "ballast_lantern_env": [
+   "T",
+   "R"
+  ],
+  "bandaged_rose_window_v3_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "blind_dice_courier_v2_env": [
+   "3D",
+   "T",
+   "R"
+  ],
+  "board_game_captcha_v2_env": [
+   "T",
+   "R"
+  ],
+  "bomb_manual_from_hell_v2_env": [
+   "T",
+   "R"
+  ],
+  "branch_repair_v3_env": [
+   "3D",
+   "T",
+   "R",
+   "E"
+  ],
+  "bureaucratic_signature_trap_v3_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "cell_gatekeeper_v2_env": [
+   "T",
+   "R"
+  ],
+  "charter_of_the_nine_cantons_v3_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "circle_limit_twist_v2_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "clockbeat_catacomb_v2_env": [
+   "T",
+   "R"
+  ],
+  "clockwork_clutch_safe_v2_env": [
+   "T",
+   "R"
+  ],
+  "clockwork_doppelganger_customs_v3_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "cloudpost_circuit_env": [
+   "3D",
+   "T",
+   "R"
+  ],
+  "cloudstep_caddie_v2_env": [
+   "3D",
+   "T",
+   "R"
+  ],
+  "code_to_diagram_captcha_v3_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "collision_chimes_v2_env": [
+   "T",
+   "R"
+  ],
+  "concertina_courier_v2_env": [
+   "T",
+   "R"
+  ],
+  "consent_gauntlet_env": [
+   "T",
+   "R"
+  ],
+  "consequences_boss_v2_env": [
+   "T",
+   "R"
+  ],
+  "coordinates_by_another_name_v3_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "courtesy_junction_env": [
+   "T",
+   "R"
+  ],
+  "crackglaze_crossing_v3_env": [
+   "T",
+   "R"
+  ],
+  "craftcha_alchemy_bench_v2_env": [
+   "T",
+   "R"
+  ],
+  "crash_deadline_hovercar_env": [
+   "T",
+   "R"
+  ],
+  "crater_walker_v3_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "cursor_constellation_hunt_v3_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "cursor_lens_reveal_env": [
+   "T",
+   "E"
+  ],
+  "dead_mans_switch_v2_env": [
+   "T",
+   "R"
+  ],
+  "downsky_causeway_v2_env": [
+   "3D",
+   "T",
+   "R"
+  ],
+  "elastic_membrane_sorter_v2_env": [
+   "T",
+   "R"
+  ],
+  "elbow_engine_v2_env": [
+   "T",
+   "R"
+  ],
+  "ember_anvil_v3_env": [
+   "3D",
+   "T",
+   "R",
+   "E"
+  ],
+  "facet_lantern_v3_env": [
+   "3D",
+   "T",
+   "R",
+   "E"
+  ],
+  "firewatch_fold_v3_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "five_second_rule_env": [
+   "T",
+   "R"
+  ],
+  "flat_prisoner_v2_env": [
+   "3D",
+   "T",
+   "R",
+   "E"
+  ],
+  "flip_gate_cascade_v3_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "fluke_census_v3_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "forced_perspective_moving_day_v2_env": [
+   "3D",
+   "T",
+   "R"
+  ],
+  "four_pane_pilgrimage_v3_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "funeral_ritual_v2_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "hearthlift_courier_v3_env": [
+   "3D",
+   "T",
+   "R",
+   "E"
+  ],
+  "hologram_silhouette_foundry_v2_env": [
+   "3D",
+   "T",
+   "R"
+  ],
+  "horizon_relay_v2_env": [
+   "T",
+   "R"
+  ],
+  "impossible_ecology_v2_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "impossible_panorama_env": [
+   "3D",
+   "T",
+   "R",
+   "E"
+  ],
+  "jigsaw_slider_alignment_v3_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "lampwrights_program_v2_env": [
+   "3D",
+   "T",
+   "R"
+  ],
+  "lantern_loft_v2_env": [
+   "3D",
+   "T",
+   "R"
+  ],
+  "lanternfin_dive_v2_env": [
+   "3D",
+   "T",
+   "R"
+  ],
+  "lanternwing_roundup_env": [
+   "3D",
+   "T",
+   "R"
+  ],
+  "last_carbon_isles_v2_env": [
+   "T",
+   "R"
+  ],
+  "letter_rapids_v2_env": [
+   "T",
+   "R"
+  ],
+  "lidar_blacksite_v2_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "living_scaffold_v3_env": [
+   "T",
+   "R"
+  ],
+  "magnetic_stripe_purgatory_v3_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "microgame_gauntlet_env": [
+   "T",
+   "R"
+  ],
+  "minecraft_block_grid_v2_env": [
+   "3D",
+   "T",
+   "R",
+   "E"
+  ],
+  "motion_only_ghost_jigsaw_v2_env": [
+   "T"
+  ],
+  "museum_of_lost_gestures_v2_env": [
+   "T",
+   "R"
+  ],
+  "occlusion_shell_swindle_v2_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "parallel_grillmaster_v2_env": [
+   "T",
+   "R"
+  ],
+  "pearl_lattice_v2_env": [
+   "3D",
+   "T",
+   "R"
+  ],
+  "photograph_eats_the_room_v2_env": [
+   "3D",
+   "T",
+   "R",
+   "E"
+  ],
+  "pocket_locksmith_v3_env": [
+   "3D",
+   "T",
+   "R",
+   "E"
+  ],
+  "polycube_parcel_v2_env": [
+   "3D",
+   "T",
+   "R",
+   "E"
+  ],
+  "polyrhythm_customs_v2_env": [
+   "T",
+   "R"
+  ],
+  "popup_exorcist_v3_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "rayglass_vault_v2_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "recursive_dollhouse_smuggling_v2_env": [
+   "T",
+   "R"
+  ],
+  "reflow_vitrine_v3_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "relation_prompt_grounding_v3_env": [
+   "3D",
+   "T",
+   "R",
+   "E"
+  ],
+  "reload_interruption_v2_env": [
+   "T",
+   "R"
+  ],
+  "reveal_to_identify_v2_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "reverse_identity_gate_env": [
+   "T",
+   "R"
+  ],
+  "ribbon_switchboard_v3_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "rising_causeway_v2_env": [
+   "3D",
+   "T",
+   "R"
+  ],
+  "rorschach_fixed_rubric_v3_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "rotate_wrong_thing_upright_v3_env": [
+   "3D",
+   "T",
+   "R",
+   "E"
+  ],
+  "rotating_keyboard_v2_env": [
+   "3D",
+   "T"
+  ],
+  "shadow_crime_lab_v3_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "slot_reel_capture_env": [
+   "T"
+  ],
+  "surreal_apple_on_tree_grid_v2_env": [
+   "3D",
+   "T",
+   "R",
+   "E"
+  ],
+  "surveyors_toybox_v2_env": [
+   "3D",
+   "T",
+   "R"
+  ],
+  "temporal_memory_first_change_v3_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "three_camera_claw_machine_v2_env": [
+   "3D",
+   "T",
+   "R"
+  ],
+  "tiny_fps_customs_v2_env": [
+   "3D",
+   "T",
+   "R",
+   "E"
+  ],
+  "tomographic_baggage_surgery_v3_env": [
+   "3D",
+   "T",
+   "R",
+   "E"
+  ],
+  "top_face_dice_arithmetic_v2_env": [
+   "3D",
+   "T",
+   "R"
+  ],
+  "trace_shape_without_walls_v3_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "two_lamp_dyeworks_v3_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "unlabeled_drawer_v2_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "unwatched_wing_v3_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "wonky_text_hostile_rendering_v3_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "wrong_number_v2_env": [
+   "T",
+   "R",
+   "E"
+  ],
+  "zero_g_cable_autopsy_v2_env": [
+   "T",
+   "R"
+  ]
+ }
+}

@@ -1,0 +1,20 @@
+{
+  "mechanic_id": "downsky_causeway_v2",
+  "source_anchors": [
+    "XAGT-254"
+  ],
+  "source_record": "outputs/selection_round4_20260906/inputs/dashboard/data/entries/20h.json#XAGT-254",
+  "source_urls": [
+    "https://github.com/google-deepmind/lab/tree/master/game_scripts/levels/contributed/dmlab30",
+    "https://github.com/google-deepmind/lab/blob/master/game_scripts/levels/contributed/dmlab30/README.md",
+    "https://arxiv.org/abs/1612.03801"
+  ],
+  "transformation": "Skymaze one-way descending platforms become seven procedurally drifting terraces. A continuously forward-moving walker steers laterally with inertia, inherits moving-deck velocity and falls under gravity. A visible side section and bounded forecast expose height and motion; no jumping or upward recovery.",
+  "assets": "Independent procedural canvas artwork. No copied source code, textures, geometry or runtime.",
+  "original_environment_preserved": "downsky_causeway_env",
+  "source_license": "DeepMind Lab GPL-2.0; idea only, no source code vendored.",
+  "limitations": [
+    "Reduced kinematic walker and contact model, not a full rigid-body simulator.",
+    "Human and paid-model calibration pending."
+  ]
+}

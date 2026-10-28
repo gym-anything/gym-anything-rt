@@ -1,0 +1,60 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gym-anything-rt"
+version = "0.1.0"
+description = "Gym-Anything-RT: real-time minigames for evaluating vision-language agents, built on Gym-Anything"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Pranjal Aggarwal"}, {name = "Sean Welleck"}]
+dependencies = [
+    # The real-time evaluation stack landed in Gym-Anything with PR #81.
+    "gym-anything[agents] @ git+https://github.com/cmu-l3/gym-anything.git@d444c61372f7858fe7d83e63a781cc86c4f4dfc0",
+]
+
+[project.optional-dependencies]
+# Sandweave is the backend used for every evaluation in the paper.
+sandweave = [
+    "gym-anything[sandweave] @ git+https://github.com/cmu-l3/gym-anything.git@d444c61372f7858fe7d83e63a781cc86c4f4dfc0",
+    # Native screenshots need the capture interval that Sandweave 0.2.46 added.
+    "sandweave[desktop]>=0.2.46; python_version >= '3.11'",
+]
+# The Qwen agents reach the model through Tinker.
+qwen = ["httpx>=0.27", "tinker", "transformers>=4.57"]
+test = ["pytest>=8.0"]
+
+[project.urls]
+Homepage = "https://gym-anything.github.io/gym-anything-rt/"
+Repository = "https://github.com/gym-anything/gym-anything-rt"
+
+[project.entry-points."gym_anything.runners"]
+gym_anything_rt = "gym_anything_rt.runner:RealTimeRunner"
+
+[project.scripts]
+gym-anything-rt-evaluate = "gym_anything_rt.evaluate:main"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+# One distribution, two import roots:
+#   gym_anything_rt             the runtime: runner, clock control, agents, evaluation CLI
+#   benchmarks.gym_anything_rt  the benchmark: environments, game runtime, splits, solvers
+# The benchmark folder has no benchmarks/__init__.py, so it shares the
+# benchmarks namespace with any other installed corpus such as CUA-World.
+[tool.hatch.build.targets.wheel]
+packages = ["src/gym_anything_rt"]
+exclude = ["**/__pycache__", "**/*.pyc"]
+# Editable installs import both roots straight from the checkout.
+dev-mode-dirs = [".", "src"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"benchmarks/gym_anything_rt" = "benchmarks/gym_anything_rt"
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "benchmarks/gym_anything_rt", "extras", "docs", "tests", "README.md", "LICENSE", "AGENTS.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

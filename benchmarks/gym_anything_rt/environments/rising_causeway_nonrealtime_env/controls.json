@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "rising_causeway_nonrealtime",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Half width 1.38; landing half width 1.5; sway 2.4; span 5800 ms. Deliberate controls advance fixed support, wind and momentum steps; waiting preserves the current state. Spring aim commits an unsteerable flight into the moving delivery bay.",
+      "parameters": {
+        "half_width": 1.38,
+        "landing_half_width": 1.5,
+        "sway": 2.4,
+        "span_ms": 5800,
+        "wind": 0.3,
+        "steering": 4.8,
+        "drag": 1.8,
+        "cruise": 1.1,
+        "stair_height": 0.9,
+        "bend": 0.8
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Half width 1.22; landing half width 1.32; sway 2.6; span 5800 ms. Deliberate controls advance fixed support, wind and momentum steps; waiting preserves the current state. Spring aim commits an unsteerable flight into the moving delivery bay.",
+      "parameters": {
+        "half_width": 1.22,
+        "landing_half_width": 1.32,
+        "sway": 2.6,
+        "span_ms": 5800,
+        "wind": 0.45,
+        "steering": 4.6,
+        "drag": 1.7,
+        "cruise": 1.15,
+        "stair_height": 1.0,
+        "bend": 1.0
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Half width 1.06; landing half width 1.14; sway 2.8; span 5800 ms. Deliberate controls advance fixed support, wind and momentum steps; waiting preserves the current state. Spring aim commits an unsteerable flight into the moving delivery bay.",
+      "parameters": {
+        "half_width": 1.06,
+        "landing_half_width": 1.14,
+        "sway": 2.8,
+        "span_ms": 5800,
+        "wind": 0.65,
+        "steering": 4.4,
+        "drag": 1.6,
+        "cruise": 1.2,
+        "stair_height": 1.1,
+        "bend": 1.2
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Half width 0.9; landing half width 0.96; sway 3.0; span 5400 ms. Deliberate controls advance fixed support, wind and momentum steps; waiting preserves the current state. Spring aim commits an unsteerable flight into the moving delivery bay.",
+      "parameters": {
+        "half_width": 0.9,
+        "landing_half_width": 0.96,
+        "sway": 3.0,
+        "span_ms": 5400,
+        "wind": 0.85,
+        "steering": 4.2,
+        "drag": 1.5,
+        "cruise": 1.25,
+        "stair_height": 1.2,
+        "bend": 1.4
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Half width 0.76; landing half width 0.82; sway 3.2; span 4600 ms. Deliberate controls advance fixed support, wind and momentum steps; waiting preserves the current state. Spring aim commits an unsteerable flight into the moving delivery bay.",
+      "parameters": {
+        "half_width": 0.76,
+        "landing_half_width": 0.82,
+        "sway": 3.2,
+        "span_ms": 4600,
+        "wind": 1.05,
+        "steering": 4.0,
+        "drag": 1.4,
+        "cruise": 1.3,
+        "stair_height": 1.3,
+        "bend": 1.6
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Click the same analog drive pad to set thrust. Side buttons extend/retract red, choose the yellow high end, and prime the blue contact spring. Click the spring rail to aim and release a loaded coil."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Drag the analog stick from its current handle. Click the scene red, yellow end and blue actuator surfaces; right-click red to retract. Drag the spring handle; pointer release fires a loaded coil."
+    }
+  },
+  "real_time": {
+    "observation_window_ms": 400,
+    "frames_per_observation": 4,
+    "play_time_seconds": 90
+  }
+}

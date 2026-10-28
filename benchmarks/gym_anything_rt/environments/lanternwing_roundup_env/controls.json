@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "lanternwing_roundup",
+  "baseline": {
+    "difficulty": 4,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Secure one slow lanternwing in an unobstructed sanctuary with a wide contact radius.",
+      "natural_language": "Catch the one marked lanternwing. Use the open sanctuary, aim its future position, and throw a gravity-driven capsule.",
+      "parameters": {
+        "target_count": 1,
+        "decoy_count": 0,
+        "obstacle_count": 0,
+        "target_speed": 0.006,
+        "vertical_motion": 0.1,
+        "capture_radius": 0.78,
+        "ammo": 3,
+        "max_ticks": 230,
+        "projectile_speed": 15.0,
+        "gravity": 8.4
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Secure one moving wing while distinguishing one non-wanted decoy and one low obelisk.",
+      "natural_language": "Round up the marked lanternwing. Distinguish it from the decoy, read its height and depth, then lead the capsule through the arc.",
+      "parameters": {
+        "target_count": 1,
+        "decoy_count": 1,
+        "obstacle_count": 1,
+        "target_speed": 0.011,
+        "vertical_motion": 0.18,
+        "capture_radius": 0.68,
+        "ammo": 4,
+        "max_ticks": 250,
+        "projectile_speed": 14.5,
+        "gravity": 8.8
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Secure two wings at different depths and heights with a decoy, moving flight windows, and two obelisks.",
+      "natural_language": "Secure both wanted lanternwings. Compare their height and depth, lead each moving target through gravity, and avoid the decoy.",
+      "parameters": {
+        "target_count": 2,
+        "decoy_count": 1,
+        "obstacle_count": 2,
+        "target_speed": 0.017,
+        "vertical_motion": 0.28,
+        "capture_radius": 0.58,
+        "ammo": 6,
+        "max_ticks": 285,
+        "projectile_speed": 14.0,
+        "gravity": 9.2
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "The reference roundup: three wanted wings, two decoys, three sanctuary obstructions, finite capsules, and live height/depth motion.",
+      "natural_language": "Round up the three marked lanternwings in the terraced sanctuary. Choose a useful launch position, estimate range and height, lead each moving wing, and throw gravity-driven capsules.",
+      "parameters": {
+        "target_count": 3,
+        "decoy_count": 2,
+        "obstacle_count": 3,
+        "target_speed": 0.023,
+        "vertical_motion": 0.42,
+        "capture_radius": 0.5,
+        "ammo": 8,
+        "max_ticks": 320,
+        "projectile_speed": 13.5,
+        "gravity": 9.6
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Secure four wings among three decoys while their arcs change rapidly in height and depth around five obstructions.",
+      "natural_language": "Secure all four marked lanternwings. Reposition when a flight path is blocked, distinguish decoys, and lead the faster wings in three dimensions.",
+      "parameters": {
+        "target_count": 4,
+        "decoy_count": 3,
+        "obstacle_count": 5,
+        "target_speed": 0.032,
+        "vertical_motion": 0.6,
+        "capture_radius": 0.42,
+        "ammo": 11,
+        "max_ticks": 360,
+        "projectile_speed": 13.0,
+        "gravity": 10.0
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Use labelled movement, look-step, and capsule buttons. Each proxy produces the same one-tick movement, camera change, and 3D throw as the direct surface."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Use held WASD or arrow movement, drag the first-person canvas for mouse-look, and click the canvas to throw."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 640,
+    "frames_per_observation": 6
+  }
+}

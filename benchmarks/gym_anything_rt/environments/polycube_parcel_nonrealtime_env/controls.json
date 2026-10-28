@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "polycube_parcel_nonrealtime",
+  "baseline": {"difficulty": 5, "interaction": "full", "real_time": "live"},
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Five pieces start seated; two cavities remain. Broad alignment halos and a short action-triggered motor settle allow more correction time.",
+      "parameters": {"preplaced_count": 5, "tolerance": 0.4, "dock_ms": 1700, "span_ms": 4200, "amplitude": [0.85, 0.72, 0.78], "motor_gain": 64.0, "motor_damping": 16.0},
+      "natural_language": "Fill the fixed 3×3×3 parcel with all seven rigid Soma pieces. Select and rotate pieces, inspect the volume and depth slices, then release the cradle. Use the visible X/Y motor plane, Z depth rail, and the existing seating control. Each deliberate target action runs a deterministic inertial motor settle, while the cradle layout remains fixed when you wait. Stay inside the alignment halo on all three axes during the action-triggered seating transition. The first missed seat, collision, lost alignment or rejected certification ends the episode. Certify only when all 27 cells are filled. Use only screenshots and visible controls in the task webpage."
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Four pieces start seated; three interacting cavities remain. The action-triggered settle is longer and alignment is slightly narrower.",
+      "parameters": {"preplaced_count": 4, "tolerance": 0.37, "dock_ms": 1900, "span_ms": 3900, "amplitude": [0.9, 0.78, 0.82], "motor_gain": 64.0, "motor_damping": 16.0},
+      "natural_language": "Fill the fixed 3×3×3 parcel with all seven rigid Soma pieces. Select and rotate pieces, inspect the volume and depth slices, then release the cradle. Use the visible X/Y motor plane, Z depth rail, and the existing seating control. Each deliberate target action runs a deterministic inertial motor settle, while the cradle layout remains fixed when you wait. Stay inside the alignment halo on all three axes during the action-triggered seating transition. The first missed seat, collision, lost alignment or rejected certification ends the episode. Certify only when all 27 cells are filled. Use only screenshots and visible controls in the task webpage."
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Two pieces start seated; plan five placements around the fixed partial assembly. Three-axis action-settled alignment needs more accuracy.",
+      "parameters": {"preplaced_count": 2, "tolerance": 0.33, "dock_ms": 2100, "span_ms": 3500, "amplitude": [0.94, 0.82, 0.87], "motor_gain": 64.0, "motor_damping": 16.0},
+      "natural_language": "Fill the fixed 3×3×3 parcel with all seven rigid Soma pieces. Select and rotate pieces, inspect the volume and depth slices, then release the cradle. Use the visible X/Y motor plane, Z depth rail, and the existing seating control. Each deliberate target action runs a deterministic inertial motor settle, while the cradle layout remains fixed when you wait. Stay inside the alignment halo on all three axes during the action-triggered seating transition. The first missed seat, collision, lost alignment or rejected certification ends the episode. Certify only when all 27 cells are filled. Use only screenshots and visible controls in the task webpage."
+    },
+    "4": {
+      "label": "hard",
+      "summary": "All seven pieces start loose: solve a full 3D exact cover while using the action-triggered motor settle.",
+      "parameters": {"preplaced_count": 0, "tolerance": 0.3, "dock_ms": 2300, "span_ms": 3200, "amplitude": [0.97, 0.85, 0.9], "motor_gain": 64.0, "motor_damping": 16.0},
+      "natural_language": "Fill the fixed 3×3×3 parcel with all seven rigid Soma pieces. Select and rotate pieces, inspect the volume and depth slices, then release the cradle. Use the visible X/Y motor plane, Z depth rail, and the existing seating control. Each deliberate target action runs a deterministic inertial motor settle, while the cradle layout remains fixed when you wait. Stay inside the alignment halo on all three axes during the action-triggered seating transition. The first missed seat, collision, lost alignment or rejected certification ends the episode. Certify only when all 27 cells are filled. Use only screenshots and visible controls in the task webpage."
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "All seven pieces start loose. The narrowest halos and longest action-triggered seating period require sustained planning and inertial correction.",
+      "parameters": {"preplaced_count": 0, "tolerance": 0.27, "dock_ms": 2500, "span_ms": 2900, "amplitude": [1.0, 0.9, 0.95], "motor_gain": 64.0, "motor_damping": 16.0},
+      "natural_language": "Fill the fixed 3×3×3 parcel with all seven rigid Soma pieces. Select and rotate pieces, inspect the volume and depth slices, then release the cradle. Use the visible X/Y motor plane, Z depth rail, and the existing seating control. Each deliberate target action runs a deterministic inertial motor settle, while the cradle layout remains fixed when you wait. Stay inside the alignment halo on all three axes during the action-triggered seating transition. The first missed seat, collision, lost alignment or rejected certification ends the episode. Certify only when all 27 cells are filled. Use only screenshots and visible controls in the task webpage."
+    }
+  },
+  "interaction": {
+    "full": {"implemented": true, "summary": "Grab and drag the visible X/Y ring and depth handle to set motor targets; Space commits seating. Clicks away from the handles do not aim. Motor settling is action-triggered and the cradle layout stays fixed while waiting."},
+    "simplified": {"implemented": true, "summary": "Clicks set the same X/Y and Z motor targets; a visible SEAT button replaces Space. No auto-aim, tracking or snapping to a valid packing is supplied."}
+  },
+  "real_time": {"play_time_seconds": 600, "observation_window_ms": 240, "frames_per_observation": 4},
+  "capabilities": {"visual_understanding": "3D", "temporal_understanding_and_memory": true, "reasoning_and_planning": true, "exploration_and_interface_understanding": true}
+}

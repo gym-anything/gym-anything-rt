@@ -1,0 +1,25 @@
+{
+  "name": "Elbow Engine",
+  "original_mechanic": "elbow_engine_v2",
+  "mechanic_id": "elbow_engine_nonrealtime",
+  "source_anchors": [
+    "XAGT-307",
+    "XAGT-340"
+  ],
+  "source_manifest": "shared_runtime/assets/provenance/elbow_engine_v0.json",
+  "transformation": "The donor acrobot, load, controls, profiles, seed content, hold rule, and retry consequences are preserved. Idle wall time is inert; each deliberate torque command advances up to 12 existing 20 ms ticks synchronously.",
+  "validation_status": "automated_checks_passed_isolated_headless_browser_evidence_passed",
+  "human_validation": "not_run",
+  "model_evaluation": "not_requested",
+  "capability_labels": "The counterpart reuses donor descriptive labels for the scene and controls; no legacy capability-audit certification is claimed for this new mechanic.",
+  "automated_validation": {
+    "deterministic_test_file": "tests/test_elbow_engine_nonrealtime.py",
+    "deterministic_test_result": "15 passed; all ten profile/interaction configurations and seeds 1, 17, 101",
+    "task_local_materializer": "passed; shared materializer invoked with the required output root and all ten profile capability configurations repaired and verified",
+    "standard_settings_loader": "passed; counterpart registry and env runner options match donor 180/240/4 settings",
+    "independent_grader_negative_checks": "passed",
+    "exported_verifier": "passed for browser-captured result payload and independent replay",
+    "headless_browser": "passed: fresh-profile Chromium rendered D5 full, two 15-second delayed checks, success, negative retry, and screenshots",
+    "evidence": "environments/elbow_engine_nonrealtime_env/evidence_docs/nonrealtime-counterpart.json"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "description": "Wire commissioned polygons on an action-stepped three-dimensional lantern. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Do not interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only as part of the task, using their visible controls.",
+  "difficulty": "hard",
+  "env_id": "gym_anything_rt.facet_lantern_v3_nonrealtime_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/facet_lantern_v3_nonrealtime_d4_full_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/facet_lantern_v3_nonrealtime_d4_full_seed_0001/setup_task.sh"
+  },
+  "id": "facet_lantern_v3_nonrealtime_d4_full_seed_0001@0.2",
+  "init": {
+    "max_steps": 300,
+    "reward_type": "sparse",
+    "timeout_sec": 300
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/facet_lantern_v3_v0.json",
+    "benchmark": "gym_anything_rt",
+    "capabilities": [
+      "visual understanding: 3D",
+      "temporal understanding and memory",
+      "reasoning and planning"
+    ],
+    "capability_configuration": {
+      "difficulty": 4,
+      "interaction": "full"
+    },
+    "control_condition": {
+      "difficulty": 4,
+      "difficulty_parameters": {
+        "facets": 5,
+        "gust": 0.55,
+        "initial_edges": 2,
+        "pitch_rate": 0.09,
+        "ring_vertices": 8,
+        "roll_rate": 0.045,
+        "span_ms": 5000,
+        "stud_radius": 18,
+        "yaw_rate": 0.22
+      },
+      "interaction": "full",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "facet_lantern_v3_nonrealtime",
+    "variant_count": 1000000000000,
+    "variant_count_kind": "seeded V3 geometry labels, graph commissions and smooth angular trajectories with action-stepped settling"
+  },
+  "name": "Facet Lantern V3 · Difficulty 4 · Full Interaction",
+  "natural_language": "Close every commissioned triangular pane at each settled view of the 3D lantern. Only the listed wires are allowed. Launch, then hover over current gold studs without pressing a button to read their concealed letters. Learned letters stay visible; use them to choose the commissioned endpoints. Inspection is safe and waiting is safe and does not advance the lantern. Use safe empty-space misses or completed gestures to reveal later settled views. Pale rings mark the prior settled position and cyan diamonds preview the next fixed step. A wrong wire or incomplete certification ends this episode. Empty-space misses are safe. Each completed gesture advances one fixed settled step; waiting leaves the current view unchanged. Drag from a gold source stud and release on its partner in the current settled view. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Do not interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only as part of the task, using their visible controls.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "linux",
+    "browser",
+    "visual-puzzle",
+    "gym-anything-rt",
+    "facet_lantern",
+    "3d"
+  ],
+  "version": "0.2"
+}

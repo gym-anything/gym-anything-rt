@@ -1,0 +1,86 @@
+{
+  "description": "Secure a moving luminous specimen and a ballast crate with one inertial lantern cage. Holding raises the cage with increasing speed; releasing lets it fall while momentum persists. Solve only from screenshots and visible controls in the task webpage. Programs in an isolated agent sandbox may process screenshots and issue mouse and keyboard actions through the provided gateway. Do not access the task environment through Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, the task terminal or shell, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs.",
+  "difficulty": "hard",
+  "env_id": "gym_anything_rt.ballast_lantern_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/ballast_lantern_d4_simplified_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/ballast_lantern_d4_simplified_seed_0001/setup_task.sh"
+  },
+  "id": "ballast_lantern_d4_simplified_seed_0001@0.2",
+  "init": {
+    "max_steps": 220,
+    "reward_type": "sparse",
+    "timeout_sec": 720
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/ballast_lantern_v0.json",
+    "benchmark": "gym_anything_rt",
+    "capabilities": [
+      "visual understanding: 2D",
+      "temporal understanding and memory",
+      "reasoning and planning"
+    ],
+    "capability_configuration": {
+      "difficulty": 4,
+      "interaction": "simplified"
+    },
+    "control_condition": {
+      "difficulty": 4,
+      "difficulty_parameters": {
+        "boundary_restitution_denominator": 3,
+        "boundary_restitution_numerator": 1,
+        "cage_half_height": 800,
+        "capture_drain_per_tick": 14,
+        "capture_fill_per_tick": 24,
+        "capture_initial": 3400,
+        "capture_max": 10000,
+        "crate_fill_per_tick": 34,
+        "crate_half_height": 260,
+        "crate_meter_max": 3400,
+        "crate_min_separation": 2200,
+        "crate_spawn_tick_max": 108,
+        "crate_spawn_tick_min": 92,
+        "darter_interval_max": 36,
+        "darter_interval_min": 24,
+        "drag_denominator": 100,
+        "drag_numerator": 95,
+        "gravity_accel": 4,
+        "max_ticks": 1000,
+        "motion_law_pool": [
+          "steady_sinker",
+          "darter",
+          "floater",
+          "oscillator"
+        ],
+        "show_trend_beacon": false,
+        "specimen_accel": 2,
+        "specimen_half_height": 180,
+        "specimen_speed_max": 38,
+        "specimen_speed_min": 28,
+        "thrust_accel": 5,
+        "tick_ms": 50,
+        "trail_samples": 3
+      },
+      "interaction": "simplified",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "ballast_lantern"
+  },
+  "name": "Ballast Lantern · Difficulty 4 · Simplified Interaction",
+  "natural_language": "Secure both the drifting specimen and the ballast crate with one lantern cage. Click HAUL to drive upward and COAST to let the cage fall; each setting stays active until changed. Infer the specimen's drift from recent motion, lead the cage through its retained momentum, and divide time between targets without letting the specimen meter empty. Fill the crate before the specimen meter completes. Solve only from screenshots and visible controls in the task webpage. Programs in an isolated agent sandbox may process screenshots and issue mouse and keyboard actions through the provided gateway. Do not access the task environment through Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, the task terminal or shell, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "real-time",
+    "second-order-control",
+    "motion-law-inference",
+    "resource-allocation"
+  ],
+  "version": "0.2"
+}

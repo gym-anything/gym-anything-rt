@@ -1,0 +1,33 @@
+body[data-mechanic="popup-exorcist-v3-nonrealtime"] { background: radial-gradient(ellipse at 20% 15%,#25434d,#080e1c 70%); color:#eaeaf3; font-family:ui-sans-serif, sans-serif; }
+body[data-mechanic="popup-exorcist-v3-nonrealtime"] .app-shell {padding:12px; min-height:100vh; display:grid; place-items:center;}
+.pe2-root {width:1240px; max-width:calc(100vw - 24px); background:#171a2c; border:1px solid #617488; box-shadow:0 26px 100px #0009;}
+.pe2-head {height:68px; display:flex; align-items:center; justify-content:space-between; padding:0 22px; border-bottom:2px solid #8f82c1; background:linear-gradient(110deg,#30263f,#152b36);}
+.pe2-head p {margin:0 0 4px; color:#b4aecb; font:10px monospace; letter-spacing:2px;}
+.pe2-head h1 {margin:0; font:30px Georgia,serif; color:#f5efe6;}
+.pe2-mark {display:flex; gap:12px; align-items:center; color:#bef5d4; font-size:32px;}
+.pe2-mark small {font:10px monospace; letter-spacing:2px;}
+.pe2-rules {padding:10px 20px; font:13px/1.5 ui-sans-serif,sans-serif; color:#ded9e9;}
+.pe2-rules b {color:#b8efc4;}
+.pe2-rules span {color:#b2bdcf; font-size:12px;}
+.pe2-stage {position:relative; display:flex; margin:0 18px; border:1px solid #4e6370; overflow:hidden;}
+.pe2-canvas {display:block; width:calc(100% - 226px); height:auto; touch-action:none; user-select:none; cursor:crosshair;}
+.pe2-lookahead {box-sizing:border-box; width:226px; flex:0 0 226px; padding:15px 8px; background:#142536; border-left:1px solid #4e6370;}
+.pe2-lookahead b {font:12px monospace; color:#b8efc4;}
+.pe2-forecast {display:block; width:208px; height:92px; margin:14px 0; border:1px solid #536778;}
+.pe2-lookahead span {font:12px/1.6 monospace; color:#b5bfce;}
+.pe2-controls {display:flex; align-items:center; gap:17px; padding:10px 18px; background:#102333; border-top:1px solid #4e6370;}
+.pe2-controls button {min-height:37px; padding:0 14px; color:#cde5e8; background:#243b4b; border:1px solid #7791a1; cursor:pointer; font:12px monospace;}
+.pe2-controls button:hover {background:#345465;}
+.pe2-controls button:disabled {opacity:.45; cursor:default;}
+.pe2-controls button[hidden] {display:none;}
+.pe2-controls small {display:block; color:#9fb0c0; font:9px monospace; letter-spacing:1px;}
+.pe2-controls b {font:18px monospace; color:#b8efc4;}
+.pe2-life {flex:1; height:6px; background:#28344b;}
+.pe2-life i {display:block; height:100%; background:#b6a5db;}
+.pe2-root > .readout {height:30px; padding:6px 18px; box-sizing:border-box; color:#b8efc4; font:11px monospace;}
+.pe2-root > .readout[data-status="error"] {color:#ff9f92;}
+.pe2-verdict {position:absolute; inset:0; z-index:10; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:22px; background:#071121df; text-align:center;}
+.pe2-verdict[hidden] {display:none;}
+.pe2-verdict strong {border:3px double currentColor; padding:14px 40px; color:#b8efc4; font:64px Georgia,serif; letter-spacing:8px;}
+.pe2-verdict span {max-width:700px; color:#d1d0dd; font:14px monospace;}
+.pe2-verdict[data-status="error"] strong {color:#ff9f92;}

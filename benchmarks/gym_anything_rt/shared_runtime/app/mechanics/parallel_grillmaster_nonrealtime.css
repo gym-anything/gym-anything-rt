@@ -1,0 +1,12 @@
+.rt-grill { width: min(1150px, 98vw); }
+.rt-grill-rules { padding: 10px 22px; color: #ffe3b0; font: 14px/1.45 ui-sans-serif, sans-serif; background: #291c15; }
+.rt-grill .grill-stage { min-height: 360px; padding: 12px; }
+.rt-grill .grill-zone { align-content: start; min-height: 360px; }
+.rt-grill .grill-food { min-height: 108px; touch-action: none; user-select: none; }
+.rt-grill-progress { position: relative; height: 9px; width: 85%; background: #20150e; border: 1px solid #8b6946; margin-top: 5px; }
+.rt-grill-progress i { display: block; height: 100%; background: #c58345; }
+.rt-grill-progress b { position: absolute; right: 0; top: 0; bottom: 0; background: #ffe37b88; border-left: 2px solid #ffe37b; }
+.rt-grill-heat { font: 10px/1.5 ui-monospace, monospace; color: #ffe3b0; }
+.rt-grill .interaction-head { padding-block: 8px; }
+.rt-grill .interaction-foot { padding: 12px; }
+.rt-grill .interaction-head h1 { font-size: 30px; }

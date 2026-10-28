@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "impossible_ecology_v2",
+  "baseline": {
+    "difficulty": 4,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Two organisms use two clearly separated global-field signatures. Large sanctuaries, strong primary responses, and forgiving momentum make the calibration-to-control loop easy to identify and correct.",
+      "natural_language": "Calibrate two fields. Shepherd both organisms into their matching sanctuaries.",
+      "parameters": {
+        "field_count": 2,
+        "organism_count": 2,
+        "primary_response_min": 1.4,
+        "primary_response_max": 1.56,
+        "secondary_response_min": 0.03,
+        "secondary_response_max": 0.07,
+        "target_radius_min": 164,
+        "target_radius_max": 174,
+        "sanctuary_radius": 48,
+        "obstacle_radius": 34,
+        "damping": 0.8,
+        "max_speed": 4.3,
+        "capture_speed": 5.5,
+        "capture_margin": 0.7,
+        "current_acceleration": 0.1,
+        "current_segment_ticks": 110,
+        "calibration_field_ms": 850
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Three organisms share two fields, so one chosen field visibly moves several bodies at once. The player must separate three response signatures but still has broad sanctuaries and slow, recoverable motion.",
+      "natural_language": "Calibrate two fields. Shepherd three organisms into their matching sanctuaries.",
+      "parameters": {
+        "field_count": 2,
+        "organism_count": 3,
+        "primary_response_min": 1.34,
+        "primary_response_max": 1.48,
+        "secondary_response_min": 0.06,
+        "secondary_response_max": 0.12,
+        "target_radius_min": 164,
+        "target_radius_max": 174,
+        "sanctuary_radius": 44,
+        "obstacle_radius": 40,
+        "damping": 0.81,
+        "max_speed": 4.5,
+        "capture_speed": 5.2,
+        "capture_margin": 0.8,
+        "current_acceleration": 0.12,
+        "current_segment_ticks": 100,
+        "calibration_field_ms": 760
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Four organisms require distinguishing three fields and four signed responses. Every intervention moves multiple uncaptured organisms around a wider solid nursery, so captures must be planned to reduce later coupling.",
+      "natural_language": "Calibrate three fields. Shepherd four organisms into their matching sanctuaries.",
+      "parameters": {
+        "field_count": 3,
+        "organism_count": 4,
+        "primary_response_min": 1.25,
+        "primary_response_max": 1.39,
+        "secondary_response_min": 0.08,
+        "secondary_response_max": 0.16,
+        "target_radius_min": 164,
+        "target_radius_max": 174,
+        "sanctuary_radius": 41,
+        "obstacle_radius": 44,
+        "damping": 0.82,
+        "max_speed": 4.65,
+        "capture_speed": 5.0,
+        "capture_margin": 0.9,
+        "current_acceleration": 0.15,
+        "current_segment_ticks": 90,
+        "calibration_field_ms": 690
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Five organisms carry five distinct field-sign signatures, share three global fields and one solid obstacle, and lock through closed-loop pointer correction. Bounded changing currents remain active during release and calibration. The L4 assignment preserves the original coupling and target profile, with human recalibration pending for V2.",
+      "natural_language": "Calibrate three fields. Shepherd five organisms into matching sanctuaries.",
+      "parameters": {
+        "field_count": 3,
+        "organism_count": 5,
+        "primary_response_min": 1.18,
+        "primary_response_max": 1.34,
+        "secondary_response_min": 0.11,
+        "secondary_response_max": 0.19,
+        "target_radius_min": 164,
+        "target_radius_max": 174,
+        "sanctuary_radius": 38,
+        "obstacle_radius": 48,
+        "damping": 0.83,
+        "max_speed": 4.8,
+        "capture_speed": 5.0,
+        "capture_margin": 1.0,
+        "current_acceleration": 0.18,
+        "current_segment_ticks": 80,
+        "calibration_field_ms": 620
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "All six field-sign signatures are active at once. The smaller sanctuaries, larger central obstacle, faster persistent inertia, shorter calibration display, and lower capture-speed tolerance make the order and continual correction of captures materially consequential.",
+      "natural_language": "Calibrate three fields. Shepherd all six coupled organisms into matching sanctuaries while ambient currents keep them moving.",
+      "parameters": {
+        "field_count": 3,
+        "organism_count": 6,
+        "primary_response_min": 1.08,
+        "primary_response_max": 1.24,
+        "secondary_response_min": 0.15,
+        "secondary_response_max": 0.25,
+        "initial_radius_min": 86,
+        "initial_radius_max": 102,
+        "target_radius_min": 162,
+        "target_radius_max": 174,
+        "sanctuary_radius": 34,
+        "obstacle_radius": 56,
+        "damping": 0.87,
+        "max_speed": 5.2,
+        "capture_speed": 3.8,
+        "capture_margin": 1.5,
+        "current_acceleration": 0.22,
+        "current_segment_ticks": 65,
+        "calibration_field_ms": 520
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Choose a global field, then hold and move on a visible scaled coordinate pad. The pad maps every pointer position directly to the same arena field-lure coordinate and trajectory available through the full arena surface."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Choose a global field and directly hold and move the pointer in the arena to place the shared field lure while every uncaptured organism responds."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 150,
+    "observation_window_ms": 800,
+    "frames_per_observation": 6
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "recursive_dollhouse_smuggling_nonrealtime",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "parameters": {
+        "parcel_count": 1,
+        "opening": 28,
+        "belt_speed": 1.5,
+        "drift": 11,
+        "wind": 2,
+        "stiffness": 7,
+        "damping": 4
+      },
+      "summary": "1 concurrent parcel; 28-unit openings, 1.5-unit/s belt, seeded wind and drifting shutters. Each completed tether action advances one fixed transport segment; waiting is stable.",
+      "natural_language": "Steer every parcel through both growing frames and the drifting exit. Track each visible opening and correct the inertial pull after deliberate tether actions. One collision ends the episode."
+    },
+    "2": {
+      "label": "easy",
+      "parameters": {
+        "parcel_count": 1,
+        "opening": 27,
+        "belt_speed": 1.8,
+        "drift": 11,
+        "wind": 3,
+        "stiffness": 7,
+        "damping": 4
+      },
+      "summary": "1 concurrent parcel; 27-unit openings, 1.8-unit/s belt, seeded wind and drifting shutters. Each completed tether action advances one fixed transport segment; waiting is stable.",
+      "natural_language": "Steer every parcel through both growing frames and the drifting exit. Track each visible opening and correct the inertial pull after deliberate tether actions. One collision ends the episode."
+    },
+    "3": {
+      "label": "medium",
+      "parameters": {
+        "parcel_count": 2,
+        "opening": 27,
+        "belt_speed": 2,
+        "drift": 11,
+        "wind": 4,
+        "stiffness": 6,
+        "damping": 3.5
+      },
+      "summary": "2 concurrent parcels; 27-unit openings, 2-unit/s belt, seeded wind and drifting shutters. Each completed tether action advances one fixed transport segment; waiting is stable.",
+      "natural_language": "Steer every parcel through both growing frames and the drifting exit. Track each visible opening and correct the inertial pull after deliberate tether actions. One collision ends the episode."
+    },
+    "4": {
+      "label": "hard",
+      "parameters": {
+        "parcel_count": 2,
+        "opening": 24,
+        "belt_speed": 2.2,
+        "drift": 13,
+        "wind": 5,
+        "stiffness": 5.5,
+        "damping": 3.2
+      },
+      "summary": "2 concurrent parcels; 24-unit openings, 2.2-unit/s belt, seeded wind and drifting shutters. Each completed tether action advances one fixed transport segment; waiting is stable.",
+      "natural_language": "Steer every parcel through both growing frames and the drifting exit. Track each visible opening and correct the inertial pull after deliberate tether actions. One collision ends the episode."
+    },
+    "5": {
+      "label": "very_hard",
+      "parameters": {
+        "parcel_count": 3,
+        "opening": 22,
+        "belt_speed": 2.3,
+        "drift": 14,
+        "wind": 6,
+        "stiffness": 5,
+        "damping": 2.8
+      },
+      "summary": "3 concurrent parcels; 22-unit openings, 2.3-unit/s belt, seeded wind and drifting shutters. Each completed tether action advances one fixed transport segment; waiting is stable.",
+      "natural_language": "Steer every parcel through both growing frames and the drifting exit. Track each visible opening and correct the inertial pull after deliberate tether actions. One collision ends the episode."
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Click a tether rail to select its pull target; no snapping or aiming assistance."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Drag the colored tether ring to set the same pull target."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 120,
+    "observation_window_ms": 400,
+    "frames_per_observation": 4
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "living_scaffold_v3",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "parameters": {
+        "bridges": 1,
+        "gravity": 400,
+        "wind": 18,
+        "wind_span_ms": 6500,
+        "blossom_radius": 38,
+        "blossom_sway": 10,
+        "blossom_span_ms": 7000,
+        "coupling": 0,
+        "slew": 0.48
+      },
+      "summary": "One bridge; wide blossom and gentle, slowly changing wind.",
+      "natural_language_by_interaction": {
+        "full": "Restore every moving blossom. Click the leaf sheaths to inspect what each living bridge needs; open sheaths stay open. Drag each creature head vertically; the head follows at limited speed. Wake the garden when ready. Inspection remains available while pods keep rolling in changing wind. A fallen pod or incomplete Check garden ends this attempt. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs.",
+        "simplified": "Restore every moving blossom. Click the leaf sheaths to inspect what each living bridge needs; open sheaths stay open. Click a height on each colored rail; the head follows at limited speed. Wake the garden when ready. Inspection remains available while pods keep rolling in changing wind. A fallen pod or incomplete Check garden ends this attempt. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs."
+      }
+    },
+    "2": {
+      "label": "easy",
+      "parameters": {
+        "bridges": 1,
+        "gravity": 450,
+        "wind": 25,
+        "wind_span_ms": 6000,
+        "blossom_radius": 34,
+        "blossom_sway": 16,
+        "blossom_span_ms": 6200,
+        "coupling": 0,
+        "slew": 0.42
+      },
+      "summary": "Narrower moving blossom and stronger wind require finer speed and endpoint corrections.",
+      "natural_language_by_interaction": {
+        "full": "Restore every moving blossom. Click the leaf sheaths to inspect what each living bridge needs; open sheaths stay open. Drag each creature head vertically; the head follows at limited speed. Wake the garden when ready. Inspection remains available while pods keep rolling in changing wind. A fallen pod or incomplete Check garden ends this attempt. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs.",
+        "simplified": "Restore every moving blossom. Click the leaf sheaths to inspect what each living bridge needs; open sheaths stay open. Click a height on each colored rail; the head follows at limited speed. Wake the garden when ready. Inspection remains available while pods keep rolling in changing wind. A fallen pod or incomplete Check garden ends this attempt. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs."
+      }
+    },
+    "3": {
+      "label": "medium",
+      "parameters": {
+        "bridges": 2,
+        "gravity": 450,
+        "wind": 28,
+        "wind_span_ms": 5700,
+        "blossom_radius": 32,
+        "blossom_sway": 18,
+        "blossom_span_ms": 5800,
+        "coupling": 0,
+        "slew": 0.42
+      },
+      "summary": "Two rolling pods require interleaved control of separate moving destinations.",
+      "natural_language_by_interaction": {
+        "full": "Restore every moving blossom. Click the leaf sheaths to inspect what each living bridge needs; open sheaths stay open. Drag each creature head vertically; the head follows at limited speed. Wake the garden when ready. Inspection remains available while pods keep rolling in changing wind. A fallen pod or incomplete Check garden ends this attempt. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs.",
+        "simplified": "Restore every moving blossom. Click the leaf sheaths to inspect what each living bridge needs; open sheaths stay open. Click a height on each colored rail; the head follows at limited speed. Wake the garden when ready. Inspection remains available while pods keep rolling in changing wind. A fallen pod or incomplete Check garden ends this attempt. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs."
+      }
+    },
+    "4": {
+      "label": "hard",
+      "parameters": {
+        "bridges": 2,
+        "gravity": 500,
+        "wind": 34,
+        "wind_span_ms": 5200,
+        "blossom_radius": 30,
+        "blossom_sway": 20,
+        "blossom_span_ms": 5200,
+        "coupling": 0.16,
+        "slew": 0.38
+      },
+      "summary": "Two bridges share root recoil; moving either alters the other\u2019s slope.",
+      "natural_language_by_interaction": {
+        "full": "Restore every moving blossom. Click the leaf sheaths to inspect what each living bridge needs; open sheaths stay open. Drag each creature head vertically; the head follows at limited speed. Wake the garden when ready. Inspection remains available while pods keep rolling in changing wind. A fallen pod or incomplete Check garden ends this attempt. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs.",
+        "simplified": "Restore every moving blossom. Click the leaf sheaths to inspect what each living bridge needs; open sheaths stay open. Click a height on each colored rail; the head follows at limited speed. Wake the garden when ready. Inspection remains available while pods keep rolling in changing wind. A fallen pod or incomplete Check garden ends this attempt. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs."
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "parameters": {
+        "bridges": 3,
+        "gravity": 550,
+        "wind": 40,
+        "wind_span_ms": 4800,
+        "blossom_radius": 28,
+        "blossom_sway": 22,
+        "blossom_span_ms": 4800,
+        "coupling": 0.24,
+        "slew": 0.34
+      },
+      "summary": "Three simultaneous bridges share recoil, with faster changing wind, narrower blossoms and slower head response.",
+      "natural_language_by_interaction": {
+        "full": "Restore every moving blossom. Click the leaf sheaths to inspect what each living bridge needs; open sheaths stay open. Drag each creature head vertically; the head follows at limited speed. Wake the garden when ready. Inspection remains available while pods keep rolling in changing wind. A fallen pod or incomplete Check garden ends this attempt. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs.",
+        "simplified": "Restore every moving blossom. Click the leaf sheaths to inspect what each living bridge needs; open sheaths stay open. Click a height on each colored rail; the head follows at limited speed. Wake the garden when ready. Inspection remains available while pods keep rolling in changing wind. A fallen pod or incomplete Check garden ends this attempt. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs."
+      }
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Grab and drag a visible creature head vertically; pointer capture retains the grab during motion. Click a leaf sheath to inspect its concealed fruit; the same persistent information is available in both modes, including during live rolling."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Click the colored rail at the desired height; identical slew, body growth, wind, pod physics and blossom contact. Click a leaf sheath to inspect its concealed fruit; the same persistent information is available in both modes, including during live rolling."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  }
+}

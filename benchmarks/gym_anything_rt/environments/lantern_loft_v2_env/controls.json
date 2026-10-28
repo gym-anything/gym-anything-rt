@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "lantern_loft_v2",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "2 moving lofts; 104px planks; 0 elevation changes; coupling 0.0. Gust force 190, span 4200 ms.",
+      "parameters": {
+        "moving_decks": 2,
+        "port_width": 104,
+        "gust_force": 190,
+        "gust_span_ms": 4200,
+        "coupling": 0.0,
+        "crossing_ms": 2800,
+        "stair_changes": 0,
+        "false_ports": false
+      },
+      "natural_language": "Carry the lantern across drifting stairwalks to the beacon. Shift the lofts with their winches, walk along the stairs, and steer through each moving connection. Green planks enter a loft; gold planks leave it. Heights must meet. Wind and rope forces continue during crossing and dragging. A fall or END / CERTIFY before delivery ends the episode; later attempts cannot earn a pass. Inspection, winch edits, blocked movement and unplanked Cross feedback remain available."
+    },
+    "2": {
+      "label": "easy",
+      "summary": "2 moving lofts; 94px planks; 1 elevation changes; coupling 0.0. Gust force 225, span 3800 ms.",
+      "parameters": {
+        "moving_decks": 2,
+        "port_width": 94,
+        "gust_force": 225,
+        "gust_span_ms": 3800,
+        "coupling": 0.0,
+        "crossing_ms": 2700,
+        "stair_changes": 1,
+        "false_ports": false
+      },
+      "natural_language": "Carry the lantern across drifting stairwalks to the beacon. Shift the lofts with their winches, walk along the stairs, and steer through each moving connection. Green planks enter a loft; gold planks leave it. Heights must meet. Wind and rope forces continue during crossing and dragging. A fall or END / CERTIFY before delivery ends the episode; later attempts cannot earn a pass. Inspection, winch edits, blocked movement and unplanked Cross feedback remain available."
+    },
+    "3": {
+      "label": "medium",
+      "summary": "3 moving lofts; 84px planks; 2 elevation changes; coupling 0.0. Gust force 255, span 3400 ms.",
+      "parameters": {
+        "moving_decks": 3,
+        "port_width": 84,
+        "gust_force": 255,
+        "gust_span_ms": 3400,
+        "coupling": 0.0,
+        "crossing_ms": 2600,
+        "stair_changes": 2,
+        "false_ports": true
+      },
+      "natural_language": "Carry the lantern across drifting stairwalks to the beacon. Shift the lofts with their winches, walk along the stairs, and steer through each moving connection. Green planks enter a loft; gold planks leave it. Heights must meet. Wind and rope forces continue during crossing and dragging. A fall or END / CERTIFY before delivery ends the episode; later attempts cannot earn a pass. Inspection, winch edits, blocked movement and unplanked Cross feedback remain available."
+    },
+    "4": {
+      "label": "hard",
+      "summary": "3 moving lofts; 76px planks; 3 elevation changes; coupling 0.18. Gust force 285, span 3000 ms.",
+      "parameters": {
+        "moving_decks": 3,
+        "port_width": 76,
+        "gust_force": 285,
+        "gust_span_ms": 3000,
+        "coupling": 0.18,
+        "crossing_ms": 2500,
+        "stair_changes": 3,
+        "false_ports": true
+      },
+      "natural_language": "Carry the lantern across drifting stairwalks to the beacon. Shift the lofts with their winches, walk along the stairs, and steer through each moving connection. Green planks enter a loft; gold planks leave it. Heights must meet. Wind and rope forces continue during crossing and dragging. A fall or END / CERTIFY before delivery ends the episode; later attempts cannot earn a pass. Inspection, winch edits, blocked movement and unplanked Cross feedback remain available."
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "4 moving lofts; 68px planks; 4 elevation changes; coupling 0.28. Gust force 315, span 2600 ms.",
+      "parameters": {
+        "moving_decks": 4,
+        "port_width": 68,
+        "gust_force": 315,
+        "gust_span_ms": 2600,
+        "coupling": 0.28,
+        "crossing_ms": 2400,
+        "stair_changes": 4,
+        "false_ports": true
+      },
+      "natural_language": "Carry the lantern across drifting stairwalks to the beacon. Shift the lofts with their winches, walk along the stairs, and steer through each moving connection. Green planks enter a loft; gold planks leave it. Heights must meet. Wind and rope forces continue during crossing and dragging. A fall or END / CERTIFY before delivery ends the episode; later attempts cannot earn a pass. Inspection, winch edits, blocked movement and unplanked Cross feedback remain available."
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Drag a winch handle to a detent; hold arrow keys to steer; Space walks across the forward plank."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Click equivalent winch detents; hold visible walk buttons; click Cross. No auto-aim or automatic alignment."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  }
+}

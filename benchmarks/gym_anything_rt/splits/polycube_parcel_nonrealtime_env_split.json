@@ -1,0 +1,66 @@
+{
+  "env_folder": "polycube_parcel_nonrealtime_env",
+  "all_tasks": [
+    "polycube_parcel_nonrealtime_d1_full_seed_0001",
+    "polycube_parcel_nonrealtime_d1_simplified_seed_0001",
+    "polycube_parcel_nonrealtime_d2_full_seed_0001",
+    "polycube_parcel_nonrealtime_d2_simplified_seed_0001",
+    "polycube_parcel_nonrealtime_d3_full_seed_0001",
+    "polycube_parcel_nonrealtime_d3_simplified_seed_0001",
+    "polycube_parcel_nonrealtime_d4_full_seed_0001",
+    "polycube_parcel_nonrealtime_d4_simplified_seed_0001",
+    "polycube_parcel_nonrealtime_d5_full_seed_0001",
+    "polycube_parcel_nonrealtime_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "polycube_parcel_nonrealtime_d1_full_seed_0001",
+    "polycube_parcel_nonrealtime_d1_simplified_seed_0001",
+    "polycube_parcel_nonrealtime_d2_full_seed_0001",
+    "polycube_parcel_nonrealtime_d2_simplified_seed_0001",
+    "polycube_parcel_nonrealtime_d3_full_seed_0001",
+    "polycube_parcel_nonrealtime_d3_simplified_seed_0001",
+    "polycube_parcel_nonrealtime_d4_full_seed_0001",
+    "polycube_parcel_nonrealtime_d4_simplified_seed_0001",
+    "polycube_parcel_nonrealtime_d5_full_seed_0001",
+    "polycube_parcel_nonrealtime_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "polycube_parcel_nonrealtime_d5_full_seed_0001"
+    ],
+    "full": [
+      "polycube_parcel_nonrealtime_d1_full_seed_0001",
+      "polycube_parcel_nonrealtime_d2_full_seed_0001",
+      "polycube_parcel_nonrealtime_d3_full_seed_0001",
+      "polycube_parcel_nonrealtime_d4_full_seed_0001",
+      "polycube_parcel_nonrealtime_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "polycube_parcel_nonrealtime_d1_simplified_seed_0001",
+      "polycube_parcel_nonrealtime_d2_simplified_seed_0001",
+      "polycube_parcel_nonrealtime_d3_simplified_seed_0001",
+      "polycube_parcel_nonrealtime_d4_simplified_seed_0001",
+      "polycube_parcel_nonrealtime_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "polycube_parcel_nonrealtime_d1_full_seed_0001",
+      "polycube_parcel_nonrealtime_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "polycube_parcel_nonrealtime_d2_full_seed_0001",
+      "polycube_parcel_nonrealtime_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "polycube_parcel_nonrealtime_d3_full_seed_0001",
+      "polycube_parcel_nonrealtime_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "polycube_parcel_nonrealtime_d4_full_seed_0001",
+      "polycube_parcel_nonrealtime_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "polycube_parcel_nonrealtime_d5_full_seed_0001",
+      "polycube_parcel_nonrealtime_d5_simplified_seed_0001"
+    ]
+  }
+}

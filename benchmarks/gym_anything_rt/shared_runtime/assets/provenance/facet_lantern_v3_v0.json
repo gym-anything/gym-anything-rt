@@ -1,0 +1,19 @@
+{
+  "mechanic_id": "facet_lantern_v3",
+  "version": "0",
+  "source_anchors": [
+    "TRW-010"
+  ],
+  "source": {
+    "title": "Vertex Connector",
+    "creator": "magnitudoOrg / Oliver Güther",
+    "year": 2015,
+    "survey_record": "TRW-010",
+    "survey_root": "outputs/selection_round4_20260906/inputs",
+    "url": "https://play.js13kgames.com/vertex-connector/",
+    "repository": "https://github.com/magnitudoOrg/vertex-connector"
+  },
+  "transformation": "Original bipyramid wirework commission; replaces pointer-stoppable rotation with nonrepeating autonomous 3D yaw, pitch and roll. Adds visible bounded motion trails/forecasts, geometrically replayed endpoints and immutable terminal failure. Retains vertex identity, polygon closure and source scoring formula. Source used player ownership; this task explicitly uses target wires rather than copying the two-player game.",
+  "asset_policy": "Original Canvas geometry and CSS only; no downloaded source code or presentation assets are shipped.",
+  "license_notes": "Source records and read-only downloads are archived in raw evidence. All game implementation and art are original."
+}

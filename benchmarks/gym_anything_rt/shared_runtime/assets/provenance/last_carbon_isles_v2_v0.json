@@ -1,0 +1,17 @@
+{
+  "mechanic_id": "last_carbon_isles_v2",
+  "source_anchors": [
+    "XART-290"
+  ],
+  "sources": [
+    {
+      "id": "XART-290",
+      "title": "Green New Deal Simulator",
+      "url": "https://www.molleindustria.org/GND/",
+      "browser_url": "https://molleindustria.itch.io/green-new-deal-simulator"
+    }
+  ],
+  "transformation": "Original fictional archipelago with shared live clean-grid dispatch, changing cargo loads, inertial supply and finite batteries. Preserves source regional policy/resource/employment loop; replaces turn-based choices with continuous control.",
+  "assets": "Original HTML/CSS geometry, typography and symbols. No source assets copied.",
+  "license": "Repository license; source is an idea anchor only."
+}

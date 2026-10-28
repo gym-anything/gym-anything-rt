@@ -1,0 +1,45 @@
+body[data-mechanic="charter-census-v2"] { margin:0; background:#132d37; }
+body[data-mechanic="charter-census-v2"] .app-shell {display:block;width:100vw;height:100vh;min-height:0;margin:0;padding:0;}
+.charter-census-v2 { position:relative;box-sizing:border-box;width:100vw;height:100vh;overflow:hidden;display:grid;grid-template-rows:88px 58px minmax(0,1fr) 58px;color:#eedeaf;background:radial-gradient(ellipse at top left,#254952,#122b35);font:14px Georgia,serif; }
+.charter-census-v2 * {box-sizing:border-box;}
+.charter-census-v2 header {display:flex;justify-content:space-between;align-items:center;padding:10px 28px;border-bottom:1px solid #a98e54;}
+.charter-census-v2 small {font:700 10px monospace;letter-spacing:.11em;color:#bba878;}
+.charter-census-v2 h1 {font:32px Georgia,serif;margin:3px 0;}
+.charter-census-v2 p {margin:0;color:#d3c094;font:12px monospace;}
+.census-seal-art {width:65px;height:65px;border:3px double #cfb172;border-radius:50%;text-align:center;padding:6px;font:27px Georgia,serif;line-height:23px;}
+.census-seal-art small {font-size:8px;}
+.census-rules {padding:10px 28px;color:#e4d6b3;font:13px/1.35 system-ui,sans-serif;max-width:1540px;}
+.charter-census-v2 main {padding:10px 18px;display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:16px;min-height:0;}
+.census-atlas {min-height:0;background:#e8dbb4;padding:12px;display:grid;grid-template-rows:minmax(0,1fr) 28px;border:3px double #ab8d51;box-shadow:0 8px 25px #0005;}
+#census-map {display:block;width:100%;height:100%;background:#eaddb9;touch-action:none;user-select:none;border:1px solid #846d44;cursor:crosshair;}
+.census-label {font:700 17px Georgia,serif;fill:#34473e;opacity:.7;pointer-events:none;}
+.census-folio {cursor:pointer;}
+.census-folio path {fill:#f7ebcf;stroke:#806d44;stroke-width:1.5;}
+.census-folio text {fill:#624723;font:700 10px monospace;pointer-events:none;}
+.census-folio[data-filed="true"] path {fill:#dae8c9;stroke:#43694d;}
+.census-folio[data-filed="true"] text {fill:#33523c;}
+.census-legend {display:flex;align-items:center;gap:22px;color:#655639;font:11px monospace;}
+.census-legend span:last-child {margin-left:auto;font-size:10px;}
+.charter-census-v2 aside {display:flex;flex-direction:column;gap:10px;padding:15px 12px;background:#f0e2bc;border:1px solid #c3a763;color:#314642;min-height:0;}
+.charter-census-v2 aside>small {color:#806d44;text-align:center;}
+.census-ledger {display:grid;grid-template-rows:repeat(9,1fr);gap:3px;flex:1;min-height:0;}
+.census-ledger article {display:grid;grid-template-columns:34px 1fr auto;gap:5px;align-items:center;padding:4px 7px;border:1px solid #a98e55;background:#f7ebcf;font:12px monospace;}
+.census-ledger article[data-valid="false"] {background:#ead0bc;}
+.census-ledger article[data-valid="false"] b {color:#a44232;}
+.census-ledger article[data-valid="true"] b {color:#25694c;}
+.census-ledger em {font:bold 10px monospace;font-style:normal;}
+.census-seat-panel {display:grid;gap:6px;border-top:1px solid #ac9562;padding:10px 0 0;text-align:center;}
+.census-seat-panel small {color:#806d44;font-size:9px;}
+.census-seat-panel b {font:bold 10px monospace;}
+#census-phase {font-size:9px;min-height:24px;line-height:1.3;}
+.census-progress {height:18px;background:#c1b48d;border:1px solid #8a7850;}
+.census-progress i {display:block;height:100%;background:#498973;}
+#census-charge {text-align:center;font:17px monospace;}
+.charter-census-v2 footer {display:flex;align-items:center;gap:12px;padding:10px 22px;border-top:1px solid #ab9055;font:11px monospace;}
+.charter-census-v2 footer .readout {margin-left:auto;}
+.charter-census-v2 button {background:#dbc28a;color:#18343b;border:2px solid #a98e55;min-width:150px;height:38px;font:bold 11px monospace;cursor:pointer;}
+.charter-census-v2 button:disabled {opacity:.45;cursor:default;}
+.census-verdict {position:absolute;left:20%;right:20%;top:40%;padding:35px 18px;border:5px double #946d3b;background:#f7e9c9f5;box-shadow:0 15px 50px #0009;text-align:center;font:bold 32px Georgia,serif;color:#8f4034;pointer-events:none;}
+.census-verdict[data-outcome="pass"] {color:#28684f;border-color:#28684f;}
+.census-verdict[hidden] {display:none;}
+@media(min-width:1600px) {.charter-census-v2 main {grid-template-columns:minmax(0,1fr) 290px;}.census-ledger article {font-size:16px;padding:8px 12px;}.census-ledger em {font-size:13px;}.census-rules {font-size:16px;}.census-seat-panel b {font-size:14px;}.charter-census-v2 aside {gap:16px;padding:20px;}.census-label {font-size:19px;}}

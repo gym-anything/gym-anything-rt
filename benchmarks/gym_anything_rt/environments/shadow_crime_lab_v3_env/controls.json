@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "shadow_crime_lab_v3",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "One broad shadow cap among three widely separated specimen responses; slow motion and strong camera damping.",
+      "parameters": {
+        "bench_count": 1,
+        "objects_per_bench": 3,
+        "radius": 24,
+        "angular_speed": 0.45,
+        "lamp_span_ms": 7000,
+        "lag_ms": 1500,
+        "damping": 22
+      },
+      "natural_language": "Test each lamp on its rail; one shadow follows your shift late. Track its dashed end cap with the aperture. Build all exposures together to 6s; lost contact fades and can recover. An honest exposure, incomplete filing or the 120s scan limit ends the episode."
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Smaller specimen caps, faster motion and a shorter response lag require closer tracking.",
+      "parameters": {
+        "bench_count": 1,
+        "objects_per_bench": 3,
+        "radius": 22,
+        "angular_speed": 0.54,
+        "lamp_span_ms": 5500,
+        "lag_ms": 1200,
+        "damping": 20
+      },
+      "natural_language": "Test each lamp on its rail; one shadow follows your shift late. Track its dashed end cap with the aperture. Build all exposures together to 6s; lost contact fades and can recover. An honest exposure, incomplete filing or the 120s scan limit ends the episode."
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Four possible shadow responses share the changing lamp; faster lamp motion and weaker camera damping.",
+      "parameters": {
+        "bench_count": 1,
+        "objects_per_bench": 4,
+        "radius": 20,
+        "angular_speed": 0.62,
+        "lamp_span_ms": 4200,
+        "lag_ms": 1000,
+        "damping": 18
+      },
+      "natural_language": "Test each lamp on its rail; one shadow follows your shift late. Track its dashed end cap with the aperture. Build all exposures together to 6s; lost contact fades and can recover. An honest exposure, incomplete filing or the 120s scan limit ends the episode."
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Two separate changing lamps and cameras require maintaining two fading exposures at once.",
+      "parameters": {
+        "bench_count": 2,
+        "objects_per_bench": 4,
+        "radius": 20,
+        "angular_speed": 0.62,
+        "lamp_span_ms": 4200,
+        "lag_ms": 1000,
+        "damping": 18
+      },
+      "natural_language": "Test each lamp on its rail; one shadow follows your shift late. Track its dashed end cap with the aperture. Build all exposures together to 6s; lost contact fades and can recover. An honest exposure, incomplete filing or the 120s scan limit ends the episode."
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Ten independently moving specimen responses, two different lamp histories, small end caps and weaker damping require simultaneous diagnosis, prediction and correction.",
+      "parameters": {
+        "bench_count": 2,
+        "objects_per_bench": 5,
+        "radius": 17,
+        "angular_speed": 0.72,
+        "lamp_span_ms": 3200,
+        "lag_ms": 800,
+        "damping": 15
+      },
+      "natural_language": "Test each lamp on its rail; one shadow follows your shift late. Track its dashed end cap with the aperture. Build all exposures together to 6s; lost contact fades and can recover. An honest exposure, incomplete filing or the 120s scan limit ends the episode."
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Drag a live lamp along its test rail to inspect shadow response; drag each camera ring to aim. Existing inertia, geometry and film evolution are preserved. Repeat lamp tests freely; every response record remains selectable without pausing the scene."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Click a live lamp test rail to inspect the same response; click elsewhere in a table to aim its camera. The same lamp shift, geometry, inertia and film evolution apply. Repeat lamp tests freely; every response record remains selectable without pausing the scene."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 150,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  }
+}

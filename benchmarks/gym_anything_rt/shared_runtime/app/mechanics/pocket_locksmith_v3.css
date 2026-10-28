@@ -1,0 +1,40 @@
+body[data-mechanic="pocket-locksmith-v3"] { margin:0; overflow:hidden; background:#07111e; color:#e9eff4; font-family:ui-sans-serif,system-ui,sans-serif; }
+body[data-mechanic="pocket-locksmith-v3"] #app { padding:0; width:100vw; height:100vh; }
+.pk-game { position:fixed; inset:0; box-sizing:border-box; display:grid; grid-template-rows:78px minmax(0,1fr) 94px; gap:10px; padding:14px; background:radial-gradient(ellipse at 15% 30%,#19394c88,transparent 55%),#08121f; }
+.pk-game * { box-sizing:border-box; }
+.pk-game header { display:flex; align-items:center; justify-content:space-between; padding:12px 20px; border-bottom:1px solid #507384; }
+.pk-game h1 { margin:4px 0 0; font:36px/1 Georgia,serif; color:#fff0d7; }
+.pk-game small { color:#89b5c1; font-size:10px; font-weight:700; letter-spacing:2px; }
+.pk-game header p { margin:0; font-size:13px; line-height:1.65; color:#b2c4d3; }
+.pk-game main { display:grid; grid-template-columns:minmax(0,1fr) 270px; gap:12px; min-height:0; }
+.pk-scenes { position:relative; display:grid; grid-template-rows:minmax(0,1fr) 148px; gap:8px; border:1px solid #3e6171; padding:8px; min-height:0; overflow:hidden; }
+#pk-main { width:100%; height:100%; min-height:0; object-fit:contain; cursor:grab; touch-action:none; }
+.pk-projections { display:flex; gap:8px; overflow:hidden; }
+.pk-projections canvas { width:calc(50% - 4px); height:100%; min-width:0; object-fit:contain; border:1px solid #334c61; }
+.pk-legend { position:absolute; left:25px; bottom:166px; display:flex; align-items:center; gap:14px; color:#c5d4e1; font:10px monospace; pointer-events:none; }
+.pk-legend i { width:9px; height:9px; border-radius:50%; background:#ffc679; }
+.pk-legend b { font-size:18px; color:#76dcca; }
+.pk-legend span { color:#7b9baf; }
+.pk-game aside { display:flex; flex-direction:column; align-items:center; min-height:0; padding:12px 8px; background:#132235aa; border:1px solid #3e6171; overflow:hidden; }
+.pk-game h2 { margin:0; font-size:12px; letter-spacing:2px; color:#ebd8b9; }
+.pk-game aside p { margin:9px 0 3px; color:#94adbf; font-size:11px; line-height:1.45; text-align:center; }
+.pk-controls { display:flex; flex-direction:column; justify-content:space-evenly; flex:1; min-height:0; width:100%; align-items:center; }
+.pk-dial { display:block; width:220px; height:115px; max-height:24%; min-height:65px; object-fit:fill; cursor:crosshair; touch-action:none; user-select:none; border:1px solid #334d60; border-radius:9px; background:#0b1928; }
+.pk-contact { margin-top:5px; color:#79dfce; font:11px monospace; letter-spacing:2px; }
+.pk-game footer { display:grid; grid-template-columns:1.1fr 1.2fr 1.1fr 155px 130px; gap:15px; align-items:center; padding:10px 16px; border:1px solid #3e6171; background:#102133; }
+.pk-game footer small { display:block; font-size:9px; letter-spacing:1px; margin-bottom:8px; }
+.pk-game footer b,.pk-game footer span { color:#c4d7dd; font:11px monospace; }
+.pk-bar { width:100%; height:7px; margin-bottom:6px; background:#30424f; overflow:hidden; }
+.pk-bar i { display:block; height:100%; background:#73dcca; width:0; }
+.pk-bar.danger i { background:#ff7c83; }
+.pk-game .readout { font:10px monospace; margin-top:4px; color:#81cbbb; }
+.pk-game button { min-height:42px; padding:8px; border:1px solid #89d7bd; border-radius:6px; color:#d5f3de; background:#204947; font:bold 11px/1.4 ui-sans-serif,system-ui,sans-serif; cursor:pointer; }
+#pk-submit { border-color:#b06b79; background:#462634; color:#e2afba; }
+.pk-game button:disabled { opacity:.5; cursor:default; }
+#pk-verdict { position:absolute; inset:100px 300px 110px 35px; display:flex; flex-direction:column; justify-content:center; align-items:center; gap:18px; border:3px double #91efd1; background:#0b232bed; z-index:8; padding:20px; text-align:center; }
+#pk-verdict[hidden] { display:none; }
+#pk-verdict b { font:80px Georgia,serif; color:#a7f2d8; }
+#pk-verdict span { font:14px/1.6 ui-sans-serif,system-ui,sans-serif; color:#dae9ea; }
+#pk-verdict[data-verdict="fail"] { border-color:#f292a2; background:#321822ed; }
+#pk-verdict[data-verdict="fail"] b { color:#f292a2; }
+@media(max-height:750px){ .pk-game { grid-template-rows:68px minmax(0,1fr) 80px; padding:10px; gap:8px; } .pk-game h1{font-size:31px;} .pk-scenes{grid-template-rows:minmax(0,1fr) 128px;} .pk-legend{bottom:144px;} .pk-game aside{padding:9px 8px;} .pk-dial{height:98px;} }

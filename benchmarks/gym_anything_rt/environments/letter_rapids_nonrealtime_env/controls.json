@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "letter_rapids_nonrealtime",
+  "baseline": {
+    "difficulty": 4,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Steer through eight broad letter channels to enter a three- or four-letter target under a mild, slow current and a generous correction budget.",
+      "natural_language": "Enter the target phrase.",
+      "parameters": {
+        "alphabet": "aetoinrs",
+        "target_pool": ["sea", "rain", "tone", "star"],
+        "minimum_band_milli": 650,
+        "context_boost_milli": 1500,
+        "probability_jitter_milli": 80,
+        "dead_zone_half_width_milli": 1050,
+        "maximum_speed_units_per_second": 4300,
+        "current_amplitude_milli": 120,
+        "travel_budget_characters_milli": 6500,
+        "maximum_rewound_characters": 4
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Steer through twelve probability-sized channels to enter a five- or six-letter target with a moderate current and broad slow-flow zone.",
+      "natural_language": "Enter the target phrase.",
+      "parameters": {
+        "alphabet": "etaoinshrdlu",
+        "target_pool": ["thread", "round", "shore", "train"],
+        "minimum_band_milli": 430,
+        "context_boost_milli": 1650,
+        "probability_jitter_milli": 120,
+        "dead_zone_half_width_milli": 900,
+        "maximum_speed_units_per_second": 5100,
+        "current_amplitude_milli": 190,
+        "travel_budget_characters_milli": 8000,
+        "maximum_rewound_characters": 4
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Navigate twenty reflowing channels for a six- or seven-letter target; rarer bands, a narrower slow-flow, and stronger current make flow decisions consequential.",
+      "natural_language": "Enter the target phrase.",
+      "parameters": {
+        "alphabet": "etaoinshrdlucmfwypgb",
+        "target_pool": ["crumble", "whisper", "bright", "plunger"],
+        "minimum_band_milli": 230,
+        "context_boost_milli": 1800,
+        "probability_jitter_milli": 160,
+        "dead_zone_half_width_milli": 760,
+        "maximum_speed_units_per_second": 6100,
+        "current_amplitude_milli": 260,
+        "travel_budget_characters_milli": 9500,
+        "maximum_rewound_characters": 3
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Navigate the full alphabet plus space to enter a six-letter rare-transition target while a strong visible current changes flow distance and only two character rewinds are allowed.",
+      "natural_language": "Enter the target phrase.",
+      "parameters": {
+        "alphabet": "etaoinshrdlucmfwypvbgkqjxz ",
+        "target_pool": ["quartz", "zephyr", "sphinx", "jigsaw", "vexing"],
+        "minimum_band_milli": 110,
+        "context_boost_milli": 1950,
+        "probability_jitter_milli": 200,
+        "dead_zone_half_width_milli": 650,
+        "maximum_speed_units_per_second": 7600,
+        "current_amplitude_milli": 340,
+        "travel_budget_characters_milli": 10500,
+        "maximum_rewound_characters": 2
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Navigate the full alphabet through a longer target containing rare transitions and sometimes space, with thinner bands, faster flow, a narrower slow-flow, and high-amplitude current.",
+      "natural_language": "Enter the target phrase.",
+      "parameters": {
+        "alphabet": "etaoinshrdlucmfwypvbgkqjxz ",
+        "target_pool": ["quick fox", "jazz quip", "vexed yak", "quartz box"],
+        "minimum_band_milli": 70,
+        "context_boost_milli": 2100,
+        "probability_jitter_milli": 250,
+        "dead_zone_half_width_milli": 540,
+        "maximum_speed_units_per_second": 8800,
+        "current_amplitude_milli": 430,
+        "travel_budget_characters_milli": 14500,
+        "maximum_rewound_characters": 2
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Set the same virtual pointer coordinates with separate letter-position and flow-position sliders; each update starts one finite segment."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Use pointer position inside the canyon: vertical position selects a probability-sized letter channel and horizontal distance controls one finite advance, slow-flow, or rewind segment."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 120,
+    "observation_window_ms": 600,
+    "frames_per_observation": 5
+  }
+}

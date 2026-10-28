@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "four_pane_pilgrimage_v3_nonrealtime",
+  "baseline": {
+    "difficulty": 4,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "One horizontal lantern with constant scale and independently changing travel times.",
+      "parameters": {
+        "active_panes": 1,
+        "x_amplitude": 55,
+        "y_amplitude": 0,
+        "radius_amplitude": 0,
+        "segment_ms": 16000,
+        "position_tolerance": 14,
+        "radius_tolerance": 8,
+        "segment_factor_min": 0.4,
+        "segment_factor_max": 1.6
+     },
+      "natural_language": "Guide the pilgrim along the illuminated path. Lift the vellum from each picture to discover its sigil and lantern. Arrange the revealed pictures in the sigil order, stack matching acetate windows, then begin. Discovered pictures stay visible; BEGIN activates the journey without consuming a tick; the folio advances one fixed lantern step after each active puzzle control and idle waiting leaves it unchanged. Pan and zoom each window to match its moving lantern. The path fades and the pilgrim retreats when any window loses registration. Reach the shrine before the page burns out. One attempt; an incomplete seal ends it. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, extensions, external applications, implementation or hidden-state access, or unrelated tabs. Task-created tabs are allowed only through their visible task controls."
+   },
+    "2": {
+      "label": "easy",
+      "summary": "Two independently moving lanterns with vertical motion and independently changing travel times.",
+      "parameters": {
+        "active_panes": 2,
+        "x_amplitude": 65,
+        "y_amplitude": 25,
+        "radius_amplitude": 0,
+        "segment_ms": 14000,
+        "position_tolerance": 26,
+        "radius_tolerance": 8,
+        "segment_factor_min": 0.5,
+        "segment_factor_max": 1.5
+     },
+      "natural_language": "Guide the pilgrim along the illuminated path. Lift the vellum from each picture to discover its sigil and lantern. Arrange the revealed pictures in the sigil order, stack matching acetate windows, then begin. Discovered pictures stay visible; BEGIN activates the journey without consuming a tick; the folio advances one fixed lantern step after each active puzzle control and idle waiting leaves it unchanged. Pan and zoom each window to match its moving lantern. The path fades and the pilgrim retreats when any window loses registration. Reach the shrine before the page burns out. One attempt; an incomplete seal ends it. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, extensions, external applications, implementation or hidden-state access, or unrelated tabs. Task-created tabs are allowed only through their visible task controls."
+   },
+    "3": {
+      "label": "medium",
+      "summary": "Three simultaneous two-axis registrations; lantern scale also changes.",
+      "parameters": {
+        "active_panes": 3,
+        "x_amplitude": 75,
+        "y_amplitude": 38,
+        "radius_amplitude": 7,
+        "segment_ms": 12000,
+        "position_tolerance": 23,
+        "radius_tolerance": 6,
+        "segment_factor_min": 0.8,
+        "segment_factor_max": 1.25
+     },
+      "natural_language": "Guide the pilgrim along the illuminated path. Lift the vellum from each picture to discover its sigil and lantern. Arrange the revealed pictures in the sigil order, stack matching acetate windows, then begin. Discovered pictures stay visible; BEGIN activates the journey without consuming a tick; the folio advances one fixed lantern step after each active puzzle control and idle waiting leaves it unchanged. Pan and zoom each window to match its moving lantern. The path fades and the pilgrim retreats when any window loses registration. Reach the shrine before the page burns out. One attempt; an incomplete seal ends it. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, extensions, external applications, implementation or hidden-state access, or unrelated tabs. Task-created tabs are allowed only through their visible task controls."
+   },
+    "4": {
+      "label": "hard",
+      "summary": "Four independent moving and scaling windows must sustain one continuous path.",
+      "parameters": {
+        "active_panes": 4,
+        "x_amplitude": 85,
+        "y_amplitude": 44,
+        "radius_amplitude": 10,
+        "segment_ms": 11000,
+        "position_tolerance": 19,
+        "radius_tolerance": 5,
+        "segment_factor_min": 0.8,
+        "segment_factor_max": 1.25
+     },
+      "natural_language": "Guide the pilgrim along the illuminated path. Lift the vellum from each picture to discover its sigil and lantern. Arrange the revealed pictures in the sigil order, stack matching acetate windows, then begin. Discovered pictures stay visible; BEGIN activates the journey without consuming a tick; the folio advances one fixed lantern step after each active puzzle control and idle waiting leaves it unchanged. Pan and zoom each window to match its moving lantern. The path fades and the pilgrim retreats when any window loses registration. Reach the shrine before the page burns out. One attempt; an incomplete seal ends it. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, extensions, external applications, implementation or hidden-state access, or unrelated tabs. Task-created tabs are allowed only through their visible task controls."
+   },
+    "5": {
+      "label": "very_hard",
+      "summary": "Four wider and faster independent trajectories with narrow position and scale registration demand prediction and coordinated correction.",
+      "parameters": {
+        "active_panes": 4,
+        "x_amplitude": 95,
+        "y_amplitude": 50,
+        "radius_amplitude": 13,
+        "segment_ms": 9000,
+        "position_tolerance": 14,
+        "radius_tolerance": 4,
+        "segment_factor_min": 0.8,
+        "segment_factor_max": 1.25
+     },
+      "natural_language": "Guide the pilgrim along the illuminated path. Lift the vellum from each picture to discover its sigil and lantern. Arrange the revealed pictures in the sigil order, stack matching acetate windows, then begin. Discovered pictures stay visible; BEGIN activates the journey without consuming a tick; the folio advances one fixed lantern step after each active puzzle control and idle waiting leaves it unchanged. Pan and zoom each window to match its moving lantern. The path fades and the pilgrim retreats when any window loses registration. Reach the shrine before the page burns out. One attempt; an incomplete seal ends it. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, extensions, external applications, implementation or hidden-state access, or unrelated tabs. Task-created tabs are allowed only through their visible task controls."
+   }
+  },
+  "interaction": {
+    "full": {
+     "implemented": true,
+      "summary": "Right-click a picture to peel its opaque vellum and reveal its seeded sigil/lantern. Drag headers to swap pictures; drag acetate from the tray onto a picture, drag inside it to pan, and wheel to resize. Later right-clicks lift acetate for correction; active controls advance one fixed step and idle waiting leaves the journey unchanged."
+   },
+    "simplified": {
+     "implemented": true,
+      "summary": "Use the picture\u2019s lift button to peel its opaque vellum and reveal the same seeded sigil/lantern. Select a header then its destination; select acetate then its picture; click a pan position and use minus/plus to resize. Later lifts remove acetate for correction; active controls advance one fixed step and idle waiting leaves the journey unchanged."
+   }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 600,
+    "frames_per_observation": 4
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "circle_limit_twist_v2",
+  "source_anchors": [
+    "PHY-030",
+    "PHY-029",
+    "PHY-002"
+  ],
+  "sources": [
+    {
+      "survey_id": "PHY-030",
+      "url": "https://roice3.org/magictile/",
+      "repository": "https://github.com/roice3/MagicTile",
+      "role": "Colored regular tilings, Poincare projection, panning and twist transformations."
+    },
+    {
+      "survey_id": "PHY-029",
+      "url": "https://superliminal.com/cube/",
+      "role": "Projected twisty-puzzle reasoning and exact uniform-face goals."
+    },
+    {
+      "survey_id": "PHY-002",
+      "url": "https://github.com/cubing/cubing.js",
+      "documentation": "https://js.cubing.net/cubing/kpuzzle/",
+      "app": "https://alpha.twizzle.net/explore/",
+      "role": "Explicit state transforms, scrambles and exact solved checks."
+    }
+  ],
+  "assets": [],
+  "notes": "Original canvas art. Reuses this repository's circle_limit_twist reflected tiling and sticker-cycle equations; no third-party source code or presentation assets copied. The changing flow/aperture, prediction display, settle cycle and replay event protocol are new. Original environment is preserved."
+}

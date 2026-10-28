@@ -1,0 +1,66 @@
+{
+  "env_folder": "slot_reel_capture_env",
+  "all_tasks": [
+    "slot_reel_capture_d1_full_seed_0001",
+    "slot_reel_capture_d1_simplified_seed_0001",
+    "slot_reel_capture_d2_full_seed_0001",
+    "slot_reel_capture_d2_simplified_seed_0001",
+    "slot_reel_capture_d3_full_seed_0001",
+    "slot_reel_capture_d3_simplified_seed_0001",
+    "slot_reel_capture_d4_full_seed_0001",
+    "slot_reel_capture_d4_simplified_seed_0001",
+    "slot_reel_capture_d5_full_seed_0001",
+    "slot_reel_capture_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "slot_reel_capture_d1_full_seed_0001",
+    "slot_reel_capture_d1_simplified_seed_0001",
+    "slot_reel_capture_d2_full_seed_0001",
+    "slot_reel_capture_d2_simplified_seed_0001",
+    "slot_reel_capture_d3_full_seed_0001",
+    "slot_reel_capture_d3_simplified_seed_0001",
+    "slot_reel_capture_d4_full_seed_0001",
+    "slot_reel_capture_d4_simplified_seed_0001",
+    "slot_reel_capture_d5_full_seed_0001",
+    "slot_reel_capture_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "slot_reel_capture_d5_full_seed_0001"
+    ],
+    "full": [
+      "slot_reel_capture_d1_full_seed_0001",
+      "slot_reel_capture_d2_full_seed_0001",
+      "slot_reel_capture_d3_full_seed_0001",
+      "slot_reel_capture_d4_full_seed_0001",
+      "slot_reel_capture_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "slot_reel_capture_d1_simplified_seed_0001",
+      "slot_reel_capture_d2_simplified_seed_0001",
+      "slot_reel_capture_d3_simplified_seed_0001",
+      "slot_reel_capture_d4_simplified_seed_0001",
+      "slot_reel_capture_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "slot_reel_capture_d1_full_seed_0001",
+      "slot_reel_capture_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "slot_reel_capture_d2_full_seed_0001",
+      "slot_reel_capture_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "slot_reel_capture_d3_full_seed_0001",
+      "slot_reel_capture_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "slot_reel_capture_d4_full_seed_0001",
+      "slot_reel_capture_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "slot_reel_capture_d5_full_seed_0001",
+      "slot_reel_capture_d5_simplified_seed_0001"
+    ]
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "clockwork_doppelganger_customs_v3_nonrealtime",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "One worker, broad contact rings and slow drive changes. Track three different live contacts with generous actuator response. Collect each moving output passport within its 3-second trip to the exit line.",
+      "natural_language": "Lift the labeled drive housings to discover concealed tray and seal motion before deployment. Opened housings stay visible. Bench inspection safely previews only the startup segment; later drive pairs appear during the stepped relay. Record a sweep from CATCH to PASS. Deploy your recorded workers and correct their hand heights as trays and seal heads advance one fixed 60 ms logical slice per completed lever action or successful passport pickup. Click each moving passport at OUT before it crosses the exit line. Clear all three passports. Waiting leaves the relay stable. A missed catch, seal, pass or pickup, or an uncollected departing passport, ends the episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, or other implementation or hidden-state access. Do not interact with pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only as part of this task, using their visible controls.",
+      "parameters": {
+        "workers": 1,
+        "period_ms": 9000,
+        "travel_ms": 4600,
+        "gap_ms": 900,
+        "amplitude": 100,
+        "motor_span_ms": 5000,
+        "tolerance": 38,
+        "speed": 460,
+        "acceleration": 2200,
+        "collection_ms": 3000
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "One worker with wider drive excursions, faster changes and narrower contact rings. The same sweep now needs stronger prediction and correction. Collect each moving output passport within its 2.6-second trip to the exit line.",
+      "natural_language": "Lift the labeled drive housings to discover concealed tray and seal motion before deployment. Opened housings stay visible. Bench inspection safely previews only the startup segment; later drive pairs appear during the stepped relay. Record a sweep from CATCH to PASS. Deploy your recorded workers and correct their hand heights as trays and seal heads advance one fixed 60 ms logical slice per completed lever action or successful passport pickup. Click each moving passport at OUT before it crosses the exit line. Clear all three passports. Waiting leaves the relay stable. A missed catch, seal, pass or pickup, or an uncollected departing passport, ends the episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, or other implementation or hidden-state access. Do not interact with pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only as part of this task, using their visible controls.",
+      "parameters": {
+        "workers": 1,
+        "period_ms": 8000,
+        "travel_ms": 4000,
+        "gap_ms": 800,
+        "amplitude": 130,
+        "motor_span_ms": 4200,
+        "tolerance": 30,
+        "speed": 460,
+        "acceleration": 2200,
+        "collection_ms": 2600
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Two workers hand the same parcel through a moving intermediate tray. Their independently moving seal and tray contacts overlap across the pipeline. Collect each moving output passport within its 2.2-second trip to the exit line.",
+      "natural_language": "Lift the labeled drive housings to discover concealed tray and seal motion before deployment. Opened housings stay visible. Bench inspection safely previews only the startup segment; later drive pairs appear during the stepped relay. Record a sweep from CATCH to PASS. Deploy your recorded workers and correct their hand heights as trays and seal heads advance one fixed 60 ms logical slice per completed lever action or successful passport pickup. Click each moving passport at OUT before it crosses the exit line. Clear all three passports. Waiting leaves the relay stable. A missed catch, seal, pass or pickup, or an uncollected departing passport, ends the episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, or other implementation or hidden-state access. Do not interact with pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only as part of this task, using their visible controls.",
+      "parameters": {
+        "workers": 2,
+        "period_ms": 7000,
+        "travel_ms": 3600,
+        "gap_ms": 600,
+        "amplitude": 140,
+        "motor_span_ms": 4200,
+        "tolerance": 27,
+        "speed": 460,
+        "acceleration": 2200,
+        "collection_ms": 2200
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Three workers, two moving handoffs and overlapping parcels couple custody and attention. Contact rings narrow and actuator acceleration decreases. Collect each moving output passport within its 1.8-second trip to the exit line.",
+      "natural_language": "Lift the labeled drive housings to discover concealed tray and seal motion before deployment. Opened housings stay visible. Bench inspection safely previews only the startup segment; later drive pairs appear during the stepped relay. Record a sweep from CATCH to PASS. Deploy your recorded workers and correct their hand heights as trays and seal heads advance one fixed 60 ms logical slice per completed lever action or successful passport pickup. Click each moving passport at OUT before it crosses the exit line. Clear all three passports. Waiting leaves the relay stable. A missed catch, seal, pass or pickup, or an uncollected departing passport, ends the episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, or other implementation or hidden-state access. Do not interact with pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only as part of this task, using their visible controls.",
+      "parameters": {
+        "workers": 3,
+        "period_ms": 6400,
+        "travel_ms": 3200,
+        "gap_ms": 500,
+        "amplitude": 145,
+        "motor_span_ms": 3800,
+        "tolerance": 24,
+        "speed": 420,
+        "acceleration": 1800,
+        "collection_ms": 1800
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Three workers with a faster overlapping parcel stream, larger nonperiodic drive excursions, 20-pixel alignment tolerance and actuator inertia. Several upcoming catch/seal/pass contacts must be corrected together. Collect each moving output passport within its 1.4-second trip to the exit line.",
+      "natural_language": "Lift the labeled drive housings to discover concealed tray and seal motion before deployment. Opened housings stay visible. Bench inspection safely previews only the startup segment; later drive pairs appear during the stepped relay. Record a sweep from CATCH to PASS. Deploy your recorded workers and correct their hand heights as trays and seal heads advance one fixed 60 ms logical slice per completed lever action or successful passport pickup. Click each moving passport at OUT before it crosses the exit line. Clear all three passports. Waiting leaves the relay stable. A missed catch, seal, pass or pickup, or an uncollected departing passport, ends the episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, or other implementation or hidden-state access. Do not interact with pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only as part of this task, using their visible controls.",
+      "parameters": {
+        "workers": 3,
+        "period_ms": 4800,
+        "travel_ms": 3000,
+        "gap_ms": 400,
+        "amplitude": 148,
+        "motor_span_ms": 3400,
+        "tolerance": 20,
+        "speed": 390,
+        "acceleration": 1600,
+        "collection_ms": 1400
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Lift the same drive covers in both modes; click each numbered rail to set its worker height. Collect moving passports with a click."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Lift the same drive covers in both modes; drag each numbered lever handle to correct its worker. Collect moving passports with a click."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  }
+}

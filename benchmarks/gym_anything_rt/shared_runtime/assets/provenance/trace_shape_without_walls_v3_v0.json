@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "trace_shape_without_walls_v3",
+  "public_name": "Trace Shape Without Walls V3",
+  "in_game_name": "Blind Corridor Oscilloscope V3",
+  "source_anchors": [
+    "motioncaptcha",
+    "modrinth-evil-captcha",
+    "captcha-hell"
+  ],
+  "survey_ids": [],
+  "source_urls": [
+    "https://github.com/josscrowcroft/MotionCAPTCHA",
+    "https://modrinth.com/mod/evil-captcha",
+    "https://store.steampowered.com/app/4310270/CAPTCHA_Hell/"
+  ],
+  "original_environment": "trace_shape_without_walls_env",
+  "selection_file": "creation_audit_logs/realtime_source_remaining48_20261002/selection.json",
+  "survey_root": "outputs/selection_round4_20260906/inputs",
+  "transformation": "Continuous shape tracing becomes a sonar-guided inertial probe in a channel with a shared changing current and local wall deformation, automatic forward motion and inertia. No third-party code or art copied.",
+  "assets": "Original canvas/CSS vector rendering; no raster assets required.",
+  "source_limitations": "Supplied collected_evidence_paths absent. Empty cited survey_ids retained. Supplemental exact URL records read separately. Evil Captcha and CAPTCHA Hell pages do not themselves document a hidden corridor; tracing specifically grounded in MotionCAPTCHA.",
+  "difficulty_status": "provisional parameters, uncalibrated",
+  "human_validation": "pending",
+  "model_evaluation": "not requested"
+}

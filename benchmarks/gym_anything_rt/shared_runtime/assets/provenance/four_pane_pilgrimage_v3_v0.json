@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "four_pane_pilgrimage_v3",
+  "title": "Four-Pane Pilgrimage V3",
+  "source_anchors": [
+    "IND-110",
+    "VGE-338"
+  ],
+  "sources": [
+    {
+      "survey_id": "IND-110",
+      "url": "https://gorogoa.com/",
+      "creator": "Jason Roberts / Buried Signal",
+      "access": "Official site returned HTTP 502 in web reader; supplied survey record read in full."
+    },
+    {
+      "survey_id": "VGE-338",
+      "url": "https://store.steampowered.com/app/557600/Gorogoa/",
+      "access": "Official description and gameplay imagery inspected, October 3 2026."
+    },
+    {
+      "survey_id": "VGE-338",
+      "url": "https://en.wikipedia.org/wiki/Gorogoa",
+      "access": "Cited gameplay account read; four pictures, pan/zoom, arrangement and masking."
+    }
+  ],
+  "transformation": "The four-picture composition, independent pan/zoom, arrangement and stacked image-layer correspondence become a living ink folio. Four original lantern motifs drift continuously and change scale. A physically manipulated acetate window must stay registered with each motif to sustain the illuminated pilgrim path. Nonperiodic seeded trajectories require timely correction during the journey.",
+  "assets": "Original canvas vector scenes, lantern geometry, sigils, procedural hatching and layout. No commercial art, level, code, soundtrack or media copied into the game.",
+  "third_party_runtime": "Existing shared benchmark runtime only; no added dependency.",
+  "source_selection": "creation_audit_logs/realtime_source_remaining48_20261002/selection.json",
+  "survey_root": "outputs/selection_round4_20260906/inputs",
+  "quality_status": "prototype_visual_candidate; human calibration and downstream model difficulty unmeasured",
+  "construction_revision": {
+    "version": "0.2",
+    "reason": "Preparation-conditioned nominal schedules solved 47/50 D1 seeds at revision 0.1; broaden lower-level travel-time variation and tighten D1 registration while retaining its one-axis, one-lantern problem",
+    "duration_factor_ranges": {
+      "1": [
+        0.4,
+        1.6
+      ],
+      "2": [
+        0.5,
+        1.5
+      ],
+      "3": [
+        0.8,
+        1.25
+      ],
+      "4": [
+        0.8,
+        1.25
+      ],
+      "5": [
+        0.8,
+        1.25
+      ]
+    },
+    "d1_position_tolerance": 14,
+    "prior_evidence_preserved": true
+  }
+}

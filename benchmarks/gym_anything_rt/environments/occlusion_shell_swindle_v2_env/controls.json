@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "occlusion_shell_swindle_v2",
+  "baseline": {
+    "difficulty": 2,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Watch one slower three-shell shuffle. A wide peephole stays open for eleven ticks, so the direct task is to identify the visible shuttle and select its carrier.",
+      "natural_language": "Track the marked token through one shuffle. When the paired shells enter the cover, inspect its wide peephole and select the carrier at the stop.",
+      "parameters": {
+        "shell_count_values": [3],
+        "round_count": 1,
+        "transfer_round_count_values": [0],
+        "frame_count_min": 56,
+        "frame_count_max": 60,
+        "tick_ms": 140,
+        "preview_ms": 1200,
+        "handoff_window_ticks": 5,
+        "inspection_minimum_samples": 2,
+        "inspection_port_radius": 64,
+        "decoy_port_count": 0
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Preserves the original three independent four-or-five-shell shuffles exactly: one or two visible token transfers, seven-tick peephole windows, and three samples per round.",
+      "natural_language": "Track the marked token. When paired shells enter a cover, hold the cursor over its peephole and read the physical shuttle.",
+      "parameters": {
+        "shell_count_values": [4, 5],
+        "round_count": 3,
+        "transfer_round_count_values": [1, 2],
+        "frame_count_min": 60,
+        "frame_count_max": 68,
+        "tick_ms": 120,
+        "preview_ms": 900,
+        "handoff_window_ticks": 3,
+        "inspection_minimum_samples": 3,
+        "inspection_port_radius": 46,
+        "decoy_port_count": 0
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "The same three-round carrier task adds a pulsing decoy peephole and a shorter five-tick genuine inspection. The operator must identify the cover containing the paired shells instead of merely moving to the only illuminated port.",
+      "natural_language": "Track each marked carrier. When peepholes pulse, inspect the cover containing the paired shells, read the shuttle, and select the final carrier after every stop.",
+      "parameters": {
+        "shell_count_values": [5],
+        "round_count": 3,
+        "transfer_round_count_values": [2],
+        "frame_count_min": 62,
+        "frame_count_max": 70,
+        "tick_ms": 115,
+        "preview_ms": 850,
+        "handoff_window_ticks": 2,
+        "inspection_minimum_samples": 3,
+        "inspection_port_radius": 42,
+        "decoy_port_count": 1
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Four rounds run through five or six shells with two pulsing decoy ports, a five-tick genuine port, and tighter cursor placement. The relevant cover must be distinguished while the shell field keeps moving.",
+      "natural_language": "Follow every marked carrier through the shell field. At each pulse, inspect the physical cover holding the paired shells, then certify all four recorded carriers.",
+      "parameters": {
+        "shell_count_values": [5, 6],
+        "round_count": 4,
+        "transfer_round_count_values": [2, 3],
+        "frame_count_min": 66,
+        "frame_count_max": 74,
+        "tick_ms": 108,
+        "preview_ms": 780,
+        "handoff_window_ticks": 2,
+        "inspection_minimum_samples": 3,
+        "inspection_port_radius": 36,
+        "decoy_port_count": 2
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Four faster six-shell rounds contain three visually identical decoy peepholes. The genuine five-tick inspection requires locating the paired cover, keeping the cursor inside its narrow port, and selecting the final carrier at each stop before certification.",
+      "natural_language": "Audit four fast shell shuffles. Ignore decoy peepholes, inspect every paired cover during its brief shuttle, and certify the four final carriers.",
+      "parameters": {
+        "shell_count_values": [6],
+        "round_count": 4,
+        "transfer_round_count_values": [3, 4],
+        "frame_count_min": 70,
+        "frame_count_max": 78,
+        "tick_ms": 100,
+        "preview_ms": 700,
+        "handoff_window_ticks": 2,
+        "inspection_minimum_samples": 3,
+        "inspection_port_radius": 30,
+        "decoy_port_count": 3
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Use the visible peephole-relay button to align the inspection lens and use labelled carrier controls after each stop. The same port, timing, carrier history, samples, and selections are graded."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Move the pointer directly onto the physical peephole during its window and click the stopped shell carrying the recorded carrier label."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 120,
+    "observation_window_ms": 800,
+    "frames_per_observation": 6
+  }
+}

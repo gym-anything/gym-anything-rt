@@ -1,0 +1,66 @@
+{
+  "env_folder": "three_camera_claw_machine_nonrealtime_env",
+  "all_tasks": [
+    "three_camera_claw_machine_nonrealtime_d1_full_seed_0001",
+    "three_camera_claw_machine_nonrealtime_d1_simplified_seed_0001",
+    "three_camera_claw_machine_nonrealtime_d2_full_seed_0001",
+    "three_camera_claw_machine_nonrealtime_d2_simplified_seed_0001",
+    "three_camera_claw_machine_nonrealtime_d3_full_seed_0001",
+    "three_camera_claw_machine_nonrealtime_d3_simplified_seed_0001",
+    "three_camera_claw_machine_nonrealtime_d4_full_seed_0001",
+    "three_camera_claw_machine_nonrealtime_d4_simplified_seed_0001",
+    "three_camera_claw_machine_nonrealtime_d5_full_seed_0001",
+    "three_camera_claw_machine_nonrealtime_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "three_camera_claw_machine_nonrealtime_d1_full_seed_0001",
+    "three_camera_claw_machine_nonrealtime_d1_simplified_seed_0001",
+    "three_camera_claw_machine_nonrealtime_d2_full_seed_0001",
+    "three_camera_claw_machine_nonrealtime_d2_simplified_seed_0001",
+    "three_camera_claw_machine_nonrealtime_d3_full_seed_0001",
+    "three_camera_claw_machine_nonrealtime_d3_simplified_seed_0001",
+    "three_camera_claw_machine_nonrealtime_d4_full_seed_0001",
+    "three_camera_claw_machine_nonrealtime_d4_simplified_seed_0001",
+    "three_camera_claw_machine_nonrealtime_d5_full_seed_0001",
+    "three_camera_claw_machine_nonrealtime_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "three_camera_claw_machine_nonrealtime_d5_full_seed_0001"
+    ],
+    "full": [
+      "three_camera_claw_machine_nonrealtime_d1_full_seed_0001",
+      "three_camera_claw_machine_nonrealtime_d2_full_seed_0001",
+      "three_camera_claw_machine_nonrealtime_d3_full_seed_0001",
+      "three_camera_claw_machine_nonrealtime_d4_full_seed_0001",
+      "three_camera_claw_machine_nonrealtime_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "three_camera_claw_machine_nonrealtime_d1_simplified_seed_0001",
+      "three_camera_claw_machine_nonrealtime_d2_simplified_seed_0001",
+      "three_camera_claw_machine_nonrealtime_d3_simplified_seed_0001",
+      "three_camera_claw_machine_nonrealtime_d4_simplified_seed_0001",
+      "three_camera_claw_machine_nonrealtime_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "three_camera_claw_machine_nonrealtime_d1_full_seed_0001",
+      "three_camera_claw_machine_nonrealtime_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "three_camera_claw_machine_nonrealtime_d2_full_seed_0001",
+      "three_camera_claw_machine_nonrealtime_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "three_camera_claw_machine_nonrealtime_d3_full_seed_0001",
+      "three_camera_claw_machine_nonrealtime_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "three_camera_claw_machine_nonrealtime_d4_full_seed_0001",
+      "three_camera_claw_machine_nonrealtime_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "three_camera_claw_machine_nonrealtime_d5_full_seed_0001",
+      "three_camera_claw_machine_nonrealtime_d5_simplified_seed_0001"
+    ]
+  }
+}

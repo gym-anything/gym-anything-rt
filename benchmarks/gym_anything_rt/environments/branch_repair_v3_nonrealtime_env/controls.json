@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "branch_repair_v3_nonrealtime",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "1 concurrent signals, 2 outlets, 46 px horizontal deformation over 3200 ms one-way reflection spans, 20 px ports, 58 units minimum depth separation. Each outlet also flexes independently by up to 24 px. Completed stitches reverse shared horizontal drift; later contacts depend on earlier repairs. Sealed repairs speed up that lane's signal by ten percent of its base rate each. Depth continuity is revealed through the local section lens and retained after inspection.",
+      "natural_language": "Use SECTION LENS, then click any visible XY port to reveal that lesion’s bridge path and linked depth views. Inspected sections stay visible. Inspection is safe before BEGIN; discovered sections remain available during repair. Match each incoming fibre at the same depth in XZ. Cut the pink false bridge and stitch its matching moving outlet after the damage front opens it. Keep all gold signals in their own fibres. Escape cancels a preview; release or click inside its small ring also cancels. A completed stitch must connect two distinct matching open ports: a missed starting or ending port, wrong fusion, or escaped signal ends the attempt. A correct stitch reverses horizontal tissue drift without a position jump. Source arrows show tissue headings; outlet arrows show local flex headings. Inspected sections retain faint scars marking future false bridges. Flow instruments show material position / units per second; targets reflect at their displayed deformation bounds. Each fully sealed lesion increases that signal's base rate by ten percent; later breaks open sooner.",
+      "parameters": {
+        "front_count": 1,
+        "candidate_count": 2,
+        "drift_px": 46,
+        "span_ms": 3200,
+        "port_radius": 20,
+        "signal_speed": 14,
+        "lead_px": 190,
+        "depth_gap": 58,
+        "outlet_flex_px": 24
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "1 concurrent signals, 3 outlets, 46 px horizontal deformation over 2800 ms one-way reflection spans, 18 px ports, 50 units minimum depth separation. Each outlet also flexes independently by up to 24 px. Completed stitches reverse shared horizontal drift; later contacts depend on earlier repairs. Sealed repairs speed up that lane's signal by ten percent of its base rate each. Depth continuity is revealed through the local section lens and retained after inspection.",
+      "natural_language": "Use SECTION LENS, then click any visible XY port to reveal that lesion’s bridge path and linked depth views. Inspected sections stay visible. Inspection is safe before BEGIN; discovered sections remain available during repair. Match each incoming fibre at the same depth in XZ. Cut the pink false bridge and stitch its matching moving outlet after the damage front opens it. Keep all gold signals in their own fibres. Escape cancels a preview; release or click inside its small ring also cancels. A completed stitch must connect two distinct matching open ports: a missed starting or ending port, wrong fusion, or escaped signal ends the attempt. A correct stitch reverses horizontal tissue drift without a position jump. Source arrows show tissue headings; outlet arrows show local flex headings. Inspected sections retain faint scars marking future false bridges. Flow instruments show material position / units per second; targets reflect at their displayed deformation bounds. Each fully sealed lesion increases that signal's base rate by ten percent; later breaks open sooner.",
+      "parameters": {
+        "front_count": 1,
+        "candidate_count": 3,
+        "drift_px": 46,
+        "span_ms": 2800,
+        "port_radius": 18,
+        "signal_speed": 15,
+        "lead_px": 180,
+        "depth_gap": 50,
+        "outlet_flex_px": 24
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "2 concurrent signals, 3 outlets, 48 px horizontal deformation over 2400 ms one-way reflection spans, 17 px ports, 44 units minimum depth separation. Each outlet also flexes independently by up to 24 px. Completed stitches reverse shared horizontal drift; later contacts depend on earlier repairs. Sealed repairs speed up that lane's signal by ten percent of its base rate each. Depth continuity is revealed through the local section lens and retained after inspection.",
+      "natural_language": "Use SECTION LENS, then click any visible XY port to reveal that lesion’s bridge path and linked depth views. Inspected sections stay visible. Inspection is safe before BEGIN; discovered sections remain available during repair. Match each incoming fibre at the same depth in XZ. Cut the pink false bridge and stitch its matching moving outlet after the damage front opens it. Keep all gold signals in their own fibres. Escape cancels a preview; release or click inside its small ring also cancels. A completed stitch must connect two distinct matching open ports: a missed starting or ending port, wrong fusion, or escaped signal ends the attempt. A correct stitch reverses horizontal tissue drift without a position jump. Source arrows show tissue headings; outlet arrows show local flex headings. Inspected sections retain faint scars marking future false bridges. Flow instruments show material position / units per second; targets reflect at their displayed deformation bounds. Each fully sealed lesion increases that signal's base rate by ten percent; later breaks open sooner.",
+      "parameters": {
+        "front_count": 2,
+        "candidate_count": 3,
+        "drift_px": 48,
+        "span_ms": 2400,
+        "port_radius": 17,
+        "signal_speed": 16,
+        "lead_px": 175,
+        "depth_gap": 44,
+        "outlet_flex_px": 24
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "2 concurrent signals, 4 outlets, 50 px horizontal deformation over 2100 ms one-way reflection spans, 15 px ports, 36 units minimum depth separation. Each outlet also flexes independently by up to 24 px. Completed stitches reverse shared horizontal drift; later contacts depend on earlier repairs. Sealed repairs speed up that lane's signal by ten percent of its base rate each. Depth continuity is revealed through the local section lens and retained after inspection.",
+      "natural_language": "Use SECTION LENS, then click any visible XY port to reveal that lesion’s bridge path and linked depth views. Inspected sections stay visible. Inspection is safe before BEGIN; discovered sections remain available during repair. Match each incoming fibre at the same depth in XZ. Cut the pink false bridge and stitch its matching moving outlet after the damage front opens it. Keep all gold signals in their own fibres. Escape cancels a preview; release or click inside its small ring also cancels. A completed stitch must connect two distinct matching open ports: a missed starting or ending port, wrong fusion, or escaped signal ends the attempt. A correct stitch reverses horizontal tissue drift without a position jump. Source arrows show tissue headings; outlet arrows show local flex headings. Inspected sections retain faint scars marking future false bridges. Flow instruments show material position / units per second; targets reflect at their displayed deformation bounds. Each fully sealed lesion increases that signal's base rate by ten percent; later breaks open sooner.",
+      "parameters": {
+        "front_count": 2,
+        "candidate_count": 4,
+        "drift_px": 50,
+        "span_ms": 2100,
+        "port_radius": 15,
+        "signal_speed": 17,
+        "lead_px": 165,
+        "depth_gap": 36,
+        "outlet_flex_px": 24
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "3 concurrent signals, 4 outlets, 52 px horizontal deformation over 1800 ms one-way reflection spans, 14 px ports, 30 units minimum depth separation. Each outlet also flexes independently by up to 24 px. Completed stitches reverse shared horizontal drift; later contacts depend on earlier repairs. Sealed repairs speed up that lane's signal by ten percent of its base rate each. Depth continuity is revealed through the local section lens and retained after inspection.",
+      "natural_language": "Use SECTION LENS, then click any visible XY port to reveal that lesion’s bridge path and linked depth views. Inspected sections stay visible. Inspection is safe before BEGIN; discovered sections remain available during repair. Match each incoming fibre at the same depth in XZ. Cut the pink false bridge and stitch its matching moving outlet after the damage front opens it. Keep all gold signals in their own fibres. Escape cancels a preview; release or click inside its small ring also cancels. A completed stitch must connect two distinct matching open ports: a missed starting or ending port, wrong fusion, or escaped signal ends the attempt. A correct stitch reverses horizontal tissue drift without a position jump. Source arrows show tissue headings; outlet arrows show local flex headings. Inspected sections retain faint scars marking future false bridges. Flow instruments show material position / units per second; targets reflect at their displayed deformation bounds. Each fully sealed lesion increases that signal's base rate by ten percent; later breaks open sooner.",
+      "parameters": {
+        "front_count": 3,
+        "candidate_count": 4,
+        "drift_px": 52,
+        "span_ms": 1800,
+        "port_radius": 14,
+        "signal_speed": 18,
+        "lead_px": 155,
+        "depth_gap": 30,
+        "outlet_flex_px": 24
+      }
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Stitch by dragging between the moving ports; cut by dragging across the actual false bridge. In both modes, SECTION LENS then a port click reveals the same bridge path and linked depth sections without changing the fibre."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Stitch by clicking both moving ports; cut by clicking the actual bridge. No port IDs, automatic aiming, or automatic interception. In both modes, SECTION LENS then a port click reveals the same bridge path and linked depth sections without changing the fibre."
+    }
+  },
+  "real_time": {
+    "observation_window_ms": 600,
+    "frames_per_observation": 4,
+    "play_time_seconds": 120
+  }
+}

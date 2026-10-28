@@ -1,0 +1,44 @@
+body[data-mechanic="two-lamp-dyeworks-v2"] {
+  margin: 0; color: #e2dcc9; background: #09121b;
+  font-family: ui-monospace, "Courier New", monospace;
+}
+body[data-mechanic="two-lamp-dyeworks-v2"] #app {
+  padding: 10px; min-height: 100vh; box-sizing: border-box;
+  display: grid; place-items: center;
+}
+.dye-v2 { position: relative; width: min(1180px, calc(100vw - 20px));
+  border: 1px solid #79808a; background: #14222c; box-shadow: 0 25px 60px #0009; }
+.dye-v2 * { box-sizing: border-box; }
+.dye-v2 header { display: flex; align-items: center; gap: 22px; min-height: 76px;
+  padding: 8px 18px; border-bottom: 1px solid #747d84; background: #20323d; }
+.dye-v2 header p { margin: 0 0 3px; color: #d6bc8c; font-size: 10px; letter-spacing: .12em; }
+.dye-v2 h1 { font: 27px/1.1 Georgia, serif; margin: 0; color: #f2e7cf; }
+.dye-v2-emblem { display: grid; place-items: center; color: #e1bb78; font-size: 36px; line-height: 1; }
+.dye-v2-emblem span { font-size: 9px; margin-top: 4px; }
+.dye-v2-lot { margin-left: auto; width: 240px; font-size: 12px; }
+.dye-v2-lot > div { height: 9px; background: #0b1821; border: 1px solid #899a9c; margin-top: 7px; }
+.dye-v2-lot i { display: block; height: 100%; width: 0; background: #b1d8b5; }
+.dye-v2-rules { margin: 0; padding: 9px 18px; color: #b7c6c8; font-size: 12px; line-height: 1.4; background: #12212b; }
+#dye-v2-canvas { display: block; width: 100%; height: auto; aspect-ratio: 1120 / 500; touch-action: none; user-select: none; }
+.dye-v2 footer { display: flex; gap: 10px; align-items: center; padding: 12px 18px;
+  border-top: 1px solid #6c7b83; background: #20323d; }
+.dye-v2 footer > div { flex: 1; min-width: 0; font-size: 11px; line-height: 1.4; }
+.dye-v2 footer b { color: #dcc696; }
+.dye-v2 .readout { margin-top: 4px; color: #bccccc; }
+.dye-v2 .readout[data-status="error"] { color: #ffa38f; }
+.dye-v2 .readout[data-status="passed"] { color: #b3e4b8; }
+.dye-v2 button { min-width: 132px; height: 42px; padding: 7px 14px; border: 1px solid #e0bb80;
+  color: #f1e4c8; background: #314b55; font: bold 11px ui-monospace, monospace; cursor: pointer; }
+.dye-v2 button:hover { background: #496471; }
+.dye-v2 button:disabled { cursor: default; opacity: .42; }
+.dye-v2-verdict { display: none; position: absolute; z-index: 4; inset: 106px 18px 85px;
+  background: #09131bef; border: 2px solid #c6dbbe; align-content: center; justify-items: center; gap: 16px;
+  text-align: center; pointer-events: none; padding: 30px; }
+.dye-v2[data-verdict]:not([data-verdict=""]) .dye-v2-verdict { display: grid; }
+.dye-v2-verdict strong { color: #c3e5bd; border: 4px double; padding: 8px 40px; font: bold 64px Georgia, serif; }
+.dye-v2-verdict small { color: #d7c59e; letter-spacing: .2em; }
+.dye-v2-verdict span { font-size: 15px; color: #c8d3d2; }
+.dye-v2[data-verdict="fail"] .dye-v2-verdict { border-color: #de9781; background: #241419ed; }
+.dye-v2[data-verdict="fail"] .dye-v2-verdict strong { color: #ffa98e; }
+@media (max-height: 740px) { .dye-v2 { width: min(1120px, calc(100vw - 20px)); }
+  .dye-v2 header { min-height: 70px; } .dye-v2-rules { padding-block: 7px; } .dye-v2 footer { padding-block: 9px; } }

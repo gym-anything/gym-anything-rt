@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "consent_gauntlet",
+  "baseline": {"difficulty": 3, "interaction": "full", "real_time": "live"},
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "One stationary explicit gateway leads to three affirmative purpose statements in one visible drawer, with no reset or linked controls.",
+      "natural_language": "Leave every optional purpose blocked, then keep only your choices. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL edits, reload, navigation, extensions, external applications, or unrelated tabs.",
+      "parameters": {"purpose_count": 3, "negative_count": 0, "drawer_count": 1, "entry_option_count": 1, "final_option_count": 1, "reset_trap_count": 0, "link_count": 0, "moving_gateways": false, "orbit_speed_deg_per_second": 0}
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Three stationary gateway choices introduce semantic discrimination; four purposes include one inverted negative statement, but remain in one drawer without reset or coupling.",
+      "natural_language": "Leave every optional purpose blocked, then keep only your choices. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL edits, reload, navigation, extensions, external applications, or unrelated tabs.",
+      "parameters": {"purpose_count": 4, "negative_count": 1, "drawer_count": 1, "entry_option_count": 3, "final_option_count": 3, "reset_trap_count": 0, "link_count": 0, "moving_gateways": false, "orbit_speed_deg_per_second": 0}
+    },
+    "3": {
+      "label": "medium",
+      "summary": "The baseline uses two moving semantic gateways, six mixed-polarity purposes split across two drawers, and a deceptive provider-reset control that can undo visible work.",
+      "natural_language": "Leave every optional purpose blocked, then keep only your choices. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL edits, reload, navigation, extensions, external applications, or unrelated tabs.",
+      "parameters": {"purpose_count": 6, "negative_count": 2, "drawer_count": 2, "entry_option_count": 5, "final_option_count": 5, "reset_trap_count": 1, "link_count": 0, "moving_gateways": true, "orbit_speed_deg_per_second": 14}
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Eight purposes span three drawers. One visible directed link means a source switch flips another purpose, so final reconciliation depends on action order; six gateway choices orbit faster.",
+      "natural_language": "Leave every optional purpose blocked, then keep only your choices. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL edits, reload, navigation, extensions, external applications, or unrelated tabs.",
+      "parameters": {"purpose_count": 8, "negative_count": 3, "drawer_count": 3, "entry_option_count": 6, "final_option_count": 6, "reset_trap_count": 1, "link_count": 1, "moving_gateways": true, "orbit_speed_deg_per_second": 20}
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Ten balanced-polarity purposes span three drawers with two directed dependencies and two reset traps; seven closely worded choices orbit at the highest configured speed.",
+      "natural_language": "Leave every optional purpose blocked, then keep only your choices. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL edits, reload, navigation, extensions, external applications, or unrelated tabs.",
+      "parameters": {"purpose_count": 10, "negative_count": 5, "drawer_count": 3, "entry_option_count": 7, "final_option_count": 7, "reset_trap_count": 2, "link_count": 2, "moving_gateways": true, "orbit_speed_deg_per_second": 28}
+    }
+  },
+  "interaction": {
+    "simplified": {"implemented": true, "summary": "Use fixed gateway proxies, previous/next drawer controls, and explicit SET NO or SET YES buttons for the same moving packet and switch effects."},
+    "full": {"implemented": true, "summary": "Click the moving gateway cards directly, use the ledger tabs, and drag each physical switch handle between NO and YES; stationary clicks do not change switches."}
+  },
+  "real_time": {"play_time_seconds": 180, "observation_window_ms": 720, "frames_per_observation": 5}
+}

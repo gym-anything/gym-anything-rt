@@ -1,0 +1,24 @@
+{
+  "mechanic_id": "pearl_lattice_v2",
+  "version": "0",
+  "source_anchors": [
+    "ART-336"
+  ],
+  "source": {
+    "title": "Connect Four 3D",
+    "creator": "Oliver Güther",
+    "year": 2015,
+    "urls": [
+      "https://js1k.com/2015-hypetrain/demo/2357",
+      "https://js1k.com/2015-hypetrain/details/2357"
+    ],
+    "survey_record": "ART-336"
+  },
+  "transformation": "The source's projected gravity board and separate move confirmation become physical casting: release commits a falling pearl, steer through two sheared drifting collars, then gravity places it in that column before the rival responds.",
+  "asset_policy": "Original procedural Canvas and CSS only; no original JS1k source or art is shipped.",
+  "architecture": "Board construction helpers were copied from the preserved original benchmark plugin; double-collar dynamics and independent replay are new task-specific code.",
+  "evidence_status": {
+    "human_calibration": "pending",
+    "paid_model_evaluation": "not_authorized"
+  }
+}

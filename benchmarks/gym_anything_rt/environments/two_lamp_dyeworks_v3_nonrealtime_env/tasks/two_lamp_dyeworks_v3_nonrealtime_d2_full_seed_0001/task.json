@@ -1,0 +1,59 @@
+{
+  "description": "Click an anonymous LOT · SPOT TEST inlet to measure its dye under north-light and sodium. The revealed dye identity and two-light proof remain visible. Use the discovered inlet mapping to choose the valves for the pinned cloth. Adjust the dye valves until the wet cloth matches the pinned swatches under both north-light and sodium. Prepare freely before START ROLLS. During production, watch the dye-strength traces and correct for valve, pipe and mixing lag. Changing one valve can affect the others through the common pump. Each roll must finish within its displayed spoil allowance. Maximize usable yield: every spoiled millimetre permanently reduces the quality score. CERTIFY ROLLS only after production finishes. Exceeding a roll's spoil allowance or a rejected committed certification ends the episode; later retries cannot pass. Preparation mismatches, valve adjustments, and spoiled cloth within the allowance remain recoverable. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to or interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only when part of this task, using only their visible controls.",
+  "difficulty": "easy",
+  "env_id": "gym_anything_rt.two_lamp_dyeworks_v3_nonrealtime_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/two_lamp_dyeworks_v3_nonrealtime_d2_full_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/two_lamp_dyeworks_v3_nonrealtime_d2_full_seed_0001/setup_task.sh"
+  },
+  "id": "two_lamp_dyeworks_v3_nonrealtime_d2_full_seed_0001@0.2",
+  "init": {
+    "max_steps": 500,
+    "reward_type": "sparse",
+    "timeout_sec": 180
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/two_lamp_dyeworks_v3_v0.json",
+    "benchmark": "gym_anything_rt",
+    "capabilities": [
+      "visual understanding: 2D",
+      "temporal understanding and memory",
+      "reasoning and planning",
+      "exploration and interface understanding"
+    ],
+    "control_condition": {
+      "difficulty": 2,
+      "difficulty_parameters": {
+        "coupling": 0.025,
+        "mixing_ms": 1000,
+        "pigment_count": 3,
+        "pipe_ms": 300,
+        "tolerance": 4.6,
+        "transition_ms": 8000,
+        "valve_speed": 0.6,
+        "vat_count": 1,
+        "waste_mm": 70
+      },
+      "interaction": "full",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "two_lamp_dyeworks_v3_nonrealtime"
+  },
+  "name": "Two-Lamp Dyeworks V3 · Difficulty 2 · Full Interaction",
+  "natural_language": "Click an anonymous LOT · SPOT TEST inlet to measure its dye under north-light and sodium. The revealed dye identity and two-light proof remain visible. Use the discovered inlet mapping to choose the valves for the pinned cloth. Adjust the dye valves until the wet cloth matches the pinned swatches under both north-light and sodium. Prepare freely before START ROLLS. During production, watch the dye-strength traces and correct for valve, pipe and mixing lag. Changing one valve can affect the others through the common pump. Each roll must finish within its displayed spoil allowance. Maximize usable yield: every spoiled millimetre permanently reduces the quality score. CERTIFY ROLLS only after production finishes. Exceeding a roll's spoil allowance or a rejected committed certification ends the episode; later retries cannot pass. Preparation mismatches, valve adjustments, and spoiled cloth within the allowance remain recoverable. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to or interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only when part of this task, using only their visible controls.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "non-real-time",
+    "two-lamp-colour",
+    "continuous-control",
+    "spectral-colour"
+  ],
+  "version": "0.2"
+}

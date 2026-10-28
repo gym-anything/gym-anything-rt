@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "lampwrights_program_v2",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Two lanterns on a small connected roof map; broad decks, slow vertical motion, and no inherited momentum.",
+      "natural_language": "Light every blue rooftop lantern using the icon programmer. Watch roof motion and dispatch each leap for its landing state. Level, up, and down set the launch arc; roof height and momentum change the landing distance. A missed landing or lighting an unmarked roof ends the shift. Roofs keep moving during editing and dragging. The visible FROM/TO lift state and controller rule determine subsequent motion; the BASE column identifies each lift centre.",
+      "parameters": {
+        "roof_count": 6,
+        "lamp_count": 2,
+        "half_width": 0.48,
+        "sway": 0.01,
+        "lift": 1.05,
+        "span_ms": 8500,
+        "momentum": 0.0,
+        "routine_slots": 4
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "A branching roof route adds turns and lamp-order planning; source momentum and lateral sway affect landing.",
+      "natural_language": "Light every blue rooftop lantern using the icon programmer. Watch roof motion and dispatch each leap for its landing state. Level, up, and down set the launch arc; roof height and momentum change the landing distance. A missed landing or lighting an unmarked roof ends the shift. Roofs keep moving during editing and dragging. The visible FROM/TO lift state and controller rule determine subsequent motion; the BASE column identifies each lift centre.",
+      "parameters": {
+        "roof_count": 7,
+        "lamp_count": 2,
+        "half_width": 0.45,
+        "sway": 0.04,
+        "lift": 1.11,
+        "span_ms": 7400,
+        "momentum": 0.25,
+        "routine_slots": 4
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Three lamps require backtracking through a larger connected roof map; two axes of sway and narrower decks affect interception.",
+      "natural_language": "Light every blue rooftop lantern using the icon programmer. Watch roof motion and dispatch each leap for its landing state. Level, up, and down set the launch arc; roof height and momentum change the landing distance. A missed landing or lighting an unmarked roof ends the shift. Roofs keep moving during editing and dragging. The visible FROM/TO lift state and controller rule determine subsequent motion; the BASE column identifies each lift centre.",
+      "parameters": {
+        "roof_count": 10,
+        "lamp_count": 3,
+        "half_width": 0.42,
+        "sway": 0.07,
+        "lift": 1.16,
+        "span_ms": 6300,
+        "momentum": 0.5,
+        "routine_slots": 4
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Faster independent lifts and stronger inherited motion require predicting both source and destination while reusing routines.",
+      "natural_language": "Light every blue rooftop lantern using the icon programmer. Watch roof motion and dispatch each leap for its landing state. Level, up, and down set the launch arc; roof height and momentum change the landing distance. A missed landing or lighting an unmarked roof ends the shift. Roofs keep moving during editing and dragging. The visible FROM/TO lift state and controller rule determine subsequent motion; the BASE column identifies each lift centre.",
+      "parameters": {
+        "roof_count": 13,
+        "lamp_count": 4,
+        "half_width": 0.39,
+        "sway": 0.1,
+        "lift": 1.2,
+        "span_ms": 5500,
+        "momentum": 0.75,
+        "routine_slots": 4
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Five lamps in a connected 16-roof layout combine narrow decks, two-axis sway, vertical lift and inherited momentum. Multi-hop routines must account for several future landings.",
+      "natural_language": "Light every blue rooftop lantern using the icon programmer. Watch roof motion and dispatch each leap for its landing state. Level, up, and down set the launch arc; roof height and momentum change the landing distance. A missed landing or lighting an unmarked roof ends the shift. Roofs keep moving during editing and dragging. The visible FROM/TO lift state and controller rule determine subsequent motion; the BASE column identifies each lift centre.",
+      "parameters": {
+        "roof_count": 16,
+        "lamp_count": 5,
+        "half_width": 0.36,
+        "sway": 0.13,
+        "lift": 1.25,
+        "span_ms": 4700,
+        "momentum": 1.0,
+        "routine_slots": 4
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Select a glyph, then click a routine slot or live dispatch socket."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Drag glyphs into routine slots or the live dispatch socket; pointer capture supports sparse movement."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 600,
+    "observation_window_ms": 600,
+    "frames_per_observation": 4
+  }
+}

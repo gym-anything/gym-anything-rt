@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "crash_deadline_hovercar",
+  "baseline": {"difficulty": 4, "interaction": "full", "real_time": "live"},
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Drive a broad, gently curving short course around two barriers while holding two slow inspection sigils through generous windows.",
+      "natural_language": "Clear two moving hover checks while driving the short obstacle course. Keep the vehicle on the broad road and hold each visible sigil until it locks.",
+      "parameters": {
+        "check_count": 2, "obstacle_count": 2, "window_profile": "generated", "first_window_tick": 20, "window_duration_ticks": 70, "window_stride_ticks": 85, "required_tick_max": 8, "required_ticks": [7, 8], "target_radius": 36, "target_orbit_scale": 0.55, "target_motion_scale": 0.75, "road_amplitude_min": 20, "road_amplitude_max": 28, "road_period_min": 240, "road_period_max": 280, "road_half_width": 136, "finish_progress": 700, "deadline_tick": 360, "road_margin": 82, "target_window_slack_ticks": 62, "obstacle_bypass_margin": 50, "minimum_window_slack_ticks": 12
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Drive a longer three-barrier course while tracking three moving sigils with moderate orbits and overlapping attention demands.",
+      "natural_language": "Clear three moving hover checks while steering around three barriers. Keep the vehicle moving and hold each visible sigil until it locks.",
+      "parameters": {
+        "check_count": 3, "obstacle_count": 3, "window_profile": "generated", "first_window_tick": 18, "window_duration_ticks": 64, "window_stride_ticks": 72, "required_tick_max": 9, "required_ticks": [8, 9], "target_radius": 34, "target_orbit_scale": 0.7, "target_motion_scale": 0.85, "road_amplitude_min": 28, "road_amplitude_max": 36, "road_period_min": 210, "road_period_max": 240, "road_half_width": 126, "finish_progress": 1000, "deadline_tick": 350, "road_margin": 72, "target_window_slack_ticks": 55, "obstacle_bypass_margin": 40, "minimum_window_slack_ticks": 12
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Coordinate four checks and four barriers on a curving course; each sigil moves faster and its window leaves less recovery time.",
+      "natural_language": "Clear four moving hover checks while continuously steering through the four-barrier course. Plan speed so every check can lock before the finish.",
+      "parameters": {
+        "check_count": 4, "obstacle_count": 4, "window_profile": "generated", "first_window_tick": 18, "window_duration_ticks": 56, "window_stride_ticks": 64, "required_tick_max": 11, "required_ticks": [10, 11], "target_radius": 31, "target_orbit_scale": 0.88, "target_motion_scale": 0.95, "road_amplitude_min": 34, "road_amplitude_max": 44, "road_period_min": 180, "road_period_max": 210, "road_half_width": 118, "finish_progress": 1200, "deadline_tick": 340, "road_margin": 64, "target_window_slack_ticks": 45, "obstacle_bypass_margin": 31, "minimum_window_slack_ticks": 12
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "The existing five-check, six-barrier inertial course: 11 to 13 contiguous dwell ticks on independently moving sigils, with a speed tradeoff before tick 330.",
+      "parameters": {
+        "check_count": 5, "obstacle_count": 6, "window_profile": "current", "required_ticks": [11, 12, 13], "target_radius": 29, "target_orbit_scale": 1.0, "target_motion_scale": 1.0, "road_amplitude_min": 38, "road_amplitude_max": 52, "road_period_min": 165, "road_period_max": 195, "road_half_width": 110, "finish_progress": 1400, "deadline_tick": 330, "acceleration": 3.4, "brake": 6.0, "drag": 0.72, "steer_gain": 2.35, "lateral_damping": 0.84, "minimum_motion_during_dwell": 1.5, "road_margin": 56, "target_window_slack_ticks": 25, "obstacle_bypass_margin": 24, "minimum_window_slack_ticks": 12
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Coordinate six faster, smaller moving sigils while threading eight barriers on a narrower, tighter-curving course; late windows overlap and demand a deliberate speed plan.",
+      "natural_language": "Clear all six fast moving hover checks while steering the narrow eight-barrier course. Regulate speed so the late overlapping locks complete before the deadline.",
+      "parameters": {
+        "check_count": 6, "obstacle_count": 8, "window_profile": "generated", "first_window_tick": 18, "window_duration_ticks": 52, "window_stride_ticks": 44, "required_tick_max": 14, "required_ticks": [13, 14], "target_radius": 27, "target_orbit_scale": 1.18, "target_motion_scale": 1.2, "road_amplitude_min": 52, "road_amplitude_max": 64, "road_period_min": 135, "road_period_max": 165, "road_half_width": 102, "finish_progress": 1760, "deadline_tick": 360, "road_margin": 48, "target_window_slack_ticks": 38, "obstacle_bypass_margin": 18, "minimum_window_slack_ticks": 12
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {"implemented": true, "summary": "Visible toggle buttons hold throttle, brake, and steering states, while LOCK ACTIVE SIGIL follows the visible current sigil."},
+    "full": {"implemented": true, "summary": "Held WASD or arrow keys drive the hovercar while direct canvas pointer movement sustains each sigil dwell."}
+  },
+  "real_time": {"play_time_seconds": 150, "observation_window_ms": 500, "frames_per_observation": 5}
+}

@@ -1,0 +1,52 @@
+{
+  "description": "Collect every seal by sliding and morphing the parcel. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden-state access, or unrelated tabs. Only task-created tabs and their visible controls are allowed.",
+  "difficulty": "very_easy",
+  "env_id": "gym_anything_rt.concertina_courier_v2_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/concertina_courier_v2_d1_simplified_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/concertina_courier_v2_d1_simplified_seed_0001/setup_task.sh"
+  },
+  "id": "concertina_courier_v2_d1_simplified_seed_0001@0.2",
+  "init": {
+    "max_steps": 1000,
+    "reward_type": "sparse",
+    "timeout_sec": 720
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/concertina_courier_v0.json",
+    "benchmark": "gym_anything_rt",
+    "capabilities": [
+      "visual understanding: 2D",
+      "temporal understanding and memory",
+      "reasoning and planning"
+    ],
+    "control_condition": {
+      "difficulty": 1,
+      "difficulty_parameters": {
+        "alcove": 0,
+        "clearance": 105,
+        "drag": 0.65,
+        "gap": 0,
+        "reach": 100
+      },
+      "interaction": "simplified",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "concertina_courier_v2"
+  },
+  "name": "Concertina Courier V2 · Difficulty 1 · Simplified Interaction",
+  "natural_language": "Collect every gold seal. The parcel keeps its area, cannot jump, and falls when unsupported. Use the visible controls to slide or morph. In full mode hold a body arrow and release to coast; in simplified mode click a console control and click COAST to release. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden-state access, or unrelated tabs. Only task-created tabs and their visible controls are allowed.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "morphing",
+    "physics"
+  ],
+  "version": "0.2"
+}

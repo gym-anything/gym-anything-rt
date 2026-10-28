@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "top_face_dice_arithmetic_v2",
+  "baseline": {
+    "difficulty": 3,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "2 independent tumbler drives; capture changes every remaining drive; narrower seal and faster precession require predictive tracking.",
+      "parameters": {
+        "dice_count": 2,
+        "travel": 130,
+        "drive_speed": 0.24,
+        "spin_speed": 0.32,
+        "variation": 0.22,
+        "precession": 0.0,
+        "seal_radius": 36,
+        "seal_seconds": 0.65,
+        "unload_gain": 0.04
+      },
+      "natural_language": "Track the moving dice with the gripper. Clamp each while its top face is level and the seal ring is full. The captured top faces must add to the displayed target. Dice keep moving while the gripper is held. A bad clamp or incomplete certification ends the attempt."
+    },
+    "2": {
+      "label": "easy",
+      "summary": "2 independent tumbler drives; capture changes every remaining drive; narrower seal and faster precession require predictive tracking.",
+      "parameters": {
+        "dice_count": 2,
+        "travel": 190,
+        "drive_speed": 0.29,
+        "spin_speed": 0.38,
+        "variation": 0.3,
+        "precession": 0.1,
+        "seal_radius": 32,
+        "seal_seconds": 0.8,
+        "unload_gain": 0.06
+      },
+      "natural_language": "Track the moving dice with the gripper. Clamp each while its top face is level and the seal ring is full. The captured top faces must add to the displayed target. Dice keep moving while the gripper is held. A bad clamp or incomplete certification ends the attempt."
+    },
+    "3": {
+      "label": "medium",
+      "summary": "3 independent tumbler drives; capture changes every remaining drive; narrower seal and faster precession require predictive tracking.",
+      "parameters": {
+        "dice_count": 3,
+        "travel": 220,
+        "drive_speed": 0.34,
+        "spin_speed": 0.43,
+        "variation": 0.36,
+        "precession": 0.18,
+        "seal_radius": 29,
+        "seal_seconds": 0.95,
+        "unload_gain": 0.08
+      },
+      "natural_language": "Track the moving dice with the gripper. Clamp each while its top face is level and the seal ring is full. The captured top faces must add to the displayed target. Dice keep moving while the gripper is held. A bad clamp or incomplete certification ends the attempt."
+    },
+    "4": {
+      "label": "hard",
+      "summary": "3 independent tumbler drives; capture changes every remaining drive; narrower seal and faster precession require predictive tracking.",
+      "parameters": {
+        "dice_count": 3,
+        "travel": 245,
+        "drive_speed": 0.4,
+        "spin_speed": 0.49,
+        "variation": 0.42,
+        "precession": 0.26,
+        "seal_radius": 25,
+        "seal_seconds": 1.1,
+        "unload_gain": 0.1
+      },
+      "natural_language": "Track the moving dice with the gripper. Clamp each while its top face is level and the seal ring is full. The captured top faces must add to the displayed target. Dice keep moving while the gripper is held. A bad clamp or incomplete certification ends the attempt."
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "4 independent tumbler drives; capture changes every remaining drive; narrower seal and faster precession require predictive tracking.",
+      "parameters": {
+        "dice_count": 4,
+        "travel": 270,
+        "drive_speed": 0.47,
+        "spin_speed": 0.55,
+        "variation": 0.46,
+        "precession": 0.34,
+        "seal_radius": 22,
+        "seal_seconds": 1.2,
+        "unload_gain": 0.12
+      },
+      "natural_language": "Track the moving dice with the gripper. Clamp each while its top face is level and the seal ring is full. The captured top faces must add to the displayed target. Dice keep moving while the gripper is held. A bad clamp or incomplete certification ends the attempt."
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Drag the gripper directly; press Space or CLAMP to transfer the aligned die to the balance."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Click a target point for the same inertial gripper; press Space or CLAMP to transfer the aligned die. No auto-target or following."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 400,
+    "frames_per_observation": 5
+  }
+}

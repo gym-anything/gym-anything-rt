@@ -1,0 +1,15 @@
+{
+  "mechanic_id": "magnetic_stripe_purgatory_v3",
+  "source_anchors": [
+    "captchaware/cardSwipe"
+  ],
+  "source_urls": [
+    "https://paperhatprojects.itch.io/captchaware",
+    "https://github.com/NonsenseNH/CaptchaWare/blob/fb433d250da3145b5ac1c15443274d5b02ed78a6/scripts/microgames/card_swipe/card.gd"
+  ],
+  "source_revision": "fb433d250da3145b5ac1c15443274d5b02ed78a6",
+  "transformation": "Original motor calibration and too-fast/too-slow card feedback become continuous alignment and speed control with visible nonperiodic reader motion, inertia, stripe damage, and coupled dual feeds.",
+  "assets": "Original procedural Canvas and CSS. No original art, audio or implementation copied.",
+  "survey_ids": [],
+  "missing_collected_evidence": "sources/captchaware/microgames.md is absent on this machine. Original cited code was retrieved directly."
+}

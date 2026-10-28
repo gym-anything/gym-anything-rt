@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "firewatch_fold_v3_nonrealtime",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "parameters": {
+        "floors": 3,
+        "fronts": 2,
+        "ladders": 1,
+        "speed": 0.65,
+        "variation": 0.5,
+        "reach": 4.6,
+        "radius": 0.52,
+        "span_ms": 3000
+      },
+      "summary": "Two broad, slow opposing colored fronts share each gutter. Long water reach and large cores make observation-driven first-contact choices forgiving.",
+      "natural_language": "Contain the moving fire fronts, climb unlocked ladders, and reach the resident. Both fire gutters and their 600-ms trails stay visible. Ladder plans and the resident location are concealed until inspected; use the eye to survey alternating faces. Surveyed plans stay visible. Start the rescue when ready. Certify the rescue within 180 seconds after Start. Water travels along the last horizontal direction for the dashed reach. Aim ahead using core trails and white current-velocity arrows; dotted bars show cruise velocity. Match the first core hit using AMBER, TEAL or ROSE canisters. Each front needs one matching canister; a miss ends the attempt. Inspection neither moves the firefighter nor pauses a started rescue. Walk past a face edge to cross the fold. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden-state access, or unrelated tabs. Only task tabs opened by visible task controls may be used.",
+      "natural_language_by_interaction": {
+        "full": "Contain the moving fire fronts, climb unlocked ladders, and reach the resident. Both fire gutters and their 600-ms trails stay visible. Ladder plans and the resident location are concealed until inspected; use the eye to survey alternating faces. Surveyed plans stay visible. Start the rescue when ready. Certify the rescue within 180 seconds after Start. Water travels along the last horizontal direction for the dashed reach. Aim ahead using core trails and white current-velocity arrows; dotted bars show cruise velocity. Match the first core hit using AMBER, TEAL or ROSE canisters. Each front needs one matching canister; a miss ends the attempt. Inspection neither moves the firefighter nor pauses a started rescue. Walk past a face edge to cross the fold. Use arrow keys or WASD to move, 1/2/3 to select canisters, and Shift to fire. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden-state access, or unrelated tabs. Only task tabs opened by visible task controls may be used.",
+        "simplified": "Contain the moving fire fronts, climb unlocked ladders, and reach the resident. Both fire gutters and their 600-ms trails stay visible. Ladder plans and the resident location are concealed until inspected; use the eye to survey alternating faces. Surveyed plans stay visible. Start the rescue when ready. Certify the rescue within 180 seconds after Start. Water travels along the last horizontal direction for the dashed reach. Aim ahead using core trails and white current-velocity arrows; dotted bars show cruise velocity. Match the first core hit using AMBER, TEAL or ROSE canisters. Each front needs one matching canister; a miss ends the attempt. Inspection neither moves the firefighter nor pauses a started rescue. Walk past a face edge to cross the fold. Use the direction buttons to move, the canister buttons to select colors, and WATER PULSE to fire. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden-state access, or unrelated tabs. Only task tabs opened by visible task controls may be used."
+      }
+    },
+    "2": {
+      "label": "easy",
+      "parameters": {
+        "floors": 3,
+        "fronts": 2,
+        "ladders": 2,
+        "speed": 0.85,
+        "variation": 0.55,
+        "reach": 4.0,
+        "radius": 0.47,
+        "span_ms": 3000
+      },
+      "summary": "Opposing colored fronts move faster with stronger current variation; shorter reach and smaller cores require a closer approach and renewed observation.",
+      "natural_language": "Contain the moving fire fronts, climb unlocked ladders, and reach the resident. Both fire gutters and their 600-ms trails stay visible. Ladder plans and the resident location are concealed until inspected; use the eye to survey alternating faces. Surveyed plans stay visible. Start the rescue when ready. Certify the rescue within 180 seconds after Start. Water travels along the last horizontal direction for the dashed reach. Aim ahead using core trails and white current-velocity arrows; dotted bars show cruise velocity. Match the first core hit using AMBER, TEAL or ROSE canisters. Each front needs one matching canister; a miss ends the attempt. Inspection neither moves the firefighter nor pauses a started rescue. Walk past a face edge to cross the fold. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden-state access, or unrelated tabs. Only task tabs opened by visible task controls may be used.",
+      "natural_language_by_interaction": {
+        "full": "Contain the moving fire fronts, climb unlocked ladders, and reach the resident. Both fire gutters and their 600-ms trails stay visible. Ladder plans and the resident location are concealed until inspected; use the eye to survey alternating faces. Surveyed plans stay visible. Start the rescue when ready. Certify the rescue within 180 seconds after Start. Water travels along the last horizontal direction for the dashed reach. Aim ahead using core trails and white current-velocity arrows; dotted bars show cruise velocity. Match the first core hit using AMBER, TEAL or ROSE canisters. Each front needs one matching canister; a miss ends the attempt. Inspection neither moves the firefighter nor pauses a started rescue. Walk past a face edge to cross the fold. Use arrow keys or WASD to move, 1/2/3 to select canisters, and Shift to fire. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden-state access, or unrelated tabs. Only task tabs opened by visible task controls may be used.",
+        "simplified": "Contain the moving fire fronts, climb unlocked ladders, and reach the resident. Both fire gutters and their 600-ms trails stay visible. Ladder plans and the resident location are concealed until inspected; use the eye to survey alternating faces. Surveyed plans stay visible. Start the rescue when ready. Certify the rescue within 180 seconds after Start. Water travels along the last horizontal direction for the dashed reach. Aim ahead using core trails and white current-velocity arrows; dotted bars show cruise velocity. Match the first core hit using AMBER, TEAL or ROSE canisters. Each front needs one matching canister; a miss ends the attempt. Inspection neither moves the firefighter nor pauses a started rescue. Walk past a face edge to cross the fold. Use the direction buttons to move, the canister buttons to select colors, and WATER PULSE to fire. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden-state access, or unrelated tabs. Only task tabs opened by visible task controls may be used."
+      }
+    },
+    "3": {
+      "label": "medium",
+      "parameters": {
+        "floors": 4,
+        "fronts": 2,
+        "ladders": 2,
+        "speed": 1.05,
+        "variation": 0.6,
+        "reach": 3.6,
+        "radius": 0.42,
+        "span_ms": 3000
+      },
+      "summary": "Two opposing fronts of different colors share each gutter. Their crossing order determines which cartridge a pulse needs. Shorter reach requires closer interception.",
+      "natural_language": "Contain the moving fire fronts, climb unlocked ladders, and reach the resident. Both fire gutters and their 600-ms trails stay visible. Ladder plans and the resident location are concealed until inspected; use the eye to survey alternating faces. Surveyed plans stay visible. Start the rescue when ready. Certify the rescue within 180 seconds after Start. Water travels along the last horizontal direction for the dashed reach. Aim ahead using core trails and white current-velocity arrows; dotted bars show cruise velocity. Match the first core hit using AMBER, TEAL or ROSE canisters. Each front needs one matching canister; a miss ends the attempt. Inspection neither moves the firefighter nor pauses a started rescue. Walk past a face edge to cross the fold. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden-state access, or unrelated tabs. Only task tabs opened by visible task controls may be used.",
+      "natural_language_by_interaction": {
+        "full": "Contain the moving fire fronts, climb unlocked ladders, and reach the resident. Both fire gutters and their 600-ms trails stay visible. Ladder plans and the resident location are concealed until inspected; use the eye to survey alternating faces. Surveyed plans stay visible. Start the rescue when ready. Certify the rescue within 180 seconds after Start. Water travels along the last horizontal direction for the dashed reach. Aim ahead using core trails and white current-velocity arrows; dotted bars show cruise velocity. Match the first core hit using AMBER, TEAL or ROSE canisters. Each front needs one matching canister; a miss ends the attempt. Inspection neither moves the firefighter nor pauses a started rescue. Walk past a face edge to cross the fold. Use arrow keys or WASD to move, 1/2/3 to select canisters, and Shift to fire. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden-state access, or unrelated tabs. Only task tabs opened by visible task controls may be used.",
+        "simplified": "Contain the moving fire fronts, climb unlocked ladders, and reach the resident. Both fire gutters and their 600-ms trails stay visible. Ladder plans and the resident location are concealed until inspected; use the eye to survey alternating faces. Surveyed plans stay visible. Start the rescue when ready. Certify the rescue within 180 seconds after Start. Water travels along the last horizontal direction for the dashed reach. Aim ahead using core trails and white current-velocity arrows; dotted bars show cruise velocity. Match the first core hit using AMBER, TEAL or ROSE canisters. Each front needs one matching canister; a miss ends the attempt. Inspection neither moves the firefighter nor pauses a started rescue. Walk past a face edge to cross the fold. Use the direction buttons to move, the canister buttons to select colors, and WATER PULSE to fire. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden-state access, or unrelated tabs. Only task tabs opened by visible task controls may be used."
+      }
+    },
+    "4": {
+      "label": "hard",
+      "parameters": {
+        "floors": 4,
+        "fronts": 2,
+        "ladders": 3,
+        "speed": 1.25,
+        "variation": 0.65,
+        "reach": 3.2,
+        "radius": 0.38,
+        "span_ms": 3000
+      },
+      "summary": "Faster opposing colored currents, shorter reach and smaller cores require tighter prediction of the first contact; varied ladders require routing after containment.",
+      "natural_language": "Contain the moving fire fronts, climb unlocked ladders, and reach the resident. Both fire gutters and their 600-ms trails stay visible. Ladder plans and the resident location are concealed until inspected; use the eye to survey alternating faces. Surveyed plans stay visible. Start the rescue when ready. Certify the rescue within 180 seconds after Start. Water travels along the last horizontal direction for the dashed reach. Aim ahead using core trails and white current-velocity arrows; dotted bars show cruise velocity. Match the first core hit using AMBER, TEAL or ROSE canisters. Each front needs one matching canister; a miss ends the attempt. Inspection neither moves the firefighter nor pauses a started rescue. Walk past a face edge to cross the fold. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden-state access, or unrelated tabs. Only task tabs opened by visible task controls may be used.",
+      "natural_language_by_interaction": {
+        "full": "Contain the moving fire fronts, climb unlocked ladders, and reach the resident. Both fire gutters and their 600-ms trails stay visible. Ladder plans and the resident location are concealed until inspected; use the eye to survey alternating faces. Surveyed plans stay visible. Start the rescue when ready. Certify the rescue within 180 seconds after Start. Water travels along the last horizontal direction for the dashed reach. Aim ahead using core trails and white current-velocity arrows; dotted bars show cruise velocity. Match the first core hit using AMBER, TEAL or ROSE canisters. Each front needs one matching canister; a miss ends the attempt. Inspection neither moves the firefighter nor pauses a started rescue. Walk past a face edge to cross the fold. Use arrow keys or WASD to move, 1/2/3 to select canisters, and Shift to fire. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden-state access, or unrelated tabs. Only task tabs opened by visible task controls may be used.",
+        "simplified": "Contain the moving fire fronts, climb unlocked ladders, and reach the resident. Both fire gutters and their 600-ms trails stay visible. Ladder plans and the resident location are concealed until inspected; use the eye to survey alternating faces. Surveyed plans stay visible. Start the rescue when ready. Certify the rescue within 180 seconds after Start. Water travels along the last horizontal direction for the dashed reach. Aim ahead using core trails and white current-velocity arrows; dotted bars show cruise velocity. Match the first core hit using AMBER, TEAL or ROSE canisters. Each front needs one matching canister; a miss ends the attempt. Inspection neither moves the firefighter nor pauses a started rescue. Walk past a face edge to cross the fold. Use the direction buttons to move, the canister buttons to select colors, and WATER PULSE to fire. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden-state access, or unrelated tabs. Only task tabs opened by visible task controls may be used."
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "parameters": {
+        "floors": 5,
+        "fronts": 3,
+        "ladders": 3,
+        "speed": 1.45,
+        "variation": 0.7,
+        "reach": 2.8,
+        "radius": 0.34,
+        "span_ms": 3000
+      },
+      "summary": "Three independently moving colored fronts per burning floor can overtake or cross before a pulse arrives. Short reach, narrow cores, changing speeds and opposing motion couple canister selection with two-face approach and ladder routing.",
+      "natural_language": "Contain the moving fire fronts, climb unlocked ladders, and reach the resident. Both fire gutters and their 600-ms trails stay visible. Ladder plans and the resident location are concealed until inspected; use the eye to survey alternating faces. Surveyed plans stay visible. Start the rescue when ready. Certify the rescue within 180 seconds after Start. Water travels along the last horizontal direction for the dashed reach. Aim ahead using core trails and white current-velocity arrows; dotted bars show cruise velocity. Match the first core hit using AMBER, TEAL or ROSE canisters. Each front needs one matching canister; a miss ends the attempt. Inspection neither moves the firefighter nor pauses a started rescue. Walk past a face edge to cross the fold. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden-state access, or unrelated tabs. Only task tabs opened by visible task controls may be used.",
+      "natural_language_by_interaction": {
+        "full": "Contain the moving fire fronts, climb unlocked ladders, and reach the resident. Both fire gutters and their 600-ms trails stay visible. Ladder plans and the resident location are concealed until inspected; use the eye to survey alternating faces. Surveyed plans stay visible. Start the rescue when ready. Certify the rescue within 180 seconds after Start. Water travels along the last horizontal direction for the dashed reach. Aim ahead using core trails and white current-velocity arrows; dotted bars show cruise velocity. Match the first core hit using AMBER, TEAL or ROSE canisters. Each front needs one matching canister; a miss ends the attempt. Inspection neither moves the firefighter nor pauses a started rescue. Walk past a face edge to cross the fold. Use arrow keys or WASD to move, 1/2/3 to select canisters, and Shift to fire. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden-state access, or unrelated tabs. Only task tabs opened by visible task controls may be used.",
+        "simplified": "Contain the moving fire fronts, climb unlocked ladders, and reach the resident. Both fire gutters and their 600-ms trails stay visible. Ladder plans and the resident location are concealed until inspected; use the eye to survey alternating faces. Surveyed plans stay visible. Start the rescue when ready. Certify the rescue within 180 seconds after Start. Water travels along the last horizontal direction for the dashed reach. Aim ahead using core trails and white current-velocity arrows; dotted bars show cruise velocity. Match the first core hit using AMBER, TEAL or ROSE canisters. Each front needs one matching canister; a miss ends the attempt. Inspection neither moves the firefighter nor pauses a started rescue. Walk past a face edge to cross the fold. Use the direction buttons to move, the canister buttons to select colors, and WATER PULSE to fire. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden-state access, or unrelated tabs. Only task tabs opened by visible task controls may be used."
+      }
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "description": "Discrete arrow/WASD bay movement and climbing; Shift releases a water pulse. Key repeat is ignored. Keys 1/2/3 select matching cartridges. The shared eye button reveals the same concealed face plans and resident location; discoveries persist."
+    },
+    "simplified": {
+      "implemented": true,
+      "description": "Direction buttons perform the identical bay movement/climb; WATER PULSE performs the identical directional shot. No aiming, interception or timing assistance. Colored buttons select the same cartridges. The shared eye button reveals the same concealed face plans and resident location; discoveries persist."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  }
+}

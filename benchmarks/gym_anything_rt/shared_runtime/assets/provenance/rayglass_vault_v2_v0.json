@@ -1,0 +1,23 @@
+{
+  "mechanic_id": "rayglass_vault_v2",
+  "name": "Rayglass Vault V2",
+  "source_anchors": [
+    "PLOG-001"
+  ],
+  "sources": [
+    {
+      "survey_id": "PLOG-001",
+      "record_path": "outputs/selection_round4_20260906/inputs/dashboard/data/entries/07.json",
+      "url": "https://www.chiark.greenend.org.uk/~sgtatham/puzzles/doc/blackbox.html",
+      "play_url": "https://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/blackbox.html",
+      "license": "Source mechanic referenced; no source code or art copied."
+    }
+  ],
+  "transformation": "Black Box active optical probing supplies hidden bead routes and absorption/reflection/transmission. An original optical vault adds cable patching and concurrent continuous reflected-beam tracking of independently driven receivers, finite mirror acceleration, a shared slew budget, leaking optical charge and visible overheating.",
+  "assets": "Original canvas and CSS; no third-party artwork or fonts.",
+  "physics_revision": "moving-receivers-3",
+  "status": "prototype_visual_candidate",
+  "human_calibration": "pending",
+  "native_http_action_parity": "pending isolation approval; no claim",
+  "revision_3_transformation": "After Black Box routing and concurrent moving-receiver charging, isolated capacitors unlock a physical seal key. Receivers keep moving; the entire key must fit AMBER's opening at release or placement. A miss is irreversible. This terminal contact mode has a visible-information robust interception policy, including reflections and all future speeds in the printed bounds."
+}

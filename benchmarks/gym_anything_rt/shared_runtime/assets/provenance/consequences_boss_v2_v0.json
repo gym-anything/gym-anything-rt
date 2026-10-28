@@ -1,0 +1,16 @@
+{
+  "mechanic_id": "consequences_boss_v2",
+  "revision": "covenant-echoes-v1",
+  "source_anchors": [
+    "captcha-rpg/moral-combat"
+  ],
+  "survey_ids": [],
+  "supplemental_survey_record": "CAPW-069 in supplied dashboard/data/entries/02.json",
+  "source_urls": [
+    "https://heyyeh.itch.io/captcha-rpg",
+    "https://html-classic.itch.zone/html/8438758/script.js"
+  ],
+  "transformation": "Earlier choices determine later successful boss actions. Original vector-art covenants replace moral dialogue; continuous drifting echoes require seal casts with expiring moving geometry.",
+  "assets": "Original Canvas geometry and CSS; no third-party art.",
+  "collected_evidence_path_missing": "sources/captcha-rpg/notes.md"
+}

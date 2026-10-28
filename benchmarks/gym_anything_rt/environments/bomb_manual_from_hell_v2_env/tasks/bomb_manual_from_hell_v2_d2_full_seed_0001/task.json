@@ -1,0 +1,53 @@
+{
+  "description": "Moving fuse drums and independently drifting transparent manual leaves require predictive alignment and irreversible cutting.",
+  "difficulty": "easy",
+  "env_id": "gym_anything_rt.bomb_manual_from_hell_v2_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/bomb_manual_from_hell_v2_d2_full_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/bomb_manual_from_hell_v2_d2_full_seed_0001/setup_task.sh"
+  },
+  "id": "bomb_manual_from_hell_v2_d2_full_seed_0001@0.2",
+  "init": {
+    "max_steps": 500,
+    "reward_type": "sparse",
+    "timeout_sec": 600
+  },
+  "metadata": {
+    "benchmark": "gym_anything_rt",
+    "control_condition": {
+      "difficulty": 2,
+      "difficulty_parameters": {
+        "aperture_half_deg": 78,
+        "fuse_speed": 0.38,
+        "guard_speed": 0.17,
+        "layers": 2,
+        "load_coupling": 0.07,
+        "modules": 3,
+        "rate_variation": 0.65
+      },
+      "interaction": "full",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "bomb_manual_from_hell_v2"
+  },
+  "name": "Bomb Manual From Hell V2 · Difficulty 2 · Full Interaction",
+  "natural_language": "Expose each moving fuse through every acetate guard, then snip its collar. The first failed snip, incomplete seal, or engine expiry ends the episode; retries cannot earn a pass. Inspection and manual-leaf adjustments remain allowed. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, or any other implementation or hidden-state access. Do not interact with unrelated, blank, settings, or non-task tabs.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "linux",
+    "browser",
+    "visual-puzzle",
+    "gym-anything-rt",
+    "real-time",
+    "spatial-registration",
+    "prediction",
+    "irreversible-cut"
+  ],
+  "version": "0.2"
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "clockbeat_catacomb_nonrealtime",
+  "baseline": {
+    "difficulty": 4,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "One unarmored pursuer; generous health.",
+      "parameters": {"size": 7, "wall_count": 2, "kinds": ["crawler"], "enemy_health": 1, "health": 4},
+      "natural_language_by_interaction": {
+        "full": "Defeat every sentry and enter the stair alive. Wind the clock, then use arrows or WASD (Space waits) once per turn. The displayed gold action window stays available until you act; sentries act once after each deliberate input. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, hidden state, or unrelated tabs.",
+        "simplified": "Defeat every sentry and enter the stair alive. Wind the clock, then click the direction or wait buttons once per turn. The displayed gold action window stays available until you act; sentries act once after each deliberate input. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, hidden state, or unrelated tabs."
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "A second, shielded alternating pursuer changes approach timing.",
+      "parameters": {"size": 7, "wall_count": 3, "kinds": ["crawler", "hopper"], "enemy_health": 1, "health": 4},
+      "natural_language_by_interaction": {
+        "full": "Defeat every sentry and enter the stair alive. Wind the clock, then use arrows or WASD (Space waits) once per turn. The displayed gold action window stays available until you act; sentries act once after each deliberate input. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, hidden state, or unrelated tabs.",
+        "simplified": "Defeat every sentry and enter the stair alive. Wind the clock, then click the direction or wait buttons once per turn. The displayed gold action window stays available until you act; sentries act once after each deliberate input. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, hidden state, or unrelated tabs."
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Three interacting pursuers share obstacles and block one another.",
+      "parameters": {"size": 8, "wall_count": 5, "kinds": ["crawler", "hopper", "hopper"], "enemy_health": 1, "health": 3},
+      "natural_language_by_interaction": {
+        "full": "Defeat every sentry and enter the stair alive. Wind the clock, then use arrows or WASD (Space waits) once per turn. The displayed gold action window stays available until you act; sentries act once after each deliberate input. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, hidden state, or unrelated tabs.",
+        "simplified": "Defeat every sentry and enter the stair alive. Wind the clock, then click the direction or wait buttons once per turn. The displayed gold action window stays available until you act; sentries act once after each deliberate input. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, hidden state, or unrelated tabs."
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Two-hit enemies and a rooted three-phase striker require coordinated approach and retreat.",
+      "parameters": {"size": 8, "wall_count": 6, "kinds": ["crawler", "hopper", "lancer"], "enemy_health": 2, "health": 3},
+      "natural_language_by_interaction": {
+        "full": "Defeat every sentry and enter the stair alive. Wind the clock, then use arrows or WASD (Space waits) once per turn. The displayed gold action window stays available until you act; sentries act once after each deliberate input. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, hidden state, or unrelated tabs.",
+        "simplified": "Defeat every sentry and enter the stair alive. Wind the clock, then click the direction or wait buttons once per turn. The displayed gold action window stays available until you act; sentries act once after each deliberate input. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, hidden state, or unrelated tabs."
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Two overlapping rooted strike zones, more obstacles, and only two hearts constrain safe routes.",
+      "parameters": {"size": 9, "wall_count": 9, "kinds": ["crawler", "hopper", "lancer", "lancer"], "enemy_health": 2, "health": 2},
+      "natural_language_by_interaction": {
+        "full": "Defeat every sentry and enter the stair alive. Wind the clock, then use arrows or WASD (Space waits) once per turn. The displayed gold action window stays available until you act; sentries act once after each deliberate input. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, hidden state, or unrelated tabs.",
+        "simplified": "Defeat every sentry and enter the stair alive. Wind the clock, then click the direction or wait buttons once per turn. The displayed gold action window stays available until you act; sentries act once after each deliberate input. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, hidden state, or unrelated tabs."
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {"implemented": true, "summary": "Click direction and wait buttons; each turn remains available until used."},
+    "full": {"implemented": true, "summary": "Press arrows or WASD; Space waits. Each turn remains available until used; no key repeat."}
+  },
+  "real_time": {"play_time_seconds": 180, "observation_window_ms": 300, "frames_per_observation": 3}
+}

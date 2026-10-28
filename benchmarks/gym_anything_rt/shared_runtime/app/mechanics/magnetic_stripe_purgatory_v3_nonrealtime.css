@@ -1,0 +1,9 @@
+body[data-mechanic="magnetic_stripe_purgatory_v3_nonrealtime"]{background:radial-gradient(ellipse at 30% 20%,#31545d,#091820 75%);color:#e8dfc8;}
+.ms2-shell{position:relative;width:min(1120px,98vw);margin:auto;border:2px solid #64878a;border-radius:12px;overflow:hidden;background:#132c34;box-shadow:0 25px 80px #0009;font-family:ui-monospace,monospace;}
+.ms2-head{display:flex;justify-content:space-between;align-items:center;padding:12px 23px;border-bottom:3px solid #d9ad65;background:linear-gradient(120deg,#25454e,#10252d);}
+.ms2-head small{font-size:10px;letter-spacing:.16em;color:#d9ad65;}.ms2-head h1{font:28px Georgia,serif;margin:5px 0 0;}.ms2-head>span{font-size:12px;line-height:1.6;color:#97c1bd;text-align:right;}
+.ms2-rules{font:13px/1.45 ui-sans-serif,sans-serif;color:#cbdad3;background:#173039;margin:0;padding:8px 22px;}
+.ms2-stage{width:100%;height:auto;display:block;touch-action:none;user-select:none;}
+.ms2-shell footer{display:grid;grid-template-columns:180px 1fr 180px;min-height:58px;background:#203f47;border-top:1px solid #64878a;}
+.ms2-shell button{font:bold 13px ui-monospace,monospace;color:#ece5cf;background:#375962;border:0;cursor:pointer;padding:14px;}.ms2-shell button:hover{background:#476c73;}.ms2-shell button:disabled{opacity:.45;cursor:default;}.ms2-shell .readout{display:grid;place-items:center;padding:8px 14px;text-align:center;font:12px/1.45 ui-monospace,monospace;color:#c3d5cf;}.ms2-shell .readout[data-status="passed"]{color:#8ce6b8;}.ms2-shell .readout[data-status="error"]{color:#ff9787;}
+.ms2-verdict{position:absolute;left:50%;top:44%;transform:translateX(-50%);width:600px;max-width:90%;padding:38px 15px;border:5px double #f18b78;background:#0c2027ee;color:#ffa391;text-align:center;font:bold 36px Georgia,serif;box-shadow:0 10px 80px #000b;pointer-events:none;}.ms2-verdict[hidden]{display:none;}.ms2-verdict[data-passed="true"]{color:#9fefbd;border-color:#9fefbd;}

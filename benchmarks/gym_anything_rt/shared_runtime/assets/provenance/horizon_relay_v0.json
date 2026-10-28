@@ -1,0 +1,17 @@
+{
+  "collection": "horizon_relay_v0",
+  "created": "2026-09-09",
+  "policy": "The survey record seeds the mechanic only. All geometry, rendering, procedural generation, browser interaction, and grading are original. No NASA or third-party artwork is redistributed.",
+  "source_anchors": [
+    "ART-423"
+  ],
+  "sources": [
+    {
+      "url": "https://spaceplace.nasa.gov/dsn-game/en/",
+      "publisher": "NASA Space Place / JPL",
+      "used_for": "Three ground-station complexes, spacecraft communication requests, dish aiming, Earth rotation, and handoff when a spacecraft sets over a station horizon."
+    }
+  ],
+  "original_transformation": "A procedural orthographic 3D globe with explicit line-of-sight replay, visible station/spacecraft depth cues, persistent transfer progress, and two input surfaces.",
+  "assets": []
+}

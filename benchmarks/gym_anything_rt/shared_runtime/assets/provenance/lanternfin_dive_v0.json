@@ -1,0 +1,20 @@
+{
+  "collection": "lanternfin_dive_v0",
+  "created": "2026-09-08",
+  "policy": "The survey source supplies the interaction mechanic only. The shipped aquarium art, projection, dynamics, controls, generator, grader, solver, and evidence are original benchmark work; no third-party media or simulator assets are redistributed.",
+  "mechanic": "lanternfin_dive",
+  "source_anchors": [
+    {
+      "survey_id": "XAGT-346",
+      "source": "https://github.com/google-deepmind/dm_control/blob/main/dm_control/suite/fish.py",
+      "source_repository": "https://github.com/google-deepmind/dm_control",
+      "mechanic_used": "A 3D fish task with continuous joint/fin control, fluid-drag propulsion, upright body orientation, and a 3D target-position objective.",
+      "transformation": "Lanternfin Dive is a self-contained screenshot/action task with a jewel-coloured articulated fish in an aquarium. It uses a deterministic original vector-dynamics bridge rather than dm_control or MuJoCo, and independently replays the same equations for grading."
+    }
+  ],
+  "original_assets": {
+    "visuals": "Canvas-rendered aquarium, perspective grid, pearl, fish body, fins, and light trails authored for this benchmark.",
+    "runtime": "No third-party runtime or game code shipped.",
+    "license_note": "The cited dm_control repository is Apache-2.0; the benchmark does not copy its source or assets."
+  }
+}

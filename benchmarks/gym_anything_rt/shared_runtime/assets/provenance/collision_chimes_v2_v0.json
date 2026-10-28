@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "collision_chimes_v2",
+  "source_anchors": [
+    "ART-271"
+  ],
+  "sources": [
+    {
+      "title": "Otomata — Batuhan Bozkurt / Earslap",
+      "url": "https://earslap.com/page/otomata.html",
+      "accessed": "2026-10-02",
+      "role": "Cardinal arrow cells advance, reverse on walls, and turn clockwise on encounters."
+    },
+    {
+      "title": "Shared piece example",
+      "url": "http://www.earslap.com/projectslab/otomata?q=0d6p224s4v508n7n6012",
+      "access_status": "not accessible through research browser"
+    }
+  ],
+  "assets": [],
+  "transformation": "Original visuals and code. Source-derived wall events emit smoothly drifting visible chime pulses. Bounded-speed brass receivers must be struck while a moving pulse centre is physically inside them. Incorrect strikes and escaped pulses are terminal. Independent drift has no short replay period within the episode. No source assets or code copied.",
+  "notes": "Original Collision Chimes is preserved. Oracle planning is privileged; human usability and agent difficulty remain unmeasured.",
+  "implementation_revision": "drifting-wall-pulses-v2-strike"
+}

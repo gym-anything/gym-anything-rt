@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "reveal_to_identify_nonrealtime",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Three distinct carriers with two requested shapes, broad illumination and responsive scanner; deliberate actions advance fixed steps and waiting is inert.",
+      "parameters": {
+        "carriers": 3,
+        "targets": 2,
+        "speed": 72,
+        "current_memory_ms": 2400,
+        "lens_radius": 116,
+        "carrier_radius": 34,
+        "pulse_lag_ms": 650,
+        "scanner_acceleration": 1800,
+        "scanner_speed": 380,
+        "scanner_damping": 12,
+        "similar_decoys": 0
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Four carriers with two requested shapes, a smaller lens, longer pulse flight and faster changing current; all evolution is action-triggered.",
+      "parameters": {
+        "carriers": 4,
+        "targets": 2,
+        "speed": 86,
+        "current_memory_ms": 2200,
+        "lens_radius": 106,
+        "carrier_radius": 33,
+        "pulse_lag_ms": 700,
+        "scanner_acceleration": 1550,
+        "scanner_speed": 340,
+        "scanner_damping": 11,
+        "similar_decoys": 0
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Five carriers include a near-matching decoy; two targets share one scanner and collide, with fixed progress per deliberate action.",
+      "parameters": {
+        "carriers": 5,
+        "targets": 2,
+        "speed": 100,
+        "current_memory_ms": 2000,
+        "lens_radius": 96,
+        "carrier_radius": 32,
+        "pulse_lag_ms": 750,
+        "scanner_acceleration": 1300,
+        "scanner_speed": 310,
+        "scanner_damping": 10,
+        "similar_decoys": 1
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Two near-matching decoys, faster current evolution, smaller scanner and stronger inertial lag; idle time cannot move the scene.",
+      "parameters": {
+        "carriers": 6,
+        "targets": 2,
+        "speed": 112,
+        "current_memory_ms": 1800,
+        "lens_radius": 86,
+        "carrier_radius": 31,
+        "pulse_lag_ms": 800,
+        "scanner_acceleration": 1100,
+        "scanner_speed": 285,
+        "scanner_damping": 9.5,
+        "similar_decoys": 2
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Eight interacting carriers, three near-matches and three requested shapes; narrow illumination and long fixed pulse transitions couple search, identity tracking and interception.",
+      "parameters": {
+        "carriers": 8,
+        "targets": 3,
+        "speed": 124,
+        "current_memory_ms": 1600,
+        "lens_radius": 78,
+        "carrier_radius": 30,
+        "pulse_lag_ms": 850,
+        "scanner_acceleration": 950,
+        "scanner_speed": 260,
+        "scanner_damping": 9,
+        "similar_decoys": 3
+      }
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Grab the visible scanner crosshair and drag it; SPACE emits a delayed pulse.",
+      "natural_language": "Start the survey and fully illuminate every shell to optically certify all numbered plates. Then tag only the requested silhouettes. Grab and drag the crosshair; SPACE emits a pulse. The numbered contact sheet retains exposed pixels and shows full glyphs after optical certification. Pulses arm only when every plate is certified. White arrows show velocity; blue arrows show the changing current. Each deliberate scanner action advances one fixed 120 ms simulation step; waiting leaves positions, flow, recharge and action opportunities unchanged. Firing completes its displayed fixed pulse flight as an action-triggered transition. A miss, protected tag, or incomplete certification ends the episode. Solve only from screenshots and visible controls in the task webpage."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Click a target point in the tank to steer the same scanner; PULSE is the proxy for SPACE.",
+      "natural_language": "Start the survey and fully illuminate every shell to optically certify all numbered plates. Then tag only the requested silhouettes. Click the tank to steer the scanner; click PULSE to emit. The numbered contact sheet retains exposed pixels and shows full glyphs after optical certification. Pulses arm only when every plate is certified. White arrows show velocity; blue arrows show the changing current. Each deliberate scanner action advances one fixed 120 ms simulation step; waiting leaves positions, flow, recharge and action opportunities unchanged. Firing completes its displayed fixed pulse flight as an action-triggered transition. A miss, protected tag, or incomplete certification ends the episode. Solve only from screenshots and visible controls in the task webpage."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 150,
+    "observation_window_ms": 400,
+    "frames_per_observation": 3
+  }
+}

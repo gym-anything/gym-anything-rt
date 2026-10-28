@@ -1,0 +1,30 @@
+{
+  "mechanic_id": "cloudpost_circuit",
+  "version": 0,
+  "source_anchors": [
+    "XART-098"
+  ],
+  "sources": [
+    {
+      "url": "https://statico.github.io/webgl-demos/ducks/",
+      "role": "surveyed source mechanic",
+      "note": "The survey record describes continuous mouse-driven plane flight through a 3D scene and world-space collection of targets."
+    },
+    {
+      "url": "https://github.com/statico/webgl-demos",
+      "role": "source repository reference",
+      "note": "No source code or presentation assets are copied; the repository is provenance only."
+    }
+  ],
+  "transformation": {
+    "original": true,
+    "description": "An original procedural cloud landscape, mail plane, delivery-seal geometry, perspective projection, steering loop, contact replay, and two input surfaces were implemented from first principles.",
+    "copied_assets": [],
+    "third_party_runtime": []
+  },
+  "boundaries": [
+    "The benchmark preserves the source-supported flight, depth, off-view search, heading correction, and collect-all loop without reproducing source code or branded assets.",
+    "Targets are collected only by replayed plane/target distance in the shared 3D world; screen overlap is not accepted.",
+    "The public browser surface is visual exploration, not a secret evaluation surface; local grading independently replays the submitted event ledger."
+  ]
+}

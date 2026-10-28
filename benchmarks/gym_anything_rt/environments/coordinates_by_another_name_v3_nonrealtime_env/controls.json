@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "coordinates_by_another_name_v3_nonrealtime",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "parameters": {
+        "rows": 4,
+        "columns": 7,
+        "hostile": 2,
+        "protected": 0,
+        "compartments": 2,
+        "radius": 29,
+        "displacement": 65,
+        "span_ms": 3600,
+        "flight_ms": 1400,
+        "blast_radius": 18,
+        "reverse": false,
+        "holes": 0,
+        "echo_ms": 10000
+      },
+      "summary": "2 hostile and 0 protected hulls; 29px compartment radius; 1400ms flight; 65px drift knots; reverse addressing False; 0 void cells.",
+      "natural_language_by_interaction": {
+        "full": "Scan the chart, wake the fleet, and sink all orange hostile compartments while leaving pale protected hulls intact. Use the rolling sonar forecast (dots every 0.4s, endpoint 3.2s) to predict the position at torpedo impact. Compose band, block and count; bracket arrows show the local count direction. SONAR SCAN inspects only the cyan sector selected by BAND + BLOCK; COUNT is ignored for sonar. Search different sectors to locate hostile and protected hulls. Empty scans are safe, and discovered identities remain in the scan log. Any scan refreshes the live tracks of previously found hulls. You may search safely in preparation before WAKE FLEET. The fleet is stable while you wait; selector and scan actions advance the watch in 600ms steps, and torpedo flight resolves after its finite action-triggered duration. A miss, protected hit, premature submission or watch timeout ends this episode. Torpedo flight is 1.4s. Drag the three knobs to labels. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed, using only their visible controls.",
+        "simplified": "Scan the chart, wake the fleet, and sink all orange hostile compartments while leaving pale protected hulls intact. Use the rolling sonar forecast (dots every 0.4s, endpoint 3.2s) to predict the position at torpedo impact. Compose band, block and count; bracket arrows show the local count direction. SONAR SCAN inspects only the cyan sector selected by BAND + BLOCK; COUNT is ignored for sonar. Search different sectors to locate hostile and protected hulls. Empty scans are safe, and discovered identities remain in the scan log. Any scan refreshes the live tracks of previously found hulls. You may search safely in preparation before WAKE FLEET. The fleet is stable while you wait; selector and scan actions advance the watch in 600ms steps, and torpedo flight resolves after its finite action-triggered duration. A miss, protected hit, premature submission or watch timeout ends this episode. Torpedo flight is 1.4s. Click the three rows of selector buttons. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed, using only their visible controls."
+      }
+    },
+    "2": {
+      "label": "easy",
+      "parameters": {
+        "rows": 5,
+        "columns": 8,
+        "hostile": 2,
+        "protected": 1,
+        "compartments": 2,
+        "radius": 26,
+        "displacement": 85,
+        "span_ms": 3300,
+        "flight_ms": 1500,
+        "blast_radius": 16,
+        "reverse": false,
+        "holes": 0,
+        "echo_ms": 9000
+      },
+      "summary": "2 hostile and 1 protected hulls; 26px compartment radius; 1500ms flight; 85px drift knots; reverse addressing False; 0 void cells.",
+      "natural_language_by_interaction": {
+        "full": "Scan the chart, wake the fleet, and sink all orange hostile compartments while leaving pale protected hulls intact. Use the rolling sonar forecast (dots every 0.4s, endpoint 3.2s) to predict the position at torpedo impact. Compose band, block and count; bracket arrows show the local count direction. SONAR SCAN inspects only the cyan sector selected by BAND + BLOCK; COUNT is ignored for sonar. Search different sectors to locate hostile and protected hulls. Empty scans are safe, and discovered identities remain in the scan log. Any scan refreshes the live tracks of previously found hulls. You may search safely in preparation before WAKE FLEET. The fleet is stable while you wait; selector and scan actions advance the watch in 600ms steps, and torpedo flight resolves after its finite action-triggered duration. A miss, protected hit, premature submission or watch timeout ends this episode. Torpedo flight is 1.5s. Drag the three knobs to labels. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed, using only their visible controls.",
+        "simplified": "Scan the chart, wake the fleet, and sink all orange hostile compartments while leaving pale protected hulls intact. Use the rolling sonar forecast (dots every 0.4s, endpoint 3.2s) to predict the position at torpedo impact. Compose band, block and count; bracket arrows show the local count direction. SONAR SCAN inspects only the cyan sector selected by BAND + BLOCK; COUNT is ignored for sonar. Search different sectors to locate hostile and protected hulls. Empty scans are safe, and discovered identities remain in the scan log. Any scan refreshes the live tracks of previously found hulls. You may search safely in preparation before WAKE FLEET. The fleet is stable while you wait; selector and scan actions advance the watch in 600ms steps, and torpedo flight resolves after its finite action-triggered duration. A miss, protected hit, premature submission or watch timeout ends this episode. Torpedo flight is 1.5s. Click the three rows of selector buttons. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed, using only their visible controls."
+      }
+    },
+    "3": {
+      "label": "medium",
+      "parameters": {
+        "rows": 5,
+        "columns": 8,
+        "hostile": 3,
+        "protected": 1,
+        "compartments": 2,
+        "radius": 23,
+        "displacement": 100,
+        "span_ms": 3000,
+        "flight_ms": 1600,
+        "blast_radius": 14,
+        "reverse": true,
+        "holes": 0,
+        "echo_ms": 8000
+      },
+      "summary": "3 hostile and 1 protected hulls; 23px compartment radius; 1600ms flight; 100px drift knots; reverse addressing True; 0 void cells.",
+      "natural_language_by_interaction": {
+        "full": "Scan the chart, wake the fleet, and sink all orange hostile compartments while leaving pale protected hulls intact. Use the rolling sonar forecast (dots every 0.4s, endpoint 3.2s) to predict the position at torpedo impact. Compose band, block and count; bracket arrows show the local count direction. SONAR SCAN inspects only the cyan sector selected by BAND + BLOCK; COUNT is ignored for sonar. Search different sectors to locate hostile and protected hulls. Empty scans are safe, and discovered identities remain in the scan log. Any scan refreshes the live tracks of previously found hulls. You may search safely in preparation before WAKE FLEET. The fleet is stable while you wait; selector and scan actions advance the watch in 600ms steps, and torpedo flight resolves after its finite action-triggered duration. A miss, protected hit, premature submission or watch timeout ends this episode. Torpedo flight is 1.6s. Drag the three knobs to labels. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed, using only their visible controls.",
+        "simplified": "Scan the chart, wake the fleet, and sink all orange hostile compartments while leaving pale protected hulls intact. Use the rolling sonar forecast (dots every 0.4s, endpoint 3.2s) to predict the position at torpedo impact. Compose band, block and count; bracket arrows show the local count direction. SONAR SCAN inspects only the cyan sector selected by BAND + BLOCK; COUNT is ignored for sonar. Search different sectors to locate hostile and protected hulls. Empty scans are safe, and discovered identities remain in the scan log. Any scan refreshes the live tracks of previously found hulls. You may search safely in preparation before WAKE FLEET. The fleet is stable while you wait; selector and scan actions advance the watch in 600ms steps, and torpedo flight resolves after its finite action-triggered duration. A miss, protected hit, premature submission or watch timeout ends this episode. Torpedo flight is 1.6s. Click the three rows of selector buttons. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed, using only their visible controls."
+      }
+    },
+    "4": {
+      "label": "hard",
+      "parameters": {
+        "rows": 6,
+        "columns": 9,
+        "hostile": 3,
+        "protected": 2,
+        "compartments": 3,
+        "radius": 21,
+        "displacement": 115,
+        "span_ms": 2800,
+        "flight_ms": 1700,
+        "blast_radius": 13,
+        "reverse": true,
+        "holes": 2,
+        "echo_ms": 7500
+      },
+      "summary": "3 hostile and 2 protected hulls; 21px compartment radius; 1700ms flight; 115px drift knots; reverse addressing True; 2 void cells.",
+      "natural_language_by_interaction": {
+        "full": "Scan the chart, wake the fleet, and sink all orange hostile compartments while leaving pale protected hulls intact. Use the rolling sonar forecast (dots every 0.4s, endpoint 3.2s) to predict the position at torpedo impact. Compose band, block and count; bracket arrows show the local count direction. SONAR SCAN inspects only the cyan sector selected by BAND + BLOCK; COUNT is ignored for sonar. Search different sectors to locate hostile and protected hulls. Empty scans are safe, and discovered identities remain in the scan log. Any scan refreshes the live tracks of previously found hulls. You may search safely in preparation before WAKE FLEET. The fleet is stable while you wait; selector and scan actions advance the watch in 600ms steps, and torpedo flight resolves after its finite action-triggered duration. A miss, protected hit, premature submission or watch timeout ends this episode. Torpedo flight is 1.7s. Drag the three knobs to labels. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed, using only their visible controls.",
+        "simplified": "Scan the chart, wake the fleet, and sink all orange hostile compartments while leaving pale protected hulls intact. Use the rolling sonar forecast (dots every 0.4s, endpoint 3.2s) to predict the position at torpedo impact. Compose band, block and count; bracket arrows show the local count direction. SONAR SCAN inspects only the cyan sector selected by BAND + BLOCK; COUNT is ignored for sonar. Search different sectors to locate hostile and protected hulls. Empty scans are safe, and discovered identities remain in the scan log. Any scan refreshes the live tracks of previously found hulls. You may search safely in preparation before WAKE FLEET. The fleet is stable while you wait; selector and scan actions advance the watch in 600ms steps, and torpedo flight resolves after its finite action-triggered duration. A miss, protected hit, premature submission or watch timeout ends this episode. Torpedo flight is 1.7s. Click the three rows of selector buttons. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed, using only their visible controls."
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "parameters": {
+        "rows": 6,
+        "columns": 10,
+        "hostile": 4,
+        "protected": 2,
+        "compartments": 3,
+        "radius": 20,
+        "displacement": 130,
+        "span_ms": 2600,
+        "flight_ms": 1800,
+        "blast_radius": 12,
+        "reverse": true,
+        "holes": 4,
+        "echo_ms": 7000
+      },
+      "summary": "4 hostile and 2 protected hulls; 20px compartment radius; 1800ms flight; 130px drift knots; reverse addressing True; 4 void cells.",
+      "natural_language_by_interaction": {
+        "full": "Scan the chart, wake the fleet, and sink all orange hostile compartments while leaving pale protected hulls intact. Use the rolling sonar forecast (dots every 0.4s, endpoint 3.2s) to predict the position at torpedo impact. Compose band, block and count; bracket arrows show the local count direction. SONAR SCAN inspects only the cyan sector selected by BAND + BLOCK; COUNT is ignored for sonar. Search different sectors to locate hostile and protected hulls. Empty scans are safe, and discovered identities remain in the scan log. Any scan refreshes the live tracks of previously found hulls. You may search safely in preparation before WAKE FLEET. The fleet is stable while you wait; selector and scan actions advance the watch in 600ms steps, and torpedo flight resolves after its finite action-triggered duration. A miss, protected hit, premature submission or watch timeout ends this episode. Torpedo flight is 1.8s. Drag the three knobs to labels. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed, using only their visible controls.",
+        "simplified": "Scan the chart, wake the fleet, and sink all orange hostile compartments while leaving pale protected hulls intact. Use the rolling sonar forecast (dots every 0.4s, endpoint 3.2s) to predict the position at torpedo impact. Compose band, block and count; bracket arrows show the local count direction. SONAR SCAN inspects only the cyan sector selected by BAND + BLOCK; COUNT is ignored for sonar. Search different sectors to locate hostile and protected hulls. Empty scans are safe, and discovered identities remain in the scan log. Any scan refreshes the live tracks of previously found hulls. You may search safely in preparation before WAKE FLEET. The fleet is stable while you wait; selector and scan actions advance the watch in 600ms steps, and torpedo flight resolves after its finite action-triggered duration. A miss, protected hit, premature submission or watch timeout ends this episode. Torpedo flight is 1.8s. Click the three rows of selector buttons. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed, using only their visible controls."
+      }
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "description": "Drag each rotary knob from its center onto a labeled detent. SONAR SCAN inspects the selected band/block bracket; FIRE TORPEDO uses band/block/count."
+    },
+    "simplified": {
+      "implemented": true,
+      "description": "Click band/block/count proxy buttons. The same SONAR SCAN inspects the band/block bracket; FIRE TORPEDO uses the whole address. No autoaim or object targeting."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 240,
+    "observation_window_ms": 600,
+    "frames_per_observation": 4
+  },
+  "capabilities": {
+    "visual_understanding": "2D",
+    "temporal_understanding_and_memory": true,
+    "reasoning_and_planning": true,
+    "exploration_and_interface_understanding": false
+  },
+  "calibration_status": "provisional; human and model measurements pending"
+}

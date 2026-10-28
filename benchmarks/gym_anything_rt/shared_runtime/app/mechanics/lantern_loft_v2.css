@@ -1,0 +1,43 @@
+body[data-mechanic="lantern-loft-v2"] { background:#121b32; color:#eee3cd; overflow:hidden; }
+body[data-mechanic="lantern-loft-v2"] .app-shell { padding:10px; min-height:0; }
+.loft-v2 { width:min(1240px,calc(100vw - 20px)); height:calc(100vh - 20px); display:grid; grid-template-rows:70px minmax(0,1fr) 62px; background:#202a41; border:1px solid #ad99736b; font-family:system-ui,sans-serif; }
+.loft-v2 * { box-sizing:border-box; }
+.loft-v2 header { display:flex; align-items:center; justify-content:space-between; padding:10px 22px; border-bottom:1px solid #ae9c725c; }
+.loft-v2 header small { color:#e1bb87; font:11px ui-monospace,monospace; letter-spacing:.16em; }
+.loft-v2 h1 { font:32px Georgia,serif; margin:3px 0 0; }
+.loft-v2-location { font:14px ui-monospace,monospace; border:1px solid #dec098; border-radius:30px; padding:10px 18px; color:#ffe1a3; }
+.loft-v2 main { display:grid; grid-template-columns:minmax(0,1fr) 280px; min-height:0; }
+.loft-v2-stage { position:relative; min-width:0; min-height:0; background:#3c3554; }
+#loft-v2-canvas { width:100%; height:100%; display:block; }
+.loft-v2-legend { position:absolute; bottom:12px; left:14px; color:#faeed9; background:#212239db; padding:8px 12px; border-radius:7px; font:10px/1.6 ui-monospace,monospace; pointer-events:none; }
+.loft-v2 aside { padding:14px 18px; background:#1b2439; border-left:1px solid #a9926966; overflow:auto; min-height:0; }
+.loft-v2 h2 { font:26px/1.04 Georgia,serif; color:#f5ddb6; margin:0 0 8px; }
+.loft-v2 p { font-size:12px; color:#cdc9c9; line-height:1.4; margin:8px 0; }
+.loft-v2-winch { padding:7px 0; border-bottom:1px solid #9b8a6840; }
+.loft-v2-winch b { font:11px ui-monospace,monospace; color:#edc7a0; display:block; margin-bottom:4px; }
+.loft-v2-lever { position:relative; width:160px; height:40px; display:flex; align-items:center; justify-content:space-around; border-radius:20px; background:#10182a; border:1px solid #9d876d; color:#b7a98d; touch-action:none; user-select:none; margin:0 auto; }
+.loft-v2-knob { position:absolute; top:4px; width:30px; height:30px; transform:translateX(-50%); background:linear-gradient(130deg,#ebcc9c,#af856c); box-shadow:0 2px 5px #0007; border:2px solid #6e5a55; border-radius:50%; cursor:grab; }
+.loft-v2-detents { display:flex; justify-content:center; gap:4px; margin-top:4px; }
+.loft-v2 button { font:11px ui-monospace,monospace; min-height:34px; border:1px solid #aa9277; background:#30334a; color:#fff0d5; padding:7px 10px; cursor:pointer; border-radius:5px; touch-action:none; user-select:none; }
+.loft-v2 button:hover { background:#514257; }
+.loft-v2 button:disabled { opacity:.5; cursor:default; }
+.loft-v2-detents button { font-size:9px; padding:5px 7px; min-height:30px; }
+.loft-v2[data-interaction="simplified"] .loft-v2-winches { display:grid; grid-template-columns:1fr 1fr; gap:5px; }
+.loft-v2[data-interaction="simplified"] .loft-v2-lever { width:112px; }
+.loft-v2[data-interaction="simplified"] .loft-v2-detents button { padding:4px; font-size:8px; min-width:34px; }
+.loft-v2[data-interaction="simplified"] .loft-v2-winch b { font-size:9px; }
+.loft-v2-walk { display:flex; gap:8px; margin:6px 0; }
+.loft-v2-walk button { flex:1; }
+#loft-v2-cross, #loft-v2-start { width:100%; margin-top:5px; }
+#loft-v2-start { background:#8c6150; }
+.loft-v2 footer { display:flex; align-items:center; justify-content:space-between; padding:9px 16px; border-top:1px solid #a88c6969; }
+.loft-v2-phase { color:#ffe0a0; font:11px ui-monospace,monospace; }
+.loft-v2 .readout { color:#c8cfcf; font-size:11px; margin-top:5px; }
+.loft-v2 .readout[data-status="error"] { color:#ffac94; }
+.loft-v2 .readout[data-status="passed"] { color:#b6f3ce; }
+.loft-v2-verdict { display:none; position:absolute; z-index:8; left:50%; top:42%; transform:translate(-50%,-50%); width:440px; padding:20px; background:#402333f2; border:2px solid #e59a84; box-shadow:0 12px 50px #0006; text-align:center; border-radius:10px; }
+.loft-v2-verdict[data-visible="true"] { display:block; }
+.loft-v2-verdict[data-pass="true"] { background:#1d4136f2; border-color:#a2dec1; }
+.loft-v2-verdict strong { font:28px Georgia,serif; display:block; color:#ffedd3; }
+.loft-v2-verdict span { display:block; margin-top:10px; font-size:13px; }
+@media(max-height:740px) { .loft-v2 aside { padding:10px 14px; } .loft-v2 h2 { font-size:23px; } .loft-v2 p { font-size:11px; margin:6px 0; } .loft-v2-winch { padding:5px 0; } }

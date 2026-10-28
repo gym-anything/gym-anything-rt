@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "crackglaze_crossing_v3",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Wide but moving spans on a compact collect-and-return course.",
+      "natural_language": "Gather every lantern, then reach the door. Click an adjacent raft in full interaction; use the direction buttons in simplified interaction. Solid spans connect nearby rafts, but they must stay connected throughout the half-second crossing. Leaving lights a glaze fuse; revisiting never renews it. Turn the kiln samples to inspect this batch's glaze lifetimes before planning a return. Discovered stamps stay visible and inspection does not pause the crossing. Dark gallery faces hide cracks but their outlines and recent motion remain visible. One broken span, collapsed landing or occupied raft, or incomplete seal ends this episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL edits, reload/navigation, browser extensions, external applications, implementation or hidden-state access, or unrelated tabs.",
+      "parameters": {
+        "columns": 4,
+        "spurs": 1,
+        "spur_depth": 1,
+        "drift_px": 18,
+        "reach_px": 113,
+        "span_ms": 6500,
+        "fuse_ms": [
+          65000,
+          90000
+        ],
+        "shadow_count": 0,
+        "tile_px": 54,
+        "crossing_ms": 500
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Two branches and independent drift require choosing crossing opportunities.",
+      "natural_language": "Gather every lantern, then reach the door. Click an adjacent raft in full interaction; use the direction buttons in simplified interaction. Solid spans connect nearby rafts, but they must stay connected throughout the half-second crossing. Leaving lights a glaze fuse; revisiting never renews it. Turn the kiln samples to inspect this batch's glaze lifetimes before planning a return. Discovered stamps stay visible and inspection does not pause the crossing. Dark gallery faces hide cracks but their outlines and recent motion remain visible. One broken span, collapsed landing or occupied raft, or incomplete seal ends this episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL edits, reload/navigation, browser extensions, external applications, implementation or hidden-state access, or unrelated tabs.",
+      "parameters": {
+        "columns": 5,
+        "spurs": 2,
+        "spur_depth": 1,
+        "drift_px": 21,
+        "reach_px": 111,
+        "span_ms": 5900,
+        "fuse_ms": [
+          55000,
+          75000,
+          90000
+        ],
+        "shadow_count": 0,
+        "tile_px": 54,
+        "crossing_ms": 500
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Deep branches require returning on lit fuses; shadows hide crack stages.",
+      "natural_language": "Gather every lantern, then reach the door. Click an adjacent raft in full interaction; use the direction buttons in simplified interaction. Solid spans connect nearby rafts, but they must stay connected throughout the half-second crossing. Leaving lights a glaze fuse; revisiting never renews it. Turn the kiln samples to inspect this batch's glaze lifetimes before planning a return. Discovered stamps stay visible and inspection does not pause the crossing. Dark gallery faces hide cracks but their outlines and recent motion remain visible. One broken span, collapsed landing or occupied raft, or incomplete seal ends this episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL edits, reload/navigation, browser extensions, external applications, implementation or hidden-state access, or unrelated tabs.",
+      "parameters": {
+        "columns": 6,
+        "spurs": 2,
+        "spur_depth": 2,
+        "drift_px": 24,
+        "reach_px": 108,
+        "span_ms": 5200,
+        "fuse_ms": [
+          42000,
+          60000,
+          80000
+        ],
+        "shadow_count": 2,
+        "tile_px": 48,
+        "crossing_ms": 500
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Three branches, smaller span reach and faster drift couple route ordering to return fuses.",
+      "natural_language": "Gather every lantern, then reach the door. Click an adjacent raft in full interaction; use the direction buttons in simplified interaction. Solid spans connect nearby rafts, but they must stay connected throughout the half-second crossing. Leaving lights a glaze fuse; revisiting never renews it. Turn the kiln samples to inspect this batch's glaze lifetimes before planning a return. Discovered stamps stay visible and inspection does not pause the crossing. Dark gallery faces hide cracks but their outlines and recent motion remain visible. One broken span, collapsed landing or occupied raft, or incomplete seal ends this episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL edits, reload/navigation, browser extensions, external applications, implementation or hidden-state access, or unrelated tabs.",
+      "parameters": {
+        "columns": 7,
+        "spurs": 3,
+        "spur_depth": 2,
+        "drift_px": 26,
+        "reach_px": 105,
+        "span_ms": 4600,
+        "fuse_ms": [
+          34000,
+          48000,
+          68000,
+          85000
+        ],
+        "shadow_count": 3,
+        "tile_px": 44,
+        "crossing_ms": 500
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Four deep branches, narrow independently drifting spans, short glaze lives and a dark gallery couple timing, geometry and route choice.",
+      "natural_language": "Gather every lantern, then reach the door. Click an adjacent raft in full interaction; use the direction buttons in simplified interaction. Solid spans connect nearby rafts, but they must stay connected throughout the half-second crossing. Leaving lights a glaze fuse; revisiting never renews it. Turn the kiln samples to inspect this batch's glaze lifetimes before planning a return. Discovered stamps stay visible and inspection does not pause the crossing. Dark gallery faces hide cracks but their outlines and recent motion remain visible. One broken span, collapsed landing or occupied raft, or incomplete seal ends this episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL edits, reload/navigation, browser extensions, external applications, implementation or hidden-state access, or unrelated tabs.",
+      "parameters": {
+        "columns": 8,
+        "spurs": 4,
+        "spur_depth": 2,
+        "drift_px": 28,
+        "reach_px": 102,
+        "span_ms": 4000,
+        "fuse_ms": [
+          28000,
+          38000,
+          50000,
+          70000
+        ],
+        "shadow_count": 5,
+        "tile_px": 44,
+        "crossing_ms": 500
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Click stationary compass buttons to request a crossing to that adjacent raft; no automatic waiting or interception. Turn visible kiln samples to discover glaze lifetimes; this inspection is identical in both modes and never stops task time."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Click the moving adjacent ceramic face to request the identical crossing. Turn visible kiln samples to discover glaze lifetimes; this inspection is identical in both modes and never stops task time."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 300,
+    "observation_window_ms": 800,
+    "frames_per_observation": 6
+  }
+}

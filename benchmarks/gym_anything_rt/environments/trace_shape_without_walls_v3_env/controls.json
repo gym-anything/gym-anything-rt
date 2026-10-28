@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "trace_shape_without_walls_v3",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "parameters": {
+        "radius": 56,
+        "speed": 27,
+        "amplitude": 85,
+        "span_ms": 9200,
+        "bends": 6,
+        "curve": 55,
+        "sonar": 230,
+        "wind": 15,
+        "response": 8
+      },
+      "summary": "112px channel; 27px/s forward speed; 6 locally deforming knots under a shared current; 230px lookahead; inertial response 8/s.",
+      "natural_language": "Move the pointer across the scope to inspect concealed channel sections. Amber dashed outlines retain the first scan; green walls and echoes show current motion in scanned sections. Inspection also works during flight. Launch the probe and keep it between the green channel walls until it reaches EXIT. The probe advances automatically, has inertia, and the walls and current keep changing. Drag to steer in full mode; click a desired height in simplified mode. Preview scans and recoverable steering corrections are allowed. A wall touch or rejected CERTIFY TRACE ends the episode. The 180-second task limit includes preview. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, browser extensions, external applications, or hidden implementation access. Do not interact with unrelated, blank, settings, or pre-existing non-task tabs."
+    },
+    "2": {
+      "label": "easy",
+      "parameters": {
+        "radius": 56,
+        "speed": 29,
+        "amplitude": 90,
+        "span_ms": 8500,
+        "bends": 6,
+        "curve": 62,
+        "sonar": 210,
+        "wind": 22,
+        "response": 7.5
+      },
+      "summary": "112px channel; 29px/s forward speed; 6 locally deforming knots under a shared current; 210px lookahead; inertial response 7.5/s.",
+      "natural_language": "Move the pointer across the scope to inspect concealed channel sections. Amber dashed outlines retain the first scan; green walls and echoes show current motion in scanned sections. Inspection also works during flight. Launch the probe and keep it between the green channel walls until it reaches EXIT. The probe advances automatically, has inertia, and the walls and current keep changing. Drag to steer in full mode; click a desired height in simplified mode. Preview scans and recoverable steering corrections are allowed. A wall touch or rejected CERTIFY TRACE ends the episode. The 180-second task limit includes preview. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, browser extensions, external applications, or hidden implementation access. Do not interact with unrelated, blank, settings, or pre-existing non-task tabs."
+    },
+    "3": {
+      "label": "medium",
+      "parameters": {
+        "radius": 47,
+        "speed": 31,
+        "amplitude": 95,
+        "span_ms": 7800,
+        "bends": 7,
+        "curve": 68,
+        "sonar": 190,
+        "wind": 30,
+        "response": 7
+      },
+      "summary": "94px channel; 31px/s forward speed; 7 locally deforming knots under a shared current; 190px lookahead; inertial response 7/s.",
+      "natural_language": "Move the pointer across the scope to inspect concealed channel sections. Amber dashed outlines retain the first scan; green walls and echoes show current motion in scanned sections. Inspection also works during flight. Launch the probe and keep it between the green channel walls until it reaches EXIT. The probe advances automatically, has inertia, and the walls and current keep changing. Drag to steer in full mode; click a desired height in simplified mode. Preview scans and recoverable steering corrections are allowed. A wall touch or rejected CERTIFY TRACE ends the episode. The 180-second task limit includes preview. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, browser extensions, external applications, or hidden implementation access. Do not interact with unrelated, blank, settings, or pre-existing non-task tabs."
+    },
+    "4": {
+      "label": "hard",
+      "parameters": {
+        "radius": 39,
+        "speed": 33,
+        "amplitude": 100,
+        "span_ms": 7200,
+        "bends": 8,
+        "curve": 74,
+        "sonar": 175,
+        "wind": 38,
+        "response": 6.5
+      },
+      "summary": "78px channel; 33px/s forward speed; 8 locally deforming knots under a shared current; 175px lookahead; inertial response 6.5/s.",
+      "natural_language": "Move the pointer across the scope to inspect concealed channel sections. Amber dashed outlines retain the first scan; green walls and echoes show current motion in scanned sections. Inspection also works during flight. Launch the probe and keep it between the green channel walls until it reaches EXIT. The probe advances automatically, has inertia, and the walls and current keep changing. Drag to steer in full mode; click a desired height in simplified mode. Preview scans and recoverable steering corrections are allowed. A wall touch or rejected CERTIFY TRACE ends the episode. The 180-second task limit includes preview. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, browser extensions, external applications, or hidden implementation access. Do not interact with unrelated, blank, settings, or pre-existing non-task tabs."
+    },
+    "5": {
+      "label": "very_hard",
+      "parameters": {
+        "radius": 33,
+        "speed": 35,
+        "amplitude": 108,
+        "span_ms": 6600,
+        "bends": 9,
+        "curve": 78,
+        "sonar": 160,
+        "wind": 46,
+        "response": 6
+      },
+      "summary": "66px channel; 35px/s forward speed; 9 locally deforming knots under a shared current; 160px lookahead; inertial response 6/s.",
+      "natural_language": "Move the pointer across the scope to inspect concealed channel sections. Amber dashed outlines retain the first scan; green walls and echoes show current motion in scanned sections. Inspection also works during flight. Launch the probe and keep it between the green channel walls until it reaches EXIT. The probe advances automatically, has inertia, and the walls and current keep changing. Drag to steer in full mode; click a desired height in simplified mode. Preview scans and recoverable steering corrections are allowed. A wall touch or rejected CERTIFY TRACE ends the episode. The 180-second task limit includes preview. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, browser extensions, external applications, or hidden implementation access. Do not interact with unrelated, blank, settings, or pre-existing non-task tabs."
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Hover across the scope to inspect and retain the same local sonar information as full mode; click a desired height to steer the identical inertial control pen."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Hover across the scope to inspect and retain the same local sonar information as simplified mode; drag the control pen to steer. Releasing keeps its last target and the world advancing."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  }
+}

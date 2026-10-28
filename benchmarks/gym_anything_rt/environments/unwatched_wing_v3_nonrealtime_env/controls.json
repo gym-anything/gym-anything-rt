@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "unwatched_wing_v3_nonrealtime",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "One courier drifts vertically through three broad, slow shutters. Match a moving aperture to its course; light brakes both coordinates.",
+      "natural_language": "Bring every sleeping courier to the archive. Frosted survey glass conceals each shutter’s opening, eye, trail and motion dials. Aim the lantern at its visible brass survey plate to inspect it; that shutter’s live view then stays available. Inspect before a courier reaches it. Each accepted lantern control, including inspection, advances one fixed 400 ms action step; waiting between controls leaves the wing stable. The survey glass changes only the view, not physical contact. The lantern pins one nearby object; one photograph keeps its pictured object pinned until the image fades. Every unrestrained courier advances and drifts vertically during each fixed 400 ms action step after a deliberate lantern or photo control; waiting between controls leaves the wing stable. Light and photographs stop both its coordinates. Every other object keeps moving. Hold aligned shutters or stop couriers to wait; shutter contact ends the attempt. Trails show the recent 0.4 seconds. Arrows use a one-second speed scale; dashed arrows show immediate release drift. Faint tracks mark the swing limits. Current motion dials show angle, angular speed and forward speed. Dials also show whether each rate is rising or falling. Rates step every 0.2 seconds and reflect at the visible limits, including while restrained. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, browser extensions, external applications, implementation or hidden-state access. Do not interact with pre-existing, unrelated, blank, browser-settings or non-task tabs. Only tabs opened by a visible task control and belonging to the task may be used, through their visible controls.",
+      "parameters": {
+        "lanes": 1,
+        "gates_per_lane": 3,
+        "aperture_half": 43,
+        "amplitude": 78,
+        "omega": 0.25,
+        "cargo_speed": 15,
+        "cargo_amplitude": 52,
+        "cargo_omega": 0.11,
+        "photo_lifetime_ms": 6000
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Smaller clearance and faster shutter and courier drift require predicting their relative alignment during lantern travel.",
+      "natural_language": "Bring every sleeping courier to the archive. Frosted survey glass conceals each shutter’s opening, eye, trail and motion dials. Aim the lantern at its visible brass survey plate to inspect it; that shutter’s live view then stays available. Inspect before a courier reaches it. Each accepted lantern control, including inspection, advances one fixed 400 ms action step; waiting between controls leaves the wing stable. The survey glass changes only the view, not physical contact. The lantern pins one nearby object; one photograph keeps its pictured object pinned until the image fades. Every unrestrained courier advances and drifts vertically during each fixed 400 ms action step after a deliberate lantern or photo control; waiting between controls leaves the wing stable. Light and photographs stop both its coordinates. Every other object keeps moving. Hold aligned shutters or stop couriers to wait; shutter contact ends the attempt. Trails show the recent 0.4 seconds. Arrows use a one-second speed scale; dashed arrows show immediate release drift. Faint tracks mark the swing limits. Current motion dials show angle, angular speed and forward speed. Dials also show whether each rate is rising or falling. Rates step every 0.2 seconds and reflect at the visible limits, including while restrained. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, browser extensions, external applications, implementation or hidden-state access. Do not interact with pre-existing, unrelated, blank, browser-settings or non-task tabs. Only tabs opened by a visible task control and belonging to the task may be used, through their visible controls.",
+      "parameters": {
+        "lanes": 1,
+        "gates_per_lane": 3,
+        "aperture_half": 39,
+        "amplitude": 82,
+        "omega": 0.34,
+        "cargo_speed": 17,
+        "cargo_amplitude": 54,
+        "cargo_omega": 0.14,
+        "photo_lifetime_ms": 5000
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Four denser shutters, narrower clearance and stronger courier drift make safe passage depend on trajectory prediction and timely braking.",
+      "natural_language": "Bring every sleeping courier to the archive. Frosted survey glass conceals each shutter’s opening, eye, trail and motion dials. Aim the lantern at its visible brass survey plate to inspect it; that shutter’s live view then stays available. Inspect before a courier reaches it. Each accepted lantern control, including inspection, advances one fixed 400 ms action step; waiting between controls leaves the wing stable. The survey glass changes only the view, not physical contact. The lantern pins one nearby object; one photograph keeps its pictured object pinned until the image fades. Every unrestrained courier advances and drifts vertically during each fixed 400 ms action step after a deliberate lantern or photo control; waiting between controls leaves the wing stable. Light and photographs stop both its coordinates. Every other object keeps moving. Hold aligned shutters or stop couriers to wait; shutter contact ends the attempt. Trails show the recent 0.4 seconds. Arrows use a one-second speed scale; dashed arrows show immediate release drift. Faint tracks mark the swing limits. Current motion dials show angle, angular speed and forward speed. Dials also show whether each rate is rising or falling. Rates step every 0.2 seconds and reflect at the visible limits, including while restrained. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, browser extensions, external applications, implementation or hidden-state access. Do not interact with pre-existing, unrelated, blank, browser-settings or non-task tabs. Only tabs opened by a visible task control and belonging to the task may be used, through their visible controls.",
+      "parameters": {
+        "lanes": 1,
+        "gates_per_lane": 4,
+        "aperture_half": 35,
+        "amplitude": 84,
+        "omega": 0.42,
+        "cargo_speed": 20,
+        "cargo_amplitude": 56,
+        "cargo_omega": 0.16,
+        "photo_lifetime_ms": 4200
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Two couriers drift independently across two galleries, sharing one lantern and one photograph. Supporting one passage leaves the other lane evolving.",
+      "natural_language": "Bring every sleeping courier to the archive. Frosted survey glass conceals each shutter’s opening, eye, trail and motion dials. Aim the lantern at its visible brass survey plate to inspect it; that shutter’s live view then stays available. Inspect before a courier reaches it. Each accepted lantern control, including inspection, advances one fixed 400 ms action step; waiting between controls leaves the wing stable. The survey glass changes only the view, not physical contact. The lantern pins one nearby object; one photograph keeps its pictured object pinned until the image fades. Every unrestrained courier advances and drifts vertically during each fixed 400 ms action step after a deliberate lantern or photo control; waiting between controls leaves the wing stable. Light and photographs stop both its coordinates. Every other object keeps moving. Hold aligned shutters or stop couriers to wait; shutter contact ends the attempt. Trails show the recent 0.4 seconds. Arrows use a one-second speed scale; dashed arrows show immediate release drift. Faint tracks mark the swing limits. Current motion dials show angle, angular speed and forward speed. Dials also show whether each rate is rising or falling. Rates step every 0.2 seconds and reflect at the visible limits, including while restrained. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, browser extensions, external applications, implementation or hidden-state access. Do not interact with pre-existing, unrelated, blank, browser-settings or non-task tabs. Only tabs opened by a visible task control and belonging to the task may be used, through their visible controls.",
+      "parameters": {
+        "lanes": 2,
+        "gates_per_lane": 4,
+        "aperture_half": 37,
+        "amplitude": 82,
+        "omega": 0.4,
+        "cargo_speed": 17,
+        "cargo_amplitude": 56,
+        "cargo_omega": 0.15,
+        "photo_lifetime_ms": 4000
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Two drifting couriers cross five narrow shutters each. Faster relative motion, shorter photographs and overlapping passages require sustained prediction and support handoffs.",
+      "natural_language": "Bring every sleeping courier to the archive. Frosted survey glass conceals each shutter’s opening, eye, trail and motion dials. Aim the lantern at its visible brass survey plate to inspect it; that shutter’s live view then stays available. Inspect before a courier reaches it. Each accepted lantern control, including inspection, advances one fixed 400 ms action step; waiting between controls leaves the wing stable. The survey glass changes only the view, not physical contact. The lantern pins one nearby object; one photograph keeps its pictured object pinned until the image fades. Every unrestrained courier advances and drifts vertically during each fixed 400 ms action step after a deliberate lantern or photo control; waiting between controls leaves the wing stable. Light and photographs stop both its coordinates. Every other object keeps moving. Hold aligned shutters or stop couriers to wait; shutter contact ends the attempt. Trails show the recent 0.4 seconds. Arrows use a one-second speed scale; dashed arrows show immediate release drift. Faint tracks mark the swing limits. Current motion dials show angle, angular speed and forward speed. Dials also show whether each rate is rising or falling. Rates step every 0.2 seconds and reflect at the visible limits, including while restrained. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, browser extensions, external applications, implementation or hidden-state access. Do not interact with pre-existing, unrelated, blank, browser-settings or non-task tabs. Only tabs opened by a visible task control and belonging to the task may be used, through their visible controls.",
+      "parameters": {
+        "lanes": 2,
+        "gates_per_lane": 5,
+        "aperture_half": 32,
+        "amplitude": 85,
+        "omega": 0.47,
+        "cargo_speed": 20,
+        "cargo_amplitude": 60,
+        "cargo_omega": 0.18,
+        "photo_lifetime_ms": 3200
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Click a gallery coordinate to aim the lantern; DARK turns it off. No object following or interception is supplied. PHOTO photographs the illuminated object; CLOSE releases its image. Aim the same lantern at a shutter’s fixed brass survey plate to reveal its opening and live dials permanently; inspection advances one fixed 400 ms action step."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Hold the left mouse button on the gallery and drag to aim the lantern; releasing turns it off. The lantern has the same finite travel speed. SPACE photographs the illuminated object; X closes its image. Aim the same lantern at a shutter’s fixed brass survey plate to reveal its opening and live dials permanently; inspection advances one fixed 400 ms action step."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 400,
+    "frames_per_observation": 4
+  }
+}

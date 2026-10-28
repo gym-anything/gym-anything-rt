@@ -1,0 +1,25 @@
+{
+  "mechanic_id": "living_scaffold_v3",
+  "version": "0",
+  "source_anchors": [
+    "IND-082",
+    "VGE-543"
+  ],
+  "source": {
+    "title": "Snakebird",
+    "creator": "Noumenon Games",
+    "year": 2015,
+    "urls": [
+      "https://snakebird.noumenongames.com/",
+      "https://store.steampowered.com/app/357300/Snakebird/",
+      "https://github.com/Terzalo/Avis-Anguis",
+      "https://github.com/marcusrossel/lean-snakebird"
+    ]
+  },
+  "transformation": "Body as terrain, gravity and fruit-powered growth become rooted living bridges. A pod rolls back to feed and lengthen its support, then must reach a continuously drifting blossom under changing wind. Multiple rooted bodies recoil when the other heads move.",
+  "asset_policy": "Original procedural Canvas and CSS; no source game art, assets, code or branding shipped.",
+  "evidence_status": {
+    "human_calibration": "pending",
+    "paid_model_evaluation": "not_authorized"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "reflow_vitrine_v3_nonrealtime",
+  "baseline": {
+    "difficulty": 4,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "1 simultaneous seams; 18 px registration bands; 0.18 s inertia and 26 px/s fan drift. D is nested inside A and B at D5. Calibration pending. Frame inspection reveals seeded rail assignment and direction; learned labels persist.",
+      "natural_language": "Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, extensions, external applications, hidden-state access, or unrelated tabs. Keep every moving brass seam inside its green blueprint band throughout the 20-second lighting inspection. Each window has different trim linkages. Click a lettered seam badge to inspect which numbered rail drives it and in which direction; discovered labels stay visible. Inspecting before START is safe, and inspecting during the run is read-only. Each committed trim decision advances one fixed 0.10-second physics slice; waiting between decisions leaves the visible display unchanged. Use the trim rails to counter fan pressure and inertia. More than 1.8 seconds outside any band ends the attempt. Before START, trim edits are reversible and safe. In full mode, dragging previews a lever and releasing commits one slice; simplified rail clicks commit immediately. Recoverable control corrections within the cumulative blur budget remain allowed. A failed inspection or rejected CERTIFY DISPLAY ends the episode; later attempts cannot earn a pass.",
+      "parameters": {
+        "seam_count": 1,
+        "tolerance_px": 18,
+        "wind_speed": 26,
+        "gust_span_ms": 4200,
+        "inertia_s": 0.18
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "2 simultaneous seams; 15 px registration bands; 0.23 s inertia and 30 px/s fan drift. D is nested inside A and B at D5. Calibration pending. Frame inspection reveals seeded rail assignment and direction; learned labels persist.",
+      "natural_language": "Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, extensions, external applications, hidden-state access, or unrelated tabs. Keep every moving brass seam inside its green blueprint band throughout the 20-second lighting inspection. Each window has different trim linkages. Click a lettered seam badge to inspect which numbered rail drives it and in which direction; discovered labels stay visible. Inspecting before START is safe, and inspecting during the run is read-only. Each committed trim decision advances one fixed 0.10-second physics slice; waiting between decisions leaves the visible display unchanged. Use the trim rails to counter fan pressure and inertia. More than 1.8 seconds outside any band ends the attempt. Before START, trim edits are reversible and safe. In full mode, dragging previews a lever and releasing commits one slice; simplified rail clicks commit immediately. Recoverable control corrections within the cumulative blur budget remain allowed. A failed inspection or rejected CERTIFY DISPLAY ends the episode; later attempts cannot earn a pass.",
+      "parameters": {
+        "seam_count": 2,
+        "tolerance_px": 15,
+        "wind_speed": 30,
+        "gust_span_ms": 3900,
+        "inertia_s": 0.23
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "3 simultaneous seams; 13 px registration bands; 0.3 s inertia and 34 px/s fan drift. D is nested inside A and B at D5. Calibration pending. Frame inspection reveals seeded rail assignment and direction; learned labels persist.",
+      "natural_language": "Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, extensions, external applications, hidden-state access, or unrelated tabs. Keep every moving brass seam inside its green blueprint band throughout the 20-second lighting inspection. Each window has different trim linkages. Click a lettered seam badge to inspect which numbered rail drives it and in which direction; discovered labels stay visible. Inspecting before START is safe, and inspecting during the run is read-only. Each committed trim decision advances one fixed 0.10-second physics slice; waiting between decisions leaves the visible display unchanged. Use the trim rails to counter fan pressure and inertia. More than 1.8 seconds outside any band ends the attempt. Before START, trim edits are reversible and safe. In full mode, dragging previews a lever and releasing commits one slice; simplified rail clicks commit immediately. Recoverable control corrections within the cumulative blur budget remain allowed. A failed inspection or rejected CERTIFY DISPLAY ends the episode; later attempts cannot earn a pass.",
+      "parameters": {
+        "seam_count": 3,
+        "tolerance_px": 13,
+        "wind_speed": 34,
+        "gust_span_ms": 3600,
+        "inertia_s": 0.3
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "3 simultaneous seams; 10 px registration bands; 0.4 s inertia and 38 px/s fan drift. D is nested inside A and B at D5. Calibration pending. Frame inspection reveals seeded rail assignment and direction; learned labels persist.",
+      "natural_language": "Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, extensions, external applications, hidden-state access, or unrelated tabs. Keep every moving brass seam inside its green blueprint band throughout the 20-second lighting inspection. Each window has different trim linkages. Click a lettered seam badge to inspect which numbered rail drives it and in which direction; discovered labels stay visible. Inspecting before START is safe, and inspecting during the run is read-only. Each committed trim decision advances one fixed 0.10-second physics slice; waiting between decisions leaves the visible display unchanged. Use the trim rails to counter fan pressure and inertia. More than 1.8 seconds outside any band ends the attempt. Before START, trim edits are reversible and safe. In full mode, dragging previews a lever and releasing commits one slice; simplified rail clicks commit immediately. Recoverable control corrections within the cumulative blur budget remain allowed. A failed inspection or rejected CERTIFY DISPLAY ends the episode; later attempts cannot earn a pass.",
+      "parameters": {
+        "seam_count": 3,
+        "tolerance_px": 10,
+        "wind_speed": 38,
+        "gust_span_ms": 3300,
+        "inertia_s": 0.4
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "4 simultaneous seams; 8.5 px registration bands; 0.48 s inertia and 42 px/s fan drift. D is nested inside A and B at D5. Calibration pending. Frame inspection reveals seeded rail assignment and direction; learned labels persist.",
+      "natural_language": "Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, extensions, external applications, hidden-state access, or unrelated tabs. Keep every moving brass seam inside its green blueprint band throughout the 20-second lighting inspection. Each window has different trim linkages. Click a lettered seam badge to inspect which numbered rail drives it and in which direction; discovered labels stay visible. Inspecting before START is safe, and inspecting during the run is read-only. Each committed trim decision advances one fixed 0.10-second physics slice; waiting between decisions leaves the visible display unchanged. Use the trim rails to counter fan pressure and inertia. More than 1.8 seconds outside any band ends the attempt. Before START, trim edits are reversible and safe. In full mode, dragging previews a lever and releasing commits one slice; simplified rail clicks commit immediately. Recoverable control corrections within the cumulative blur budget remain allowed. A failed inspection or rejected CERTIFY DISPLAY ends the episode; later attempts cannot earn a pass.",
+      "parameters": {
+        "seam_count": 4,
+        "tolerance_px": 8.5,
+        "wind_speed": 42,
+        "gust_span_ms": 3000,
+        "inertia_s": 0.48
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Click a position on a trim rail to set its signed drive and commit one fixed physics slice. Click the same seam badges to inspect the same seeded rail linkages without advancing time."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Drag each brass trim lever to preview the identical signed drive; release commits one fixed physics slice. Click the same seam badges to inspect the same seeded rail linkages without advancing time."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 90,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  }
+}

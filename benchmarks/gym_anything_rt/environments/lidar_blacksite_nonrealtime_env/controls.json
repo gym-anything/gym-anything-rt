@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "lidar_blacksite_nonrealtime",
+  "baseline": {
+    "difficulty": 4,
+    "interaction": "simplified",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Navigate a short two-turn facility with no chamber crates. A wide, dense scan reaches far into the corridor and its returns remain for eighteen seconds. Beacon pickup and extraction use broad ranges.",
+      "parameters": {
+        "layout_profile": "introductory",
+        "yaw_min_deg_s": 1.5,
+        "yaw_max_deg_s": 3.5,
+        "yaw_segment_ticks": 210,
+        "occluder_count": 0,
+        "scan_range": 11.5,
+        "scan_rays": 121,
+        "scan_half_angle_deg": 68.0,
+        "point_lifetime_ticks": 900,
+        "pickup_range": 1.2,
+        "exit_radius": 0.78,
+        "minimum_scan_count": 2,
+        "minimum_scan_stations": 2,
+        "station_distance": 2.0,
+        "minimum_target_scan_displacement": 4.5,
+        "minimum_travel_distance": 10.0,
+        "minimum_key_transitions": 8
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Navigate a three-turn facility with one chamber crate. Scans remain broad and dense, returns last fifteen seconds, and pickup and extraction remain forgiving.",
+      "parameters": {
+        "layout_profile": "short",
+        "yaw_min_deg_s": 2.0,
+        "yaw_max_deg_s": 4.5,
+        "yaw_segment_ticks": 190,
+        "occluder_count": 1,
+        "scan_range": 10.5,
+        "scan_rays": 101,
+        "scan_half_angle_deg": 62.0,
+        "point_lifetime_ticks": 750,
+        "pickup_range": 1.1,
+        "exit_radius": 0.7,
+        "minimum_scan_count": 3,
+        "minimum_scan_stations": 2,
+        "station_distance": 2.1,
+        "minimum_target_scan_displacement": 5.0,
+        "minimum_travel_distance": 14.0,
+        "minimum_key_transitions": 10
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Navigate a four-turn facility with one chamber crate. The scan fan, range, point density, and twelve-second return lifetime require regular spatial updates from three stations.",
+      "parameters": {
+        "layout_profile": "intermediate",
+        "yaw_min_deg_s": 2.5,
+        "yaw_max_deg_s": 5.5,
+        "yaw_segment_ticks": 170,
+        "occluder_count": 1,
+        "scan_range": 9.5,
+        "scan_rays": 85,
+        "scan_half_angle_deg": 57.0,
+        "point_lifetime_ticks": 620,
+        "pickup_range": 1.0,
+        "exit_radius": 0.63,
+        "minimum_scan_count": 3,
+        "minimum_scan_stations": 3,
+        "station_distance": 2.2,
+        "minimum_target_scan_displacement": 5.5,
+        "minimum_travel_distance": 18.0,
+        "minimum_key_transitions": 12
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Navigate the current five- or six-turn blacksite with two chamber crates. The 73-ray, 104-degree scan reaches 8.5 units and its world-anchored returns fade after ten seconds.",
+      "parameters": {
+        "layout_profile": "current",
+        "yaw_min_deg_s": 3.0,
+        "yaw_max_deg_s": 7.0,
+        "yaw_segment_ticks": 150,
+        "occluder_count": 2,
+        "scan_range": 8.5,
+        "scan_rays": 73,
+        "scan_half_angle_deg": 52.0,
+        "point_lifetime_ticks": 500,
+        "pickup_range": 0.92,
+        "exit_radius": 0.56,
+        "minimum_scan_count": 4,
+        "minimum_scan_stations": 3,
+        "station_distance": 2.2,
+        "minimum_target_scan_displacement": 5.0,
+        "minimum_travel_distance": 12.0,
+        "minimum_key_transitions": 14
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Navigate a longer blacksite with three real dead-end branches and four chamber crates. A narrow, sparse 84-degree scan reaches only 6.8 units, returns fade after 6.4 seconds, and pickup and extraction require closer positioning.",
+      "parameters": {
+        "layout_profile": "branched",
+        "yaw_min_deg_s": 4.0,
+        "yaw_max_deg_s": 9.0,
+        "yaw_segment_ticks": 120,
+        "occluder_count": 4,
+        "scan_range": 6.8,
+        "scan_rays": 49,
+        "scan_half_angle_deg": 42.0,
+        "point_lifetime_ticks": 320,
+        "pickup_range": 0.74,
+        "exit_radius": 0.44,
+        "minimum_scan_count": 5,
+        "minimum_scan_stations": 4,
+        "station_distance": 2.0,
+        "minimum_target_scan_displacement": 7.0,
+        "minimum_travel_distance": 24.0,
+        "minimum_key_transitions": 16
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Hold labelled movement and turning buttons, then use explicit scan, pickup, and verification buttons."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Use held movement keys, drag the viewport to turn, click the scene to scan or recover the beacon, and physically enter the extraction gate."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 90,
+    "observation_window_ms": 500,
+    "frames_per_observation": 5
+  }
+}

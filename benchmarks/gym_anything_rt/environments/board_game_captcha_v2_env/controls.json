@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "board_game_captcha_v2",
+  "baseline": {"difficulty": 3, "interaction": "full", "real_time": "live"},
+  "difficulty": {
+    "1": {"label": "very_easy", "summary": "One large lamp, an open board, one well, slow ball dynamics and a large cup.", "natural_language": "Roll through the lamp, avoid the well and open edges, then reach the cup. The board tilts on its own at half your maximum control strength. Counter the changing red arrow.", "parameters": {"lamp_count": 1, "wall_count": 0, "hazard_count": 1, "lamp_radius": 34, "goal_radius": 36, "tick_ms": 70, "acceleration": 140, "friction": 0.94, "maximum_speed": 130, "bounce": 0.3, "ball_radius": 15}},
+    "2": {"label": "easy", "summary": "Two ordered lamps, one wall and one well. Large targets and forgiving momentum.", "natural_language": "Roll through two lamps in order, avoid the well and open edges, then reach the cup. The board tilts on its own at half your maximum control strength. Counter the changing red arrow.", "parameters": {"lamp_count": 2, "wall_count": 1, "hazard_count": 1, "lamp_radius": 30, "goal_radius": 34, "tick_ms": 60, "acceleration": 160, "friction": 0.95, "maximum_speed": 145, "bounce": 0.35, "ball_radius": 14}},
+    "3": {"label": "medium", "summary": "Three ordered lamps around three walls and three wells.", "natural_language": "Roll through three lamps in order, avoid the wells and open edges, then reach the cup. The board tilts on its own at half your maximum control strength. Counter the changing red arrow.", "parameters": {"lamp_count": 3, "wall_count": 3, "hazard_count": 3, "lamp_radius": 24, "goal_radius": 28, "tick_ms": 50, "acceleration": 190, "friction": 0.958, "maximum_speed": 178, "bounce": 0.42, "ball_radius": 13}},
+    "4": {"label": "hard", "summary": "Four ordered lamps around four walls and four wells. Smaller targets and faster ball dynamics.", "natural_language": "Roll through four lamps in order, avoid the wells and open edges, then reach the cup. The board tilts on its own at half your maximum control strength. Counter the changing red arrow.", "parameters": {"lamp_count": 4, "wall_count": 4, "hazard_count": 4, "lamp_radius": 20, "goal_radius": 24, "tick_ms": 42, "acceleration": 210, "friction": 0.965, "maximum_speed": 190, "bounce": 0.48, "ball_radius": 12}},
+    "5": {"label": "very_hard", "summary": "Five ordered lamps around five walls and five wells. Small targets and high momentum require continuous correction.", "natural_language": "Roll through five lamps in order, avoid the wells and open edges, then reach the cup. The board tilts on its own at half your maximum control strength. Counter the changing red arrow.", "parameters": {"lamp_count": 5, "wall_count": 5, "hazard_count": 5, "lamp_radius": 17, "goal_radius": 20, "tick_ms": 35, "acceleration": 235, "friction": 0.97, "maximum_speed": 215, "bounce": 0.55, "ball_radius": 11}}
+  },
+  "interaction": {
+    "simplified": {"implemented": true, "summary": "Choose an eight-way persistent compass tilt or neutral. Automatic tilt continues."},
+    "full": {"implemented": true, "summary": "Hold and drag the analog knob to control tilt direction and magnitude. Automatic tilt continues after release."}
+  },
+  "real_time": {"play_time_seconds": 120, "observation_window_ms": 500, "frames_per_observation": 5}
+}

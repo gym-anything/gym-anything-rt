@@ -1,0 +1,53 @@
+{
+  "description": "First Change Memory V3: inspect concealed carrier negatives, then continuously frame the earliest changed carriers with inertial physical lenses.",
+  "difficulty": "hard",
+  "env_id": "gym_anything_rt.temporal_memory_first_change_v3_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/temporal_memory_first_change_v3_d4_simplified_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/temporal_memory_first_change_v3_d4_simplified_seed_0001/setup_task.sh"
+  },
+  "id": "temporal_memory_first_change_v3_d4_simplified_seed_0001@0.2",
+  "init": {
+    "max_steps": 300,
+    "reward_type": "sparse",
+    "timeout_sec": 600
+  },
+  "metadata": {
+    "benchmark": "gym_anything_rt",
+    "capabilities": [
+      "visual_understanding_2d",
+      "temporal_understanding_and_memory",
+      "reasoning_and_planning"
+    ],
+    "control_condition": {
+      "difficulty": 4,
+      "difficulty_parameters": {
+        "camera_acceleration": 1600,
+        "camera_speed": 400,
+        "carriers": 7,
+        "change_ms": 2200,
+        "lens_radius": 68,
+        "lenses": 2,
+        "motion_span_ms": 3200,
+        "speed": 70
+      },
+      "interaction": "simplified",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "temporal_memory_first_change_v3"
+  },
+  "name": "First Change Memory V3 · Difficulty 4 · Simplified Interaction",
+  "natural_language": "Roll the film. Inspect concealed carrier negatives to identify the first and second reversals, in order. Inspection reads fully framed carriers: their motif and any recorded past reversal time. Empty inspections are safe. Inspected motifs and notebook readings stay visible; re-inspect to update old readings. The film continues moving during inspection. Centre the first carrier in lens A and the second in lens B and bind. Keep every bound carrier wholly inside its lens together to fill the 6.5-second exposure. Lost framing erases recoverable exposure. A wrong or empty binding, incomplete certification or exhausted 75-second film ends the episode. Select STEER A or B, then click a scene point to steer that lens. INSPECT A or B reads it; BIND A or B commits its binding. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access. Do not switch to unrelated, blank, browser-settings or non-task tabs.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "temporal_memory_first_change_v3"
+  ],
+  "version": "0.2"
+}

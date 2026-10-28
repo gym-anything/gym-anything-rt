@@ -1,0 +1,32 @@
+{
+  "mechanic_id": "hearthlift_courier_v3",
+  "public_name": "Hearthlift Courier V3",
+  "version": "0.1",
+  "source_anchors": [
+    "IND-068"
+  ],
+  "source_records": [
+    {
+      "survey_id": "IND-068",
+      "title": "Bonfire Peaks",
+      "archive_record": "outputs/selection_round4_20260906/inputs/dashboard/data/entries/11.json",
+      "original_cited_url": "https://store.steampowered.com/app/1465470/Bonfire_Peaks/",
+      "source_url": "https://www.bonfirepeaks.com/",
+      "resolved_steam_url": "https://store.steampowered.com/app/1147890/Bonfire_Peaks/",
+      "source_read_date": "2026-10-01",
+      "url_correction_note": "The archived app-1465470 URL was unavailable to web open; direct archival retrieval returned The Crust, not Bonfire Peaks. The original archive link is retained unchanged. The official Bonfire Peaks website and Steam app 1147890 were read as primary source material; retrieval HTML and hashes are in evidence_docs/source_records/.",
+      "transformation": "Retains carrying a crate, climbing box-like support tops in a voxel diorama, depth/elevation reasoning and burning at a bonfire. Replaces fixed box-pushing with original independently moving open lattice lift stacks, ballistic spring boots, inherited lift momentum and coordinate aiming. Source gameplay is not claimed to be real-time."
+    }
+  ],
+  "original_assets": {
+    "art": "Original procedural Canvas diorama, courier, crate, lift tops, trails, announced motor rails and hearth.",
+    "fonts": "System fonts",
+    "third_party_runtime": "Existing shared benchmark runtime only.",
+    "license_note": "No source art, code, levels, audio or trademarked game presentation is bundled."
+  },
+  "evidence_boundary": "Headless Playwright construction diagnostics are separate from unverified downstream HTTP-native action parity, human calibration and model evaluation.",
+  "physics_revision": "moving-crate-hops-v2",
+  "construction_revision": "Preserves initial announced rails, ballistic physics and all difficulty parameters. Replaces the invertible whole-run 32-bit motor recurrence with separately drawn replay knots. Later turns enter the rolling 3.2-second visible rail; known initial knots do not determine their tail. Historical motor programs and evidence remain source-bound.",
+  "prior_construction_revision": "Nonrepeating 2.4-to-2.2s motor segments, 5.3-unit support spacing, three or more moving lifts, shared 3.2s visible forecast, matched aim-arc time markers and idempotent completed release. Initial-forecast shortcuts found in the first draft are preserved in evidence_docs/completion_recheck/.",
+  "motor_revision": "announced-independent-knots-v1"
+}

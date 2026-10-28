@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "cursor_constellation_hunt_v3",
+  "source_anchors": [
+    "captchastar-interactive-shape"
+  ],
+  "survey_ids": [],
+  "selection_file": "creation_audit_logs/realtime_source_remaining48_20261002/selection.json",
+  "survey_root": "outputs/selection_round4_20260906/inputs",
+  "source_urls": [
+    "https://arxiv.org/abs/2304.02739"
+  ],
+  "resolved_original_sources": [
+    {
+      "title": "CAPTCHaStar! A Novel CAPTCHA Based on Interactive Shape Discovery",
+      "authors": [
+        "Mauro Conti",
+        "Claudio Guarisco",
+        "Riccardo Spolaor"
+      ],
+      "url": "https://arxiv.org/abs/1503.00561",
+      "sections": "All 15 pages, including references; no appendix in this version"
+    }
+  ],
+  "source_resolution": "Supplied link is an unrelated Bengali fake-review paper; selection retained read-only. Cited collected notes unavailable on this machine.",
+  "transformation": "Retain cursor-conditioned affine star assembly. Move alignment continuously along nonrepeating smooth paths; use inertial lenses and simultaneous fading exposures.",
+  "assets": "Original procedural canvas stars, shapes, halos and interface; no third-party artwork.",
+  "human_validation": "pending",
+  "model_evaluation": "not_requested"
+}

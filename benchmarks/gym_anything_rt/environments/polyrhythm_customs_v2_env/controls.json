@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "polyrhythm_customs_v2",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Two broad-band tap lanes. Note speeds and gold bands still change independently; misses circle back. A visible allowance of 10 missed passes limits unattended lanes.",
+      "parameters": {
+        "lane_count": 2,
+        "notes_per_lane": 4,
+        "speed": 56,
+        "speed_variation": 0.18,
+        "speed_span_ms": 3200,
+        "gate_drift": 16,
+        "gate_span_ms": 5200,
+        "band_half_width": 54,
+        "hold_fraction": 0,
+        "hold_length_min": 0,
+        "hold_length_max": 0,
+        "miss_allowance": 10
+      },
+      "natural_language_by_interaction": {
+        "full": "Clear every circulating note. Press when its filled head is inside its moving gold band; for a ribbon, hold until the hollow tail reaches gold, then release. Missed notes return, but more than 10 missed passes ends the episode. A wrong stamp or mistimed release ends this episode. Use physical A/S/D/F keydown and keyup; keys can be held together. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or hidden-state access. Do not switch to any unrelated, blank, settings, or pre-existing non-task tab. A task-opened tab is allowed only if part of this task, using its visible controls.",
+        "simplified": "Clear every circulating note. Press when its filled head is inside its moving gold band; for a ribbon, hold until the hollow tail reaches gold, then release. Missed notes return, but more than 10 missed passes ends the episode. A wrong stamp or mistimed release ends this episode. Click a lane pad to press; click it again to release. Several pads may stay pressed. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or hidden-state access. Do not switch to any unrelated, blank, settings, or pre-existing non-task tab. A task-opened tab is allowed only if part of this task, using its visible controls."
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Add spatial hold ribbons while narrowing bands: both head arrival and moving tail release must be tracked. A visible allowance of 6 missed passes limits unattended lanes.",
+      "parameters": {
+        "lane_count": 2,
+        "notes_per_lane": 4,
+        "speed": 64,
+        "speed_variation": 0.25,
+        "speed_span_ms": 2900,
+        "gate_drift": 20,
+        "gate_span_ms": 5100,
+        "band_half_width": 49,
+        "hold_fraction": 0.25,
+        "hold_length_min": 100,
+        "hold_length_max": 125,
+        "miss_allowance": 6
+      },
+      "natural_language_by_interaction": {
+        "full": "Clear every circulating note. Press when its filled head is inside its moving gold band; for a ribbon, hold until the hollow tail reaches gold, then release. Missed notes return, but more than 6 missed passes ends the episode. A wrong stamp or mistimed release ends this episode. Use physical A/S/D/F keydown and keyup; keys can be held together. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or hidden-state access. Do not switch to any unrelated, blank, settings, or pre-existing non-task tab. A task-opened tab is allowed only if part of this task, using its visible controls.",
+        "simplified": "Clear every circulating note. Press when its filled head is inside its moving gold band; for a ribbon, hold until the hollow tail reaches gold, then release. Missed notes return, but more than 6 missed passes ends the episode. A wrong stamp or mistimed release ends this episode. Click a lane pad to press; click it again to release. Several pads may stay pressed. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or hidden-state access. Do not switch to any unrelated, blank, settings, or pre-existing non-task tab. A task-opened tab is allowed only if part of this task, using its visible controls."
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Three simultaneous lanes with more overlapping holds and greater speed variation require concurrent prediction. A visible allowance of 4 missed passes limits unattended lanes.",
+      "parameters": {
+        "lane_count": 3,
+        "notes_per_lane": 4,
+        "speed": 70,
+        "speed_variation": 0.3,
+        "speed_span_ms": 2600,
+        "gate_drift": 25,
+        "gate_span_ms": 5000,
+        "band_half_width": 44,
+        "hold_fraction": 0.5,
+        "hold_length_min": 110,
+        "hold_length_max": 145,
+        "miss_allowance": 4
+      },
+      "natural_language_by_interaction": {
+        "full": "Clear every circulating note. Press when its filled head is inside its moving gold band; for a ribbon, hold until the hollow tail reaches gold, then release. Missed notes return, but more than 4 missed passes ends the episode. A wrong stamp or mistimed release ends this episode. Use physical A/S/D/F keydown and keyup; keys can be held together. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or hidden-state access. Do not switch to any unrelated, blank, settings, or pre-existing non-task tab. A task-opened tab is allowed only if part of this task, using its visible controls.",
+        "simplified": "Clear every circulating note. Press when its filled head is inside its moving gold band; for a ribbon, hold until the hollow tail reaches gold, then release. Missed notes return, but more than 4 missed passes ends the episode. A wrong stamp or mistimed release ends this episode. Click a lane pad to press; click it again to release. Several pads may stay pressed. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or hidden-state access. Do not switch to any unrelated, blank, settings, or pre-existing non-task tab. A task-opened tab is allowed only if part of this task, using its visible controls."
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Four lanes and closer note spacing create competing press and release opportunities; drifting bands demand correction. A visible allowance of 3 missed passes limits unattended lanes.",
+      "parameters": {
+        "lane_count": 4,
+        "notes_per_lane": 6,
+        "speed": 77,
+        "speed_variation": 0.36,
+        "speed_span_ms": 2300,
+        "gate_drift": 30,
+        "gate_span_ms": 5000,
+        "band_half_width": 40,
+        "hold_fraction": 0.5,
+        "hold_length_min": 110,
+        "hold_length_max": 155,
+        "miss_allowance": 3
+      },
+      "natural_language_by_interaction": {
+        "full": "Clear every circulating note. Press when its filled head is inside its moving gold band; for a ribbon, hold until the hollow tail reaches gold, then release. Missed notes return, but more than 3 missed passes ends the episode. A wrong stamp or mistimed release ends this episode. Use physical A/S/D/F keydown and keyup; keys can be held together. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or hidden-state access. Do not switch to any unrelated, blank, settings, or pre-existing non-task tab. A task-opened tab is allowed only if part of this task, using its visible controls.",
+        "simplified": "Clear every circulating note. Press when its filled head is inside its moving gold band; for a ribbon, hold until the hollow tail reaches gold, then release. Missed notes return, but more than 3 missed passes ends the episode. A wrong stamp or mistimed release ends this episode. Click a lane pad to press; click it again to release. Several pads may stay pressed. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or hidden-state access. Do not switch to any unrelated, blank, settings, or pre-existing non-task tab. A task-opened tab is allowed only if part of this task, using its visible controls."
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Four independently changing belts with two-thirds hold ribbons, variable ribbon lengths, strong speed variation and moving 72px bands. Sustained concurrent prediction and release control. A visible allowance of 2 missed passes limits unattended lanes.",
+      "parameters": {
+        "lane_count": 4,
+        "notes_per_lane": 6,
+        "speed": 84,
+        "speed_variation": 0.42,
+        "speed_span_ms": 2000,
+        "gate_drift": 34,
+        "gate_span_ms": 5000,
+        "band_half_width": 36,
+        "hold_fraction": 0.67,
+        "hold_length_min": 125,
+        "hold_length_max": 165,
+        "miss_allowance": 2
+      },
+      "natural_language_by_interaction": {
+        "full": "Clear every circulating note. Press when its filled head is inside its moving gold band; for a ribbon, hold until the hollow tail reaches gold, then release. Missed notes return, but more than 2 missed passes ends the episode. A wrong stamp or mistimed release ends this episode. Use physical A/S/D/F keydown and keyup; keys can be held together. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or hidden-state access. Do not switch to any unrelated, blank, settings, or pre-existing non-task tab. A task-opened tab is allowed only if part of this task, using its visible controls.",
+        "simplified": "Clear every circulating note. Press when its filled head is inside its moving gold band; for a ribbon, hold until the hollow tail reaches gold, then release. Missed notes return, but more than 2 missed passes ends the episode. A wrong stamp or mistimed release ends this episode. Click a lane pad to press; click it again to release. Several pads may stay pressed. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or hidden-state access. Do not switch to any unrelated, blank, settings, or pre-existing non-task tab. A task-opened tab is allowed only if part of this task, using its visible controls."
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Visible pad clicks toggle press/release. Timing, moving geometry and sustained hold effects match physical keys."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Physical A/S/D/F keydown and keyup, including simultaneous held keys."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 120,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  }
+}

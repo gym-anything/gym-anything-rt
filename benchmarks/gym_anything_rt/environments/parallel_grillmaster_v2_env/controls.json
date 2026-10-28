@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "parallel_grillmaster_v2",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "3 foods with changing heat; ±1800 heat-unit serving tolerance; 1 concurrent starts. Cooking continues during dragging.",
+      "natural_language": "Watch the changing heat and serve every food during its golden window. Cooking continues during dragging. One spoiled item ends the attempt.",
+      "parameters": {
+        "food_count": 3,
+        "target_times_ms": [
+          8000,
+          9000,
+          10000
+        ],
+        "tolerance_ms_values": [
+          1800,
+          2000
+        ],
+        "parallel_start_count": 1,
+        "parallel_start_window_ms": null
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "6 foods with changing heat; ±1150 heat-unit serving tolerance; 1 concurrent starts. Cooking continues during dragging.",
+      "natural_language": "Watch the changing heat and serve every food during its golden window. Cooking continues during dragging. One spoiled item ends the attempt.",
+      "parameters": {
+        "food_count": 6,
+        "target_times_ms": [
+          8000,
+          9000,
+          10000,
+          11000,
+          12000,
+          13000
+        ],
+        "tolerance_ms_values": [
+          1150,
+          1250,
+          1350
+        ],
+        "parallel_start_count": 1,
+        "parallel_start_window_ms": null
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "6 foods with changing heat; ±950 heat-unit serving tolerance; 3 concurrent starts. Cooking continues during dragging.",
+      "natural_language": "Start at least 3 foods within 2.6 seconds. Watch the changing heat and serve every food during its golden window. Cooking continues during dragging. One spoiled item ends the attempt.",
+      "parameters": {
+        "food_count": 6,
+        "target_times_ms": [
+          8000,
+          9000,
+          10000,
+          11000,
+          12000,
+          13000
+        ],
+        "tolerance_ms_values": [
+          950,
+          1050
+        ],
+        "parallel_start_count": 3,
+        "parallel_start_window_ms": 2600
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "6 foods with changing heat; ±750 heat-unit serving tolerance; 6 concurrent starts. Cooking continues during dragging.",
+      "natural_language": "Start at least 6 foods within 3 seconds. Watch the changing heat and serve every food during its golden window. Cooking continues during dragging. One spoiled item ends the attempt.",
+      "parameters": {
+        "food_count": 6,
+        "target_times_ms": [
+          8000,
+          9000,
+          10000,
+          11000,
+          12000,
+          13000
+        ],
+        "tolerance_ms_values": [
+          750,
+          850
+        ],
+        "parallel_start_count": 6,
+        "parallel_start_window_ms": 3000
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "8 foods with changing heat; ±550 heat-unit serving tolerance; 8 concurrent starts. Cooking continues during dragging.",
+      "natural_language": "Start at least 8 foods within 3.2 seconds. Watch the changing heat and serve every food during its golden window. Cooking continues during dragging. One spoiled item ends the attempt.",
+      "parameters": {
+        "food_count": 8,
+        "target_times_ms": [
+          8000,
+          9000,
+          10000,
+          11000,
+          12000,
+          13000,
+          14000,
+          15000
+        ],
+        "tolerance_ms_values": [
+          550,
+          650
+        ],
+        "parallel_start_count": 8,
+        "parallel_start_window_ms": 3200
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Select a food, then use the visible START COOKING and MOVE TO TRAY buttons."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Drag each food directly from the raw order to the live grill and then to the serving tray."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 600,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  }
+}

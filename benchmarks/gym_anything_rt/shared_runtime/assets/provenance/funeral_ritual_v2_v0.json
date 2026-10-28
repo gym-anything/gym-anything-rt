@@ -1,0 +1,30 @@
+{
+  "mechanic_id": "funeral_ritual_v2",
+  "source_anchors": [
+    "neal-im-not-a-robot/level-41"
+  ],
+  "original_environment": "funeral_ritual_env",
+  "selection_file": "creation_audit_logs/realtime_source_remaining48_20261002/selection.json",
+  "survey_root": "outputs/selection_round4_20260906/inputs",
+  "survey_ids": [],
+  "located_source_container": {
+    "path": "dashboard/data/entries/02.json",
+    "key": "CAPW-001",
+    "subcase": "CAPW-042 (level 41)",
+    "selection_alias": "neal-im-not-a-robot/level-41"
+  },
+  "sources": [
+    "https://neal.fun/im-not-a-robot/",
+    "https://neal.fun/not-a-robot/",
+    "https://gist.github.com/tag-assistant/77a1196c46f6b23b5fbaca19ff9f772e"
+  ],
+  "source_access": {
+    "primary_http": 403,
+    "collected_path_missing": true,
+    "teardown_http": 200
+  },
+  "transformation": "Retains inspect/clean/light/flowers/tribute ritual. Adds independently changing drafts, inertial physical windbreaks, flame survival and drifting flower resting places during a thirty-second vigil.",
+  "assets": "Original canvas geometry and CSS; no third-party art copied.",
+  "human_calibration": "not_run",
+  "model_evaluation": "not_run"
+}

@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "circle_limit_twist_v2",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "8 faces, 2 coupled scramble turns, flow changes over 4.2s, aperture radius 0.25. Difficulty ordering awaits human and agent calibration.",
+      "natural_language": "Restore every heptagon to one color within the visible twist allowance. Drag the disc to counter the changing flow. A turn only works while the face center lies inside the central aperture and the 1.2-second detent has settled. The flow continues during holds and dragging. An incomplete certification or spent twist allowance ends the episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or other hidden-state access. Do not switch to unrelated, blank, pre-existing, or browser-settings tabs.",
+      "parameters": {
+        "face_count": 8,
+        "scramble_length": 2,
+        "move_budget": 4,
+        "flow_amplitude": 0.6,
+        "flow_span_ms": 4200,
+        "activation_radius": 0.25
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "10 faces, 3 coupled scramble turns, flow changes over 3.6s, aperture radius 0.22. Difficulty ordering awaits human and agent calibration.",
+      "natural_language": "Restore every heptagon to one color within the visible twist allowance. Drag the disc to counter the changing flow. A turn only works while the face center lies inside the central aperture and the 1.2-second detent has settled. The flow continues during holds and dragging. An incomplete certification or spent twist allowance ends the episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or other hidden-state access. Do not switch to unrelated, blank, pre-existing, or browser-settings tabs.",
+      "parameters": {
+        "face_count": 10,
+        "scramble_length": 3,
+        "move_budget": 6,
+        "flow_amplitude": 0.65,
+        "flow_span_ms": 3600,
+        "activation_radius": 0.22
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "12 faces, 4 coupled scramble turns, flow changes over 2.9s, aperture radius 0.2. Difficulty ordering awaits human and agent calibration.",
+      "natural_language": "Restore every heptagon to one color within the visible twist allowance. Drag the disc to counter the changing flow. A turn only works while the face center lies inside the central aperture and the 1.2-second detent has settled. The flow continues during holds and dragging. An incomplete certification or spent twist allowance ends the episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or other hidden-state access. Do not switch to unrelated, blank, pre-existing, or browser-settings tabs.",
+      "parameters": {
+        "face_count": 12,
+        "scramble_length": 4,
+        "move_budget": 8,
+        "flow_amplitude": 0.69,
+        "flow_span_ms": 2900,
+        "activation_radius": 0.2
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "14 faces, 6 coupled scramble turns, flow changes over 2.2s, aperture radius 0.18. Difficulty ordering awaits human and agent calibration.",
+      "natural_language": "Restore every heptagon to one color within the visible twist allowance. Drag the disc to counter the changing flow. A turn only works while the face center lies inside the central aperture and the 1.2-second detent has settled. The flow continues during holds and dragging. An incomplete certification or spent twist allowance ends the episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or other hidden-state access. Do not switch to unrelated, blank, pre-existing, or browser-settings tabs.",
+      "parameters": {
+        "face_count": 14,
+        "scramble_length": 6,
+        "move_budget": 12,
+        "flow_amplitude": 0.73,
+        "flow_span_ms": 2200,
+        "activation_radius": 0.18
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "15 faces, 8 coupled scramble turns, flow changes over 1.8s, aperture radius 0.16. Difficulty ordering awaits human and agent calibration.",
+      "natural_language": "Restore every heptagon to one color within the visible twist allowance. Drag the disc to counter the changing flow. A turn only works while the face center lies inside the central aperture and the 1.2-second detent has settled. The flow continues during holds and dragging. An incomplete certification or spent twist allowance ends the episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or other hidden-state access. Do not switch to unrelated, blank, pre-existing, or browser-settings tabs.",
+      "parameters": {
+        "face_count": 15,
+        "scramble_length": 8,
+        "move_budget": 16,
+        "flow_amplitude": 0.76,
+        "flow_span_ms": 1800,
+        "activation_radius": 0.16
+      }
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Drag the disc to steer the view. Left/right click a heptagon inside the aperture to turn it counter-clockwise/clockwise."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "The same disc drag steers the view. Click to select a heptagon, then use the explicit counter-clockwise/clockwise buttons while it lies inside the aperture. Selection does not center or track it."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 300,
+    "observation_window_ms": 500,
+    "frames_per_observation": 5
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "mechanic_id": "museum_of_lost_gestures_v2",
+  "source_anchors": [
+    "ART-238",
+    "ART-239",
+    "ART-229"
+  ],
+  "sources": [
+    "https://studiomoniker.com/projects/click-click-click",
+    "https://clickclickclick.click/",
+    "https://studiomoniker.com/projects/do-not-touch",
+    "http://donottouch.org/",
+    "https://checkbox.toys/",
+    "https://checkbox.toys/scale/"
+  ],
+  "transformation": "Recorded mouse behaviours become left/right grips on inertial nibs, moving pointer tasks become continuously tracked memory rings, and discrete achievements become simultaneously restored fading traces. Nonperiodic paths, visible short forecasts and recent trails demand renewed steering. Original world and evidence are preserved.",
+  "assets": "Original canvas geometry, procedural pointer silhouettes and CSS; no imported presentation, music, images or code.",
+  "license": "Original repository implementation; source projects used for ideas only.",
+  "original_environment": "museum_of_lost_gestures_env"
+}

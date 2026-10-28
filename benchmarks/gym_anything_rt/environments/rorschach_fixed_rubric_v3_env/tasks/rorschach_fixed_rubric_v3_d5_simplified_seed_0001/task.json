@@ -1,0 +1,63 @@
+{
+  "description": "Inspect the ink centres with the pointer to uncover their registration marks. Each sheet assigns the apertures differently; uncovered marks stay visible. Keep every ink centre inside its marked registration aperture to develop the butterfly print. The apertures have inertia. Uncovered ink fills the spill gutter and the print fades. The dotted fibres show the next 1.2 seconds of flow; fading fibres show the recent past. Begin flow when ready. A full gutter, expired sheet, or incomplete certification ends the episode. Select an aperture, then click its motor aim in the ink field. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs.",
+  "difficulty": "very_hard",
+  "env_id": "gym_anything_rt.rorschach_fixed_rubric_v3_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/rorschach_fixed_rubric_v3_d5_simplified_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/rorschach_fixed_rubric_v3_d5_simplified_seed_0001/setup_task.sh"
+  },
+  "id": "rorschach_fixed_rubric_v3_d5_simplified_seed_0001@0.2",
+  "init": {
+    "max_steps": 250,
+    "reward_type": "sparse",
+    "timeout_sec": 600
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/rorschach_fixed_rubric_v3_v0.json",
+    "benchmark": "gym_anything_rt",
+    "capabilities": [
+      "visual understanding: 2D",
+      "temporal understanding and memory",
+      "reasoning and planning"
+    ],
+    "control_condition": {
+      "difficulty": 5,
+      "difficulty_parameters": {
+        "damping": 9.5,
+        "drift": 140,
+        "flex": 60,
+        "knot_ms": 3000,
+        "landmarks": 3,
+        "spread": 60,
+        "spring": 28,
+        "tolerance": 28,
+        "twist": 0.44
+      },
+      "interaction": "simplified",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "rorschach_fixed_rubric_v3",
+    "variant_count": 1000000000000000000000000,
+    "variant_count_kind": "independent seeded smooth flow, spread, orientation and spine deformation channels"
+  },
+  "name": "Rorschach / Subjective Prompt With A Fixed Rubric V3 · Difficulty 5 · Simplified Interaction",
+  "natural_language": "Inspect the ink centres with the pointer to uncover their registration marks. Each sheet assigns the apertures differently; uncovered marks stay visible. Keep every ink centre inside its marked registration aperture to develop the butterfly print. The apertures have inertia. Uncovered ink fills the spill gutter and the print fades. The dotted fibres show the next 1.2 seconds of flow; fading fibres show the recent past. Begin flow when ready. A full gutter, expired sheet, or incomplete certification ends the episode. Select an aperture, then click its motor aim in the ink field. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "linux",
+    "browser",
+    "visual-puzzle",
+    "gym-anything-rt",
+    "rorschach_fixed_rubric_v3",
+    "continuous-control",
+    "ink-flow",
+    "deformation"
+  ],
+  "version": "0.2"
+}

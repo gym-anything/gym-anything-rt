@@ -1,0 +1,62 @@
+{
+  "mechanic_id": "rorschach_fixed_rubric_v3",
+  "revision": "living-ink-press-5-inspection",
+  "source_anchors": [
+    "modrinth-evil-captcha",
+    "hotcaptcha",
+    "xkcd-2228-machine-learning-captcha"
+  ],
+  "survey_ids": [],
+  "source_urls": [
+    "https://modrinth.com/mod/evil-captcha",
+    "https://www.wired.com/2006/07/hotcaptcha",
+    "https://xkcd.com/2228/"
+  ],
+  "source_task": "benchmarks/gym_anything_rt/environments/rorschach_fixed_rubric_env/tasks/rorschach_fixed_rubric_seed_0001/task.json",
+  "original_preserved": true,
+  "transformation": "Retain the V2 living ink press and continuous inertial aperture control. Restore ink inspection through seeded concealed registration marks: pointer inspection reveals which aperture must track each moving contact, and those marks remain visible. The flow channels and all five profile parameter dictionaries are unchanged from the mechanically renamed V2 input.",
+  "assets": "Original procedural Canvas ink art, SVG butterfly stamp and CSS. No third-party images shipped.",
+  "third_party_runtime": "Existing benchmark browser/runtime only.",
+  "calibration": {
+    "human": "pending",
+    "computer_use_agents": "not_run"
+  },
+  "collected_evidence_paths_status": {
+    "sources/hotcaptcha/notes.md": "missing on supplied machine",
+    "sources/modrinth-evil-captcha/raw/extracted-mechanics.json": "missing on supplied machine",
+    "sources/xkcd-2228-machine-learning-captcha/notes.md": "missing on supplied machine"
+  },
+  "revisions": [
+    {
+      "revision": "living-ink-press-1",
+      "status": "rejected at pre-run shortcut test",
+      "D1_best_parked_successes": "28/30",
+      "evidence": "revision1-sources and diagnostics.json in raw archive"
+    },
+    {
+      "revision": "living-ink-press-2",
+      "change": "Cross-sheet pump excursions with unequal seeded spans; uncovered wet print washes out at 1.5 development units per second. Retain all original limits and continuous motion.",
+      "status": "revised after initial-plan shortcut check",
+      "D1_initial_first_segment_plan_successes": "44/50",
+      "evidence": "revision2-sources, diagnostics-v2, and initial-plan-diagnostic.json in raw archive"
+    },
+    {
+      "revision": "living-ink-press-3",
+      "change": "D1 uses 2.0–3.125-second flow segments, retaining its two coupled contacts and broad 44-pixel centre tolerance.",
+      "status": "strengthened after additional initial-plan checks",
+      "D1_nominal_initial_frame_script_successes": "26/50",
+      "note": "This script sends outcome-affecting actions during flow; its result is distinct from the no-action pre-run threshold."
+    },
+    {
+      "revision": "living-ink-press-4",
+      "change": "D1 nominal knot span is 2200 ms (actual 1760–2750 ms), so development crosses several independent turns. Two coupled contacts and the 44-pixel tolerance remain. Other profiles and physics rules remain fixed."
+    },
+    {
+      "revision": "living-ink-press-5-inspection",
+      "change": "Task-local concealed registration correspondence and optional pointer inspection; persistent discoveries, unchanged flow physics and profiles. Compact side controls keep the 1280×720 task and footer in view.",
+      "evidence": "benchmarks/gym_anything_rt/environments/rorschach_fixed_rubric_v3_env/evidence_docs/",
+      "approval": "Independent audit and human calibration pending."
+    }
+  ],
+  "source_v2": "benchmarks/gym_anything_rt/environments/rorschach_fixed_rubric_v2_env"
+}

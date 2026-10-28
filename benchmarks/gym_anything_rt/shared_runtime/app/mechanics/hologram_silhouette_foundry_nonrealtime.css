@@ -1,0 +1,10 @@
+.hsf2-shell{width:min(1120px,96vw);margin:auto;background:#0a1420;color:#dce7ef;border:1px solid #3a5466;box-shadow:0 14px 45px #0008;font-family:ui-sans-serif,system-ui,sans-serif}
+.hsf2-shell header{height:61px;display:flex;align-items:center;justify-content:space-between;padding:0 23px;border-bottom:1px solid #334657;background:#132333;box-sizing:border-box}
+.hsf2-shell header small{font-size:10px;letter-spacing:2px;color:#bcab83}.hsf2-shell h1{font-size:23px;margin:3px 0 0;line-height:1.2}
+.hsf2-badge{font:11px ui-monospace,monospace;color:#97b3c7;border:1px solid #40576a;padding:8px}
+.hsf2-canvas{display:block;width:100%;height:auto;touch-action:none;user-select:none}
+.hsf2-shell footer{height:54px;display:flex;align-items:center;gap:10px;padding:7px 16px;border-top:1px solid #32495a;box-sizing:border-box;background:#132333}
+.hsf2-shell .readout{flex:1;color:#afc8d8;font-size:12px;line-height:1.35;min-width:0}
+.hsf2-shell button{padding:10px 15px;border:1px solid #8d805e;background:#302b20;color:#efd8a5;cursor:pointer;font:12px ui-monospace,monospace;min-height:38px}
+.hsf2-shell button:disabled{opacity:.45;cursor:default}.hsf2-shell button:focus-visible{outline:2px solid #84dcca;outline-offset:2px}
+.hsf2-shell .is-passed,.hsf2-shell .readout[data-state=passed]{color:#8fe3bf}

@@ -1,0 +1,27 @@
+.tfd-game { width:min(1240px,98vw); background:#e8ddbe; color:#16303a; border:3px solid #172f37; box-shadow:0 14px 60px #0007; font-family:system-ui,sans-serif; }
+.tfd-head { display:flex; justify-content:space-between; align-items:center; padding:12px 24px; background:#e6d9b9; }
+.tfd-head span,.tfd-main aside>span { font:700 11px ui-monospace,monospace; letter-spacing:.16em; }
+.tfd-head h1 { font:600 26px Georgia,serif; margin:6px 0; }
+.tfd-target { display:flex; gap:15px; align-items:center; border:2px solid #15313c; padding:5px 16px; background:#edbc61; }
+.tfd-target small { font:700 11px ui-monospace,monospace; }
+.tfd-target b { font:700 38px Georgia,serif; }
+.tfd-rules { padding:9px 24px; background:#244650; color:#f0e7cb; font-size:13px; line-height:1.35; }
+.tfd-main { display:grid; grid-template-columns:minmax(0,960px) minmax(190px,1fr); }
+.tfd-stage { position:relative; min-width:0; }
+#tfd-canvas { display:block; width:100%; height:auto; touch-action:none; cursor:crosshair; }
+.tfd-main aside { padding:18px 15px; border-left:3px solid #26434c; background:#dfd2b0; }
+.tfd-main h2 { font:600 24px/1.08 Georgia,serif; margin:18px 0; }
+.tfd-main p { font-size:13px; line-height:1.5; }
+.tfd-main dl { display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:7px; margin:15px 0; }
+.tfd-main dt { font:700 10px ui-monospace,monospace; }
+.tfd-main dd { margin:0; text-align:right; font:700 21px ui-monospace,monospace; }
+.tfd-game button { border:2px solid #15323b; border-radius:3px; background:#f2c672; color:#172f37; padding:12px; font:700 12px ui-monospace,monospace; cursor:pointer; }
+.tfd-main button { width:100%; margin-top:10px; }
+.tfd-game button:disabled { opacity:.5; cursor:default; }
+.tfd-game footer { display:flex; align-items:center; justify-content:space-between; padding:8px 20px; min-height:50px; border-top:3px solid #15323b; }
+.tfd-game .readout { font:700 13px ui-monospace,monospace; }
+#tfd-verdict { position:absolute; inset:30% 12%; display:grid; place-content:center; gap:15px; text-align:center; background:#541f29ef; color:#fff0d1; border:4px solid #dc9284; pointer-events:none; }
+#tfd-verdict[hidden] { display:none; }
+#tfd-verdict b { font:700 64px Georgia,serif; }
+#tfd-verdict span { font:700 16px ui-monospace,monospace; }
+#tfd-verdict[data-pass="true"] { background:#183f39f5; border-color:#81d9ac; }

@@ -1,0 +1,51 @@
+{
+  "description": "Keep every moving brass seam inside its green blueprint band throughout the 20-second lighting inspection. Each window has different trim linkages. Click a lettered seam badge to inspect which numbered rail drives it and in which direction; discovered labels stay visible. Inspecting before START is safe, and inspecting during the run is read-only. Each committed trim decision advances one fixed 0.10-second physics slice; waiting between decisions leaves the visible display unchanged. Use the trim rails to counter fan pressure and inertia. More than 1.8 seconds outside any band ends the attempt. Before START, trim edits are reversible and safe. In full mode, dragging previews a lever and releasing commits one slice; simplified rail clicks commit immediately. Recoverable control corrections within the cumulative blur budget remain allowed. A failed inspection or rejected CERTIFY DISPLAY ends the episode; later attempts cannot earn a pass.",
+  "difficulty": "easy",
+  "env_id": "gym_anything_rt.reflow_vitrine_v3_nonrealtime_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/reflow_vitrine_v3_nonrealtime_d2_full_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/reflow_vitrine_v3_nonrealtime_d2_full_seed_0001/setup_task.sh"
+  },
+  "id": "reflow_vitrine_v3_nonrealtime_d2_full_seed_0001@0.2",
+  "init": {
+    "max_steps": 240,
+    "reward_type": "sparse",
+    "timeout_sec": 300
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/reflow_vitrine_v3_v0.json",
+    "benchmark": "gym_anything_rt",
+    "control_condition": {
+      "difficulty": 2,
+      "difficulty_parameters": {
+        "gust_span_ms": 3900,
+        "inertia_s": 0.23,
+        "seam_count": 2,
+        "tolerance_px": 15,
+        "wind_speed": 30
+      },
+      "interaction": "full",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "reflow_vitrine_v3_nonrealtime"
+  },
+  "name": "Reflow Vitrine V3 · Difficulty 2 · Full Interaction",
+  "natural_language": "Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, extensions, external applications, hidden-state access, or unrelated tabs. Keep every moving brass seam inside its green blueprint band throughout the 20-second lighting inspection. Each window has different trim linkages. Click a lettered seam badge to inspect which numbered rail drives it and in which direction; discovered labels stay visible. Inspecting before START is safe, and inspecting during the run is read-only. Each committed trim decision advances one fixed 0.10-second physics slice; waiting between decisions leaves the visible display unchanged. Use the trim rails to counter fan pressure and inertia. More than 1.8 seconds outside any band ends the attempt. Before START, trim edits are reversible and safe. In full mode, dragging previews a lever and releasing commits one slice; simplified rail clicks commit immediately. Recoverable control corrections within the cumulative blur budget remain allowed. A failed inspection or rejected CERTIFY DISPLAY ends the episode; later attempts cannot earn a pass.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "linux",
+    "browser",
+    "visual-puzzle",
+    "gym-anything-rt",
+    "reflow-vitrine-v3",
+    "action-stepped",
+    "layout-registration"
+  ],
+  "version": "0.2"
+}

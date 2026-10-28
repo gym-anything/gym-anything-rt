@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "ribbon_switchboard_v3",
+  "source_anchors": [
+    "nextgen-captchas/Illusory_Ribbons",
+    "captcha-royale/pathtracing"
+  ],
+  "survey_ids_as_supplied": [],
+  "resolved_survey_records": [
+    "CAPR-028"
+  ],
+  "source_urls": [
+    "https://github.com/MetaAgentX/NextGen-CAPTCHAs/tree/main/captcha_data/Illusory_Ribbons",
+    "https://sean-reid.github.io/captcha-royale/"
+  ],
+  "source_revision": {
+    "nextgen": "d5abfb4b4f578bf2e517c2691ea0e841f6c2c15e",
+    "royale": "8f33d642fb2527673a1107492a2591abc2aab000"
+  },
+  "transformation": "Rebuild ribbon identity, layering and endpoint tracing as simultaneous motor control through continuous nonperiodic moving braids with damped contact servos.",
+  "assets": "Original canvas artwork; no third-party artwork or runtime dependency copied.",
+  "original_environment_preserved": true,
+  "calibration": {
+    "human": "unmeasured",
+    "model": "unmeasured"
+  }
+}

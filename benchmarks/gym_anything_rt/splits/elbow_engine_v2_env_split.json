@@ -1,0 +1,66 @@
+{
+  "env_folder": "elbow_engine_v2_env",
+  "all_tasks": [
+    "elbow_engine_v2_d1_full_seed_0001",
+    "elbow_engine_v2_d1_simplified_seed_0001",
+    "elbow_engine_v2_d2_full_seed_0001",
+    "elbow_engine_v2_d2_simplified_seed_0001",
+    "elbow_engine_v2_d3_full_seed_0001",
+    "elbow_engine_v2_d3_simplified_seed_0001",
+    "elbow_engine_v2_d4_full_seed_0001",
+    "elbow_engine_v2_d4_simplified_seed_0001",
+    "elbow_engine_v2_d5_full_seed_0001",
+    "elbow_engine_v2_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "elbow_engine_v2_d1_full_seed_0001",
+    "elbow_engine_v2_d1_simplified_seed_0001",
+    "elbow_engine_v2_d2_full_seed_0001",
+    "elbow_engine_v2_d2_simplified_seed_0001",
+    "elbow_engine_v2_d3_full_seed_0001",
+    "elbow_engine_v2_d3_simplified_seed_0001",
+    "elbow_engine_v2_d4_full_seed_0001",
+    "elbow_engine_v2_d4_simplified_seed_0001",
+    "elbow_engine_v2_d5_full_seed_0001",
+    "elbow_engine_v2_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "elbow_engine_v2_d5_full_seed_0001"
+    ],
+    "full": [
+      "elbow_engine_v2_d1_full_seed_0001",
+      "elbow_engine_v2_d2_full_seed_0001",
+      "elbow_engine_v2_d3_full_seed_0001",
+      "elbow_engine_v2_d4_full_seed_0001",
+      "elbow_engine_v2_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "elbow_engine_v2_d1_simplified_seed_0001",
+      "elbow_engine_v2_d2_simplified_seed_0001",
+      "elbow_engine_v2_d3_simplified_seed_0001",
+      "elbow_engine_v2_d4_simplified_seed_0001",
+      "elbow_engine_v2_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "elbow_engine_v2_d1_full_seed_0001",
+      "elbow_engine_v2_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "elbow_engine_v2_d2_full_seed_0001",
+      "elbow_engine_v2_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "elbow_engine_v2_d3_full_seed_0001",
+      "elbow_engine_v2_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "elbow_engine_v2_d4_full_seed_0001",
+      "elbow_engine_v2_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "elbow_engine_v2_d5_full_seed_0001",
+      "elbow_engine_v2_d5_simplified_seed_0001"
+    ]
+  }
+}

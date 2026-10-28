@@ -1,0 +1,21 @@
+{
+  "mechanic_id": "firewatch_fold_v3",
+  "name": "Firewatch Fold V3",
+  "source_anchors": [
+    "TRP-708"
+  ],
+  "sources": [
+    {
+      "survey_id": "TRP-708",
+      "url": "https://www.smartgameslive.com/en/games/tower-logic/starter",
+      "rules_bundle": "https://www.smartgameslive.com/sites/all/modules/custom/game/games/towerlogic/towerlogic-comp.js"
+    }
+  ],
+  "transformation": "Tower of Logic supplies the two faces, eye inspection, edge crossings, arrow movement, direction-dependent extinguishing and one-use stock. V3 adds circulating fire cores, ballistic water, thermal ladder locks and seeded changing currents. The source Master matching-color rule becomes first-contact canister planning among independently moving cores. Both gutter faces remain simultaneously visible; the source eye control highlights a face while the moving context stays available.",
+  "assets": "Original canvas artwork and code. No source artwork or third-party implementation copied.",
+  "status": "prototype_visual_candidate",
+  "human_calibration": "not_run",
+  "model_evaluation": "not_run",
+  "revision": "gutter-interception-v3-observed-currents",
+  "construction_revision_notes": "After initial-map schedule diagnostics, all profiles use independently smooth-changing 3-second currents; D1/D2 retain two colored crossing fronts with forgiving geometry. Dual-face visibility corrects the prior hidden-face recent-window evidence gap. Colored trails preserve identity through motion. World and collision parameters are unchanged."
+}

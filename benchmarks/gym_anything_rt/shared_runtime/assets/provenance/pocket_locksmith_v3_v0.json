@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "mechanic_id": "pocket_locksmith_v3",
+  "source_anchors": [
+    "XCOG-237"
+  ],
+  "source_records": [
+    "outputs/selection_round4_20260906/inputs/dashboard/data/entries/20f.json#XCOG-237"
+  ],
+  "source_urls": [
+    "https://foldit.fandom.com/wiki/Small_molecule_design/Tweak_Ligand",
+    "https://foldit.fandom.com/api.php?action=parse&page=Small_molecule_design/Tweak_Ligand&prop=wikitext&format=json"
+  ],
+  "transformation": "Original molecular-key analogue: connected downstream torsion editing becomes continuous inertial fitting into a visibly deforming binding pocket. No Foldit assets or client are shipped.",
+  "assets": "Original canvas geometry and CSS; no external media",
+  "human_calibration": "pending",
+  "model_evaluation": "not requested",
+  "original_environment_preserved": "pocket_locksmith_env"
+}

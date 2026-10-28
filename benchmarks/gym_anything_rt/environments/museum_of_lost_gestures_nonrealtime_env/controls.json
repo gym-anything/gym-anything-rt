@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "museum_of_lost_gestures_nonrealtime",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "timing_rule": "After start, each deliberate grip, aim, down, move, up, or cancel input advances exactly 20 ms of the existing fixed-step simulation; idle wall time advances nothing. Close remains immediate.",
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "One broad ring; follow a slowly changing 2D path and its visible OPEN/PINCH hand changes.",
+      "natural_language": "Keep the whole dark tip inside every moving ring with the shown hand. Fill all fading traces together. Tips glide toward your retained aim; dotted threads preview the next 1.2 seconds. Full: drag each brass handle with LEFT for OPEN or RIGHT for PINCH, then release to retain its aim. Simplified: click to aim, use the OPEN/PINCH buttons. Begin when ready. Closing early or running out of time ends the episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, or other implementation or hidden-state access. Do not interact with pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only as part of this task, using their visible controls.",
+      "parameters": {
+        "tools": 1,
+        "radius": 68,
+        "span_ms": 4000,
+        "changing_grip": true
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Smaller ring and independent visible open/pinch changes; predict both contact and grip.",
+      "natural_language": "Keep the whole dark tip inside every moving ring with the shown hand. Fill all fading traces together. Tips glide toward your retained aim; dotted threads preview the next 1.2 seconds. Full: drag each brass handle with LEFT for OPEN or RIGHT for PINCH, then release to retain its aim. Simplified: click to aim, use the OPEN/PINCH buttons. Begin when ready. Closing early or running out of time ends the episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, or other implementation or hidden-state access. Do not interact with pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only as part of this task, using their visible controls.",
+      "parameters": {
+        "tools": 1,
+        "radius": 62,
+        "span_ms": 3800,
+        "changing_grip": true
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Two independent fading traces must be maintained together; sequential completion loses prior progress.",
+      "natural_language": "Keep the whole dark tip inside every moving ring with the shown hand. Fill all fading traces together. Tips glide toward your retained aim; dotted threads preview the next 1.2 seconds. Full: drag each brass handle with LEFT for OPEN or RIGHT for PINCH, then release to retain its aim. Simplified: click to aim, use the OPEN/PINCH buttons. Begin when ready. Closing early or running out of time ends the episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, or other implementation or hidden-state access. Do not interact with pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only as part of this task, using their visible controls.",
+      "parameters": {
+        "tools": 2,
+        "radius": 56,
+        "span_ms": 3600,
+        "changing_grip": true
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Two faster paths with less positional tolerance require more frequent correction.",
+      "natural_language": "Keep the whole dark tip inside every moving ring with the shown hand. Fill all fading traces together. Tips glide toward your retained aim; dotted threads preview the next 1.2 seconds. Full: drag each brass handle with LEFT for OPEN or RIGHT for PINCH, then release to retain its aim. Simplified: click to aim, use the OPEN/PINCH buttons. Begin when ready. Closing early or running out of time ends the episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, or other implementation or hidden-state access. Do not interact with pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only as part of this task, using their visible controls.",
+      "parameters": {
+        "tools": 2,
+        "radius": 48,
+        "span_ms": 3000,
+        "changing_grip": true
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Three independent paths and grips; narrow rings and inertial nibs require divided attention and predictive steering.",
+      "natural_language": "Keep the whole dark tip inside every moving ring with the shown hand. Fill all fading traces together. Tips glide toward your retained aim; dotted threads preview the next 1.2 seconds. Full: drag each brass handle with LEFT for OPEN or RIGHT for PINCH, then release to retain its aim. Simplified: click to aim, use the OPEN/PINCH buttons. Begin when ready. Closing early or running out of time ends the episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, or other implementation or hidden-state access. Do not interact with pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only as part of this task, using their visible controls.",
+      "parameters": {
+        "tools": 3,
+        "radius": 44,
+        "span_ms": 2500,
+        "changing_grip": true
+      }
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "description": "Pick up the painted brass handle with the intended left/right mouse button and drag it to a new aim. The grip and aim persist on release."
+    },
+    "simplified": {
+      "implemented": true,
+      "description": "Click any point in a chamber to aim its brass nib; change its grip with the matching OPEN/PINCH buttons. No auto-aim or altered physics."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 90,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  }
+}

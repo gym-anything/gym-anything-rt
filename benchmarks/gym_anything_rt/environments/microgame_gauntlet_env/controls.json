@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "microgame_gauntlet",
+  "baseline": {
+    "difficulty": 4,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Keep all five reactor systems, but reduce each to one short control relationship: four pressure pulses, one chord, a broad brake sector, one slow packet, and a five-hoop route with a wide corridor.",
+      "natural_language": "Complete five short reactor trials. Preserve stability while you hold pressure, charge one chord, brake the dial, capture one packet, and guide the capsule through its route.",
+      "parameters": {
+        "pulse_count_min": 4,
+        "pulse_count_max": 4,
+        "chord_count": 1,
+        "required_ticks": 2,
+        "chord_tick_ms": 170,
+        "dial_target_tolerance": 36,
+        "dial_friction": 0.88,
+        "dial_tick_ms": 115,
+        "packet_count": 1,
+        "packet_speed_min": 2.4,
+        "packet_speed_max": 2.8,
+        "gate_half_width_min": 12,
+        "gate_half_width_max": 12,
+        "intercept_tick_ms": 130,
+        "route_point_count": 5,
+        "checkpoint_radius": 10,
+        "corridor_radius": 15
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Require two chord releases and two moving captures while retaining a wide brake sector and a six-hoop route. The operator must change modes, but each timing and path-control demand remains forgiving.",
+      "natural_language": "Complete all five reactor trials. Hold pressure, charge two chords in order, coast and brake the dial, capture two packets, and route the capsule through every hoop.",
+      "parameters": {
+        "pulse_count_min": 5,
+        "pulse_count_max": 5,
+        "chord_count": 2,
+        "required_ticks": 3,
+        "chord_tick_ms": 160,
+        "dial_target_tolerance": 27,
+        "dial_friction": 0.9,
+        "dial_tick_ms": 110,
+        "packet_count": 2,
+        "packet_speed_min": 3.0,
+        "packet_speed_max": 3.5,
+        "gate_half_width_min": 9,
+        "gate_half_width_max": 10,
+        "intercept_tick_ms": 120,
+        "route_point_count": 6,
+        "checkpoint_radius": 8,
+        "corridor_radius": 12
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Restore three moving captures and a seven-hoop route, narrow the brake sector, and use three short chord fields. The agent must track a changing gate and retain a route while its precision margins shrink.",
+      "natural_language": "Complete the five reactor trials: keep pressure while clearing the pulse bank, charge three chords, brake the coasting dial, intercept three moving packets, and trace the capsule route.",
+      "parameters": {
+        "pulse_count_min": 6,
+        "pulse_count_max": 6,
+        "chord_count": 3,
+        "required_ticks": 3,
+        "chord_tick_ms": 150,
+        "dial_target_tolerance": 19,
+        "dial_friction": 0.92,
+        "dial_tick_ms": 100,
+        "packet_count": 3,
+        "packet_speed_min": 3.7,
+        "packet_speed_max": 4.5,
+        "gate_half_width_min": 7,
+        "gate_half_width_max": 8,
+        "intercept_tick_ms": 112,
+        "route_point_count": 7,
+        "checkpoint_radius": 7,
+        "corridor_radius": 10
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Preserves the original five-system reactor exactly: a seven-or-eight pulse continuous hold, three four-tick chords, the 13° inertial brake sector, three fast moving captures, and the nine-hoop corridor route.",
+      "natural_language": "Complete all five mixed-input reactor trials. Follow each terse round rule and preserve enough shared stability to certify the core.",
+      "parameters": {
+        "pulse_count_min": 7,
+        "pulse_count_max": 8,
+        "chord_count": 3,
+        "required_ticks": 4,
+        "chord_tick_ms": 145,
+        "dial_target_tolerance": 13,
+        "dial_friction": 0.945,
+        "dial_tick_ms": 95,
+        "packet_count": 3,
+        "packet_speed_min": 4.4,
+        "packet_speed_max": 6.0,
+        "gate_half_width_min": 5,
+        "gate_half_width_max": 6,
+        "intercept_tick_ms": 105,
+        "route_point_count": 9,
+        "checkpoint_radius": 6,
+        "corridor_radius": 8
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Couple longer continuous control with tighter recovery margins: nine or ten pressure pulses, four five-tick chord fields, a narrow inertial brake sector, four faster packets with smaller gates, and an eleven-hoop route with additional bends.",
+      "natural_language": "Complete all five dense reactor trials. Maintain the continuous hold, charge four chord fields, predict a narrow dial brake, capture four changing packets, and guide the capsule through every tight route hoop before stability is exhausted.",
+      "parameters": {
+        "pulse_count_min": 9,
+        "pulse_count_max": 10,
+        "chord_count": 4,
+        "required_ticks": 5,
+        "chord_tick_ms": 135,
+        "dial_target_tolerance": 8,
+        "dial_friction": 0.96,
+        "dial_tick_ms": 88,
+        "packet_count": 4,
+        "packet_speed_min": 5.8,
+        "packet_speed_max": 7.1,
+        "gate_half_width_min": 4,
+        "gate_half_width_max": 5,
+        "intercept_tick_ms": 95,
+        "route_point_count": 11,
+        "checkpoint_radius": 5,
+        "corridor_radius": 6
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Use visible reactor proxy controls to engage and release pressure, engage and release each displayed chord pair after its real charge interval, turn the flywheel in visible 12-degree steps before coasting, arm and capture packets, and select each visible route hoop in order to move the capsule through the same sampled corridor. The generated systems, state transitions, timing, corridor checks, and success condition are unchanged."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Use the original task-appropriate controls: hold Space while clicking pulses, hold and release each keyboard chord, drag the flywheel rim before braking, click the moving packet itself, and drag the capsule continuously through the route."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 240,
+    "observation_window_ms": 800,
+    "frames_per_observation": 6
+  }
+}

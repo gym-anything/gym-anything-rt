@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "bandaged_rose_window_v3",
+  "source_anchors": [
+    "TRP-035",
+    "PHY-028"
+  ],
+  "sources": [
+    {
+      "title": "Jaap's Puzzle Page: Rotascope",
+      "url": "https://www.jaapsch.net/puzzles/rotascope.htm",
+      "role": "Primary description of the three intersecting sixth-turn discs, thirteen heart/point/shield pieces, shape bandaging, exact restoration goal, and state-space depth data."
+    },
+    {
+      "title": "Jaap's JavaScript Rotascope simulation",
+      "url": "https://www.jaapsch.net/puzzles/javascript/rotascopej.htm",
+      "role": "Mechanic reference for disc membership, turn permutation, silent refusal, and solved-state checking; inspected but not copied."
+    },
+    {
+      "title": "Jaap's Puzzle Page collection index",
+      "url": "https://www.jaapsch.net/puzzles/",
+      "role": "Context for bandaged and overlapping flat permutation-puzzle families."
+    },
+    {
+      "title": "Jaap's JavaScript source index",
+      "url": "https://www.jaapsch.net/puzzles/indxjscr.htm",
+      "role": "Catalogue evidence that Rotascope and related flat puzzle simulations are available for study."
+    }
+  ],
+  "assets": [],
+  "notes": "Source mechanics only, with original generated glass, bandage rules, and a new alignment-collar control problem. No third-party assets or source code shipped. Motion changes continuously; geometry, timing, replay and input surfaces agree."
+}

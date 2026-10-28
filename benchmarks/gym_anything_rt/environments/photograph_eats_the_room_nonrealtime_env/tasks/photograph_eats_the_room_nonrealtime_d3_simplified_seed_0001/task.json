@@ -1,0 +1,65 @@
+{
+  "description": "Explore a projected room, capture two physically visible source geometries, carry and transform their photo planes, develop a bridge and doorway into collision reality, then navigate to the terminal.",
+  "difficulty": "medium",
+  "env_id": "gym_anything_rt.photograph_eats_the_room_nonrealtime_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/photograph_eats_the_room_nonrealtime_d3_simplified_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/photograph_eats_the_room_nonrealtime_d3_simplified_seed_0001/setup_task.sh"
+  },
+  "id": "photograph_eats_the_room_nonrealtime_d3_simplified_seed_0001@0.2",
+  "init": {
+    "max_steps": 900,
+    "reward_type": "sparse",
+    "timeout_sec": 900
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/incubator_full_build_v1.json",
+    "benchmark": "gym_anything_rt",
+    "capability_configuration": {
+      "difficulty": 3,
+      "interaction": "simplified"
+    },
+    "control_condition": {
+      "difficulty": 3,
+      "difficulty_parameters": {
+        "angle_tolerance_deg": 15,
+        "bridge_half_width": 0.55,
+        "bridge_scale": 1.9,
+        "capture_range": 4.9,
+        "door_half_width": 0.54,
+        "frustum_margin": 0.03,
+        "opening_scale": 1.5,
+        "pit_width_choices": [
+          2.75,
+          3
+        ],
+        "plane_rotation_step_deg": 15,
+        "plane_scale_step": 0.1,
+        "socket_tolerance": 0.62,
+        "source_offset": 2,
+        "stage_count": 2,
+        "terminal_x": 21.1
+      },
+      "interaction": "simplified",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "photograph_eats_the_room_nonrealtime"
+  },
+  "name": "The Photograph Eats the Room · Difficulty 3 · Simplified Interaction",
+  "natural_language": "Frame both source geometries, align each print with its matching socket, develop the bridge before the doorway, and reach the terminal.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "photograph_eats_the_room_nonrealtime",
+    "first-person",
+    "camera-frustum",
+    "geometry-transform"
+  ],
+  "version": "0.2"
+}

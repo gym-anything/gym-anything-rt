@@ -1,0 +1,16 @@
+{
+  "mechanic_id": "lantern_loft_v2",
+  "revision": "drifting-stairwalks-v1",
+  "source_anchors": [
+    "PHY-059"
+  ],
+  "source_record": "outputs/selection_round4_20260906/inputs/dashboard/data/entries/12.json:PHY-059",
+  "source_links": [
+    "https://smartgamesusa.com/one-player-games/temple-trap",
+    "https://www.smartgameslive.com/en/games",
+    "https://www.smartgameslive.com/en/apps"
+  ],
+  "transformation": "Original suspended lofts retain interleaved sliding path pieces and pawn movement through stairs. Continuous wind-driven physical offsets, winch inertia, cross-seam steering and coupled ropes make that traversal require recent observations.",
+  "assets": "Original procedural Canvas drawing and CSS. No third-party game assets, layouts or code copied.",
+  "validation_status": "pending native HTTP oracle, human calibration and independent audits"
+}

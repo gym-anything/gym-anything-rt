@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "tiny_fps_customs_v2",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "11×9 maze with 2 wanted travellers and matched protected look-alikes. Independent continuous corridor walks; the first miss or protected hit ends the attempt.",
+      "natural_language": "Navigate the maze and identify every moving wanted traveller from the portraits. Aim and fire while protecting their look-alikes. A missed shot or protected hit ends the attempt.",
+      "parameters": {
+        "map_width": 11,
+        "map_height": 9,
+        "wanted_count": 2,
+        "decoy_trait_differences": 3,
+        "ammo": 7,
+        "move_step": 0.25
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "13×9 maze with 3 wanted travellers and matched protected look-alikes. Independent continuous corridor walks; the first miss or protected hit ends the attempt.",
+      "natural_language": "Navigate the maze and identify every moving wanted traveller from the portraits. Aim and fire while protecting their look-alikes. A missed shot or protected hit ends the attempt.",
+      "parameters": {
+        "map_width": 13,
+        "map_height": 9,
+        "wanted_count": 3,
+        "decoy_trait_differences": 2,
+        "ammo": 8,
+        "move_step": 0.25
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "15×11 maze with 3 wanted travellers and matched protected look-alikes. Independent continuous corridor walks; the first miss or protected hit ends the attempt.",
+      "natural_language": "Navigate the maze and identify every moving wanted traveller from the portraits. Aim and fire while protecting their look-alikes. A missed shot or protected hit ends the attempt.",
+      "parameters": {
+        "map_width": 15,
+        "map_height": 11,
+        "wanted_count": 3,
+        "decoy_trait_differences": 1,
+        "ammo": 9,
+        "move_step": 0.25
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "17×13 maze with 4 wanted travellers and matched protected look-alikes. Independent continuous corridor walks; the first miss or protected hit ends the attempt.",
+      "natural_language": "Navigate the maze and identify every moving wanted traveller from the portraits. Aim and fire while protecting their look-alikes. A missed shot or protected hit ends the attempt.",
+      "parameters": {
+        "map_width": 17,
+        "map_height": 13,
+        "wanted_count": 4,
+        "decoy_trait_differences": 1,
+        "ammo": 11,
+        "move_step": 0.25
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "19×15 maze with 5 wanted travellers and matched protected look-alikes. Independent continuous corridor walks; the first miss or protected hit ends the attempt.",
+      "natural_language": "Navigate the maze and identify every moving wanted traveller from the portraits. Aim and fire while protecting their look-alikes. A missed shot or protected hit ends the attempt.",
+      "parameters": {
+        "map_width": 19,
+        "map_height": 15,
+        "wanted_count": 5,
+        "decoy_trait_differences": 1,
+        "ammo": 11,
+        "move_step": 0.25
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Use the labelled movement, turn, and fire buttons below the viewport to produce the same discrete first-person actions."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Use W/A/S/D and arrow keys to move and turn, drag the viewport to look, and click the viewport or press Space to fire."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 600,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "flip_gate_cascade_v3_nonrealtime",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "natural_language_by_interaction": {
+        "full": "Move the pointer across the smoked crosswind chamber to inspect the fall through its broad light; the light stays where you leave it. Inspect the lettered inlet mouths to reveal their concealed connections to the numbered gates. Learned routes remain visible. Release the stream. Deliberate start, steering, and successful latch controls advance the automatic cascade to stable decision states; waiting leaves the current decision unchanged. Steer the matching pocket around each falling marble, then press Enter or Latch Pockets while the whole marble is inside its outlined chamber. Steering takes time. Swap pocket assignments with Space or the visible button when shown. Each marble follows and flips its gates, and changing crosswinds bend its fall. An empty or misaligned latch, or a marble escaping through the floor, ends this episode. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access, or unrelated tabs.",
+        "simplified": "Move the pointer across the smoked crosswind chamber to inspect the fall through its broad light; the light stays where you leave it. Inspect the lettered inlet mouths to reveal their concealed connections to the numbered gates. Learned routes remain visible. Release the stream. Deliberate start, steering, and successful latch controls advance the automatic cascade to stable decision states; waiting leaves the current decision unchanged. Steer the matching pocket around each falling marble, then press Enter or Latch Pockets while the whole marble is inside its outlined chamber. Steering takes time. Swap pocket assignments with Space or the visible button when shown. Each marble follows and flips its gates, and changing crosswinds bend its fall. An empty or misaligned latch, or a marble escaping through the floor, ends this episode. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access, or unrelated tabs."
+      },
+      "parameters": {
+        "top_chutes": 2,
+        "rows": 2,
+        "marble_count": 4,
+        "release_gap_ms": 4300,
+        "rail_ms": 1700,
+        "pocket_width": 220,
+        "pockets": 1,
+        "wind_acceleration": 200,
+        "wind_span_ms": 3200
+      },
+      "summary": "2 coupled gate rows; 2 inlets; 1 catcher pocket of 220px; changing 200px/s\u00b2 crosswind; release gap 4300ms. Latch while the marble is wholly inside the 140px-tall matching chamber; no automatic catch. Inspect concealed inlet connections without starting or pausing the stream; the learned map persists. The same 440px-wide inspection light reveals the falling marble and its recent trail in both modes.",
+      "natural_language": "Move the pointer across the smoked crosswind chamber to inspect the fall through its broad light; the light stays where you leave it. Inspect the lettered inlet mouths to reveal their concealed connections to the numbered gates. Learned routes remain visible and let you anticipate the catcher position. Release the automatic stream. Steer the catcher around each falling marble, then press Enter or Latch Pockets while the whole marble is inside its outlined chamber. Steering takes time. Each marble follows and flips its gates, and changing crosswinds bend its fall. An empty or misaligned latch, or a marble escaping through the floor, ends this episode. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access, or unrelated tabs."
+    },
+    "2": {
+      "label": "easy",
+      "natural_language_by_interaction": {
+        "full": "Move the pointer across the smoked crosswind chamber to inspect the fall through its broad light; the light stays where you leave it. Inspect the lettered inlet mouths to reveal their concealed connections to the numbered gates. Learned routes remain visible. Release the stream. Deliberate start, steering, and successful latch controls advance the automatic cascade to stable decision states; waiting leaves the current decision unchanged. Steer the matching pocket around each falling marble, then press Enter or Latch Pockets while the whole marble is inside its outlined chamber. Steering takes time. Swap pocket assignments with Space or the visible button when shown. Each marble follows and flips its gates, and changing crosswinds bend its fall. An empty or misaligned latch, or a marble escaping through the floor, ends this episode. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access, or unrelated tabs.",
+        "simplified": "Move the pointer across the smoked crosswind chamber to inspect the fall through its broad light; the light stays where you leave it. Inspect the lettered inlet mouths to reveal their concealed connections to the numbered gates. Learned routes remain visible. Release the stream. Deliberate start, steering, and successful latch controls advance the automatic cascade to stable decision states; waiting leaves the current decision unchanged. Steer the matching pocket around each falling marble, then press Enter or Latch Pockets while the whole marble is inside its outlined chamber. Steering takes time. Swap pocket assignments with Space or the visible button when shown. Each marble follows and flips its gates, and changing crosswinds bend its fall. An empty or misaligned latch, or a marble escaping through the floor, ends this episode. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access, or unrelated tabs."
+      },
+      "parameters": {
+        "top_chutes": 3,
+        "rows": 2,
+        "marble_count": 5,
+        "release_gap_ms": 3900,
+        "rail_ms": 1600,
+        "pocket_width": 185,
+        "pockets": 2,
+        "wind_acceleration": 200,
+        "wind_span_ms": 2800
+      },
+      "summary": "2 coupled gate rows; 3 inlets; 2 catcher pockets of 185px; changing 200px/s\u00b2 crosswind; release gap 3900ms. Latch while the marble is wholly inside the 140px-tall matching chamber; no automatic catch. Inspect concealed inlet connections without starting or pausing the stream; the learned map persists. The same 440px-wide inspection light reveals the falling marble and its recent trail in both modes.",
+      "natural_language": "Move the pointer across the smoked crosswind chamber to inspect the fall through its broad light; the light stays where you leave it. Inspect the lettered inlet mouths to reveal their concealed connections to the numbered gates. Learned routes remain visible and let you anticipate the catcher position. Release the automatic stream. Steer the matching pocket around each falling marble, then press Enter or Latch Pockets while the whole marble is inside its outlined chamber. Steering takes time. Swap pocket assignments with Space or the visible button. Each marble follows and flips its gates, and changing crosswinds bend its fall. An empty or misaligned latch, or a marble escaping through the floor, ends this episode. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access, or unrelated tabs."
+    },
+    "3": {
+      "label": "medium",
+      "natural_language_by_interaction": {
+        "full": "Move the pointer across the smoked crosswind chamber to inspect the fall through its broad light; the light stays where you leave it. Inspect the lettered inlet mouths to reveal their concealed connections to the numbered gates. Learned routes remain visible. Release the stream. Deliberate start, steering, and successful latch controls advance the automatic cascade to stable decision states; waiting leaves the current decision unchanged. Steer the matching pocket around each falling marble, then press Enter or Latch Pockets while the whole marble is inside its outlined chamber. Steering takes time. Swap pocket assignments with Space or the visible button when shown. Each marble follows and flips its gates, and changing crosswinds bend its fall. An empty or misaligned latch, or a marble escaping through the floor, ends this episode. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access, or unrelated tabs.",
+        "simplified": "Move the pointer across the smoked crosswind chamber to inspect the fall through its broad light; the light stays where you leave it. Inspect the lettered inlet mouths to reveal their concealed connections to the numbered gates. Learned routes remain visible. Release the stream. Deliberate start, steering, and successful latch controls advance the automatic cascade to stable decision states; waiting leaves the current decision unchanged. Steer the matching pocket around each falling marble, then press Enter or Latch Pockets while the whole marble is inside its outlined chamber. Steering takes time. Swap pocket assignments with Space or the visible button when shown. Each marble follows and flips its gates, and changing crosswinds bend its fall. An empty or misaligned latch, or a marble escaping through the floor, ends this episode. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access, or unrelated tabs."
+      },
+      "parameters": {
+        "top_chutes": 3,
+        "rows": 3,
+        "marble_count": 6,
+        "release_gap_ms": 3500,
+        "rail_ms": 1500,
+        "pocket_width": 155,
+        "pockets": 2,
+        "wind_acceleration": 200,
+        "wind_span_ms": 2400
+      },
+      "summary": "3 coupled gate rows; 3 inlets; 2 catcher pockets of 155px; changing 200px/s\u00b2 crosswind; release gap 3500ms. Latch while the marble is wholly inside the 140px-tall matching chamber; no automatic catch. Inspect concealed inlet connections without starting or pausing the stream; the learned map persists. The same 440px-wide inspection light reveals the falling marble and its recent trail in both modes.",
+      "natural_language": "Move the pointer across the smoked crosswind chamber to inspect the fall through its broad light; the light stays where you leave it. Inspect the lettered inlet mouths to reveal their concealed connections to the numbered gates. Learned routes remain visible and let you anticipate the catcher position. Release the automatic stream. Steer the matching pocket around each falling marble, then press Enter or Latch Pockets while the whole marble is inside its outlined chamber. Steering takes time. Swap pocket assignments with Space or the visible button. Each marble follows and flips its gates, and changing crosswinds bend its fall. An empty or misaligned latch, or a marble escaping through the floor, ends this episode. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access, or unrelated tabs."
+    },
+    "4": {
+      "label": "hard",
+      "natural_language_by_interaction": {
+        "full": "Move the pointer across the smoked crosswind chamber to inspect the fall through its broad light; the light stays where you leave it. Inspect the lettered inlet mouths to reveal their concealed connections to the numbered gates. Learned routes remain visible. Release the stream. Deliberate start, steering, and successful latch controls advance the automatic cascade to stable decision states; waiting leaves the current decision unchanged. Steer the matching pocket around each falling marble, then press Enter or Latch Pockets while the whole marble is inside its outlined chamber. Steering takes time. Swap pocket assignments with Space or the visible button when shown. Each marble follows and flips its gates, and changing crosswinds bend its fall. An empty or misaligned latch, or a marble escaping through the floor, ends this episode. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access, or unrelated tabs.",
+        "simplified": "Move the pointer across the smoked crosswind chamber to inspect the fall through its broad light; the light stays where you leave it. Inspect the lettered inlet mouths to reveal their concealed connections to the numbered gates. Learned routes remain visible. Release the stream. Deliberate start, steering, and successful latch controls advance the automatic cascade to stable decision states; waiting leaves the current decision unchanged. Steer the matching pocket around each falling marble, then press Enter or Latch Pockets while the whole marble is inside its outlined chamber. Steering takes time. Swap pocket assignments with Space or the visible button when shown. Each marble follows and flips its gates, and changing crosswinds bend its fall. An empty or misaligned latch, or a marble escaping through the floor, ends this episode. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access, or unrelated tabs."
+      },
+      "parameters": {
+        "top_chutes": 4,
+        "rows": 3,
+        "marble_count": 7,
+        "release_gap_ms": 3100,
+        "rail_ms": 1400,
+        "pocket_width": 130,
+        "pockets": 2,
+        "wind_acceleration": 200,
+        "wind_span_ms": 2100
+      },
+      "summary": "3 coupled gate rows; 4 inlets; 2 catcher pockets of 130px; changing 200px/s\u00b2 crosswind; release gap 3100ms. Latch while the marble is wholly inside the 140px-tall matching chamber; no automatic catch. Inspect concealed inlet connections without starting or pausing the stream; the learned map persists. The same 440px-wide inspection light reveals the falling marble and its recent trail in both modes.",
+      "natural_language": "Move the pointer across the smoked crosswind chamber to inspect the fall through its broad light; the light stays where you leave it. Inspect the lettered inlet mouths to reveal their concealed connections to the numbered gates. Learned routes remain visible and let you anticipate the catcher position. Release the automatic stream. Steer the matching pocket around each falling marble, then press Enter or Latch Pockets while the whole marble is inside its outlined chamber. Steering takes time. Swap pocket assignments with Space or the visible button. Each marble follows and flips its gates, and changing crosswinds bend its fall. An empty or misaligned latch, or a marble escaping through the floor, ends this episode. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access, or unrelated tabs."
+    },
+    "5": {
+      "label": "very_hard",
+      "natural_language_by_interaction": {
+        "full": "Move the pointer across the smoked crosswind chamber to inspect the fall through its broad light; the light stays where you leave it. Inspect the lettered inlet mouths to reveal their concealed connections to the numbered gates. Learned routes remain visible. Release the stream. Deliberate start, steering, and successful latch controls advance the automatic cascade to stable decision states; waiting leaves the current decision unchanged. Steer the matching pocket around each falling marble, then press Enter or Latch Pockets while the whole marble is inside its outlined chamber. Steering takes time. Swap pocket assignments with Space or the visible button when shown. Each marble follows and flips its gates, and changing crosswinds bend its fall. An empty or misaligned latch, or a marble escaping through the floor, ends this episode. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access, or unrelated tabs.",
+        "simplified": "Move the pointer across the smoked crosswind chamber to inspect the fall through its broad light; the light stays where you leave it. Inspect the lettered inlet mouths to reveal their concealed connections to the numbered gates. Learned routes remain visible. Release the stream. Deliberate start, steering, and successful latch controls advance the automatic cascade to stable decision states; waiting leaves the current decision unchanged. Steer the matching pocket around each falling marble, then press Enter or Latch Pockets while the whole marble is inside its outlined chamber. Steering takes time. Swap pocket assignments with Space or the visible button when shown. Each marble follows and flips its gates, and changing crosswinds bend its fall. An empty or misaligned latch, or a marble escaping through the floor, ends this episode. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access, or unrelated tabs."
+      },
+      "parameters": {
+        "top_chutes": 4,
+        "rows": 4,
+        "marble_count": 8,
+        "release_gap_ms": 2800,
+        "rail_ms": 1300,
+        "pocket_width": 105,
+        "pockets": 2,
+        "wind_acceleration": 200,
+        "wind_span_ms": 1800
+      },
+      "summary": "4 coupled gate rows; 4 inlets; 2 catcher pockets of 105px; changing 200px/s\u00b2 crosswind; release gap 2800ms. Latch while the marble is wholly inside the 140px-tall matching chamber; no automatic catch. Inspect concealed inlet connections without starting or pausing the stream; the learned map persists. The same 440px-wide inspection light reveals the falling marble and its recent trail in both modes.",
+      "natural_language": "Move the pointer across the smoked crosswind chamber to inspect the fall through its broad light; the light stays where you leave it. Inspect the lettered inlet mouths to reveal their concealed connections to the numbered gates. Learned routes remain visible and let you anticipate the catcher position. Release the automatic stream. Steer the matching pocket around each falling marble, then press Enter or Latch Pockets while the whole marble is inside its outlined chamber. Steering takes time. Swap pocket assignments with Space or the visible button. Each marble follows and flips its gates, and changing crosswinds bend its fall. An empty or misaligned latch, or a marble escaping through the floor, ends this episode. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access, or unrelated tabs."
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Drag the moving catcher with pointer capture; release retains its target. The visible pocket-swap button and Space exchange the two pocket assignments at levels 2\u20135. Press Enter or the shared Latch Pockets button for the same immediate shutter closure; an empty or mismatched closure is irreversible. In both modes, hover or click a lettered inlet mouth to reveal its concealed gate connection; this is a safe information probe before or during the stream. Pointer movement places the same broad inspection light over the smoked chamber, including during a catcher drag; the light retains its column after release."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Click the bottom rail to set the same inertial catcher target. The same pocket-swap button and Space exchange assignments at levels 2\u20135. Press Enter or the shared Latch Pockets button for the same immediate shutter closure; an empty or mismatched closure is irreversible. In both modes, hover or click a lettered inlet mouth to reveal its concealed gate connection; this is a safe information probe before or during the stream. Pointer movement places the same broad inspection light over the smoked chamber, including during a catcher drag; the light retains its column after release."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 90,
+    "observation_window_ms": 300,
+    "frames_per_observation": 4
+  }
+}

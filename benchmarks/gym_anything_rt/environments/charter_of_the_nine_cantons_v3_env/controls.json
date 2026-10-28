@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "charter_of_the_nine_cantons_v3",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "parameters": {
+        "active_borders": 1,
+        "gap": 90,
+        "amplitude": 110,
+        "span_ms": 9500,
+        "per_canton": 6
+      },
+      "summary": "1 independently moving border populations; 90-unit median gap and 6 households per canton.",
+      "natural_language_by_interaction": {
+        "full": "Drag the dark border handles along their rails. Household centers determine their canton. Click the folded census folios on the map to inspect traveling households and their row registers; the revealed household maps stay visible and update live. Use their household positions and population feedback to place the borders. Open the census, then adjust the six borders as caravans move. Inspection remains available during the live census and does not pause it. Keep all nine cantons population-balanced and the holdings exactly 5 Gilt, 2 Tide and 2 Plum to fill the continuous 30-second ratification audit. Any imbalance resets the audit streak; restore balance to recover. Ratification completes automatically. Early sealing or the 120-second census deadline ends the attempt. Trails show the last half-second. Use only screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs.",
+        "simplified": "Click along a border rail to set that border coordinate. Household centers determine their canton. Click the folded census folios on the map to inspect traveling households and their row registers; the revealed household maps stay visible and update live. Use their household positions and population feedback to place the borders. Open the census, then adjust the six borders as caravans move. Inspection remains available during the live census and does not pause it. Keep all nine cantons population-balanced and the holdings exactly 5 Gilt, 2 Tide and 2 Plum to fill the continuous 30-second ratification audit. Any imbalance resets the audit streak; restore balance to recover. Ratification completes automatically. Early sealing or the 120-second census deadline ends the attempt. Trails show the last half-second. Use only screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs."
+      }
+    },
+    "2": {
+      "label": "easy",
+      "parameters": {
+        "active_borders": 2,
+        "gap": 82,
+        "amplitude": 110,
+        "span_ms": 9000,
+        "per_canton": 6
+      },
+      "summary": "2 independently moving border populations; 82-unit median gap and 6 households per canton.",
+      "natural_language_by_interaction": {
+        "full": "Drag the dark border handles along their rails. Household centers determine their canton. Click the folded census folios on the map to inspect traveling households and their row registers; the revealed household maps stay visible and update live. Use their household positions and population feedback to place the borders. Open the census, then adjust the six borders as caravans move. Inspection remains available during the live census and does not pause it. Keep all nine cantons population-balanced and the holdings exactly 5 Gilt, 2 Tide and 2 Plum to fill the continuous 30-second ratification audit. Any imbalance resets the audit streak; restore balance to recover. Ratification completes automatically. Early sealing or the 120-second census deadline ends the attempt. Trails show the last half-second. Use only screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs.",
+        "simplified": "Click along a border rail to set that border coordinate. Household centers determine their canton. Click the folded census folios on the map to inspect traveling households and their row registers; the revealed household maps stay visible and update live. Use their household positions and population feedback to place the borders. Open the census, then adjust the six borders as caravans move. Inspection remains available during the live census and does not pause it. Keep all nine cantons population-balanced and the holdings exactly 5 Gilt, 2 Tide and 2 Plum to fill the continuous 30-second ratification audit. Any imbalance resets the audit streak; restore balance to recover. Ratification completes automatically. Early sealing or the 120-second census deadline ends the attempt. Trails show the last half-second. Use only screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs."
+      }
+    },
+    "3": {
+      "label": "medium",
+      "parameters": {
+        "active_borders": 3,
+        "gap": 74,
+        "amplitude": 110,
+        "span_ms": 8500,
+        "per_canton": 9
+      },
+      "summary": "3 independently moving border populations; 74-unit median gap and 9 households per canton.",
+      "natural_language_by_interaction": {
+        "full": "Drag the dark border handles along their rails. Household centers determine their canton. Click the folded census folios on the map to inspect traveling households and their row registers; the revealed household maps stay visible and update live. Use their household positions and population feedback to place the borders. Open the census, then adjust the six borders as caravans move. Inspection remains available during the live census and does not pause it. Keep all nine cantons population-balanced and the holdings exactly 5 Gilt, 2 Tide and 2 Plum to fill the continuous 30-second ratification audit. Any imbalance resets the audit streak; restore balance to recover. Ratification completes automatically. Early sealing or the 120-second census deadline ends the attempt. Trails show the last half-second. Use only screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs.",
+        "simplified": "Click along a border rail to set that border coordinate. Household centers determine their canton. Click the folded census folios on the map to inspect traveling households and their row registers; the revealed household maps stay visible and update live. Use their household positions and population feedback to place the borders. Open the census, then adjust the six borders as caravans move. Inspection remains available during the live census and does not pause it. Keep all nine cantons population-balanced and the holdings exactly 5 Gilt, 2 Tide and 2 Plum to fill the continuous 30-second ratification audit. Any imbalance resets the audit streak; restore balance to recover. Ratification completes automatically. Early sealing or the 120-second census deadline ends the attempt. Trails show the last half-second. Use only screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs."
+      }
+    },
+    "4": {
+      "label": "hard",
+      "parameters": {
+        "active_borders": 4,
+        "gap": 62,
+        "amplitude": 110,
+        "span_ms": 8200,
+        "per_canton": 9
+      },
+      "summary": "4 independently moving border populations; 62-unit median gap and 9 households per canton.",
+      "natural_language_by_interaction": {
+        "full": "Drag the dark border handles along their rails. Household centers determine their canton. Click the folded census folios on the map to inspect traveling households and their row registers; the revealed household maps stay visible and update live. Use their household positions and population feedback to place the borders. Open the census, then adjust the six borders as caravans move. Inspection remains available during the live census and does not pause it. Keep all nine cantons population-balanced and the holdings exactly 5 Gilt, 2 Tide and 2 Plum to fill the continuous 30-second ratification audit. Any imbalance resets the audit streak; restore balance to recover. Ratification completes automatically. Early sealing or the 120-second census deadline ends the attempt. Trails show the last half-second. Use only screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs.",
+        "simplified": "Click along a border rail to set that border coordinate. Household centers determine their canton. Click the folded census folios on the map to inspect traveling households and their row registers; the revealed household maps stay visible and update live. Use their household positions and population feedback to place the borders. Open the census, then adjust the six borders as caravans move. Inspection remains available during the live census and does not pause it. Keep all nine cantons population-balanced and the holdings exactly 5 Gilt, 2 Tide and 2 Plum to fill the continuous 30-second ratification audit. Any imbalance resets the audit streak; restore balance to recover. Ratification completes automatically. Early sealing or the 120-second census deadline ends the attempt. Trails show the last half-second. Use only screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs."
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "parameters": {
+        "active_borders": 6,
+        "gap": 52,
+        "amplitude": 110,
+        "span_ms": 8000,
+        "per_canton": 12
+      },
+      "summary": "6 independently moving border populations; 52-unit median gap and 12 households per canton.",
+      "natural_language_by_interaction": {
+        "full": "Drag the dark border handles along their rails. Household centers determine their canton. Click the folded census folios on the map to inspect traveling households and their row registers; the revealed household maps stay visible and update live. Use their household positions and population feedback to place the borders. Open the census, then adjust the six borders as caravans move. Inspection remains available during the live census and does not pause it. Keep all nine cantons population-balanced and the holdings exactly 5 Gilt, 2 Tide and 2 Plum to fill the continuous 30-second ratification audit. Any imbalance resets the audit streak; restore balance to recover. Ratification completes automatically. Early sealing or the 120-second census deadline ends the attempt. Trails show the last half-second. Use only screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs.",
+        "simplified": "Click along a border rail to set that border coordinate. Household centers determine their canton. Click the folded census folios on the map to inspect traveling households and their row registers; the revealed household maps stay visible and update live. Use their household positions and population feedback to place the borders. Open the census, then adjust the six borders as caravans move. Inspection remains available during the live census and does not pause it. Keep all nine cantons population-balanced and the holdings exactly 5 Gilt, 2 Tide and 2 Plum to fill the continuous 30-second ratification audit. Any imbalance resets the audit streak; restore balance to recover. Ratification completes automatically. Early sealing or the 120-second census deadline ends the attempt. Trails show the last half-second. Use only screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs."
+      }
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Drag a border handle to a map coordinate; all other borders and households continue moving. Click a map census folio to inspect the same concealed household map and register in either mode."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Click a border rail to set the same coordinate; no snapping, interception or automatic correction. Click a map census folio to inspect the same concealed household map and register in either mode."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 500,
+    "frames_per_observation": 4
+  }
+}

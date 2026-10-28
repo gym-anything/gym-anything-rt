@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "cursor_constellation_hunt_v3",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "parameters": {
+        "field_count": 1,
+        "tolerance": 38,
+        "span_ms": 7500,
+        "noise_count": 0,
+        "spring": 70,
+        "damping": 17
+      },
+      "summary": "One drifting field and broad halos; recent motion is still necessary during exposure.",
+      "natural_language": "Drag the coral lenses. Each gold guide has a fixed response direction that varies between hunts and fields. Probe each lens during safe preparation and compare the gold star before and after your move to learn how to center it. The learned response lasts for this hunt. Align the colored stars with the faint constellation and their halos. The gold guide has a square anchor and a recent trail. Prepare safely, then START EXPOSURE. Each lens has inertia. Alignment points drift continuously, including while another field is being adjusted. Sharpness fills exposure; blur fades it twice as fast. Keep all bars full together to pass. Early sealing or expiry ends the episode; restarting cannot erase failure. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, hidden state, or unrelated tabs.",
+      "natural_language_by_interaction": {
+        "full": "Drag the coral lenses. Each gold guide has a fixed response direction that varies between hunts and fields. Probe each lens during safe preparation and compare the gold star before and after your move to learn how to center it. The learned response lasts for this hunt. Align the colored stars with the faint constellation and their halos. The gold guide has a square anchor and a recent trail. Prepare safely, then START EXPOSURE. Each lens has inertia. Alignment points drift continuously, including while another field is being adjusted. Sharpness fills exposure; blur fades it twice as fast. Keep all bars full together to pass. Early sealing or expiry ends the episode; restarting cannot erase failure. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, hidden state, or unrelated tabs.",
+        "simplified": "Click inside each field to set its coral lens target. Each gold guide has a fixed response direction that varies between hunts and fields. Probe each lens during safe preparation and compare the gold star before and after your move to learn how to center it. The learned response lasts for this hunt. Align the colored stars with the faint constellation and their halos. The gold guide has a square anchor and a recent trail. Prepare safely, then START EXPOSURE. Each lens has inertia. Alignment points drift continuously, including while another field is being adjusted. Sharpness fills exposure; blur fades it twice as fast. Keep all bars full together to pass. Early sealing or expiry ends the episode; restarting cannot erase failure. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, hidden state, or unrelated tabs."
+      }
+    },
+    "2": {
+      "label": "easy",
+      "parameters": {
+        "field_count": 1,
+        "tolerance": 32,
+        "span_ms": 6500,
+        "noise_count": 8,
+        "spring": 65,
+        "damping": 16
+      },
+      "summary": "Narrower halos, quicker drift and grey noise require more accurate prediction.",
+      "natural_language": "Drag the coral lenses. Each gold guide has a fixed response direction that varies between hunts and fields. Probe each lens during safe preparation and compare the gold star before and after your move to learn how to center it. The learned response lasts for this hunt. Align the colored stars with the faint constellation and their halos. The gold guide has a square anchor and a recent trail. Prepare safely, then START EXPOSURE. Each lens has inertia. Alignment points drift continuously, including while another field is being adjusted. Sharpness fills exposure; blur fades it twice as fast. Keep all bars full together to pass. Early sealing or expiry ends the episode; restarting cannot erase failure. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, hidden state, or unrelated tabs.",
+      "natural_language_by_interaction": {
+        "full": "Drag the coral lenses. Each gold guide has a fixed response direction that varies between hunts and fields. Probe each lens during safe preparation and compare the gold star before and after your move to learn how to center it. The learned response lasts for this hunt. Align the colored stars with the faint constellation and their halos. The gold guide has a square anchor and a recent trail. Prepare safely, then START EXPOSURE. Each lens has inertia. Alignment points drift continuously, including while another field is being adjusted. Sharpness fills exposure; blur fades it twice as fast. Keep all bars full together to pass. Early sealing or expiry ends the episode; restarting cannot erase failure. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, hidden state, or unrelated tabs.",
+        "simplified": "Click inside each field to set its coral lens target. Each gold guide has a fixed response direction that varies between hunts and fields. Probe each lens during safe preparation and compare the gold star before and after your move to learn how to center it. The learned response lasts for this hunt. Align the colored stars with the faint constellation and their halos. The gold guide has a square anchor and a recent trail. Prepare safely, then START EXPOSURE. Each lens has inertia. Alignment points drift continuously, including while another field is being adjusted. Sharpness fills exposure; blur fades it twice as fast. Keep all bars full together to pass. Early sealing or expiry ends the episode; restarting cannot erase failure. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, hidden state, or unrelated tabs."
+      }
+    },
+    "3": {
+      "label": "medium",
+      "parameters": {
+        "field_count": 2,
+        "tolerance": 32,
+        "span_ms": 6500,
+        "noise_count": 8,
+        "spring": 65,
+        "damping": 16
+      },
+      "summary": "Two independent fields must fill together, requiring alternating correction.",
+      "natural_language": "Drag the coral lenses. Each gold guide has a fixed response direction that varies between hunts and fields. Probe each lens during safe preparation and compare the gold star before and after your move to learn how to center it. The learned response lasts for this hunt. Align the colored stars with the faint constellation and their halos. The gold guide has a square anchor and a recent trail. Prepare safely, then START EXPOSURE. Each lens has inertia. Alignment points drift continuously, including while another field is being adjusted. Sharpness fills exposure; blur fades it twice as fast. Keep all bars full together to pass. Early sealing or expiry ends the episode; restarting cannot erase failure. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, hidden state, or unrelated tabs.",
+      "natural_language_by_interaction": {
+        "full": "Drag the coral lenses. Each gold guide has a fixed response direction that varies between hunts and fields. Probe each lens during safe preparation and compare the gold star before and after your move to learn how to center it. The learned response lasts for this hunt. Align the colored stars with the faint constellation and their halos. The gold guide has a square anchor and a recent trail. Prepare safely, then START EXPOSURE. Each lens has inertia. Alignment points drift continuously, including while another field is being adjusted. Sharpness fills exposure; blur fades it twice as fast. Keep all bars full together to pass. Early sealing or expiry ends the episode; restarting cannot erase failure. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, hidden state, or unrelated tabs.",
+        "simplified": "Click inside each field to set its coral lens target. Each gold guide has a fixed response direction that varies between hunts and fields. Probe each lens during safe preparation and compare the gold star before and after your move to learn how to center it. The learned response lasts for this hunt. Align the colored stars with the faint constellation and their halos. The gold guide has a square anchor and a recent trail. Prepare safely, then START EXPOSURE. Each lens has inertia. Alignment points drift continuously, including while another field is being adjusted. Sharpness fills exposure; blur fades it twice as fast. Keep all bars full together to pass. Early sealing or expiry ends the episode; restarting cannot erase failure. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, hidden state, or unrelated tabs."
+      }
+    },
+    "4": {
+      "label": "hard",
+      "parameters": {
+        "field_count": 2,
+        "tolerance": 27,
+        "span_ms": 5500,
+        "noise_count": 16,
+        "spring": 55,
+        "damping": 15
+      },
+      "summary": "Two fields move faster with narrower halos and slower lens response.",
+      "natural_language": "Drag the coral lenses. Each gold guide has a fixed response direction that varies between hunts and fields. Probe each lens during safe preparation and compare the gold star before and after your move to learn how to center it. The learned response lasts for this hunt. Align the colored stars with the faint constellation and their halos. The gold guide has a square anchor and a recent trail. Prepare safely, then START EXPOSURE. Each lens has inertia. Alignment points drift continuously, including while another field is being adjusted. Sharpness fills exposure; blur fades it twice as fast. Keep all bars full together to pass. Early sealing or expiry ends the episode; restarting cannot erase failure. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, hidden state, or unrelated tabs.",
+      "natural_language_by_interaction": {
+        "full": "Drag the coral lenses. Each gold guide has a fixed response direction that varies between hunts and fields. Probe each lens during safe preparation and compare the gold star before and after your move to learn how to center it. The learned response lasts for this hunt. Align the colored stars with the faint constellation and their halos. The gold guide has a square anchor and a recent trail. Prepare safely, then START EXPOSURE. Each lens has inertia. Alignment points drift continuously, including while another field is being adjusted. Sharpness fills exposure; blur fades it twice as fast. Keep all bars full together to pass. Early sealing or expiry ends the episode; restarting cannot erase failure. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, hidden state, or unrelated tabs.",
+        "simplified": "Click inside each field to set its coral lens target. Each gold guide has a fixed response direction that varies between hunts and fields. Probe each lens during safe preparation and compare the gold star before and after your move to learn how to center it. The learned response lasts for this hunt. Align the colored stars with the faint constellation and their halos. The gold guide has a square anchor and a recent trail. Prepare safely, then START EXPOSURE. Each lens has inertia. Alignment points drift continuously, including while another field is being adjusted. Sharpness fills exposure; blur fades it twice as fast. Keep all bars full together to pass. Early sealing or expiry ends the episode; restarting cannot erase failure. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, hidden state, or unrelated tabs."
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "parameters": {
+        "field_count": 3,
+        "tolerance": 24,
+        "span_ms": 4500,
+        "noise_count": 22,
+        "spring": 50,
+        "damping": 14
+      },
+      "summary": "Three simultaneous inertial lenses, six coordinates, independent changing trajectories, narrow halos and fading exposure.",
+      "natural_language": "Drag the coral lenses. Each gold guide has a fixed response direction that varies between hunts and fields. Probe each lens during safe preparation and compare the gold star before and after your move to learn how to center it. The learned response lasts for this hunt. Align the colored stars with the faint constellation and their halos. The gold guide has a square anchor and a recent trail. Prepare safely, then START EXPOSURE. Each lens has inertia. Alignment points drift continuously, including while another field is being adjusted. Sharpness fills exposure; blur fades it twice as fast. Keep all bars full together to pass. Early sealing or expiry ends the episode; restarting cannot erase failure. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, hidden state, or unrelated tabs.",
+      "natural_language_by_interaction": {
+        "full": "Drag the coral lenses. Each gold guide has a fixed response direction that varies between hunts and fields. Probe each lens during safe preparation and compare the gold star before and after your move to learn how to center it. The learned response lasts for this hunt. Align the colored stars with the faint constellation and their halos. The gold guide has a square anchor and a recent trail. Prepare safely, then START EXPOSURE. Each lens has inertia. Alignment points drift continuously, including while another field is being adjusted. Sharpness fills exposure; blur fades it twice as fast. Keep all bars full together to pass. Early sealing or expiry ends the episode; restarting cannot erase failure. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, hidden state, or unrelated tabs.",
+        "simplified": "Click inside each field to set its coral lens target. Each gold guide has a fixed response direction that varies between hunts and fields. Probe each lens during safe preparation and compare the gold star before and after your move to learn how to center it. The learned response lasts for this hunt. Align the colored stars with the faint constellation and their halos. The gold guide has a square anchor and a recent trail. Prepare safely, then START EXPOSURE. Each lens has inertia. Alignment points drift continuously, including while another field is being adjusted. Sharpness fills exposure; blur fades it twice as fast. Keep all bars full together to pass. Early sealing or expiry ends the episode; restarting cannot erase failure. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, hidden state, or unrelated tabs."
+      }
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Drag each visible coral lens to command its continuous inertial target. Reversible preparation moves reveal the same seeded gold-guide response in both modes."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Click a field to command the same continuous lens target, without auto-aim or changed physics. Reversible preparation moves reveal the same seeded gold-guide response in both modes."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 90,
+    "observation_window_ms": 300,
+    "frames_per_observation": 4
+  },
+  "capabilities": {
+    "visual_understanding": "2D",
+    "temporal_understanding_and_memory": true,
+    "reasoning_and_planning": true,
+    "exploration_and_interface_understanding": false
+  }
+}

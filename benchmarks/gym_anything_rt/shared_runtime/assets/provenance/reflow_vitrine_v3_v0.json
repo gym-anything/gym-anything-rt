@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "reflow_vitrine_v3",
+  "source_anchors": [
+    "XAGT-056",
+    "XAGT-046",
+    "XAGT-072"
+  ],
+  "original_environment": "reflow_vitrine_env",
+  "sources": [
+    {
+      "title": "VisualAgentBench / VAB-CSS",
+      "url": "https://github.com/THUDM/VisualAgentBench",
+      "role": "iterative screenshot-guided CSS repair, reversible edits, and grayscale SSIM reference"
+    },
+    {
+      "title": "VisualAgentBench paper",
+      "url": "https://arxiv.org/abs/2408.06327",
+      "role": "visual-difference grounding and multi-round definitive evaluation reference"
+    },
+    {
+      "title": "macOSWorld",
+      "url": "https://github.com/showlab/macosworld",
+      "role": "layout reconstruction against a live application preview reference"
+    },
+    {
+      "title": "macOSWorld paper",
+      "url": "https://arxiv.org/abs/2506.04135",
+      "role": "interactive desktop benchmark reference"
+    },
+    {
+      "title": "AgentStudio",
+      "url": "https://github.com/ltzheng/agent-studio",
+      "role": "slide-layout manipulation and gold-artifact verification reference"
+    },
+    {
+      "title": "AgentStudio paper",
+      "url": "https://arxiv.org/abs/2403.17918",
+      "role": "self-seeding task and evaluator structure reference"
+    }
+  ],
+  "assets": [],
+  "notes": "All kinetic physics, procedural shop illustrations, nested frames, levers and independent replay are original. Source code and source media are read-only research material, not copied into the game. See evidence_docs/source_to_game.md and raw source index for commit hashes."
+}

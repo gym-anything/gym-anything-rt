@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "rorschach_fixed_rubric_v3",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Two broad apertures follow one translating bilateral blot. Coupled drift makes both positions move, with no deformation.",
+      "natural_language": "Inspect the ink centres with the pointer to uncover their registration marks. Each sheet assigns the apertures differently; uncovered marks stay visible. Keep every ink centre inside its marked registration aperture to develop the butterfly print. The apertures have inertia. Uncovered ink fills the spill gutter and the print fades. The dotted fibres show the next 1.2 seconds of flow; fading fibres show the recent past. Begin flow when ready. A full gutter, expired sheet, or incomplete certification ends the episode. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs.",
+      "parameters": {
+        "landmarks": 2,
+        "drift": 95,
+        "spread": 0,
+        "twist": 0,
+        "flex": 0,
+        "knot_ms": 2200,
+        "tolerance": 44,
+        "spring": 18,
+        "damping": 8
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "The wings spread and contract independently of centre drift, requiring independent correction of both apertures.",
+      "natural_language": "Inspect the ink centres with the pointer to uncover their registration marks. Each sheet assigns the apertures differently; uncovered marks stay visible. Keep every ink centre inside its marked registration aperture to develop the butterfly print. The apertures have inertia. Uncovered ink fills the spill gutter and the print fades. The dotted fibres show the next 1.2 seconds of flow; fading fibres show the recent past. Begin flow when ready. A full gutter, expired sheet, or incomplete certification ends the episode. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs.",
+      "parameters": {
+        "landmarks": 2,
+        "drift": 110,
+        "spread": 34,
+        "twist": 0,
+        "flex": 0,
+        "knot_ms": 4200,
+        "tolerance": 40,
+        "spring": 20,
+        "damping": 8
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "A third spine contact and rotating wings introduce concurrent three-aperture control and prediction of changing orientation.",
+      "natural_language": "Inspect the ink centres with the pointer to uncover their registration marks. Each sheet assigns the apertures differently; uncovered marks stay visible. Keep every ink centre inside its marked registration aperture to develop the butterfly print. The apertures have inertia. Uncovered ink fills the spill gutter and the print fades. The dotted fibres show the next 1.2 seconds of flow; fading fibres show the recent past. Begin flow when ready. A full gutter, expired sheet, or incomplete certification ends the episode. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs.",
+      "parameters": {
+        "landmarks": 3,
+        "drift": 120,
+        "spread": 40,
+        "twist": 0.25,
+        "flex": 0,
+        "knot_ms": 3800,
+        "tolerance": 36,
+        "spring": 24,
+        "damping": 8.5
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "The spine flexes sideways independently of wing rotation. Tighter apertures and inertial motor aims increase correction demands.",
+      "natural_language": "Inspect the ink centres with the pointer to uncover their registration marks. Each sheet assigns the apertures differently; uncovered marks stay visible. Keep every ink centre inside its marked registration aperture to develop the butterfly print. The apertures have inertia. Uncovered ink fills the spill gutter and the print fades. The dotted fibres show the next 1.2 seconds of flow; fading fibres show the recent past. Begin flow when ready. A full gutter, expired sheet, or incomplete certification ends the episode. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs.",
+      "parameters": {
+        "landmarks": 3,
+        "drift": 130,
+        "spread": 48,
+        "twist": 0.34,
+        "flex": 35,
+        "knot_ms": 3400,
+        "tolerance": 32,
+        "spring": 26,
+        "damping": 9
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Large independent centre, spread, twist and spine changes with unequal short flow segments. Three apertures require sustained prediction and coordinated correction.",
+      "natural_language": "Inspect the ink centres with the pointer to uncover their registration marks. Each sheet assigns the apertures differently; uncovered marks stay visible. Keep every ink centre inside its marked registration aperture to develop the butterfly print. The apertures have inertia. Uncovered ink fills the spill gutter and the print fades. The dotted fibres show the next 1.2 seconds of flow; fading fibres show the recent past. Begin flow when ready. A full gutter, expired sheet, or incomplete certification ends the episode. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs.",
+      "parameters": {
+        "landmarks": 3,
+        "drift": 140,
+        "spread": 60,
+        "twist": 0.44,
+        "flex": 60,
+        "knot_ms": 3000,
+        "tolerance": 28,
+        "spring": 28,
+        "damping": 9.5
+      }
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Inspect ink centres with the pointer to reveal the same persistent registration marks in both modes. Drag each visible aperture by its ring or centre to set its motor aim. The aperture accelerates toward that aim."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Inspect ink centres with the pointer to reveal the same persistent registration marks in both modes. Select a labelled aperture proxy, then click its motor aim in the same field. Identical aperture physics, flow, visibility and grading tolerances."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 70,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  }
+}

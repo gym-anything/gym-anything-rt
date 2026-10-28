@@ -1,0 +1,63 @@
+{
+  "description": "Calibrate 3 global fields, infer 5 coupled organism responses, and shepherd every organism into its matching sanctuary while deliberate field-lure actions advance seeded ambient currents.",
+  "difficulty": "hard",
+  "env_id": "gym_anything_rt.impossible_ecology_nonrealtime_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/impossible_ecology_nonrealtime_d4_full_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/impossible_ecology_nonrealtime_d4_full_seed_0001/setup_task.sh"
+  },
+  "id": "impossible_ecology_nonrealtime_d4_full_seed_0001@0.2",
+  "init": {
+    "max_steps": 500,
+    "reward_type": "sparse",
+    "timeout_sec": 600
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/incubator_full_build_v1.json",
+    "benchmark": "gym_anything_rt",
+    "control_condition": {
+      "difficulty": 4,
+      "difficulty_parameters": {
+        "calibration_field_ms": 620,
+        "capture_margin": 1.0,
+        "capture_speed": 5.0,
+        "current_acceleration": 0.18,
+        "current_segment_ticks": 80,
+        "damping": 0.83,
+        "field_count": 3,
+        "max_speed": 4.8,
+        "obstacle_radius": 48,
+        "organism_count": 5,
+        "primary_response_max": 1.34,
+        "primary_response_min": 1.18,
+        "sanctuary_radius": 38,
+        "secondary_response_max": 0.19,
+        "secondary_response_min": 0.11,
+        "target_radius_max": 174,
+        "target_radius_min": 164
+      },
+      "interaction": "full",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "impossible_ecology_nonrealtime",
+    "variant_count": 4251528000000,
+    "variant_count_kind": "spatial layout, field-response assignment, sanctuary placement, and coupled-dynamics combinations"
+  },
+  "name": "Impossible Ecology · Difficulty 4 · Full Interaction",
+  "natural_language": "Calibrate three fields. Shepherd five organisms into matching sanctuaries.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "impossible_ecology_nonrealtime",
+    "coupled-control",
+    "motion-calibration",
+    "continuous-pointer"
+  ],
+  "version": "0.2"
+}

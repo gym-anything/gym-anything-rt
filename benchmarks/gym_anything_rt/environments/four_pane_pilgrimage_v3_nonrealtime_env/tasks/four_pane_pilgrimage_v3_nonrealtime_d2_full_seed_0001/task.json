@@ -1,0 +1,55 @@
+{
+  "description": "Guide the pilgrim along the illuminated path. Lift the vellum from each picture to discover its sigil and lantern. Arrange the revealed pictures in the sigil order, stack matching acetate windows, then begin. Discovered pictures stay visible; BEGIN activates the journey without consuming a tick; the folio advances one fixed lantern step after each active puzzle control and idle waiting leaves it unchanged. Pan and zoom each window to match its moving lantern. The path fades and the pilgrim retreats when any window loses registration. Reach the shrine before the page burns out. One attempt; an incomplete seal ends it. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, extensions, external applications, implementation or hidden-state access, or unrelated tabs. Task-created tabs are allowed only through their visible task controls.",
+  "difficulty": "easy",
+  "env_id": "gym_anything_rt.four_pane_pilgrimage_v3_nonrealtime_env@0.2",
+  "hooks": {
+    "post_task": "/workspace/tasks/four_pane_pilgrimage_v3_nonrealtime_d2_full_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/four_pane_pilgrimage_v3_nonrealtime_d2_full_seed_0001/setup_task.sh"
+  },
+  "id": "four_pane_pilgrimage_v3_nonrealtime_d2_full_seed_0001@0.2",
+  "init": {
+    "max_steps": 700,
+    "reward_type": "sparse",
+    "timeout_sec": 720
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/four_pane_pilgrimage_v3_v0.json",
+    "benchmark": "gym_anything_rt",
+    "control_condition": {
+      "difficulty": 2,
+      "difficulty_parameters": {
+        "active_panes": 2,
+        "position_tolerance": 26,
+        "radius_amplitude": 0,
+        "radius_tolerance": 8,
+        "segment_factor_max": 1.5,
+        "segment_factor_min": 0.5,
+        "segment_ms": 14000,
+        "x_amplitude": 65,
+        "y_amplitude": 25
+      },
+      "interaction": "full",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "four_pane_pilgrimage_v3_nonrealtime"
+  },
+  "name": "Four-Pane Pilgrimage V3 · Difficulty 2 · Full Interaction",
+  "natural_language": "Guide the pilgrim along the illuminated path. Lift the vellum from each picture to discover its sigil and lantern. Arrange the revealed pictures in the sigil order, stack matching acetate windows, then begin. Discovered pictures stay visible; BEGIN activates the journey without consuming a tick; the folio advances one fixed lantern step after each active puzzle control and idle waiting leaves it unchanged. Pan and zoom each window to match its moving lantern. The path fades and the pilgrim retreats when any window loses registration. Reach the shrine before the page burns out. One attempt; an incomplete seal ends it. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, extensions, external applications, implementation or hidden-state access, or unrelated tabs. Task-created tabs are allowed only through their visible task controls.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "linux",
+    "browser",
+    "visual-puzzle",
+    "gym-anything-rt",
+    "four-panel",
+    "layer-compositing",
+    "realtime-registration"
+  ],
+  "version": "0.2"
+}

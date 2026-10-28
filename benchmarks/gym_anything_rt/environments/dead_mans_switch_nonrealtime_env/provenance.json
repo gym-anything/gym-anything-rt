@@ -1,0 +1,26 @@
+{
+  "name": "Dead Man's Switch non-real-time counterpart",
+  "original_mechanic": "dead_mans_switch",
+  "mechanic_id": "dead_mans_switch_nonrealtime",
+  "source_anchors": [
+    "opencaptchaworld-benchmark/Hold_Button"
+  ],
+  "transformation": "The pressure plate keeps its seeded initial center while waiting and throughout a hold. Course geometry, pressure tolerances, pointer/keyboard surfaces, minimum hold, sampling, and donor reset consequences are preserved.",
+  "validation_status": "headless_browser_http_verifier_passed",
+  "human_validation": "pending",
+  "model_evaluation": "pending",
+  "capability_labels": [
+    "visual understanding: 2D",
+    "temporal understanding and memory",
+    "reasoning and planning"
+  ],
+  "automated_validation": {
+    "materialized_configurations": 10,
+    "deterministic_generation_cases": 30,
+    "independent_grader_delayed_transcripts": 30,
+    "independent_verifier_passed": true,
+    "headless_browser": "passed with fresh isolated Chromium; four screenshots inspected",
+    "http_action_api": "passed through local /result POST and exported task result",
+    "evidence": "evidence_docs/nonrealtime-counterpart.json"
+  }
+}

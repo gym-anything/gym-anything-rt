@@ -1,0 +1,31 @@
+body[data-mechanic="ghost-loom-v2"] { margin: 0; background: #050b13; }
+.ghost-loom { position: relative; width: min(1100px, 98vw); margin: auto; padding: 12px; border: 1px solid #36506b; background: #101e2c; color: #dae5ee; box-shadow: 0 20px 70px #0008; font: 14px/1.35 system-ui, sans-serif; box-sizing: border-box; }
+.ghost-loom header { display: flex; justify-content: space-between; align-items: center; padding: 0 8px 10px; }
+.ghost-loom header p { color: #e9c58e; letter-spacing: .16em; font: 11px monospace; margin: 0 0 5px; }
+.ghost-loom h1 { margin: 0; font: 27px Georgia, serif; color: #ecf1f5; }
+#loom-clock { font: 18px monospace; color: #b1dbe7; }
+.loom-rules { padding: 8px; border-block: 1px solid #36506b; font-size: 12px; line-height: 1.4; }
+.ghost-loom main { display: grid; grid-template-columns: minmax(0, 1fr) 190px; gap: 12px; padding-top: 10px; }
+#loom-canvas { width: 100%; height: auto; display: block; cursor: grab; touch-action: none; user-select: none; }
+.ghost-loom aside { border-left: 1px solid #36506b; padding-left: 12px; }
+.ghost-loom aside label { display: block; font: 10px monospace; color: #9ab1c7; letter-spacing: .1em; margin-bottom: 8px; }
+#loom-reference { display: block; width: 158px; height: 158px; border: 1px solid #719bbd; }
+.loom-score { padding: 12px 0; display: flex; flex-direction: column; }
+.loom-score b { font: 25px Georgia, serif; color: #a3e5d3; }
+.loom-score span { font: 9px monospace; letter-spacing: .12em; }
+.ghost-loom button { min-height: 34px; border: 1px solid #8f9ba8; background: #1c3146; color: #ecf1f5; cursor: pointer; font: 12px monospace; padding: 5px 10px; user-select: none; touch-action: none; }
+.ghost-loom button:hover { background: #2b455e; border-color: #b1dbe7; }
+.ghost-loom button:disabled { opacity: .4; cursor: default; }
+#loom-start,#loom-stitch,#loom-return { width: 100%; margin-bottom: 8px; }
+#loom-start,#loom-stitch { color: #ffdb9b; border-color: #e9c58e; }
+.loom-turns { display: flex; gap: 5px; margin-bottom: 8px; }
+.loom-turns button { min-width: 82px; }
+.loom-controls { color: #ffdb9b; font: 12px/1.8 monospace; }
+.loom-legend { font-size: 10px; line-height: 1.35; color: #9ab1c7; margin: 10px 0 0; }
+.ghost-loom footer { display: flex; align-items: center; justify-content: space-between; gap: 10px; border-top: 1px solid #36506b; margin-top: 10px; padding-top: 10px; }
+.ghost-loom .readout { color: #a3e5d3; font: 11px monospace; margin: 0; }
+.loom-verdict { position: absolute; inset: 0; z-index: 10; display: grid; place-content: center; padding: 50px; text-align: center; font: 38px Georgia, serif; color: #e9c58e; background: #09121cf0; }
+.loom-verdict[hidden] { display: none; }
+.loom-verdict[data-status="pass"] { color: #a3e5d3; }
+.loom-verdict[data-status="fail"] { color: #ff8a8f; }
+@media (max-height: 750px) { .ghost-loom { padding: 8px; } .ghost-loom header { padding-bottom: 6px; } .loom-rules { padding: 6px; } .ghost-loom main { padding-top: 6px; } .ghost-loom footer { margin-top: 6px; padding-top: 6px; } }

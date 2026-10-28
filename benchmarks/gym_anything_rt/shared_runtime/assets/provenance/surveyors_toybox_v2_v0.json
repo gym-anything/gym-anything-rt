@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "surveyors_toybox_v2",
+  "environment_name": "Surveyors Toybox V2",
+  "source_anchors": [
+    "TRG-088"
+  ],
+  "sources": [
+    {
+      "url": "https://api-reference.scale.com/docs/api-reference/sensor-fusion-lidar-reference.md",
+      "final_url": "https://api-reference.scale.com/docs/api-reference/sensor-fusion-lidar-reference.md",
+      "status": 200,
+      "bytes": 4649,
+      "sha256": "82498aa09cac2ee8502c5920e364a8f1119401cd0b04f05014ce6fe43e769672"
+    },
+    {
+      "url": "https://api-reference.scale.com/docs/api-reference/sensor-fusion-lidar-tasks.md",
+      "final_url": "https://api-reference.scale.com/docs/api-reference/sensor-fusion-lidar-tasks.md",
+      "status": 200,
+      "bytes": 41832,
+      "sha256": "d01cddfebdcfad036ed78b0bbc3ad8ba7a4bb003634a54fa2a493573a5920713"
+    },
+    {
+      "url": "https://static.scale.com/protos/lidar_frame-1.1.proto",
+      "final_url": "https://static.scale.com/protos/lidar_frame-1.1.proto",
+      "status": 200,
+      "bytes": 2822,
+      "sha256": "4ea22c33585b489d5450b4a7bc36f94a844377730b2d1e80127f72b16ed627a8"
+    }
+  ],
+  "transformation": "Turn cross-modal cuboid persistence across LiDAR frames into ongoing volumetric control of multiple moving and turning toys. Calibration links camera discs to 3D volumes; live tracking loses value as geometry moves.",
+  "assets": "Original procedural canvas geometry, sparse surface returns and locally drawn tug/pallet motifs. No source artwork or third-party game is shipped.",
+  "existing_environment": "surveyors_toybox_env is preserved",
+  "native_action_api_evidence": "pending browser-isolation clarification",
+  "human_calibration": "pending",
+  "model_evaluation": "not authorized; not run",
+  "physics_revision": "live-cuboid-survey-v2"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Reload Interruption",
+  "original_mechanic": "reload_interruption_v2",
+  "mechanic_id": "reload_interruption_nonrealtime",
+  "source_anchors": [
+    "captcha-the-flag",
+    "modrinth-evil-captcha",
+    "github-ttuples-simplecaptcha"
+  ],
+  "transformation": "Each overload keeps the donor's initial spark position fixed until the player uses the existing hold control. The minimum hold duration, sample-density contract, sequence memory, action surfaces, and failure outcomes remain unchanged.",
+  "validation_status": "automated_checks_passed_headless_evidence_recorded",
+  "human_validation": "not_requested; isolated headless screenshots inspected",
+  "model_evaluation": "not_requested",
+  "capability_labels": "temporal memory and action duration inherited; non-realtime counterpart",
+  "automated_validation": {
+    "live_configurations_passed": 10,
+    "d5_full_continuous_reference_video": false,
+    "independent_verifier_passed": true,
+    "static_browser_grade_passed": true,
+    "paused_clock_passed": "not_tested; live delayed-action check is the required counterpart evidence",
+    "failure_regeneration_passed": true,
+    "evidence": "evidence_docs/nonrealtime-counterpart.json",
+    "report": "evidence_docs/nonrealtime-counterpart.md"
+  }
+}

@@ -1,0 +1,50 @@
+body[data-mechanic="live-flow-v3"] { margin:0; overflow:hidden; background:#0b161e; color:#e7ede6; font-family:system-ui,sans-serif; }
+body[data-mechanic="live-flow-v3"] .app-shell { padding:10px; }
+.lfv-lab { box-sizing:border-box; position:relative; width:calc(100vw - 20px); height:calc(100vh - 20px); display:grid; grid-template-rows:78px minmax(0,1fr) 62px; border:1px solid #577484; background:#11222c; box-shadow:0 25px 70px #0008; }
+.lfv-lab * { box-sizing:border-box; }
+.lfv-head { display:flex; justify-content:space-between; align-items:center; padding:12px 22px; border-bottom:1px solid #49636e; background:linear-gradient(105deg,#203540,#10222d); }
+.lfv-head span { color:#91adba; font:11px ui-monospace,monospace; letter-spacing:.15em; }
+.lfv-head h1 { margin:5px 0 0; font:27px Georgia,serif; color:#f1ead4; }
+.lfv-head h1 i { color:#efbd68; font-style:normal; }
+.lfv-head p { font-size:13px; line-height:1.55; color:#adbec8; margin:0; }
+.lfv-head b { font-weight:500; color:#efd59b; }
+.lfv-main { min-height:0; display:grid; grid-template-columns:300px minmax(0,1fr); }
+.lfv-program { min-height:0; padding:10px 14px; border-right:1px solid #49636e; background:#152630; overflow-y:auto; }
+.lfv-program header { font:11px ui-monospace,monospace; color:#a8bfcb; padding:5px 0 9px; border-bottom:1px solid #49636e; }
+.lfv-program ol { padding:0; margin:8px 0; list-style:none; }
+.lfv-program li { display:grid; grid-template-columns:52px 1fr; padding:5px 0; border-bottom:1px solid #2c414b; font:12px/1.35 ui-monospace,monospace; }
+.lfv-program li>div { display:grid; align-content:center; gap:4px; color:#ffd493; }
+.lfv-inspect { border:1px solid #7295a5; background:#1c3b49; color:#caeef3; font:8px/1.2 ui-monospace,monospace; padding:3px 1px; min-height:24px; }
+.lfv-inspect[aria-expanded="true"] { color:#9de0d5; background:#173631; }
+.lfv-dispatch { display:block; }
+.lfv-program code { font:inherit; color:#e0e9eb; }
+.lfv-program code span { color:#9ab5c3; }
+.lfv-program code .lfv-motion { display:block; color:#9de0d5; font:9px/1.5 ui-monospace,monospace; white-space:nowrap; }
+.lfv-legend { display:grid; gap:5px; padding-top:8px; font-size:12px; line-height:1.4; color:#b6cbd4; }
+.lfv-legend>b { color:#f3dcb0; font:11px ui-monospace,monospace; }
+.lfv-legend p { margin:5px 0 0; }
+.lfv-rig { min-width:0; min-height:0; display:grid; grid-template-rows:108px minmax(0,1fr) 25px; }
+.lfv-cards { display:flex; gap:8px; padding:7px 10px; background:#0d1d26; }
+.lfv-card { position:relative; display:grid; grid-template-columns:30px 78px 1fr; align-items:center; gap:7px; flex:1; min-width:0; border:1px solid #49636e; border-left:3px solid var(--probe); background:#192f3b; color:#cfdee5; padding:6px 10px 10px; font:12px ui-monospace,monospace; }
+.lfv-card>b { color:var(--probe); font-size:16px; }.lfv-flags { font-size:18px; color:var(--probe); white-space:nowrap; }
+.lfv-current { text-align:right; font-size:11px; white-space:nowrap; }
+.lfv-heat,.lfv-pose,.lfv-aim { grid-column:1/-1; font:10px/1.2 ui-monospace,monospace; white-space:nowrap; text-align:left; color:#b8d6e3; }
+.lfv-heat { color:var(--probe); }
+.lfv-card.is-selected { outline:1px solid var(--probe); background:#253e4b; }
+.lfv-card[data-armed="true"] { box-shadow:inset 0 0 0 1px var(--probe); }.lfv-card[data-armed="true"] .lfv-current { color:var(--probe); font-weight:bold; }
+.lfv-card[data-done="true"] { opacity:.6; }.lfv-card:disabled { cursor:default; }
+.lfv-buffer { position:absolute; bottom:0; left:0; width:100%; height:3px; background:#1e1719; }
+.lfv-buffer i { display:block; height:100%; background:var(--probe); }
+.lfv-stage { min-width:0; min-height:0; display:flex; justify-content:center; align-items:center; overflow:hidden; background:#101e27; }
+.lfv-field { display:block; width:min(100%,calc((100vh - 296px)*1.87234)); height:auto; touch-action:none; cursor:crosshair; }
+.lfv-caption { display:flex; justify-content:space-between; align-items:center; padding:0 12px; color:#8eabbc; font:10px ui-monospace,monospace; border-top:1px solid #344c5a; }
+.lfv-weld-tool { border:1px solid #8be3d4; background:#163b40; color:#b4f3e8; font:10px ui-monospace; padding:2px 8px; }.lfv-weld-tool:disabled { opacity:.4; }.lfv-lab[data-interaction="full"] .lfv-weld-tool { display:none; }
+.lfv-phase { color:#e6c790; }
+.lfv-foot { display:grid; grid-template-columns:185px 1fr 210px; align-items:center; gap:16px; padding:8px 12px; background:#12242e; border-top:1px solid #49636e; }
+.lfv-lab button { cursor:pointer; }.lfv-foot button { height:42px; border:1px solid #cfab66; background:#3a3428; color:#ffdfa4; font:bold 12px ui-monospace,monospace; }
+.lfv-foot button:hover { background:#544931; }.lfv-foot button:disabled { opacity:.5; cursor:default; }
+.lfv-foot .readout { font:13px ui-monospace,monospace; color:#d5e3e9; }.lfv-foot .readout[data-status="passed"] { color:#8df4c4; }.lfv-foot .readout[data-status="error"] { color:#ffb3a4; }
+.lfv-verdict { display:none; position:absolute; z-index:12; left:50%; top:50%; transform:translate(-50%,-50%); min-width:410px; padding:28px; text-align:center; background:#111d26ed; border:3px double #e8a579; box-shadow:0 20px 60px #000b; }
+.lfv-verdict strong { display:block; font:84px Georgia,serif; color:#ffd3a2; }.lfv-verdict span { font-size:15px; line-height:1.5; }
+.lfv-lab[data-verdict] .lfv-verdict { display:block; }.lfv-lab[data-verdict="pass"] .lfv-verdict { border-color:#8df4c4; }.lfv-lab[data-verdict="pass"] .lfv-verdict strong { color:#8df4c4; }
+@media (min-width:1500px) { .lfv-main { grid-template-columns:400px minmax(0,1fr); }.lfv-program li { font-size:13px; padding:4px 0; grid-template-columns:56px 1fr; }.lfv-program code .lfv-motion { font-size:11px; }.lfv-legend { font-size:13px; line-height:1.3; gap:4px; } }

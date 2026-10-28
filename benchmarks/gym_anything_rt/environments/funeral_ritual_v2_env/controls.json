@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "funeral_ritual_v2",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "parameters": {
+        "candles": 1,
+        "flowers": 0,
+        "wind_span_ms": 6000,
+        "wind_amplitude": 95,
+        "shield_width": 94,
+        "shield_response": "direct"
+      },
+      "natural_language": "Uncover the memorial, light its single candle, and protect the flame against changing drafts for thirty seconds. There are no flower offerings in this vigil. Move the windbreak across the draft; its ribbon shows the current crossing and the next two seconds. The shield follows your input directly. A lost flame ends this episode. Say farewell after the vigil. Solve only from screenshots and visible task controls. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or hidden-state access. Use only the task tab and its visible controls.",
+      "summary": "One changing draft and one broad directly positioned windbreak; no ordered offerings, moving destinations or inertial steering."
+    },
+    "2": {
+      "label": "easy",
+      "parameters": {
+        "candles": 1,
+        "flowers": 0,
+        "wind_span_ms": 5000,
+        "wind_amplitude": 108,
+        "shield_width": 70,
+        "shield_speed": 240,
+        "shield_acceleration": 900
+      },
+      "natural_language": "Uncover the memorial, light its single candle, and protect the flame against changing drafts for thirty seconds. There are no flower offerings in this vigil. Move the windbreak across the draft; its ribbon shows the current crossing and the next two seconds. The shield has inertia: use the visible draft ribbon to aim ahead. A lost flame ends this episode. Say farewell after the vigil. Solve only from screenshots and visible task controls. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or hidden-state access. Use only the task tab and its visible controls.",
+      "summary": "One changing draft and one inertial windbreak; narrower protection and faster wind than D1, with no competing flower-placement task."
+    },
+    "3": {
+      "label": "medium",
+      "parameters": {
+        "candles": 2,
+        "flowers": 3,
+        "wind_span_ms": 5000,
+        "wind_amplitude": 108,
+        "shield_width": 70,
+        "shield_speed": 240,
+        "shield_acceleration": 900,
+        "socket_amplitude": 40,
+        "socket_radius": 60
+      },
+      "natural_language": "Uncover the memorial, light the candles, protect their flames against changing drafts for thirty seconds, and lay the flowers in the stone\u2019s order. Move each windbreak across its draft; its ribbon shows the current crossing and the next two seconds. Shields have inertia. A lost flame, wrong flower or missed placement ends this episode. Solve only from screenshots and visible task controls. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or hidden-state access. Use only the task tab and its visible controls.",
+      "summary": "2 independent drafts, 70px windbreaks, 5000ms draft knots, 3 offerings, 60px moving resting places; physical inertia and flame damage."
+    },
+    "4": {
+      "label": "hard",
+      "parameters": {
+        "candles": 2,
+        "flowers": 3,
+        "wind_span_ms": 4200,
+        "wind_amplitude": 118,
+        "shield_width": 58,
+        "shield_speed": 220,
+        "shield_acceleration": 700,
+        "socket_amplitude": 65,
+        "socket_radius": 50
+      },
+      "natural_language": "Uncover the memorial, light the candles, protect their flames against changing drafts for thirty seconds, and lay the flowers in the stone\u2019s order. Move each windbreak across its draft; its ribbon shows the current crossing and the next two seconds. Shields have inertia. A lost flame, wrong flower or missed placement ends this episode. Solve only from screenshots and visible task controls. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or hidden-state access. Use only the task tab and its visible controls.",
+      "summary": "2 independent drafts, 58px windbreaks, 4200ms draft knots, 3 offerings, 50px moving resting places; physical inertia and flame damage."
+    },
+    "5": {
+      "label": "very_hard",
+      "parameters": {
+        "candles": 3,
+        "flowers": 4,
+        "wind_span_ms": 3600,
+        "wind_amplitude": 118,
+        "shield_width": 48,
+        "shield_speed": 210,
+        "shield_acceleration": 650,
+        "socket_amplitude": 65,
+        "socket_radius": 44
+      },
+      "natural_language": "Uncover the memorial, light the candles, protect their flames against changing drafts for thirty seconds, and lay the flowers in the stone\u2019s order. Move each windbreak across its draft; its ribbon shows the current crossing and the next two seconds. Shields have inertia. A lost flame, wrong flower or missed placement ends this episode. Solve only from screenshots and visible task controls. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or hidden-state access. Use only the task tab and its visible controls.",
+      "summary": "3 independent drafts, 48px windbreaks, 3600ms draft knots, 4 offerings, 44px moving resting places; physical inertia and flame damage."
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Brush the stone and directly drag windbreaks and flowers."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Clear moss with its visible proxy; click rails to set windbreak targets, and click flowers then destination points. Identical inertia, draft, geometry and outcomes."
+    }
+  },
+  "interaction_notes": {
+    "shared_world": "At the same difficulty and seed, both modes retain the same draft, shield response, geometry and outcome rules. D1 uses direct shield positioning; D2-D5 use inertia. The mode summaries' identical outcomes refer to those physical rules, not identical concurrent input affordances.",
+    "flower_input_resource": "Flowers exist only at D3-D5. Full mode occupies the pointer while carrying a flower, so it must be released or cancelled before adjusting a shield. Simplified mode retains a selected flower while allowing a shield target click. This intentional input-resource simplification does not pause or change the world physics. D1-D2 have no flower selection or carrying state."
+  },
+  "real_time": {
+    "play_time_seconds": 90,
+    "observation_window_ms": 400,
+    "frames_per_observation": 4
+  }
+}

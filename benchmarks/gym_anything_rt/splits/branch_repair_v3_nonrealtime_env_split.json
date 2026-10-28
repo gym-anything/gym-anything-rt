@@ -1,0 +1,66 @@
+{
+  "env_folder": "branch_repair_v3_nonrealtime_env",
+  "all_tasks": [
+    "branch_repair_v3_nonrealtime_d1_full_seed_0001",
+    "branch_repair_v3_nonrealtime_d1_simplified_seed_0001",
+    "branch_repair_v3_nonrealtime_d2_full_seed_0001",
+    "branch_repair_v3_nonrealtime_d2_simplified_seed_0001",
+    "branch_repair_v3_nonrealtime_d3_full_seed_0001",
+    "branch_repair_v3_nonrealtime_d3_simplified_seed_0001",
+    "branch_repair_v3_nonrealtime_d4_full_seed_0001",
+    "branch_repair_v3_nonrealtime_d4_simplified_seed_0001",
+    "branch_repair_v3_nonrealtime_d5_full_seed_0001",
+    "branch_repair_v3_nonrealtime_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "branch_repair_v3_nonrealtime_d1_full_seed_0001",
+    "branch_repair_v3_nonrealtime_d1_simplified_seed_0001",
+    "branch_repair_v3_nonrealtime_d2_full_seed_0001",
+    "branch_repair_v3_nonrealtime_d2_simplified_seed_0001",
+    "branch_repair_v3_nonrealtime_d3_full_seed_0001",
+    "branch_repair_v3_nonrealtime_d3_simplified_seed_0001",
+    "branch_repair_v3_nonrealtime_d4_full_seed_0001",
+    "branch_repair_v3_nonrealtime_d4_simplified_seed_0001",
+    "branch_repair_v3_nonrealtime_d5_full_seed_0001",
+    "branch_repair_v3_nonrealtime_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "branch_repair_v3_nonrealtime_d5_full_seed_0001"
+    ],
+    "full": [
+      "branch_repair_v3_nonrealtime_d1_full_seed_0001",
+      "branch_repair_v3_nonrealtime_d2_full_seed_0001",
+      "branch_repair_v3_nonrealtime_d3_full_seed_0001",
+      "branch_repair_v3_nonrealtime_d4_full_seed_0001",
+      "branch_repair_v3_nonrealtime_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "branch_repair_v3_nonrealtime_d1_simplified_seed_0001",
+      "branch_repair_v3_nonrealtime_d2_simplified_seed_0001",
+      "branch_repair_v3_nonrealtime_d3_simplified_seed_0001",
+      "branch_repair_v3_nonrealtime_d4_simplified_seed_0001",
+      "branch_repair_v3_nonrealtime_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "branch_repair_v3_nonrealtime_d1_full_seed_0001",
+      "branch_repair_v3_nonrealtime_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "branch_repair_v3_nonrealtime_d2_full_seed_0001",
+      "branch_repair_v3_nonrealtime_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "branch_repair_v3_nonrealtime_d3_full_seed_0001",
+      "branch_repair_v3_nonrealtime_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "branch_repair_v3_nonrealtime_d4_full_seed_0001",
+      "branch_repair_v3_nonrealtime_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "branch_repair_v3_nonrealtime_d5_full_seed_0001",
+      "branch_repair_v3_nonrealtime_d5_simplified_seed_0001"
+    ]
+  }
+}

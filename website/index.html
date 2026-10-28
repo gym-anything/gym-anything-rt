@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gym-Anything-RT: Scaling Real-Time Environments for Vision-Language Agents</title>
+<meta name="description" content="Gym-Anything-RT builds real-time visual minigames with coding agents and controls their clock, so the same task can be played live, slowed down, or paused.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #fafafa;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f5f5f5;
+  --bg-elevated: #f0f0f2;
+  --border: #e2e2e8;
+  --text: #1a1a1e;
+  --text-muted: #5a5a63;
+  --text-dim: #8a8a96;
+  --accent: #0891b2;
+  --accent-dim: rgba(8, 145, 178, 0.08);
+  --purple: #7c3aed;
+  --green: #16a34a;
+  --amber: #d97706;
+  --red: #dc2626;
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+}
+
+html { scroll-behavior: smooth; overflow-x: hidden; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+@media (min-width: 1600px) { .container { max-width: 1400px; } }
+
+/* ─── SECTION SPACING ─── */
+section { padding: 3.5rem 0; }
+section + section { border-top: 1px solid var(--border); }
+
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  max-width: 760px;
+  line-height: 1.7;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   HERO
+   ════════════════════════════════════════════════════════════════ */
+#hero { padding: 4.5rem 0 2rem; text-align: center; position: relative; }
+
+#hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 800px; height: 600px;
+  background: radial-gradient(ellipse, rgba(8,145,178,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: 5.5rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.hero-title .highlight {
+  background: linear-gradient(135deg, var(--accent), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-tagline {
+  font-family: var(--font-display);
+  font-size: 1.85rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.hero-authors { font-size: 1.05rem; color: var(--text-dim); margin-bottom: 2rem; line-height: 1.8; }
+.hero-authors span { color: var(--text-muted); }
+
+.hero-blurb {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  max-width: 780px;
+  margin: 0 auto 2rem;
+  line-height: 1.8;
+}
+
+.hero-blurb strong { color: var(--text); font-weight: 600; white-space: nowrap; }
+
+.btn-row { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: 8px;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.btn:hover { background: var(--bg-card-hover); border-color: var(--text-dim); text-decoration: none; }
+.btn-primary { background: var(--accent); color: #ffffff; border-color: var(--accent); }
+.btn-primary:hover { background: #06b6d4; border-color: #06b6d4; }
+
+/* ════════════════════════════════════════════════════════════════
+   MINIGAME CAROUSEL
+   ════════════════════════════════════════════════════════════════ */
+#carousel-section { padding: 1rem 0 2.5rem; overflow: hidden; border-top: none; }
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+  animation: scroll-left 160s linear infinite;
+  width: max-content;
+}
+
+.carousel-track.reverse { animation: scroll-right 150s linear infinite; }
+
+.carousel-card {
+  flex-shrink: 0;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.carousel-card:hover { transform: scale(1.03); border-color: var(--accent); }
+
+.carousel-card video {
+  width: 100%;
+  height: 169px;
+  object-fit: cover;
+  display: block;
+  background: #0d1b22;
+}
+
+.carousel-card .label {
+  padding: 0.5rem 0.75rem;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@keyframes scroll-left { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+@keyframes scroll-right { 0% { transform: translateX(-50%); } 100% { transform: translateX(0); } }
+
+.carousel-track:hover { animation-play-state: paused; }
+
+.carousel-caption {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  margin-top: 1rem;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   STATS BAR
+   ════════════════════════════════════════════════════════════════ */
+.stats-bar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; padding: 1.5rem 0; }
+
+.stat-card {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow-card);
+  position: relative;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.stat-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+
+.stat-tooltip {
+  position: absolute;
+  bottom: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%) scale(0.95);
+  background: var(--bg-card);
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+  width: 280px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s;
+  z-index: 10;
+  text-align: left;
+}
+
+.stat-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 7px solid transparent;
+  border-top-color: var(--accent);
+}
+
+.stat-card:hover .stat-tooltip { opacity: 1; transform: translateX(-50%) scale(1); }
+.stat-tooltip p { font-size: 0.8rem; color: var(--text-muted); line-height: 1.55; margin: 0; }
+.stat-tooltip strong { color: var(--text); font-weight: 600; }
+
+.stat-number {
+  font-family: var(--font-display);
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1.1;
+}
+
+.stat-number.human { color: var(--green); }
+.stat-label { font-size: 0.95rem; color: var(--text-muted); margin-top: 0.35rem; }
+
+/* ════════════════════════════════════════════════════════════════
+   HUMAN VS AI
+   ════════════════════════════════════════════════════════════════ */
+.example-tabs { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 2rem; }
+
+.tab {
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tab:hover { border-color: var(--text-dim); color: var(--text); }
+.tab.active { background: var(--text); border-color: var(--text); color: #fff; }
+
+.example-task {
+  margin-top: 1.25rem;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  max-width: 900px;
+}
+
+.example-task strong { color: var(--text); }
+
+.versus {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1.25rem;
+}
+
+.player {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.player-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.player-title { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; }
+
+.speed {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  background: var(--bg-elevated);
+  border-radius: 4px;
+  padding: 0.15rem 0.5rem;
+  white-space: nowrap;
+}
+
+.screen { position: relative; aspect-ratio: 16 / 9; background: #0d1b22; }
+.screen video, .screen img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.placeholder {
+  position: absolute;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(10, 16, 20, 0.62);
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.screen.missing .placeholder { display: flex; }
+
+.player-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  flex-wrap: wrap;
+}
+
+.outcome {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+}
+
+.outcome.pass { color: var(--green); background: rgba(22,163,74,0.08); }
+.outcome.fail { color: var(--red); background: rgba(220,38,38,0.07); }
+
+.model-switch { display: flex; gap: 0.35rem; }
+
+.model-switch button {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.model-switch button.active { border-color: var(--accent); color: var(--accent); background: var(--accent-dim); }
+
+.example-note { margin-top: 1rem; font-size: 0.85rem; color: var(--text-dim); max-width: 900px; }
+
+.example-task .play-this { margin-left: 0.4rem; font-weight: 600; white-space: nowrap; }
+
+/* ════════════════════════════════════════════════════════════════
+   LEADERBOARD
+   ════════════════════════════════════════════════════════════════ */
+.leaderboard-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+.leaderboard-table { width: 100%; min-width: 620px; margin-top: 2rem; border-collapse: collapse; }
+
+.leaderboard-table th {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.leaderboard-table td { padding: 0.85rem 1rem; font-size: 0.95rem; border-bottom: 1px solid var(--border); }
+.leaderboard-table tr:hover td { background: var(--bg-card); }
+.leaderboard-table .rank { font-family: var(--font-mono); font-weight: 600; color: var(--text-dim); width: 3rem; }
+.leaderboard-table .model-name { font-weight: 600; }
+.leaderboard-table .num { font-family: var(--font-mono); font-weight: 500; }
+.leaderboard-table .pass-rate { font-family: var(--font-mono); font-weight: 700; color: var(--accent); }
+.leaderboard-table .human-row td { background: rgba(22,163,74,0.06); }
+.leaderboard-table .human-row .pass-rate { color: var(--green); }
+.leaderboard-note { margin-top: 1.5rem; font-size: 0.85rem; color: var(--text-dim); }
+
+/* ════════════════════════════════════════════════════════════════
+   RESULTS
+   ════════════════════════════════════════════════════════════════ */
+.results-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2.5rem; }
+
+.result-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-card);
+}
+
+.result-card h3 { font-family: var(--font-display); font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; }
+.result-card .result-desc { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1.25rem; line-height: 1.5; }
+.chart-container { position: relative; height: 250px; }
+.chart-container canvas { width: 100% !important; }
+
+/* ════════════════════════════════════════════════════════════════
+   HOW IT WORKS
+   ════════════════════════════════════════════════════════════════ */
+.steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2.5rem; }
+
+.step-card {
+  padding: 1.75rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow-card);
+}
+
+.step-number {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-dim);
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  letter-spacing: 0.08em;
+}
+
+.step-card h3 { font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; margin-bottom: 0.65rem; }
+.step-card p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.65; }
+
+.pipeline {
+  margin-top: 2.5rem;
+  padding: 1.75rem 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.node {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  text-align: center;
+  min-width: 120px;
+  background: var(--bg);
+}
+
+.node b { display: block; font-family: var(--font-display); font-size: 0.95rem; }
+.node span { font-size: 0.78rem; color: var(--text-muted); }
+.node.agent { border-color: rgba(8,145,178,0.45); background: var(--accent-dim); }
+.arrow { color: var(--text-dim); font-size: 1.2rem; }
+
+.loop {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem;
+  border: 1px dashed rgba(124,58,237,0.45);
+  border-radius: 12px;
+}
+
+.loop-label { font-family: var(--font-mono); font-size: 0.65rem; color: var(--purple); writing-mode: vertical-rl; transform: rotate(180deg); }
+
+.time-modes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 1.5rem; }
+
+.mode-card {
+  padding: 1.25rem 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow-card);
+}
+
+.mode-card h4 { font-family: var(--font-display); font-size: 1.05rem; margin-bottom: 0.35rem; }
+.mode-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.55; }
+
+.track { position: relative; height: 26px; margin: 0.6rem 0 0.9rem; border-radius: 13px; background: var(--bg-elevated); overflow: hidden; }
+.track .dot { position: absolute; top: 5px; left: 6px; width: 16px; height: 16px; border-radius: 50%; background: var(--accent); }
+.track.live .dot { animation: move 2.4s linear infinite; }
+.track.slow .dot { animation: move 9.6s linear infinite; }
+.track.paused .dot { animation: move 7.2s steps(6, end) infinite; background: var(--purple); }
+
+@keyframes move { 0% { left: 6px; } 100% { left: calc(100% - 22px); } }
+
+/* ════════════════════════════════════════════════════════════════
+   CITATION
+   ════════════════════════════════════════════════════════════════ */
+.citation-block {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.citation-block pre {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.copy-btn:hover { color: var(--accent); border-color: var(--accent); }
+
+footer { padding: 3rem 0; text-align: center; font-size: 0.8rem; color: var(--text-dim); border-top: 1px solid var(--border); }
+
+/* ════════════════════════════════════════════════════════════════
+   RESPONSIVE
+   ════════════════════════════════════════════════════════════════ */
+@media (max-width: 900px) {
+  .hero-title { font-size: 3.5rem; }
+  .stats-bar { grid-template-columns: repeat(2, 1fr); }
+  .versus { grid-template-columns: 1fr; }
+  .steps-grid, .results-grid, .time-modes { grid-template-columns: 1fr; }
+  .leaderboard-table th, .leaderboard-table td { padding: 0.6rem 0.5rem; font-size: 0.85rem; }
+}
+
+@media (max-width: 600px) {
+  .container { padding: 0 1rem; }
+  section { padding: 2.5rem 0; }
+  .hero-title { font-size: 2.4rem; word-break: break-word; }
+  .hero-tagline { font-size: 1.15rem; }
+  .hero-blurb { font-size: 0.95rem; }
+  .stat-number { font-size: 1.6rem; }
+  .btn { padding: 0.6rem 1rem; font-size: 0.9rem; }
+  .section-title { font-size: 1.6rem; }
+  .section-subtitle { font-size: 0.95rem; }
+  .carousel-card { width: 220px; }
+  .carousel-card video { height: 124px; }
+  .citation-block pre { font-size: 0.7rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════════════════════
+     HERO
+     ════════════════════════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="container">
+    <h1 class="hero-title"><span class="highlight">Gym-Anything-RT</span></h1>
+    <p class="hero-tagline">Scaling Real-Time Environments for Vision-Language Agents</p>
+    <p class="hero-authors">
+      <span>Pranjal Aggarwal</span> · <span>Sean Welleck</span>
+      <br>Carnegie Mellon University
+    </p>
+    <p class="hero-blurb">
+      Video games and physical devices keep changing while an agent thinks.
+      <strong>Gym-Anything-RT</strong> builds real-time minigames to measure this, and controls
+      their clock so the same task can be played live, slowed down, or paused.
+    </p>
+    <div class="btn-row">
+      <a href="https://arxiv.org/abs/2610.37567" class="btn btn-primary" id="paper-link">📄 Paper</a>
+      <a href="explore/" class="btn">✨ Explore</a>
+      <a href="https://github.com/gym-anything/gym-anything-rt" class="btn">💻 Code</a>
+      <a href="#human-vs-ai" class="btn">🎮 Human vs. AI</a>
+      <a href="arcade/" class="btn">🕹️ Try a Game</a>
+      <a href="#leaderboard" class="btn">🏆 Leaderboard</a>
+      <a href="#citation" class="btn">📚 BibTeX</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════════
+     MINIGAME CAROUSEL
+     ════════════════════════════════════════════════════════════════ -->
+<section id="carousel-section">
+  <div class="carousel-track" id="carousel-row1"></div>
+  <div style="height: 1rem;"></div>
+  <div class="carousel-track reverse" id="carousel-row2"></div>
+  <p class="carousel-caption">Oracle solutions of minigames in Gym-Anything-RT, at difficulty 5 with full interaction.</p>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════════
+     STATS BAR
+     ════════════════════════════════════════════════════════════════ -->
+<section id="stats">
+  <div class="container">
+    <div class="stats-bar">
+      <div class="stat-card">
+        <div class="stat-tooltip"><p>Each real-time minigame has a <strong>non-real-time counterpart</strong>, five difficulty levels, and two interaction modes, giving 2,000 configurations in total.</p></div>
+        <div class="stat-number">100</div>
+        <div class="stat-label">Real-Time Minigames</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-tooltip"><p>The strongest model, <strong>GPT-6 Astra (xHigh)</strong>, solves 9% of the real-time tasks and 66% of their non-real-time counterparts.</p></div>
+        <div class="stat-number">9%</div>
+        <div class="stat-label">Best Model, Real Time</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-tooltip"><p>One of the authors, seeing each minigame for the first time, solved <strong>9 of 20</strong> randomly sampled real-time tasks, in 2.2 minutes per task on average.</p></div>
+        <div class="stat-number human">45%</div>
+        <div class="stat-label">Human, Real Time</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-tooltip"><p>When the minigame is <strong>paused</strong> between observation and action, Astra (xHigh) solves 75% of the same real-time tasks.</p></div>
+        <div class="stat-number">75%</div>
+        <div class="stat-label">Best Model, Paused</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════════
+     HUMAN VS AI
+     ════════════════════════════════════════════════════════════════ -->
+<section id="human-vs-ai">
+  <div class="container">
+    <div class="section-label">Side by Side</div>
+    <h2 class="section-title">Human vs. AI on the Same Minigame</h2>
+    <p class="section-subtitle">
+      Frontier models take several seconds for every input, and the minigame keeps moving in the meantime.
+      The model replays are sped up, and their clock shows the real elapsed time.
+    </p>
+    <div class="example-tabs" id="example-tabs"></div>
+    <p class="example-task" id="example-task"></p>
+    <div class="versus">
+      <div class="player">
+        <div class="player-head">
+          <span class="player-title">Human</span>
+          <span class="speed">real time</span>
+        </div>
+        <div class="screen" id="human-screen">
+          <video id="human-video" muted loop playsinline autoplay preload="metadata"></video>
+          <div class="placeholder">Human recording coming soon</div>
+        </div>
+        <div class="player-foot">
+          <span class="outcome pass" id="human-outcome"></span>
+        </div>
+      </div>
+      <div class="player">
+        <div class="player-head">
+          <span class="player-title" id="model-title"></span>
+          <span class="speed" id="model-speed"></span>
+        </div>
+        <div class="screen">
+          <video id="model-video" muted loop playsinline autoplay preload="metadata"></video>
+        </div>
+        <div class="player-foot">
+          <span class="outcome fail" id="model-outcome"></span>
+          <div class="model-switch" id="model-switch">
+            <button data-model="astra" class="active">GPT-6 Astra</button>
+            <button data-model="opus">Claude Opus 5.5</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="example-note">
+      All runs use difficulty 5 with full interaction in the live setting, on the same seed.
+      Orange rings mark where the model clicked after seeing each screenshot.
+    </p>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════════
+     LEADERBOARD
+     ════════════════════════════════════════════════════════════════ -->
+<section id="leaderboard">
+  <div class="container">
+    <div class="section-label">Benchmark</div>
+    <h2 class="section-title">Leaderboard</h2>
+    <p class="section-subtitle">
+      100 real-time minigames at the highest difficulty. Every model does far better on the
+      non-real-time counterparts of the same minigames, and every model is slower than a human.
+    </p>
+    <div class="leaderboard-wrap">
+    <table class="leaderboard-table">
+      <thead>
+        <tr>
+          <th class="rank">#</th>
+          <th>Model</th>
+          <th>Real-time</th>
+          <th>Non-real-time</th>
+          <th>Time / attempt</th>
+          <th>Cost / attempt</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="human-row">
+          <td class="rank">–</td>
+          <td class="model-name">Human<sup>*</sup></td>
+          <td class="pass-rate">45.0%</td>
+          <td class="num">–</td>
+          <td class="num">2.2 min</td>
+          <td class="num">–</td>
+        </tr>
+        <tr>
+          <td class="rank">1</td>
+          <td class="model-name">GPT-6 Astra (xHigh)</td>
+          <td class="pass-rate">9.0%</td>
+          <td class="num">66.0%</td>
+          <td class="num">7.2 min</td>
+          <td class="num">$4.50</td>
+        </tr>
+        <tr>
+          <td class="rank">2</td>
+          <td class="model-name">GPT-6 Astra (Low)</td>
+          <td class="pass-rate">8.0%</td>
+          <td class="num">58.0%</td>
+          <td class="num">4.3 min</td>
+          <td class="num">$2.76</td>
+        </tr>
+        <tr>
+          <td class="rank">3</td>
+          <td class="model-name">Claude Opus 5.5 (xHigh)</td>
+          <td class="pass-rate">5.0%</td>
+          <td class="num">57.0%</td>
+          <td class="num">15.8 min</td>
+          <td class="num">$6.40</td>
+        </tr>
+        <tr>
+          <td class="rank">4</td>
+          <td class="model-name">GPT-6 Luna (xHigh)</td>
+          <td class="pass-rate">1.0%</td>
+          <td class="num">17.0%</td>
+          <td class="num">6.4 min</td>
+          <td class="num">$0.07</td>
+        </tr>
+        <tr>
+          <td class="rank">5</td>
+          <td class="model-name">Qwen3.8-27B</td>
+          <td class="pass-rate">1.0%</td>
+          <td class="num">2.0%</td>
+          <td class="num">63.0 min</td>
+          <td class="num">$0.64</td>
+        </tr>
+        <tr>
+          <td class="rank">6</td>
+          <td class="model-name">Qwen3.5-9B</td>
+          <td class="pass-rate">0.0%</td>
+          <td class="num">1.0%</td>
+          <td class="num">75.9 min</td>
+          <td class="num">$0.62</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="leaderboard-note">
+      Pass rates at difficulty 5 with full interaction in the live setting. Time and cost are averages per real-time attempt.
+      <br><sup>*</sup>One of the authors, on 20 randomly sampled real-time tasks, seeing each minigame for the first time.
+    </p>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════════
+     RESULTS
+     ════════════════════════════════════════════════════════════════ -->
+<section id="results">
+  <div class="container">
+    <div class="section-label">Findings</div>
+    <h2 class="section-title">Key Results</h2>
+    <p class="section-subtitle">
+      Frontier models fail mainly because they are too slow. Giving them more time recovers most of
+      the gap, and letting them write code that acts on their behalf recovers part of it.
+    </p>
+    <div class="results-grid">
+      <div class="result-card">
+        <h3>Real Time Is the Gap</h3>
+        <p class="result-desc">Pass rates on the 100 real-time minigames and their non-real-time counterparts.</p>
+        <div class="chart-container"><canvas id="chart-gap"></canvas></div>
+      </div>
+      <div class="result-card">
+        <h3>Speed Is the Bottleneck</h3>
+        <p class="result-desc">Slowing the environment raises Astra's pass rate on the same real-time tasks from 9% to 57%, and pausing raises it to 75%.</p>
+        <div class="chart-container"><canvas id="chart-speed"></canvas></div>
+      </div>
+      <div class="result-card">
+        <h3>Code Partially Compensates</h3>
+        <p class="result-desc">When allowed to run code, Astra writes scripts that perceive and act between its own responses, raising its real-time pass rate from 9% to 31%.</p>
+        <div class="chart-container"><canvas id="chart-code"></canvas></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════════
+     HOW IT WORKS
+     ════════════════════════════════════════════════════════════════ -->
+<section id="how-it-works">
+  <div class="container">
+    <div class="section-label">The Method</div>
+    <h2 class="section-title">How It Works</h2>
+    <p class="section-subtitle">
+      Coding agents build each minigame as a program, and our evaluation stack controls its clock.
+    </p>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-number">01 · CREATE</div>
+        <h3>Creator and Auditor Agents</h3>
+        <p>A creator agent turns a seed puzzle into a real-time minigame program with an oracle solution that shows the task is solvable. Independent audit agents test it and send problems back until it passes.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">02 · CONTROL TIME</div>
+        <h3>Live, Slowed, or Paused</h3>
+        <p>Our evaluation stack controls every clock in the minigame, so the same task can run at its natural speed, slowed down to give the agent more time, or paused between observation and action.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">03 · VARY</div>
+        <h3>Controlled Variants</h3>
+        <p>Each minigame has a non-real-time counterpart, five difficulty levels, and two interaction modes. Review agents label the capabilities each configuration requires.</p>
+      </div>
+    </div>
+
+    <div class="pipeline">
+      <div class="node"><b>Survey</b><span>source records</span></div>
+      <span class="arrow">→</span>
+      <div class="node"><b>Selection</b><span>seed minigame</span></div>
+      <span class="arrow">→</span>
+      <div class="loop">
+        <div class="node agent"><b>Creator</b><span>program + oracle</span></div>
+        <span class="arrow">⇄</span>
+        <div class="node agent"><b>Auditor</b><span>verification</span></div>
+        <span class="loop-label">revise</span>
+      </div>
+      <span class="arrow">→</span>
+      <div class="node"><b>Review</b><span>difficulty, capabilities</span></div>
+      <span class="arrow">→</span>
+      <div class="node"><b>2,000</b><span>configurations</span></div>
+    </div>
+
+    <div class="time-modes">
+      <div class="mode-card">
+        <h4>Live</h4>
+        <div class="track live"><div class="dot"></div></div>
+        <p>The minigame runs at its natural speed while the model reasons.</p>
+      </div>
+      <div class="mode-card">
+        <h4>Slowed (up to 64×)</h4>
+        <div class="track slow"><div class="dot"></div></div>
+        <p>Every clock in the minigame runs slower, while actions and screenshots stay real time.</p>
+      </div>
+      <div class="mode-card">
+        <h4>Paused</h4>
+        <div class="track paused"><div class="dot"></div></div>
+        <p>The minigame advances through a short observation window, then freezes until the model acts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════════
+     CITATION
+     ════════════════════════════════════════════════════════════════ -->
+<section id="citation">
+  <div class="container">
+    <div class="section-label">Citation</div>
+    <h2 class="section-title">BibTeX</h2>
+    <div class="citation-block">
+      <button class="copy-btn" onclick="copyBib()">Copy</button>
+      <pre id="bibtex">@misc{aggarwal2026gymanythingrt,
+      title={Gym-Anything-RT: Scaling Real-Time Environments for Vision-Language Agents},
+      author={Pranjal Aggarwal and Sean Welleck},
+      year={2026},
+      eprint={2610.37567},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2610.37567},
+}</pre>
+    </div>
+    <div class="btn-row" style="margin-top: 1.5rem;">
+      <a href="https://arxiv.org/abs/2610.37567" class="btn" id="paper-link-2">📄 arXiv</a>
+      <a href="https://github.com/gym-anything/gym-anything-rt" class="btn">💻 GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">Gym-Anything-RT · Carnegie Mellon University · 2026</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+// ── MINIGAME CAROUSEL ──
+// Each row opens with games that look like ones people already know.
+const row1 = [
+  ['rotating-on-screen-keyboard', 'Rotating On-Screen Keyboard'],
+  ['courtesy-junction', 'Courtesy Junction'],
+  ['bomb-manual-from-hell', 'Bomb Manual From Hell'],
+  ['isometric-voxel-extraction-mine', 'Isometric Voxel Extraction Mine'],
+  ['cloudstep-caddie', 'Cloudstep Caddie'],
+  ['top-face-dice-arithmetic', 'Top-Face Dice Arithmetic'],
+  ['polyrhythm-customs', 'Polyrhythm Customs'],
+  ['motion-only-ghost-jigsaw', 'Motion-Only Ghost Jigsaw'],
+  ['polycube-parcel', 'Polycube Parcel'],
+  ['after-hours-at-the-reliquary', 'After Hours at the Reliquary'],
+  ['blind-dice-courier', 'Blind Dice Courier'],
+  ['cell-gatekeeper', 'Cell Gatekeeper'],
+  ['circle-limit-twist', 'Circle Limit Twist'],
+  ['cloudpost-circuit', 'Cloudpost Circuit'],
+  ['consequences-boss', 'Consequences Boss'],
+  ['craftcha-alchemy-bench', 'CRAFTCHA: Alchemy Bench'],
+  ['downsky-causeway', 'Downsky Causeway'],
+];
+const row2 = [
+  ['impossible-ecology', 'Impossible Ecology'],
+  ['lantern-loft', 'Lantern Loft'],
+  ['collision-chimes', 'Collision Chimes'],
+  ['funeral-ritual', 'Funeral Ritual'],
+  ['lanternwing-roundup', 'Lanternwing Roundup'],
+  ['reflow-vitrine', 'Reflow Vitrine'],
+  ['the-unlabeled-drawer', 'The Unlabeled Drawer'],
+  ['rising-causeway', 'Rising Causeway'],
+  ['hologram-silhouette-foundry', 'Hologram Silhouette Foundry'],
+  ['the-last-carbon-isles', 'The Last Carbon Isles'],
+  ['pearl-lattice', 'Pearl Lattice'],
+  ['rayglass-vault', 'Rayglass Vault'],
+  ['recursive-dollhouse-smuggling', 'Recursive Dollhouse Smuggling'],
+  ['reveal-to-identify', 'Reveal to Identify'],
+  ['surveyors-toybox', 'Surveyors Toybox'],
+  ['zero-g-cable-autopsy', 'Zero-G Cable Autopsy'],
+];
+
+function buildCarousel(containerId, items) {
+  const track = document.getElementById(containerId);
+  // Two copies so the scroll loops without a gap.
+  for (const [slug, name] of [...items, ...items]) {
+    const card = document.createElement('div');
+    card.className = 'carousel-card';
+    card.innerHTML = `<video muted loop playsinline preload="none" poster="assets/clips/${slug}.jpg" src="assets/clips/${slug}.mp4"></video><div class="label">${name}</div>`;
+    track.appendChild(card);
+  }
+}
+
+buildCarousel('carousel-row1', row1);
+buildCarousel('carousel-row2', row2);
+
+// Play only the clips that are on screen.
+const clipObserver = new IntersectionObserver(entries => {
+  for (const e of entries) {
+    if (e.isIntersecting) e.target.play().catch(() => {});
+    else e.target.pause();
+  }
+}, { threshold: 0.1 });
+document.querySelectorAll('.carousel-card video').forEach(v => clipObserver.observe(v));
+
+// ── HUMAN VS AI ──
+const examples = {
+  rotating_keyboard: {
+    env: 'rotating_keyboard_v2_env',
+    title: 'Rotating On-Screen Keyboard',
+    task: 'Type the shown code on the on-screen keyboard and confirm it. The keyboard keeps turning and tilting in 3D, so every key moves between a screenshot and the next click.',
+    human: 'Solved in 45 s',
+    astra: { outcome: 'Failed after 14 min', speed: 23 },
+    opus: { outcome: 'Failed after 71 min', speed: 52 },
+  },
+  concertina_courier: {
+    env: 'concertina_courier_v2_env',
+    title: 'Concertina Courier',
+    task: 'Collect every gold seal. The parcel keeps its area, cannot jump, and falls when unsupported. Hold a body arrow to slide or morph it, and release to coast.',
+    human: 'Solved in 16 s',
+    astra: { outcome: 'Failed after 17 min', speed: 31 },
+    opus: { outcome: 'Failed after 39 min', speed: 71 },
+  },
+  impossible_ecology: {
+    env: 'impossible_ecology_v2_env',
+    title: 'Impossible Ecology',
+    task: 'Calibrate three fields, then shepherd all six coupled organisms into matching sanctuaries while ambient currents keep them moving.',
+    human: 'Solved in 45 s',
+    astra: { outcome: 'Failed after 19 min', speed: 35 },
+    opus: { outcome: 'Failed after 27 min', speed: 43 },
+  },
+};
+
+const modelNames = { astra: 'GPT-6 Astra (xHigh)', opus: 'Claude Opus 5.5 (xHigh)' };
+let currentTask = 'rotating_keyboard';
+let currentModel = 'astra';
+
+function showExample() {
+  const ex = examples[currentTask];
+  document.getElementById('example-task').innerHTML = `<strong>Task.</strong> ${ex.task} <a class="play-this" href="arcade/#${ex.env}">▶ Play it yourself</a>`;
+  const humanOutcome = document.getElementById('human-outcome');
+  humanOutcome.textContent = ex.human;
+  humanOutcome.style.display = ex.human ? '' : 'none';
+
+  const humanScreen = document.getElementById('human-screen');
+  const humanVideo = document.getElementById('human-video');
+  humanScreen.classList.remove('missing');
+  humanVideo.poster = `assets/examples/task_${currentTask}.jpg`;
+  humanVideo.src = `assets/examples/human_${currentTask}.mp4`;
+
+  const m = ex[currentModel];
+  document.getElementById('model-title').textContent = modelNames[currentModel];
+  document.getElementById('model-speed').textContent = `replay ≈${m.speed}× speed`;
+  document.getElementById('model-outcome').textContent = m.outcome;
+  const modelVideo = document.getElementById('model-video');
+  modelVideo.poster = `assets/examples/${currentModel}_${currentTask}.jpg`;
+  modelVideo.src = `assets/examples/${currentModel}_${currentTask}.mp4`;
+  modelVideo.play().catch(() => {});
+
+  document.querySelectorAll('#example-tabs .tab').forEach(t => t.classList.toggle('active', t.dataset.task === currentTask));
+  document.querySelectorAll('#model-switch button').forEach(b => b.classList.toggle('active', b.dataset.model === currentModel));
+}
+
+// Until the human recordings are added, show the starting screen with a note.
+document.getElementById('human-video').addEventListener('error', () => {
+  document.getElementById('human-screen').classList.add('missing');
+});
+
+const tabs = document.getElementById('example-tabs');
+Object.entries(examples).forEach(([key, ex], i) => {
+  const b = document.createElement('button');
+  b.className = 'tab';
+  b.dataset.task = key;
+  b.textContent = `Example ${i + 1}: ${ex.title}`;
+  b.onclick = () => { currentTask = key; showExample(); };
+  tabs.appendChild(b);
+});
+
+document.querySelectorAll('#model-switch button').forEach(b => {
+  b.onclick = () => { currentModel = b.dataset.model; showExample(); };
+});
+
+showExample();
+
+// ── CHARTS (all data from the paper) ──
+Chart.defaults.color = '#5a5a63';
+Chart.defaults.font.family = "'Inter', sans-serif";
+Chart.defaults.borderColor = 'rgba(0,0,0,0.08)';
+const grid = 'rgba(0,0,0,0.06)';
+const pct = { callback: v => v + '%' };
+
+new Chart(document.getElementById('chart-gap'), {
+  type: 'bar',
+  data: {
+    labels: ['Astra xHigh', 'Astra Low', 'Opus 5.5', 'Luna', 'Qwen 27B', 'Qwen 9B'],
+    datasets: [
+      { label: 'Real-time', data: [9, 8, 5, 1, 1, 0], backgroundColor: '#0891b2', borderRadius: 4 },
+      { label: 'Non-real-time', data: [66, 58, 57, 17, 2, 1], backgroundColor: 'rgba(124,58,237,0.35)', borderRadius: 4 },
+    ],
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: { legend: { position: 'top', labels: { boxWidth: 12, padding: 12 } },
+               tooltip: { callbacks: { label: c => `${c.dataset.label}: ${c.raw}%` } } },
+    scales: { y: { min: 0, max: 80, ticks: pct, grid: { color: grid } },
+              x: { grid: { display: false }, ticks: { font: { size: 10 } } } },
+  },
+});
+
+const paused = (value, color) => ({
+  label: '', data: [value, value, value, value], borderColor: color, borderDash: [5, 5],
+  borderWidth: 1.5, pointRadius: 0, fill: false,
+});
+
+new Chart(document.getElementById('chart-speed'), {
+  type: 'line',
+  data: {
+    labels: ['1×', '4×', '16×', '64×'],
+    datasets: [
+      { label: 'Astra xHigh', data: [9, 17, 48, 57], borderColor: '#0891b2', backgroundColor: '#0891b2', pointRadius: 5, borderWidth: 2.5, tension: 0.25 },
+      { label: 'Astra Low', data: [8, 15, 30, 42], borderColor: '#d97706', backgroundColor: '#d97706', pointRadius: 5, borderWidth: 2.5, tension: 0.25 },
+      { ...paused(75, '#0891b2'), label: 'Paused (xHigh: 75%)' },
+      { ...paused(58, '#d97706'), label: 'Paused (Low: 58%)' },
+    ],
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: { legend: { position: 'top', labels: { boxWidth: 12, padding: 10, font: { size: 10 } } },
+               tooltip: { callbacks: { label: c => `${c.dataset.label}: ${c.raw}%` } } },
+    scales: { y: { min: 0, max: 80, ticks: pct, grid: { color: grid } },
+              x: { title: { display: true, text: 'Environment slowdown' }, grid: { display: false } } },
+  },
+});
+
+new Chart(document.getElementById('chart-code'), {
+  type: 'bar',
+  data: {
+    labels: ['Astra xHigh', 'Astra Low', 'Luna'],
+    datasets: [
+      { label: 'Without code', data: [9, 8, 1], backgroundColor: 'rgba(8,145,178,0.3)', borderRadius: 4 },
+      { label: 'With code', data: [31, 14, 5], backgroundColor: '#0891b2', borderRadius: 4 },
+    ],
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: { legend: { position: 'top', labels: { boxWidth: 12, padding: 12 } },
+               tooltip: { callbacks: { label: c => `${c.dataset.label}: ${c.raw}%` } } },
+    scales: { y: { min: 0, max: 40, ticks: pct, title: { display: true, text: 'Real-time pass rate' }, grid: { color: grid } },
+              x: { grid: { display: false } } },
+  },
+});
+
+// ── COPY BIB ──
+function copyBib() {
+  const text = document.getElementById('bibtex').textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.querySelector('.copy-btn');
+    btn.textContent = 'Copied!';
+    setTimeout(() => btn.textContent = 'Copy', 2000);
+  });
+}
+</script>
+
+<script data-goatcounter="https://pranjal.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

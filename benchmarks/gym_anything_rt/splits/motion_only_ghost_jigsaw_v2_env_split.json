@@ -1,0 +1,66 @@
+{
+  "env_folder": "motion_only_ghost_jigsaw_v2_env",
+  "all_tasks": [
+    "motion_only_ghost_jigsaw_v2_d1_full_seed_0001",
+    "motion_only_ghost_jigsaw_v2_d1_simplified_seed_0001",
+    "motion_only_ghost_jigsaw_v2_d2_full_seed_0001",
+    "motion_only_ghost_jigsaw_v2_d2_simplified_seed_0001",
+    "motion_only_ghost_jigsaw_v2_d3_full_seed_0001",
+    "motion_only_ghost_jigsaw_v2_d3_simplified_seed_0001",
+    "motion_only_ghost_jigsaw_v2_d4_full_seed_0001",
+    "motion_only_ghost_jigsaw_v2_d4_simplified_seed_0001",
+    "motion_only_ghost_jigsaw_v2_d5_full_seed_0001",
+    "motion_only_ghost_jigsaw_v2_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "motion_only_ghost_jigsaw_v2_d1_full_seed_0001",
+    "motion_only_ghost_jigsaw_v2_d1_simplified_seed_0001",
+    "motion_only_ghost_jigsaw_v2_d2_full_seed_0001",
+    "motion_only_ghost_jigsaw_v2_d2_simplified_seed_0001",
+    "motion_only_ghost_jigsaw_v2_d3_full_seed_0001",
+    "motion_only_ghost_jigsaw_v2_d3_simplified_seed_0001",
+    "motion_only_ghost_jigsaw_v2_d4_full_seed_0001",
+    "motion_only_ghost_jigsaw_v2_d4_simplified_seed_0001",
+    "motion_only_ghost_jigsaw_v2_d5_full_seed_0001",
+    "motion_only_ghost_jigsaw_v2_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "motion_only_ghost_jigsaw_v2_d5_full_seed_0001"
+    ],
+    "full": [
+      "motion_only_ghost_jigsaw_v2_d1_full_seed_0001",
+      "motion_only_ghost_jigsaw_v2_d2_full_seed_0001",
+      "motion_only_ghost_jigsaw_v2_d3_full_seed_0001",
+      "motion_only_ghost_jigsaw_v2_d4_full_seed_0001",
+      "motion_only_ghost_jigsaw_v2_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "motion_only_ghost_jigsaw_v2_d1_simplified_seed_0001",
+      "motion_only_ghost_jigsaw_v2_d2_simplified_seed_0001",
+      "motion_only_ghost_jigsaw_v2_d3_simplified_seed_0001",
+      "motion_only_ghost_jigsaw_v2_d4_simplified_seed_0001",
+      "motion_only_ghost_jigsaw_v2_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "motion_only_ghost_jigsaw_v2_d1_full_seed_0001",
+      "motion_only_ghost_jigsaw_v2_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "motion_only_ghost_jigsaw_v2_d2_full_seed_0001",
+      "motion_only_ghost_jigsaw_v2_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "motion_only_ghost_jigsaw_v2_d3_full_seed_0001",
+      "motion_only_ghost_jigsaw_v2_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "motion_only_ghost_jigsaw_v2_d4_full_seed_0001",
+      "motion_only_ghost_jigsaw_v2_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "motion_only_ghost_jigsaw_v2_d5_full_seed_0001",
+      "motion_only_ghost_jigsaw_v2_d5_simplified_seed_0001"
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "env_folder": "clockwork_clutch_safe_v2_env",
+  "all_tasks": [
+    "clockwork_clutch_safe_v2_d1_full_seed_0001",
+    "clockwork_clutch_safe_v2_d1_simplified_seed_0001",
+    "clockwork_clutch_safe_v2_d2_full_seed_0001",
+    "clockwork_clutch_safe_v2_d2_simplified_seed_0001",
+    "clockwork_clutch_safe_v2_d3_full_seed_0001",
+    "clockwork_clutch_safe_v2_d3_simplified_seed_0001",
+    "clockwork_clutch_safe_v2_d4_full_seed_0001",
+    "clockwork_clutch_safe_v2_d4_simplified_seed_0001",
+    "clockwork_clutch_safe_v2_d5_full_seed_0001",
+    "clockwork_clutch_safe_v2_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "clockwork_clutch_safe_v2_d1_full_seed_0001",
+    "clockwork_clutch_safe_v2_d1_simplified_seed_0001",
+    "clockwork_clutch_safe_v2_d2_full_seed_0001",
+    "clockwork_clutch_safe_v2_d2_simplified_seed_0001",
+    "clockwork_clutch_safe_v2_d3_full_seed_0001",
+    "clockwork_clutch_safe_v2_d3_simplified_seed_0001",
+    "clockwork_clutch_safe_v2_d4_full_seed_0001",
+    "clockwork_clutch_safe_v2_d4_simplified_seed_0001",
+    "clockwork_clutch_safe_v2_d5_full_seed_0001",
+    "clockwork_clutch_safe_v2_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "clockwork_clutch_safe_v2_d5_full_seed_0001"
+    ],
+    "full": [
+      "clockwork_clutch_safe_v2_d1_full_seed_0001",
+      "clockwork_clutch_safe_v2_d2_full_seed_0001",
+      "clockwork_clutch_safe_v2_d3_full_seed_0001",
+      "clockwork_clutch_safe_v2_d4_full_seed_0001",
+      "clockwork_clutch_safe_v2_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "clockwork_clutch_safe_v2_d1_simplified_seed_0001",
+      "clockwork_clutch_safe_v2_d2_simplified_seed_0001",
+      "clockwork_clutch_safe_v2_d3_simplified_seed_0001",
+      "clockwork_clutch_safe_v2_d4_simplified_seed_0001",
+      "clockwork_clutch_safe_v2_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "clockwork_clutch_safe_v2_d1_full_seed_0001",
+      "clockwork_clutch_safe_v2_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "clockwork_clutch_safe_v2_d2_full_seed_0001",
+      "clockwork_clutch_safe_v2_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "clockwork_clutch_safe_v2_d3_full_seed_0001",
+      "clockwork_clutch_safe_v2_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "clockwork_clutch_safe_v2_d4_full_seed_0001",
+      "clockwork_clutch_safe_v2_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "clockwork_clutch_safe_v2_d5_full_seed_0001",
+      "clockwork_clutch_safe_v2_d5_simplified_seed_0001"
+    ]
+  }
+}

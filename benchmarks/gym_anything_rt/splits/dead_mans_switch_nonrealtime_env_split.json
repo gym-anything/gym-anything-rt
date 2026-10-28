@@ -1,0 +1,66 @@
+{
+  "env_folder": "dead_mans_switch_nonrealtime_env",
+  "all_tasks": [
+    "dead_mans_switch_nonrealtime_d1_full_seed_0001",
+    "dead_mans_switch_nonrealtime_d1_simplified_seed_0001",
+    "dead_mans_switch_nonrealtime_d2_full_seed_0001",
+    "dead_mans_switch_nonrealtime_d2_simplified_seed_0001",
+    "dead_mans_switch_nonrealtime_d3_full_seed_0001",
+    "dead_mans_switch_nonrealtime_d3_simplified_seed_0001",
+    "dead_mans_switch_nonrealtime_d4_full_seed_0001",
+    "dead_mans_switch_nonrealtime_d4_simplified_seed_0001",
+    "dead_mans_switch_nonrealtime_d5_full_seed_0001",
+    "dead_mans_switch_nonrealtime_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "dead_mans_switch_nonrealtime_d1_full_seed_0001",
+    "dead_mans_switch_nonrealtime_d1_simplified_seed_0001",
+    "dead_mans_switch_nonrealtime_d2_full_seed_0001",
+    "dead_mans_switch_nonrealtime_d2_simplified_seed_0001",
+    "dead_mans_switch_nonrealtime_d3_full_seed_0001",
+    "dead_mans_switch_nonrealtime_d3_simplified_seed_0001",
+    "dead_mans_switch_nonrealtime_d4_full_seed_0001",
+    "dead_mans_switch_nonrealtime_d4_simplified_seed_0001",
+    "dead_mans_switch_nonrealtime_d5_full_seed_0001",
+    "dead_mans_switch_nonrealtime_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "dead_mans_switch_nonrealtime_d5_full_seed_0001"
+    ],
+    "full": [
+      "dead_mans_switch_nonrealtime_d1_full_seed_0001",
+      "dead_mans_switch_nonrealtime_d2_full_seed_0001",
+      "dead_mans_switch_nonrealtime_d3_full_seed_0001",
+      "dead_mans_switch_nonrealtime_d4_full_seed_0001",
+      "dead_mans_switch_nonrealtime_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "dead_mans_switch_nonrealtime_d1_simplified_seed_0001",
+      "dead_mans_switch_nonrealtime_d2_simplified_seed_0001",
+      "dead_mans_switch_nonrealtime_d3_simplified_seed_0001",
+      "dead_mans_switch_nonrealtime_d4_simplified_seed_0001",
+      "dead_mans_switch_nonrealtime_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "dead_mans_switch_nonrealtime_d1_full_seed_0001",
+      "dead_mans_switch_nonrealtime_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "dead_mans_switch_nonrealtime_d2_full_seed_0001",
+      "dead_mans_switch_nonrealtime_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "dead_mans_switch_nonrealtime_d3_full_seed_0001",
+      "dead_mans_switch_nonrealtime_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "dead_mans_switch_nonrealtime_d4_full_seed_0001",
+      "dead_mans_switch_nonrealtime_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "dead_mans_switch_nonrealtime_d5_full_seed_0001",
+      "dead_mans_switch_nonrealtime_d5_simplified_seed_0001"
+    ]
+  }
+}

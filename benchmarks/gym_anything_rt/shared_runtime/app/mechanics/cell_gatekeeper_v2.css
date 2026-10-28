@@ -1,0 +1,36 @@
+body[data-mechanic="cell-gatekeeper-v2"] { background:#050f19; color:#d3e8e7; font-family:system-ui,sans-serif; overflow:auto; }
+body[data-mechanic="cell-gatekeeper-v2"] .app-shell { padding:14px; min-height:100vh; place-items:start center; }
+.cgv2 { width:min(1220px,calc(100vw - 28px)); box-sizing:border-box; padding:18px; border:1px solid #355663; border-radius:18px; background:radial-gradient(circle at 80% 0,#203d48,#0c202d 65%); box-shadow:0 20px 70px #0006; }
+.cgv2 * { box-sizing:border-box; }
+.cgv2-head { display:flex; justify-content:space-between; align-items:center; gap:20px; }
+.cgv2-head p { margin:0 0 6px; color:#8caeb8; font:11px ui-monospace,monospace; letter-spacing:.14em; }
+.cgv2 h1 { margin:0; font-size:32px; font-weight:650; letter-spacing:-.04em; }
+.cgv2-phase { padding:10px 14px; border:1px solid #5f8b88; border-radius:8px; font:12px ui-monospace,monospace; color:#9eedce; }
+.cgv2-rules { display:flex; flex-direction:column; gap:5px; margin:14px 0; padding:12px 14px; border-radius:9px; border:1px solid #385866; background:#07182488; font-size:13px; color:#a7c3cc; }
+.cgv2-rules b { font-weight:550; color:#e2efdf; }
+.cgv2-main { display:grid; grid-template-columns:minmax(0,1fr) 180px; gap:14px; }
+.cgv2-chamber { position:relative; overflow:hidden; border:1px solid #385d6b; border-radius:12px; background:#091d2a; }
+.cgv2-canvas { display:block; width:100%; height:auto; touch-action:none; user-select:none; cursor:crosshair; }
+.cgv2-legend { display:flex; gap:18px; align-items:center; padding:6px 16px 12px; font:10px ui-monospace,monospace; color:#92b3bd; }
+.cgv2-legend span { display:flex; align-items:center; gap:6px; }
+.cgv2-legend i { width:10px; height:10px; display:inline-block; border-radius:50%; }
+.cgv2-legend .solid { background:#76e4cb; }.cgv2-legend .hollow { border:2px solid #ff78be; }
+.cgv2-main aside { display:flex; flex-direction:column; gap:8px; }
+.cgv2 article { border:1px solid #355663; border-radius:10px; padding:12px; background:#0b1d28b8; }
+.cgv2-species { display:flex; justify-content:space-between; align-items:center; color:var(--ion); font-weight:650; font-size:17px; }
+.cgv2-species small { color:#7e9fa9; font:10px ui-monospace,monospace; }
+.cgv2-count { margin-top:8px; font-size:28px; color:#d8e9e3; }.cgv2 article p { margin:3px 0 9px; color:#7898a3; font:9px ui-monospace,monospace; }
+.cgv2-resources { display:flex; justify-content:space-between; font:11px ui-monospace,monospace; color:#9babb0; }
+.cgv2-fuel { color:#e7cb87; }.cgv2 article[data-open="true"] .cgv2-gate { color:var(--ion); }
+.cgv2 button { border:1px solid #6a8a8f; border-radius:7px; background:#203d47; color:#d4e7dd; cursor:pointer; min-height:35px; padding:8px 12px; font:11px ui-monospace,monospace; }
+.cgv2 button:hover { background:#315a62; }.cgv2 button:disabled { opacity:.5; cursor:default; }
+.cgv2 article button { margin-top:10px; width:100%; }.cgv2-key { display:flex; align-items:center; gap:8px; margin-top:10px; color:#a4bfc5; font:10px ui-monospace,monospace; }
+.cgv2 kbd { display:grid; place-items:center; border:1px solid #698e91; width:27px; height:27px; border-radius:5px; background:#15333e; color:#e2eedb; }
+.cgv2-note { color:#9ab7c0; padding:4px; font-size:11px; line-height:1.5; }
+.cgv2 footer { display:flex; align-items:center; gap:10px; padding-top:14px; }
+.cgv2 .readout { flex:1; font:11px ui-monospace,monospace; color:#abc7cb; }.cgv2 .readout[data-status="passed"] {color:#91e6b1;}.cgv2 .readout[data-status="error"]{color:#ff96b2;}
+.cgv2 [data-start] { background:#bddfba; color:#102922; border-color:#d1f4be; font-weight:bold; }
+.cgv2-verdict { position:absolute; inset:0; display:grid; place-content:center; justify-items:center; gap:16px; background:#09212ade; backdrop-filter:blur(2px); }
+.cgv2-verdict[hidden] { display:none; }.cgv2-verdict strong { font-size:62px; color:#a7efc4; font-weight:650; letter-spacing:.08em; }
+.cgv2-verdict span { color:#c5dfdf; font-size:15px; }.cgv2-verdict[data-outcome="failed"]{background:#2d0e25df;}.cgv2-verdict[data-outcome="failed"] strong{color:#ff9bb4;}
+@media(max-width:800px) {.cgv2 {padding:12px;}.cgv2-main {grid-template-columns:1fr;}.cgv2-main aside{display:grid;grid-template-columns:repeat(3,1fr);}.cgv2-note {grid-column:1/-1;}.cgv2 h1{font-size:25px;}.cgv2 footer{flex-wrap:wrap;}.cgv2 .readout{flex-basis:100%;}}

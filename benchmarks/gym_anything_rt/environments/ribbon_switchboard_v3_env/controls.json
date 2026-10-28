@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "ribbon_switchboard_v3",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "parameters": {
+        "heads": 1,
+        "ribbons": 2,
+        "columns": 4,
+        "amplitude": 30,
+        "wind_span_ms": 6200,
+        "tolerance": 18,
+        "burn_ms": 1600,
+        "travel_ms": 28000,
+        "servo_tau_ms": 110
+      },
+      "summary": "One contact follows two ribbons with broad bands and slow changing wind.",
+      "natural_language_by_interaction": {
+        "full": "Hover over the weave to illuminate local spans and discover the marked source ribbon through its crossings. Inspected spans stay lit; you can inspect safely before energizing. Energize the loom. Drag each ivory servo knob vertically to keep its advancing contact inside the glowing band of the marked source ribbon. All ribbons move continuously during the run, including inspection, and a full visible HEAT bar ends the attempt. Keep every contact connected through the entire braid. Faint echoes show the last 0.8 seconds.",
+        "simplified": "Click the weave to illuminate local spans and discover the marked source ribbon through its crossings. Inspected spans stay lit; you can inspect safely before energizing. Energize the loom. Click a height on each ivory servo rail to keep its advancing contact inside the glowing band of the marked source ribbon. All ribbons move continuously during the run, including inspection, and a full visible HEAT bar ends the attempt. Keep every contact connected through the entire braid. Faint echoes show the last 0.8 seconds."
+      }
+    },
+    "2": {
+      "label": "easy",
+      "parameters": {
+        "heads": 1,
+        "ribbons": 3,
+        "columns": 5,
+        "amplitude": 32,
+        "wind_span_ms": 5200,
+        "tolerance": 16,
+        "burn_ms": 1400,
+        "travel_ms": 28000,
+        "servo_tau_ms": 140
+      },
+      "summary": "Three-way crossings, narrower bands and faster wind require closer prediction for one contact.",
+      "natural_language_by_interaction": {
+        "full": "Hover over the weave to illuminate local spans and discover the marked source ribbon through its crossings. Inspected spans stay lit; you can inspect safely before energizing. Energize the loom. Drag each ivory servo knob vertically to keep its advancing contact inside the glowing band of the marked source ribbon. All ribbons move continuously during the run, including inspection, and a full visible HEAT bar ends the attempt. Keep every contact connected through the entire braid. Faint echoes show the last 0.8 seconds.",
+        "simplified": "Click the weave to illuminate local spans and discover the marked source ribbon through its crossings. Inspected spans stay lit; you can inspect safely before energizing. Energize the loom. Click a height on each ivory servo rail to keep its advancing contact inside the glowing band of the marked source ribbon. All ribbons move continuously during the run, including inspection, and a full visible HEAT bar ends the attempt. Keep every contact connected through the entire braid. Faint echoes show the last 0.8 seconds."
+      }
+    },
+    "3": {
+      "label": "medium",
+      "parameters": {
+        "heads": 2,
+        "ribbons": 3,
+        "columns": 5,
+        "amplitude": 34,
+        "wind_span_ms": 4400,
+        "tolerance": 14,
+        "burn_ms": 1300,
+        "travel_ms": 30000,
+        "servo_tau_ms": 170
+      },
+      "summary": "Two independently moving contacts require switching attention while both advance.",
+      "natural_language_by_interaction": {
+        "full": "Hover over the weave to illuminate local spans and discover the marked source ribbon through its crossings. Inspected spans stay lit; you can inspect safely before energizing. Energize the loom. Drag each ivory servo knob vertically to keep its advancing contact inside the glowing band of the marked source ribbon. All ribbons move continuously during the run, including inspection, and a full visible HEAT bar ends the attempt. Keep every contact connected through the entire braid. Faint echoes show the last 0.8 seconds.",
+        "simplified": "Click the weave to illuminate local spans and discover the marked source ribbon through its crossings. Inspected spans stay lit; you can inspect safely before energizing. Energize the loom. Click a height on each ivory servo rail to keep its advancing contact inside the glowing band of the marked source ribbon. All ribbons move continuously during the run, including inspection, and a full visible HEAT bar ends the attempt. Keep every contact connected through the entire braid. Faint echoes show the last 0.8 seconds."
+      }
+    },
+    "4": {
+      "label": "hard",
+      "parameters": {
+        "heads": 2,
+        "ribbons": 4,
+        "columns": 6,
+        "amplitude": 36,
+        "wind_span_ms": 3600,
+        "tolerance": 12,
+        "burn_ms": 1200,
+        "travel_ms": 32000,
+        "servo_tau_ms": 210
+      },
+      "summary": "Four-way braids and slower servos require earlier corrections across two contacts.",
+      "natural_language_by_interaction": {
+        "full": "Hover over the weave to illuminate local spans and discover the marked source ribbon through its crossings. Inspected spans stay lit; you can inspect safely before energizing. Energize the loom. Drag each ivory servo knob vertically to keep its advancing contact inside the glowing band of the marked source ribbon. All ribbons move continuously during the run, including inspection, and a full visible HEAT bar ends the attempt. Keep every contact connected through the entire braid. Faint echoes show the last 0.8 seconds.",
+        "simplified": "Click the weave to illuminate local spans and discover the marked source ribbon through its crossings. Inspected spans stay lit; you can inspect safely before energizing. Energize the loom. Click a height on each ivory servo rail to keep its advancing contact inside the glowing band of the marked source ribbon. All ribbons move continuously during the run, including inspection, and a full visible HEAT bar ends the attempt. Keep every contact connected through the entire braid. Faint echoes show the last 0.8 seconds."
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "parameters": {
+        "heads": 3,
+        "ribbons": 5,
+        "columns": 7,
+        "amplitude": 38,
+        "wind_span_ms": 3000,
+        "tolerance": 10,
+        "burn_ms": 1100,
+        "travel_ms": 34000,
+        "servo_tau_ms": 250
+      },
+      "summary": "Three concurrent five-way braids combine narrower bands, faster independent motion and the largest servo inertia.",
+      "natural_language_by_interaction": {
+        "full": "Hover over the weave to illuminate local spans and discover the marked source ribbon through its crossings. Inspected spans stay lit; you can inspect safely before energizing. Energize the loom. Drag each ivory servo knob vertically to keep its advancing contact inside the glowing band of the marked source ribbon. All ribbons move continuously during the run, including inspection, and a full visible HEAT bar ends the attempt. Keep every contact connected through the entire braid. Faint echoes show the last 0.8 seconds.",
+        "simplified": "Click the weave to illuminate local spans and discover the marked source ribbon through its crossings. Inspected spans stay lit; you can inspect safely before energizing. Energize the loom. Click a height on each ivory servo rail to keep its advancing contact inside the glowing band of the marked source ribbon. All ribbons move continuously during the run, including inspection, and a full visible HEAT bar ends the attempt. Keep every contact connected through the entire braid. Faint echoes show the last 0.8 seconds."
+      }
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Hover over the weave for local illumination; drag the ivory rail knob vertically to drive the damped contact servo."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Click the weave for the same local illumination; click a height on the same rail to set the same damped servo. No automatic targeting or interception."
+    }
+  },
+  "real_time": {
+    "observation_window_ms": 400,
+    "frames_per_observation": 3,
+    "play_time_seconds": 60
+  }
+}

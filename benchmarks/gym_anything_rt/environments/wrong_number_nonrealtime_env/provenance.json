@@ -1,0 +1,23 @@
+{
+  "name": "Wrong Number non-realtime counterpart",
+  "original_mechanic": "wrong_number",
+  "mechanic_id": "wrong_number_nonrealtime",
+  "source_anchors": [
+    "captchaware/phoneVerification"
+  ],
+  "transformation": "The donor's moving carrier phase is held at its generated phase offset until the player deliberately starts the finite lock test; trial duration, sampling, retry regeneration, and failure consequences are preserved.",
+  "validation_status": "automated_evidence_recorded_human_validation_pending",
+  "human_validation": "pending",
+  "model_evaluation": "not_requested",
+  "capability_labels": "inherited timing labels require revalidation",
+  "automated_validation": {
+    "materialized_configurations": 10,
+    "deterministic_seeds": ["1", "17", "101"],
+    "valid_and_negative_grader_checks": 30,
+    "donor_content_parity_checks": 30,
+    "isolated_headless_browser_passed": true,
+    "exported_verifier_passed": true,
+    "evidence": "evidence_docs/nonrealtime-counterpart.json"
+  },
+  "counterpart_rule": "No autonomous phase evolution occurs while awaiting line selection, tuning, or test start. The finite post-action lock test still samples for the donor-configured duration, but its signal target is static."
+}

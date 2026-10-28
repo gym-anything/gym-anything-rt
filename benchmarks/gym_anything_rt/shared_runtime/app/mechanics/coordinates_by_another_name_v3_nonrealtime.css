@@ -1,0 +1,52 @@
+.cv-root { position:relative; width:min(1160px,98vw); color:#dfd7b5; background:#172e2b; border:1px solid #718779; box-shadow:0 24px 80px #0008; font:14px/1.3 ui-monospace,monospace; }
+.cv-root header { display:flex; justify-content:space-between; padding:16px 22px 12px; border-bottom:1px solid #60776a; }
+.cv-root header p { color:#a3b8a6; font-size:10px; letter-spacing:2px; margin:0 0 6px; }
+.cv-root h1 { font:28px/1.1 Georgia,serif; margin:0; color:#ffdda0; }
+.cv-root header aside { display:flex; flex-direction:column; align-items:flex-end; gap:5px; font-size:12px; }
+.cv-contact { color:#a3b8a6; }
+.cv-root main { display:grid; grid-template-columns:minmax(0,840px) 1fr; gap:16px; padding:12px 18px 0; }
+#cv-chart { width:100%; display:block; border:1px solid #526b5f; }
+.cv-key { display:flex; justify-content:space-between; gap:8px; font-size:9px; padding:7px 0; color:#c7cdb4; }
+.cv-last { height:25px; color:#ffcc83; font-size:12px; }
+.cv-soundings { margin:0 18px 7px; height:42px; overflow:auto; font-size:10px; line-height:14px; color:#b9d7d1; }
+.cv-sector, .cv-safe { font-size:10px; color:#b9d7d1; }
+.cv-right { display:flex; flex-direction:column; gap:8px; min-width:0; }
+.cv-right p { font-size:11px; letter-spacing:1px; margin:0 0 4px; }
+.cv-fleet div { display:flex; align-items:center; gap:8px; padding:5px 0; }
+.cv-fleet b { font-size:12px; color:#ffcc83; width:23px; }
+.cv-fleet span { display:flex; gap:5px; }
+.cv-fleet i { display:block; width:17px; height:17px; border:1px solid #ffcc83; border-radius:50%; background:#365248; }
+.cv-fleet i.flooded { background:#b89e64; }
+.cv-fleet em { margin-left:auto; font-size:9px; font-style:normal; }
+.cv-legend { display:flex; flex-direction:column; gap:5px; font-size:11px; margin:4px 0 auto; color:#b7c2a9; }
+.cv-legend b { color:#dfd7b5; padding-bottom:3px; }
+.cv-root button { color:#eddfb9; background:#2c4840; border:1px solid #7b8d73; padding:9px 12px; cursor:pointer; font:12px ui-monospace,monospace; min-height:35px; }
+.cv-root button:hover { background:#466252; }
+.cv-root button:disabled { opacity:.4; cursor:default; }
+#cv-fire { color:#172e2b; background:#e8be75; font-weight:bold; }
+#cv-submit { font-size:10px; padding:6px; }
+.cv-root footer { display:grid; grid-template-columns:1fr 210px; padding:8px 20px 10px; border-top:1px solid #536e5f; gap:18px; }
+.cv-selectors { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; align-items:start; }
+.cv-selectors section { display:flex; flex-direction:column; align-items:center; }
+.cv-selectors label { display:block; text-align:center; font-size:10px; letter-spacing:2px; color:#bec9ae; }
+.cv-dial { width:148px; height:148px; touch-action:none; user-select:none; }
+.cv-dial text { fill:#bac5ac; font:bold 16px ui-monospace,monospace; }
+.cv-dial text.chosen { fill:#ffd379; }
+.cv-dial text.cv-drag-text { font:9px ui-monospace,monospace; }
+.cv-values { display:flex; flex-wrap:wrap; gap:5px; padding:14px 5px; justify-content:center; max-width:240px; min-height:133px; align-content:center; }
+.cv-values button { min-width:36px; padding:7px; }
+.cv-values button[aria-pressed=true] { background:#e8be75; color:#173329; }
+.cv-launch { display:flex; flex-direction:column; gap:7px; justify-content:center; }
+.cv-launch small { font-size:10px; color:#b5c0a7; letter-spacing:1px; }
+.cv-address { font-size:24px; color:#ffcc83; }
+.cv-flight { font-size:11px; }
+.cv-verdict:empty { display:none; }
+.cv-verdict { position:absolute; inset:70px 12px 12px; background:#0c252ae8; z-index:5; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:20px; pointer-events:auto; }
+.cv-verdict strong { font:70px Georgia,serif; color:#ffd379; }
+.cv-verdict span { font-size:16px; text-align:center; max-width:90%; }
+@media(max-height:750px) { .cv-root header { padding:10px 18px; } .cv-root h1 { font-size:25px; } .cv-dial { width:136px; height:136px; } .cv-root main { padding-top:7px; } }
+@media(max-height:750px) {
+  .cv-soundings { height:28px; }
+  .cv-root footer { padding-top:4px; padding-bottom:6px; }
+  .cv-values { min-height:109px; padding-top:9px; padding-bottom:9px; }
+}

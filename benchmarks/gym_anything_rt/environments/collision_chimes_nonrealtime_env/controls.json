@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "collision_chimes_nonrealtime",
+  "baseline": {"difficulty": 5, "interaction": "full", "real_time": "live"},
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "parameters": {"cell_count": 2, "beat_ms": 2600, "beats": 28, "note_count": 5, "flight_ms": 6400, "pickup_width": 2.1, "pickup_speed": 6.0, "drift": 2.8, "drift_span_ms": 4200, "pickup_depth_px": 24},
+      "summary": "2 coupled arrows, 2.1 slot resonators, 6.4 seconds of flight and 2.6 seconds per beat.",
+      "natural_language": "Start the choir. Each start or successful STRIKE settles the arrows and drifting pulse trails into the next fixed decision snapshot. Steer each wall's brass resonator, then click STRIKE while the arriving pulse centre is inside it. Waiting, holding and aim corrections do not advance the snapshot; a deliberate aim step moves the receiver at its bounded speed. Release before striking. A wrong enabled strike or END ATTEMPT ends this one-attempt episode."
+    },
+    "2": {
+      "label": "easy",
+      "parameters": {"cell_count": 3, "beat_ms": 2350, "beats": 30, "note_count": 8, "flight_ms": 6000, "pickup_width": 1.85, "pickup_speed": 6.0, "drift": 3.0, "drift_span_ms": 4000, "pickup_depth_px": 24},
+      "summary": "3 coupled arrows, 1.85 slot resonators, 6 seconds of flight and 2.35 seconds per beat.",
+      "natural_language": "Start the choir. Each start or successful STRIKE settles the arrows and drifting pulse trails into the next fixed decision snapshot. Steer each wall's brass resonator, then click STRIKE while the arriving pulse centre is inside it. Waiting, holding and aim corrections do not advance the snapshot; a deliberate aim step moves the receiver at its bounded speed. Release before striking. A wrong enabled strike or END ATTEMPT ends this one-attempt episode."
+    },
+    "3": {
+      "label": "medium",
+      "parameters": {"cell_count": 4, "beat_ms": 2100, "beats": 28, "note_count": 12, "flight_ms": 5600, "pickup_width": 1.6, "pickup_speed": 6.0, "drift": 3.2, "drift_span_ms": 3800, "pickup_depth_px": 24},
+      "summary": "4 coupled arrows, 1.6 slot resonators, 5.6 seconds of flight and 2.1 seconds per beat.",
+      "natural_language": "Start the choir. Each start or successful STRIKE settles the arrows and drifting pulse trails into the next fixed decision snapshot. Steer each wall's brass resonator, then click STRIKE while the arriving pulse centre is inside it. Waiting, holding and aim corrections do not advance the snapshot; a deliberate aim step moves the receiver at its bounded speed. Release before striking. A wrong enabled strike or END ATTEMPT ends this one-attempt episode."
+    },
+    "4": {
+      "label": "hard",
+      "parameters": {"cell_count": 5, "beat_ms": 1850, "beats": 30, "note_count": 15, "flight_ms": 5000, "pickup_width": 1.35, "pickup_speed": 6.0, "drift": 3.4, "drift_span_ms": 3600, "pickup_depth_px": 24},
+      "summary": "5 coupled arrows, 1.35 slot resonators, 5 seconds of flight and 1.85 seconds per beat.",
+      "natural_language": "Start the choir. Each start or successful STRIKE settles the arrows and drifting pulse trails into the next fixed decision snapshot. Steer each wall's brass resonator, then click STRIKE while the arriving pulse centre is inside it. Waiting, holding and aim corrections do not advance the snapshot; a deliberate aim step moves the receiver at its bounded speed. Release before striking. A wrong enabled strike or END ATTEMPT ends this one-attempt episode."
+    },
+    "5": {
+      "label": "very_hard",
+      "parameters": {"cell_count": 6, "beat_ms": 1650, "beats": 32, "note_count": 18, "flight_ms": 4400, "pickup_width": 1.15, "pickup_speed": 6.0, "drift": 3.6, "drift_span_ms": 3400, "pickup_depth_px": 24},
+      "summary": "6 coupled arrows, 1.15 slot resonators, 4.4 seconds of flight and 1.65 seconds per beat.",
+      "natural_language": "Start the choir. Each start or successful STRIKE settles the arrows and drifting pulse trails into the next fixed decision snapshot. Steer each wall's brass resonator, then click STRIKE while the arriving pulse centre is inside it. Waiting, holding and aim corrections do not advance the snapshot; a deliberate aim step moves the receiver at its bounded speed. Release before striking. A wrong enabled strike or END ATTEMPT ends this one-attempt episode."
+    }
+  },
+  "interaction": {
+    "full": {"implemented": true, "summary": "Grab a brass resonator and drag it along its rail. Each pointer aim action applies one bounded receiver step and leaves the world at the same visible decision snapshot."},
+    "simplified": {"implemented": true, "summary": "Click a rail coordinate to command its resonator. The same bounded receiver step, capture geometry, pulse paths and decision snapshots apply."}
+  },
+  "real_time": {"play_time_seconds": 120, "observation_window_ms": 400, "frames_per_observation": 4}
+}

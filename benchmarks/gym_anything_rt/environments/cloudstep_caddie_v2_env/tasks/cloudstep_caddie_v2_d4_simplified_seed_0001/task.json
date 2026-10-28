@@ -1,0 +1,64 @@
+{
+  "description": "Use a finite hand of ballistic stroke cards to intercept drifting elevated cloud greens under changing wind.",
+  "difficulty": "hard",
+  "env_id": "gym_anything_rt.cloudstep_caddie_v2_env@0.2",
+  "hooks": {
+    "post_task": "/workspace/tasks/cloudstep_caddie_v2_d4_simplified_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/cloudstep_caddie_v2_d4_simplified_seed_0001/setup_task.sh"
+  },
+  "id": "cloudstep_caddie_v2_d4_simplified_seed_0001@0.2",
+  "init": {
+    "max_steps": 300,
+    "reward_type": "sparse",
+    "timeout_sec": 600
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/cloudstep_caddie_v2_v0.json",
+    "benchmark": "gym_anything_rt",
+    "capabilities": [
+      "visual understanding (3D)",
+      "temporal understanding and memory",
+      "reasoning and planning"
+    ],
+    "control_condition": {
+      "difficulty": 4,
+      "difficulty_parameters": {
+        "cup_radius": 24,
+        "decoys": 2,
+        "elevation": 45,
+        "greens": 6,
+        "half_depth": 34,
+        "half_width": 41,
+        "inherit": 0.45,
+        "motion_span_ms": 2500,
+        "motion_x": 44,
+        "motion_y": 60,
+        "wind": 16
+      },
+      "interaction": "simplified",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "interaction_baseline": "full",
+    "mechanic_id": "cloudstep_caddie_v2",
+    "variant_count": 1000000000000000000,
+    "variant_count_kind": "independent seeded green trajectories, wind, reflection and five difficulty profiles"
+  },
+  "name": "Cloudstep Caddie V2 · Difficulty 4 · Simplified Interaction",
+  "natural_language": "Spend every stroke card exactly once. Land on the moving greens and finish inside the cup. Sand needs LOFT. Overlapping greens at the same height support a landing when the whole ball fits one green. Card flight time and apex describe level landings; higher landings shorten flight. The wind graph and dotted green trails announce the next 2.16 seconds. The aim coordinate sets bearing and speed, not a tracked target; wind and departing-green momentum change the landing. Holding, aiming and dragging leave all greens moving. A missed landing, premature cup or incomplete certification ends this episode; no retry or world-stop control. Click a stroke card, then click the aim map coordinate to strike. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "cloudstep_caddie",
+    "isometric",
+    "card-planning",
+    "3d-height",
+    "surface-hazards"
+  ],
+  "version": "0.2"
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "rotating_keyboard_nonrealtime",
+  "baseline": {
+    "difficulty": 4,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Enter a three character code on 12 large keys. The donor's initial 3D key-plane layout remains fixed while you decide.",
+      "natural_language_by_interaction": {"simplified": "Confirm the shown code by typing it with the physical keyboard.", "full": "Confirm the shown code using the on-screen keyboard."},
+      "parameters": {
+        "key_count": 12, "code_length": 3, "key_width": 52, "key_height": 56, "spin_after_characters": 2,
+        "segment_ms_min": 1800.0, "segment_ms_max": 3400.0,
+        "yaw_rate_min_deg_s": 12.0, "yaw_rate_max_deg_s": 36.0,
+        "roll_rate_min_deg_s": 4.0, "roll_rate_max_deg_s": 12.0,
+        "pitch_max_deg": 10.0
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Enter a four character code on 20 keys. The donor's initial 3D key-plane layout remains fixed while you decide.",
+      "natural_language_by_interaction": {"simplified": "Confirm the shown code by typing it with the physical keyboard.", "full": "Confirm the shown code using the on-screen keyboard."},
+      "parameters": {
+        "key_count": 20, "code_length": 4, "key_width": 46, "key_height": 52, "spin_after_characters": 1,
+        "segment_ms_min": 1500.0, "segment_ms_max": 3000.0,
+        "yaw_rate_min_deg_s": 16.0, "yaw_rate_max_deg_s": 42.0,
+        "roll_rate_min_deg_s": 6.0, "roll_rate_max_deg_s": 16.0,
+        "pitch_max_deg": 13.0
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Enter a five character code on 26 keys. The donor's initial 3D key-plane layout remains fixed while you decide.",
+      "natural_language_by_interaction": {"simplified": "Confirm the shown code by typing it with the physical keyboard.", "full": "Confirm the shown code using the on-screen keyboard."},
+      "parameters": {
+        "key_count": 26, "code_length": 5, "key_width": 42, "key_height": 48, "spin_after_characters": 1,
+        "segment_ms_min": 1200.0, "segment_ms_max": 2600.0,
+        "yaw_rate_min_deg_s": 20.0, "yaw_rate_max_deg_s": 48.0,
+        "roll_rate_min_deg_s": 8.0, "roll_rate_max_deg_s": 20.0,
+        "pitch_max_deg": 15.0
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Enter a five character code on the current 32 key layout. The donor's initial 3D key-plane layout remains fixed while you decide.",
+      "natural_language_by_interaction": {"simplified": "Confirm the shown code by typing it with the physical keyboard.", "full": "Confirm the shown code using the on-screen keyboard."},
+      "parameters": {
+        "key_count": 32, "code_length": 5, "key_width": 38, "key_height": 45, "spin_after_characters": 1,
+        "segment_ms_min": 900.0, "segment_ms_max": 2200.0,
+        "yaw_rate_min_deg_s": 24.0, "yaw_rate_max_deg_s": 56.0,
+        "roll_rate_min_deg_s": 10.0, "roll_rate_max_deg_s": 24.0,
+        "pitch_max_deg": 18.0
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Enter an eight character code on 32 smaller keys. The donor's initial 3D key-plane layout remains fixed while you decide.",
+      "natural_language_by_interaction": {"simplified": "Confirm the shown code by typing it with the physical keyboard.", "full": "Confirm the shown code using the on-screen keyboard."},
+      "parameters": {
+        "key_count": 32, "code_length": 8, "key_width": 32, "key_height": 38, "spin_after_characters": 0,
+        "segment_ms_min": 650.0, "segment_ms_max": 1600.0,
+        "yaw_rate_min_deg_s": 34.0, "yaw_rate_max_deg_s": 72.0,
+        "roll_rate_min_deg_s": 14.0, "roll_rate_max_deg_s": 30.0,
+        "pitch_max_deg": 22.0
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {"implemented": true, "summary": "Type the shown code on the physical keyboard; the correct key does not move for this input surface."},
+    "full": {"implemented": true, "summary": "Click each on-screen key in the stable donor layout using the existing mouse input surface."}
+  },
+  "real_time": {
+    "play_time_seconds": 90,
+    "observation_window_ms": 800,
+    "frames_per_observation": 6
+  }
+}

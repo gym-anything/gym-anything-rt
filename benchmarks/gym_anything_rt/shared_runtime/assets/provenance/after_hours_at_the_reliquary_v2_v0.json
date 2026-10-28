@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "after_hours_at_the_reliquary_v2",
+  "source_anchors": [
+    "TRW-060",
+    "TRW-072",
+    "TRW-052",
+    "WEB-220",
+    "WEB-221"
+  ],
+  "sources": [
+    "https://jayisgames.com/review/weekday-escape-n385.php",
+    "https://play.js13kgames.com/castle-escape-2023/",
+    "https://github.com/xem/js13k23",
+    "https://www.fasco-cs.com/",
+    "https://www.mateuszskutnik.com/submachine/",
+    "https://pastelgames.com/"
+  ],
+  "transformation": "The fixed views, inventory combination, scene tool use and door ending come from the five supplied escape-game records. The articulated key and continuously moving sockets are original.",
+  "assets": "Original canvas geometry and CSS, no external art.",
+  "third_party_assets": [],
+  "status": "prototype_visual_candidate"
+}

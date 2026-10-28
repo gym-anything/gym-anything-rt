@@ -1,0 +1,66 @@
+{
+  "env_folder": "tomographic_baggage_surgery_v3_env",
+  "all_tasks": [
+    "tomographic_baggage_surgery_v3_d1_full_seed_0001",
+    "tomographic_baggage_surgery_v3_d1_simplified_seed_0001",
+    "tomographic_baggage_surgery_v3_d2_full_seed_0001",
+    "tomographic_baggage_surgery_v3_d2_simplified_seed_0001",
+    "tomographic_baggage_surgery_v3_d3_full_seed_0001",
+    "tomographic_baggage_surgery_v3_d3_simplified_seed_0001",
+    "tomographic_baggage_surgery_v3_d4_full_seed_0001",
+    "tomographic_baggage_surgery_v3_d4_simplified_seed_0001",
+    "tomographic_baggage_surgery_v3_d5_full_seed_0001",
+    "tomographic_baggage_surgery_v3_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "tomographic_baggage_surgery_v3_d1_full_seed_0001",
+    "tomographic_baggage_surgery_v3_d1_simplified_seed_0001",
+    "tomographic_baggage_surgery_v3_d2_full_seed_0001",
+    "tomographic_baggage_surgery_v3_d2_simplified_seed_0001",
+    "tomographic_baggage_surgery_v3_d3_full_seed_0001",
+    "tomographic_baggage_surgery_v3_d3_simplified_seed_0001",
+    "tomographic_baggage_surgery_v3_d4_full_seed_0001",
+    "tomographic_baggage_surgery_v3_d4_simplified_seed_0001",
+    "tomographic_baggage_surgery_v3_d5_full_seed_0001",
+    "tomographic_baggage_surgery_v3_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "tomographic_baggage_surgery_v3_d5_full_seed_0001"
+    ],
+    "full": [
+      "tomographic_baggage_surgery_v3_d1_full_seed_0001",
+      "tomographic_baggage_surgery_v3_d2_full_seed_0001",
+      "tomographic_baggage_surgery_v3_d3_full_seed_0001",
+      "tomographic_baggage_surgery_v3_d4_full_seed_0001",
+      "tomographic_baggage_surgery_v3_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "tomographic_baggage_surgery_v3_d1_simplified_seed_0001",
+      "tomographic_baggage_surgery_v3_d2_simplified_seed_0001",
+      "tomographic_baggage_surgery_v3_d3_simplified_seed_0001",
+      "tomographic_baggage_surgery_v3_d4_simplified_seed_0001",
+      "tomographic_baggage_surgery_v3_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "tomographic_baggage_surgery_v3_d1_full_seed_0001",
+      "tomographic_baggage_surgery_v3_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "tomographic_baggage_surgery_v3_d2_full_seed_0001",
+      "tomographic_baggage_surgery_v3_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "tomographic_baggage_surgery_v3_d3_full_seed_0001",
+      "tomographic_baggage_surgery_v3_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "tomographic_baggage_surgery_v3_d4_full_seed_0001",
+      "tomographic_baggage_surgery_v3_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "tomographic_baggage_surgery_v3_d5_full_seed_0001",
+      "tomographic_baggage_surgery_v3_d5_simplified_seed_0001"
+    ]
+  }
+}

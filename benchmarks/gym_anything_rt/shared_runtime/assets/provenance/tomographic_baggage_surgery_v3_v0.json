@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "tomographic_baggage_surgery_v3",
+  "source_anchors": [
+    "nextgen-captchas/3D_Viewpoint",
+    "nextgen-captchas/Backmost_Layer"
+  ],
+  "source_urls": [
+    "https://github.com/MetaAgentX/NextGen-CAPTCHAs"
+  ],
+  "source_revision": "d5abfb4b4f578bf2e517c2691ea0e841f6c2c15e",
+  "related_survey_records": [
+    "CAPR-021",
+    "CAPR-022"
+  ],
+  "selection_survey_ids": [],
+  "transformation": "Cross-view reconstruction and occlusion ordering become continuous 3D tool control through moving layered baggage apertures. Procedural X-ray artwork and physics are original.",
+  "third_party_assets": [],
+  "status": "prototype_visual_candidate",
+  "human_calibration": "not_run",
+  "model_calibration": "not_run"
+}

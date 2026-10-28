@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "cell_gatekeeper_nonrealtime",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "1 concurrent pump(s), 56px aperture, 32px smooth drift, 2200ms typical inhibitor separation, opposing flow False. Ordering is provisional, pending calibration. ATP stroke locks its selected height; 400ms extension, 1200ms open phase, 300ms recovery. Each deliberate pump control advances a fixed 100ms pulse; waiting does not.",
+      "natural_language": "Transfer all solid solutes and exclude hollow magenta inhibitors. Move the selective pumps along the membrane and fire an ATP stroke for the incoming solutes. Each stroke spends one of four ATP, locks the selected height, extends for 0.4 seconds and opens briefly. Steering during a stroke queues the next height. The stroke cannot be cancelled. Each deliberate pump control advances one fixed 100ms pulse; waiting leaves particles and pumps unchanged. The pumps move during those pulses. One lost solute or admitted inhibitor ends the episode. Certification before completion also ends the episode. Inspect the chamber, then start perfusion. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden-state access, or unrelated tabs. Only task-created tabs and their visible controls are allowed.",
+      "parameters": {
+        "lanes": 1,
+        "aperture": 56,
+        "drift": 32,
+        "drift_span_ms": 4000,
+        "speed": 46,
+        "gap_ms": 6500,
+        "toxin_gap_ms": 2200,
+        "spring": 70,
+        "damping": 18,
+        "pump_speed": 240,
+        "opposing": false,
+        "stroke_arm_ms": 400,
+        "stroke_open_ms": 1200,
+        "stroke_recovery_ms": 300,
+        "action_step_ms": 100
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "2 concurrent pump(s), 54px aperture, 32px smooth drift, 1800ms typical inhibitor separation, opposing flow False. Ordering is provisional, pending calibration. ATP stroke locks its selected height; 400ms extension, 1000ms open phase, 300ms recovery. Each deliberate pump control advances a fixed 100ms pulse; waiting does not.",
+      "natural_language": "Transfer all solid solutes and exclude hollow magenta inhibitors. Move the selective pumps along the membrane and fire an ATP stroke for the incoming solutes. Each stroke spends one of four ATP, locks the selected height, extends for 0.4 seconds and opens briefly. Steering during a stroke queues the next height. The stroke cannot be cancelled. Each deliberate pump control advances one fixed 100ms pulse; waiting leaves particles and pumps unchanged. The pumps move during those pulses. One lost solute or admitted inhibitor ends the episode. Certification before completion also ends the episode. Inspect the chamber, then start perfusion. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden-state access, or unrelated tabs. Only task-created tabs and their visible controls are allowed.",
+      "parameters": {
+        "lanes": 2,
+        "aperture": 54,
+        "drift": 32,
+        "drift_span_ms": 3600,
+        "speed": 50,
+        "gap_ms": 6200,
+        "toxin_gap_ms": 1800,
+        "spring": 65,
+        "damping": 17,
+        "pump_speed": 220,
+        "opposing": false,
+        "stroke_arm_ms": 400,
+        "stroke_open_ms": 1000,
+        "stroke_recovery_ms": 300,
+        "action_step_ms": 100
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "2 concurrent pump(s), 52px aperture, 32px smooth drift, 1400ms typical inhibitor separation, opposing flow True. Ordering is provisional, pending calibration. ATP stroke locks its selected height; 400ms extension, 800ms open phase, 300ms recovery. Each deliberate pump control advances a fixed 100ms pulse; waiting does not.",
+      "natural_language": "Transfer all solid solutes and exclude hollow magenta inhibitors. Move the selective pumps along the membrane and fire an ATP stroke for the incoming solutes. Each stroke spends one of four ATP, locks the selected height, extends for 0.4 seconds and opens briefly. Steering during a stroke queues the next height. The stroke cannot be cancelled. Each deliberate pump control advances one fixed 100ms pulse; waiting leaves particles and pumps unchanged. The pumps move during those pulses. One lost solute or admitted inhibitor ends the episode. Certification before completion also ends the episode. Inspect the chamber, then start perfusion. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden-state access, or unrelated tabs. Only task-created tabs and their visible controls are allowed.",
+      "parameters": {
+        "lanes": 2,
+        "aperture": 52,
+        "drift": 32,
+        "drift_span_ms": 3200,
+        "speed": 54,
+        "gap_ms": 5900,
+        "toxin_gap_ms": 1400,
+        "spring": 60,
+        "damping": 16,
+        "pump_speed": 210,
+        "opposing": true,
+        "stroke_arm_ms": 400,
+        "stroke_open_ms": 800,
+        "stroke_recovery_ms": 300,
+        "action_step_ms": 100
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "3 concurrent pump(s), 50px aperture, 32px smooth drift, 1100ms typical inhibitor separation, opposing flow True. Ordering is provisional, pending calibration. ATP stroke locks its selected height; 400ms extension, 650ms open phase, 300ms recovery. Each deliberate pump control advances a fixed 100ms pulse; waiting does not.",
+      "natural_language": "Transfer all solid solutes and exclude hollow magenta inhibitors. Move the selective pumps along the membrane and fire an ATP stroke for the incoming solutes. Each stroke spends one of four ATP, locks the selected height, extends for 0.4 seconds and opens briefly. Steering during a stroke queues the next height. The stroke cannot be cancelled. Each deliberate pump control advances one fixed 100ms pulse; waiting leaves particles and pumps unchanged. The pumps move during those pulses. One lost solute or admitted inhibitor ends the episode. Certification before completion also ends the episode. Inspect the chamber, then start perfusion. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden-state access, or unrelated tabs. Only task-created tabs and their visible controls are allowed.",
+      "parameters": {
+        "lanes": 3,
+        "aperture": 50,
+        "drift": 32,
+        "drift_span_ms": 2900,
+        "speed": 58,
+        "gap_ms": 5600,
+        "toxin_gap_ms": 1100,
+        "spring": 55,
+        "damping": 15,
+        "pump_speed": 200,
+        "opposing": true,
+        "stroke_arm_ms": 400,
+        "stroke_open_ms": 650,
+        "stroke_recovery_ms": 300,
+        "action_step_ms": 100
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "3 concurrent pump(s), 46px aperture, 32px smooth drift, 850ms typical inhibitor separation, opposing flow True. Ordering is provisional, pending calibration. ATP stroke locks its selected height; 400ms extension, 550ms open phase, 300ms recovery. Each deliberate pump control advances a fixed 100ms pulse; waiting does not.",
+      "natural_language": "Transfer all solid solutes and exclude hollow magenta inhibitors. Move the selective pumps along the membrane and fire an ATP stroke for the incoming solutes. Each stroke spends one of four ATP, locks the selected height, extends for 0.4 seconds and opens briefly. Steering during a stroke queues the next height. The stroke cannot be cancelled. Each deliberate pump control advances one fixed 100ms pulse; waiting leaves particles and pumps unchanged. The pumps move during those pulses. One lost solute or admitted inhibitor ends the episode. Certification before completion also ends the episode. Inspect the chamber, then start perfusion. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden-state access, or unrelated tabs. Only task-created tabs and their visible controls are allowed.",
+      "parameters": {
+        "lanes": 3,
+        "aperture": 46,
+        "drift": 32,
+        "drift_span_ms": 2600,
+        "speed": 62,
+        "gap_ms": 5300,
+        "toxin_gap_ms": 850,
+        "spring": 50,
+        "damping": 14,
+        "pump_speed": 190,
+        "opposing": true,
+        "stroke_arm_ms": 400,
+        "stroke_open_ms": 550,
+        "stroke_recovery_ms": 300,
+        "action_step_ms": 100
+      }
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Drag a pump to select its height. Keys 1\u20133 fire its committed ATP stroke. Flow continues during dragging and the stroke."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Click a rail to select the identical height; FIRE buttons trigger the identical committed ATP stroke."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  }
+}

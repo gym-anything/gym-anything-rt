@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "charter_of_the_nine_cantons_v3",
+  "source_anchors": [
+    "WEB-320",
+    "TRW-161"
+  ],
+  "sources": [
+    {
+      "title": "Gerrymandle",
+      "url": "https://gerrymandle.cc/",
+      "resolved_url": "https://gerrymandle.com/",
+      "role": "Connected electoral regions, equal population, visible guild affiliation and verifiable holdings."
+    }
+  ],
+  "assets": [],
+  "notes": "All code, layouts, vector household marks and continuous census dynamics are original. Source media and implementation were not copied. Original environment and historical results are preserved. V3 adds original folded field-register vector glyphs and persistent census-map inspection; no external imagery is added. Inherited source attribution is unchanged and is not a fresh website review. V3 remains a prototype pending independent audit, human play and model calibration.",
+  "source_v2": "charter_of_the_nine_cantons_v2_env",
+  "original_v1": "charter_of_the_nine_cantons_env"
+}

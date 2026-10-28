@@ -1,0 +1,58 @@
+{
+  "description": "Steer an inertial walker down seven drifting terraces; lower landings keep moving during each fall. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed.",
+  "difficulty": "very_hard",
+  "env_id": "gym_anything_rt.downsky_causeway_v2_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/downsky_causeway_v2_d5_simplified_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/downsky_causeway_v2_d5_simplified_seed_0001/setup_task.sh"
+  },
+  "id": "downsky_causeway_v2_d5_simplified_seed_0001@0.2",
+  "init": {
+    "max_steps": 300,
+    "reward_type": "sparse",
+    "timeout_sec": 180
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/downsky_causeway_v2_v0.json",
+    "benchmark": "gym_anything_rt",
+    "capabilities": [
+      "visual understanding: 3D",
+      "temporal understanding and memory",
+      "reasoning and planning"
+    ],
+    "control_condition": {
+      "difficulty": 5,
+      "difficulty_parameters": {
+        "acceleration": 10.0,
+        "drift": 1.0,
+        "half_width": 1.15,
+        "lateral_offset": 1.5,
+        "response": 3.4,
+        "span_ms": 3800,
+        "wind": 1.6
+      },
+      "interaction": "simplified",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "downsky_causeway_v2"
+  },
+  "name": "Downsky Causeway V2 · Difficulty 5 · Simplified Interaction",
+  "natural_language": "Inspect the drifting terraces, then START CROSSING. The walker marches forward continuously. Steer lateral speed with the gold tiller; momentum takes time to reverse. Your whole footprint must fit on a deck. Walking off starts a gravity-driven fall onto a lower deck. Dashed blue outlines show deck positions 0.9 seconds ahead; white streaks show recent drift. Reach the lit pavilion on terrace 7 and CERTIFY ARRIVAL. A fall below the causeway or early certification ends the episode. Click the tiller rail to steer. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "linux",
+    "browser",
+    "gym-anything-rt",
+    "real-time",
+    "downsky_causeway_v2",
+    "descending-platforms",
+    "inertia"
+  ],
+  "version": "0.2"
+}

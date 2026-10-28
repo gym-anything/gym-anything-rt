@@ -1,0 +1,63 @@
+{
+  "description": "Steer a pointer through reflowing probability-sized letter channels; horizontal position controls advance, flow, and rewind.",
+  "difficulty": "very_easy",
+  "env_id": "gym_anything_rt.letter_rapids_v2_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/letter_rapids_v2_d1_full_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/letter_rapids_v2_d1_full_seed_0001/setup_task.sh"
+  },
+  "id": "letter_rapids_v2_d1_full_seed_0001@0.2",
+  "init": {
+    "max_steps": 500,
+    "reward_type": "sparse",
+    "timeout_sec": 600
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/letter_rapids_v0.json",
+    "benchmark": "gym_anything_rt",
+    "capabilities": [
+      "visual understanding: 2D",
+      "temporal understanding and memory"
+    ],
+    "control_condition": {
+      "difficulty": 1,
+      "difficulty_parameters": {
+        "alphabet": "aetoinrs",
+        "context_boost_milli": 1500,
+        "current_amplitude_milli": 120,
+        "dead_zone_half_width_milli": 1050,
+        "maximum_rewound_characters": 4,
+        "maximum_speed_units_per_second": 4300,
+        "minimum_band_milli": 650,
+        "probability_jitter_milli": 80,
+        "target_pool": [
+          "sea",
+          "rain",
+          "tone",
+          "star"
+        ],
+        "travel_budget_characters_milli": 6500
+      },
+      "interaction": "full",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "letter_rapids_v2"
+  },
+  "name": "Letter Rapids V2 · Difficulty 1 · Full Interaction",
+  "natural_language": "Enter the target phrase.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "continuous-pointing",
+    "probability-canyon",
+    "closed-loop-control",
+    "real-time"
+  ],
+  "version": "0.2"
+}

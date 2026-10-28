@@ -1,0 +1,71 @@
+{
+  "description": "Steer a vehicle with held keyboard controls while dwelling the cursor over correct visual regions long enough to validate them before impact.",
+  "difficulty": "easy",
+  "env_id": "gym_anything_rt.crash_deadline_hovercar_nonrealtime_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/crash_deadline_hovercar_nonrealtime_d2_simplified_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/crash_deadline_hovercar_nonrealtime_d2_simplified_seed_0001/setup_task.sh"
+  },
+  "id": "crash_deadline_hovercar_nonrealtime_d2_simplified_seed_0001@0.2",
+  "init": {
+    "max_steps": 900,
+    "reward_type": "sparse",
+    "timeout_sec": 600
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/incubator_full_build_v1.json",
+    "benchmark": "gym_anything_rt",
+    "control_condition": {
+      "difficulty": 2,
+      "difficulty_parameters": {
+        "check_count": 3,
+        "deadline_tick": 350,
+        "finish_progress": 1000,
+        "first_window_tick": 18,
+        "minimum_window_slack_ticks": 12,
+        "obstacle_bypass_margin": 40,
+        "obstacle_count": 3,
+        "required_tick_max": 9,
+        "required_ticks": [
+          8,
+          9
+        ],
+        "road_amplitude_max": 36,
+        "road_amplitude_min": 28,
+        "road_half_width": 126,
+        "road_margin": 72,
+        "road_period_max": 240,
+        "road_period_min": 210,
+        "target_motion_scale": 0.85,
+        "target_orbit_scale": 0.7,
+        "target_radius": 34,
+        "target_window_slack_ticks": 55,
+        "window_duration_ticks": 64,
+        "window_profile": "generated",
+        "window_stride_ticks": 72
+      },
+      "interaction": "simplified",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "crash_deadline_hovercar_nonrealtime",
+    "variant_count": 12400000000,
+    "variant_count_kind": "course curvature, obstacle offsets, target motifs, target orbits, dwell windows, phases, and visual palette"
+  },
+  "name": "Crash-Deadline Hovercar · Difficulty 2 · Simplified Interaction",
+  "natural_language": "Clear three moving hover checks while steering around three barriers. Hold a drive control to advance and hold each visible sigil until it locks.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "crash_deadline_hovercar_nonrealtime",
+    "divided-attention",
+    "hover-dwell",
+    "keyboard-control"
+  ],
+  "version": "0.2"
+}

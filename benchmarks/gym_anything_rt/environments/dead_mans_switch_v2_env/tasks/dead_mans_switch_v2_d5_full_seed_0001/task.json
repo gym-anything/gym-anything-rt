@@ -1,0 +1,86 @@
+{
+  "description": "Track and hold the moving pressure plate continuously while steering through the ordered relay course.",
+  "difficulty": "very_hard",
+  "env_id": "gym_anything_rt.dead_mans_switch_v2_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/dead_mans_switch_v2_d5_full_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/dead_mans_switch_v2_d5_full_seed_0001/setup_task.sh"
+  },
+  "id": "dead_mans_switch_v2_d5_full_seed_0001@0.2",
+  "init": {
+    "max_steps": 500,
+    "reward_type": "sparse",
+    "timeout_sec": 600
+  },
+  "metadata": {
+    "asset_manifest": "environments/dead_mans_switch_v2_env/provenance.json",
+    "benchmark": "gym_anything_rt",
+    "control_condition": {
+      "difficulty": 5,
+      "difficulty_parameters": {
+        "barrier_columns": [
+          3,
+          6,
+          9,
+          13,
+          16,
+          19
+        ],
+        "columns": 22,
+        "goal_rows": [
+          9,
+          10
+        ],
+        "high_gap_rows": [
+          9,
+          10
+        ],
+        "hit_x_milli": 155,
+        "hit_y_milli": 200,
+        "low_gap_rows": [
+          1,
+          2
+        ],
+        "maximum_sample_gap_ms": 300,
+        "maximum_solution_moves": 74,
+        "minimum_hold_ms": 6500,
+        "minimum_solution_moves": 60,
+        "outside_grace_ms": 240,
+        "pressure_period_ms_values": [
+          3200,
+          3400,
+          3600
+        ],
+        "rows": 12,
+        "sample_ms": 85,
+        "start_rows": [
+          9,
+          10
+        ],
+        "x_amplitude_milli_max": 315,
+        "x_amplitude_milli_min": 285,
+        "y_amplitude_milli_max": 215,
+        "y_amplitude_milli_min": 185
+      },
+      "interaction": "full",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "dead_mans_switch_v2"
+  },
+  "name": "Dead Man's Switch V2 · Difficulty 5 · Full Interaction",
+  "natural_language": "Keep the moving pressure plate held while steering through all six numbered relays and into the dock. A lost plate resets the full route.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "simultaneous-input",
+    "continuous-hold",
+    "navigation"
+  ],
+  "version": "0.2"
+}

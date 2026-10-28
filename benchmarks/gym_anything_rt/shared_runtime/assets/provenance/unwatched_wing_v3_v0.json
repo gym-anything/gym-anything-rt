@@ -1,0 +1,42 @@
+{
+  "mechanic_id": "unwatched_wing_v3",
+  "revision": "lantern-visible-current-v4",
+  "source_anchors": [
+    "VGE-535",
+    "VGE-536",
+    "VGE-508"
+  ],
+  "selection_file": "creation_audit_logs/realtime_source_twelve_20261001/selection.json",
+  "survey_root": "outputs/selection_round4_20260906/inputs",
+  "sources": [
+    {
+      "id": "VGE-535",
+      "url": "https://outerwilds.fandom.com/wiki/Tower_of_Quantum_Trials",
+      "mechanic": "Observation restrains an otherwise changeable object."
+    },
+    {
+      "id": "VGE-536",
+      "url": "https://outerwilds.fandom.com/wiki/Quantum_Shards",
+      "mechanic": "A rider moves with an unobserved carrier; removing observation enables transport."
+    },
+    {
+      "id": "VGE-508",
+      "url": "https://store.steampowered.com/app/219890/Antichamber/",
+      "mechanic": "Which geometry is observed affects traversability."
+    }
+  ],
+  "transformation": "Original two-dimensional lantern transit: an optical focus pins a moving shutter or courier; one observed photograph temporarily pins its pictured object. All other objects continue evolving, and couriers must pass physically open apertures. Continuous transit replaces source teleportation; image fading is a new visible resource. No source artwork, characters, layouts, code, music or copied presentation is shipped. The crosscurrent revision adds smooth independent vertical courier drift, frozen by the same light/photo rule. Both courier coordinates and the moving aperture participate in collision and replay; lane-center parking no longer implies a safe passage. The subsequent observation revision uses a common one-second arrow scale and visible swing guides in both modes. A seed-free recent-window forecast controller is an implementation diagnostic, not an optimal-policy or native API certificate. The visible-current revision retains the same difficulty profiles, restraint and collision rules. It replaces hidden rate seeds with visible current angular/forward rates and their rising/falling directions, bounded reflecting rates, readable motion dials, and quantized phase and coordinates. There is no unobserved future rate process. This addresses bounded-window observability; optimal-action witnesses and native solutions still require validation.",
+  "assets": "Original Canvas geometry and CSS; no third-party artwork. The preserved v3 rate bank is a historical task-owned asset and is not consumed by visible-current-v4.",
+  "validation_status": "implementation_checks_in_progress; native API, formal grouped-mode real-time classification and human calibration unverified; independent re-audit revision requested",
+  "source_access_note": "Complete supplied survey records read. Fandom original pages currently fail through web fetch with HTTP 402; archived source quotations are retained as provenance. Antichamber original Steam listing and cited Wikipedia source were accessible. Cited YouTube pages also failed to fetch; Antichamber Fandom Main_Page returned HTTP 402. These originals have no fresh full-page access evidence.",
+  "observation_revision": "current-motion-dials-v4",
+  "historical_rate_bank": {
+    "path": "environments/unwatched_wing_v3_env/assets/future_rates.bin",
+    "sha256": "ca56e2d5c2333a89066f549f1776df2edddf3f3dcf6b15458269a2609d1ba155",
+    "bytes": 1612800,
+    "rows": 512,
+    "visible_prior": "Independent -step/0/+step rate pulses with probability 1/4, 1/2, 1/4; clamps and steps displayed. No future cell is shown.",
+    "active_in_current_revision": false,
+    "revision": "lantern-markov-v3"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "wonky_text_hostile_rendering_v3",
+  "source_anchors": [
+    "modrinth-evil-captcha",
+    "perceptual-gaps-ascii-audio",
+    "captcha-hell"
+  ],
+  "sources": [
+    {
+      "anchor": "modrinth-evil-captcha",
+      "url": "https://modrinth.com/mod/evil-captcha",
+      "taken": "Wonky text with layered obscuration; original art recreated as misregistered color impressions."
+    },
+    {
+      "anchor": "perceptual-gaps-ascii-audio",
+      "url": "https://arxiv.org/abs/2603.06148",
+      "status": "citation mismatch: resolves to VLM-RobustBench, not the named legacy ASCII/audio source; no ASCII/audio claim made",
+      "supplemental_verified_url": "https://arxiv.org/abs/2604.03612",
+      "supplemental_survey_records": [
+        "CAPC-147",
+        "CAPR-198",
+        "CAPR-199"
+      ],
+      "taken": "Perceptual layering and unusual textual presentation motivate active registration. No ASCII transcription or audio mechanic is implemented; no paper model or human performance is claimed for this new game."
+    },
+    {
+      "anchor": "captcha-hell",
+      "url": "https://store.steampowered.com/app/4310270/CAPTCHA_Hell/",
+      "taken": "Absurd hostile verification theme; no third-party art, desktop, story or code copied."
+    }
+  ],
+  "survey_ids": [],
+  "selection_file": "creation_audit_logs/realtime_source_remaining48_20261002/selection.json",
+  "transformation": "Replace transcription with continuous color plate registration and inertial actuator tracking. Autonomous nonperiodic drift changes the physical alignment used to compute permanent ink spoil.",
+  "original_environment_preserved": true,
+  "assets": "Original Canvas typography and geometric control pads; system fonts. No downloaded source presentation assets.",
+  "license": "Repository license; no new runtime dependencies.",
+  "survey_lookup": {
+    "selected_survey_ids": [],
+    "supplemental_literal_url_matches": [
+      "CAPC-147",
+      "CAPR-198",
+      "CAPR-199",
+      "CAPW-101 in container CAPW-096"
+    ],
+    "preserved_aliases": true,
+    "original_collected_paths": "unavailable on this machine; read supplied survey and official source pages instead"
+  },
+  "exploration_v3_repair": {
+    "date": "2026-10-15",
+    "source_v2": "wonky_text_hostile_rendering_v2_env",
+    "original_v1": "wonky_text_hostile_rendering_env",
+    "change": "A loupe exposes the concealed ink-side register stamp on each plate sleeve. It distinguishes the true moving guide from a reflected ghost; discovered marks and live ink proofs remain visible. No inspection quota or start gate.",
+    "preserved": "V2 profiles and fixed-seed active target nodes/times/phases, initial positions, token, bounds, servo, tolerances, clean/spoil budgets, timing and input contracts. A separate RNG assigns marks/sleeve positions.",
+    "validation_status": "Creator task checks complete; independent audit, human calibration and native action-API evidence remain pending.",
+    "evidence": "environments/wonky_text_hostile_rendering_v3_env/evidence_docs/REPAIR_REPORT.md"
+  }
+}

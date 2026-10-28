@@ -1,0 +1,36 @@
+body[data-mechanic="rotating-keyboard-v2"] {
+  background: radial-gradient(circle at 70% 10%, #edf8ff 0, #a9bdc7 38%, #53656e 100%);
+}
+
+.rkv2-captcha { max-width: 930px; background: #f4f0e6; color: #172329; border: 2px solid #172329; box-shadow: 14px 14px 0 #172329; }
+.rkv2-head { background: #f6e75a; color: #172329; border-color: #172329; }
+.rkv2-head p { color: #294852; }
+.rkv2-stage { display: grid; grid-template-columns: 264px 1fr; gap: 16px; min-height: 440px; padding: 20px; background: repeating-linear-gradient(135deg, #d8e5e8 0 12px, #cfdbde 12px 24px); }
+/* The fixed card sits above the 3D deck in stacking order so a wide yaw can
+   never cover the target the operator has to read. */
+.rkv2-fixed { position: relative; z-index: 2; align-self: center; padding: 22px 16px; border: 2px solid #172329; background: #fffdf2; box-shadow: 6px 6px 0 #172329; }
+.rkv2-fixed > span { display: block; font-family: "Courier New", Courier, monospace; font-size: 11px; font-weight: 700; letter-spacing: .15em; }
+/* Monospace target typography: every glyph (W, M, 8, I) has the same
+   advance, so the fitted size below depends only on code length, never on
+   which letters the seed drew. Content width is 228px (264 - 2*16 - 2*2). */
+.rkv2-fixed > strong { display: block; margin: 10px 0 18px; font-family: "Courier New", Courier, "DejaVu Sans Mono", monospace; font-size: 34px; letter-spacing: .06em; white-space: nowrap; }
+.rkv2-entry { display: flex; gap: 5px; }
+.rkv2-entry span { display: grid; place-items: center; width: 30px; height: 38px; border-bottom: 3px solid #172329; font-family: "Courier New", Courier, monospace; font-size: 20px; font-weight: 800; }
+.rkv2-entry span[data-filled="true"] { color: #c43d24; }
+/* Long codes (seven or more characters) must stay inside the fixed card. */
+.rkv2-long-code .rkv2-fixed > strong { font-size: 25px; letter-spacing: .05em; }
+.rkv2-long-code .rkv2-entry { gap: 3px; }
+.rkv2-long-code .rkv2-entry span { width: 24px; height: 34px; font-size: 17px; }
+.rkv2-perspective { position: relative; z-index: 1; display: grid; place-items: center; min-width: 0; perspective: 950px; }
+/* The deck's rotateX/rotateY/rotateZ transform is set every animation frame
+   directly from the seed-derived nonperiodic schedule (see
+   shared_runtime/app/mechanics/rotating_keyboard_v2.js). There is no
+   `@keyframes`/`animation` rule here, because a looping CSS animation is
+   exactly the periodicity this V2 mechanic removes. */
+.rkv2-deck { width: 100%; padding: 18px 12px; border: 2px solid #172329; background: #18323b; box-shadow: 8px 8px 0 rgba(23,35,41,.34); transform-style: preserve-3d; transform-origin: 50% 50%; }
+.rkv2-row { display: flex; justify-content: center; gap: 6px; margin: 6px 0; transform-style: preserve-3d; }
+.rkv2-key { min-width: var(--key-width, 38px); height: var(--key-height, 45px); border: 1px solid #081216; border-bottom-width: 4px; background: #ecf0e8; color: #172329; font-family: Georgia, serif; font-size: 17px; font-weight: 700; cursor: pointer; backface-visibility: visible; }
+.rkv2-key:active { border-bottom-width: 1px; translate: 0 3px; }
+.rkv2-delete { width: 114px; font-family: "Courier New", Courier, monospace; font-size: 11px; }
+.rkv2-captcha .interaction-foot { border-color: #172329; }
+.rkv2-submit { background: #172329; color: #fffbe7; }

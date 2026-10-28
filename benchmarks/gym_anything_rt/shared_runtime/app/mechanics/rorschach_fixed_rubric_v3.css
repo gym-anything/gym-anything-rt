@@ -1,0 +1,36 @@
+body[data-mechanic="living-ink-press"] {background:#ded4c6;color:#262335;font-family:Georgia,serif;overflow:auto;}
+body[data-mechanic="living-ink-press"] .app-shell {padding:12px;min-height:100vh;}
+.living-ink {position:relative;width:min(1236px,calc(100vw - 24px));min-width:1100px;overflow:hidden;background:#f5efdf;border:1px solid #423a47;box-shadow:10px 14px 0 #b9adac,0 22px 60px #2b183133;}
+.inkv2-head {display:flex;justify-content:space-between;gap:14px;align-items:center;padding:14px 20px;background:#292535;color:#fbefdb;border-bottom:5px solid #c76853;}
+.inkv2-head span {font:11px monospace;letter-spacing:.17em;color:#e8ad8a;}.inkv2-head h1 {font-size:24px;font-weight:normal;line-height:1.1;margin:7px 0 0;}
+.ink-sheet-time {font:18px monospace;white-space:nowrap;border:1px solid #8e809b;padding:9px 14px;}
+.inkv2-rubric {display:flex;align-items:center;gap:20px;padding:11px 20px;border-bottom:1px solid #b9a99e;background:#fff9e9;}
+.inkv2-rubric>b {font-size:19px;white-space:nowrap;color:#874057;}.inkv2-rubric>span {font:14px/1.4 sans-serif;}
+.inkv2-main {display:grid;grid-template-columns:minmax(820px,920px) minmax(210px,1fr);gap:12px;padding:12px;}
+.inkv2-field {width:100%;height:auto;aspect-ratio:920/440;border:1px solid #8f8190;touch-action:none;cursor:grab;user-select:none;}
+.inkv2-field:active {cursor:grabbing;}.inkv2-main aside {display:flex;flex-direction:column;gap:8px;}
+.inkv2-main aside>p {margin:0;font:11px monospace;letter-spacing:.08em;}
+.ink-pad-card {border-left:5px solid var(--pad);padding:6px 9px;background:#ece3d3;display:flex;flex-direction:column;gap:3px;}
+.ink-pad-card b {font:12px monospace;color:var(--pad);}.ink-pad-card span {font:10px monospace;letter-spacing:.08em;}
+.ink-pad-card span[data-fit="false"] {color:#bd443d;}.ink-pad-card span[data-fit="true"] {color:#257961;}
+.ink-mark-archive {display:grid;gap:4px;border:1px solid #baa997;padding:8px;font:10px/1.3 monospace;}
+.ink-mark-archive b {font-size:10px;}.ink-mark-archive span {display:block;}
+.inkv2-main aside {gap:6px;}
+.ink-pad-card:has(.ink-proxy) {display:grid;grid-template-columns:1fr auto;gap:3px 8px;}
+.ink-pad-card .ink-proxy {grid-column:2;grid-row:1/3;padding:5px 8px;}
+.living-ink button {border:1px solid #786478;border-radius:0;font:12px monospace;padding:8px 11px;cursor:pointer;background:#efe4d4;color:#353044;min-height:32px;}
+.living-ink button:hover:enabled {background:#e1cfb5;}.living-ink button:disabled {opacity:.5;cursor:default;}.ink-proxy[data-selected="true"] {outline:2px solid var(--pad);background:#fff8e8;}
+.ink-print-panel {position:relative;padding:10px 50px 0 8px;min-height:110px;border:1px solid #baa997;}
+.ink-print-panel>span {font:10px monospace;display:block;}.ink-percent {font-size:14px;float:right;}.ink-development {height:10px;background:#d3c7b8;border:1px solid #ac998a;margin-top:8px;}.ink-development i {display:block;background:#277f72;height:100%;width:0;}
+.ink-print-art {width:100%;height:70px;fill:#292535;opacity:.12;}.ink-gutter {position:absolute;right:8px;top:8px;bottom:8px;width:30px;display:flex;flex-direction:column;align-items:center;gap:4px;}
+.ink-gutter span {font:8px monospace;text-align:center;}.ink-spill {position:relative;flex:1;width:17px;background:#cbb7a9;border:1px solid #9b807b;}.ink-spill i {position:absolute;bottom:0;width:100%;height:0;background:#b05163;}
+.ink-mode-instruction {font:12px/1.4 sans-serif;color:#62566a;margin-top:auto;}
+.living-ink footer {display:grid;grid-template-columns:170px 1fr 170px;gap:12px;padding:12px;border-top:2px solid #5a4856;align-items:center;}
+.living-ink footer button {min-height:42px;font-weight:bold;}.living-ink .ink-begin {background:#28766e;color:#fff6e4;}.living-ink .ink-certify {background:#6d4d6c;color:#fff6e4;}
+.living-ink .readout {font:12px/1.4 monospace;color:#6a4d65;}.living-ink .readout[data-status="passed"] {color:#207466;}.living-ink .readout[data-status="error"] {color:#b34152;}
+.ink-terminal {display:none;position:absolute;inset:0;background:#f5efdfef;align-content:center;justify-items:center;gap:14px;pointer-events:none;}
+.ink-terminal span {font:14px monospace;letter-spacing:.22em;}.ink-terminal strong {font:bold 120px/1 sans-serif;}.ink-terminal p {font:16px monospace;}
+.living-ink[data-outcome="pass"] .ink-terminal,.living-ink[data-outcome="fail"] .ink-terminal,.living-ink[data-outcome="error"] .ink-terminal {display:grid;}
+.living-ink[data-outcome="pass"] .ink-terminal strong::after {content:"PASS";color:#257d6e;}.living-ink[data-outcome="pass"] .ink-terminal p::after {content:"THE BUTTERFLY PRINT SATISFIES EVERY CONTACT";}
+.living-ink[data-outcome="fail"] .ink-terminal strong::after {content:"FAIL";color:#b4475d;}.living-ink[data-outcome="fail"] .ink-terminal p::after {content:"THE PRINT OR SPILL GUTTER ENDED THIS SHEET";}
+.living-ink[data-outcome="error"] .ink-terminal strong::after {content:"ERROR";color:#b4475d;}

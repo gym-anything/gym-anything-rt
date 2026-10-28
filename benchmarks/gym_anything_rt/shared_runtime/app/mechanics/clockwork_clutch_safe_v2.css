@@ -1,0 +1,112 @@
+/* Clockwork Clutch Safe V2: self-contained stylesheet. Does not depend on
+   or modify `_interaction_vii_viii.css`; class names use the `ivv2-`
+   namespace so nothing collides with the V1 mechanic's styles. */
+body[data-mechanic="clockwork-clutch-safe-v2"] {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #090b0c;
+  color: #eaf3ee;
+  font-family: "Courier New", ui-monospace, monospace;
+}
+body[data-mechanic="clockwork-clutch-safe-v2"] #app { width: 100vw; height: 100vh; padding: 0; }
+
+.ivv2 {
+  --accent: #5fd3e0;
+  --accent-2: #ff8a5d;
+  --panel: #12181aee;
+  --line: #4f6a6e;
+  --ink: #eaf3ee;
+  position: relative;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 104px 1fr 54px;
+  gap: 8px;
+  background: radial-gradient(circle at 50% 45%, #1d3336, #0a1213 55%, #050706);
+  isolation: isolate;
+  contain: size layout paint;
+  overflow: hidden;
+  color: var(--ink);
+}
+.ivv2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: .15;
+  background-image: repeating-linear-gradient(0deg, transparent 0 3px, #fff 4px), radial-gradient(#fff 1px, transparent 1px);
+  background-size: auto, 9px 9px;
+  mix-blend-mode: overlay;
+}
+.ivv2-head, .ivv2-console, .ivv2-foot, .ivv2-stage > canvas, .ivv2-stage > div:not(.ivv2-console) {
+  border: 1px solid color-mix(in srgb, var(--accent), transparent 62%);
+  background: var(--panel);
+  box-shadow: inset 0 0 32px color-mix(in srgb, var(--accent), transparent 94%), 0 10px 35px #0005;
+}
+.ivv2-head { display: flex; align-items: center; justify-content: space-between; padding: 13px 20px; overflow: hidden; }
+.ivv2-head span, .ivv2-foot > span { color: var(--accent); font-size: 9px; font-weight: 900; letter-spacing: .24em; }
+.ivv2-head h1 { margin: 4px 0 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(25px, 3.1vw, 43px); font-weight: 500; line-height: .95; letter-spacing: -.035em; }
+.ivv2-head p { width: min(44vw, 560px); margin: 0; padding-left: 22px; border-left: 2px solid var(--accent-2); color: color-mix(in srgb, var(--ink), transparent 22%); font: 700 11px/1.55 "Courier New", monospace; text-align: right; }
+.ivv2-stage { min-height: 0; display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 8px; }
+.ivv2-stage > canvas { display: block; width: 100%; height: 100%; min-height: 0; object-fit: contain; }
+.ivv2-console { min-height: 0; padding: 13px; overflow: auto; scrollbar-width: thin; }
+.ivv2-console h2 { margin: 0 0 12px; color: var(--accent); font: 900 10px/1 "Courier New", monospace; letter-spacing: .19em; }
+.ivv2-console p { margin: 8px 0 14px; color: color-mix(in srgb, var(--ink), transparent 35%); font-size: 9px; line-height: 1.55; }
+.ivv2 button {
+  box-sizing: border-box;
+  min-height: 36px;
+  border: 1px solid color-mix(in srgb, var(--accent), transparent 48%);
+  background: color-mix(in srgb, var(--panel), var(--accent) 7%);
+  color: var(--ink);
+  font: 900 9px/1.1 "Courier New", monospace;
+  letter-spacing: .075em;
+  cursor: pointer;
+  transition: background .14s, border-color .14s, transform .14s, box-shadow .14s;
+}
+.ivv2 button:hover { border-color: var(--accent); background: color-mix(in srgb, var(--panel), var(--accent) 15%); box-shadow: 0 0 18px color-mix(in srgb, var(--accent), transparent 82%); }
+.ivv2 button:active { transform: translateY(1px); }
+.ivv2 button:disabled { opacity: .38; cursor: default; }
+.ivv2-primary { width: 100%; margin-top: 9px; border-color: var(--accent) !important; color: var(--accent) !important; min-height: 43px !important; }
+.ivv2-danger { width: 100%; margin-top: 8px; border-color: #f05d55aa !important; color: #ff958e !important; }
+.ivv2-foot { display: grid; grid-template-columns: 1fr 310px; align-items: center; padding: 8px 13px; }
+.ivv2-foot .readout { padding: 7px 10px; border-left: 2px solid var(--accent); color: var(--ink); font: 900 10px/1.2 "Courier New", monospace; text-align: right; }
+.ivv2-foot .readout[data-status="error"] { border-color: #ff655f; color: #ff8b84; }
+.ivv2-foot .readout[data-status="passed"] { border-color: #a5f26b; color: #cfff86; }
+.ivv2-telemetry { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; margin-top: 9px; }
+.ivv2-telemetry span { padding: 7px; border: 1px solid color-mix(in srgb, var(--line), transparent 30%); color: color-mix(in srgb, var(--ink), transparent 45%); font-size: 8px; }
+.ivv2-telemetry b { display: block; margin-top: 4px; color: var(--ink); font-size: 11px; }
+.ivv2-verdict { position: absolute; z-index: 50; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; overflow: hidden; background: #07100ef2; text-align: center; animation: ivv2-arrive .32s ease-out; contain: strict; }
+.ivv2-verdict strong { box-sizing: border-box; max-width: min(900px, calc(100vw - 80px)); padding: 18px 34px; overflow-wrap: anywhere; border: 4px double #6fe0d6; color: #b9fff3; font: 500 clamp(34px, 6vw, 70px)/.9 Georgia, serif; box-shadow: 0 0 50px #5fd3e044; transform: rotate(-1deg); }
+.ivv2-verdict span { box-sizing: border-box; max-width: min(760px, calc(100vw - 80px)); overflow-wrap: anywhere; color: #dcebd3; font: 900 11px/1.4 "Courier New", monospace; letter-spacing: .18em; }
+.ivv2-verdict.is-fail, .ivv2-verdict.is-fresh { background: #210807ee; }
+.ivv2-verdict.is-fail strong, .ivv2-verdict.is-fresh strong { border-color: #ff6159; color: #ff8b84; box-shadow: 0 0 50px #e5453e55; }
+@keyframes ivv2-arrive { from { opacity: 0; transform: scale(1.03); } }
+
+/* Clutch bank: dense brass horology with a cooler wobble-drive palette. */
+.ivv2-clockwork-clutch-safe-v2 { --accent:#5fd3e0; --accent-2:#ff8a5d; --ink:#e8f4ee; --panel:#101917ed; --line:#456a63; }
+.clutch-bank { min-height:0; padding:10px; display:grid; grid-template-columns:repeat(2,1fr); gap:8px; background:#0b100e!important; }
+.clutch-bank article { min-width:0; min-height:0; overflow:hidden; display:grid; grid-template-rows:minmax(0,1fr) 42px; align-items:center; justify-items:center; border:1px solid #366059; }
+.clutch-bank canvas { min-width:0; min-height:0; width:min(100%,260px); height:min(100%,260px); max-height:100%; object-fit:contain; }
+.clutch-bank button { width:92%; }
+.clutch-lever { box-sizing:border-box; width:92%; height:34px; display:grid; grid-template-columns:48px minmax(86px,1fr) 31px; gap:7px; align-items:center; color:#9fc4bc; font:900 8px/1 "Courier New",monospace; letter-spacing:.07em; user-select:none; touch-action:none; }
+.clutch-lever > span:last-child { color:#70d39b; }
+.clutch-lever-rail { position:relative; box-sizing:border-box; width:100%; height:30px; border:1px solid #3f7168; background:linear-gradient(90deg,#1f4a44 0 46%,#0d1614 46% 54%,#244a36 54%); box-shadow:inset 0 0 8px #000; }
+.clutch-lever-rail::before,.clutch-lever-rail::after { content:""; position:absolute; top:4px; bottom:4px; width:2px; background:#5fd3e0aa; }
+.clutch-lever-rail::before { left:17px; }
+.clutch-lever-rail::after { right:17px; background:#70d39baa; }
+.clutch-lever-handle { position:absolute; z-index:2; box-sizing:border-box; left:4px; top:3px; width:32px; height:22px; border:2px solid #cdf5ee; background:linear-gradient(#5fbcd3,#22515f); box-shadow:0 2px 5px #000a,0 0 0 2px #142826; cursor:grab; transition:left .12s ease-out,background .12s; }
+.clutch-lever[data-state="free"] .clutch-lever-handle { left:calc(100% - 36px); background:linear-gradient(#8fe0ad,#285b40); }
+.clutch-lever[data-locked="true"] .clutch-lever-handle { cursor:not-allowed; filter:saturate(.55); }
+.clutch-lever.is-dragging .clutch-lever-handle { cursor:grabbing; transition:none; box-shadow:0 2px 8px #000,0 0 12px #5fd3e088; }
+
+@media (max-width: 900px) {
+  .ivv2 { grid-template-rows: 92px 1fr 48px; }
+  .ivv2-stage { grid-template-columns: minmax(0,1fr) 255px; }
+  .ivv2-head p { width: 42vw; font-size: 9px; }
+  .ivv2-console { padding: 9px; }
+}

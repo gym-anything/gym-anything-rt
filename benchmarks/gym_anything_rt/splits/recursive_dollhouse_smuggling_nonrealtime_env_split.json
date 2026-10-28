@@ -1,0 +1,66 @@
+{
+  "env_folder": "recursive_dollhouse_smuggling_nonrealtime_env",
+  "all_tasks": [
+    "recursive_dollhouse_smuggling_nonrealtime_d1_full_seed_0001",
+    "recursive_dollhouse_smuggling_nonrealtime_d1_simplified_seed_0001",
+    "recursive_dollhouse_smuggling_nonrealtime_d2_full_seed_0001",
+    "recursive_dollhouse_smuggling_nonrealtime_d2_simplified_seed_0001",
+    "recursive_dollhouse_smuggling_nonrealtime_d3_full_seed_0001",
+    "recursive_dollhouse_smuggling_nonrealtime_d3_simplified_seed_0001",
+    "recursive_dollhouse_smuggling_nonrealtime_d4_full_seed_0001",
+    "recursive_dollhouse_smuggling_nonrealtime_d4_simplified_seed_0001",
+    "recursive_dollhouse_smuggling_nonrealtime_d5_full_seed_0001",
+    "recursive_dollhouse_smuggling_nonrealtime_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "recursive_dollhouse_smuggling_nonrealtime_d1_full_seed_0001",
+    "recursive_dollhouse_smuggling_nonrealtime_d1_simplified_seed_0001",
+    "recursive_dollhouse_smuggling_nonrealtime_d2_full_seed_0001",
+    "recursive_dollhouse_smuggling_nonrealtime_d2_simplified_seed_0001",
+    "recursive_dollhouse_smuggling_nonrealtime_d3_full_seed_0001",
+    "recursive_dollhouse_smuggling_nonrealtime_d3_simplified_seed_0001",
+    "recursive_dollhouse_smuggling_nonrealtime_d4_full_seed_0001",
+    "recursive_dollhouse_smuggling_nonrealtime_d4_simplified_seed_0001",
+    "recursive_dollhouse_smuggling_nonrealtime_d5_full_seed_0001",
+    "recursive_dollhouse_smuggling_nonrealtime_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "recursive_dollhouse_smuggling_nonrealtime_d5_full_seed_0001"
+    ],
+    "full": [
+      "recursive_dollhouse_smuggling_nonrealtime_d1_full_seed_0001",
+      "recursive_dollhouse_smuggling_nonrealtime_d2_full_seed_0001",
+      "recursive_dollhouse_smuggling_nonrealtime_d3_full_seed_0001",
+      "recursive_dollhouse_smuggling_nonrealtime_d4_full_seed_0001",
+      "recursive_dollhouse_smuggling_nonrealtime_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "recursive_dollhouse_smuggling_nonrealtime_d1_simplified_seed_0001",
+      "recursive_dollhouse_smuggling_nonrealtime_d2_simplified_seed_0001",
+      "recursive_dollhouse_smuggling_nonrealtime_d3_simplified_seed_0001",
+      "recursive_dollhouse_smuggling_nonrealtime_d4_simplified_seed_0001",
+      "recursive_dollhouse_smuggling_nonrealtime_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "recursive_dollhouse_smuggling_nonrealtime_d1_full_seed_0001",
+      "recursive_dollhouse_smuggling_nonrealtime_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "recursive_dollhouse_smuggling_nonrealtime_d2_full_seed_0001",
+      "recursive_dollhouse_smuggling_nonrealtime_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "recursive_dollhouse_smuggling_nonrealtime_d3_full_seed_0001",
+      "recursive_dollhouse_smuggling_nonrealtime_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "recursive_dollhouse_smuggling_nonrealtime_d4_full_seed_0001",
+      "recursive_dollhouse_smuggling_nonrealtime_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "recursive_dollhouse_smuggling_nonrealtime_d5_full_seed_0001",
+      "recursive_dollhouse_smuggling_nonrealtime_d5_simplified_seed_0001"
+    ]
+  }
+}

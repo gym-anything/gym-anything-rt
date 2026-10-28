@@ -1,0 +1,66 @@
+{
+  "env_folder": "coordinates_by_another_name_v3_env",
+  "all_tasks": [
+    "coordinates_by_another_name_v3_d1_full_seed_0001",
+    "coordinates_by_another_name_v3_d1_simplified_seed_0001",
+    "coordinates_by_another_name_v3_d2_full_seed_0001",
+    "coordinates_by_another_name_v3_d2_simplified_seed_0001",
+    "coordinates_by_another_name_v3_d3_full_seed_0001",
+    "coordinates_by_another_name_v3_d3_simplified_seed_0001",
+    "coordinates_by_another_name_v3_d4_full_seed_0001",
+    "coordinates_by_another_name_v3_d4_simplified_seed_0001",
+    "coordinates_by_another_name_v3_d5_full_seed_0001",
+    "coordinates_by_another_name_v3_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "coordinates_by_another_name_v3_d1_full_seed_0001",
+    "coordinates_by_another_name_v3_d1_simplified_seed_0001",
+    "coordinates_by_another_name_v3_d2_full_seed_0001",
+    "coordinates_by_another_name_v3_d2_simplified_seed_0001",
+    "coordinates_by_another_name_v3_d3_full_seed_0001",
+    "coordinates_by_another_name_v3_d3_simplified_seed_0001",
+    "coordinates_by_another_name_v3_d4_full_seed_0001",
+    "coordinates_by_another_name_v3_d4_simplified_seed_0001",
+    "coordinates_by_another_name_v3_d5_full_seed_0001",
+    "coordinates_by_another_name_v3_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "coordinates_by_another_name_v3_d5_full_seed_0001"
+    ],
+    "full": [
+      "coordinates_by_another_name_v3_d1_full_seed_0001",
+      "coordinates_by_another_name_v3_d2_full_seed_0001",
+      "coordinates_by_another_name_v3_d3_full_seed_0001",
+      "coordinates_by_another_name_v3_d4_full_seed_0001",
+      "coordinates_by_another_name_v3_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "coordinates_by_another_name_v3_d1_simplified_seed_0001",
+      "coordinates_by_another_name_v3_d2_simplified_seed_0001",
+      "coordinates_by_another_name_v3_d3_simplified_seed_0001",
+      "coordinates_by_another_name_v3_d4_simplified_seed_0001",
+      "coordinates_by_another_name_v3_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "coordinates_by_another_name_v3_d1_full_seed_0001",
+      "coordinates_by_another_name_v3_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "coordinates_by_another_name_v3_d2_full_seed_0001",
+      "coordinates_by_another_name_v3_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "coordinates_by_another_name_v3_d3_full_seed_0001",
+      "coordinates_by_another_name_v3_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "coordinates_by_another_name_v3_d4_full_seed_0001",
+      "coordinates_by_another_name_v3_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "coordinates_by_another_name_v3_d5_full_seed_0001",
+      "coordinates_by_another_name_v3_d5_simplified_seed_0001"
+    ]
+  }
+}

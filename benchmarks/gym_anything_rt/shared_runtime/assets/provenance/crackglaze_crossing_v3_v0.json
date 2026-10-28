@@ -1,0 +1,24 @@
+{
+  "mechanic_id": "crackglaze_crossing_v3",
+  "source_anchors": [
+    "IND-021",
+    "VGE-250",
+    "VGE-489"
+  ],
+  "source_urls": [
+    "https://www.puzzlescript.net/play.html?p=11358856",
+    "https://api.github.com/gists/11358856",
+    "https://strategywiki.org/wiki/The_7th_Guest/Walkthrough",
+    "https://en.wikipedia.org/wiki/Q.U.B.E.",
+    "https://www.youtube.com/watch?v=-tY3D-EndKM"
+  ],
+  "selection_file": "creation_audit_logs/realtime_source_remaining48_20261002/selection.json",
+  "survey_root": "outputs/selection_round4_20260906/inputs",
+  "transformation": "Original drifting ceramic raft floor: current motion determines safe span crossings; departure activates persistent glaze fuses; shadowed faces hide cracks while motion stays observable.",
+  "source_discrepancy": "Collapse gist has collect-all/exit win conditions and gravity/hover platform rules; the survey once-per-tile description is not confirmed by that source.",
+  "artwork": "Original procedural canvas and CSS. No source artwork, maps, code, audio or characters copied.",
+  "third_party_runtime": "Only existing benchmark browser/server runtime.",
+  "original_environment_preserved": true,
+  "human_calibration": "not run",
+  "agent_calibration": "not run"
+}

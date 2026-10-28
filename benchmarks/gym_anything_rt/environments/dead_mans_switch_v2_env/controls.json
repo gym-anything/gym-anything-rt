@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "dead_mans_switch_v2",
+  "baseline": {
+    "difficulty": 4,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Keep one broad, slow pressure plate held while taking a short route through a single relay wall.",
+      "natural_language": "Keep the moving pressure plate held while steering through the relay and into the dock.",
+      "parameters": {
+        "columns": 9,
+        "rows": 7,
+        "barrier_columns": [4],
+        "low_gap_rows": [2],
+        "high_gap_rows": [4],
+        "start_rows": [4],
+        "goal_rows": [4],
+        "minimum_solution_moves": 7,
+        "maximum_solution_moves": 12,
+        "pressure_period_ms_values": [4800],
+        "x_amplitude_milli_min": 155,
+        "x_amplitude_milli_max": 175,
+        "y_amplitude_milli_min": 95,
+        "y_amplitude_milli_max": 115,
+        "hit_x_milli": 270,
+        "hit_y_milli": 310,
+        "sample_ms": 140,
+        "maximum_sample_gap_ms": 520,
+        "outside_grace_ms": 460,
+        "minimum_hold_ms": 3000
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Track a broad moving plate while planning across two alternating relay walls and a 15 to 20 move route.",
+      "natural_language": "Keep the moving pressure plate held while steering through both relays in order and into the dock.",
+      "parameters": {
+        "columns": 12,
+        "rows": 8,
+        "barrier_columns": [3, 8],
+        "low_gap_rows": [1, 2],
+        "high_gap_rows": [5, 6],
+        "start_rows": [5, 6],
+        "goal_rows": [5, 6],
+        "minimum_solution_moves": 15,
+        "maximum_solution_moves": 20,
+        "pressure_period_ms_values": [4400, 4600],
+        "x_amplitude_milli_min": 195,
+        "x_amplitude_milli_max": 215,
+        "y_amplitude_milli_min": 120,
+        "y_amplitude_milli_max": 140,
+        "hit_x_milli": 240,
+        "hit_y_milli": 280,
+        "sample_ms": 125,
+        "maximum_sample_gap_ms": 460,
+        "outside_grace_ms": 390,
+        "minimum_hold_ms": 3800
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Track a moving plate while coordinating three alternating relays across a 28 to 36 move route.",
+      "natural_language": "Keep the moving pressure plate held while steering through all three numbered relays and into the dock.",
+      "parameters": {
+        "columns": 15,
+        "rows": 9,
+        "barrier_columns": [3, 7, 11],
+        "low_gap_rows": [1, 2],
+        "high_gap_rows": [6, 7],
+        "start_rows": [6, 7],
+        "goal_rows": [6, 7],
+        "minimum_solution_moves": 28,
+        "maximum_solution_moves": 36,
+        "pressure_period_ms_values": [4000, 4200],
+        "x_amplitude_milli_min": 220,
+        "x_amplitude_milli_max": 240,
+        "y_amplitude_milli_min": 140,
+        "y_amplitude_milli_max": 160,
+        "hit_x_milli": 210,
+        "hit_y_milli": 255,
+        "sample_ms": 110,
+        "maximum_sample_gap_ms": 410,
+        "outside_grace_ms": 350,
+        "minimum_hold_ms": 4500
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Preserve the existing trial: track the current moving plate while navigating five alternating relays over a 45 to 57 move route.",
+      "natural_language": "Keep the moving pressure plate held down while steering through all five checkpoints to the dock. Losing it for too long resets the route.",
+      "parameters": {
+        "columns": 18,
+        "rows": 10,
+        "barrier_columns": [3, 6, 9, 12, 15],
+        "low_gap_rows": [1, 2],
+        "high_gap_rows": [7, 8],
+        "start_rows": [7, 8],
+        "goal_rows": [7, 8],
+        "minimum_solution_moves": 45,
+        "maximum_solution_moves": 57,
+        "pressure_period_ms_values": [3600, 3800, 4000],
+        "x_amplitude_milli_min": 245,
+        "x_amplitude_milli_max": 285,
+        "y_amplitude_milli_min": 155,
+        "y_amplitude_milli_max": 190,
+        "hit_x_milli": 185,
+        "hit_y_milli": 235,
+        "sample_ms": 100,
+        "maximum_sample_gap_ms": 360,
+        "outside_grace_ms": 310,
+        "minimum_hold_ms": 5200
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Track a faster, narrower plate while navigating six alternating relays over a longer alternating route with less recovery time.",
+      "natural_language": "Keep the moving pressure plate held while steering through all six numbered relays and into the dock. A lost plate resets the full route.",
+      "parameters": {
+        "columns": 22,
+        "rows": 12,
+        "barrier_columns": [3, 6, 9, 13, 16, 19],
+        "low_gap_rows": [1, 2],
+        "high_gap_rows": [9, 10],
+        "start_rows": [9, 10],
+        "goal_rows": [9, 10],
+        "minimum_solution_moves": 60,
+        "maximum_solution_moves": 74,
+        "pressure_period_ms_values": [3200, 3400, 3600],
+        "x_amplitude_milli_min": 285,
+        "x_amplitude_milli_max": 315,
+        "y_amplitude_milli_min": 185,
+        "y_amplitude_milli_max": 215,
+        "hit_x_milli": 155,
+        "hit_y_milli": 200,
+        "sample_ms": 85,
+        "maximum_sample_gap_ms": 300,
+        "outside_grace_ms": 240,
+        "minimum_hold_ms": 6500
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Engage the visible tracker proxy once, then use visible direction buttons to steer the same vehicle through the same course."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Continuously follow the visible moving pressure plate with a held pointer while steering with WASD or the arrow keys."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 120,
+    "observation_window_ms": 500,
+    "frames_per_observation": 5
+  }
+}

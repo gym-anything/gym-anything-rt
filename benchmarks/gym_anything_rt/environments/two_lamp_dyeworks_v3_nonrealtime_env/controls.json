@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "two_lamp_dyeworks_v3_nonrealtime",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "1 bath(s), 2 dyes each; 0.2s pipe delay and 0.85s mixing response; two-lamp tolerance 5, 80mm spoil allowance per roll. Stock strength changes continuously during production.",
+      "natural_language": "Click an anonymous LOT · SPOT TEST inlet to measure its dye under north-light and sodium. The revealed dye identity and two-light proof remain visible. Use the discovered inlet mapping to choose the valves for the pinned cloth. Adjust the dye valves until the wet cloth matches the pinned swatches under both north-light and sodium. Prepare freely before START ROLLS. During production, watch the dye-strength traces and correct for valve, pipe and mixing lag. Each roll must finish within its displayed spoil allowance. Maximize usable yield: every spoiled millimetre permanently reduces the quality score. CERTIFY ROLLS only after production finishes. Exceeding a roll's spoil allowance or a rejected committed certification ends the episode; later retries cannot pass. Preparation mismatches, valve adjustments, and spoiled cloth within the allowance remain recoverable. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to or interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only when part of this task, using only their visible controls.",
+      "parameters": {
+        "pigment_count": 2,
+        "vat_count": 1,
+        "transition_ms": 8500,
+        "mixing_ms": 850,
+        "pipe_ms": 200,
+        "valve_speed": 0.65,
+        "coupling": 0.0,
+        "tolerance": 5.0,
+        "waste_mm": 80
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "1 bath(s), 3 dyes each; 0.3s pipe delay and 1s mixing response; two-lamp tolerance 4.6, 70mm spoil allowance per roll. Stock strength changes continuously during production.",
+      "natural_language": "Click an anonymous LOT · SPOT TEST inlet to measure its dye under north-light and sodium. The revealed dye identity and two-light proof remain visible. Use the discovered inlet mapping to choose the valves for the pinned cloth. Adjust the dye valves until the wet cloth matches the pinned swatches under both north-light and sodium. Prepare freely before START ROLLS. During production, watch the dye-strength traces and correct for valve, pipe and mixing lag. Changing one valve can affect the others through the common pump. Each roll must finish within its displayed spoil allowance. Maximize usable yield: every spoiled millimetre permanently reduces the quality score. CERTIFY ROLLS only after production finishes. Exceeding a roll's spoil allowance or a rejected committed certification ends the episode; later retries cannot pass. Preparation mismatches, valve adjustments, and spoiled cloth within the allowance remain recoverable. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to or interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only when part of this task, using only their visible controls.",
+      "parameters": {
+        "pigment_count": 3,
+        "vat_count": 1,
+        "transition_ms": 8000,
+        "mixing_ms": 1000,
+        "pipe_ms": 300,
+        "valve_speed": 0.6,
+        "coupling": 0.025,
+        "tolerance": 4.6,
+        "waste_mm": 70
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "1 bath(s), 4 dyes each; 0.4s pipe delay and 1.2s mixing response; two-lamp tolerance 4.2, 60mm spoil allowance per roll. Stock strength changes continuously during production.",
+      "natural_language": "Click an anonymous LOT · SPOT TEST inlet to measure its dye under north-light and sodium. The revealed dye identity and two-light proof remain visible. Use the discovered inlet mapping to choose the valves for the pinned cloth. Adjust the dye valves until the wet cloth matches the pinned swatches under both north-light and sodium. Prepare freely before START ROLLS. During production, watch the dye-strength traces and correct for valve, pipe and mixing lag. Changing one valve can affect the others through the common pump. Each roll must finish within its displayed spoil allowance. Maximize usable yield: every spoiled millimetre permanently reduces the quality score. CERTIFY ROLLS only after production finishes. Exceeding a roll's spoil allowance or a rejected committed certification ends the episode; later retries cannot pass. Preparation mismatches, valve adjustments, and spoiled cloth within the allowance remain recoverable. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to or interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only when part of this task, using only their visible controls.",
+      "parameters": {
+        "pigment_count": 4,
+        "vat_count": 1,
+        "transition_ms": 7500,
+        "mixing_ms": 1200,
+        "pipe_ms": 400,
+        "valve_speed": 0.55,
+        "coupling": 0.045,
+        "tolerance": 4.2,
+        "waste_mm": 60
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "2 bath(s), 3 dyes each; 0.5s pipe delay and 1.35s mixing response; two-lamp tolerance 3.8, 55mm spoil allowance per roll. Stock strength changes continuously during production.",
+      "natural_language": "Click an anonymous LOT · SPOT TEST inlet to measure its dye under north-light and sodium. The revealed dye identity and two-light proof remain visible. Use the discovered inlet mapping to choose the valves for the pinned cloth. Adjust the dye valves until the wet cloth matches the pinned swatches under both north-light and sodium. Prepare freely before START ROLLS. During production, watch the dye-strength traces and correct for valve, pipe and mixing lag. Changing one valve can affect the others through the common pump. Each roll must finish within its displayed spoil allowance. Maximize usable yield: every spoiled millimetre permanently reduces the quality score. CERTIFY ROLLS only after production finishes. Exceeding a roll's spoil allowance or a rejected committed certification ends the episode; later retries cannot pass. Preparation mismatches, valve adjustments, and spoiled cloth within the allowance remain recoverable. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to or interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only when part of this task, using only their visible controls.",
+      "parameters": {
+        "pigment_count": 3,
+        "vat_count": 2,
+        "transition_ms": 7000,
+        "mixing_ms": 1350,
+        "pipe_ms": 500,
+        "valve_speed": 0.5,
+        "coupling": 0.06,
+        "tolerance": 3.8,
+        "waste_mm": 55
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "2 bath(s), 4 dyes each; 0.6s pipe delay and 1.5s mixing response; two-lamp tolerance 3.4, 50mm spoil allowance per roll. Stock strength changes continuously during production.",
+      "natural_language": "Click an anonymous LOT · SPOT TEST inlet to measure its dye under north-light and sodium. The revealed dye identity and two-light proof remain visible. Use the discovered inlet mapping to choose the valves for the pinned cloth. Adjust the dye valves until the wet cloth matches the pinned swatches under both north-light and sodium. Prepare freely before START ROLLS. During production, watch the dye-strength traces and correct for valve, pipe and mixing lag. Changing one valve can affect the others through the common pump. Each roll must finish within its displayed spoil allowance. Maximize usable yield: every spoiled millimetre permanently reduces the quality score. CERTIFY ROLLS only after production finishes. Exceeding a roll's spoil allowance or a rejected committed certification ends the episode; later retries cannot pass. Preparation mismatches, valve adjustments, and spoiled cloth within the allowance remain recoverable. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to or interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only when part of this task, using only their visible controls.",
+      "parameters": {
+        "pigment_count": 4,
+        "vat_count": 2,
+        "transition_ms": 6500,
+        "mixing_ms": 1500,
+        "pipe_ms": 600,
+        "valve_speed": 0.45,
+        "coupling": 0.075,
+        "tolerance": 3.4,
+        "waste_mm": 50
+      }
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Spot-test the anonymous inlets to reveal the same dye identities and two-light proofs. Drag the visible round valve handles; the triangle follows with mechanical lag."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Spot-test the anonymous inlets to reveal the same dye identities and two-light proofs. Click a graduated valve rail; exactly the same valve, pipe, pump and mixing physics apply."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 800,
+    "frames_per_observation": 6
+  }
+}

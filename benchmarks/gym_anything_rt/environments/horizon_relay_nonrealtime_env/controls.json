@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "horizon_relay_nonrealtime",
+  "baseline": {"difficulty": 3, "interaction": "full", "real_time": "live"},
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Deliver one short request with a wide dish-aim tolerance; one visible station can complete it without a handoff.",
+      "natural_language": "Aim one station at the requested spacecraft and keep its relay alive until the short transfer completes.",
+      "parameters": {"craft_count": 1, "required_ticks": 12, "rotation_speed_deg_per_tick": 0.16, "aim_tolerance_deg": 18, "craft_latitude_spread": 8, "craft_radius": 2.65}
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Deliver two requests. The operator must select a station that is above each spacecraft's current horizon.",
+      "natural_language": "Use the three ground stations to complete both spacecraft requests; aim each visible dish and hold the relay.",
+      "parameters": {"craft_count": 2, "required_ticks": 16, "rotation_speed_deg_per_tick": 0.26, "aim_tolerance_deg": 15, "craft_latitude_spread": 16, "craft_radius": 2.60}
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Maintain the current three-request relay. Three-dimensional latitude and depth determine which station is above each spacecraft's local horizon.",
+      "natural_language": "Read the fixed 3D globe, aim a visible station at each requested spacecraft, and keep each transfer moving.",
+      "parameters": {"craft_count": 3, "required_ticks": 20, "rotation_speed_deg_per_tick": 0.40, "aim_tolerance_deg": 12, "craft_latitude_spread": 24, "craft_radius": 2.56}
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Complete four requests with tighter aim tolerance and a wider spread of orbital latitudes. Keeping the dish aligned requires deliberate visual pointing and station handoffs.",
+      "natural_language": "Coordinate all four relays across the station horizons. Aim accurately and hand off each transfer before choosing the next request.",
+      "parameters": {"craft_count": 4, "required_ticks": 24, "rotation_speed_deg_per_tick": 0.55, "aim_tolerance_deg": 9, "craft_latitude_spread": 34, "craft_radius": 2.54}
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Coordinate five requests with tight pointing, broad 3D latitude variation, and longer transfers; station choice and recovery from a lost link remain part of the same plan.",
+      "natural_language": "Complete the five spacecraft deliveries with accurate pointing and deliberate station handoffs; no request may be abandoned.",
+      "parameters": {"craft_count": 5, "required_ticks": 30, "rotation_speed_deg_per_tick": 0.70, "aim_tolerance_deg": 7, "craft_latitude_spread": 44, "craft_radius": 2.52}
+    }
+  },
+  "interaction": {
+    "simplified": {"implemented": true, "summary": "Choose a station and spacecraft with visible buttons, then press HOLD LINK; the same globe, requests, visibility, progress, and handoff rules remain active."},
+    "full": {"implemented": true, "summary": "Drag a visible station dish directly to a spacecraft marker to aim and start a link; drag again to re-aim or hand off when choosing a different request."}
+  },
+  "real_time": {"play_time_seconds": 150, "observation_window_ms": 480, "frames_per_observation": 6}
+}

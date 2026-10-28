@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "temporal_memory_first_change_v3_nonrealtime",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "One lens frames a slow carrier among three; wide optical framing and a long reversible cue.",
+      "parameters": {
+        "carriers": 3,
+        "lenses": 1,
+        "speed": 45,
+        "lens_radius": 82,
+        "change_ms": 3200,
+        "motion_span_ms": 4800,
+        "camera_acceleration": 2200,
+        "camera_speed": 520
+      },
+      "natural_language_by_interaction": {
+        "full": "Roll the film. Inspect concealed carrier negatives to identify the first reversal. Inspection reads fully framed carriers: their motif and any recorded past reversal time. Empty inspections are safe. Inspected motifs and notebook readings stay visible; re-inspect to update old readings. The film holds its current decision snapshot during inspection. Centre the first carrier in lens A and bind. Keep every bound carrier wholly inside its lens together to fill the 6.5-second exposure. Lost framing erases recoverable exposure. A wrong or empty binding, incomplete certification or exhausted 75-second film ends the episode. Drag a lens to steer it, then right-click that physical lens to inspect. SPACE commits the selected lens binding. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access. Do not switch to unrelated, blank, browser-settings or non-task tabs.",
+        "simplified": "Roll the film. Inspect concealed carrier negatives to identify the first reversal. Inspection reads fully framed carriers: their motif and any recorded past reversal time. Empty inspections are safe. Inspected motifs and notebook readings stay visible; re-inspect to update old readings. The film holds its current decision snapshot during inspection. Centre the first carrier in lens A and bind. Keep every bound carrier wholly inside its lens together to fill the 6.5-second exposure. Lost framing erases recoverable exposure. A wrong or empty binding, incomplete certification or exhausted 75-second film ends the episode. Select STEER A or B, then click a scene point to steer that lens. INSPECT A or B reads it; BIND A or B commits its binding. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access. Do not switch to unrelated, blank, browser-settings or non-task tabs."
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "A fourth carrier, smaller framing tolerance and a faster deliberate reveal.",
+      "parameters": {
+        "carriers": 4,
+        "lenses": 1,
+        "speed": 55,
+        "lens_radius": 72,
+        "change_ms": 2800,
+        "motion_span_ms": 4000,
+        "camera_acceleration": 2000,
+        "camera_speed": 480
+      },
+      "natural_language_by_interaction": {
+        "full": "Roll the film. Inspect concealed carrier negatives to identify the first reversal. Inspection reads fully framed carriers: their motif and any recorded past reversal time. Empty inspections are safe. Inspected motifs and notebook readings stay visible; re-inspect to update old readings. The film holds its current decision snapshot during inspection. Centre the first carrier in lens A and bind. Keep every bound carrier wholly inside its lens together to fill the 6.5-second exposure. Lost framing erases recoverable exposure. A wrong or empty binding, incomplete certification or exhausted 75-second film ends the episode. Drag a lens to steer it, then right-click that physical lens to inspect. SPACE commits the selected lens binding. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access. Do not switch to unrelated, blank, browser-settings or non-task tabs.",
+        "simplified": "Roll the film. Inspect concealed carrier negatives to identify the first reversal. Inspection reads fully framed carriers: their motif and any recorded past reversal time. Empty inspections are safe. Inspected motifs and notebook readings stay visible; re-inspect to update old readings. The film holds its current decision snapshot during inspection. Centre the first carrier in lens A and bind. Keep every bound carrier wholly inside its lens together to fill the 6.5-second exposure. Lost framing erases recoverable exposure. A wrong or empty binding, incomplete certification or exhausted 75-second film ends the episode. Select STEER A or B, then click a scene point to steer that lens. INSPECT A or B reads it; BIND A or B commits its binding. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access. Do not switch to unrelated, blank, browser-settings or non-task tabs."
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Five carriers, shorter reversible evidence and tighter deliberate framing.",
+      "parameters": {
+        "carriers": 5,
+        "lenses": 1,
+        "speed": 65,
+        "lens_radius": 64,
+        "change_ms": 2400,
+        "motion_span_ms": 3400,
+        "camera_acceleration": 1800,
+        "camera_speed": 440
+      },
+      "natural_language_by_interaction": {
+        "full": "Roll the film. Inspect concealed carrier negatives to identify the first reversal. Inspection reads fully framed carriers: their motif and any recorded past reversal time. Empty inspections are safe. Inspected motifs and notebook readings stay visible; re-inspect to update old readings. The film holds its current decision snapshot during inspection. Centre the first carrier in lens A and bind. Keep every bound carrier wholly inside its lens together to fill the 6.5-second exposure. Lost framing erases recoverable exposure. A wrong or empty binding, incomplete certification or exhausted 75-second film ends the episode. Drag a lens to steer it, then right-click that physical lens to inspect. SPACE commits the selected lens binding. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access. Do not switch to unrelated, blank, browser-settings or non-task tabs.",
+        "simplified": "Roll the film. Inspect concealed carrier negatives to identify the first reversal. Inspection reads fully framed carriers: their motif and any recorded past reversal time. Empty inspections are safe. Inspected motifs and notebook readings stay visible; re-inspect to update old readings. The film holds its current decision snapshot during inspection. Centre the first carrier in lens A and bind. Keep every bound carrier wholly inside its lens together to fill the 6.5-second exposure. Lost framing erases recoverable exposure. A wrong or empty binding, incomplete certification or exhausted 75-second film ends the episode. Select STEER A or B, then click a scene point to steer that lens. INSPECT A or B reads it; BIND A or B commits its binding. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access. Do not switch to unrelated, blank, browser-settings or non-task tabs."
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Two first-change subjects must stay framed together through joint exposure, competing for one pointer.",
+      "parameters": {
+        "carriers": 7,
+        "lenses": 2,
+        "speed": 70,
+        "lens_radius": 68,
+        "change_ms": 2200,
+        "motion_span_ms": 3200,
+        "camera_acceleration": 1600,
+        "camera_speed": 400
+      },
+      "natural_language_by_interaction": {
+        "full": "Roll the film. Inspect concealed carrier negatives to identify the first and second reversals, in order. Inspection reads fully framed carriers: their motif and any recorded past reversal time. Empty inspections are safe. Inspected motifs and notebook readings stay visible; re-inspect to update old readings. The film holds its current decision snapshot during inspection. Centre the first carrier in lens A and the second in lens B and bind. Keep every bound carrier wholly inside its lens together to fill the 6.5-second exposure. Lost framing erases recoverable exposure. A wrong or empty binding, incomplete certification or exhausted 75-second film ends the episode. Drag a lens to steer it, then right-click that physical lens to inspect. SPACE commits the selected lens binding. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access. Do not switch to unrelated, blank, browser-settings or non-task tabs.",
+        "simplified": "Roll the film. Inspect concealed carrier negatives to identify the first and second reversals, in order. Inspection reads fully framed carriers: their motif and any recorded past reversal time. Empty inspections are safe. Inspected motifs and notebook readings stay visible; re-inspect to update old readings. The film holds its current decision snapshot during inspection. Centre the first carrier in lens A and the second in lens B and bind. Keep every bound carrier wholly inside its lens together to fill the 6.5-second exposure. Lost framing erases recoverable exposure. A wrong or empty binding, incomplete certification or exhausted 75-second film ends the episode. Select STEER A or B, then click a scene point to steer that lens. INSPECT A or B reads it; BIND A or B commits its binding. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access. Do not switch to unrelated, blank, browser-settings or non-task tabs."
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Eight visually similar carriers, two lenses and tighter deliberate framing in the hardest profile.",
+      "parameters": {
+        "carriers": 8,
+        "lenses": 2,
+        "speed": 88,
+        "lens_radius": 60,
+        "change_ms": 2000,
+        "motion_span_ms": 2800,
+        "camera_acceleration": 1400,
+        "camera_speed": 360
+      },
+      "natural_language_by_interaction": {
+        "full": "Roll the film. Inspect concealed carrier negatives to identify the first and second reversals, in order. Inspection reads fully framed carriers: their motif and any recorded past reversal time. Empty inspections are safe. Inspected motifs and notebook readings stay visible; re-inspect to update old readings. The film holds its current decision snapshot during inspection. Centre the first carrier in lens A and the second in lens B and bind. Keep every bound carrier wholly inside its lens together to fill the 6.5-second exposure. Lost framing erases recoverable exposure. A wrong or empty binding, incomplete certification or exhausted 75-second film ends the episode. Drag a lens to steer it, then right-click that physical lens to inspect. SPACE commits the selected lens binding. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access. Do not switch to unrelated, blank, browser-settings or non-task tabs.",
+        "simplified": "Roll the film. Inspect concealed carrier negatives to identify the first and second reversals, in order. Inspection reads fully framed carriers: their motif and any recorded past reversal time. Empty inspections are safe. Inspected motifs and notebook readings stay visible; re-inspect to update old readings. The film holds its current decision snapshot during inspection. Centre the first carrier in lens A and the second in lens B and bind. Keep every bound carrier wholly inside its lens together to fill the 6.5-second exposure. Lost framing erases recoverable exposure. A wrong or empty binding, incomplete certification or exhausted 75-second film ends the episode. Select STEER A or B, then click a scene point to steer that lens. INSPECT A or B reads it; BIND A or B commits its binding. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access. Do not switch to unrelated, blank, browser-settings or non-task tabs."
+      }
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Drag a physical lens; right-click it to inspect framed negatives; SPACE binds its centred carrier."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Select a lens and click its desired point; INSPECT and BIND are sensor/binding proxies. No auto-aim or following."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 120,
+    "observation_window_ms": 400,
+    "frames_per_observation": 5
+  }
+}

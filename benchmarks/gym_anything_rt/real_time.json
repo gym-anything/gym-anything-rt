@@ -1,0 +1,1005 @@
+{
+  "environments": {
+    "after_hours_at_the_reliquary_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 200,
+      "play_time_seconds": 240
+    },
+    "after_hours_at_the_reliquary_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 200,
+      "play_time_seconds": 240
+    },
+    "anthill_front": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 800,
+      "play_time_seconds": 150
+    },
+    "anthill_front_nonrealtime": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 800,
+      "play_time_seconds": 150
+    },
+    "apothecary_dead_reckoning_v3": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 800,
+      "play_time_seconds": 140
+    },
+    "apothecary_dead_reckoning_v3_nonrealtime": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 800,
+      "play_time_seconds": 140
+    },
+    "ballast_lantern": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 600,
+      "play_time_seconds": 90
+    },
+    "ballast_lantern_nonrealtime": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 600,
+      "play_time_seconds": 90
+    },
+    "bandaged_rose_window_v3": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 600,
+      "play_time_seconds": 300
+    },
+    "bandaged_rose_window_v3_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 600,
+      "play_time_seconds": 300
+    },
+    "blind_dice_courier_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 300,
+      "play_time_seconds": 360
+    },
+    "blind_dice_courier_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 300,
+      "play_time_seconds": 360
+    },
+    "board_game_captcha_nonrealtime": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 500,
+      "play_time_seconds": 120
+    },
+    "board_game_captcha_v2": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 500,
+      "play_time_seconds": 120
+    },
+    "bomb_manual_from_hell_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "bomb_manual_from_hell_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "branch_repair_v3": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 600,
+      "play_time_seconds": 120
+    },
+    "branch_repair_v3_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 600,
+      "play_time_seconds": 120
+    },
+    "bureaucratic_signature_trap_v3": {
+      "frames_per_observation": 3,
+      "observation_window_ms": 100,
+      "play_time_seconds": 75
+    },
+    "bureaucratic_signature_trap_v3_nonrealtime": {
+      "frames_per_observation": 3,
+      "observation_window_ms": 100,
+      "play_time_seconds": 75
+    },
+    "cell_gatekeeper_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "cell_gatekeeper_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "charter_of_the_nine_cantons_v3": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 500,
+      "play_time_seconds": 180
+    },
+    "charter_of_the_nine_cantons_v3_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 500,
+      "play_time_seconds": 180
+    },
+    "circle_limit_twist_nonrealtime": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 500,
+      "play_time_seconds": 300
+    },
+    "circle_limit_twist_v2": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 500,
+      "play_time_seconds": 300
+    },
+    "clockbeat_catacomb_nonrealtime": {
+      "frames_per_observation": 3,
+      "observation_window_ms": 300,
+      "play_time_seconds": 180
+    },
+    "clockbeat_catacomb_v2": {
+      "frames_per_observation": 3,
+      "observation_window_ms": 300,
+      "play_time_seconds": 180
+    },
+    "clockwork_clutch_safe_nonrealtime": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 600,
+      "play_time_seconds": 180
+    },
+    "clockwork_clutch_safe_v2": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 600,
+      "play_time_seconds": 180
+    },
+    "clockwork_doppelganger_customs_v3": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "clockwork_doppelganger_customs_v3_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "cloudpost_circuit": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 600,
+      "play_time_seconds": 150
+    },
+    "cloudpost_circuit_nonrealtime": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 600,
+      "play_time_seconds": 150
+    },
+    "cloudstep_caddie_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "cloudstep_caddie_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "code_to_diagram_captcha_v3": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 400,
+      "play_time_seconds": 180
+    },
+    "code_to_diagram_captcha_v3_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 400,
+      "play_time_seconds": 180
+    },
+    "collision_chimes_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 400,
+      "play_time_seconds": 120
+    },
+    "collision_chimes_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 400,
+      "play_time_seconds": 120
+    },
+    "concertina_courier_nonrealtime": {
+      "frames_per_observation": 3,
+      "observation_window_ms": 80,
+      "play_time_seconds": 180
+    },
+    "concertina_courier_v2": {
+      "frames_per_observation": 3,
+      "observation_window_ms": 80,
+      "play_time_seconds": 180
+    },
+    "consent_gauntlet": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 720,
+      "play_time_seconds": 180
+    },
+    "consent_gauntlet_nonrealtime": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 720,
+      "play_time_seconds": 180
+    },
+    "consequences_boss_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "consequences_boss_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "coordinates_by_another_name_v3": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 600,
+      "play_time_seconds": 240
+    },
+    "coordinates_by_another_name_v3_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 600,
+      "play_time_seconds": 240
+    },
+    "courtesy_junction": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 400,
+      "play_time_seconds": 120
+    },
+    "courtesy_junction_nonrealtime": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 400,
+      "play_time_seconds": 120
+    },
+    "crackglaze_crossing_v3": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 800,
+      "play_time_seconds": 300
+    },
+    "crackglaze_crossing_v3_nonrealtime": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 800,
+      "play_time_seconds": 300
+    },
+    "craftcha_alchemy_bench_nonrealtime": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 800,
+      "play_time_seconds": 210
+    },
+    "craftcha_alchemy_bench_v2": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 800,
+      "play_time_seconds": 210
+    },
+    "crash_deadline_hovercar": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 500,
+      "play_time_seconds": 150
+    },
+    "crash_deadline_hovercar_nonrealtime": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 500,
+      "play_time_seconds": 150
+    },
+    "crater_walker_v3": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "crater_walker_v3_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "cursor_constellation_hunt_v3": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 300,
+      "play_time_seconds": 90
+    },
+    "cursor_constellation_hunt_v3_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 300,
+      "play_time_seconds": 90
+    },
+    "cursor_lens_reveal": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 600,
+      "play_time_seconds": 180
+    },
+    "cursor_lens_reveal_nonrealtime": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 600,
+      "play_time_seconds": 180
+    },
+    "dead_mans_switch_nonrealtime": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 500,
+      "play_time_seconds": 120
+    },
+    "dead_mans_switch_v2": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 500,
+      "play_time_seconds": 120
+    },
+    "downsky_causeway_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "downsky_causeway_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "elastic_membrane_sorter_nonrealtime": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 600,
+      "play_time_seconds": 180
+    },
+    "elastic_membrane_sorter_v2": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 600,
+      "play_time_seconds": 180
+    },
+    "elbow_engine_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "elbow_engine_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "ember_anvil_v3": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "ember_anvil_v3_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "facet_lantern_v3": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "facet_lantern_v3_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "firewatch_fold_v3": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "firewatch_fold_v3_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "five_second_rule": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 600,
+      "play_time_seconds": 90
+    },
+    "five_second_rule_nonrealtime": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 600,
+      "play_time_seconds": 90
+    },
+    "flat_prisoner_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 400,
+      "play_time_seconds": 120
+    },
+    "flat_prisoner_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 400,
+      "play_time_seconds": 120
+    },
+    "flip_gate_cascade_v3": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 300,
+      "play_time_seconds": 90
+    },
+    "flip_gate_cascade_v3_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 300,
+      "play_time_seconds": 90
+    },
+    "fluke_census_v3": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 600,
+      "play_time_seconds": 240
+    },
+    "fluke_census_v3_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 600,
+      "play_time_seconds": 240
+    },
+    "forced_perspective_moving_day_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 400,
+      "play_time_seconds": 180
+    },
+    "forced_perspective_moving_day_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 400,
+      "play_time_seconds": 180
+    },
+    "four_pane_pilgrimage_v3": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 600,
+      "play_time_seconds": 180
+    },
+    "four_pane_pilgrimage_v3_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 600,
+      "play_time_seconds": 180
+    },
+    "funeral_ritual_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 400,
+      "play_time_seconds": 90
+    },
+    "funeral_ritual_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 400,
+      "play_time_seconds": 90
+    },
+    "hearthlift_courier_v3": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 600,
+      "play_time_seconds": 240
+    },
+    "hearthlift_courier_v3_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 600,
+      "play_time_seconds": 240
+    },
+    "hologram_silhouette_foundry_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "hologram_silhouette_foundry_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "horizon_relay_nonrealtime": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 480,
+      "play_time_seconds": 150
+    },
+    "horizon_relay_v2": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 480,
+      "play_time_seconds": 150
+    },
+    "impossible_ecology_nonrealtime": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 800,
+      "play_time_seconds": 150
+    },
+    "impossible_ecology_v2": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 800,
+      "play_time_seconds": 150
+    },
+    "impossible_panorama": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 800,
+      "play_time_seconds": 180
+    },
+    "impossible_panorama_nonrealtime": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 800,
+      "play_time_seconds": 180
+    },
+    "jigsaw_slider_alignment_v3": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 300,
+      "play_time_seconds": 180
+    },
+    "jigsaw_slider_alignment_v3_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 300,
+      "play_time_seconds": 180
+    },
+    "lampwrights_program_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 600,
+      "play_time_seconds": 600
+    },
+    "lampwrights_program_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 600,
+      "play_time_seconds": 600
+    },
+    "lantern_loft_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "lantern_loft_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "lanternfin_dive_nonrealtime": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 600,
+      "play_time_seconds": 180
+    },
+    "lanternfin_dive_v2": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 600,
+      "play_time_seconds": 180
+    },
+    "lanternwing_roundup": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 640,
+      "play_time_seconds": 180
+    },
+    "lanternwing_roundup_nonrealtime": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 640,
+      "play_time_seconds": 180
+    },
+    "last_carbon_isles_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 600,
+      "play_time_seconds": 90
+    },
+    "last_carbon_isles_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 600,
+      "play_time_seconds": 90
+    },
+    "letter_rapids_nonrealtime": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 600,
+      "play_time_seconds": 120
+    },
+    "letter_rapids_v2": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 600,
+      "play_time_seconds": 120
+    },
+    "lidar_blacksite_nonrealtime": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 500,
+      "play_time_seconds": 90
+    },
+    "lidar_blacksite_v2": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 500,
+      "play_time_seconds": 90
+    },
+    "living_scaffold_v3": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "living_scaffold_v3_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "magnetic_stripe_purgatory_v3": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 90
+    },
+    "magnetic_stripe_purgatory_v3_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 90
+    },
+    "microgame_gauntlet": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 800,
+      "play_time_seconds": 240
+    },
+    "microgame_gauntlet_nonrealtime": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 800,
+      "play_time_seconds": 240
+    },
+    "minecraft_block_grid_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "minecraft_block_grid_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "motion_only_ghost_jigsaw_nonrealtime": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 400,
+      "play_time_seconds": 180
+    },
+    "motion_only_ghost_jigsaw_v2": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 400,
+      "play_time_seconds": 180
+    },
+    "museum_of_lost_gestures_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 90
+    },
+    "museum_of_lost_gestures_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 90
+    },
+    "occlusion_shell_swindle_nonrealtime": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 800,
+      "play_time_seconds": 120
+    },
+    "occlusion_shell_swindle_v2": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 800,
+      "play_time_seconds": 120
+    },
+    "parallel_grillmaster_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 600
+    },
+    "parallel_grillmaster_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 600
+    },
+    "pearl_lattice_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 300,
+      "play_time_seconds": 180
+    },
+    "pearl_lattice_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 300,
+      "play_time_seconds": 180
+    },
+    "photograph_eats_the_room_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 500,
+      "play_time_seconds": 180
+    },
+    "photograph_eats_the_room_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 500,
+      "play_time_seconds": 180
+    },
+    "pocket_locksmith_v3": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "pocket_locksmith_v3_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "polycube_parcel_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 600
+    },
+    "polycube_parcel_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 600
+    },
+    "polyrhythm_customs_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 120
+    },
+    "polyrhythm_customs_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 120
+    },
+    "popup_exorcist_v3": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 600,
+      "play_time_seconds": 120
+    },
+    "popup_exorcist_v3_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 600,
+      "play_time_seconds": 120
+    },
+    "rayglass_vault_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 300
+    },
+    "rayglass_vault_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 300
+    },
+    "recursive_dollhouse_smuggling_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 400,
+      "play_time_seconds": 120
+    },
+    "recursive_dollhouse_smuggling_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 400,
+      "play_time_seconds": 120
+    },
+    "reflow_vitrine_v3": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 90
+    },
+    "reflow_vitrine_v3_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 90
+    },
+    "relation_prompt_grounding_v3": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 400,
+      "play_time_seconds": 180
+    },
+    "relation_prompt_grounding_v3_nonrealtime": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 400,
+      "play_time_seconds": 180
+    },
+    "reload_interruption_nonrealtime": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 800,
+      "play_time_seconds": 120
+    },
+    "reload_interruption_v2": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 800,
+      "play_time_seconds": 120
+    },
+    "reveal_to_identify_nonrealtime": {
+      "frames_per_observation": 3,
+      "observation_window_ms": 400,
+      "play_time_seconds": 150
+    },
+    "reveal_to_identify_v2": {
+      "frames_per_observation": 3,
+      "observation_window_ms": 400,
+      "play_time_seconds": 150
+    },
+    "reverse_identity_gate": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 500,
+      "play_time_seconds": 180
+    },
+    "reverse_identity_gate_nonrealtime": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 500,
+      "play_time_seconds": 180
+    },
+    "ribbon_switchboard_v3": {
+      "frames_per_observation": 3,
+      "observation_window_ms": 400,
+      "play_time_seconds": 60
+    },
+    "ribbon_switchboard_v3_nonrealtime": {
+      "frames_per_observation": 3,
+      "observation_window_ms": 400,
+      "play_time_seconds": 60
+    },
+    "rising_causeway_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 400,
+      "play_time_seconds": 90
+    },
+    "rising_causeway_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 400,
+      "play_time_seconds": 90
+    },
+    "rorschach_fixed_rubric_v3": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 70
+    },
+    "rorschach_fixed_rubric_v3_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 70
+    },
+    "rotate_wrong_thing_upright_v3": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 600,
+      "play_time_seconds": 600
+    },
+    "rotate_wrong_thing_upright_v3_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 600,
+      "play_time_seconds": 600
+    },
+    "rotating_keyboard_nonrealtime": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 800,
+      "play_time_seconds": 90
+    },
+    "rotating_keyboard_v2": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 800,
+      "play_time_seconds": 90
+    },
+    "shadow_crime_lab_v3": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 150
+    },
+    "shadow_crime_lab_v3_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 150
+    },
+    "slot_reel_capture": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 800,
+      "play_time_seconds": 90
+    },
+    "slot_reel_capture_nonrealtime": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 800,
+      "play_time_seconds": 90
+    },
+    "surreal_apple_on_tree_grid_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 600
+    },
+    "surreal_apple_on_tree_grid_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 600
+    },
+    "surveyors_toybox_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "surveyors_toybox_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "temporal_memory_first_change_v3": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 400,
+      "play_time_seconds": 120
+    },
+    "temporal_memory_first_change_v3_nonrealtime": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 400,
+      "play_time_seconds": 120
+    },
+    "three_camera_claw_machine_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 600
+    },
+    "three_camera_claw_machine_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 600
+    },
+    "tiny_fps_customs_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 600
+    },
+    "tiny_fps_customs_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 600
+    },
+    "tomographic_baggage_surgery_v3": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "tomographic_baggage_surgery_v3_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "top_face_dice_arithmetic_nonrealtime": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 400,
+      "play_time_seconds": 180
+    },
+    "top_face_dice_arithmetic_v2": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 400,
+      "play_time_seconds": 180
+    },
+    "trace_shape_without_walls_v3": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "trace_shape_without_walls_v3_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 180
+    },
+    "two_lamp_dyeworks_v3": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 800,
+      "play_time_seconds": 180
+    },
+    "two_lamp_dyeworks_v3_nonrealtime": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 800,
+      "play_time_seconds": 180
+    },
+    "unlabeled_drawer_nonrealtime": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 800,
+      "play_time_seconds": 180
+    },
+    "unlabeled_drawer_v2": {
+      "frames_per_observation": 6,
+      "observation_window_ms": 800,
+      "play_time_seconds": 180
+    },
+    "unwatched_wing_v3": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 400,
+      "play_time_seconds": 180
+    },
+    "unwatched_wing_v3_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 400,
+      "play_time_seconds": 180
+    },
+    "wonky_text_hostile_rendering_v3": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 400,
+      "play_time_seconds": 120
+    },
+    "wonky_text_hostile_rendering_v3_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 400,
+      "play_time_seconds": 120
+    },
+    "wrong_number_nonrealtime": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 600,
+      "play_time_seconds": 120
+    },
+    "wrong_number_v2": {
+      "frames_per_observation": 5,
+      "observation_window_ms": 600,
+      "play_time_seconds": 120
+    },
+    "zero_g_cable_autopsy_nonrealtime": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 120
+    },
+    "zero_g_cable_autopsy_v2": {
+      "frames_per_observation": 4,
+      "observation_window_ms": 240,
+      "play_time_seconds": 120
+    }
+  },
+  "version": 1
+}

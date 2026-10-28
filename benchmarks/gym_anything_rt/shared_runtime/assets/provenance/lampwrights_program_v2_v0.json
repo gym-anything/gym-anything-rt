@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "lampwrights_program_v2",
+  "source_anchors": [
+    "TAE-280"
+  ],
+  "sources": [
+    {
+      "survey_id": "TAE-280",
+      "survey_record": "outputs/selection_round4_20260906/inputs/dashboard/data/entries/16.json#TAE-280",
+      "url": "https://lightbot.com/",
+      "accessed": "2026-10-01",
+      "mechanic": "Limited icon routines guide a robot to light tiles on an isometric stepped map."
+    }
+  ],
+  "transformation": "An original robot interpreter on independent continuously moving roofs. Literal routines run without guarded waiting. Flight inherits roof velocity; swept visible deck contacts determine landings. Visible source and destination trajectories determine launch timing. In moving-roofs-v5, one active board also permits external planning of a complete future schedule; sustained fresh feedback is not established.",
+  "assets": {
+    "origin": "Original canvas geometry and CSS; no third-party code, art, audio or models copied.",
+    "runtime": "Existing benchmark browser runtime."
+  },
+  "original_preserved": "benchmarks/gym_anything_rt/environments/lampwrights_program_env",
+  "difficulty": "Proposed baseline D5; human and downstream model calibration pending.",
+  "capture_boundary": "Playwright diagnostics are separate from downstream native HTTP proof.",
+  "physics_revision": "moving-roofs-v5",
+  "geometry_revision": {
+    "reason": "Independent lateral travel previously allowed solid decks to intersect.",
+    "repair": "Each roof retains its independent lift, sway, velocity and ballistic collision rules. All five profiles satisfy 1 - 2*sway - 2*half_width >= 0.02. Static layouts and motion seeds are retained.",
+    "proof": "Distinct integer grid cells differ by at least one on a horizontal axis. Convex quintic interpolation remains within +/- sway, so deck volumes remain horizontally disjoint at every task time."
+  },
+  "observability_revision": {
+    "reason": "The earlier HERE/AHEAD display omitted horizontal goals, other roofs and the trajectory following a lift boundary.",
+    "repair": "Every roof displays FROM/TO/THEN xyz and time to the current endpoint; the physical endpoints are quantized to the displayed 0.01-metre lattice and ramp phase to the shared 10-ms tick. All surfaces show the same board, current-roof mark and easing law. No arc or dispatch timing is selected for the player.",
+    "prediction_horizon": "In moving-roofs-v3/v4, the displayed two-ramp board covers the declared 800-ms delay plus maximum 2000-ms primitive flight; minimum ramp duration is 4700 ms. The moving-roofs-v5 recurrence additionally determines all later ramps from one active board. The two-ramp helper limit is not a physical information limit for v5.",
+    "historical_replay": "Archived v2 sources, recordings and failures are preserved. Worlds without motion_quantum retain unquantized endpoints.",
+    "certification": "Native HTTP and capture proof, exact shared paused-endpoint reliability, grouped global expected-optimality certification and human/model calibration remain separate gates."
+  },
+  "solid_collision_revision": {
+    "reason": "An additional seeded case exposed misses at a thin corner between two sampled endpoints.",
+    "repair": "The browser and independent grader now intersect each flight segment with the whole translated deck volume. Descending top contacts retain exact square-footplate containment; side and underside entries fail.",
+    "compatibility": "Legacy generated worlds without collision_revision keep their original collision replay. V2/V3 recordings, failures and sources remain archived.",
+    "solver": "Oracle planning checks a dense 20-ms timing neighbourhood and reserves 160 ms for its own pointer gesture. This does not change the downstream harness or action adapter."
+  },
+  "grouped_observability_revision": {
+    "reason": "The older bounded board did not describe future correlations of a hidden seeded goal stream.",
+    "repair": "Replace future hidden-seed queries with a displayed invertible finite-field lift controller. Its current FROM/TO pair, physical BASE Z, phase and printed coefficients determine every past and future ramp. All seeds enter only the initialization. The exact native clock and inputs remain untouched.",
+    "period": "Primitive companion matrices have p^2-1 ramp periods (44,520 through 63,000), over 500 times the shift. No pair can repeat during the finite 600-second episode.",
+    "history": "V2-v4 truth worlds retain their old motion flags and exact grader replay. Original environments, audits, failures, films and exports stay intact.",
+    "limits": "Native coverage and protocol findings are version/source-bound in separate reports. An external planner can reconstruct a complete schedule from one active board; native robustness of that shortcut needs its own check. This is distinct from a no-further-action pre-run routine. Semantic state reconstruction does not establish universal optimality under native timing uncertainty or screenshot-only model competence."
+  },
+  "visible_input_receipt_revision": {
+    "reason": "Own HTTP request timestamps and X-server acknowledgement do not specify the browser acceptance tick, and edited slots do not reveal the already-running routine.",
+    "repair": "Both surfaces print the latest accepted dispatch tick, source roof, heading and frozen literal command list. Busy, empty and ineffective dispatches do not overwrite it; subsequent routine edits preserve it. Turn, centering and LIGHT durations are visible. Motion, geometry, input effects, grading and all profile margins are unchanged.",
+    "information_argument": "The current exact trajectory board reconstructs every past roof pose. Each accepted dispatch begins ready and centered. Replaying its at-most-four printed commands from its printed roof, heading and tick reconstructs flight, centering, pending LIGHT and immutable queue; current visible lamps supply earlier lighting. Expired busy timestamps and earlier step records have no future physical effect.",
+    "validation_boundary": "Numerical and headless rendered checks are implementation evidence. Native execution of this renderer and the declared one-board HTTP shortcut challenges remain pending the existing preserved queue. No screenshot-only optimal policy, construction approval or shared-runtime reliability is claimed.",
+    "begin_feedback": "BEGIN synchronously draws the active board and READY state while task time remains zero. This removes an active-before-first-paint history with trajectory fields still withheld; no clock or mode branch is added."
+  }
+}

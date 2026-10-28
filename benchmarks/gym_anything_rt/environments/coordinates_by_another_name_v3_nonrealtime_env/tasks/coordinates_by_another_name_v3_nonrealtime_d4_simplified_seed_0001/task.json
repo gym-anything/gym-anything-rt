@@ -1,0 +1,67 @@
+{
+  "description": "Search concealed hulls by addressed sector sonar, then predict and symbolically address an action-stepped drifting fleet with delayed torpedoes.",
+  "difficulty": "hard",
+  "env_id": "gym_anything_rt.coordinates_by_another_name_v3_nonrealtime_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/coordinates_by_another_name_v3_nonrealtime_d4_simplified_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/coordinates_by_another_name_v3_nonrealtime_d4_simplified_seed_0001/setup_task.sh"
+  },
+  "id": "coordinates_by_another_name_v3_nonrealtime_d4_simplified_seed_0001@0.2",
+  "init": {
+    "max_steps": 180,
+    "reward_type": "sparse",
+    "timeout_sec": 240
+  },
+  "metadata": {
+    "benchmark": "gym_anything_rt",
+    "capabilities": [
+      "visual understanding: 2D",
+      "temporal understanding and memory",
+      "reasoning and planning"
+    ],
+    "capability_configuration": {
+      "difficulty": 4,
+      "interaction": "simplified"
+    },
+    "control_condition": {
+      "difficulty": 4,
+      "difficulty_parameters": {
+        "blast_radius": 13,
+        "columns": 9,
+        "compartments": 3,
+        "displacement": 115,
+        "echo_ms": 7500,
+        "flight_ms": 1700,
+        "holes": 2,
+        "hostile": 3,
+        "protected": 2,
+        "radius": 21,
+        "reverse": true,
+        "rows": 6,
+        "span_ms": 2800
+      },
+      "interaction": "simplified",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "coordinates_by_another_name_v3_nonrealtime"
+  },
+  "name": "Coordinates by Another Name V3 · Difficulty 4 · Simplified Interaction",
+  "natural_language": "Scan the chart, wake the fleet, and sink all orange hostile compartments while leaving pale protected hulls intact. Use the rolling sonar forecast (dots every 0.4s, endpoint 3.2s) to predict the position at torpedo impact. Compose band, block and count; bracket arrows show the local count direction. SONAR SCAN inspects only the cyan sector selected by BAND + BLOCK; COUNT is ignored for sonar. Search different sectors to locate hostile and protected hulls. Empty scans are safe, and discovered identities remain in the scan log. Any scan refreshes the live tracks of previously found hulls. You may search safely in preparation before WAKE FLEET. The fleet is stable while you wait; selector and scan actions advance the watch in 600ms steps, and torpedo flight resolves after its finite action-triggered duration. A miss, protected hit, premature submission or watch timeout ends this episode. Torpedo flight is 1.7s. Click the three rows of selector buttons. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed, using only their visible controls.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "linux",
+    "browser",
+    "visual-puzzle",
+    "gym-anything-rt",
+    "real-time",
+    "symbolic-addressing",
+    "sonar-tracking"
+  ],
+  "version": "0.2"
+}

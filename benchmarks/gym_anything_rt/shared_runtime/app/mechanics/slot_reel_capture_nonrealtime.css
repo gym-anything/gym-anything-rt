@@ -1,0 +1,36 @@
+body[data-mechanic="slot-reel-nonrealtime"] {
+  background: radial-gradient(circle at 50% 20%, #7e1c24 0, #270a0e 45%, #0b0506 100%);
+}
+
+.slot-nonrealtime-captcha { max-width: 870px; margin: 5vh auto; border: 2px solid #d5ad4f; background: #260b10; color: #ffe7a2; box-shadow: 0 0 0 8px #120609, 0 30px 80px rgba(0,0,0,.6); outline: none; }
+.slot-nonrealtime-head { padding: 20px 24px 16px; border-bottom: 1px solid #704025; }
+.slot-nonrealtime-head p, .slot-nonrealtime-index, .slot-nonrealtime-status { color: #b78b45; font: 800 10px/1.2 "Courier New", monospace; letter-spacing: .08em; }
+.slot-nonrealtime-head h1 { margin: 8px 0 0; color: #ffe7a2; font: 700 24px/1.2 Georgia, serif; }
+.slot-nonrealtime-stage { padding: 18px 20px 22px; background: #13090b; }
+.slot-nonrealtime-machine-top, .slot-nonrealtime-status, .slot-nonrealtime-foot { display: flex; align-items: center; gap: 10px; }
+.slot-nonrealtime-machine-top { justify-content: space-between; padding: 0 4px 14px; color: #d5ad4f; font: 800 12px/1 "Courier New", monospace; letter-spacing: .12em; }
+.slot-nonrealtime-status { gap: 6px; }
+.slot-nonrealtime-strikes-count { min-width: 24px; color: #ffe2a0; }
+.slot-nonrealtime-strike-pip { width: 9px; height: 9px; border: 1px solid #a97d34; border-radius: 50%; background: #241013; box-shadow: inset 0 0 0 2px #12070a; }
+.slot-nonrealtime-strike-pip[data-active="true"] { border-color: #ff594d; background: #ff4b43; box-shadow: 0 0 10px rgba(255, 67, 58, .85), inset 0 0 0 2px #63140f; }
+.slot-nonrealtime-reels { display: grid; grid-template-columns: repeat(auto-fit, minmax(82px, 1fr)); gap: 11px; padding: 20px; border: 3px solid #b98c3c; background: #13090b; box-shadow: inset 0 0 35px #000; }
+.slot-nonrealtime-reel { position: relative; min-width: 0; }
+.slot-nonrealtime-window { position: relative; display: grid; place-items: center; height: 154px; overflow: hidden; border: 3px solid #29191a; background: linear-gradient(#a99d82 0, #f4e6c2 16%, #fff8df 50%, #d2c09a 84%, #796f5e 100%); box-shadow: inset 0 16px 22px rgba(0,0,0,.32), inset 0 -16px 22px rgba(0,0,0,.28); }
+.slot-nonrealtime-window::before, .slot-nonrealtime-window::after { content: ""; position: absolute; left: 0; right: 0; height: 2px; background: #c7282e; opacity: .65; }
+.slot-nonrealtime-window::before { top: 48%; } .slot-nonrealtime-window::after { top: 52%; }
+.slot-nonrealtime-window[data-ready="true"] { border-color: #f4c658; box-shadow: 0 0 19px rgba(255,191,62,.55), inset 0 0 20px rgba(255,255,255,.34); }
+.slot-nonrealtime-symbol { color: #241115; font: 700 64px/1 Georgia, serif; text-shadow: 0 2px #fff; }
+.slot-nonrealtime-arrow { display: block; height: 22px; color: transparent; text-align: center; }
+.slot-nonrealtime-reel[data-active="true"] .slot-nonrealtime-arrow { color: #ffd568; }
+.slot-nonrealtime-reel[data-frozen="true"] .slot-nonrealtime-window { border-color: #f4c658; }
+.slot-nonrealtime-index { display: block; margin-top: 7px; text-align: center; }
+.slot-nonrealtime-captured { display: flex; justify-content: center; gap: 9px; margin-top: 22px; }
+.slot-nonrealtime-captured span { display: grid; place-items: center; width: 44px; height: 43px; border: 1px solid #a77b33; background: #100709; color: #ffe6a2; font: 800 22px "Courier New", monospace; }
+.slot-nonrealtime-foot { justify-content: flex-end; padding: 14px 20px; border-top: 1px solid #704025; }
+.slot-nonrealtime-readout { min-width: 180px; margin-right: auto; color: #d8bb77; font: 800 11px "Courier New", monospace; }
+.slot-nonrealtime-readout[data-status="passed"] { color: #8df0b5; } .slot-nonrealtime-readout[data-status="error"] { color: #ff8c76; }
+.slot-nonrealtime-button { padding: 10px 14px; border: 1px solid #d5ad4f; background: #5e1920; color: #ffe7a2; font: 800 11px "Courier New", monospace; letter-spacing: .06em; cursor: pointer; }
+.slot-nonrealtime-button:hover:not(:disabled), .slot-nonrealtime-button:focus-visible:not(:disabled) { background: #8a252e; }
+.slot-nonrealtime-button:disabled { cursor: not-allowed; opacity: .45; }
+@keyframes slot-nonrealtime-shock { 50% { transform: translateX(5px); } }
+.slot-nonrealtime-shock { animation: slot-nonrealtime-shock .2s 2; }

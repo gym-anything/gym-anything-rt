@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "after_hours_at_the_reliquary_v2",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Track one horizontally roaming socket with a broad opening.",
+      "parameters": {
+        "sockets": 1,
+        "vertical": false,
+        "angle": false,
+        "span": false,
+        "radius": 48,
+        "scan_speed": 120,
+        "rate_amplitude": 0.65,
+        "rate_span_ms": 1800,
+        "charge_ms": 5500,
+        "lag_s": 0.035,
+        "view_count": 3,
+        "loupe": false
+      },
+      "natural_language": "Explore the reliquary, assemble the ward key, then keep its tips inside every moving socket until the door releases. Then click the open door to leave. The ward loses charge outside contact. Early certification or running out of the visible 90-second spring ends the attempt. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, browser extensions, external applications, hidden state, or unrelated tabs."
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Track a socket moving on both axes; vertical reversals change the aim.",
+      "parameters": {
+        "sockets": 1,
+        "vertical": true,
+        "angle": false,
+        "span": false,
+        "radius": 43,
+        "scan_speed": 125,
+        "rate_amplitude": 0.65,
+        "rate_span_ms": 1800,
+        "charge_ms": 5500,
+        "lag_s": 0.045,
+        "view_count": 3,
+        "loupe": false
+      },
+      "natural_language": "Explore the reliquary, assemble the ward key, then keep its tips inside every moving socket until the door releases. Then click the open door to leave. The ward loses charge outside contact. Early certification or running out of the visible 90-second spring ends the attempt. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, browser extensions, external applications, hidden state, or unrelated tabs."
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Align two sockets together by changing the key span while moving its carrier.",
+      "parameters": {
+        "sockets": 2,
+        "vertical": true,
+        "angle": false,
+        "span": true,
+        "radius": 40,
+        "scan_speed": 90,
+        "rate_amplitude": 0.25,
+        "rate_span_ms": 3000,
+        "charge_ms": 5500,
+        "lag_s": 0.05,
+        "view_count": 4,
+        "loupe": true
+      },
+      "natural_language": "Explore the reliquary, assemble the ward key, then keep its tips inside every moving socket until the door releases. Then click the open door to leave. The ward loses charge outside contact. Early certification or running out of the visible 90-second spring ends the attempt. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, browser extensions, external applications, hidden state, or unrelated tabs."
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Align independently moving sockets by adjusting carrier, angle and span; collect and join tools across five views.",
+      "parameters": {
+        "sockets": 2,
+        "vertical": true,
+        "angle": true,
+        "span": true,
+        "radius": 36,
+        "scan_speed": 95,
+        "rate_amplitude": 0.3,
+        "rate_span_ms": 2600,
+        "charge_ms": 6000,
+        "lag_s": 0.065,
+        "view_count": 5,
+        "loupe": true
+      },
+      "natural_language": "Explore the reliquary, assemble the ward key, then keep its tips inside every moving socket until the door releases. Then click the open door to leave. The ward loses charge outside contact. Early certification or running out of the visible 90-second spring ends the attempt. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, browser extensions, external applications, hidden state, or unrelated tabs."
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Control four coupled pose variables with inertia, tighter openings and faster changing motion while both socket contacts must hold together.",
+      "parameters": {
+        "sockets": 2,
+        "vertical": true,
+        "angle": true,
+        "span": true,
+        "radius": 32,
+        "scan_speed": 105,
+        "rate_amplitude": 0.35,
+        "rate_span_ms": 2300,
+        "charge_ms": 6500,
+        "lag_s": 0.09,
+        "view_count": 5,
+        "loupe": true
+      },
+      "natural_language": "Explore the reliquary, assemble the ward key, then keep its tips inside every moving socket until the door releases. Then click the open door to leave. The ward loses charge outside contact. Early certification or running out of the visible 90-second spring ends the attempt. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, browser extensions, external applications, hidden state, or unrelated tabs."
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Drag inventory tools to join or use them. Drag the key carrier, the angle crank and span handle to aim."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Select an inventory item then click its mate or destination. Click the carrier target, angle dial or span rail to aim. No snapping or tracking."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 240,
+    "observation_window_ms": 200,
+    "frames_per_observation": 4
+  }
+}

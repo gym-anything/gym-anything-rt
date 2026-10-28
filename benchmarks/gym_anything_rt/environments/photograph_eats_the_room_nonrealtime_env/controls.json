@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "photograph_eats_the_room_nonrealtime",
+  "baseline": {
+    "difficulty": 4,
+    "interaction": "simplified",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Capture one nearby beam, make a wide bridge over a short void, and walk to a terminal before the divider. The broad frustum, placement, angle, scale, and bridge margins isolate the photograph-to-geometry rule. The camera view stays fixed until a deliberate turn.",
+      "natural_language": "Frame the nearby beam, develop its print into the marked bridge, then cross the void to the verification terminal.",
+      "parameters": {
+        "stage_count": 1,
+        "source_offset": 1.5,
+        "pit_width_choices": [
+          2.25,
+          2.5
+        ],
+        "terminal_x": 14.75,
+        "capture_range": 5.6,
+        "frustum_margin": 0.01,
+        "socket_tolerance": 0.84,
+        "angle_tolerance_deg": 30,
+        "bridge_half_width": 0.7,
+        "door_half_width": 0.7,
+        "plane_rotation_step_deg": 30,
+        "plane_scale_step": 0.2,
+        "bridge_scale": 1.8,
+        "opening_scale": 1.4
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Create the bridge and doorway in the original order, but both sources are closer to the route and the room accepts broad placement, angle, scale, bridge, and doorway margins. The camera view stays fixed until a deliberate turn.",
+      "natural_language": "Capture the beam and opening, develop a bridge and doorway, then walk to the verification terminal.",
+      "parameters": {
+        "stage_count": 2,
+        "source_offset": 1.8,
+        "pit_width_choices": [
+          2.5,
+          2.75
+        ],
+        "terminal_x": 21.1,
+        "capture_range": 5.2,
+        "frustum_margin": 0.02,
+        "socket_tolerance": 0.7,
+        "angle_tolerance_deg": 20,
+        "bridge_half_width": 0.62,
+        "door_half_width": 0.62,
+        "plane_rotation_step_deg": 30,
+        "plane_scale_step": 0.2,
+        "bridge_scale": 1.8,
+        "opening_scale": 1.4
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Keep the two dependent rewrites but narrow the bridge and doorway, move the sources farther from the route, and require more accurate framing and transformed placement than the easy room. The camera view stays fixed until a deliberate turn.",
+      "natural_language": "Frame both source geometries, align each print with its matching socket, develop the bridge before the doorway, and reach the terminal.",
+      "parameters": {
+        "stage_count": 2,
+        "source_offset": 2,
+        "pit_width_choices": [
+          2.75,
+          3
+        ],
+        "terminal_x": 21.1,
+        "capture_range": 4.9,
+        "frustum_margin": 0.03,
+        "socket_tolerance": 0.62,
+        "angle_tolerance_deg": 15,
+        "bridge_half_width": 0.55,
+        "door_half_width": 0.54,
+        "plane_rotation_step_deg": 15,
+        "plane_scale_step": 0.1,
+        "bridge_scale": 1.9,
+        "opening_scale": 1.5
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Retains the original level-4 two-source geometry: sources 2.25 units off-route, a 3.0–3.25-unit void, 4.6-unit capture range, 0.52-unit socket tolerance, 10-degree angle tolerance, and the original bridge and doorway collision widths. The camera view stays fixed until a deliberate turn.",
+      "natural_language": "Use photographs to reshape the room and reach the verification terminal.",
+      "parameters": {
+        "stage_count": 2,
+        "source_offset": 2.25,
+        "pit_width_choices": [
+          3,
+          3.25
+        ],
+        "terminal_x": 21.1,
+        "capture_range": 4.6,
+        "frustum_margin": 0.04,
+        "socket_tolerance": 0.52,
+        "angle_tolerance_deg": 10,
+        "bridge_half_width": 0.48,
+        "door_half_width": 0.45,
+        "plane_rotation_step_deg": 15,
+        "plane_scale_step": 0.1,
+        "bridge_scale": 1.9,
+        "opening_scale": 1.5
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Retain both dependent rewrites while increasing source offset and void span, reducing capture and frustum slack, tightening transformed placement and collision corridors, and using finer direct scale and rotation increments. The camera view stays fixed until a deliberate turn.",
+      "natural_language": "Precisely frame and transform both prints. Build the narrow bridge, carve the tight doorway, and guide the camera body to the terminal.",
+      "parameters": {
+        "stage_count": 2,
+        "source_offset": 2.7,
+        "pit_width_choices": [
+          3.35,
+          3.5
+        ],
+        "terminal_x": 21.1,
+        "capture_range": 4.2,
+        "frustum_margin": 0.08,
+        "socket_tolerance": 0.42,
+        "angle_tolerance_deg": 7,
+        "bridge_half_width": 0.4,
+        "door_half_width": 0.36,
+        "plane_rotation_step_deg": 10,
+        "plane_scale_step": 0.05,
+        "bridge_scale": 2.05,
+        "opening_scale": 1.6
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Preserves the pre-control hybrid surface exactly: held WASD navigation, arrow turns, and C capture remain available alongside the existing side-panel held direction controls, shutter button, photograph control pad, rotation and scale buttons, develop button, and verification button."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Use held WASD and arrow keys to navigate and turn, C to operate the camera shutter, drag the photograph directly over the perspective canvas, Shift-drag to rotate it, wheel to scale it, then develop and verify."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 500,
+    "frames_per_observation": 4
+  }
+}

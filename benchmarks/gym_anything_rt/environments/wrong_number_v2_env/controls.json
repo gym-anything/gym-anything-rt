@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "wrong_number_v2",
+  "baseline": {
+    "difficulty": 4,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Patch one of three well-separated carriers, align a 16-step phase dial and five-position shape dial, then hold a short forgiving lock test.",
+      "natural_language": "Patch one carrier, align its two visible wave controls, and sustain the lock test.",
+      "parameters": {
+        "line_count": 3,
+        "phase_steps": 16,
+        "skew_min": -2,
+        "skew_max": 2,
+        "initial_skew_min": -2,
+        "initial_skew_max": 2,
+        "drift_milli_values": [-240, 240],
+        "impostor_distortion_min_milli": 2200,
+        "impostor_distortion_max_milli": 2600,
+        "phase_tolerance_milli_steps": 2200,
+        "skew_tolerance_milli_steps": 1550,
+        "trial_ms": 1800,
+        "sample_ms": 160,
+        "minimum_lock_samples": 8,
+        "final_window_samples": 4,
+        "minimum_final_lock_samples": 3,
+        "maximum_sample_gap_ms": 250
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Compare four carriers, align a 20-step phase dial and seven-position shape dial, then hold a longer lock test with less separation between impostors.",
+      "natural_language": "Patch one carrier, align its two visible wave controls, and sustain the lock test.",
+      "parameters": {
+        "line_count": 4,
+        "phase_steps": 20,
+        "skew_min": -3,
+        "skew_max": 3,
+        "initial_skew_min": -3,
+        "initial_skew_max": 3,
+        "drift_milli_values": [-520, -440, 440, 520],
+        "impostor_distortion_min_milli": 1900,
+        "impostor_distortion_max_milli": 2400,
+        "phase_tolerance_milli_steps": 1800,
+        "skew_tolerance_milli_steps": 1250,
+        "trial_ms": 2800,
+        "sample_ms": 140,
+        "minimum_lock_samples": 16,
+        "final_window_samples": 6,
+        "minimum_final_lock_samples": 4,
+        "maximum_sample_gap_ms": 220
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Compare five carriers, tune 24 phase positions and nine shape positions, and keep a narrower lock through a 3.6-second test.",
+      "natural_language": "Patch one carrier, align its two visible wave controls, and sustain the lock test.",
+      "parameters": {
+        "line_count": 5,
+        "phase_steps": 24,
+        "skew_min": -4,
+        "skew_max": 4,
+        "initial_skew_min": -4,
+        "initial_skew_max": 4,
+        "drift_milli_values": [-650, -580, 580, 650],
+        "impostor_distortion_min_milli": 1650,
+        "impostor_distortion_max_milli": 2250,
+        "phase_tolerance_milli_steps": 1450,
+        "skew_tolerance_milli_steps": 1000,
+        "trial_ms": 3600,
+        "sample_ms": 120,
+        "minimum_lock_samples": 23,
+        "final_window_samples": 8,
+        "minimum_final_lock_samples": 5,
+        "maximum_sample_gap_ms": 190
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Preserve the current seven-carrier switchboard: align 32 phase positions and 13 shape positions, then sustain its complete 4.8-second lock trial.",
+      "natural_language": "Phase-lock the authorized carrier. The impostor lines never hold sync.",
+      "parameters": {
+        "line_count": 7,
+        "phase_steps": 32,
+        "skew_min": -6,
+        "skew_max": 6,
+        "initial_skew_min": -5,
+        "initial_skew_max": 5,
+        "drift_milli_values": [-1680, -1510, -1340, -1180, 1180, 1340, 1510, 1680],
+        "impostor_distortion_min_milli": 1380,
+        "impostor_distortion_max_milli": 2120,
+        "phase_tolerance_milli_steps": 1150,
+        "skew_tolerance_milli_steps": 720,
+        "trial_ms": 4800,
+        "sample_ms": 120,
+        "minimum_lock_samples": 30,
+        "final_window_samples": 10,
+        "minimum_final_lock_samples": 7,
+        "maximum_sample_gap_ms": 175
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Compare eight near-coherent carriers, tune 40 phase positions and 17 shape positions, and continuously follow a visibly shifting carrier through a 6.4-second final-window lock.",
+      "natural_language": "Patch one carrier, align its two visible wave controls, and sustain the lock test.",
+      "parameters": {
+        "line_count": 8,
+        "phase_steps": 40,
+        "skew_min": -8,
+        "skew_max": 8,
+        "initial_skew_min": -7,
+        "initial_skew_max": 7,
+        "drift_milli_values": [-2200, -2100, -2000, 2000, 2100, 2200],
+        "impostor_distortion_min_milli": 1080,
+        "impostor_distortion_max_milli": 1650,
+        "phase_tolerance_milli_steps": 850,
+        "skew_tolerance_milli_steps": 550,
+        "trial_ms": 6400,
+        "sample_ms": 100,
+        "minimum_lock_samples": 45,
+        "final_window_samples": 14,
+        "minimum_final_lock_samples": 12,
+        "maximum_sample_gap_ms": 150
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Use labelled phase and shape step buttons; jack selection and the lock-test button are unchanged."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Manipulate the visible phase and shape tuning sliders directly; jack selection and the lock-test button are unchanged."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 120,
+    "observation_window_ms": 600,
+    "frames_per_observation": 5
+  }
+}

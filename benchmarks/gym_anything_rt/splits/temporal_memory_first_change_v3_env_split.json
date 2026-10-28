@@ -1,0 +1,66 @@
+{
+  "env_folder": "temporal_memory_first_change_v3_env",
+  "all_tasks": [
+    "temporal_memory_first_change_v3_d1_full_seed_0001",
+    "temporal_memory_first_change_v3_d1_simplified_seed_0001",
+    "temporal_memory_first_change_v3_d2_full_seed_0001",
+    "temporal_memory_first_change_v3_d2_simplified_seed_0001",
+    "temporal_memory_first_change_v3_d3_full_seed_0001",
+    "temporal_memory_first_change_v3_d3_simplified_seed_0001",
+    "temporal_memory_first_change_v3_d4_full_seed_0001",
+    "temporal_memory_first_change_v3_d4_simplified_seed_0001",
+    "temporal_memory_first_change_v3_d5_full_seed_0001",
+    "temporal_memory_first_change_v3_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "temporal_memory_first_change_v3_d1_full_seed_0001",
+    "temporal_memory_first_change_v3_d1_simplified_seed_0001",
+    "temporal_memory_first_change_v3_d2_full_seed_0001",
+    "temporal_memory_first_change_v3_d2_simplified_seed_0001",
+    "temporal_memory_first_change_v3_d3_full_seed_0001",
+    "temporal_memory_first_change_v3_d3_simplified_seed_0001",
+    "temporal_memory_first_change_v3_d4_full_seed_0001",
+    "temporal_memory_first_change_v3_d4_simplified_seed_0001",
+    "temporal_memory_first_change_v3_d5_full_seed_0001",
+    "temporal_memory_first_change_v3_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "temporal_memory_first_change_v3_d5_full_seed_0001"
+    ],
+    "full": [
+      "temporal_memory_first_change_v3_d1_full_seed_0001",
+      "temporal_memory_first_change_v3_d2_full_seed_0001",
+      "temporal_memory_first_change_v3_d3_full_seed_0001",
+      "temporal_memory_first_change_v3_d4_full_seed_0001",
+      "temporal_memory_first_change_v3_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "temporal_memory_first_change_v3_d1_simplified_seed_0001",
+      "temporal_memory_first_change_v3_d2_simplified_seed_0001",
+      "temporal_memory_first_change_v3_d3_simplified_seed_0001",
+      "temporal_memory_first_change_v3_d4_simplified_seed_0001",
+      "temporal_memory_first_change_v3_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "temporal_memory_first_change_v3_d1_full_seed_0001",
+      "temporal_memory_first_change_v3_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "temporal_memory_first_change_v3_d2_full_seed_0001",
+      "temporal_memory_first_change_v3_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "temporal_memory_first_change_v3_d3_full_seed_0001",
+      "temporal_memory_first_change_v3_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "temporal_memory_first_change_v3_d4_full_seed_0001",
+      "temporal_memory_first_change_v3_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "temporal_memory_first_change_v3_d5_full_seed_0001",
+      "temporal_memory_first_change_v3_d5_simplified_seed_0001"
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "env_folder": "cell_gatekeeper_v2_env",
+  "all_tasks": [
+    "cell_gatekeeper_v2_d1_full_seed_0001",
+    "cell_gatekeeper_v2_d1_simplified_seed_0001",
+    "cell_gatekeeper_v2_d2_full_seed_0001",
+    "cell_gatekeeper_v2_d2_simplified_seed_0001",
+    "cell_gatekeeper_v2_d3_full_seed_0001",
+    "cell_gatekeeper_v2_d3_simplified_seed_0001",
+    "cell_gatekeeper_v2_d4_full_seed_0001",
+    "cell_gatekeeper_v2_d4_simplified_seed_0001",
+    "cell_gatekeeper_v2_d5_full_seed_0001",
+    "cell_gatekeeper_v2_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "cell_gatekeeper_v2_d1_full_seed_0001",
+    "cell_gatekeeper_v2_d1_simplified_seed_0001",
+    "cell_gatekeeper_v2_d2_full_seed_0001",
+    "cell_gatekeeper_v2_d2_simplified_seed_0001",
+    "cell_gatekeeper_v2_d3_full_seed_0001",
+    "cell_gatekeeper_v2_d3_simplified_seed_0001",
+    "cell_gatekeeper_v2_d4_full_seed_0001",
+    "cell_gatekeeper_v2_d4_simplified_seed_0001",
+    "cell_gatekeeper_v2_d5_full_seed_0001",
+    "cell_gatekeeper_v2_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "cell_gatekeeper_v2_d5_full_seed_0001"
+    ],
+    "full": [
+      "cell_gatekeeper_v2_d1_full_seed_0001",
+      "cell_gatekeeper_v2_d2_full_seed_0001",
+      "cell_gatekeeper_v2_d3_full_seed_0001",
+      "cell_gatekeeper_v2_d4_full_seed_0001",
+      "cell_gatekeeper_v2_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "cell_gatekeeper_v2_d1_simplified_seed_0001",
+      "cell_gatekeeper_v2_d2_simplified_seed_0001",
+      "cell_gatekeeper_v2_d3_simplified_seed_0001",
+      "cell_gatekeeper_v2_d4_simplified_seed_0001",
+      "cell_gatekeeper_v2_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "cell_gatekeeper_v2_d1_full_seed_0001",
+      "cell_gatekeeper_v2_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "cell_gatekeeper_v2_d2_full_seed_0001",
+      "cell_gatekeeper_v2_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "cell_gatekeeper_v2_d3_full_seed_0001",
+      "cell_gatekeeper_v2_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "cell_gatekeeper_v2_d4_full_seed_0001",
+      "cell_gatekeeper_v2_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "cell_gatekeeper_v2_d5_full_seed_0001",
+      "cell_gatekeeper_v2_d5_simplified_seed_0001"
+    ]
+  }
+}

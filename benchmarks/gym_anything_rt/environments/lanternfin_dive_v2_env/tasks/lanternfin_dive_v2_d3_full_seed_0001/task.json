@@ -1,0 +1,58 @@
+{
+  "description": "Steer a luminous articulated fish through real three-dimensional water by coordinating signed tail and fin torques.",
+  "difficulty": "medium",
+  "env_id": "gym_anything_rt.lanternfin_dive_v2_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/lanternfin_dive_v2_d3_full_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/lanternfin_dive_v2_d3_full_seed_0001/setup_task.sh"
+  },
+  "id": "lanternfin_dive_v2_d3_full_seed_0001@0.2",
+  "init": {
+    "max_steps": 1200,
+    "reward_type": "sparse",
+    "timeout_sec": 900
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/lanternfin_dive_v0.json",
+    "benchmark": "gym_anything_rt",
+    "control_condition": {
+      "difficulty": 3,
+      "difficulty_parameters": {
+        "angular_damping": 0.78,
+        "arrival_radius": 0.13,
+        "hold_ticks": 9,
+        "initial_pitch": -0.14,
+        "initial_roll": -0.18,
+        "initial_yaw": 0.2,
+        "linear_damping": 0.91,
+        "speed_limit": 0.045,
+        "target_depth": 0.42,
+        "target_distance": 1.16,
+        "target_height": 0.27,
+        "thrust_gain": 0.026,
+        "torque_gain": 0.02,
+        "upright_tolerance": 0.19
+      },
+      "interaction": "full",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "lanternfin_dive_v2"
+  },
+  "name": "Lanternfin Dive V2 · Baseline Hard · Full Interaction · Difficulty 3 · Full Interaction",
+  "natural_language": "Guide the articulated fish through the water to the pearl. Read its roll, pitch, and depth from the tank; correct the fins between tail beats and settle upright in the pearl.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "lanternfin_dive_v2",
+    "3d-fluid-control",
+    "articulated-propulsion",
+    "closed-loop-control"
+  ],
+  "version": "0.2"
+}

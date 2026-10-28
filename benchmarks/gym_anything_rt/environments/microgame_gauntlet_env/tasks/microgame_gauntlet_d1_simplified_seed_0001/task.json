@@ -1,0 +1,60 @@
+{
+  "description": "Complete five seeded physical control trials while preserving one shared stability resource.",
+  "difficulty": "very_easy",
+  "env_id": "gym_anything_rt.microgame_gauntlet_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/microgame_gauntlet_d1_simplified_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/microgame_gauntlet_d1_simplified_seed_0001/setup_task.sh"
+  },
+  "id": "microgame_gauntlet_d1_simplified_seed_0001@0.2",
+  "init": {
+    "max_steps": 1200,
+    "reward_type": "sparse",
+    "timeout_sec": 900
+  },
+  "metadata": {
+    "benchmark": "gym_anything_rt",
+    "control_condition": {
+      "difficulty": 1,
+      "difficulty_parameters": {
+        "checkpoint_radius": 10,
+        "chord_count": 1,
+        "chord_tick_ms": 170,
+        "corridor_radius": 15,
+        "dial_friction": 0.88,
+        "dial_target_tolerance": 36,
+        "dial_tick_ms": 115,
+        "gate_half_width_max": 12,
+        "gate_half_width_min": 12,
+        "intercept_tick_ms": 130,
+        "packet_count": 1,
+        "packet_speed_max": 2.8,
+        "packet_speed_min": 2.4,
+        "pulse_count_max": 4,
+        "pulse_count_min": 4,
+        "required_ticks": 2,
+        "route_point_count": 5
+      },
+      "interaction": "simplified",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "microgame_gauntlet"
+  },
+  "name": "Five-System Verification Reactor · Difficulty 1 · Simplified Interaction",
+  "natural_language": "Complete five short reactor trials. Preserve stability while you hold pressure, charge one chord, brake the dial, capture one packet, and guide the capsule through its route.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "microgame_gauntlet",
+    "mixed-input",
+    "continuous-control",
+    "shared-resource"
+  ],
+  "version": "0.2"
+}

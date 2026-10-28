@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "courtesy_junction",
+  "baseline": {
+    "difficulty": 4,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "One slow crossing stream and a broad right turn.",
+      "parameters": {
+        "lanes": 1,
+        "cars_per_lane": 2,
+        "speed_min": 26,
+        "speed_max": 32,
+        "yield_min": 2.0,
+        "yield_max": 2.4,
+        "turns": [
+          "right"
+        ],
+        "road_half": 100
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Opposing traffic adds a second approach to monitor.",
+      "parameters": {
+        "lanes": 2,
+        "cars_per_lane": 2,
+        "speed_min": 30,
+        "speed_max": 40,
+        "yield_min": 1.8,
+        "yield_max": 2.3,
+        "turns": [
+          "right"
+        ],
+        "road_half": 95
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Either departure road; a left turn crosses both streams, with mixed braking responses.",
+      "parameters": {
+        "lanes": 2,
+        "cars_per_lane": 3,
+        "speed_min": 34,
+        "speed_max": 48,
+        "yield_min": 1.3,
+        "yield_max": 2.1,
+        "turns": [
+          "left",
+          "right"
+        ],
+        "road_half": 90
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "A third perpendicular approach and shorter yielding horizons couple the turn to three traffic streams.",
+      "parameters": {
+        "lanes": 3,
+        "cars_per_lane": 3,
+        "speed_min": 38,
+        "speed_max": 56,
+        "yield_min": 0.9,
+        "yield_max": 2.0,
+        "turns": [
+          "left",
+          "right"
+        ],
+        "road_half": 85
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Denser and faster approaches with later braking reduce space to recover mid-turn.",
+      "parameters": {
+        "lanes": 3,
+        "cars_per_lane": 4,
+        "speed_min": 44,
+        "speed_max": 65,
+        "yield_min": 0.7,
+        "yield_max": 1.7,
+        "turns": [
+          "left",
+          "right"
+        ],
+        "road_half": 80
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Click persistent steering and throttle/brake proxy buttons; click neutral to release either axis."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Hold left/right steering and up/down throttle/brake keys together; release returns that axis to neutral."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 120,
+    "observation_window_ms": 400,
+    "frames_per_observation": 5
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Dead Man's Switch V2",
+  "original_mechanic": "dead_mans_switch",
+  "mechanic_id": "dead_mans_switch_v2",
+  "source_anchors": [
+    "opencaptchaworld-benchmark/Hold_Button"
+  ],
+  "transformation": "Pressure-pad speed changes smoothly along its path. Local recovery preserves the continuing motion clock.",
+  "validation_status": "automated_checks_passed_human_validation_pending",
+  "human_validation": "pending",
+  "model_evaluation": "pending",
+  "capability_labels": "inherited, pending V2 review",
+  "automated_validation": {
+    "live_configurations_passed": 10,
+    "d5_full_continuous_reference_video": true,
+    "independent_verifier_passed": true,
+    "static_browser_grade_passed": true,
+    "paused_clock_passed": true,
+    "failure_regeneration_passed": true,
+    "evidence": "evidence/incubator_batch_realtime6_v2_v1",
+    "report": "../docs/realtime6-v2-construction-20260923.md"
+  }
+}

@@ -1,0 +1,38 @@
+.ember-anvil-v2 {box-sizing:border-box;width:1162px;max-width:98vw;margin:16px auto;background:#17262c;color:#ece3cc;border:1px solid #61737a;border-radius:8px;box-shadow:0 18px 65px #02090d88;font-family:system-ui,sans-serif;overflow:hidden;}
+.ember-anvil-v2 * {box-sizing:border-box;}
+.ember-anvil-v2 header {height:78px;display:flex;align-items:center;gap:38px;padding:12px 24px;background:linear-gradient(110deg,#223943,#1b2b31);border-bottom:1px solid #54646a;}
+.ember-anvil-v2 header small {font-size:10px;letter-spacing:3px;color:#dda869;}
+.ember-anvil-v2 h1 {font:32px Georgia,serif;margin:4px 0 0;color:#fff0d1;}
+.ember-anvil-v2 header p {font:italic 15px Georgia,serif;color:#b6c6c7;}
+.ember-anvil-v2 #eav-elapsed {margin-left:auto;font-size:12px;color:#e5c993;}
+.ember-anvil-v2 main {display:grid;grid-template-columns:860px 1fr;}
+.eav-stage {position:relative;height:450px;}
+#eav-work {display:block;width:860px;height:450px;touch-action:none;cursor:crosshair;}
+.ember-anvil-v2 aside {padding:10px 14px;background:#13262b;border-left:1px solid #486168;}
+.ember-anvil-v2 aside>small {display:block;font-size:11px;color:#b3cba7;letter-spacing:1px;text-transform:uppercase;}
+#eav-target {display:block;width:250px;height:308px;margin:-3px auto -12px;}
+#eav-target {cursor:crosshair;touch-action:none;}
+.eav-glow {display:flex;gap:9px;align-items:center;}
+.eav-glow i {width:21px;height:25px;flex-shrink:0;background:#e89348;border:2px solid #ffe09c;box-shadow:0 0 13px #e8934888;}
+.eav-glow span {font-size:10px;line-height:1.5;color:#d8c5a3;}
+.ember-anvil-v2 button {font:600 12px system-ui;color:#eadbc0;background:#2f444d;border:1px solid #73868c;border-radius:5px;min-height:36px;padding:8px 12px;cursor:pointer;}
+.ember-anvil-v2 button:hover {background:#45606a;border-color:#e5c18b;}
+.ember-anvil-v2 button:disabled {opacity:.45;cursor:default;}
+#eav-begin {width:100%;margin-top:9px;color:#ffd9a0;background:#4f3a28;border-color:#af8459;}
+.ember-anvil-v2 aside p {font-size:10px;line-height:1.5;color:#b2c1c3;margin:6px 0 0;}
+.eav-tools {display:flex;gap:24px;align-items:center;padding:10px 20px;border-top:1px solid #53666d;}
+.eav-tools>div {display:flex;gap:8px;}
+.eav-tools small {display:block;font-size:10px;color:#bac9c9;font-weight:400;margin-top:2px;}
+.eav-tools [data-tool] {min-width:154px;text-align:left;}
+.eav-directions button {width:42px;}
+.eav-tools button.selected {border-color:#e9bc79;background:#655036;}
+#eav-tool {margin-left:auto;font-size:12px;color:#e9c284;letter-spacing:1px;}
+.ember-anvil-v2 footer {border-top:1px solid #51676e;display:flex;align-items:center;justify-content:space-between;padding:9px 20px;height:65px;}
+#eav-message {font-size:12px;display:block;}
+#eav-ledger {font-size:10px;color:#9fb4b7;}
+.ember-anvil-v2 .readout {display:none;}
+#eav-stamp {background:#a36837;border-color:#e2ad6c;color:#fff0cc;padding:12px 26px;}
+#eav-verdict {display:none;position:absolute;left:9%;right:9%;top:35%;background:#562e25f5;border:2px solid #f2b794;color:#fff0d3;text-align:center;padding:28px 14px;font-size:27px;font-weight:800;pointer-events:none;}
+#eav-verdict.show {display:block;}
+#eav-verdict.pass {background:#244837f5;border-color:#bfdfa0;}
+@media(max-width:1190px) {.ember-anvil-v2 {transform:scale(.96);transform-origin:top center;max-width:none;margin-top:8px;}}

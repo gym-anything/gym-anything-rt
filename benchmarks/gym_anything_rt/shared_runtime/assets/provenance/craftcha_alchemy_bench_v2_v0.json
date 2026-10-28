@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "mechanic_id": "craftcha_alchemy_bench_v2",
+  "source_anchors": [
+    "neal-im-not-a-robot/level-21-craftcha"
+  ],
+  "source_urls": [
+    "https://neal.fun/im-not-a-robot/",
+    "https://neal.fun/not-a-robot/"
+  ],
+  "source_selection": "creation_audit_logs/realtime_source_remaining48_20261002/selection.json",
+  "survey_root": "outputs/selection_round4_20260906/inputs",
+  "survey_ids": [],
+  "transformation": "Chained material crafting becomes moving reagent interception, visible five-second blend formation, and competing perishable-intermediate lifetimes. Original procedural art and independent coordinate/time replay. No Minecraft assets, grid, names or recipes are copied.",
+  "assets": "Canvas and CSS procedural original art; no third-party media",
+  "status": "prototype_visual_candidate",
+  "source_access": "Selected survey_ids are empty. Selected collected mechanics file is missing; direct supplied and canonical URLs returned HTTP 403. Supplementary records WEB-002 and CAPW-001 from the supplied survey root support level-21 crafting lineage; no claim of inspecting the protected original crafting level."
+}

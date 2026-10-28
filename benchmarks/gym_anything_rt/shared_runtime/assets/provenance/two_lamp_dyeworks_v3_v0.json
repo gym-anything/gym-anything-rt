@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "two_lamp_dyeworks_v3",
+  "source_anchors": [
+    "BGUI-125",
+    "BGUI-126",
+    "BGUI-150"
+  ],
+  "source_records_root": "outputs/selection_round4_20260906/inputs/dashboard/data/entries/04.json",
+  "original_environment": "two_lamp_dyeworks_env",
+  "source_v2": "two_lamp_dyeworks_v2_env",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/Farama-Foundation/miniwob-plusplus/master/miniwob/html/miniwob/use-colorwheel.html",
+      "file": "use-colorwheel.html",
+      "sha256": "c8c9c698211f9fa0164c2f6dfe78cd9483efb8e81c400a3dee8f8e640570154c"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Farama-Foundation/miniwob-plusplus/master/miniwob/html/miniwob/use-colorwheel-2.html",
+      "file": "use-colorwheel-2.html",
+      "sha256": "da37ad0b27f24556115df0a09da02ca74f97b7bd227a5d0bd53a095f5e1ef245"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/convergence-ai/webgames/main/webgames/src/pages/ColorHarmony.tsx",
+      "file": "ColorHarmony.tsx",
+      "sha256": "340cfdc0cc39afea42308378182092dfda7c504cfca580dce864921375988661"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/convergence-ai/webgames/main/webgames/src/pages/ColorHarmonyEasy.tsx",
+      "file": "ColorHarmonyEasy.tsx",
+      "sha256": "b725e2caf67bdaa824e0e081f153eb5f7ef4fa02d9901eaa961f06a498b3cba7",
+      "role": "additional variants explicitly mentioned by BGUI-150"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/convergence-ai/webgames/main/webgames/src/pages/ColorHarmonyHard.tsx",
+      "file": "ColorHarmonyHard.tsx",
+      "sha256": "00da422db31d5f66429d7a80022c822a3d386110d5b98c27a0ed7a6b16fcae4c",
+      "role": "additional variants explicitly mentioned by BGUI-150"
+    }
+  ],
+  "transformation": "Preserve the V2 continuous spectral dye plant, target visibility and all physical profiles. Restore dye-stock exploration: anonymous inlet labels conceal the seed-dependent dye mapping. An inlet spot test measures the current stock under north-light and sodium; its identity and two-light proof stay visible and may be sampled again. Valves, common pump, FIFO, mixing, nonperiodic deliveries and cloth production continue during sampling.",
+  "assets": [
+    {
+      "kind": "canvas and CSS",
+      "origin": "original implementation",
+      "third_party_assets": false
+    }
+  ],
+  "calibration": {
+    "human": "pending; no V3 human play performed",
+    "model": "not run or authorized for this repair",
+    "native_action_api": "V3 not tested; historical V2 native evidence does not establish V3 parity",
+    "independent_audit": "pending independent review; creator records are design and implementation evidence only"
+  },
+  "historical_v2_provenance": {
+    "path": "shared_runtime/assets/provenance/two_lamp_dyeworks_v2_v0.json",
+    "sha256": "782334977a24a30e24c1c61d333acafac7f72661d5352d2eee34abb26a8d864a",
+    "scope": "Historical V2 only; preserved without changes. The mechanically renamed pre-repair V3 manifest is archived in evidence_docs/mechanical-fork-asset-provenance-before.json."
+  },
+  "v3_validation": {
+    "evidence": "environments/two_lamp_dyeworks_v3_env/evidence_docs/README.md",
+    "design": "environments/two_lamp_dyeworks_v3_env/exploration_design.json",
+    "scope": "Fresh isolated headless Playwright, source replay, task-only export and exported Python verifier. No native action API, human approval, new model evaluation or full repository suite claim."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Clockbeat Catacomb V2",
+  "original_mechanic": "clockbeat_catacomb",
+  "mechanic_id": "clockbeat_catacomb_nonrealtime",
+  "source_anchors": [
+    "VGE-765"
+  ],
+  "source_manifest": "shared_runtime/assets/provenance/clockbeat_catacomb_v0.json",
+  "transformation": "V2 seeded boards and sentry rules are retained, but the autonomous beat clock is replaced by an action-gated turn: the visible action opportunity remains open until deliberate input, then sentries advance once.",
+  "validation_status": "counterpart_automated_checks_and_isolated_headless_browser_passed",
+  "human_validation": "not run; live desktop/browser control is prohibited",
+  "model_evaluation": "not requested",
+  "capability_labels": "inherited puzzle, task-local non-real-time timing",
+  "automated_validation": {
+    "controlled_tasks_materialized": 10,
+    "deterministic_generations_checked": 30,
+    "target_pytest_passed": 33,
+    "independent_replay_passed": true,
+    "exported_verifier_envelope_passed": true,
+    "headless_browser": "passed: fresh cached Chromium profile and local HTTP server; D5 full initial/later 15-second idle checks, negative UI submission, keyboard completion, and live /result PASS",
+    "screenshots": "captured and inspected: initial, delayed initial, delayed later, success, and negative fresh-challenge refresh"
+  }
+}

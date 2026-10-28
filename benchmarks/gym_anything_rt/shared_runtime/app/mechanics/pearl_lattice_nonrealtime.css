@@ -1,0 +1,40 @@
+body[data-mechanic="pearl-lattice_nonrealtime"] {margin:0;overflow:hidden;background:#07191f;color:#e0eee8;font-family:Georgia,serif;}
+body[data-mechanic="pearl-lattice_nonrealtime"] #app {padding:0;display:block;}
+.plv-shell {box-sizing:border-box;position:relative;width:100vw;height:100vh;padding:18px 24px;display:grid;grid-template-rows:82px minmax(0,1fr) 108px;gap:12px;background:radial-gradient(ellipse at 80% 10%,#244b494d,transparent 50%),#07191f;}
+.plv-shell * {box-sizing:border-box;}
+.plv-header {display:flex;align-items:center;gap:32px;border-bottom:1px solid #6f998354;padding:0 4px 12px;}
+.plv-header span {font:10px ui-monospace,monospace;letter-spacing:.16em;color:#cfb580;}
+.plv-header h1 {font:38px Georgia,serif;letter-spacing:-.04em;margin:4px 0 0;}
+.plv-header h1 i {color:#dbbf8d;font-weight:normal;}
+.plv-header p {font:14px/1.6 Georgia,serif;color:#bfd2c9;flex:1;margin:0;}
+.plv-header b {color:#edb2a2;font-weight:normal;}
+.plv-chip {padding:9px 16px;border:1px solid #658a7b;border-radius:7px;font:10px ui-monospace,monospace;color:#8db0a2;text-align:right;}
+.plv-chip strong {display:block;margin-top:5px;color:#e4dcaf;font-size:22px;}
+.plv-main {min-height:0;display:grid;grid-template-columns:4fr 3fr;gap:14px;}
+.plv-casting,.plv-lattice {display:grid;grid-template-rows:35px minmax(0,1fr) 30px;min-height:0;min-width:0;border:1px solid #42656a;border-radius:10px;overflow:hidden;background:#0b222a;box-shadow:0 12px 26px #0004;}
+.plv-main section>header {padding:6px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;border-bottom:1px solid #385359;color:#a8cbc0;font:10px ui-monospace,monospace;letter-spacing:.05em;}
+.plv-phase {color:#e3c183;font-size:9px;}
+.plv-field,.plv-volume {display:block;width:100%;height:100%;min-height:0;touch-action:none;user-select:none;}
+.plv-field {cursor:crosshair;}
+.plv-shell[data-interaction="full"] .plv-field {cursor:grab;}
+.plv-shell[data-interaction="full"] .plv-field:active {cursor:grabbing;}
+.plv-caption {padding:7px 12px;display:flex;justify-content:space-between;align-items:center;color:#9ebeb7;font:10px ui-monospace,monospace;background:#102b32;border-top:1px solid #355259;}
+.plv-footer {display:grid;grid-template-columns:215px 1fr 155px;gap:18px;align-items:center;border:1px solid #54705f;border-radius:9px;padding:12px 16px;background:#11282c;}
+.plv-footer p {margin:0 0 6px;font:13px/1.2 Georgia,serif;color:#b0c5bd;}
+.plv-shell button {border:1px solid #e4c890;color:#fae4b9;background:#5e432533;border-radius:7px;font:12px ui-monospace,monospace;cursor:pointer;}
+.plv-shell button:hover {background:#87623966;}
+.plv-shell button:disabled {opacity:.35;cursor:default;}
+.plv-footer button {min-height:62px;letter-spacing:.05em;padding:12px;}
+.plv-release {background:#c5954740!important;}
+.plv-release span {display:block;margin-top:7px;font-size:10px;color:#bcad8b;letter-spacing:0;}
+.plv-footer .readout {font:11px ui-monospace,monospace;color:#e4c890;}
+.plv-footer .readout[data-status="error"] {color:#ffb1a7;}
+.plv-footer .readout[data-status="passed"] {color:#a4ffde;}
+.plv-main header button {width:33px;height:27px;font-size:19px;line-height:16px;}
+.plv-verdict {display:none;position:absolute;inset:31% 22%;z-index:10;align-content:center;justify-items:center;padding:24px;border:3px double #f3ac9b;background:#301c25f0;text-align:center;box-shadow:0 16px 80px #0009;pointer-events:none;}
+.plv-verdict strong {font:80px Georgia,serif;color:#ffcabc;letter-spacing:.13em;}
+.plv-verdict span {font:16px/1.5 Georgia,serif;color:#e5c9bf;}
+.plv-shell[data-status="failed"] .plv-verdict,.plv-shell[data-verdict="pass"] .plv-verdict,.plv-shell[data-verdict="fail"] .plv-verdict {display:grid;}
+.plv-shell[data-verdict="pass"] .plv-verdict {border-color:#7dedcd;background:#0d302af2;}
+.plv-shell[data-verdict="pass"] .plv-verdict strong,.plv-shell[data-verdict="pass"] .plv-verdict span {color:#b7ffe6;}
+@media (max-height:760px) {.plv-shell {padding:12px 18px;grid-template-rows:70px minmax(0,1fr) 100px;gap:9px;}.plv-header h1 {font-size:33px;}.plv-caption {font-size:9px;}.plv-footer {padding:8px 12px;}.plv-footer p {font-size:12px;}}

@@ -1,0 +1,59 @@
+{
+  "description": "Remember a once-previewed gesture reel while tracking two moving overloads that interrupt execution.",
+  "difficulty": "very_easy",
+  "env_id": "gym_anything_rt.reload_interruption_v2_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/reload_interruption_v2_d1_simplified_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/reload_interruption_v2_d1_simplified_seed_0001/setup_task.sh"
+  },
+  "id": "reload_interruption_v2_d1_simplified_seed_0001@0.2",
+  "init": {
+    "max_steps": 250,
+    "reward_type": "sparse",
+    "timeout_sec": 300
+  },
+  "metadata": {
+    "asset_manifest": "environments/reload_interruption_v2_env/provenance.json",
+    "benchmark": "gym_anything_rt",
+    "control_condition": {
+      "difficulty": 1,
+      "difficulty_parameters": {
+        "interruption_steps": [
+          2
+        ],
+        "max_gesture_step": 180,
+        "overload_center_jitter_x": 16,
+        "overload_center_jitter_y": 12,
+        "overload_hold_ms": 900,
+        "overload_max_gap_ms": 220,
+        "overload_min_samples": 8,
+        "overload_radius_x_max": 134,
+        "overload_radius_x_min": 110,
+        "overload_radius_y_max": 84,
+        "overload_radius_y_min": 62,
+        "overload_rate_max": 0.0032,
+        "overload_rate_min": 0.0027,
+        "overload_tolerance": 52,
+        "preview_step_ms": 560,
+        "sequence_length": 3
+      },
+      "interaction": "simplified",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "reload_interruption_v2"
+  },
+  "name": "Reload Interruption V2 · Difficulty 1 · Simplified Interaction",
+  "natural_language": "Reload the mechanism.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "reload_interruption_v2"
+  ],
+  "version": "0.2"
+}

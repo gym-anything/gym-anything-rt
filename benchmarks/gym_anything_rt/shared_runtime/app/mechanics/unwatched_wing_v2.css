@@ -1,0 +1,26 @@
+body[data-mechanic="unwatched-wing-v2"] { margin:0; overflow:hidden; background:#050c14; color:#e6dac1; font-family:ui-sans-serif,system-ui,sans-serif; }
+body[data-mechanic="unwatched-wing-v2"] #app { min-height:100vh; display:grid; place-items:center; }
+.uw2-transfer { width:min(1700px,calc(100vw - 24px)); border:1px solid #857553; background:#101925; box-shadow:0 24px 80px #0008; overflow:hidden; }
+.uw2-head { display:flex; justify-content:space-between; align-items:center; padding:12px 26px 10px; border-bottom:1px solid #6a624c; }
+.uw2-head small { color:#afab95; font:10px ui-monospace,monospace; letter-spacing:.18em; }
+.uw2-head h1 { margin:4px 0 0; font:30px Georgia,serif; color:#efe5cc; }
+.uw2-head aside { display:grid; gap:7px; text-align:right; font:12px ui-monospace,monospace; color:#a8e2d4; }
+.uw2-head aside b { font-size:19px; }
+.uw2-rules { padding:7px 26px; font-size:14px; line-height:1.45; color:#e8dcb8; background:#1a2633; }
+.uw2-rules span { color:#adbfcf; }
+.uw2-stage { display:flex; align-items:stretch; }
+#uw2-world { display:block; width:calc(100% - 318px); height:auto; aspect-ratio:1100/500; max-height:calc(100vh - 265px); object-fit:fill; cursor:crosshair; touch-action:none; }
+#uw2-meters { width:294px; flex-shrink:0; padding:8px 11px; background:#0b1521; border-left:1px solid #6a624c; font:12px/1.28 ui-monospace,monospace; color:#c8e0e5; }
+#uw2-meters strong { display:block; font-size:11px; color:#e8c98c; margin-bottom:5px; }
+.uw2-lens-meter,.uw2-object-meter,.uw2-motion-scale { white-space:pre-line; }
+.uw2-lens-meter { color:#e8c98c; padding-bottom:4px; }
+.uw2-object-meter { padding:1px 0; border-top:1px solid #31414a; }
+.uw2-object-meter[data-held="yes"] { color:#ffe2a0; background:#392c172e; }
+.uw2-motion-scale { font-size:10px; color:#afbdcc; margin-top:5px; }
+.uw2-foot { display:flex; align-items:center; gap:14px; padding:10px 18px; min-height:40px; border-top:1px solid #6a624c; }
+.uw2-foot button { background:#253442; border:1px solid #c8ab72; color:#f3dfb0; border-radius:3px; padding:11px 15px; min-height:40px; font:11px ui-monospace,monospace; cursor:pointer; }
+.uw2-foot button:disabled { opacity:.5; cursor:default; }
+.uw2-foot .readout { flex:1; font:12px ui-monospace,monospace; color:#c8c4b4; }
+.uw2-transfer[data-verdict="pass"] .readout { color:#93e8cf; }
+.uw2-transfer[data-verdict="fail"] .readout,.uw2-transfer[data-verdict="error"] .readout { color:#ffb2a0; }
+@media(max-height:660px) { .uw2-head {padding-block:7px;} .uw2-head h1 {font-size:24px;} .uw2-rules {padding-block:6px;} .uw2-foot {padding-block:6px;} }

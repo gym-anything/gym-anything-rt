@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "mechanic_id": "ember_anvil_v3",
+  "source_anchors": [
+    "VGE-710"
+  ],
+  "sources": [
+    {
+      "survey_record": "VGE-710",
+      "url": "https://wiki.vintagestory.at/index.php/Smithing",
+      "accessed": "2026-10-03",
+      "mechanic": "Voxel hammer modes, thermal workability and conserved tool-head shaping."
+    }
+  ],
+  "transformation": "Original connected finite-volume sculpture on a nonperiodic translating and rotating carriage. Independent radiant-cell heat and visible 1.2-second forecasts require observation-dependent contact. No original game code, art, recipes or physical constants copied.",
+  "assets": "Procedural canvas and CSS; no third-party media.",
+  "status": "prototype_visual_candidate"
+}

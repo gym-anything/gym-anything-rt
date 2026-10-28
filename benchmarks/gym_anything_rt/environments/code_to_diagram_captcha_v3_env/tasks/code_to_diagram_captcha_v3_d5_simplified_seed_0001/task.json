@@ -1,0 +1,61 @@
+{
+  "description": "Inspect each block's dispatch to reveal its directed targets before choosing a route. Inspection is read-only, works before RUN and during execution, and leaves discovered routes visible; live contacts and buffers keep advancing during inspection. Steer each inertial heating probe into its next moving block until its ring fills. When ARMED, explicitly select its weld tool and aim the small weld spot at the separate lightning socket on that block’s right. Full: release the heating drag, grab the charged probe again, drag its weld spot and release in the socket. Simplified: select WELD TOOL, then click the socket. Heating inputs never fire a weld. The entire weld spot must fit. A missed weld shorts the live wire. Rails and the listing announce this and the next motion segment, including the next turn. Flags and feedback change later routing. Other contacts and executions keep moving during every hold. A wrong heated edge, missed weld, empty buffer or incomplete certification ends the episode.",
+  "difficulty": "very_hard",
+  "env_id": "gym_anything_rt.code_to_diagram_captcha_v3_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/code_to_diagram_captcha_v3_d5_simplified_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/code_to_diagram_captcha_v3_d5_simplified_seed_0001/setup_task.sh"
+  },
+  "id": "code_to_diagram_captcha_v3_d5_simplified_seed_0001@0.2",
+  "init": {
+    "max_steps": 360,
+    "reward_type": "sparse",
+    "timeout_sec": 600
+  },
+  "metadata": {
+    "benchmark": "gym_anything_rt",
+    "capabilities": [
+      "visual_understanding_2d",
+      "temporal_understanding_and_memory",
+      "reasoning_and_planning"
+    ],
+    "control_condition": {
+      "difficulty": 5,
+      "difficulty_parameters": {
+        "amplitude_x": 64,
+        "amplitude_y": 40,
+        "buffer_ms": 14000,
+        "charge_ms": 1200,
+        "contact_radius": 26,
+        "feedback": true,
+        "gate_count": 3,
+        "motion_span_ms": 2500,
+        "stream_count": 3
+      },
+      "interaction": "simplified",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "code_to_diagram_captcha_v3",
+    "revision": "inspected-dispatch-v7"
+  },
+  "name": "Live Control-Flow Wiring Lab V3 · Difficulty 5 · Simplified Interaction",
+  "natural_language": "Inspect each block's dispatch to reveal its directed targets before choosing a route. Inspection is read-only, works before RUN and during execution, and leaves discovered routes visible; live contacts and buffers keep advancing during inspection. Steer each inertial heating probe into its next moving block until its ring fills. When ARMED, explicitly select its weld tool and aim the small weld spot at the separate lightning socket on that block’s right. Full: release the heating drag, grab the charged probe again, drag its weld spot and release in the socket. Simplified: select WELD TOOL, then click the socket. Heating inputs never fire a weld. The entire weld spot must fit. A missed weld shorts the live wire. Rails and the listing announce this and the next motion segment, including the next turn. Flags and feedback change later routing. Other contacts and executions keep moving during every hold. A wrong heated edge, missed weld, empty buffer or incomplete certification ends the episode. Solve only from screenshots and visible controls in this task webpage. Do not write or execute code, scripts or automation; use Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection; use terminal, shell or Python; edit the address bar, URL or query; reload or navigate; use extensions, external applications or any hidden implementation state. Stay on the task tab. The visible program listing and INSPECT DISPATCH controls are puzzle content.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "linux",
+    "browser",
+    "visual-puzzle",
+    "gym-anything-rt",
+    "code_to_diagram_captcha_v3",
+    "control-flow",
+    "moving-contacts",
+    "concurrent-execution"
+  ],
+  "version": "0.2"
+}

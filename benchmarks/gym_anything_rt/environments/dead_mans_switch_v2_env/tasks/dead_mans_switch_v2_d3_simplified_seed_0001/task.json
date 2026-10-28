@@ -1,0 +1,82 @@
+{
+  "description": "Track and hold the moving pressure plate continuously while steering through the ordered relay course.",
+  "difficulty": "medium",
+  "env_id": "gym_anything_rt.dead_mans_switch_v2_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/dead_mans_switch_v2_d3_simplified_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/dead_mans_switch_v2_d3_simplified_seed_0001/setup_task.sh"
+  },
+  "id": "dead_mans_switch_v2_d3_simplified_seed_0001@0.2",
+  "init": {
+    "max_steps": 500,
+    "reward_type": "sparse",
+    "timeout_sec": 600
+  },
+  "metadata": {
+    "asset_manifest": "environments/dead_mans_switch_v2_env/provenance.json",
+    "benchmark": "gym_anything_rt",
+    "control_condition": {
+      "difficulty": 3,
+      "difficulty_parameters": {
+        "barrier_columns": [
+          3,
+          7,
+          11
+        ],
+        "columns": 15,
+        "goal_rows": [
+          6,
+          7
+        ],
+        "high_gap_rows": [
+          6,
+          7
+        ],
+        "hit_x_milli": 210,
+        "hit_y_milli": 255,
+        "low_gap_rows": [
+          1,
+          2
+        ],
+        "maximum_sample_gap_ms": 410,
+        "maximum_solution_moves": 36,
+        "minimum_hold_ms": 4500,
+        "minimum_solution_moves": 28,
+        "outside_grace_ms": 350,
+        "pressure_period_ms_values": [
+          4000,
+          4200
+        ],
+        "rows": 9,
+        "sample_ms": 110,
+        "start_rows": [
+          6,
+          7
+        ],
+        "x_amplitude_milli_max": 240,
+        "x_amplitude_milli_min": 220,
+        "y_amplitude_milli_max": 160,
+        "y_amplitude_milli_min": 140
+      },
+      "interaction": "simplified",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "dead_mans_switch_v2"
+  },
+  "name": "Dead Man's Switch V2 · Difficulty 3 · Simplified Interaction",
+  "natural_language": "Keep the moving pressure plate held while steering through all three numbered relays and into the dock.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "simultaneous-input",
+    "continuous-hold",
+    "navigation"
+  ],
+  "version": "0.2"
+}

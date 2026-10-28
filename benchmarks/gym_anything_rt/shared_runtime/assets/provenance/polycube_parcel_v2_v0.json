@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "polycube_parcel_v2",
+  "source_anchors": [
+    "PHY-038"
+  ],
+  "selection_file": "creation_audit_logs/realtime_source_remaining48_20261002/selection.json",
+  "survey_root": "outputs/selection_round4_20260906/inputs",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Soma_cube",
+      "role": "Soma assembly geometry, rotations and exact occupancy source"
+    },
+    {
+      "url": "https://www.inertron.com/soma/index.html",
+      "role": "Soma assembly geometry, rotations and exact occupancy source"
+    },
+    {
+      "url": "https://play.suomaapp.top/",
+      "role": "Soma assembly geometry, rotations and exact occupancy source"
+    },
+    {
+      "url": "https://www.suomaapp.top/en/",
+      "role": "Soma assembly geometry, rotations and exact occupancy source"
+    },
+    {
+      "url": "https://github.com/danielkitta/somato",
+      "role": "Soma assembly geometry, rotations and exact occupancy source"
+    },
+    {
+      "url": "https://github.com/lrytz/soma",
+      "role": "Soma assembly geometry, rotations and exact occupancy source"
+    },
+    {
+      "url": "https://github.com/hickford/soma-cube-solver",
+      "role": "Soma assembly geometry, rotations and exact occupancy source"
+    },
+    {
+      "url": "https://github.com/thanks4opensource/yass",
+      "role": "Soma assembly geometry, rotations and exact occupancy source"
+    },
+    {
+      "url": "https://www.fam-bundgaard.dk/SOMA/",
+      "role": "Soma assembly geometry, rotations and exact occupancy source"
+    }
+  ],
+  "transformation": "Original procedural graphics and exact-cover generation preserve the Soma assembly mechanic. A nonperiodic drifting cradle and inertial alignment gantry add continuous visible tracking during irreversible seating. No source artwork or commercial levels reused.",
+  "original_environment_preserved": "polycube_parcel_env",
+  "assets": [],
+  "license": "Benchmark-generated vector graphics and puzzle instances; no copied third-party media."
+}

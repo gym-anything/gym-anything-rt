@@ -1,0 +1,66 @@
+{
+  "description": "Drive across drifting extrusions and ramps, then aim and release a loaded spring into the moving delivery bay.",
+  "difficulty": "very_hard",
+  "env_id": "gym_anything_rt.rising_causeway_v2_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/rising_causeway_v2_d5_full_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/rising_causeway_v2_d5_full_seed_0001/setup_task.sh"
+  },
+  "id": "rising_causeway_v2_d5_full_seed_0001@0.2",
+  "init": {
+    "max_steps": 300,
+    "reward_type": "sparse",
+    "timeout_sec": 900
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/rising_causeway_v2_v0.json",
+    "benchmark": "gym_anything_rt",
+    "capabilities": [
+      "visual understanding (3D)",
+      "temporal understanding and memory",
+      "reasoning and planning"
+    ],
+    "control_condition": {
+      "difficulty": 5,
+      "difficulty_parameters": {
+        "bend": 1.6,
+        "cruise": 1.3,
+        "drag": 1.4,
+        "half_width": 0.76,
+        "landing_half_width": 0.82,
+        "span_ms": 4600,
+        "stair_height": 1.3,
+        "steering": 4.0,
+        "sway": 3.2,
+        "wind": 1.05
+      },
+      "interaction": "full",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "implementation_revision": "refresh-dependent-architecture-v4",
+    "interaction_baseline": "full",
+    "mechanic_id": "rising_causeway_v2",
+    "variant_count": 1000000000000000000,
+    "variant_count_kind": "seeded geometry, independent continuous motion, wind, mirror and five profiles"
+  },
+  "name": "Rising Causeway V2 · Difficulty 5 · Full Interaction",
+  "natural_language": "Raise the red bridge, set the yellow stair high toward the far ledge, and prime the blue spring. Drive onto it, then aim and release into the moving delivery bay. The spring adds forward and sideways momentum; wheels cannot steer in air. Dotted tracks show recent motion and the separate chart rows announce six seconds of spring position, bay centre at x = 28, and crosswind acceleration, with labelled physical scales. A fall, abandonment, or incomplete certification ends this attempt. After failure, TRY AGAIN starts a fresh attempt; earlier failures remain recorded. Solve only from screenshots and visible task controls. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or hidden-state access. Use only the task tab and visible controls; no unrelated tabs.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "linux",
+    "browser",
+    "visual-puzzle",
+    "gym-anything-rt",
+    "rising_causeway_v2",
+    "moving-support",
+    "inertial-control",
+    "contact-launch"
+  ],
+  "version": "0.2"
+}

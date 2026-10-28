@@ -1,0 +1,51 @@
+{
+  "description": "Study the formula. Open the storm, then merge every pictured pair into the Stormglass heart. Reagents hold their current positions while you decide; each accepted merge advances the bench by a fixed 5 seconds. Dotted forecasts and solid wakes show the deterministic snapshot path. New blends must form for 5 seconds before reuse; their blue inner ring shows readiness. Hot blends crystallize when their rings empty. Selecting empty space with no reagent held is harmless. You may change your aim before placing or releasing. A missed release, wrong or premature mixture, crystallized blend, or rejected certification ends the episode. Certify only the complete heart.\n\nSolve only from screenshots and visible controls in the task webpage.",
+  "difficulty": "medium",
+  "env_id": "gym_anything_rt.craftcha_alchemy_bench_nonrealtime_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/craftcha_alchemy_bench_nonrealtime_d3_full_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/craftcha_alchemy_bench_nonrealtime_d3_full_seed_0001/setup_task.sh"
+  },
+  "id": "craftcha_alchemy_bench_nonrealtime_d3_full_seed_0001@0.2",
+  "init": {
+    "max_steps": 180,
+    "reward_type": "sparse",
+    "timeout_sec": 600
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/craftcha_alchemy_bench_v2_v0.json",
+    "benchmark": "gym_anything_rt",
+    "capability_configuration": {
+      "difficulty": 3,
+      "interaction": "full"
+    },
+    "control_condition": {
+      "difficulty": 3,
+      "difficulty_parameters": {
+        "hot_lifetime_ms": 36000,
+        "motion_span_ms": 4800,
+        "radius": 26,
+        "raw_count": 6,
+        "tree": "balanced"
+      },
+      "interaction": "full",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "craftcha_alchemy_bench_nonrealtime"
+  },
+  "name": "CRAFTCHA: Alchemy Bench V2 · Action-Stepped Counterpart · Difficulty 3 · Full Interaction",
+  "natural_language": "Study the formula. Open the storm, then merge every pictured pair into the Stormglass heart. Reagents hold their current positions while you decide; each accepted merge advances the bench by a fixed 5 seconds. Dotted forecasts and solid wakes show the deterministic snapshot path. New blends must form for 5 seconds before reuse; their blue inner ring shows readiness. Hot blends crystallize when their rings empty. Selecting empty space with no reagent held is harmless. You may change your aim before placing or releasing. A missed release, wrong or premature mixture, crystallized blend, or rejected certification ends the episode. Certify only the complete heart.\n\nSolve only from screenshots and visible controls in the task webpage.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "crafting",
+    "visual-tracking"
+  ],
+  "version": "0.2"
+}

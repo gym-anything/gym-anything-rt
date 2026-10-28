@@ -1,0 +1,58 @@
+{
+  "description": "Deploy the configured robot limbs, switch among them to seal the generated phase relays through deliberate fixed-step contact windows, and merge their distributed interaction ledger into one identity proof.",
+  "difficulty": "easy",
+  "env_id": "gym_anything_rt.reverse_identity_gate_nonrealtime_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/reverse_identity_gate_nonrealtime_d2_full_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/reverse_identity_gate_nonrealtime_d2_full_seed_0001/setup_task.sh"
+  },
+  "id": "reverse_identity_gate_nonrealtime_d2_full_seed_0001@0.2",
+  "init": {
+    "max_steps": 900,
+    "reward_type": "sparse",
+    "timeout_sec": 900
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/revived_pilots_v2.json",
+    "benchmark": "gym_anything_rt",
+    "control_condition": {
+      "difficulty": 2,
+      "difficulty_parameters": {
+        "capture_tolerance_deg": 24,
+        "charge_decay_per_tick": 1,
+        "hold_ticks": 10,
+        "maximum_ticks_per_stage": 560,
+        "pulse_speed_choices": [
+          -2,
+          -1,
+          1,
+          2
+        ],
+        "receiver_control_deg_per_tick": 6,
+        "station_count": 2,
+        "station_relays": [
+          1,
+          1
+        ],
+        "tick_ms": 65
+      },
+      "interaction": "full",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "reverse_identity_gate_nonrealtime"
+  },
+  "name": "Four-Tab Robot Handshake · Difficulty 2 · Full Interaction",
+  "natural_language": "Deploy both robot limbs. Follow the active glyph, drive each receiver into phase, engage contact to advance its fixed-step window until both relays seal, then verify the identity.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "reverse_identity_gate_nonrealtime"
+  ],
+  "version": "0.2"
+}

@@ -1,0 +1,61 @@
+{
+  "description": "Survey concealed crater supports, then guide the brass walker across their continuously drifting plates. Guide an inertial four-legged brass walker across continuously drifting crater support plates. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed.",
+  "difficulty": "hard",
+  "env_id": "gym_anything_rt.crater_walker_v3_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/crater_walker_v3_d4_simplified_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/crater_walker_v3_d4_simplified_seed_0001/setup_task.sh"
+  },
+  "id": "crater_walker_v3_d4_simplified_seed_0001@0.2",
+  "init": {
+    "max_steps": 250,
+    "reward_type": "sparse",
+    "timeout_sec": 600
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/crater_walker_v3_v0.json",
+    "benchmark": "gym_anything_rt",
+    "capabilities": [
+      "visual understanding: 2D",
+      "temporal understanding and memory",
+      "reasoning and planning"
+    ],
+    "control_condition": {
+      "difficulty": 4,
+      "difficulty_parameters": {
+        "body_response": 10,
+        "drift": 1.02,
+        "heave": 0.28,
+        "pad_radius": 0.4,
+        "rise": 0.35,
+        "span_ms": 3300,
+        "stride": 3,
+        "terraces": 3,
+        "tip_ms": 850,
+        "wind": 0.65
+      },
+      "interaction": "simplified",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "crater_walker_v3"
+  },
+  "name": "Crater Walker V3 · Difficulty 4 · Simplified Interaction",
+  "natural_language": "Hover over the dust patches on the overhead chart to survey concealed plates and their live forecasts. Surveyed plates stay visible. Survey before WAKE to prepare safely; after WAKE the crater keeps moving during inspection. Wake the crater. Shift the gold weight handle so the body stays inside the support polygon, then move each colored toe to its next numbered plate. A foot stroke takes one second; aim for the future location shown by its 1/2/3-second dashed trail. Feet stick to their moving supports, and the body keeps momentum. The lift channel follows the next terrace height; you choose the horizontal landing coordinate. Match the toe to its own next plate with its whole small footprint inside the ring. A missed landing, exhausted extension or full TOPPLE bar ends the episode. Press Escape to cancel a held aim before release; cancellation is harmless; certification before escape fails. Click the weight chart to set a weight shift; click a colored toe and then its landing coordinate. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "linux",
+    "browser",
+    "gym-anything-rt",
+    "real-time",
+    "crater_walker_v3",
+    "quadruped",
+    "moving-supports"
+  ],
+  "version": "0.2"
+}

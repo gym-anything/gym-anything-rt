@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "zero_g_cable_autopsy_nonrealtime",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "parameters": {
+        "node_count": 11,
+        "collar_count": 1,
+        "port_radius": 66,
+        "port_amplitude": 75,
+        "port_span_ms": 6500,
+        "collar_radius": 32,
+        "collar_span_ms": 10000,
+        "collar_amplitude": 0.35,
+        "flow_acceleration": 0,
+        "contact_count": 0
+      },
+      "summary": "One broad, slowly travelling collar spans the cable arc. Generous independently drifting ports need correction during isolation; no transverse flow or red contacts.",
+      "natural_language": "Energize the cable. Fit both grippers entirely inside their moving green ports, keep both ends isolated until the visible capacitor energy is green, then slice all copper collars without cutting bare wire or touching red contacts. Cutting removes a stiff brace, changes the flexible cable, and exposes another charged section; drain it before the next cut. Each deliberate gripper or knife action advances one fixed control slice; waiting between actions leaves the visible state unchanged. Full: drag grippers on their rails and drag knife strokes after arming the knife. Simplified: select A or B and click its rail; arm the knife and click both stroke endpoints. An incorrect cut, contact, early seal, or expiration ends the attempt. Solve only from screenshots and visible task controls. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or hidden-state access. Use only the task tab and visible controls; no unrelated tabs."
+    },
+    "2": {
+      "label": "easy",
+      "parameters": {
+        "node_count": 13,
+        "collar_count": 1,
+        "port_radius": 56,
+        "port_amplitude": 90,
+        "port_span_ms": 9000,
+        "collar_radius": 29,
+        "collar_span_ms": 4800,
+        "collar_amplitude": 0.18,
+        "flow_acceleration": 8,
+        "contact_count": 1
+      },
+      "summary": "Narrower ports and collar, quicker drift and a weak transverse flow.",
+      "natural_language": "Energize the cable. Fit both grippers entirely inside their moving green ports, keep both ends isolated until the visible capacitor energy is green, then slice all copper collars without cutting bare wire or touching red contacts. Cutting removes a stiff brace, changes the flexible cable, and exposes another charged section; drain it before the next cut. Each deliberate gripper or knife action advances one fixed control slice; waiting between actions leaves the visible state unchanged. Full: drag grippers on their rails and drag knife strokes after arming the knife. Simplified: select A or B and click its rail; arm the knife and click both stroke endpoints. An incorrect cut, contact, early seal, or expiration ends the attempt. Solve only from screenshots and visible task controls. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or hidden-state access. Use only the task tab and visible controls; no unrelated tabs."
+    },
+    "3": {
+      "label": "medium",
+      "parameters": {
+        "node_count": 15,
+        "collar_count": 2,
+        "port_radius": 47,
+        "port_amplitude": 100,
+        "port_span_ms": 7600,
+        "collar_radius": 26,
+        "collar_span_ms": 3600,
+        "collar_amplitude": 0.1,
+        "flow_acceleration": 12,
+        "contact_count": 1
+      },
+      "summary": "Two independently travelling braces; removing one changes bending constraints before the next cut.",
+      "natural_language": "Energize the cable. Fit both grippers entirely inside their moving green ports, keep both ends isolated until the visible capacitor energy is green, then slice all copper collars without cutting bare wire or touching red contacts. Cutting removes a stiff brace, changes the flexible cable, and exposes another charged section; drain it before the next cut. Each deliberate gripper or knife action advances one fixed control slice; waiting between actions leaves the visible state unchanged. Full: drag grippers on their rails and drag knife strokes after arming the knife. Simplified: select A or B and click its rail; arm the knife and click both stroke endpoints. An incorrect cut, contact, early seal, or expiration ends the attempt. Solve only from screenshots and visible task controls. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or hidden-state access. Use only the task tab and visible controls; no unrelated tabs."
+    },
+    "4": {
+      "label": "hard",
+      "parameters": {
+        "node_count": 17,
+        "collar_count": 2,
+        "port_radius": 39,
+        "port_amplitude": 105,
+        "port_span_ms": 6400,
+        "collar_radius": 23,
+        "collar_span_ms": 3000,
+        "collar_amplitude": 0.13,
+        "flow_acceleration": 20,
+        "contact_count": 2
+      },
+      "summary": "Tighter simultaneous isolation, faster collar tracking, stronger flow and two live contacts.",
+      "natural_language": "Energize the cable. Fit both grippers entirely inside their moving green ports, keep both ends isolated until the visible capacitor energy is green, then slice all copper collars without cutting bare wire or touching red contacts. Cutting removes a stiff brace, changes the flexible cable, and exposes another charged section; drain it before the next cut. Each deliberate gripper or knife action advances one fixed control slice; waiting between actions leaves the visible state unchanged. Full: drag grippers on their rails and drag knife strokes after arming the knife. Simplified: select A or B and click its rail; arm the knife and click both stroke endpoints. An incorrect cut, contact, early seal, or expiration ends the attempt. Solve only from screenshots and visible task controls. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or hidden-state access. Use only the task tab and visible controls; no unrelated tabs."
+    },
+    "5": {
+      "label": "very_hard",
+      "parameters": {
+        "node_count": 19,
+        "collar_count": 3,
+        "port_radius": 32,
+        "port_amplitude": 110,
+        "port_span_ms": 5200,
+        "collar_radius": 20,
+        "collar_span_ms": 2600,
+        "collar_amplitude": 0.095,
+        "flow_acceleration": 28,
+        "contact_count": 2
+      },
+      "summary": "Three moving braces on one deforming cable, narrow independently moving ports and sustained coupled control.",
+      "natural_language": "Energize the cable. Fit both grippers entirely inside their moving green ports, keep both ends isolated until the visible capacitor energy is green, then slice all copper collars without cutting bare wire or touching red contacts. Cutting removes a stiff brace, changes the flexible cable, and exposes another charged section; drain it before the next cut. Each deliberate gripper or knife action advances one fixed control slice; waiting between actions leaves the visible state unchanged. Full: drag grippers on their rails and drag knife strokes after arming the knife. Simplified: select A or B and click its rail; arm the knife and click the two stroke endpoints. An incorrect cut, contact, early seal, or expiration ends the attempt. Solve only from screenshots and visible task controls. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or hidden-state access. Use only the task tab and visible controls; no unrelated tabs."
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Drag the bounded grippers on their rails; arm the knife and drag each geometric stroke."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Select a gripper then click its rail; arm the knife then click the two stroke endpoints. Identical servo, physics and hit tests."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 120,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  }
+}

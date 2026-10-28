@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "crater_walker_v3_nonrealtime",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "parameters": {
+        "terraces": 2,
+        "pad_radius": 0.68,
+        "drift": 0.78,
+        "span_ms": 5200,
+        "rise": 0.2,
+        "heave": 0.08,
+        "stride": 3,
+        "guided_legs": [
+          "FL"
+        ]
+      },
+      "summary": "Fixed chassis guide; only FL is undocked. One moving-foot target at a time, 0.68 m plate radius, 0.78 m lateral drift over 5200 ms. No ballast or support-polygon control.",
+      "natural_language": "Hover over the dust patches on the overhead chart to survey concealed plates and their live forecasts. Surveyed plates stay visible. Survey before WAKE to prepare safely; after WAKE the visible state holds while you inspect. Wake the crater. A visible fixed guide carries the chassis; there is no ballast or balance control. The other feet are already docked. Move the FL toe to each next numbered plate and then the rim. Each foot stroke takes one second. Aim at the future horizontal position on the 1/2/3-second dashed trail; the whole small toe must fit inside its own ring. The plate keeps moving during the stroke. A missed landing or exhausted extension ends the episode. Escape cancels a held aim before release. Certify only after the undocked feet reach the rim. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed.",
+      "natural_language_by_interaction": {
+        "full": "Hover over the dust patches on the overhead chart to survey concealed plates and their live forecasts. Surveyed plates stay visible. Survey before WAKE to prepare safely; after WAKE the visible state holds while you inspect. Wake the crater. A visible fixed guide carries the chassis; there is no ballast or balance control. The other feet are already docked. Move the FL toe to each next numbered plate and then the rim. Each foot stroke takes one second. Aim at the future horizontal position on the 1/2/3-second dashed trail; the whole small toe must fit inside its own ring. The plate keeps moving during the stroke. A missed landing or exhausted extension ends the episode. Escape cancels a held aim before release. Certify only after the undocked feet reach the rim. Drag a colored toe to its landing coordinate. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed.",
+        "simplified": "Hover over the dust patches on the overhead chart to survey concealed plates and their live forecasts. Surveyed plates stay visible. Survey before WAKE to prepare safely; after WAKE the visible state holds while you inspect. Wake the crater. A visible fixed guide carries the chassis; there is no ballast or balance control. The other feet are already docked. Move the FL toe to each next numbered plate and then the rim. Each foot stroke takes one second. Aim at the future horizontal position on the 1/2/3-second dashed trail; the whole small toe must fit inside its own ring. The plate keeps moving during the stroke. A missed landing or exhausted extension ends the episode. Escape cancels a held aim before release. Certify only after the undocked feet reach the rim. Click a colored toe, then its landing coordinate. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed."
+      }
+    },
+    "2": {
+      "label": "easy",
+      "parameters": {
+        "terraces": 2,
+        "pad_radius": 0.57,
+        "drift": 0.88,
+        "span_ms": 4500,
+        "rise": 0.25,
+        "heave": 0.13,
+        "stride": 3,
+        "guided_legs": [
+          "FL",
+          "FR"
+        ]
+      },
+      "summary": "Fixed chassis guide; FL and FR are undocked. Tighter 0.57 m plates and faster 0.88 m lateral drift over 4500 ms require more accurate prediction; no ballast or support-polygon control.",
+      "natural_language": "Hover over the dust patches on the overhead chart to survey concealed plates and their live forecasts. Surveyed plates stay visible. Survey before WAKE to prepare safely; after WAKE the visible state holds while you inspect. Wake the crater. A visible fixed guide carries the chassis; there is no ballast or balance control. The other feet are already docked. Move the FL and FR toes to each next numbered plate and then the rim. Each foot stroke takes one second. Aim at the future horizontal position on the 1/2/3-second dashed trail; the whole small toe must fit inside its own ring. The plate keeps moving during the stroke. A missed landing or exhausted extension ends the episode. Escape cancels a held aim before release. Certify only after the undocked feet reach the rim. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed.",
+      "natural_language_by_interaction": {
+        "full": "Hover over the dust patches on the overhead chart to survey concealed plates and their live forecasts. Surveyed plates stay visible. Survey before WAKE to prepare safely; after WAKE the visible state holds while you inspect. Wake the crater. A visible fixed guide carries the chassis; there is no ballast or balance control. The other feet are already docked. Move the FL and FR toes to each next numbered plate and then the rim. Each foot stroke takes one second. Aim at the future horizontal position on the 1/2/3-second dashed trail; the whole small toe must fit inside its own ring. The plate keeps moving during the stroke. A missed landing or exhausted extension ends the episode. Escape cancels a held aim before release. Certify only after the undocked feet reach the rim. Drag a colored toe to its landing coordinate. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed.",
+        "simplified": "Hover over the dust patches on the overhead chart to survey concealed plates and their live forecasts. Surveyed plates stay visible. Survey before WAKE to prepare safely; after WAKE the visible state holds while you inspect. Wake the crater. A visible fixed guide carries the chassis; there is no ballast or balance control. The other feet are already docked. Move the FL and FR toes to each next numbered plate and then the rim. Each foot stroke takes one second. Aim at the future horizontal position on the 1/2/3-second dashed trail; the whole small toe must fit inside its own ring. The plate keeps moving during the stroke. A missed landing or exhausted extension ends the episode. Escape cancels a held aim before release. Certify only after the undocked feet reach the rim. Click a colored toe, then its landing coordinate. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed."
+      }
+    },
+    "3": {
+      "label": "medium",
+      "parameters": {
+        "terraces": 3,
+        "pad_radius": 0.48,
+        "drift": 0.95,
+        "span_ms": 3900,
+        "rise": 0.3,
+        "heave": 0.2,
+        "wind": 0.45,
+        "body_response": 12,
+        "tip_ms": 1000,
+        "stride": 3
+      },
+      "summary": "Four freely supported feet with live weight control; plate radius 0.48 m, lateral drift 0.95 m over 3900 ms, body response 12, topple reserve 1000 ms.",
+      "natural_language": "Hover over the dust patches on the overhead chart to survey concealed plates and their live forecasts. Surveyed plates stay visible. Survey before WAKE to prepare safely; after WAKE the visible state holds while you inspect. Wake the crater. Shift the gold weight handle so the body stays inside the support polygon, then move each colored toe to its next numbered plate. A foot stroke takes one second; aim for the future location shown by its 1/2/3-second dashed trail. Feet stick to their moving supports, and the body keeps momentum. The lift channel follows the next terrace height; you choose the horizontal landing coordinate. Match the toe to its own next plate with its whole small footprint inside the ring. A missed landing, exhausted extension or full TOPPLE bar ends the episode. Press Escape to cancel a held aim before release; cancellation is harmless; certification before escape fails. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed.",
+      "natural_language_by_interaction": {
+        "full": "Hover over the dust patches on the overhead chart to survey concealed plates and their live forecasts. Surveyed plates stay visible. Survey before WAKE to prepare safely; after WAKE the visible state holds while you inspect. Wake the crater. Shift the gold weight handle so the body stays inside the support polygon, then move each colored toe to its next numbered plate. A foot stroke takes one second; aim for the future location shown by its 1/2/3-second dashed trail. Feet stick to their moving supports, and the body keeps momentum. The lift channel follows the next terrace height; you choose the horizontal landing coordinate. Match the toe to its own next plate with its whole small footprint inside the ring. A missed landing, exhausted extension or full TOPPLE bar ends the episode. Press Escape to cancel a held aim before release; cancellation is harmless; certification before escape fails. Drag the gold weight handle and drag a colored toe to its landing coordinate. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed.",
+        "simplified": "Hover over the dust patches on the overhead chart to survey concealed plates and their live forecasts. Surveyed plates stay visible. Survey before WAKE to prepare safely; after WAKE the visible state holds while you inspect. Wake the crater. Shift the gold weight handle so the body stays inside the support polygon, then move each colored toe to its next numbered plate. A foot stroke takes one second; aim for the future location shown by its 1/2/3-second dashed trail. Feet stick to their moving supports, and the body keeps momentum. The lift channel follows the next terrace height; you choose the horizontal landing coordinate. Match the toe to its own next plate with its whole small footprint inside the ring. A missed landing, exhausted extension or full TOPPLE bar ends the episode. Press Escape to cancel a held aim before release; cancellation is harmless; certification before escape fails. Click the weight chart to set a weight shift; click a colored toe and then its landing coordinate. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed."
+      }
+    },
+    "4": {
+      "label": "hard",
+      "parameters": {
+        "terraces": 3,
+        "pad_radius": 0.4,
+        "drift": 1.02,
+        "span_ms": 3300,
+        "rise": 0.35,
+        "heave": 0.28,
+        "wind": 0.65,
+        "body_response": 10,
+        "tip_ms": 850,
+        "stride": 3
+      },
+      "summary": "Four freely supported feet with live weight control; plate radius 0.4 m, lateral drift 1.02 m over 3300 ms, body response 10, topple reserve 850 ms.",
+      "natural_language": "Hover over the dust patches on the overhead chart to survey concealed plates and their live forecasts. Surveyed plates stay visible. Survey before WAKE to prepare safely; after WAKE the visible state holds while you inspect. Wake the crater. Shift the gold weight handle so the body stays inside the support polygon, then move each colored toe to its next numbered plate. A foot stroke takes one second; aim for the future location shown by its 1/2/3-second dashed trail. Feet stick to their moving supports, and the body keeps momentum. The lift channel follows the next terrace height; you choose the horizontal landing coordinate. Match the toe to its own next plate with its whole small footprint inside the ring. A missed landing, exhausted extension or full TOPPLE bar ends the episode. Press Escape to cancel a held aim before release; cancellation is harmless; certification before escape fails. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed.",
+      "natural_language_by_interaction": {
+        "full": "Hover over the dust patches on the overhead chart to survey concealed plates and their live forecasts. Surveyed plates stay visible. Survey before WAKE to prepare safely; after WAKE the visible state holds while you inspect. Wake the crater. Shift the gold weight handle so the body stays inside the support polygon, then move each colored toe to its next numbered plate. A foot stroke takes one second; aim for the future location shown by its 1/2/3-second dashed trail. Feet stick to their moving supports, and the body keeps momentum. The lift channel follows the next terrace height; you choose the horizontal landing coordinate. Match the toe to its own next plate with its whole small footprint inside the ring. A missed landing, exhausted extension or full TOPPLE bar ends the episode. Press Escape to cancel a held aim before release; cancellation is harmless; certification before escape fails. Drag the gold weight handle and drag a colored toe to its landing coordinate. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed.",
+        "simplified": "Hover over the dust patches on the overhead chart to survey concealed plates and their live forecasts. Surveyed plates stay visible. Survey before WAKE to prepare safely; after WAKE the visible state holds while you inspect. Wake the crater. Shift the gold weight handle so the body stays inside the support polygon, then move each colored toe to its next numbered plate. A foot stroke takes one second; aim for the future location shown by its 1/2/3-second dashed trail. Feet stick to their moving supports, and the body keeps momentum. The lift channel follows the next terrace height; you choose the horizontal landing coordinate. Match the toe to its own next plate with its whole small footprint inside the ring. A missed landing, exhausted extension or full TOPPLE bar ends the episode. Press Escape to cancel a held aim before release; cancellation is harmless; certification before escape fails. Click the weight chart to set a weight shift; click a colored toe and then its landing coordinate. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed."
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "parameters": {
+        "terraces": 3,
+        "pad_radius": 0.33,
+        "drift": 1.1,
+        "span_ms": 2900,
+        "rise": 0.4,
+        "heave": 0.36,
+        "wind": 0.85,
+        "body_response": 8,
+        "tip_ms": 700,
+        "stride": 3
+      },
+      "summary": "Four freely supported feet with live weight control; plate radius 0.33 m, lateral drift 1.1 m over 2900 ms, body response 8, topple reserve 700 ms.",
+      "natural_language": "Hover over the dust patches on the overhead chart to survey concealed plates and their live forecasts. Surveyed plates stay visible. Survey before WAKE to prepare safely; after WAKE the visible state holds while you inspect. Wake the crater. Shift the gold weight handle so the body stays inside the support polygon, then move each colored toe to its next numbered plate. A foot stroke takes one second; aim for the future location shown by its 1/2/3-second dashed trail. Feet stick to their moving supports, and the body keeps momentum. The lift channel follows the next terrace height; you choose the horizontal landing coordinate. Match the toe to its own next plate with its whole small footprint inside the ring. A missed landing, exhausted extension or full TOPPLE bar ends the episode. Press Escape to cancel a held aim before release; cancellation is harmless; certification before escape fails. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed.",
+      "natural_language_by_interaction": {
+        "full": "Hover over the dust patches on the overhead chart to survey concealed plates and their live forecasts. Surveyed plates stay visible. Survey before WAKE to prepare safely; after WAKE the visible state holds while you inspect. Wake the crater. Shift the gold weight handle so the body stays inside the support polygon, then move each colored toe to its next numbered plate. A foot stroke takes one second; aim for the future location shown by its 1/2/3-second dashed trail. Feet stick to their moving supports, and the body keeps momentum. The lift channel follows the next terrace height; you choose the horizontal landing coordinate. Match the toe to its own next plate with its whole small footprint inside the ring. A missed landing, exhausted extension or full TOPPLE bar ends the episode. Press Escape to cancel a held aim before release; cancellation is harmless; certification before escape fails. Drag the gold weight handle and drag a colored toe to its landing coordinate. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed.",
+        "simplified": "Hover over the dust patches on the overhead chart to survey concealed plates and their live forecasts. Surveyed plates stay visible. Survey before WAKE to prepare safely; after WAKE the visible state holds while you inspect. Wake the crater. Shift the gold weight handle so the body stays inside the support polygon, then move each colored toe to its next numbered plate. A foot stroke takes one second; aim for the future location shown by its 1/2/3-second dashed trail. Feet stick to their moving supports, and the body keeps momentum. The lift channel follows the next terrace height; you choose the horizontal landing coordinate. Match the toe to its own next plate with its whole small footprint inside the ring. A missed landing, exhausted extension or full TOPPLE bar ends the episode. Press Escape to cancel a held aim before release; cancellation is harmless; certification before escape fails. Click the weight chart to set a weight shift; click a colored toe and then its landing coordinate. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed."
+      }
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Hover the overhead chart to survey concealed supports; both modes reveal the same information. Drag a colored toe to its landing coordinate. D1/D2 have fixed guide support; D3\u2013D5 also use a dragged gold weight handle. Both modes command the same coordinates and preserve the profile's prediction, contact, timing and balance rules."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Hover the overhead chart to survey concealed supports; both modes reveal the same information. Click a colored toe and then its landing coordinate. D1/D2 have fixed guide support; D3\u2013D5 also use a clicked weight chart. Both modes command the same coordinates and preserve the profile's prediction, contact, timing and balance rules."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  },
+  "capabilities": {
+    "visual_understanding": "2D",
+    "temporal_understanding_and_memory": true,
+    "reasoning_and_planning": true,
+    "exploration_and_interface_understanding": false
+  },
+  "calibration_status": "provisional; human and model calibration pending",
+  "parameter_notes": {
+    "rise": "Rendered nominal terrace height only. Horizontal landing, reach and balance checks do not use it; no outcome-physics difficulty credit.",
+    "heave": "Rendered vertical motion with compliant lift only. The overhead placement chart and outcome checks use x/y; no outcome-physics difficulty credit.",
+    "guided_legs": "D1/D2 only: listed toes begin undocked; the other toes are already on the rim. A visible fixed guide carries the chassis and removes manual ballast and tipping. Moving-plate landing and horizontal reach checks remain.",
+    "survey": "V3 information change only: unheld chart-pointer inspection reveals concealed supports within a 0.70 m lens. Earned live forecasts remain visible. No probe quota, physics change, timer suspension or required failed commitment."
+    ,"timing": "Counterpart-only timing change: the visible state holds during idle inspection and held controls; releasing a valid foot command advances exactly one existing one-second stroke. The existing action-time budget and all physics consequences remain unchanged."
+  }
+}

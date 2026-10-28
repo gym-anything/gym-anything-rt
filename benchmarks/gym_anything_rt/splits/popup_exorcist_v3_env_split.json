@@ -1,0 +1,66 @@
+{
+  "env_folder": "popup_exorcist_v3_env",
+  "all_tasks": [
+    "popup_exorcist_v3_d1_full_seed_0001",
+    "popup_exorcist_v3_d1_simplified_seed_0001",
+    "popup_exorcist_v3_d2_full_seed_0001",
+    "popup_exorcist_v3_d2_simplified_seed_0001",
+    "popup_exorcist_v3_d3_full_seed_0001",
+    "popup_exorcist_v3_d3_simplified_seed_0001",
+    "popup_exorcist_v3_d4_full_seed_0001",
+    "popup_exorcist_v3_d4_simplified_seed_0001",
+    "popup_exorcist_v3_d5_full_seed_0001",
+    "popup_exorcist_v3_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "popup_exorcist_v3_d1_full_seed_0001",
+    "popup_exorcist_v3_d1_simplified_seed_0001",
+    "popup_exorcist_v3_d2_full_seed_0001",
+    "popup_exorcist_v3_d2_simplified_seed_0001",
+    "popup_exorcist_v3_d3_full_seed_0001",
+    "popup_exorcist_v3_d3_simplified_seed_0001",
+    "popup_exorcist_v3_d4_full_seed_0001",
+    "popup_exorcist_v3_d4_simplified_seed_0001",
+    "popup_exorcist_v3_d5_full_seed_0001",
+    "popup_exorcist_v3_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "popup_exorcist_v3_d5_full_seed_0001"
+    ],
+    "full": [
+      "popup_exorcist_v3_d1_full_seed_0001",
+      "popup_exorcist_v3_d2_full_seed_0001",
+      "popup_exorcist_v3_d3_full_seed_0001",
+      "popup_exorcist_v3_d4_full_seed_0001",
+      "popup_exorcist_v3_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "popup_exorcist_v3_d1_simplified_seed_0001",
+      "popup_exorcist_v3_d2_simplified_seed_0001",
+      "popup_exorcist_v3_d3_simplified_seed_0001",
+      "popup_exorcist_v3_d4_simplified_seed_0001",
+      "popup_exorcist_v3_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "popup_exorcist_v3_d1_full_seed_0001",
+      "popup_exorcist_v3_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "popup_exorcist_v3_d2_full_seed_0001",
+      "popup_exorcist_v3_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "popup_exorcist_v3_d3_full_seed_0001",
+      "popup_exorcist_v3_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "popup_exorcist_v3_d4_full_seed_0001",
+      "popup_exorcist_v3_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "popup_exorcist_v3_d5_full_seed_0001",
+      "popup_exorcist_v3_d5_simplified_seed_0001"
+    ]
+  }
+}

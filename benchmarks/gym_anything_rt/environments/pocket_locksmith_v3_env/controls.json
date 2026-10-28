@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "pocket_locksmith_v3",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Track one freely turning bond in a wide moving socket.",
+      "parameters": {
+        "joints": 1,
+        "amplitude_deg": 45,
+        "span_ms": 4800,
+        "clearance": 0.22,
+        "servo_gain": 65,
+        "servo_damping": 15,
+        "max_acceleration": 480,
+        "max_speed": 125,
+        "run_ms": 24000,
+        "required_fraction": 0.82,
+        "max_outage_ms": 5000
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Two torsions share the distal contact; upstream correction moves both tips.",
+      "parameters": {
+        "joints": 2,
+        "amplitude_deg": 45,
+        "span_ms": 4500,
+        "clearance": 0.22,
+        "servo_gain": 65,
+        "servo_damping": 15,
+        "max_acceleration": 480,
+        "max_speed": 125,
+        "run_ms": 24000,
+        "required_fraction": 0.82,
+        "max_outage_ms": 5000
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Three noncommuting torsions couple depth, lateral fit and inherited velocity.",
+      "parameters": {
+        "joints": 3,
+        "amplitude_deg": 46,
+        "span_ms": 4300,
+        "clearance": 0.21,
+        "servo_gain": 65,
+        "servo_damping": 15,
+        "max_acceleration": 480,
+        "max_speed": 125,
+        "run_ms": 24000,
+        "required_fraction": 0.82,
+        "max_outage_ms": 5000
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Four connected joints must keep all distal atoms in moving three-dimensional sockets.",
+      "parameters": {
+        "joints": 4,
+        "amplitude_deg": 48,
+        "span_ms": 4100,
+        "clearance": 0.2,
+        "servo_gain": 65,
+        "servo_damping": 15,
+        "max_acceleration": 480,
+        "max_speed": 125,
+        "run_ms": 24000,
+        "required_fraction": 0.82,
+        "max_outage_ms": 5000
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Four coupled inertial torsions follow faster independent bends with smaller physical clearance.",
+      "parameters": {
+        "joints": 4,
+        "amplitude_deg": 50,
+        "span_ms": 3200,
+        "clearance": 0.17,
+        "servo_gain": 65,
+        "servo_damping": 15,
+        "max_acceleration": 480,
+        "max_speed": 125,
+        "run_ms": 24000,
+        "required_fraction": 0.82,
+        "max_outage_ms": 4500
+      }
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Drag each cream command bead around its torsion ring. Reversible test turns reveal its seeded bond connection and direction; the label persists. Existing servo dynamics and camera orbit remain."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Click an angle on each straight command rail. The same hidden linkages, test-turn information, geometry, motion, inertia, tolerances and goal apply."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  }
+}

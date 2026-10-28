@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "reverse_identity_gate",
+  "baseline": {
+    "difficulty": 4,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Seal one slow, wide phase lock in one tab. The receiver moves faster than the pulse, contact needs only a short hold, and phase loss drains slowly, so the task is one recoverable live control loop.",
+      "natural_language": "Deploy the single robot limb. Drive its receiver into the moving phase and maintain contact until its relay seals, then verify the identity.",
+      "parameters": {
+        "station_count": 1,
+        "station_relays": [1],
+        "pulse_speed_choices": [-1, 1],
+        "tick_ms": 75,
+        "receiver_control_deg_per_tick": 8,
+        "capture_tolerance_deg": 30,
+        "hold_ticks": 8,
+        "charge_decay_per_tick": 1,
+        "maximum_ticks_per_stage": 420
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Seal two independent limbs with visible tab handoff. Both locks remain slow and forgiving, but the operator must deploy and return to two separate live phase surfaces.",
+      "natural_language": "Deploy both robot limbs. Follow the active glyph, drive each receiver into phase, hold contact until both relays seal, then verify the identity.",
+      "parameters": {
+        "station_count": 2,
+        "station_relays": [1, 1],
+        "pulse_speed_choices": [-2, -1, 1, 2],
+        "tick_ms": 65,
+        "receiver_control_deg_per_tick": 6,
+        "capture_tolerance_deg": 24,
+        "hold_ticks": 10,
+        "charge_decay_per_tick": 1,
+        "maximum_ticks_per_stage": 560
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Coordinate three live limb tabs and return to one of them for a fourth relay. Faster opposing phases, a narrower capture aperture, and stronger decay require observing motion and correcting the active phase rather than simply waiting.",
+      "natural_language": "Deploy the three robot limbs. Follow each active glyph across the tab handoffs, maintain the live phase locks, and merge all four relays into one identity proof.",
+      "parameters": {
+        "station_count": 3,
+        "station_relays": [2, 1, 1],
+        "pulse_speed_choices": [-2, 2],
+        "tick_ms": 55,
+        "receiver_control_deg_per_tick": 5,
+        "capture_tolerance_deg": 18,
+        "hold_ticks": 13,
+        "charge_decay_per_tick": 2,
+        "maximum_ticks_per_stage": 720
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Preserves the original four-tab/eight-relay generated world, phase physics, and direct input interface: each lock has a 13° aperture, a 16-tick sustain requirement, and two-unit loss decay. The L4/full reference retains historical A/D-and-held-contact control; simplified is the paired proxy surface.",
+      "natural_language": "Prove you are a robot.",
+      "parameters": {
+        "station_count": 4,
+        "station_relays": [2, 2, 2, 2],
+        "pulse_speed_choices": [-3, -2, 2, 3],
+        "tick_ms": 50,
+        "receiver_control_deg_per_tick": 5,
+        "capture_tolerance_deg": 13,
+        "hold_ticks": 16,
+        "charge_decay_per_tick": 2,
+        "maximum_ticks_per_stage": 900
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Keep the four-tab, eight-relay topology while making every active phase chase faster and less forgiving: fast pulse motion crosses a 9° capture aperture, loss drains three charge units, and every lock needs a longer sustained hold.",
+      "natural_language": "Deploy all four limbs, sustain eight tight moving phase locks across their live tab handoffs, and merge the completed ledger into one robot identity proof.",
+      "parameters": {
+        "station_count": 4,
+        "station_relays": [2, 2, 2, 2],
+        "pulse_speed_choices": [-4, -3, 3, 4],
+        "tick_ms": 45,
+        "receiver_control_deg_per_tick": 5,
+        "capture_tolerance_deg": 9,
+        "hold_ticks": 22,
+        "charge_decay_per_tick": 3,
+        "maximum_ticks_per_stage": 1080
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Paired proxy surface. Keep the same real tabs, relay order, phase display, physics, and timing, but use visible CCW, NEUTRAL, CW, and click-to-toggle-contact controls in each active limb tab. These proxy controls set the same receiver direction and contact state as the full actions."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Historical reference surface at L4: focus the active real limb tab, hold A/D or the arrow keys to drive its receiver, and hold the pointer down on the phase-contact control while the two moving markers overlap."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 500,
+    "frames_per_observation": 5
+  }
+}

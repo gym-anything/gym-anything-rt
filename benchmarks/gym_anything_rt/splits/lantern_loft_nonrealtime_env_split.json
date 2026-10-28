@@ -1,0 +1,66 @@
+{
+  "env_folder": "lantern_loft_nonrealtime_env",
+  "all_tasks": [
+    "lantern_loft_nonrealtime_d1_full_seed_0001",
+    "lantern_loft_nonrealtime_d1_simplified_seed_0001",
+    "lantern_loft_nonrealtime_d2_full_seed_0001",
+    "lantern_loft_nonrealtime_d2_simplified_seed_0001",
+    "lantern_loft_nonrealtime_d3_full_seed_0001",
+    "lantern_loft_nonrealtime_d3_simplified_seed_0001",
+    "lantern_loft_nonrealtime_d4_full_seed_0001",
+    "lantern_loft_nonrealtime_d4_simplified_seed_0001",
+    "lantern_loft_nonrealtime_d5_full_seed_0001",
+    "lantern_loft_nonrealtime_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "lantern_loft_nonrealtime_d1_full_seed_0001",
+    "lantern_loft_nonrealtime_d1_simplified_seed_0001",
+    "lantern_loft_nonrealtime_d2_full_seed_0001",
+    "lantern_loft_nonrealtime_d2_simplified_seed_0001",
+    "lantern_loft_nonrealtime_d3_full_seed_0001",
+    "lantern_loft_nonrealtime_d3_simplified_seed_0001",
+    "lantern_loft_nonrealtime_d4_full_seed_0001",
+    "lantern_loft_nonrealtime_d4_simplified_seed_0001",
+    "lantern_loft_nonrealtime_d5_full_seed_0001",
+    "lantern_loft_nonrealtime_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "lantern_loft_nonrealtime_d5_full_seed_0001"
+    ],
+    "full": [
+      "lantern_loft_nonrealtime_d1_full_seed_0001",
+      "lantern_loft_nonrealtime_d2_full_seed_0001",
+      "lantern_loft_nonrealtime_d3_full_seed_0001",
+      "lantern_loft_nonrealtime_d4_full_seed_0001",
+      "lantern_loft_nonrealtime_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "lantern_loft_nonrealtime_d1_simplified_seed_0001",
+      "lantern_loft_nonrealtime_d2_simplified_seed_0001",
+      "lantern_loft_nonrealtime_d3_simplified_seed_0001",
+      "lantern_loft_nonrealtime_d4_simplified_seed_0001",
+      "lantern_loft_nonrealtime_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "lantern_loft_nonrealtime_d1_full_seed_0001",
+      "lantern_loft_nonrealtime_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "lantern_loft_nonrealtime_d2_full_seed_0001",
+      "lantern_loft_nonrealtime_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "lantern_loft_nonrealtime_d3_full_seed_0001",
+      "lantern_loft_nonrealtime_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "lantern_loft_nonrealtime_d4_full_seed_0001",
+      "lantern_loft_nonrealtime_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "lantern_loft_nonrealtime_d5_full_seed_0001",
+      "lantern_loft_nonrealtime_d5_simplified_seed_0001"
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "bandaged_rose_window_v3",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Exact permutation depth 4; mean collar speed 0.24 rad/s, variation \u00b10.14, transition 6500 ms, notch half-width 0.95 rad. Provisional ordering; no human/model calibration.",
+      "natural_language": "Click the conservation patches on the current window to inspect the hidden glass pieces; each exposed piece stays visible when it moves. Restore the thirteen glass pieces to the reference. Start the collars. A disc may turn only when it contains the heart and no foreign point. Turn while its moving notch straddles the fixed brass pin. Turning a free disc against a closed collar cracks the window and ends the episode. Shape-blocked probes are harmless. Collars keep moving during dragging and holding. Seal only the restored window. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or other hidden-state access. Do not switch to unrelated, blank, pre-existing, or browser-settings tabs.",
+      "parameters": {
+        "scramble_depth": 4,
+        "collar_speed": 0.24,
+        "collar_amplitude": 0.14,
+        "collar_span_ms": 6500,
+        "notch_half_width": 0.95
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Exact permutation depth 4; mean collar speed 0.29 rad/s, variation \u00b10.18, transition 6000 ms, notch half-width 0.9 rad. Provisional ordering; no human/model calibration.",
+      "natural_language": "Click the conservation patches on the current window to inspect the hidden glass pieces; each exposed piece stays visible when it moves. Restore the thirteen glass pieces to the reference. Start the collars. A disc may turn only when it contains the heart and no foreign point. Turn while its moving notch straddles the fixed brass pin. Turning a free disc against a closed collar cracks the window and ends the episode. Shape-blocked probes are harmless. Collars keep moving during dragging and holding. Seal only the restored window. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or other hidden-state access. Do not switch to unrelated, blank, pre-existing, or browser-settings tabs.",
+      "parameters": {
+        "scramble_depth": 4,
+        "collar_speed": 0.29,
+        "collar_amplitude": 0.18,
+        "collar_span_ms": 6000,
+        "notch_half_width": 0.9
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Exact permutation depth 7; mean collar speed 0.34 rad/s, variation \u00b10.23, transition 5300 ms, notch half-width 0.82 rad. Provisional ordering; no human/model calibration.",
+      "natural_language": "Click the conservation patches on the current window to inspect the hidden glass pieces; each exposed piece stays visible when it moves. Restore the thirteen glass pieces to the reference. Start the collars. A disc may turn only when it contains the heart and no foreign point. Turn while its moving notch straddles the fixed brass pin. Turning a free disc against a closed collar cracks the window and ends the episode. Shape-blocked probes are harmless. Collars keep moving during dragging and holding. Seal only the restored window. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or other hidden-state access. Do not switch to unrelated, blank, pre-existing, or browser-settings tabs.",
+      "parameters": {
+        "scramble_depth": 7,
+        "collar_speed": 0.34,
+        "collar_amplitude": 0.23,
+        "collar_span_ms": 5300,
+        "notch_half_width": 0.82
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Exact permutation depth 10; mean collar speed 0.4 rad/s, variation \u00b10.32, transition 4300 ms, notch half-width 0.7 rad. Provisional ordering; no human/model calibration.",
+      "natural_language": "Click the conservation patches on the current window to inspect the hidden glass pieces; each exposed piece stays visible when it moves. Restore the thirteen glass pieces to the reference. Start the collars. A disc may turn only when it contains the heart and no foreign point. Turn while its moving notch straddles the fixed brass pin. Turning a free disc against a closed collar cracks the window and ends the episode. Shape-blocked probes are harmless. Collars keep moving during dragging and holding. Seal only the restored window. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or other hidden-state access. Do not switch to unrelated, blank, pre-existing, or browser-settings tabs.",
+      "parameters": {
+        "scramble_depth": 10,
+        "collar_speed": 0.4,
+        "collar_amplitude": 0.32,
+        "collar_span_ms": 4300,
+        "notch_half_width": 0.7
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Exact permutation depth 14; mean collar speed 0.46 rad/s, variation \u00b10.4, transition 3500 ms, notch half-width 0.62 rad. Provisional ordering; no human/model calibration.",
+      "natural_language": "Click the conservation patches on the current window to inspect the hidden glass pieces; each exposed piece stays visible when it moves. Restore the thirteen glass pieces to the reference. Start the collars. A disc may turn only when it contains the heart and no foreign point. Turn while its moving notch straddles the fixed brass pin. Turning a free disc against a closed collar cracks the window and ends the episode. Shape-blocked probes are harmless. Collars keep moving during dragging and holding. Seal only the restored window. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or other hidden-state access. Do not switch to unrelated, blank, pre-existing, or browser-settings tabs.",
+      "parameters": {
+        "scramble_depth": 14,
+        "collar_speed": 0.46,
+        "collar_amplitude": 0.4,
+        "collar_span_ms": 3500,
+        "notch_half_width": 0.62
+      }
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Click the same paper patches to inspect concealed glass in either mode. Drag a brass rim handle through at least 26 degrees; the turn executes on release."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Click the same paper patches to inspect concealed glass in either mode. Click a labelled counter-clockwise or clockwise button. The same moving collars and bandages govern execution."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 300,
+    "observation_window_ms": 600,
+    "frames_per_observation": 4
+  }
+}

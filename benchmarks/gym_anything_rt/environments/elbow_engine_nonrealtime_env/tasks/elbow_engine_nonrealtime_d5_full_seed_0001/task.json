@@ -1,0 +1,55 @@
+{
+  "description": "Keep the tip of a passive-shoulder, powered-elbow brass acrobot above a visible height marker for 1.2 seconds.",
+  "difficulty": "very_hard",
+  "env_id": "gym_anything_rt.elbow_engine_nonrealtime_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/elbow_engine_nonrealtime_d5_full_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/elbow_engine_nonrealtime_d5_full_seed_0001/setup_task.sh"
+  },
+  "id": "elbow_engine_nonrealtime_d5_full_seed_0001@0.2",
+  "init": {
+    "max_steps": 900,
+    "reward_type": "sparse",
+    "timeout_sec": 900
+  },
+  "metadata": {
+    "asset_manifest": "environments/elbow_engine_nonrealtime_env/provenance.json",
+    "benchmark": "gym_anything_rt",
+    "capabilities": [
+      "visual understanding: 2D",
+      "temporal understanding and memory",
+      "reasoning and planning"
+    ],
+    "capability_configuration": {
+      "difficulty": 5,
+      "interaction": "full"
+    },
+    "control_condition": {
+      "difficulty": 5,
+      "difficulty_parameters": {
+        "target_height": 1.6,
+        "time_scale": 0.5,
+        "torque": 1.2
+      },
+      "interaction": "full",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "elbow_engine_nonrealtime"
+  },
+  "name": "Elbow Engine · Difficulty 5 · Full Interaction",
+  "natural_language": "Start the engine. Use the visible negative, neutral, and positive torque controls to keep the glowing free tip above the green height marker for 1.2 seconds continuously. Each deliberate control command advances one fixed engine pulse; waiting leaves the engine unchanged. Submit after the height-hold meter fills. Only use screenshots and visible task webpage controls; do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or hidden implementation state. Stay on the task tab; only tabs opened by visible task controls as part of the task may be used.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "elbow_engine_nonrealtime",
+    "underactuated",
+    "continuous-control"
+  ],
+  "version": "0.2"
+}

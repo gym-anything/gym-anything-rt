@@ -1,0 +1,58 @@
+{
+  "description": "Forge a conserved-volume tool head across fixed action-settled carriage poses and local heat states.",
+  "difficulty": "easy",
+  "env_id": "gym_anything_rt.ember_anvil_v3_nonrealtime_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/ember_anvil_v3_nonrealtime_d2_simplified_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/ember_anvil_v3_nonrealtime_d2_simplified_seed_0001/setup_task.sh"
+  },
+  "id": "ember_anvil_v3_nonrealtime_d2_simplified_seed_0001@0.2",
+  "init": {
+    "max_steps": 200,
+    "reward_type": "sparse",
+    "timeout_sec": 300
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/ember_anvil_v3_v0.json",
+    "benchmark": "gym_anything_rt",
+    "capabilities": [
+      "visual understanding: 2D",
+      "temporal understanding and memory",
+      "reasoning and planning"
+    ],
+    "control_condition": {
+      "difficulty": 2,
+      "difficulty_parameters": {
+        "cap": 2,
+        "excess": 1,
+        "heat_span_ms": 5500,
+        "motion_span_ms": 3800,
+        "relief": false,
+        "rotation": 0.2,
+        "scramble": 6,
+        "travel_x": 85,
+        "travel_y": 35,
+        "workable": 0.48
+      },
+      "interaction": "simplified",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "ember_anvil_v3_nonrealtime"
+  },
+  "name": "Ember Anvil V3 · Difficulty 2 · Simplified Interaction",
+  "natural_language": "The target shape is concealed inside the die. Click squares in the target die diagram to gauge the required layers, including empty locations. Question marks are unmeasured; dots are measured layers and 0 means empty. Measurements remain visible in the diagram and relief sketch. Gauging is safe in preparation and consumes no metal or fuel. Gauge the die before lighting, then shape the billet to the measured relief. You can also gauge during forging; inspection and waiting do not advance the forge. Draw moves one layer into a lower neighbor; upset moves it onto an equal-height neighbor; split permanently discards one layer. Match the relief and conserve metal. Directions turn with the billet. Strike only glowing metal; dark cells stay dark until a deliberate strike advances the forge. Three green pips preview the next settled heat states; the blue dashed frame shows the next settled carriage pose and the gold trace covers the next 1.2 seconds. Drag the hammer from its dock in full mode, or click a top face in simplified mode. Each deliberate strike advances the fixed forge phase by 0.8 seconds; holding and cancelled drags do not. Air, cold, blocked and cancelled contacts are recoverable. An incomplete stamp, insufficient metal or exhausted fuel ends the episode permanently. No retry is available after a terminal failure. Use only screenshots and visible task controls; no code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden-state access, or unrelated tabs. Only task-opened tabs and their visible controls are permitted.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "ember_anvil_v3_nonrealtime",
+    "non-real-time",
+    "smithing"
+  ],
+  "version": "0.2"
+}

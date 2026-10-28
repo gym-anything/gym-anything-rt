@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#070a08">
+    <meta name="description" content="A self-contained Gym-Anything-RT puzzle running entirely in this browser tab.">
+    <title>Gym-Anything-RT · Browser Play</title>
+    <link rel="stylesheet" href="runtime/styles.css">
+    <link rel="stylesheet" href="runtime/demo_controls.css">
+  </head>
+  <body>
+    <main id="app" class="app-shell" aria-live="polite">
+      <section class="boot-panel">
+        <p class="eyebrow">Browser challenge loading</p>
+        <h1>Gym-Anything-RT</h1>
+        <p class="status-line">Preparing an interaction puzzle inside this tab.</p>
+      </section>
+    </main>
+    <script src="runtime/time_controller.js"></script>
+    <script src="runtime/browser_adapter.js"></script>
+    <script src="runtime/vendor/matter.min.js"></script>
+    <script src="runtime/app.js"></script>
+    <script src="runtime/demo_controls.js"></script>
+  </body>
+</html>

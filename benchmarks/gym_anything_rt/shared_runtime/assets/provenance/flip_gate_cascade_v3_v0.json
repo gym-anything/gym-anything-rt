@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "flip_gate_cascade_v3",
+  "source_anchors": [
+    "TRP-033",
+    "PHY-137"
+  ],
+  "sources": [
+    {
+      "title": "Think-a-Dot analysis",
+      "url": "https://www.jaapsch.net/puzzles/thinkadot.htm"
+    },
+    {
+      "title": "Think-a-Dot JavaScript simulation",
+      "url": "https://www.jaapsch.net/puzzles/javascript/thinkadotj.htm"
+    },
+    {
+      "title": "Jaap puzzle collection index",
+      "url": "https://www.jaapsch.net/puzzles/"
+    },
+    {
+      "title": "Jaap JavaScript source index",
+      "url": "https://www.jaapsch.net/puzzles/indxjscr.htm"
+    }
+  ],
+  "assets": [],
+  "notes": "Mechanic references only. No source code, imagery, audio, fonts, or packaging art copied. Original canvas vector artwork. Existing benchmark frameworks remain frozen."
+}

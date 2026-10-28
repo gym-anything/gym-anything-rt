@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "elastic_membrane_sorter_nonrealtime",
+  "baseline": {
+    "difficulty": 4,
+    "interaction": "simplified",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "One marble crosses one broad inspection ring into a large, forgiving well. Slow, highly damped motion makes the membrane response easy to observe and reverse.",
+      "natural_language": "Guide one marble through its highlighted inspection ring and settle it in the matching well.",
+      "parameters": {
+        "round_count": 1,
+        "checkpoints_per_round": 1,
+        "slope_accel": 0.07,
+        "drag": 0.965,
+        "well_radius": 40,
+        "capture_speed": 4.0,
+        "checkpoint_radius": 50,
+        "max_ticks": 720,
+        "initial_height_low": 0.48,
+        "initial_height_high": 0.52
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "One marble must clear the complete two-ring course before a moderately forgiving capture. The operator still makes one continuous observation-and-correction loop, but with a clear intermediate route dependency.",
+      "natural_language": "Guide one marble through both numbered rings in order, then settle it in the highlighted well.",
+      "parameters": {
+        "round_count": 1,
+        "checkpoints_per_round": 2,
+        "slope_accel": 0.08,
+        "drag": 0.96,
+        "well_radius": 36,
+        "capture_speed": 3.5,
+        "checkpoint_radius": 42,
+        "max_ticks": 720,
+        "initial_height_low": 0.45,
+        "initial_height_high": 0.55
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Two independently initialized marbles each require the full ordered route. The second steering problem must be re-observed after the first capture instead of being a continuation of a static path.",
+      "natural_language": "Retension the membrane for two marbles; clear both numbered-ring routes and settle each in its highlighted well.",
+      "parameters": {
+        "round_count": 2,
+        "checkpoints_per_round": 2,
+        "slope_accel": 0.09,
+        "drag": 0.958,
+        "well_radius": 33,
+        "capture_speed": 3.1,
+        "checkpoint_radius": 37,
+        "max_ticks": 720,
+        "initial_height_low": 0.43,
+        "initial_height_high": 0.57
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "The original configuration: three differently assigned marbles, two ordered rings each, persistent momentum, and a visible low-speed capture requirement. Every capture resets the membrane to a new initial tension state.",
+      "natural_language": "Retension the membrane for each marble and settle it in the highlighted well.",
+      "parameters": {
+        "round_count": 3,
+        "checkpoints_per_round": 2,
+        "slope_accel": 0.1,
+        "drag": 0.955,
+        "well_radius": 30,
+        "capture_speed": 2.8,
+        "checkpoint_radius": 34,
+        "max_ticks": 720,
+        "initial_height_low": 0.42,
+        "initial_height_high": 0.58
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Three courses add a third ordered ring while increasing slope response, reducing damping, narrowing every spatial acceptance region, and requiring slower captures. Each correction must account for more momentum before the next ring.",
+      "natural_language": "For all three marbles, steer through three numbered rings in order and enter the highlighted well below its capture-speed limit.",
+      "parameters": {
+        "round_count": 3,
+        "checkpoints_per_round": 3,
+        "slope_accel": 0.112,
+        "drag": 0.95,
+        "well_radius": 28,
+        "capture_speed": 2.4,
+        "checkpoint_radius": 27,
+        "max_ticks": 660,
+        "initial_height_low": 0.38,
+        "initial_height_high": 0.62
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Use four labelled tension sliders to set the membrane posts directly."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Drag the four glowing post markers directly on the membrane surface to retension them."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 600,
+    "frames_per_observation": 5
+  }
+}

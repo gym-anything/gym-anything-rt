@@ -1,0 +1,61 @@
+{
+  "description": "Start the choir. Each start or successful STRIKE settles the arrows and drifting pulse trails into the next fixed decision snapshot. Steer each wall's brass resonator, then click STRIKE while the arriving pulse centre is inside it. Waiting, holding and aim corrections do not advance the snapshot; a deliberate aim step moves the receiver at its bounded speed. Release before striking. A wrong enabled strike or END ATTEMPT ends this one-attempt episode.",
+  "difficulty": "very_hard",
+  "env_id": "gym_anything_rt.collision_chimes_nonrealtime_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/collision_chimes_nonrealtime_d5_simplified_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/collision_chimes_nonrealtime_d5_simplified_seed_0001/setup_task.sh"
+  },
+  "id": "collision_chimes_nonrealtime_d5_simplified_seed_0001@0.2",
+  "init": {
+    "max_steps": 400,
+    "reward_type": "sparse",
+    "timeout_sec": 900
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/collision_chimes_v2_v0.json",
+    "benchmark": "gym_anything_rt",
+    "capabilities": [
+      "visual understanding (2D)",
+      "temporal understanding and memory",
+      "reasoning and planning"
+    ],
+    "control_condition": {
+      "difficulty": 5,
+      "difficulty_parameters": {
+        "beat_ms": 1650,
+        "beats": 32,
+        "cell_count": 6,
+        "drift": 3.6,
+        "drift_span_ms": 3400,
+        "flight_ms": 4400,
+        "note_count": 18,
+        "pickup_depth_px": 24,
+        "pickup_speed": 6.0,
+        "pickup_width": 1.15
+      },
+      "interaction": "simplified",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "implementation_revision": "drifting-wall-pulses-v2-action-snapshots",
+    "mechanic_id": "collision_chimes_nonrealtime"
+  },
+  "name": "Collision Chimes V2 · Action Snapshots · Difficulty 5 · Simplified Interaction",
+  "natural_language": "Start the choir. Each start or successful STRIKE settles the arrows and drifting pulse trails into the next fixed decision snapshot. Steer each wall's brass resonator, then click STRIKE while the arriving pulse centre is inside it. Waiting, holding and aim corrections do not advance the snapshot; a deliberate aim step moves the receiver at its bounded speed. Release before striking. A wrong enabled strike or END ATTEMPT ends this one-attempt episode.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "linux",
+    "browser",
+    "visual-puzzle",
+    "gym-anything-rt",
+    "cellular-automaton",
+    "action-snapshots"
+  ],
+  "version": "0.2"
+}

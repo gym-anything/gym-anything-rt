@@ -1,0 +1,66 @@
+{
+  "env_folder": "cloudstep_caddie_v2_env",
+  "all_tasks": [
+    "cloudstep_caddie_v2_d1_full_seed_0001",
+    "cloudstep_caddie_v2_d1_simplified_seed_0001",
+    "cloudstep_caddie_v2_d2_full_seed_0001",
+    "cloudstep_caddie_v2_d2_simplified_seed_0001",
+    "cloudstep_caddie_v2_d3_full_seed_0001",
+    "cloudstep_caddie_v2_d3_simplified_seed_0001",
+    "cloudstep_caddie_v2_d4_full_seed_0001",
+    "cloudstep_caddie_v2_d4_simplified_seed_0001",
+    "cloudstep_caddie_v2_d5_full_seed_0001",
+    "cloudstep_caddie_v2_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "cloudstep_caddie_v2_d1_full_seed_0001",
+    "cloudstep_caddie_v2_d1_simplified_seed_0001",
+    "cloudstep_caddie_v2_d2_full_seed_0001",
+    "cloudstep_caddie_v2_d2_simplified_seed_0001",
+    "cloudstep_caddie_v2_d3_full_seed_0001",
+    "cloudstep_caddie_v2_d3_simplified_seed_0001",
+    "cloudstep_caddie_v2_d4_full_seed_0001",
+    "cloudstep_caddie_v2_d4_simplified_seed_0001",
+    "cloudstep_caddie_v2_d5_full_seed_0001",
+    "cloudstep_caddie_v2_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "cloudstep_caddie_v2_d5_full_seed_0001"
+    ],
+    "full": [
+      "cloudstep_caddie_v2_d1_full_seed_0001",
+      "cloudstep_caddie_v2_d2_full_seed_0001",
+      "cloudstep_caddie_v2_d3_full_seed_0001",
+      "cloudstep_caddie_v2_d4_full_seed_0001",
+      "cloudstep_caddie_v2_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "cloudstep_caddie_v2_d1_simplified_seed_0001",
+      "cloudstep_caddie_v2_d2_simplified_seed_0001",
+      "cloudstep_caddie_v2_d3_simplified_seed_0001",
+      "cloudstep_caddie_v2_d4_simplified_seed_0001",
+      "cloudstep_caddie_v2_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "cloudstep_caddie_v2_d1_full_seed_0001",
+      "cloudstep_caddie_v2_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "cloudstep_caddie_v2_d2_full_seed_0001",
+      "cloudstep_caddie_v2_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "cloudstep_caddie_v2_d3_full_seed_0001",
+      "cloudstep_caddie_v2_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "cloudstep_caddie_v2_d4_full_seed_0001",
+      "cloudstep_caddie_v2_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "cloudstep_caddie_v2_d5_full_seed_0001",
+      "cloudstep_caddie_v2_d5_simplified_seed_0001"
+    ]
+  }
+}

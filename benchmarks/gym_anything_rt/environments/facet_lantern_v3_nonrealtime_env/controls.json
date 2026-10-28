@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "facet_lantern_v3_nonrealtime",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Six studs, yaw-dominated movement and two separated panes. Every run needs rear-side studs.",
+      "parameters": {
+        "ring_vertices": 4,
+        "facets": 2,
+        "initial_edges": 0,
+        "yaw_rate": 0.11,
+        "pitch_rate": 0.025,
+        "roll_rate": 0.0,
+        "gust": 0.25,
+        "span_ms": 6500,
+        "stud_radius": 19
+      },
+      "natural_language_by_interaction": {
+        "full": "Close every commissioned triangular pane at each settled view of the 3D lantern. Only the listed wires are allowed. Launch, then hover over current gold studs without pressing a button to read their concealed letters. Learned letters stay visible; use them to choose the commissioned endpoints. Inspection is safe and waiting is safe and does not advance the lantern. Use safe empty-space misses or completed gestures to reveal later settled views. Pale rings mark the prior settled position and cyan diamonds preview the next fixed step. A wrong wire or incomplete certification ends this episode. Empty-space misses are safe. Each completed gesture advances one fixed settled step; waiting leaves the current view unchanged. Drag from a gold source stud and release on its partner in the current settled view. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Do not interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only as part of the task, using their visible controls.",
+        "simplified": "Close every commissioned triangular pane at each settled view of the 3D lantern. Only the listed wires are allowed. Launch, then hover over current gold studs without pressing a button to read their concealed letters. Learned letters stay visible; use them to choose the commissioned endpoints. Inspection is safe and waiting is safe and does not advance the lantern. Use safe empty-space misses or completed gestures to reveal later settled views. Pale rings mark the prior settled position and cyan diamonds preview the next fixed step. A wrong wire or incomplete certification ends this episode. Empty-space misses are safe. Each completed gesture advances one fixed settled step; waiting leaves the current view unchanged. Click a gold source stud, then click its partner in the current settled view. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Do not interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only as part of the task, using their visible controls."
+      },
+      "natural_language": "Close every commissioned triangular pane at each settled view of the 3D lantern. Only the listed wires are allowed. Launch, then hover over current gold studs without pressing a button to read their concealed letters. Learned letters stay visible; use them to choose the commissioned endpoints. Inspection is safe and waiting is safe and does not advance the lantern. Use safe empty-space misses or completed gestures to reveal later settled views. Pale rings mark the prior settled position and cyan diamonds preview the next fixed step. A wrong wire or incomplete certification ends this episode. Empty-space misses are safe. Each completed gesture advances one fixed settled step; waiting leaves the current view unchanged. Use the selected interaction surface: drag from a gold source stud and release on its partner in the current settled view in Full; click the source then its partner in the current settled view in Simplified. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Do not interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only as part of the task, using their visible controls."
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Eight studs and larger pitch plus roll make all endpoints move; three panes occupy both poles.",
+      "parameters": {
+        "ring_vertices": 6,
+        "facets": 3,
+        "initial_edges": 1,
+        "yaw_rate": 0.14,
+        "pitch_rate": 0.045,
+        "roll_rate": 0.012,
+        "gust": 0.35,
+        "span_ms": 6000,
+        "stud_radius": 19
+      },
+      "natural_language_by_interaction": {
+        "full": "Close every commissioned triangular pane at each settled view of the 3D lantern. Only the listed wires are allowed. Launch, then hover over current gold studs without pressing a button to read their concealed letters. Learned letters stay visible; use them to choose the commissioned endpoints. Inspection is safe and waiting is safe and does not advance the lantern. Use safe empty-space misses or completed gestures to reveal later settled views. Pale rings mark the prior settled position and cyan diamonds preview the next fixed step. A wrong wire or incomplete certification ends this episode. Empty-space misses are safe. Each completed gesture advances one fixed settled step; waiting leaves the current view unchanged. Drag from a gold source stud and release on its partner in the current settled view. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Do not interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only as part of the task, using their visible controls.",
+        "simplified": "Close every commissioned triangular pane at each settled view of the 3D lantern. Only the listed wires are allowed. Launch, then hover over current gold studs without pressing a button to read their concealed letters. Learned letters stay visible; use them to choose the commissioned endpoints. Inspection is safe and waiting is safe and does not advance the lantern. Use safe empty-space misses or completed gestures to reveal later settled views. Pale rings mark the prior settled position and cyan diamonds preview the next fixed step. A wrong wire or incomplete certification ends this episode. Empty-space misses are safe. Each completed gesture advances one fixed settled step; waiting leaves the current view unchanged. Click a gold source stud, then click its partner in the current settled view. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Do not interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only as part of the task, using their visible controls."
+      },
+      "natural_language": "Close every commissioned triangular pane at each settled view of the 3D lantern. Only the listed wires are allowed. Launch, then hover over current gold studs without pressing a button to read their concealed letters. Learned letters stay visible; use them to choose the commissioned endpoints. Inspection is safe and waiting is safe and does not advance the lantern. Use safe empty-space misses or completed gestures to reveal later settled views. Pale rings mark the prior settled position and cyan diamonds preview the next fixed step. A wrong wire or incomplete certification ends this episode. Empty-space misses are safe. Each completed gesture advances one fixed settled step; waiting leaves the current view unchanged. Use the selected interaction surface: drag from a gold source stud and release on its partner in the current settled view in Full; click the source then its partner in the current settled view in Simplified. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Do not interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only as part of the task, using their visible controls."
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Stronger pitch and variable rotation rates require prediction of curved projected paths across four panes on both moving poles.",
+      "parameters": {
+        "ring_vertices": 6,
+        "facets": 4,
+        "initial_edges": 1,
+        "yaw_rate": 0.18,
+        "pitch_rate": 0.07,
+        "roll_rate": 0.025,
+        "gust": 0.45,
+        "span_ms": 5500,
+        "stud_radius": 18
+      },
+      "natural_language_by_interaction": {
+        "full": "Close every commissioned triangular pane at each settled view of the 3D lantern. Only the listed wires are allowed. Launch, then hover over current gold studs without pressing a button to read their concealed letters. Learned letters stay visible; use them to choose the commissioned endpoints. Inspection is safe and waiting is safe and does not advance the lantern. Use safe empty-space misses or completed gestures to reveal later settled views. Pale rings mark the prior settled position and cyan diamonds preview the next fixed step. A wrong wire or incomplete certification ends this episode. Empty-space misses are safe. Each completed gesture advances one fixed settled step; waiting leaves the current view unchanged. Drag from a gold source stud and release on its partner in the current settled view. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Do not interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only as part of the task, using their visible controls.",
+        "simplified": "Close every commissioned triangular pane at each settled view of the 3D lantern. Only the listed wires are allowed. Launch, then hover over current gold studs without pressing a button to read their concealed letters. Learned letters stay visible; use them to choose the commissioned endpoints. Inspection is safe and waiting is safe and does not advance the lantern. Use safe empty-space misses or completed gestures to reveal later settled views. Pale rings mark the prior settled position and cyan diamonds preview the next fixed step. A wrong wire or incomplete certification ends this episode. Empty-space misses are safe. Each completed gesture advances one fixed settled step; waiting leaves the current view unchanged. Click a gold source stud, then click its partner in the current settled view. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Do not interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only as part of the task, using their visible controls."
+      },
+      "natural_language": "Close every commissioned triangular pane at each settled view of the 3D lantern. Only the listed wires are allowed. Launch, then hover over current gold studs without pressing a button to read their concealed letters. Learned letters stay visible; use them to choose the commissioned endpoints. Inspection is safe and waiting is safe and does not advance the lantern. Use safe empty-space misses or completed gestures to reveal later settled views. Pale rings mark the prior settled position and cyan diamonds preview the next fixed step. A wrong wire or incomplete certification ends this episode. Empty-space misses are safe. Each completed gesture advances one fixed settled step; waiting leaves the current view unchanged. Use the selected interaction surface: drag from a gold source stud and release on its partner in the current settled view in Full; click the source then its partner in the current settled view in Simplified. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Do not interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only as part of the task, using their visible controls."
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Ten studs, faster three-axis rotation and tighter projected spacing require tracking exposed endpoints through crossings.",
+      "parameters": {
+        "ring_vertices": 8,
+        "facets": 5,
+        "initial_edges": 2,
+        "yaw_rate": 0.22,
+        "pitch_rate": 0.09,
+        "roll_rate": 0.045,
+        "gust": 0.55,
+        "span_ms": 5000,
+        "stud_radius": 18
+      },
+      "natural_language_by_interaction": {
+        "full": "Close every commissioned triangular pane at each settled view of the 3D lantern. Only the listed wires are allowed. Launch, then hover over current gold studs without pressing a button to read their concealed letters. Learned letters stay visible; use them to choose the commissioned endpoints. Inspection is safe and waiting is safe and does not advance the lantern. Use safe empty-space misses or completed gestures to reveal later settled views. Pale rings mark the prior settled position and cyan diamonds preview the next fixed step. A wrong wire or incomplete certification ends this episode. Empty-space misses are safe. Each completed gesture advances one fixed settled step; waiting leaves the current view unchanged. Drag from a gold source stud and release on its partner in the current settled view. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Do not interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only as part of the task, using their visible controls.",
+        "simplified": "Close every commissioned triangular pane at each settled view of the 3D lantern. Only the listed wires are allowed. Launch, then hover over current gold studs without pressing a button to read their concealed letters. Learned letters stay visible; use them to choose the commissioned endpoints. Inspection is safe and waiting is safe and does not advance the lantern. Use safe empty-space misses or completed gestures to reveal later settled views. Pale rings mark the prior settled position and cyan diamonds preview the next fixed step. A wrong wire or incomplete certification ends this episode. Empty-space misses are safe. Each completed gesture advances one fixed settled step; waiting leaves the current view unchanged. Click a gold source stud, then click its partner in the current settled view. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Do not interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only as part of the task, using their visible controls."
+      },
+      "natural_language": "Close every commissioned triangular pane at each settled view of the 3D lantern. Only the listed wires are allowed. Launch, then hover over current gold studs without pressing a button to read their concealed letters. Learned letters stay visible; use them to choose the commissioned endpoints. Inspection is safe and waiting is safe and does not advance the lantern. Use safe empty-space misses or completed gestures to reveal later settled views. Pale rings mark the prior settled position and cyan diamonds preview the next fixed step. A wrong wire or incomplete certification ends this episode. Empty-space misses are safe. Each completed gesture advances one fixed settled step; waiting leaves the current view unchanged. Use the selected interaction surface: drag from a gold source stud and release on its partner in the current settled view in Full; click the source then its partner in the current settled view in Simplified. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Do not interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only as part of the task, using their visible controls."
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Twelve studs, six pane commissions sharing moving poles, strongly varying three-axis angular speed demand sustained 3D identity tracking and depth crossings between settled views. This is an ambitious candidate, not an empirically calibrated level.",
+      "parameters": {
+        "ring_vertices": 10,
+        "facets": 6,
+        "initial_edges": 2,
+        "yaw_rate": 0.26,
+        "pitch_rate": 0.12,
+        "roll_rate": 0.07,
+        "gust": 0.65,
+        "span_ms": 4500,
+        "stud_radius": 18
+      },
+      "natural_language_by_interaction": {
+        "full": "Close every commissioned triangular pane at each settled view of the 3D lantern. Only the listed wires are allowed. Launch, then hover over current gold studs without pressing a button to read their concealed letters. Learned letters stay visible; use them to choose the commissioned endpoints. Inspection is safe and waiting is safe and does not advance the lantern. Use safe empty-space misses or completed gestures to reveal later settled views. Pale rings mark the prior settled position and cyan diamonds preview the next fixed step. A wrong wire or incomplete certification ends this episode. Empty-space misses are safe. Each completed gesture advances one fixed settled step; waiting leaves the current view unchanged. Drag from a gold source stud and release on its partner in the current settled view. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Do not interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only as part of the task, using their visible controls.",
+        "simplified": "Close every commissioned triangular pane at each settled view of the 3D lantern. Only the listed wires are allowed. Launch, then hover over current gold studs without pressing a button to read their concealed letters. Learned letters stay visible; use them to choose the commissioned endpoints. Inspection is safe and waiting is safe and does not advance the lantern. Use safe empty-space misses or completed gestures to reveal later settled views. Pale rings mark the prior settled position and cyan diamonds preview the next fixed step. A wrong wire or incomplete certification ends this episode. Empty-space misses are safe. Each completed gesture advances one fixed settled step; waiting leaves the current view unchanged. Click a gold source stud, then click its partner in the current settled view. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Do not interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only as part of the task, using their visible controls."
+      },
+      "natural_language": "Close every commissioned triangular pane at each settled view of the 3D lantern. Only the listed wires are allowed. Launch, then hover over current gold studs without pressing a button to read their concealed letters. Learned letters stay visible; use them to choose the commissioned endpoints. Inspection is safe and waiting is safe and does not advance the lantern. Use safe empty-space misses or completed gestures to reveal later settled views. Pale rings mark the prior settled position and cyan diamonds preview the next fixed step. A wrong wire or incomplete certification ends this episode. Empty-space misses are safe. Each completed gesture advances one fixed settled step; waiting leaves the current view unchanged. Use the selected interaction surface: drag from a gold source stud and release on its partner in the current settled view in Full; click the source then its partner in the current settled view in Simplified. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Do not interact with any pre-existing, unrelated, blank, browser-settings, or non-task tab. Tabs opened by a visible task control are allowed only as part of the task, using their visible controls."
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Pointer down on a source stud, drag the wire and release on the current partner. The held source remains attached while all motion continues. Hover inspection reveals and retains the same stud letters in both modes."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Two clicks arm and terminate the same wire; geometry, information, rates, timing, tolerances and outcome are identical. Hover inspection reveals and retains the same stud letters in both modes."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  },
+  "capabilities": {
+    "visual_understanding": "3D",
+    "temporal_understanding_and_memory": true,
+    "reasoning_and_planning": true,
+    "exploration_and_interface_understanding": false
+  }
+}

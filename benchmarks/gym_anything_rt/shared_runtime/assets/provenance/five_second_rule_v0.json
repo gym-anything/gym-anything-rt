@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "five_second_rule",
+  "source_anchors": [
+    "CAPW-052",
+    "TRV-110"
+  ],
+  "assets": [],
+  "notes": "Original HTML/CSS/SVG-free token art and authored micro-challenge mechanics. Source anchors ground the uniform harness, two-line instruction pattern, short duration, and explicit win-predicate architecture; no source presentation, game data, or commercial assets are copied."
+}

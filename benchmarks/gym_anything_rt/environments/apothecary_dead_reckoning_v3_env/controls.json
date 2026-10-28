@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "apothecary_dead_reckoning_v3",
+  "baseline": {
+    "difficulty": 4,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "parameters": {
+        "seal_count": 2,
+        "seal_radius": 48,
+        "target_sway": 18,
+        "target_span_ms": 10000,
+        "current_speed": 7,
+        "current_span_ms": 9000,
+        "inertia_seconds": 0.35,
+        "bone_count": 1,
+        "bone_sway": 8,
+        "vortex_count": 0,
+        "relative_speed_limit": 22,
+        "dwell_ms": 1000
+      },
+      "summary": "Two broad slow seals; weak currents and fast flask response; one drifting raft.",
+      "natural_language": "Brew the numbered effect seals in order. Jar courses are concealed: sample a jar in the mortar to learn its course, then use the retained marks and local preview to choose ingredients and grind. Shelf order varies by brew. Sampling and previews are safe before LIGHT CAULDRON; while lit, the atlas keeps moving during inspection. Grinding bends a course clockwise by up to 90 degrees. Stir controls propulsion and water pulls toward the origin. Currents, seals and bone rafts keep moving after LIGHT CAULDRON. Keep the whole flask inside a seal, moving slowly relative to it, until its ring fills. Bone or rim contact loses the brew. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs."
+    },
+    "2": {
+      "label": "easy",
+      "parameters": {
+        "seal_count": 2,
+        "seal_radius": 44,
+        "target_sway": 24,
+        "target_span_ms": 8500,
+        "current_speed": 10,
+        "current_span_ms": 7500,
+        "inertia_seconds": 0.5,
+        "bone_count": 2,
+        "bone_sway": 12,
+        "vortex_count": 0,
+        "relative_speed_limit": 20,
+        "dwell_ms": 1200
+      },
+      "summary": "Stronger flow, faster seal drift, a second raft and more inertia require earlier deceleration.",
+      "natural_language": "Brew the numbered effect seals in order. Jar courses are concealed: sample a jar in the mortar to learn its course, then use the retained marks and local preview to choose ingredients and grind. Shelf order varies by brew. Sampling and previews are safe before LIGHT CAULDRON; while lit, the atlas keeps moving during inspection. Grinding bends a course clockwise by up to 90 degrees. Stir controls propulsion and water pulls toward the origin. Currents, seals and bone rafts keep moving after LIGHT CAULDRON. Keep the whole flask inside a seal, moving slowly relative to it, until its ring fills. Bone or rim contact loses the brew. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs."
+    },
+    "3": {
+      "label": "medium",
+      "parameters": {
+        "seal_count": 3,
+        "seal_radius": 40,
+        "target_sway": 29,
+        "target_span_ms": 7000,
+        "current_speed": 13,
+        "current_span_ms": 6000,
+        "inertia_seconds": 0.7,
+        "bone_count": 3,
+        "bone_sway": 16,
+        "vortex_count": 1,
+        "relative_speed_limit": 18,
+        "dwell_ms": 1400
+      },
+      "summary": "Three dependent seals, spatial vortex flow and three rafts require route choice and inherited-velocity control.",
+      "natural_language": "Brew the numbered effect seals in order. Jar courses are concealed: sample a jar in the mortar to learn its course, then use the retained marks and local preview to choose ingredients and grind. Shelf order varies by brew. Sampling and previews are safe before LIGHT CAULDRON; while lit, the atlas keeps moving during inspection. Grinding bends a course clockwise by up to 90 degrees. Stir controls propulsion and water pulls toward the origin. Currents, seals and bone rafts keep moving after LIGHT CAULDRON. Keep the whole flask inside a seal, moving slowly relative to it, until its ring fills. Bone or rim contact loses the brew. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs."
+    },
+    "4": {
+      "label": "hard",
+      "parameters": {
+        "seal_count": 3,
+        "seal_radius": 36,
+        "target_sway": 34,
+        "target_span_ms": 6000,
+        "current_speed": 17,
+        "current_span_ms": 4500,
+        "inertia_seconds": 0.9,
+        "bone_count": 4,
+        "bone_sway": 20,
+        "vortex_count": 1,
+        "relative_speed_limit": 16,
+        "dwell_ms": 1600
+      },
+      "summary": "Narrower seals, faster nonperiodic flow and four swept rafts increase interception and correction demands.",
+      "natural_language": "Brew the numbered effect seals in order. Jar courses are concealed: sample a jar in the mortar to learn its course, then use the retained marks and local preview to choose ingredients and grind. Shelf order varies by brew. Sampling and previews are safe before LIGHT CAULDRON; while lit, the atlas keeps moving during inspection. Grinding bends a course clockwise by up to 90 degrees. Stir controls propulsion and water pulls toward the origin. Currents, seals and bone rafts keep moving after LIGHT CAULDRON. Keep the whole flask inside a seal, moving slowly relative to it, until its ring fills. Bone or rim contact loses the brew. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs."
+    },
+    "5": {
+      "label": "very_hard",
+      "parameters": {
+        "seal_count": 3,
+        "seal_radius": 32,
+        "target_sway": 38,
+        "target_span_ms": 5200,
+        "current_speed": 22,
+        "current_span_ms": 3500,
+        "inertia_seconds": 1.1,
+        "bone_count": 5,
+        "bone_sway": 24,
+        "vortex_count": 2,
+        "relative_speed_limit": 14,
+        "dwell_ms": 1800
+      },
+      "summary": "Two spatial vortices, five moving rafts, stronger rapidly changing currents and long inertia overlap with tight moving-seal alignment.",
+      "natural_language": "Brew the numbered effect seals in order. Jar courses are concealed: sample a jar in the mortar to learn its course, then use the retained marks and local preview to choose ingredients and grind. Shelf order varies by brew. Sampling and previews are safe before LIGHT CAULDRON; while lit, the atlas keeps moving during inspection. Grinding bends a course clockwise by up to 90 degrees. Stir controls propulsion and water pulls toward the origin. Currents, seals and bone rafts keep moving after LIGHT CAULDRON. Keep the whole flask inside a seal, moving slowly relative to it, until its ring fills. Bone or rim contact loses the brew. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs."
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Drag a jar into the mortar to sample its concealed course; learned marks stay visible. Drag grind, stir and water handles from their current positions.",
+      "capabilities": [
+        "visual understanding: 2D",
+        "temporal understanding and memory",
+        "reasoning and planning"
+      ]
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Click a jar to sample the same concealed course; learned marks stay visible. Click the same grind, stir and water scales. Identical world and outcomes.",
+      "capabilities": [
+        "visual understanding: 2D",
+        "temporal understanding and memory",
+        "reasoning and planning"
+      ]
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 140,
+    "observation_window_ms": 800,
+    "frames_per_observation": 6
+  }
+}

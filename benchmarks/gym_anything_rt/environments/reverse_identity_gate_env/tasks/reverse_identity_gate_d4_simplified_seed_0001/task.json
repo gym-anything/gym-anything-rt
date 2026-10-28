@@ -1,0 +1,60 @@
+{
+  "description": "Deploy four real browser tabs as robot limbs, switch among them to intercept eight moving phase relays, and merge their distributed interaction ledger into one identity proof.",
+  "difficulty": "hard",
+  "env_id": "gym_anything_rt.reverse_identity_gate_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/reverse_identity_gate_d4_simplified_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/reverse_identity_gate_d4_simplified_seed_0001/setup_task.sh"
+  },
+  "id": "reverse_identity_gate_d4_simplified_seed_0001@0.2",
+  "init": {
+    "max_steps": 900,
+    "reward_type": "sparse",
+    "timeout_sec": 900
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/revived_pilots_v2.json",
+    "benchmark": "gym_anything_rt",
+    "control_condition": {
+      "difficulty": 4,
+      "difficulty_parameters": {
+        "capture_tolerance_deg": 13,
+        "charge_decay_per_tick": 2,
+        "hold_ticks": 16,
+        "maximum_ticks_per_stage": 900,
+        "pulse_speed_choices": [
+          -3,
+          -2,
+          2,
+          3
+        ],
+        "receiver_control_deg_per_tick": 5,
+        "station_count": 4,
+        "station_relays": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "tick_ms": 50
+      },
+      "interaction": "simplified",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "reverse_identity_gate"
+  },
+  "name": "Four-Tab Robot Handshake · Difficulty 4 · Simplified Interaction",
+  "natural_language": "Prove you are a robot.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "reverse_identity_gate"
+  ],
+  "version": "0.2"
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "five_second_rule",
+  "baseline": {"difficulty": 4, "interaction": "full", "real_time": "live"},
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Five distinct dispatch families use three tokens, explicit target descriptions, broad moving gates, long cue windows, and forgiving direct gestures. Every dispatch still lasts exactly five seconds.",
+      "natural_language": "Complete five different five-second dispatches. Read both instruction lines, watch the changing stage, and perform the requested action. Solve only from screenshots and visible task-page controls; do not use code, scripts, automation, Developer Tools, page internals, a terminal, navigation, external applications, or unrelated tabs.",
+      "parameters": {"round_duration_ms": 5000, "object_count": 3, "gate_half_width": 66, "motion_speed": 88, "vertical_amplitude": 10, "hold_duration_ms": 460, "hold_tolerance_ms": 300, "flick_angle_tolerance_deg": 44, "flick_min_travel_px": 34, "relay_relation_depth": 0, "bay_open_ms": 1450, "bay_period_ms": 2300, "bay_radius": 78}
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Four tokens add visual competition. One relay clause uses a shared-mark relation, moving gates narrow, and timing and gesture margins contract while all instructions remain direct.",
+      "natural_language": "Complete five different five-second dispatches. Interpret one simple relation, track the moving cues, and use the requested control before each opportunity closes. Solve only from screenshots and visible task-page controls; do not use code, scripts, automation, Developer Tools, page internals, a terminal, navigation, external applications, or unrelated tabs.",
+      "parameters": {"round_duration_ms": 5000, "object_count": 4, "gate_half_width": 54, "motion_speed": 102, "vertical_amplitude": 15, "hold_duration_ms": 500, "hold_tolerance_ms": 245, "flick_angle_tolerance_deg": 36, "flick_min_travel_px": 40, "relay_relation_depth": 1, "bay_open_ms": 1220, "bay_period_ms": 2200, "bay_radius": 67}
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Five tokens, a spatial first-target relation followed by a shared-mark relation, faster motion, and shorter shutters require more interpretation and prediction within the unchanged five-second envelope.",
+      "natural_language": "Complete five different five-second dispatches. Resolve the two-line spatial and visual relations, estimate moving state, and execute each direct or timed action. Solve only from screenshots and visible task-page controls; do not use code, scripts, automation, Developer Tools, page internals, a terminal, navigation, external applications, or unrelated tabs.",
+      "parameters": {"round_duration_ms": 5000, "object_count": 5, "gate_half_width": 44, "motion_speed": 116, "vertical_amplitude": 21, "hold_duration_ms": 550, "hold_tolerance_ms": 195, "flick_angle_tolerance_deg": 29, "flick_min_travel_px": 46, "relay_relation_depth": 2, "bay_open_ms": 1040, "bay_period_ms": 2100, "bay_radius": 58}
+    },
+    "4": {
+      "label": "hard",
+      "summary": "The baseline: six competing tokens, relation-based relay instructions, predictive moving-target capture, a synchronized hold/release, orientation-gated flicking, and a timed shutter drop under five fresh five-second orders.",
+      "natural_language": "Complete the five original five-second dispatches. Read both lines of each fresh order, track the changing state, and carry out its click, hold, flick, pair, or drop action before the opportunity closes. Solve only from screenshots and visible task-page controls; do not use code, scripts, automation, Developer Tools, page internals, a terminal, navigation, external applications, or unrelated tabs.",
+      "parameters": {"round_duration_ms": 5000, "object_count": 6, "gate_half_width": 35, "motion_speed": 132, "vertical_amplitude": 27, "hold_duration_ms": 610, "hold_tolerance_ms": 150, "flick_angle_tolerance_deg": 21, "flick_min_travel_px": 54, "relay_relation_depth": 3, "bay_open_ms": 840, "bay_period_ms": 2000, "bay_radius": 49}
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Seven tokens and the deepest relational wording combine with faster two-axis motion, a narrow capture lane, tighter synchronized release, a smaller orientation sector, and a brief shutter opening.",
+      "natural_language": "Complete five dense five-second dispatches. Resolve nested visual relations while predicting fast motion and execute precise hold, flick, capture, and drop actions inside the visible windows. Solve only from screenshots and visible task-page controls; do not use code, scripts, automation, Developer Tools, page internals, a terminal, navigation, external applications, or unrelated tabs.",
+      "parameters": {"round_duration_ms": 5000, "object_count": 7, "gate_half_width": 27, "motion_speed": 152, "vertical_amplitude": 34, "hold_duration_ms": 670, "hold_tolerance_ms": 110, "flick_angle_tolerance_deg": 15, "flick_min_travel_px": 62, "relay_relation_depth": 4, "bay_open_ms": 680, "bay_period_ms": 1900, "bay_radius": 42}
+    }
+  },
+  "interaction": {
+    "simplified": {"implemented": true, "summary": "Use stationary token selectors and labelled TAG, HOLD, direction, and bay proxy controls. The same token state, five-second clock, motion, shutters, timing windows, and action effects remain active."},
+    "full": {"implemented": true, "summary": "Click the moving token itself, hold the requested physical pad, flick from the indicated token with a real pointer drag, tap relation targets on the stage, and drag cargo into the live bay."}
+  },
+  "real_time": {"play_time_seconds": 90, "observation_window_ms": 600, "frames_per_observation": 6}
+}

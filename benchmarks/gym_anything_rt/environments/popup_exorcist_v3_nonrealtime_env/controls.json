@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "popup_exorcist_v3_nonrealtime",
+  "baseline": {
+    "difficulty": 4,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "parameters": {
+        "haunted_count": 3,
+        "trusted_count": 1,
+        "seal_size": 64,
+        "span_ms": 4000,
+        "travel_x": 100,
+        "travel_y": 65,
+        "rail_travel": 30,
+        "overlap": 0
+      },
+      "summary": "Three broad seeded seal paths, separated panes, and one physical service occlusion that opens as the panes diverge. Roles begin concealed and are identified by safe inspection.",
+      "natural_language": "Inspect the sealed notices on the haunted desktop. Close haunted processes and preserve protected services. In full mode, right-click a visible window to inspect it safely, then left-click its current seal to close. In simplified mode, click to place a reticle, then use INSPECT or I to identify and EXORCISE or Space to close. Inspections reveal lasting roles and spend no seals. The current checkpoint stays stable while you decide; each deliberate action settles the next seeded checkpoint. Solid foreground windows block both actions. Trails and the preview show the seeded path without revealing uninspected roles. The first three missed seals are recoverable; a fourth miss, closing a protected service, an uncleared 120-second logical deadline, or unfinished CERTIFY ends the episode. Solve only from screenshots and visible controls in this task webpage. Do not write or execute code, scripts or automation. Do not use Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection. Do not use terminal, shell or Python. Do not edit the address bar, URL or query, reload or navigate. Do not use browser extensions, external applications or any other implementation or hidden-state access. Do not switch to or interact with unrelated, pre-existing, blank or browser-settings tabs. A tab opened by a visible task control is allowed only when it is part of this task; use only its visible controls."
+    },
+    "2": {
+      "label": "easy",
+      "parameters": {
+        "haunted_count": 4,
+        "trusted_count": 2,
+        "seal_size": 60,
+        "span_ms": 4000,
+        "travel_x": 105,
+        "travel_y": 65,
+        "rail_travel": 35,
+        "overlap": 35
+      },
+      "summary": "Independent seeded pane paths now compete with two trusted services and modest overlap. Roles begin concealed and are identified by safe inspection.",
+      "natural_language": "Inspect the sealed notices on the haunted desktop. Close haunted processes and preserve protected services. In full mode, right-click a visible window to inspect it safely, then left-click its current seal to close. In simplified mode, click to place a reticle, then use INSPECT or I to identify and EXORCISE or Space to close. Inspections reveal lasting roles and spend no seals. The current checkpoint stays stable while you decide; each deliberate action settles the next seeded checkpoint. Solid foreground windows block both actions. Trails and the preview show the seeded path without revealing uninspected roles. The first three missed seals are recoverable; a fourth miss, closing a protected service, an uncleared 120-second logical deadline, or unfinished CERTIFY ends the episode. Solve only from screenshots and visible controls in this task webpage. Do not write or execute code, scripts or automation. Do not use Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection. Do not use terminal, shell or Python. Do not edit the address bar, URL or query, reload or navigate. Do not use browser extensions, external applications or any other implementation or hidden-state access. Do not switch to or interact with unrelated, pre-existing, blank or browser-settings tabs. A tab opened by a visible task control is allowed only when it is part of this task; use only its visible controls."
+    },
+    "3": {
+      "label": "medium",
+      "parameters": {
+        "haunted_count": 5,
+        "trusted_count": 2,
+        "seal_size": 56,
+        "span_ms": 4000,
+        "travel_x": 110,
+        "travel_y": 70,
+        "rail_travel": 40,
+        "overlap": 60
+      },
+      "summary": "Stronger overlap and independent seeded pane/seal paths require forecasting both window and rail positions. Roles begin concealed and are identified by safe inspection.",
+      "natural_language": "Inspect the sealed notices on the haunted desktop. Close haunted processes and preserve protected services. In full mode, right-click a visible window to inspect it safely, then left-click its current seal to close. In simplified mode, click to place a reticle, then use INSPECT or I to identify and EXORCISE or Space to close. Inspections reveal lasting roles and spend no seals. The current checkpoint stays stable while you decide; each deliberate action settles the next seeded checkpoint. Solid foreground windows block both actions. Trails and the preview show the seeded path without revealing uninspected roles. The first three missed seals are recoverable; a fourth miss, closing a protected service, an uncleared 120-second logical deadline, or unfinished CERTIFY ends the episode. Solve only from screenshots and visible controls in this task webpage. Do not write or execute code, scripts or automation. Do not use Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection. Do not use terminal, shell or Python. Do not edit the address bar, URL or query, reload or navigate. Do not use browser extensions, external applications or any other implementation or hidden-state access. Do not switch to or interact with unrelated, pre-existing, blank or browser-settings tabs. A tab opened by a visible task control is allowed only when it is part of this task; use only its visible controls."
+    },
+    "4": {
+      "label": "hard",
+      "parameters": {
+        "haunted_count": 7,
+        "trusted_count": 3,
+        "seal_size": 52,
+        "span_ms": 4000,
+        "travel_x": 115,
+        "travel_y": 75,
+        "rail_travel": 50,
+        "overlap": 80
+      },
+      "summary": "Seven haunted panes under three trusted services create changing front-to-back access and tighter interception. Roles begin concealed and are identified by safe inspection.",
+      "natural_language": "Inspect the sealed notices on the haunted desktop. Close haunted processes and preserve protected services. In full mode, right-click a visible window to inspect it safely, then left-click its current seal to close. In simplified mode, click to place a reticle, then use INSPECT or I to identify and EXORCISE or Space to close. Inspections reveal lasting roles and spend no seals. The current checkpoint stays stable while you decide; each deliberate action settles the next seeded checkpoint. Solid foreground windows block both actions. Trails and the preview show the seeded path without revealing uninspected roles. The first three missed seals are recoverable; a fourth miss, closing a protected service, an uncleared 120-second logical deadline, or unfinished CERTIFY ends the episode. Solve only from screenshots and visible controls in this task webpage. Do not write or execute code, scripts or automation. Do not use Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection. Do not use terminal, shell or Python. Do not edit the address bar, URL or query, reload or navigate. Do not use browser extensions, external applications or any other implementation or hidden-state access. Do not switch to or interact with unrelated, pre-existing, blank or browser-settings tabs. A tab opened by a visible task control is allowed only when it is part of this task; use only its visible controls."
+    },
+    "5": {
+      "label": "very_hard",
+      "parameters": {
+        "haunted_count": 9,
+        "trusted_count": 3,
+        "seal_size": 48,
+        "span_ms": 4000,
+        "travel_x": 120,
+        "travel_y": 75,
+        "rail_travel": 60,
+        "overlap": 100
+      },
+      "summary": "Nine haunted panes and three service occluders overlap densely. Fast independent window and seal drift makes stale coordinates dangerous. Roles begin concealed and are identified by safe inspection.",
+      "natural_language": "Inspect the sealed notices on the haunted desktop. Close haunted processes and preserve protected services. In full mode, right-click a visible window to inspect it safely, then left-click its current seal to close. In simplified mode, click to place a reticle, then use INSPECT or I to identify and EXORCISE or Space to close. Inspections reveal lasting roles and spend no seals. The current checkpoint stays stable while you decide; each deliberate action settles the next seeded checkpoint. Solid foreground windows block both actions. Trails and the preview show the seeded path without revealing uninspected roles. The first three missed seals are recoverable; a fourth miss, closing a protected service, an uncleared 120-second logical deadline, or unfinished CERTIFY ends the episode. Solve only from screenshots and visible controls in this task webpage. Do not write or execute code, scripts or automation. Do not use Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection. Do not use terminal, shell or Python. Do not edit the address bar, URL or query, reload or navigate. Do not use browser extensions, external applications or any other implementation or hidden-state access. Do not switch to or interact with unrelated, pre-existing, blank or browser-settings tabs. A tab opened by a visible task control is allowed only when it is part of this task; use only its visible controls."
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Right-click a visible pane to inspect safely; directly point and left-click its current seal to close. Discovered roles stay visible."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Click to position a reticle; INSPECT/I identifies the foreground pane; EXORCISE/Space fires at that point. No automatic tracking. Same discoveries as full mode."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 120,
+    "observation_window_ms": 600,
+    "frames_per_observation": 4
+  }
+}

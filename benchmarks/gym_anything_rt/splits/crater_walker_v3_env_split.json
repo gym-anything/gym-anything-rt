@@ -1,0 +1,66 @@
+{
+  "env_folder": "crater_walker_v3_env",
+  "all_tasks": [
+    "crater_walker_v3_d1_full_seed_0001",
+    "crater_walker_v3_d1_simplified_seed_0001",
+    "crater_walker_v3_d2_full_seed_0001",
+    "crater_walker_v3_d2_simplified_seed_0001",
+    "crater_walker_v3_d3_full_seed_0001",
+    "crater_walker_v3_d3_simplified_seed_0001",
+    "crater_walker_v3_d4_full_seed_0001",
+    "crater_walker_v3_d4_simplified_seed_0001",
+    "crater_walker_v3_d5_full_seed_0001",
+    "crater_walker_v3_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "crater_walker_v3_d1_full_seed_0001",
+    "crater_walker_v3_d1_simplified_seed_0001",
+    "crater_walker_v3_d2_full_seed_0001",
+    "crater_walker_v3_d2_simplified_seed_0001",
+    "crater_walker_v3_d3_full_seed_0001",
+    "crater_walker_v3_d3_simplified_seed_0001",
+    "crater_walker_v3_d4_full_seed_0001",
+    "crater_walker_v3_d4_simplified_seed_0001",
+    "crater_walker_v3_d5_full_seed_0001",
+    "crater_walker_v3_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "crater_walker_v3_d5_full_seed_0001"
+    ],
+    "full": [
+      "crater_walker_v3_d1_full_seed_0001",
+      "crater_walker_v3_d2_full_seed_0001",
+      "crater_walker_v3_d3_full_seed_0001",
+      "crater_walker_v3_d4_full_seed_0001",
+      "crater_walker_v3_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "crater_walker_v3_d1_simplified_seed_0001",
+      "crater_walker_v3_d2_simplified_seed_0001",
+      "crater_walker_v3_d3_simplified_seed_0001",
+      "crater_walker_v3_d4_simplified_seed_0001",
+      "crater_walker_v3_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "crater_walker_v3_d1_full_seed_0001",
+      "crater_walker_v3_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "crater_walker_v3_d2_full_seed_0001",
+      "crater_walker_v3_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "crater_walker_v3_d3_full_seed_0001",
+      "crater_walker_v3_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "crater_walker_v3_d4_full_seed_0001",
+      "crater_walker_v3_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "crater_walker_v3_d5_full_seed_0001",
+      "crater_walker_v3_d5_simplified_seed_0001"
+    ]
+  }
+}

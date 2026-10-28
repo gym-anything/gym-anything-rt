@@ -1,0 +1,66 @@
+{
+  "env_folder": "rotate_wrong_thing_upright_v3_nonrealtime_env",
+  "all_tasks": [
+    "rotate_wrong_thing_upright_v3_nonrealtime_d1_full_seed_0001",
+    "rotate_wrong_thing_upright_v3_nonrealtime_d1_simplified_seed_0001",
+    "rotate_wrong_thing_upright_v3_nonrealtime_d2_full_seed_0001",
+    "rotate_wrong_thing_upright_v3_nonrealtime_d2_simplified_seed_0001",
+    "rotate_wrong_thing_upright_v3_nonrealtime_d3_full_seed_0001",
+    "rotate_wrong_thing_upright_v3_nonrealtime_d3_simplified_seed_0001",
+    "rotate_wrong_thing_upright_v3_nonrealtime_d4_full_seed_0001",
+    "rotate_wrong_thing_upright_v3_nonrealtime_d4_simplified_seed_0001",
+    "rotate_wrong_thing_upright_v3_nonrealtime_d5_full_seed_0001",
+    "rotate_wrong_thing_upright_v3_nonrealtime_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "rotate_wrong_thing_upright_v3_nonrealtime_d1_full_seed_0001",
+    "rotate_wrong_thing_upright_v3_nonrealtime_d1_simplified_seed_0001",
+    "rotate_wrong_thing_upright_v3_nonrealtime_d2_full_seed_0001",
+    "rotate_wrong_thing_upright_v3_nonrealtime_d2_simplified_seed_0001",
+    "rotate_wrong_thing_upright_v3_nonrealtime_d3_full_seed_0001",
+    "rotate_wrong_thing_upright_v3_nonrealtime_d3_simplified_seed_0001",
+    "rotate_wrong_thing_upright_v3_nonrealtime_d4_full_seed_0001",
+    "rotate_wrong_thing_upright_v3_nonrealtime_d4_simplified_seed_0001",
+    "rotate_wrong_thing_upright_v3_nonrealtime_d5_full_seed_0001",
+    "rotate_wrong_thing_upright_v3_nonrealtime_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "rotate_wrong_thing_upright_v3_nonrealtime_d5_full_seed_0001"
+    ],
+    "full": [
+      "rotate_wrong_thing_upright_v3_nonrealtime_d1_full_seed_0001",
+      "rotate_wrong_thing_upright_v3_nonrealtime_d2_full_seed_0001",
+      "rotate_wrong_thing_upright_v3_nonrealtime_d3_full_seed_0001",
+      "rotate_wrong_thing_upright_v3_nonrealtime_d4_full_seed_0001",
+      "rotate_wrong_thing_upright_v3_nonrealtime_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "rotate_wrong_thing_upright_v3_nonrealtime_d1_simplified_seed_0001",
+      "rotate_wrong_thing_upright_v3_nonrealtime_d2_simplified_seed_0001",
+      "rotate_wrong_thing_upright_v3_nonrealtime_d3_simplified_seed_0001",
+      "rotate_wrong_thing_upright_v3_nonrealtime_d4_simplified_seed_0001",
+      "rotate_wrong_thing_upright_v3_nonrealtime_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "rotate_wrong_thing_upright_v3_nonrealtime_d1_full_seed_0001",
+      "rotate_wrong_thing_upright_v3_nonrealtime_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "rotate_wrong_thing_upright_v3_nonrealtime_d2_full_seed_0001",
+      "rotate_wrong_thing_upright_v3_nonrealtime_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "rotate_wrong_thing_upright_v3_nonrealtime_d3_full_seed_0001",
+      "rotate_wrong_thing_upright_v3_nonrealtime_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "rotate_wrong_thing_upright_v3_nonrealtime_d4_full_seed_0001",
+      "rotate_wrong_thing_upright_v3_nonrealtime_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "rotate_wrong_thing_upright_v3_nonrealtime_d5_full_seed_0001",
+      "rotate_wrong_thing_upright_v3_nonrealtime_d5_simplified_seed_0001"
+    ]
+  }
+}

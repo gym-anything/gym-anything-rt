@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "motion_only_ghost_jigsaw_nonrealtime",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Four crops, broad visible margins and responsive action-stepped carriage; translation and rotation still require tracking.",
+      "parameters": {
+        "rows": 2,
+        "columns": 2,
+        "drift_px": 32,
+        "drift_span_ms": 2400,
+        "angle_amplitude": 18,
+        "position_tolerance": 20,
+        "angle_tolerance": 16,
+        "spring": 30,
+        "damping": 11,
+        "max_speed": 620,
+        "current_force": 12,
+        "initial_turns": [
+          0
+        ]
+      },
+      "natural_language_by_interaction": {
+        "full": "Watch the opposite-moving grain to match each ghost fragment to its location in the reference. Start the loom, carry each fragment into its independently drifting frame, align its top dot with the moving top dot, then stitch it. Frames and the carried fragment advance to a stable pose only after a deliberate control; waiting leaves the current pose unchanged. A misaligned stitch ends the episode; cancelling a carry returns it safely. Stitching the wrong fragment, running out of action-stepped time, or certifying an incomplete picture ends the episode. Drag fragments. Hold A / D to turn the carried fragment, then release the mouse to stitch. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access. Do not switch to unrelated, blank, browser-settings or non-task tabs.",
+        "simplified": "Watch the opposite-moving grain to match each ghost fragment to its location in the reference. Start the loom, carry each fragment into its independently drifting frame, align its top dot with the moving top dot, then stitch it. Frames and the carried fragment advance to a stable pose only after a deliberate control; waiting leaves the current pose unchanged. A misaligned stitch ends the episode; cancelling a carry returns it safely. Stitching the wrong fragment, running out of action-stepped time, or certifying an incomplete picture ends the episode. Click a fragment to select it; click a point to steer the same inertial fragment. Hold the turn buttons, then click STITCH. RETURN TO TRAY cancels a carry. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access. Do not switch to unrelated, blank, browser-settings or non-task tabs."
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Six crops, narrower translation and action-stepped angular alignment.",
+      "parameters": {
+        "rows": 2,
+        "columns": 3,
+        "drift_px": 32,
+        "drift_span_ms": 2300,
+        "angle_amplitude": 26,
+        "position_tolerance": 20,
+        "angle_tolerance": 16,
+        "spring": 27,
+        "damping": 10,
+        "max_speed": 580,
+        "current_force": 20,
+        "initial_turns": [
+          -30,
+          0,
+          30
+        ]
+      },
+      "natural_language_by_interaction": {
+        "full": "Watch the opposite-moving grain to match each ghost fragment to its location in the reference. Start the loom, carry each fragment into its independently drifting frame, align its top dot with the moving top dot, then stitch it. Frames and the carried fragment advance to a stable pose only after a deliberate control; waiting leaves the current pose unchanged. A misaligned stitch ends the episode; cancelling a carry returns it safely. Stitching the wrong fragment, running out of action-stepped time, or certifying an incomplete picture ends the episode. Drag fragments. Hold A / D to turn the carried fragment, then release the mouse to stitch. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access. Do not switch to unrelated, blank, browser-settings or non-task tabs.",
+        "simplified": "Watch the opposite-moving grain to match each ghost fragment to its location in the reference. Start the loom, carry each fragment into its independently drifting frame, align its top dot with the moving top dot, then stitch it. Frames and the carried fragment advance to a stable pose only after a deliberate control; waiting leaves the current pose unchanged. A misaligned stitch ends the episode; cancelling a carry returns it safely. Stitching the wrong fragment, running out of action-stepped time, or certifying an incomplete picture ends the episode. Click a fragment to select it; click a point to steer the same inertial fragment. Hold the turn buttons, then click STITCH. RETURN TO TRAY cancels a carry. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access. Do not switch to unrelated, blank, browser-settings or non-task tabs."
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Nine connected crops, action-stepped translation and stronger angular tracking.",
+      "parameters": {
+        "rows": 3,
+        "columns": 3,
+        "drift_px": 32,
+        "drift_span_ms": 2200,
+        "angle_amplitude": 34,
+        "position_tolerance": 20,
+        "angle_tolerance": 16,
+        "spring": 24,
+        "damping": 9,
+        "max_speed": 540,
+        "current_force": 30,
+        "initial_turns": [
+          -45,
+          0,
+          45
+        ]
+      },
+      "natural_language_by_interaction": {
+        "full": "Watch the opposite-moving grain to match each ghost fragment to its location in the reference. Start the loom, carry each fragment into its independently drifting frame, align its top dot with the moving top dot, then stitch it. Frames and the carried fragment advance to a stable pose only after a deliberate control; waiting leaves the current pose unchanged. A misaligned stitch ends the episode; cancelling a carry returns it safely. Stitching the wrong fragment, running out of action-stepped time, or certifying an incomplete picture ends the episode. Drag fragments. Hold A / D to turn the carried fragment, then release the mouse to stitch. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access. Do not switch to unrelated, blank, browser-settings or non-task tabs.",
+        "simplified": "Watch the opposite-moving grain to match each ghost fragment to its location in the reference. Start the loom, carry each fragment into its independently drifting frame, align its top dot with the moving top dot, then stitch it. Frames and the carried fragment advance to a stable pose only after a deliberate control; waiting leaves the current pose unchanged. A misaligned stitch ends the episode; cancelling a carry returns it safely. Stitching the wrong fragment, running out of action-stepped time, or certifying an incomplete picture ends the episode. Click a fragment to select it; click a point to steer the same inertial fragment. Hold the turn buttons, then click STITCH. RETURN TO TRAY cancels a carry. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access. Do not switch to unrelated, blank, browser-settings or non-task tabs."
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Higher angular range, smaller pose tolerances and longer action-stepped inertial settling.",
+      "parameters": {
+        "rows": 3,
+        "columns": 3,
+        "drift_px": 33,
+        "drift_span_ms": 2000,
+        "angle_amplitude": 48,
+        "position_tolerance": 17,
+        "angle_tolerance": 13,
+        "spring": 21,
+        "damping": 8,
+        "max_speed": 500,
+        "current_force": 42,
+        "initial_turns": [
+          -60,
+          -30,
+          0,
+          30,
+          60
+        ]
+      },
+      "natural_language_by_interaction": {
+        "full": "Watch the opposite-moving grain to match each ghost fragment to its location in the reference. Start the loom, carry each fragment into its independently drifting frame, align its top dot with the moving top dot, then stitch it. Frames and the carried fragment advance to a stable pose only after a deliberate control; waiting leaves the current pose unchanged. A misaligned stitch ends the episode; cancelling a carry returns it safely. Stitching the wrong fragment, running out of action-stepped time, or certifying an incomplete picture ends the episode. Drag fragments. Hold A / D to turn the carried fragment, then release the mouse to stitch. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access. Do not switch to unrelated, blank, browser-settings or non-task tabs.",
+        "simplified": "Watch the opposite-moving grain to match each ghost fragment to its location in the reference. Start the loom, carry each fragment into its independently drifting frame, align its top dot with the moving top dot, then stitch it. Frames and the carried fragment advance to a stable pose only after a deliberate control; waiting leaves the current pose unchanged. A misaligned stitch ends the episode; cancelling a carry returns it safely. Stitching the wrong fragment, running out of action-stepped time, or certifying an incomplete picture ends the episode. Click a fragment to select it; click a point to steer the same inertial fragment. Hold the turn buttons, then click STITCH. RETURN TO TRAY cancels a carry. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access. Do not switch to unrelated, blank, browser-settings or non-task tabs."
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Nine motion-only crops, action-stepped translation and rotation, narrow visible alignment and inertial carriage in changing current.",
+      "parameters": {
+        "rows": 3,
+        "columns": 3,
+        "drift_px": 34,
+        "drift_span_ms": 1800,
+        "angle_amplitude": 65,
+        "position_tolerance": 14,
+        "angle_tolerance": 10,
+        "spring": 18,
+        "damping": 7,
+        "max_speed": 460,
+        "current_force": 55,
+        "initial_turns": [
+          -90,
+          -60,
+          -30,
+          0,
+          30,
+          60,
+          90
+        ]
+      },
+      "natural_language_by_interaction": {
+        "full": "Watch the opposite-moving grain to match each ghost fragment to its location in the reference. Start the loom, carry each fragment into its independently drifting frame, align its top dot with the moving top dot, then stitch it. Frames and the carried fragment advance to a stable pose only after a deliberate control; waiting leaves the current pose unchanged. A misaligned stitch ends the episode; cancelling a carry returns it safely. Stitching the wrong fragment, running out of action-stepped time, or certifying an incomplete picture ends the episode. Drag fragments. Hold A / D to turn the carried fragment, then release the mouse to stitch. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access. Do not switch to unrelated, blank, browser-settings or non-task tabs.",
+        "simplified": "Watch the opposite-moving grain to match each ghost fragment to its location in the reference. Start the loom, carry each fragment into its independently drifting frame, align its top dot with the moving top dot, then stitch it. Frames and the carried fragment advance to a stable pose only after a deliberate control; waiting leaves the current pose unchanged. A misaligned stitch ends the episode; cancelling a carry returns it safely. Stitching the wrong fragment, running out of action-stepped time, or certifying an incomplete picture ends the episode. Click a fragment to select it; click a point to steer the same inertial fragment. Hold the turn buttons, then click STITCH. RETURN TO TRAY cancels a carry. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access. Do not switch to unrelated, blank, browser-settings or non-task tabs."
+      }
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Direct fragment dragging; A/D holds turn it; release stitches."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Select and point proxy controls, held turn buttons and STITCH; same inertial dynamics."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 400,
+    "frames_per_observation": 5
+  }
+}

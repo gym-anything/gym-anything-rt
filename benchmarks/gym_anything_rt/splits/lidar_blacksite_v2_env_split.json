@@ -1,0 +1,66 @@
+{
+  "env_folder": "lidar_blacksite_v2_env",
+  "all_tasks": [
+    "lidar_blacksite_v2_d1_full_seed_0001",
+    "lidar_blacksite_v2_d1_simplified_seed_0001",
+    "lidar_blacksite_v2_d2_full_seed_0001",
+    "lidar_blacksite_v2_d2_simplified_seed_0001",
+    "lidar_blacksite_v2_d3_full_seed_0001",
+    "lidar_blacksite_v2_d3_simplified_seed_0001",
+    "lidar_blacksite_v2_d4_full_seed_0001",
+    "lidar_blacksite_v2_d4_simplified_seed_0001",
+    "lidar_blacksite_v2_d5_full_seed_0001",
+    "lidar_blacksite_v2_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "lidar_blacksite_v2_d1_full_seed_0001",
+    "lidar_blacksite_v2_d1_simplified_seed_0001",
+    "lidar_blacksite_v2_d2_full_seed_0001",
+    "lidar_blacksite_v2_d2_simplified_seed_0001",
+    "lidar_blacksite_v2_d3_full_seed_0001",
+    "lidar_blacksite_v2_d3_simplified_seed_0001",
+    "lidar_blacksite_v2_d4_full_seed_0001",
+    "lidar_blacksite_v2_d4_simplified_seed_0001",
+    "lidar_blacksite_v2_d5_full_seed_0001",
+    "lidar_blacksite_v2_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "lidar_blacksite_v2_d5_full_seed_0001"
+    ],
+    "full": [
+      "lidar_blacksite_v2_d1_full_seed_0001",
+      "lidar_blacksite_v2_d2_full_seed_0001",
+      "lidar_blacksite_v2_d3_full_seed_0001",
+      "lidar_blacksite_v2_d4_full_seed_0001",
+      "lidar_blacksite_v2_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "lidar_blacksite_v2_d1_simplified_seed_0001",
+      "lidar_blacksite_v2_d2_simplified_seed_0001",
+      "lidar_blacksite_v2_d3_simplified_seed_0001",
+      "lidar_blacksite_v2_d4_simplified_seed_0001",
+      "lidar_blacksite_v2_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "lidar_blacksite_v2_d1_full_seed_0001",
+      "lidar_blacksite_v2_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "lidar_blacksite_v2_d2_full_seed_0001",
+      "lidar_blacksite_v2_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "lidar_blacksite_v2_d3_full_seed_0001",
+      "lidar_blacksite_v2_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "lidar_blacksite_v2_d4_full_seed_0001",
+      "lidar_blacksite_v2_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "lidar_blacksite_v2_d5_full_seed_0001",
+      "lidar_blacksite_v2_d5_simplified_seed_0001"
+    ]
+  }
+}

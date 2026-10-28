@@ -1,0 +1,72 @@
+{
+  "description": "Steer a rigid 3D hologram through three projection dies that advance only on deliberate control steps.",
+  "difficulty": "easy",
+  "env_id": "gym_anything_rt.hologram_silhouette_foundry_nonrealtime_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/hologram_silhouette_foundry_nonrealtime_d2_full_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/hologram_silhouette_foundry_nonrealtime_d2_full_seed_0001/setup_task.sh"
+  },
+  "id": "hologram_silhouette_foundry_nonrealtime_d2_full_seed_0001@0.2",
+  "init": {
+    "max_steps": 500,
+    "reward_type": "sparse",
+    "timeout_sec": 600
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/hologram_silhouette_foundry_v2_v0.json",
+    "benchmark": "gym_anything_rt",
+    "capabilities": [
+      "visual understanding: 3D",
+      "temporal understanding and memory",
+      "reasoning and planning"
+    ],
+    "capability_configuration": {
+      "difficulty": 2,
+      "interaction": "full"
+    },
+    "control_condition": {
+      "difficulty": 2,
+      "difficulty_parameters": {
+        "active_axes": 3,
+        "fusion_seconds": 7.0,
+        "leak_rate": 1.5,
+        "pitch_amplitude": 0,
+        "rod_count": 4,
+        "servo_acceleration": 16.0,
+        "servo_speed": 3.0,
+        "shared_speed": 8.0,
+        "span_ms": 5600,
+        "tolerance": 0.32,
+        "translation_amplitude": 1.2,
+        "yaw_amplitude": 0
+      },
+      "interaction": "full",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "hologram_silhouette_foundry_nonrealtime",
+    "timing_rule": {
+      "action_tick_ms": 20,
+      "advances_on": "accepted_gantry_action",
+      "mode": "action_stepped",
+      "wait_behavior": "stable_until_deliberate_control"
+    }
+  },
+  "name": "Hologram Silhouette Foundry V2 · Difficulty 2 · Full Interaction",
+  "natural_language": "Steer one rigid colored rod assembly until every colored tip center lies inside its matching ring in FRONT, SIDE and TOP. Start with IGNITE FOUNDRY; after ignition, each accepted gantry control advances the dies by one fixed 20 ms step and waiting leaves the current pose and rings unchanged. Simultaneous fit builds fusion; lost fit drains it. Build full fusion, then CERTIFY CASTING. An early submission or 4,500 unfused control steps ends the episode. Preparation is safe; there is no in-game stop, reset or retry. Drag the round gantry handles; the small cyan ticks show the current physical gantry. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "linux",
+    "browser",
+    "gym-anything-rt",
+    "hologram_silhouette_foundry_nonrealtime",
+    "3d-control",
+    "action-stepped"
+  ],
+  "version": "0.2"
+}

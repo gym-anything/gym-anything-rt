@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "bureaucratic_signature_trap_v3",
+  "baseline": {
+    "difficulty": 4,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "parameters": {
+        "duration_ms": 20000,
+        "knot_ms": 4000,
+        "tolerance": 48,
+        "drift": 12,
+        "drift_ms": 3000,
+        "hazards": 1,
+        "hazard_radius": 30,
+        "response_s": 0.1,
+        "minimum_coverage": 0.8,
+        "maximum_gap": 240
+      },
+      "summary": "Broad frontier and slow original; one isolated moving VOID stamp. Maximum continuous uncovered stroke: 240 px.",
+      "natural_language": "Inspect the concealed carbon registration by pulling its corner. Pointer marks transfer to the carbon nib with this form\u2019s displacement; use the revealed offset to aim. Countersign the moving original; lift over VOID stamps and avoid a long continuous uncovered stroke. Use the labelled +0.20 s forecast. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access. Do not switch to unrelated, blank, browser-settings or non-task tabs. Tabs opened by visible task controls are allowed only as part of the task and through their visible controls."
+    },
+    "2": {
+      "label": "easy",
+      "parameters": {
+        "duration_ms": 22000,
+        "knot_ms": 3200,
+        "tolerance": 42,
+        "drift": 20,
+        "drift_ms": 2600,
+        "hazards": 1,
+        "hazard_radius": 34,
+        "response_s": 0.12,
+        "minimum_coverage": 0.82,
+        "maximum_gap": 220
+      },
+      "summary": "Narrower frontier and faster turns; more sheet drift. Maximum continuous uncovered stroke: 220 px.",
+      "natural_language": "Inspect the concealed carbon registration by pulling its corner. Pointer marks transfer to the carbon nib with this form\u2019s displacement; use the revealed offset to aim. Countersign the moving original; lift over VOID stamps and avoid a long continuous uncovered stroke. Use the labelled +0.20 s forecast. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access. Do not switch to unrelated, blank, browser-settings or non-task tabs. Tabs opened by visible task controls are allowed only as part of the task and through their visible controls."
+    },
+    "3": {
+      "label": "medium",
+      "parameters": {
+        "duration_ms": 24000,
+        "knot_ms": 2600,
+        "tolerance": 36,
+        "drift": 28,
+        "drift_ms": 2200,
+        "hazards": 1,
+        "hazard_radius": 38,
+        "response_s": 0.14,
+        "minimum_coverage": 0.84,
+        "maximum_gap": 200
+      },
+      "summary": "Curved original needs predictive pen positioning with stronger drift. Maximum continuous uncovered stroke: 200 px.",
+      "natural_language": "Inspect the concealed carbon registration by pulling its corner. Pointer marks transfer to the carbon nib with this form\u2019s displacement; use the revealed offset to aim. Countersign the moving original; lift over VOID stamps and avoid a long continuous uncovered stroke. Use the labelled +0.20 s forecast. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access. Do not switch to unrelated, blank, browser-settings or non-task tabs. Tabs opened by visible task controls are allowed only as part of the task and through their visible controls."
+    },
+    "4": {
+      "label": "hard",
+      "parameters": {
+        "duration_ms": 24000,
+        "knot_ms": 2200,
+        "tolerance": 30,
+        "drift": 34,
+        "drift_ms": 1800,
+        "hazards": 2,
+        "hazard_radius": 38,
+        "response_s": 0.16,
+        "minimum_coverage": 0.86,
+        "maximum_gap": 180
+      },
+      "summary": "Two independent VOID stamps compete with tighter pen tracking. Maximum continuous uncovered stroke: 180 px.",
+      "natural_language": "Inspect the concealed carbon registration by pulling its corner. Pointer marks transfer to the carbon nib with this form\u2019s displacement; use the revealed offset to aim. Countersign the moving original; lift over VOID stamps and avoid a long continuous uncovered stroke. Use the labelled +0.20 s forecast. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access. Do not switch to unrelated, blank, browser-settings or non-task tabs. Tabs opened by visible task controls are allowed only as part of the task and through their visible controls."
+    },
+    "5": {
+      "label": "very_hard",
+      "parameters": {
+        "duration_ms": 24000,
+        "knot_ms": 1800,
+        "tolerance": 24,
+        "drift": 40,
+        "drift_ms": 1500,
+        "hazards": 2,
+        "hazard_radius": 42,
+        "response_s": 0.18,
+        "minimum_coverage": 0.88,
+        "maximum_gap": 160
+      },
+      "summary": "Rapid irregular turns, strongest drift, two broad VOID stamps and the slowest pen response. Maximum continuous uncovered stroke: 160 px.",
+      "natural_language": "Inspect the concealed carbon registration by pulling its corner. Pointer marks transfer to the carbon nib with this form\u2019s displacement; use the revealed offset to aim. Countersign the moving original; lift over VOID stamps and avoid a long continuous uncovered stroke. Use the labelled +0.20 s forecast. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access. Do not switch to unrelated, blank, browser-settings or non-task tabs. Tabs opened by visible task controls are allowed only as part of the task and through their visible controls."
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Move the pointer to aim the inertial pen; hold left button to write, release to lift. Pull the carbon registration corner to inspect the same seeded pointer-to-nib offset."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Click the same desk coordinates to set the same pen aim; toggle pen contact with the visible button. Pull the carbon registration corner to inspect the same seeded pointer-to-nib offset."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 75,
+    "observation_window_ms": 100,
+    "frames_per_observation": 3
+  }
+}

@@ -1,0 +1,211 @@
+@import url("../styles.css");
+
+body[data-mechanic="cloudpost_circuit"] {
+  background: #08101e;
+  overflow: hidden;
+}
+
+.cloudpost-shell {
+  width: min(1240px, calc(100vw - 34px));
+  min-height: min(700px, calc(100vh - 24px));
+  margin: 12px auto;
+  padding: 20px 22px 12px;
+  color: #e8e1c7;
+  background: linear-gradient(132deg, #101b31 0%, #172746 58%, #0d182b 100%);
+  border: 1px solid rgba(211, 227, 205, .24);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, .38), inset 0 0 90px rgba(103, 154, 163, .08);
+  font-family: "Trebuchet MS", "Avenir Next", sans-serif;
+}
+
+.cloudpost-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 13px;
+}
+
+.cloudpost-kicker, .cloudpost-control-head span, .cloudpost-footer, .cloudpost-hud,
+.cloudpost-stats span {
+  color: #8cb5ac;
+  font-size: 10px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.cloudpost-header h1 {
+  margin: 4px 0 3px;
+  color: #f4e6b9;
+  font-family: Georgia, serif;
+  font-size: clamp(24px, 3vw, 39px);
+  font-weight: 400;
+  letter-spacing: -.03em;
+}
+
+.cloudpost-header p {
+  max-width: 650px;
+  margin: 0;
+  color: #b9c8c1;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.cloudpost-stats {
+  display: grid;
+  justify-items: end;
+  gap: 7px;
+  white-space: nowrap;
+}
+
+.cloudpost-count {
+  color: #f6c85f;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.cloudpost-stage {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgba(215, 233, 206, .22);
+  background: #07101e;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+}
+
+.cloudpost-canvas {
+  display: block;
+  /* Keep the complete pointer field inside a normal 720px-high viewport.
+     Full interaction uses the whole canvas as a signed yaw/pitch surface;
+     letting the wide intrinsic canvas force the page below the viewport
+     would make the negative-pitch half unreachable by an ordinary pointer. */
+  width: min(100%, 920px, calc((100vh - 320px) * 1.703704));
+  height: min(540px, max(320px, calc(100vh - 320px)));
+  cursor: crosshair;
+  image-rendering: auto;
+}
+
+.cloudpost-hud {
+  position: absolute;
+  inset: 0 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px 15px;
+  background: linear-gradient(180deg, rgba(3, 11, 24, .74), transparent);
+  pointer-events: none;
+}
+
+.cloudpost-hud .cloudpost-readout {
+  color: #f4e6b9;
+  font-size: 10px;
+  letter-spacing: .12em;
+  text-align: right;
+}
+.cloudpost-readout[data-status="error"] { color: #ff9b8d; }
+.cloudpost-readout[data-status="passed"] { color: #b9ef9b; }
+
+.cloudpost-verdict {
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%) rotate(-3deg);
+  padding: 14px 22px;
+  color: #b9ef9b;
+  border: 1px solid rgba(185, 239, 155, .72);
+  background: rgba(9, 37, 35, .92);
+  box-shadow: 0 8px 35px rgba(0, 0, 0, .4);
+  font-family: Georgia, serif;
+  font-size: 25px;
+  letter-spacing: .04em;
+  opacity: 0;
+  pointer-events: none;
+}
+.is-pass .cloudpost-verdict { opacity: 1; }
+.is-fail .cloudpost-verdict { opacity: 1; color: #ff9b8d; border-color: rgba(255, 155, 141, .72); background: rgba(55, 21, 34, .94); }
+
+.cloudpost-controls {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-height: 58px;
+  padding: 12px 2px 2px;
+}
+
+.cloudpost-control-head {
+  display: grid;
+  gap: 3px;
+  min-width: 145px;
+}
+.cloudpost-control-head strong {
+  color: #f4e6b9;
+  font-family: Georgia, serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.cloudpost-control-note, .cloudpost-warning {
+  margin: 0;
+  color: #9fb3af;
+  font-size: 11px;
+  line-height: 1.35;
+}
+.cloudpost-control-note { max-width: 420px; }
+.cloudpost-warning { max-width: 230px; color: #d7a99b; }
+.control-chip {
+  display: inline-block;
+  padding: 4px 6px;
+  color: #09131e;
+  background: #8ed7c8;
+  font-size: 9px;
+  letter-spacing: .13em;
+}
+
+.cloudpost-trims {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 5px;
+}
+.cloudpost-trims button {
+  min-width: 65px;
+  padding: 8px 7px;
+  color: #dcead4;
+  border: 1px solid rgba(185, 228, 204, .36);
+  background: rgba(60, 96, 103, .6);
+  font: 10px "Trebuchet MS", sans-serif;
+  letter-spacing: .05em;
+  cursor: pointer;
+}
+.cloudpost-trims button:hover, .cloudpost-trims button:focus-visible {
+  color: #10202a;
+  background: #8ed7c8;
+}
+
+.cloudpost-legend {
+  display: grid;
+  gap: 4px;
+  min-width: 150px;
+  color: #88aaa4;
+  font-size: 10px;
+}
+.cloudpost-legend span { display: flex; align-items: center; gap: 6px; }
+.cloudpost-legend i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; }
+.legend-seal { border: 1px solid #f6c85f; box-shadow: 0 0 7px #f6c85f; }
+.legend-plane { background: #e8e0c1; border: 1px solid #2a3550; }
+.legend-depth { background: #8ed7c8; opacity: .55; }
+
+.cloudpost-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 11px;
+  border-top: 1px solid rgba(215, 233, 206, .13);
+}
+
+@media (max-width: 950px) {
+  .cloudpost-shell { width: calc(100vw - 16px); margin: 8px auto; padding: 14px; }
+  .cloudpost-header { align-items: flex-start; }
+  .cloudpost-controls { flex-wrap: wrap; }
+  .cloudpost-warning { max-width: none; }
+  .cloudpost-footer { font-size: 8px; }
+}

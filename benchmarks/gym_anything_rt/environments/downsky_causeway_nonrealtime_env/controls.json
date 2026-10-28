@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "downsky_causeway_nonrealtime",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Half-width 1.75m, drift 0.6m with 6500ms nonrepeating knots, wind 0.4m/s\u00b2, steering response 6.0/s. Seven terraces with the same six 1.8m drops at every level.",
+      "parameters": {
+        "half_width": 1.75,
+        "lateral_offset": 2.2,
+        "drift": 0.6,
+        "span_ms": 6500,
+        "wind": 0.4,
+        "response": 6.0,
+        "acceleration": 18.0
+      },
+      "natural_language_by_interaction": {
+        "full": "Inspect the drifting terraces, then START CROSSING. Each deliberate tiller action advances one fixed 100 ms physics step; idle time leaves the causeway unchanged. Steer lateral speed with the gold tiller; momentum takes time to reverse. Your whole footprint must fit on a deck. Walking off starts a gravity-driven fall onto a lower deck. Dashed blue outlines show deck positions 0.9 seconds ahead; white streaks show recent drift after each action step. Reach the lit pavilion on terrace 7 and CERTIFY ARRIVAL. A fall below the causeway or early certification ends the episode. Grab and drag the gold handle to steer. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed.",
+        "simplified": "Inspect the drifting terraces, then START CROSSING. Each deliberate tiller action advances one fixed 100 ms physics step; idle time leaves the causeway unchanged. Steer lateral speed with the gold tiller; momentum takes time to reverse. Your whole footprint must fit on a deck. Walking off starts a gravity-driven fall onto a lower deck. Dashed blue outlines show deck positions 0.9 seconds ahead; white streaks show recent drift after each action step. Reach the lit pavilion on terrace 7 and CERTIFY ARRIVAL. A fall below the causeway or early certification ends the episode. Click the tiller rail to steer. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed."
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Half-width 1.6m, drift 0.7m with 5700ms nonrepeating knots, wind 0.6m/s\u00b2, steering response 5.3/s. Seven terraces with the same six 1.8m drops at every level.",
+      "parameters": {
+        "half_width": 1.6,
+        "lateral_offset": 2.0,
+        "drift": 0.7,
+        "span_ms": 5700,
+        "wind": 0.6,
+        "response": 5.3,
+        "acceleration": 16.0
+      },
+      "natural_language_by_interaction": {
+        "full": "Inspect the drifting terraces, then START CROSSING. Each deliberate tiller action advances one fixed 100 ms physics step; idle time leaves the causeway unchanged. Steer lateral speed with the gold tiller; momentum takes time to reverse. Your whole footprint must fit on a deck. Walking off starts a gravity-driven fall onto a lower deck. Dashed blue outlines show deck positions 0.9 seconds ahead; white streaks show recent drift after each action step. Reach the lit pavilion on terrace 7 and CERTIFY ARRIVAL. A fall below the causeway or early certification ends the episode. Grab and drag the gold handle to steer. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed.",
+        "simplified": "Inspect the drifting terraces, then START CROSSING. Each deliberate tiller action advances one fixed 100 ms physics step; idle time leaves the causeway unchanged. Steer lateral speed with the gold tiller; momentum takes time to reverse. Your whole footprint must fit on a deck. Walking off starts a gravity-driven fall onto a lower deck. Dashed blue outlines show deck positions 0.9 seconds ahead; white streaks show recent drift after each action step. Reach the lit pavilion on terrace 7 and CERTIFY ARRIVAL. A fall below the causeway or early certification ends the episode. Click the tiller rail to steer. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed."
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Half-width 1.45m, drift 0.8m with 5000ms nonrepeating knots, wind 0.9m/s\u00b2, steering response 4.6/s. Seven terraces with the same six 1.8m drops at every level.",
+      "parameters": {
+        "half_width": 1.45,
+        "lateral_offset": 1.8,
+        "drift": 0.8,
+        "span_ms": 5000,
+        "wind": 0.9,
+        "response": 4.6,
+        "acceleration": 14.0
+      },
+      "natural_language_by_interaction": {
+        "full": "Inspect the drifting terraces, then START CROSSING. Each deliberate tiller action advances one fixed 100 ms physics step; idle time leaves the causeway unchanged. Steer lateral speed with the gold tiller; momentum takes time to reverse. Your whole footprint must fit on a deck. Walking off starts a gravity-driven fall onto a lower deck. Dashed blue outlines show deck positions 0.9 seconds ahead; white streaks show recent drift after each action step. Reach the lit pavilion on terrace 7 and CERTIFY ARRIVAL. A fall below the causeway or early certification ends the episode. Grab and drag the gold handle to steer. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed.",
+        "simplified": "Inspect the drifting terraces, then START CROSSING. Each deliberate tiller action advances one fixed 100 ms physics step; idle time leaves the causeway unchanged. Steer lateral speed with the gold tiller; momentum takes time to reverse. Your whole footprint must fit on a deck. Walking off starts a gravity-driven fall onto a lower deck. Dashed blue outlines show deck positions 0.9 seconds ahead; white streaks show recent drift after each action step. Reach the lit pavilion on terrace 7 and CERTIFY ARRIVAL. A fall below the causeway or early certification ends the episode. Click the tiller rail to steer. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed."
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Half-width 1.3m, drift 0.9m with 4400ms nonrepeating knots, wind 1.2m/s\u00b2, steering response 4.0/s. Seven terraces with the same six 1.8m drops at every level.",
+      "parameters": {
+        "half_width": 1.3,
+        "lateral_offset": 1.65,
+        "drift": 0.9,
+        "span_ms": 4400,
+        "wind": 1.2,
+        "response": 4.0,
+        "acceleration": 12.0
+      },
+      "natural_language_by_interaction": {
+        "full": "Inspect the drifting terraces, then START CROSSING. Each deliberate tiller action advances one fixed 100 ms physics step; idle time leaves the causeway unchanged. Steer lateral speed with the gold tiller; momentum takes time to reverse. Your whole footprint must fit on a deck. Walking off starts a gravity-driven fall onto a lower deck. Dashed blue outlines show deck positions 0.9 seconds ahead; white streaks show recent drift after each action step. Reach the lit pavilion on terrace 7 and CERTIFY ARRIVAL. A fall below the causeway or early certification ends the episode. Grab and drag the gold handle to steer. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed.",
+        "simplified": "Inspect the drifting terraces, then START CROSSING. Each deliberate tiller action advances one fixed 100 ms physics step; idle time leaves the causeway unchanged. Steer lateral speed with the gold tiller; momentum takes time to reverse. Your whole footprint must fit on a deck. Walking off starts a gravity-driven fall onto a lower deck. Dashed blue outlines show deck positions 0.9 seconds ahead; white streaks show recent drift after each action step. Reach the lit pavilion on terrace 7 and CERTIFY ARRIVAL. A fall below the causeway or early certification ends the episode. Click the tiller rail to steer. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed."
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Half-width 1.15m, drift 1.0m with 3800ms nonrepeating knots, wind 1.6m/s\u00b2, steering response 3.4/s. Seven terraces with the same six 1.8m drops at every level.",
+      "parameters": {
+        "half_width": 1.15,
+        "lateral_offset": 1.5,
+        "drift": 1.0,
+        "span_ms": 3800,
+        "wind": 1.6,
+        "response": 3.4,
+        "acceleration": 10.0
+      },
+      "natural_language_by_interaction": {
+        "full": "Inspect the drifting terraces, then START CROSSING. Each deliberate tiller action advances one fixed 100 ms physics step; idle time leaves the causeway unchanged. Steer lateral speed with the gold tiller; momentum takes time to reverse. Your whole footprint must fit on a deck. Walking off starts a gravity-driven fall onto a lower deck. Dashed blue outlines show deck positions 0.9 seconds ahead; white streaks show recent drift after each action step. Reach the lit pavilion on terrace 7 and CERTIFY ARRIVAL. A fall below the causeway or early certification ends the episode. Grab and drag the gold handle to steer. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed.",
+        "simplified": "Inspect the drifting terraces, then START CROSSING. Each deliberate tiller action advances one fixed 100 ms physics step; idle time leaves the causeway unchanged. Steer lateral speed with the gold tiller; momentum takes time to reverse. Your whole footprint must fit on a deck. Walking off starts a gravity-driven fall onto a lower deck. Dashed blue outlines show deck positions 0.9 seconds ahead; white streaks show recent drift after each action step. Reach the lit pavilion on terrace 7 and CERTIFY ARRIVAL. A fall below the causeway or early certification ends the episode. Click the tiller rail to steer. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed."
+      }
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Grab and drag the gold tiller; each steering action advances one fixed inertial step and release latches the setting."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Click the same tiller rail to set inertial steering; each click advances one fixed step with no auto-aim or interception."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "environment_id": "branch_repair_v3_nonrealtime_env",
+  "donor_id": "branch_repair_v3_env",
+  "donor_mechanic": "branch_repair_v3",
+  "donor_hashes": {
+    "generator": "cf9da68c2b4910dc835bca14132247e78f531df2abb2131db1bfac4d00207f36",
+    "grader": "02b8f5da3bb7df1eabef7819457b71f75cf3a3c649bab2177f60790d5053c769",
+    "browser": "ff57437bdd852efbe232fd28029816c24da8b21309b0a76ef00bcb6eb4cffa0b",
+    "css": "633aac8c8218a680ff490c53e4c89522e48922574fa21bf4cb0ac5a7f3539030",
+    "controls": "6226aa37881d7668d251a1702e544e4b75f55fd2fe4944996b21cd33e7248815",
+    "env": "475233a3735f31e90f2f1c71d3056fd9c755abb533d489d3a49163283a35fb33",
+    "retry_policy": "0fdb3c84d6a0fc0c012cbbe8fe9aef3710c171c6d4a2c44c1e390ac5713fe0b4"
+  },
+  "seed_namespace": "branch_repair_v2|living-fibre-4 (unchanged from assigned V3 donor)",
+  "status": "counterpart_timing_only",
+  "timing_rule": "Ordinary LIVE execution remains. Idle wall time, frame collection, tool selection, inspection, cancellation, cutting, and unfinished holds do not advance task state. A completed correct stitch or deliberate no-hit probe advances exactly 2000 ms.",
+  "preserved": [
+    "V3 SECTION LENS initial concealment, discovery action, and retained inspected sections",
+    "goal, object counts, random geometry, five profiles, full/simplified controls, tolerances, and terminal failure policy"
+  ]
+}

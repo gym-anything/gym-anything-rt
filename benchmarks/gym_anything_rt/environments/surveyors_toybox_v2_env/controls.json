@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "surveyors_toybox_v2",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "One tug requires planar XZ tracking, with one look-alike and a 2.4-second forecast.",
+      "parameters": {
+        "target_count": 1,
+        "distractor_count": 1,
+        "moving_axes": 2,
+        "yaw_amplitude": 0,
+        "span_ms": 22000,
+        "center_tolerance": 0.6,
+        "extent_tolerance": 0.18,
+        "yaw_tolerance": 24,
+        "iou_min": 0.55,
+        "point_count": 52,
+        "forecast_ms": 2400
+      },
+      "natural_language": "Link each tug portrait to its matching camera subject. Fit its 3D cuboid using both camera plates and the sparse scan. Start the live survey, then keep every cuboid centered, sized and oriented on its moving tug until the simultaneous-fit bar fills. The active scan lasts at most 90 seconds. Calibration links and volume edits are reversible. Start commits the camera links; wrong links end the episode. Brief tracking slips remain correctable, and each lost-track bar refills when its tug is fitted again. Ten continuous seconds lost, unfinished scan expiry, or incomplete certification ends the episode. Certify is a final submission, including before Start. A later reset or submission cannot undo a failed episode. The motion trail and dotted forecast labelled on the camera are visible guidance; boxes never automatically follow a toy. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, browser extensions, external applications, or hidden implementation state. Do not interact with pre-existing, unrelated, blank, browser-settings, or non-task tabs. A tab opened by a visible task control is allowed only if it is part of this task and only its visible controls may be used."
+    },
+    "2": {
+      "label": "easy",
+      "summary": "One tug requires XYZ tracking across both camera plates, with two look-alikes and a 1.6-second forecast.",
+      "parameters": {
+        "target_count": 1,
+        "distractor_count": 2,
+        "moving_axes": 3,
+        "yaw_amplitude": 0,
+        "span_ms": 19000,
+        "center_tolerance": 0.54,
+        "extent_tolerance": 0.16,
+        "yaw_tolerance": 20,
+        "iou_min": 0.55,
+        "point_count": 44,
+        "forecast_ms": 1600
+      },
+      "natural_language": "Link each tug portrait to its matching camera subject. Fit its 3D cuboid using both camera plates and the sparse scan. Start the live survey, then keep every cuboid centered, sized and oriented on its moving tug until the simultaneous-fit bar fills. The active scan lasts at most 90 seconds. Calibration links and volume edits are reversible. Start commits the camera links; wrong links end the episode. Brief tracking slips remain correctable, and each lost-track bar refills when its tug is fitted again. Ten continuous seconds lost, unfinished scan expiry, or incomplete certification ends the episode. Certify is a final submission, including before Start. A later reset or submission cannot undo a failed episode. The motion trail and dotted forecast labelled on the camera are visible guidance; boxes never automatically follow a toy. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, browser extensions, external applications, or hidden implementation state. Do not interact with pre-existing, unrelated, blank, browser-settings, or non-task tabs. A tab opened by a visible task control is allowed only if it is part of this task and only its visible controls may be used."
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Two simultaneous tugs move in XYZ; front height and plan footprint must agree, with a one-second forecast.",
+      "parameters": {
+        "target_count": 2,
+        "distractor_count": 2,
+        "moving_axes": 3,
+        "yaw_amplitude": 0,
+        "span_ms": 18500,
+        "center_tolerance": 0.48,
+        "extent_tolerance": 0.14,
+        "yaw_tolerance": 18,
+        "iou_min": 0.55,
+        "point_count": 36,
+        "forecast_ms": 1000
+      },
+      "natural_language": "Link each tug portrait to its matching camera subject. Fit its 3D cuboid using both camera plates and the sparse scan. Start the live survey, then keep every cuboid centered, sized and oriented on its moving tug until the simultaneous-fit bar fills. The active scan lasts at most 90 seconds. Calibration links and volume edits are reversible. Start commits the camera links; wrong links end the episode. Brief tracking slips remain correctable, and each lost-track bar refills when its tug is fitted again. Ten continuous seconds lost, unfinished scan expiry, or incomplete certification ends the episode. Certify is a final submission, including before Start. A later reset or submission cannot undo a failed episode. The motion trail and dotted forecast labelled on the camera are visible guidance; boxes never automatically follow a toy. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, browser extensions, external applications, or hidden implementation state. Do not interact with pre-existing, unrelated, blank, browser-settings, or non-task tabs. A tab opened by a visible task control is allowed only if it is part of this task and only its visible controls may be used."
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Two tugs also turn; heading and 3D position compete for correction within the 0.8-second forecast.",
+      "parameters": {
+        "target_count": 2,
+        "distractor_count": 3,
+        "moving_axes": 3,
+        "yaw_amplitude": 30,
+        "span_ms": 16000,
+        "center_tolerance": 0.43,
+        "extent_tolerance": 0.12,
+        "yaw_tolerance": 16,
+        "iou_min": 0.55,
+        "point_count": 30,
+        "forecast_ms": 800
+      },
+      "natural_language": "Link each tug portrait to its matching camera subject. Fit its 3D cuboid using both camera plates and the sparse scan. Start the live survey, then keep every cuboid centered, sized and oriented on its moving tug until the simultaneous-fit bar fills. The active scan lasts at most 90 seconds. Calibration links and volume edits are reversible. Start commits the camera links; wrong links end the episode. Brief tracking slips remain correctable, and each lost-track bar refills when its tug is fitted again. Ten continuous seconds lost, unfinished scan expiry, or incomplete certification ends the episode. Certify is a final submission, including before Start. A later reset or submission cannot undo a failed episode. The motion trail and dotted forecast labelled on the camera are visible guidance; boxes never automatically follow a toy. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, browser extensions, external applications, or hidden implementation state. Do not interact with pre-existing, unrelated, blank, browser-settings, or non-task tabs. A tab opened by a visible task control is allowed only if it is part of this task and only its visible controls may be used."
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Three simultaneously turning tugs among four look-alikes, with tighter size and heading accuracy and a 0.8-second forecast.",
+      "parameters": {
+        "target_count": 3,
+        "distractor_count": 4,
+        "moving_axes": 3,
+        "yaw_amplitude": 55,
+        "span_ms": 14500,
+        "center_tolerance": 0.38,
+        "extent_tolerance": 0.1,
+        "yaw_tolerance": 12,
+        "iou_min": 0.55,
+        "point_count": 24,
+        "forecast_ms": 800
+      },
+      "natural_language": "Link each tug portrait to its matching camera subject. Fit its 3D cuboid using both camera plates and the sparse scan. Start the live survey, then keep every cuboid centered, sized and oriented on its moving tug until the simultaneous-fit bar fills. The active scan lasts at most 90 seconds. Calibration links and volume edits are reversible. Start commits the camera links; wrong links end the episode. Brief tracking slips remain correctable, and each lost-track bar refills when its tug is fitted again. Ten continuous seconds lost, unfinished scan expiry, or incomplete certification ends the episode. Certify is a final submission, including before Start. A later reset or submission cannot undo a failed episode. The motion trail and dotted forecast labelled on the camera are visible guidance; boxes never automatically follow a toy. Solve only from screenshots and visible controls in this task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, browser extensions, external applications, or hidden implementation state. Do not interact with pre-existing, unrelated, blank, browser-settings, or non-task tabs. A tab opened by a visible task control is allowed only if it is part of this task and only its visible controls may be used."
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Drag camera links to their sockets and directly drag volume, elevation, heading and extent handles."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Select a volume and tool, then click a coordinate on the same camera plate, heading ring or extent rail. No tracking or auto-aim is provided."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  }
+}

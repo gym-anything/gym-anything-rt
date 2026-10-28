@@ -1,0 +1,56 @@
+{
+  "description": "Inspect the concealed carbon registration and use its seeded pointer-to-nib displacement to copy the moving original. Avoid VOID stamps and long uncovered strokes. One terminal failure ends the episode.",
+  "difficulty": "easy",
+  "env_id": "gym_anything_rt.bureaucratic_signature_trap_v3_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/bureaucratic_signature_trap_v3_d2_simplified_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/bureaucratic_signature_trap_v3_d2_simplified_seed_0001/setup_task.sh"
+  },
+  "id": "bureaucratic_signature_trap_v3_d2_simplified_seed_0001@0.2",
+  "init": {
+    "max_steps": 300,
+    "reward_type": "sparse",
+    "timeout_sec": 300
+  },
+  "metadata": {
+    "benchmark": "gym_anything_rt",
+    "capabilities": [
+      "Visual Understanding (2D)",
+      "Temporal Understanding and Memory",
+      "Reasoning and Planning"
+    ],
+    "control_condition": {
+      "difficulty": 2,
+      "difficulty_parameters": {
+        "drift": 20,
+        "drift_ms": 2600,
+        "duration_ms": 22000,
+        "hazard_radius": 34,
+        "hazards": 1,
+        "knot_ms": 3200,
+        "maximum_gap": 220,
+        "minimum_coverage": 0.82,
+        "response_s": 0.12,
+        "tolerance": 42
+      },
+      "interaction": "simplified",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "bureaucratic_signature_trap_v3",
+    "mechanic_revision": "moving-carbon-v3-registration-2"
+  },
+  "name": "Bureaucratic Signature Trap V3 · Difficulty 2 · Simplified Interaction",
+  "natural_language": "Inspect the concealed carbon registration by pulling its corner. Pointer marks transfer to the carbon nib with this form’s displacement; use the revealed offset to aim. Countersign the moving original; lift over VOID stamps and avoid a long continuous uncovered stroke. Use the labelled +0.20 s forecast. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload or navigation, browser extensions, external applications, implementation or hidden-state access. Do not switch to unrelated, blank, browser-settings or non-task tabs. Tabs opened by visible task controls are allowed only as part of the task and through their visible controls.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "bureaucratic_signature_trap"
+  ],
+  "version": "0.2"
+}

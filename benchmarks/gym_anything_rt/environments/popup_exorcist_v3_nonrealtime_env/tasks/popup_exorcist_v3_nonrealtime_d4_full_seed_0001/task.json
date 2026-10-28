@@ -1,0 +1,55 @@
+{
+  "description": "Inspect concealed pane roles while following seeded close-seal checkpoints; clear haunted processes and preserve protected services.",
+  "difficulty": "hard",
+  "env_id": "gym_anything_rt.popup_exorcist_v3_nonrealtime_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/popup_exorcist_v3_nonrealtime_d4_full_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/popup_exorcist_v3_nonrealtime_d4_full_seed_0001/setup_task.sh"
+  },
+  "id": "popup_exorcist_v3_nonrealtime_d4_full_seed_0001@0.2",
+  "init": {
+    "max_steps": 100,
+    "reward_type": "sparse",
+    "timeout_sec": 600
+  },
+  "metadata": {
+    "benchmark": "gym_anything_rt",
+    "capabilities": [
+      "2D visual understanding",
+      "temporal understanding and memory",
+      "reasoning and planning"
+    ],
+    "control_condition": {
+      "difficulty": 4,
+      "difficulty_parameters": {
+        "haunted_count": 7,
+        "overlap": 80,
+        "rail_travel": 50,
+        "seal_size": 52,
+        "span_ms": 4000,
+        "travel_x": 115,
+        "travel_y": 75,
+        "trusted_count": 3
+      },
+      "interaction": "full",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "popup_exorcist_v3_nonrealtime"
+  },
+  "name": "Popup Exorcist V3 · Difficulty 4 · Full Interaction",
+  "natural_language": "Inspect the sealed notices on the haunted desktop. Close haunted processes and preserve protected services. In full mode, right-click a visible window to inspect it safely, then left-click its current seal to close. In simplified mode, click to place a reticle, then use INSPECT or I to identify and EXORCISE or Space to close. Inspections reveal lasting roles and spend no seals. The current checkpoint stays stable while you decide; each deliberate action settles the next seeded checkpoint. Solid foreground windows block both actions. Trails and the preview show the seeded path without revealing uninspected roles. The first three missed seals are recoverable; a fourth miss, closing a protected service, an uncleared 120-second logical deadline, or unfinished CERTIFY ends the episode. Solve only from screenshots and visible controls in this task webpage. Do not write or execute code, scripts or automation. Do not use Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection. Do not use terminal, shell or Python. Do not edit the address bar, URL or query, reload or navigate. Do not use browser extensions, external applications or any other implementation or hidden-state access. Do not switch to or interact with unrelated, pre-existing, blank or browser-settings tabs. A tab opened by a visible task control is allowed only when it is part of this task; use only its visible controls.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "window-management",
+    "motion",
+    "occlusion"
+  ],
+  "version": "0.2"
+}

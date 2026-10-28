@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "forced_perspective_moving_day_v2",
+  "baseline": {
+    "difficulty": 4,
+    "interaction": "simplified",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Use an unyawed 500 px camera to make a short bridge and an oversized key slot. The wide doorway, small camera body, and forgiving placement targets isolate the apparent-size rule. The dolly drifts sideways and the doorway moves continuously, both with changing motion.",
+      "natural_language": "Pick the crate and sign by ray. Move the crate nearer until it fits the broad floor slot. Move the sign farther until it spans the short void, then walk through the open doorway.",
+      "parameters": {
+        "focal_choices": [
+          500
+        ],
+        "yaw_abs_min": 0,
+        "yaw_abs_max": 0,
+        "gap": [
+          12,
+          14.5
+        ],
+        "bridge_min_scale": 1.6,
+        "slot_size": [
+          2.2,
+          2.3
+        ],
+        "slot_max_scale": 0.68,
+        "door_half_gap": 1.6,
+        "avatar_radius": 0.28,
+        "move_step": 0.24,
+        "depth_minimum": 2,
+        "depth_maximum": 13.5,
+        "depth_step": 0.5,
+        "pick_radius_px": 46,
+        "projection_tolerance": 0.12,
+        "door_motion_extent": 1.9,
+        "door_motion_segment_ticks": 140,
+        "dolly_drift_speed": 0.55
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "A lightly yawed camera and two focal lengths require reading the displayed ray while the void, slot, doorway, and body clearance remain forgiving. The dolly drifts sideways and the doorway moves continuously, both with changing motion.",
+      "natural_language": "Preserve each object's screen size while changing depth. Fit the crate in the floor slot, span the void with the sign, and guide the camera body through the unlocked doorway.",
+      "parameters": {
+        "focal_choices": [
+          480,
+          520
+        ],
+        "yaw_abs_min": 0.008,
+        "yaw_abs_max": 0.018,
+        "gap": [
+          11.8,
+          14.7
+        ],
+        "bridge_min_scale": 1.75,
+        "slot_size": [
+          2,
+          2
+        ],
+        "slot_max_scale": 0.63,
+        "door_half_gap": 1.45,
+        "avatar_radius": 0.3,
+        "move_step": 0.27,
+        "depth_minimum": 2,
+        "depth_maximum": 13.5,
+        "depth_step": 0.5,
+        "pick_radius_px": 40,
+        "projection_tolerance": 0.1,
+        "door_motion_extent": 2,
+        "door_motion_segment_ticks": 120,
+        "dolly_drift_speed": 0.75
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Three camera focal lengths, a longer void, a smaller key slot, and tighter body clearance require coordinating both perspective placements with the traversal route. The dolly drifts sideways and the doorway moves continuously, both with changing motion.",
+      "natural_language": "Use the visible ray and depth readout to shrink the crate into its floor slot and enlarge the sign across the void. Then keep the camera body centred while crossing the bridge and doorway.",
+      "parameters": {
+        "focal_choices": [
+          460,
+          500,
+          540
+        ],
+        "yaw_abs_min": 0.014,
+        "yaw_abs_max": 0.03,
+        "gap": [
+          11.6,
+          14.9
+        ],
+        "bridge_min_scale": 1.9,
+        "slot_size": [
+          1.8,
+          1.9
+        ],
+        "slot_max_scale": 0.59,
+        "door_half_gap": 1.35,
+        "avatar_radius": 0.32,
+        "move_step": 0.29,
+        "depth_minimum": 2,
+        "depth_maximum": 13.5,
+        "depth_step": 0.5,
+        "pick_radius_px": 37,
+        "projection_tolerance": 0.09,
+        "door_motion_extent": 2.1,
+        "door_motion_segment_ticks": 100,
+        "dolly_drift_speed": 1
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Retains the level-4 perspective geometry: a 460/500/540 px camera with 0.018–0.042 rad yaw, a 3.5-unit void, a 0.56-scale key slot, and the current rigid bridge, door, and camera-body clearances. The dolly drifts sideways and the doorway moves continuously, both with changing motion.",
+      "natural_language": "Resize the available objects through perspective and move the shipment through the impossible doorway. Shrink the crate into its keyed floor slot, enlarge the sign into a load-bearing bridge, then navigate the rigid camera body across the void and through the unlocked door.",
+      "parameters": {
+        "focal_choices": [
+          460,
+          500,
+          540
+        ],
+        "yaw_abs_min": 0.018,
+        "yaw_abs_max": 0.042,
+        "gap": [
+          11.5,
+          15
+        ],
+        "bridge_min_scale": 2,
+        "slot_size": [
+          1.6,
+          1.7
+        ],
+        "slot_max_scale": 0.56,
+        "door_half_gap": 1.25,
+        "avatar_radius": 0.34,
+        "move_step": 0.32,
+        "depth_minimum": 2,
+        "depth_maximum": 13.5,
+        "depth_step": 0.5,
+        "pick_radius_px": 34,
+        "projection_tolerance": 0.08,
+        "door_motion_extent": 2.2,
+        "door_motion_segment_ticks": 90,
+        "dolly_drift_speed": 1.25
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "A more oblique five-focal-length camera, a longer void, a narrow key slot and doorway, a larger rigid body, and quarter-depth adjustments demand precise projective placement before a sensitive traversal. The dolly drifts sideways and the doorway moves continuously, both with changing motion.",
+      "natural_language": "Maintain apparent size while using the finer depth control. The crate must fit the narrow key slot and the sign must safely span the longer void before the larger camera body can pass the tight doorway.",
+      "parameters": {
+        "focal_choices": [
+          420,
+          460,
+          500,
+          540,
+          580
+        ],
+        "yaw_abs_min": 0.03,
+        "yaw_abs_max": 0.06,
+        "gap": [
+          11.3,
+          15.2
+        ],
+        "bridge_min_scale": 2.25,
+        "slot_size": [
+          1.35,
+          1.4
+        ],
+        "slot_max_scale": 0.54,
+        "door_half_gap": 0.95,
+        "avatar_radius": 0.4,
+        "move_step": 0.38,
+        "depth_minimum": 2,
+        "depth_maximum": 13.75,
+        "depth_step": 0.25,
+        "pick_radius_px": 30,
+        "projection_tolerance": 0.06,
+        "door_motion_extent": 2.4,
+        "door_motion_segment_ticks": 80,
+        "dolly_drift_speed": 1.6
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Click an object with the camera ray, use the visible depth buttons or wheel, then use RELEASE AGAINST FLOOR. Use WASD to counteract the drifting dolly, including while holding an object."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Hold a picked object on the ray, move and wheel its retained apparent image to set depth, then release the pointer onto the floor. Use WASD to counteract the drifting dolly, including while holding an object."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 400,
+    "frames_per_observation": 4
+  }
+}

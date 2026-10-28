@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "three_camera_claw_machine_v2",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "0 decoys; open obstacles; camera delays [0, 0, 0] ticks. Continuous inertia, moving cargo/chute and changing wind.",
+      "parameters": {
+        "distractor_count": 0,
+        "obstacle_profile": "open",
+        "camera_delay_ticks": [
+          0,
+          0,
+          0
+        ],
+        "camera_scale": 22.0,
+        "acceleration": 0.009,
+        "damping": 0.94,
+        "capture_distance": 0.56
+      },
+      "natural_language": "Retrieve the moving marked artifact using the three camera feeds, then release it inside the moving chute. Wind and targets keep moving. A missed grip, wrong object or lost load ends the attempt."
+    },
+    "2": {
+      "label": "easy",
+      "summary": "1 decoys; crossbar obstacles; camera delays [0, 1, 2] ticks. Continuous inertia, moving cargo/chute and changing wind.",
+      "parameters": {
+        "distractor_count": 1,
+        "obstacle_profile": "crossbar",
+        "camera_delay_ticks": [
+          0,
+          1,
+          2
+        ],
+        "camera_scale": 22.0,
+        "acceleration": 0.009,
+        "damping": 0.94,
+        "capture_distance": 0.56
+      },
+      "natural_language": "Retrieve the moving marked artifact using the three camera feeds, then release it inside the moving chute. Wind and targets keep moving. A missed grip, wrong object or lost load ends the attempt."
+    },
+    "3": {
+      "label": "medium",
+      "summary": "2 decoys; crossbar_post obstacles; camera delays [0, 1, 3] ticks. Continuous inertia, moving cargo/chute and changing wind.",
+      "parameters": {
+        "distractor_count": 2,
+        "obstacle_profile": "crossbar_post",
+        "camera_delay_ticks": [
+          0,
+          1,
+          3
+        ],
+        "camera_scale": 21.0,
+        "acceleration": 0.009,
+        "damping": 0.94,
+        "capture_distance": 0.56
+      },
+      "natural_language": "Retrieve the moving marked artifact using the three camera feeds, then release it inside the moving chute. Wind and targets keep moving. A missed grip, wrong object or lost load ends the attempt."
+    },
+    "4": {
+      "label": "hard",
+      "summary": "2 decoys; crossbar_post obstacles; camera delays [0, 2, 4] ticks. Continuous inertia, moving cargo/chute and changing wind.",
+      "parameters": {},
+      "natural_language": "Retrieve the moving marked artifact using the three camera feeds, then release it inside the moving chute. Wind and targets keep moving. A missed grip, wrong object or lost load ends the attempt."
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "4 decoys; dense obstacles; camera delays [0, 3, 6] ticks. Continuous inertia, moving cargo/chute and changing wind.",
+      "parameters": {
+        "distractor_count": 4,
+        "obstacle_profile": "dense",
+        "camera_delay_ticks": [
+          0,
+          3,
+          6
+        ],
+        "camera_scale": 19.0,
+        "acceleration": 0.009,
+        "damping": 0.94,
+        "capture_distance": 0.56
+      },
+      "natural_language": "Retrieve the moving marked artifact using the three camera feeds, then release it inside the moving chute. Wind and targets keep moving. A missed grip, wrong object or lost load ends the attempt."
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Held axis controls and geometric gripper; continuous physics with no rewind or world-stop control."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Held axis controls and geometric gripper; continuous physics with no rewind or world-stop control."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 600,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  }
+}

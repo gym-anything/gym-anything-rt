@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "clockwork_clutch_safe_v2",
+  "baseline": {
+    "difficulty": 3,
+    "interaction": "simplified",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Phase one slow seal against a wide witness window with exact angle and speed telemetry. The master drive still wobbles smoothly, but the swing is narrow (+-15%) and changes only every 18-30 ticks, so a single recoverable timing decision remains easy to track.",
+      "parameters": {
+        "shaft_count": 1,
+        "ratio_profile": "single",
+        "release_tick_ranges": [
+          [34, 42]
+        ],
+        "tick_ms": 85,
+        "drive_deg_per_tick": 1.2,
+        "load_numerator": 1,
+        "phase_tolerance_deg": 30.0,
+        "max_ticks": 90,
+        "show_angle_readout": true,
+        "show_speed_readout": true,
+        "reengagement_allowed": true,
+        "wobble_min_mult": 0.85,
+        "wobble_max_mult": 1.15,
+        "wobble_segment_min_ticks": 18,
+        "wobble_segment_max_ticks": 30
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Phase two seals with exact telemetry. Releasing the first doubles the remaining seal's speed, and the wobbling drive now swings +-22% every 15-26 ticks, adding one visible and recoverable non-periodic timing change on top of the load redistribution.",
+      "parameters": {
+        "shaft_count": 2,
+        "ratio_profile": "paired",
+        "release_tick_ranges": [
+          [31, 39],
+          [70, 82]
+        ],
+        "tick_ms": 85,
+        "drive_deg_per_tick": 1.5,
+        "load_numerator": 2,
+        "phase_tolerance_deg": 20.0,
+        "max_ticks": 125,
+        "show_angle_readout": true,
+        "show_speed_readout": true,
+        "reengagement_allowed": true,
+        "wobble_min_mult": 0.78,
+        "wobble_max_mult": 1.22,
+        "wobble_segment_min_ticks": 15,
+        "wobble_segment_max_ticks": 26
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Release four load-coupled shafts at their witness marks while the master drive wobbles +-32% every 12-22 ticks. Exact angle and speed telemetry and legal re-engagement provide recovery while the drive keeps moving. A fixed linear timing extrapolation no longer predicts later ticks.",
+      "parameters": {
+        "shaft_count": 4,
+        "ratio_profile": "legacy_four",
+        "release_tick_ranges": [
+          [31, 38],
+          [56, 65],
+          [84, 94],
+          [116, 128]
+        ],
+        "tick_ms": 85,
+        "drive_deg_per_tick": 1.8,
+        "load_numerator": 4,
+        "phase_tolerance_deg": 13.0,
+        "max_ticks": 170,
+        "show_angle_readout": true,
+        "show_speed_readout": true,
+        "reengagement_allowed": true,
+        "wobble_min_mult": 0.68,
+        "wobble_max_mult": 1.32,
+        "wobble_segment_min_ticks": 12,
+        "wobble_segment_max_ticks": 22
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Phase four faster shafts through narrower windows using the moving seal and witness geometry rather than an exact angle readout. Speed telemetry and re-engagement remain available for recovery while the drive keeps moving and wobbles +-40% every 9-18 ticks.",
+      "parameters": {
+        "shaft_count": 4,
+        "ratio_profile": "legacy_four",
+        "release_tick_ranges": [
+          [28, 34],
+          [50, 58],
+          [74, 83],
+          [101, 112]
+        ],
+        "tick_ms": 85,
+        "drive_deg_per_tick": 2.1,
+        "load_numerator": 4,
+        "phase_tolerance_deg": 9.0,
+        "max_ticks": 155,
+        "show_angle_readout": false,
+        "show_speed_readout": true,
+        "reengagement_allowed": true,
+        "wobble_min_mult": 0.60,
+        "wobble_max_mult": 1.40,
+        "wobble_segment_min_ticks": 9,
+        "wobble_segment_max_ticks": 18
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Phase four wider-ratio shafts through tight visual windows with no numeric angle or speed readouts. A released clutch cannot be re-engaged, so each state-changing timing decision is irreversible, and the drive wobbles +-50% every 7-14 ticks with no numeric warning.",
+      "parameters": {
+        "shaft_count": 4,
+        "ratio_profile": "wide_four",
+        "release_tick_ranges": [
+          [26, 32],
+          [47, 54],
+          [68, 77],
+          [94, 105]
+        ],
+        "tick_ms": 85,
+        "drive_deg_per_tick": 2.3,
+        "load_numerator": 4,
+        "phase_tolerance_deg": 6.0,
+        "max_ticks": 145,
+        "show_angle_readout": false,
+        "show_speed_readout": false,
+        "reengagement_allowed": false,
+        "wobble_min_mult": 0.50,
+        "wobble_max_mult": 1.50,
+        "wobble_segment_min_ticks": 7,
+        "wobble_segment_max_ticks": 14
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Click a labelled release or engage button beneath each seal."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Drag each seal's clutch lever directly between its coupled and free detents."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 600,
+    "frames_per_observation": 5
+  }
+}

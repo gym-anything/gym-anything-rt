@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "fluke_census_v3_nonrealtime",
+  "baseline": {
+    "difficulty": 4,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Three separated-looking individuals with large tail distinctions, slow phase changes after completed aims and a broad frame.",
+      "parameters": {
+        "animal_count": 3,
+        "frame_width": 208,
+        "frame_height": 164,
+        "motion_rate": 0.16,
+        "turn_degrees": 8,
+        "notch_difference": 15,
+        "scale_variation": 0.02,
+        "landmark_tolerance": 11
+      },
+      "natural_language": "Photograph every individual of the two listed species exactly once. Frame its whole fluke with the camera crosshair inside it, release the frame, then use the shutter. On each photograph, mark both outer tips and the central V and archive it. The sea shows unlabelled silhouettes. Aim the camera, then click a whole clear fluke in its live view to identify it without shooting. The sample reveals its species name and WANTED or OFF LIST status and adds its shape to the field key. Empty or unclear samples are safe to repeat. Species names are assigned anew each survey. Use this key to choose listed animals and avoid off-list photographs. Tail scars identify individuals; whales stay unmarked and remain fixed while you inspect or review a photograph. Each completed aim advances the survey to a stable phase. A clipped, covered, duplicate or off-list photograph ends the attempt. Misplaced landmarks can be corrected before archive. Submit Census complete after all individuals are archived. There is one four-minute survey and no restart control. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM, page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or other hidden-state access. Do not switch to or interact with unrelated, blank, settings or non-task tabs."
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Six individuals introduce identity memory and competing camera choices, with faster phase changes after completed aims and a smaller frame.",
+      "parameters": {
+        "animal_count": 6,
+        "frame_width": 196,
+        "frame_height": 158,
+        "motion_rate": 0.2,
+        "turn_degrees": 14,
+        "notch_difference": 13,
+        "scale_variation": 0.04,
+        "landmark_tolerance": 10
+      },
+      "natural_language": "Photograph every individual of the two listed species exactly once. Frame its whole fluke with the camera crosshair inside it, release the frame, then use the shutter. On each photograph, mark both outer tips and the central V and archive it. The sea shows unlabelled silhouettes. Aim the camera, then click a whole clear fluke in its live view to identify it without shooting. The sample reveals its species name and WANTED or OFF LIST status and adds its shape to the field key. Empty or unclear samples are safe to repeat. Species names are assigned anew each survey. Use this key to choose listed animals and avoid off-list photographs. Tail scars identify individuals; whales stay unmarked and remain fixed while you inspect or review a photograph. Each completed aim advances the survey to a stable phase. A clipped, covered, duplicate or off-list photograph ends the attempt. Misplaced landmarks can be corrected before archive. Submit Census complete after all individuals are archived. There is one four-minute survey and no restart control. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM, page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or other hidden-state access. Do not switch to or interact with unrelated, blank, settings or non-task tabs."
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Same six identities, with rotating flukes after completed aims, stronger scale variation, closer scars and less framing reserve.",
+      "parameters": {
+        "animal_count": 6,
+        "frame_width": 184,
+        "frame_height": 150,
+        "motion_rate": 0.25,
+        "turn_degrees": 24,
+        "notch_difference": 11,
+        "scale_variation": 0.08,
+        "landmark_tolerance": 9
+      },
+      "natural_language": "Photograph every individual of the two listed species exactly once. Frame its whole fluke with the camera crosshair inside it, release the frame, then use the shutter. On each photograph, mark both outer tips and the central V and archive it. The sea shows unlabelled silhouettes. Aim the camera, then click a whole clear fluke in its live view to identify it without shooting. The sample reveals its species name and WANTED or OFF LIST status and adds its shape to the field key. Empty or unclear samples are safe to repeat. Species names are assigned anew each survey. Use this key to choose listed animals and avoid off-list photographs. Tail scars identify individuals; whales stay unmarked and remain fixed while you inspect or review a photograph. Each completed aim advances the survey to a stable phase. A clipped, covered, duplicate or off-list photograph ends the attempt. Misplaced landmarks can be corrected before archive. Submit Census complete after all individuals are archived. There is one four-minute survey and no restart control. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM, page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or other hidden-state access. Do not switch to or interact with unrelated, blank, settings or non-task tabs."
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Nine flukes create crossing/occlusion and more confusable identities as phase changes follow completed aims, with higher speed and narrower landmark/framing margins.",
+      "parameters": {
+        "animal_count": 9,
+        "frame_width": 172,
+        "frame_height": 142,
+        "motion_rate": 0.3,
+        "turn_degrees": 34,
+        "notch_difference": 9,
+        "scale_variation": 0.1,
+        "landmark_tolerance": 8
+      },
+      "natural_language": "Photograph every individual of the two listed species exactly once. Frame its whole fluke with the camera crosshair inside it, release the frame, then use the shutter. On each photograph, mark both outer tips and the central V and archive it. The sea shows unlabelled silhouettes. Aim the camera, then click a whole clear fluke in its live view to identify it without shooting. The sample reveals its species name and WANTED or OFF LIST status and adds its shape to the field key. Empty or unclear samples are safe to repeat. Species names are assigned anew each survey. Use this key to choose listed animals and avoid off-list photographs. Tail scars identify individuals; whales stay unmarked and remain fixed while you inspect or review a photograph. Each completed aim advances the survey to a stable phase. A clipped, covered, duplicate or off-list photograph ends the attempt. Misplaced landmarks can be corrected before archive. Submit Census complete after all individuals are archived. There is one four-minute survey and no restart control. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM, page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or other hidden-state access. Do not switch to or interact with unrelated, blank, settings or non-task tabs."
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Twelve crossing individuals; eight listed identities, close scars, large rotations after completed aims and a tight frame require choosing clear shots and correcting an inertial camera.",
+      "parameters": {
+        "animal_count": 12,
+        "frame_width": 162,
+        "frame_height": 132,
+        "motion_rate": 0.36,
+        "turn_degrees": 48,
+        "notch_difference": 7,
+        "scale_variation": 0.12,
+        "landmark_tolerance": 8
+      },
+      "natural_language": "Photograph every individual of the two listed species exactly once. Frame its whole fluke with the camera crosshair inside it, release the frame, then use the shutter. On each photograph, mark both outer tips and the central V and archive it. The sea shows unlabelled silhouettes. Aim the camera, then click a whole clear fluke in its live view to identify it without shooting. The sample reveals its species name and WANTED or OFF LIST status and adds its shape to the field key. Empty or unclear samples are safe to repeat. Species names are assigned anew each survey. Use this key to choose listed animals and avoid off-list photographs. Tail scars identify individuals; whales stay unmarked and remain fixed while you inspect or review a photograph. Each completed aim advances the survey to a stable phase. A clipped, covered, duplicate or off-list photograph ends the attempt. Misplaced landmarks can be corrected before archive. Submit Census complete after all individuals are archived. There is one four-minute survey and no restart control. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM, page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or other hidden-state access. Do not switch to or interact with unrelated, blank, settings or non-task tabs."
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Drag the camera frame on the water and release; press Space. Drag the three physical pins onto the photograph. Click a whole clear specimen in the live camera to identify it safely. Learned WANTED and OFF LIST species shapes stay in the field key; each completed aim advances to a stable phase."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Click water to set the same camera target, click Shutter, select each pin tool and click its landmark. Same inertia, stable-phase geometry, information and tolerance. Click a whole clear specimen in the live camera to identify it safely. Learned WANTED and OFF LIST species shapes stay in the field key; each completed aim advances to a stable phase."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 240,
+    "observation_window_ms": 600,
+    "frames_per_observation": 4
+  }
+}

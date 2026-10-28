@@ -1,0 +1,66 @@
+{
+  "env_folder": "concertina_courier_v2_env",
+  "all_tasks": [
+    "concertina_courier_v2_d1_full_seed_0001",
+    "concertina_courier_v2_d1_simplified_seed_0001",
+    "concertina_courier_v2_d2_full_seed_0001",
+    "concertina_courier_v2_d2_simplified_seed_0001",
+    "concertina_courier_v2_d3_full_seed_0001",
+    "concertina_courier_v2_d3_simplified_seed_0001",
+    "concertina_courier_v2_d4_full_seed_0001",
+    "concertina_courier_v2_d4_simplified_seed_0001",
+    "concertina_courier_v2_d5_full_seed_0001",
+    "concertina_courier_v2_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "concertina_courier_v2_d1_full_seed_0001",
+    "concertina_courier_v2_d1_simplified_seed_0001",
+    "concertina_courier_v2_d2_full_seed_0001",
+    "concertina_courier_v2_d2_simplified_seed_0001",
+    "concertina_courier_v2_d3_full_seed_0001",
+    "concertina_courier_v2_d3_simplified_seed_0001",
+    "concertina_courier_v2_d4_full_seed_0001",
+    "concertina_courier_v2_d4_simplified_seed_0001",
+    "concertina_courier_v2_d5_full_seed_0001",
+    "concertina_courier_v2_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "concertina_courier_v2_d5_full_seed_0001"
+    ],
+    "full": [
+      "concertina_courier_v2_d1_full_seed_0001",
+      "concertina_courier_v2_d2_full_seed_0001",
+      "concertina_courier_v2_d3_full_seed_0001",
+      "concertina_courier_v2_d4_full_seed_0001",
+      "concertina_courier_v2_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "concertina_courier_v2_d1_simplified_seed_0001",
+      "concertina_courier_v2_d2_simplified_seed_0001",
+      "concertina_courier_v2_d3_simplified_seed_0001",
+      "concertina_courier_v2_d4_simplified_seed_0001",
+      "concertina_courier_v2_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "concertina_courier_v2_d1_full_seed_0001",
+      "concertina_courier_v2_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "concertina_courier_v2_d2_full_seed_0001",
+      "concertina_courier_v2_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "concertina_courier_v2_d3_full_seed_0001",
+      "concertina_courier_v2_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "concertina_courier_v2_d4_full_seed_0001",
+      "concertina_courier_v2_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "concertina_courier_v2_d5_full_seed_0001",
+      "concertina_courier_v2_d5_simplified_seed_0001"
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "description": "Use the coral lenses. Each gold guide has a fixed response direction that varies between hunts and fields. Probe each lens during safe preparation and compare the gold star before and after your move to learn how to center it. The learned response lasts for this hunt. Align the colored stars with the faint constellation and their halos. The gold guide has a square anchor and a recent trail. Prepare safely, then START EXPOSURE. Each lens has inertia. Waiting leaves the scene unchanged; each deliberate lens control advances one fixed 20 ms transition, including when another field is adjusted. Sharpness fills exposure; blur fades it twice as fast. Keep all bars full together to pass. Early sealing or expiry ends the episode; restarting cannot erase failure. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, hidden state, or unrelated tabs.",
+  "difficulty": "very_hard",
+  "env_id": "gym_anything_rt.cursor_constellation_hunt_v3_nonrealtime_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/cursor_constellation_hunt_v3_nonrealtime_d5_simplified_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/cursor_constellation_hunt_v3_nonrealtime_d5_simplified_seed_0001/setup_task.sh"
+  },
+  "id": "cursor_constellation_hunt_v3_nonrealtime_d5_simplified_seed_0001@0.2",
+  "init": {
+    "max_steps": 150,
+    "reward_type": "sparse",
+    "timeout_sec": 180
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/cursor_constellation_hunt_v3_v0.json",
+    "benchmark": "gym_anything_rt",
+    "control_condition": {
+      "difficulty": 5,
+      "difficulty_parameters": {
+        "damping": 14,
+        "field_count": 3,
+        "noise_count": 22,
+        "span_ms": 4500,
+        "spring": 50,
+        "tolerance": 24
+      },
+      "interaction": "simplified",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "cursor_constellation_hunt_v3_nonrealtime"
+  },
+  "name": "Cursor-Controlled Constellation Hunt V3 · Difficulty 5 · Simplified Interaction",
+  "natural_language": "Click inside each field to set its coral lens target. Each gold guide has a fixed response direction that varies between hunts and fields. Probe each lens during safe preparation and compare the gold star before and after your move to learn how to center it. The learned response lasts for this hunt. Align the colored stars with the faint constellation and their halos. The gold guide has a square anchor and a recent trail. Prepare safely, then START EXPOSURE. Each lens has inertia. Waiting leaves the scene unchanged; each deliberate lens control advances one fixed 20 ms transition, including when another field is adjusted. Sharpness fills exposure; blur fades it twice as fast. Keep all bars full together to pass. Early sealing or expiry ends the episode; restarting cannot erase failure. Use only screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, extensions, external applications, hidden state, or unrelated tabs.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "active-vision",
+    "cursor-search"
+  ],
+  "version": "0.2"
+}

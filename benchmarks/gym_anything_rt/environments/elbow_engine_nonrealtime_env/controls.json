@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "elbow_engine_nonrealtime",
+  "baseline": {
+    "difficulty": 4,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "A low crest accepts broadly folded configurations with strong torque.",
+      "parameters": {
+        "target_height": -0.5,
+        "torque": 2.5,
+        "time_scale": 0.5
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Cross pivot height; opposite link orientations now affect whether the crest is high enough.",
+      "parameters": {
+        "target_height": 0,
+        "torque": 2.0,
+        "time_scale": 0.5
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Above-pivot swing requires coordinated link ascent with reduced torque authority.",
+      "parameters": {
+        "target_height": 0.6,
+        "torque": 1.8,
+        "time_scale": 0.5
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Baseline: infer both angular velocities and build a crest one link above the passive pivot.",
+      "parameters": {
+        "target_height": 1.0,
+        "torque": 1.5,
+        "time_scale": 0.5
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "The tip must approach full upward extension; reduced torque gives less authority to recover a mistimed reversal.",
+      "parameters": {
+        "target_height": 1.6,
+        "torque": 1.2,
+        "time_scale": 0.5
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Click negative, neutral, or positive torque to apply that motor state for one fixed engine pulse."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Press a left or right key or motor pad for one fixed engine pulse; release returns to neutral."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "env_folder": "top_face_dice_arithmetic_v2_env",
+  "all_tasks": [
+    "top_face_dice_arithmetic_v2_d1_full_seed_0001",
+    "top_face_dice_arithmetic_v2_d1_simplified_seed_0001",
+    "top_face_dice_arithmetic_v2_d2_full_seed_0001",
+    "top_face_dice_arithmetic_v2_d2_simplified_seed_0001",
+    "top_face_dice_arithmetic_v2_d3_full_seed_0001",
+    "top_face_dice_arithmetic_v2_d3_simplified_seed_0001",
+    "top_face_dice_arithmetic_v2_d4_full_seed_0001",
+    "top_face_dice_arithmetic_v2_d4_simplified_seed_0001",
+    "top_face_dice_arithmetic_v2_d5_full_seed_0001",
+    "top_face_dice_arithmetic_v2_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "top_face_dice_arithmetic_v2_d1_full_seed_0001",
+    "top_face_dice_arithmetic_v2_d1_simplified_seed_0001",
+    "top_face_dice_arithmetic_v2_d2_full_seed_0001",
+    "top_face_dice_arithmetic_v2_d2_simplified_seed_0001",
+    "top_face_dice_arithmetic_v2_d3_full_seed_0001",
+    "top_face_dice_arithmetic_v2_d3_simplified_seed_0001",
+    "top_face_dice_arithmetic_v2_d4_full_seed_0001",
+    "top_face_dice_arithmetic_v2_d4_simplified_seed_0001",
+    "top_face_dice_arithmetic_v2_d5_full_seed_0001",
+    "top_face_dice_arithmetic_v2_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "top_face_dice_arithmetic_v2_d5_full_seed_0001"
+    ],
+    "full": [
+      "top_face_dice_arithmetic_v2_d1_full_seed_0001",
+      "top_face_dice_arithmetic_v2_d2_full_seed_0001",
+      "top_face_dice_arithmetic_v2_d3_full_seed_0001",
+      "top_face_dice_arithmetic_v2_d4_full_seed_0001",
+      "top_face_dice_arithmetic_v2_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "top_face_dice_arithmetic_v2_d1_simplified_seed_0001",
+      "top_face_dice_arithmetic_v2_d2_simplified_seed_0001",
+      "top_face_dice_arithmetic_v2_d3_simplified_seed_0001",
+      "top_face_dice_arithmetic_v2_d4_simplified_seed_0001",
+      "top_face_dice_arithmetic_v2_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "top_face_dice_arithmetic_v2_d1_full_seed_0001",
+      "top_face_dice_arithmetic_v2_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "top_face_dice_arithmetic_v2_d2_full_seed_0001",
+      "top_face_dice_arithmetic_v2_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "top_face_dice_arithmetic_v2_d3_full_seed_0001",
+      "top_face_dice_arithmetic_v2_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "top_face_dice_arithmetic_v2_d4_full_seed_0001",
+      "top_face_dice_arithmetic_v2_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "top_face_dice_arithmetic_v2_d5_full_seed_0001",
+      "top_face_dice_arithmetic_v2_d5_simplified_seed_0001"
+    ]
+  }
+}

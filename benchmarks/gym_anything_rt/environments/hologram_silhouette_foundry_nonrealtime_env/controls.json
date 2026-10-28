@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "hologram_silhouette_foundry_nonrealtime",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "parameters": {
+        "rod_count": 3,
+        "active_axes": 2,
+        "tolerance": 0.35,
+        "span_ms": 6000,
+        "translation_amplitude": 1.2,
+        "yaw_amplitude": 0,
+        "pitch_amplitude": 0,
+        "servo_speed": 3.0,
+        "servo_acceleration": 18.0,
+        "shared_speed": 9.0,
+        "fusion_seconds": 7.0,
+        "leak_rate": 1.5
+      },
+      "summary": "Two translations, three rods, wide visible tip rings, generous actuator power.",
+      "natural_language": "Steer one rigid colored rod assembly until every colored tip center lies inside its matching ring in FRONT, SIDE and TOP. Start with IGNITE FOUNDRY; after ignition, each accepted gantry control advances the dies by one fixed 20 ms step and waiting leaves the current pose and rings unchanged. Simultaneous fit builds fusion; lost fit drains it. Build full fusion, then CERTIFY CASTING. An early submission or 4,500 unfused control steps ends the episode. Preparation is safe; there is no in-game stop, reset or retry. Drag the round gantry handles; the small cyan ticks show the current physical gantry. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls.",
+      "natural_language_by_interaction": {
+        "full": "Steer one rigid colored rod assembly until every colored tip center lies inside its matching ring in FRONT, SIDE and TOP. Start with IGNITE FOUNDRY; after ignition, each accepted gantry control advances the dies by one fixed 20 ms step and waiting leaves the current pose and rings unchanged. Simultaneous fit builds fusion; lost fit drains it. Build full fusion, then CERTIFY CASTING. An early submission or 4,500 unfused control steps ends the episode. Preparation is safe; there is no in-game stop, reset or retry. Drag the round gantry handles; the small cyan ticks show the current physical gantry. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls.",
+        "simplified": "Steer one rigid colored rod assembly until every colored tip center lies inside its matching ring in FRONT, SIDE and TOP. Start with IGNITE FOUNDRY; after ignition, each accepted gantry control advances the dies by one fixed 20 ms step and waiting leaves the current pose and rings unchanged. Simultaneous fit builds fusion; lost fit drains it. Build full fusion, then CERTIFY CASTING. An early submission or 4,500 unfused control steps ends the episode. Preparation is safe; there is no in-game stop, reset or retry. Click a gantry rail to set its latched target; the small cyan ticks show the current physical gantry. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls."
+      }
+    },
+    "2": {
+      "label": "easy",
+      "parameters": {
+        "rod_count": 4,
+        "active_axes": 3,
+        "tolerance": 0.32,
+        "span_ms": 5600,
+        "translation_amplitude": 1.2,
+        "yaw_amplitude": 0,
+        "pitch_amplitude": 0,
+        "servo_speed": 3.0,
+        "servo_acceleration": 16.0,
+        "shared_speed": 8.0,
+        "fusion_seconds": 7.0,
+        "leak_rate": 1.5
+      },
+      "summary": "Depth motion creates coupled constraints across all three views.",
+      "natural_language": "Steer one rigid colored rod assembly until every colored tip center lies inside its matching ring in FRONT, SIDE and TOP. Start with IGNITE FOUNDRY; after ignition, each accepted gantry control advances the dies by one fixed 20 ms step and waiting leaves the current pose and rings unchanged. Simultaneous fit builds fusion; lost fit drains it. Build full fusion, then CERTIFY CASTING. An early submission or 4,500 unfused control steps ends the episode. Preparation is safe; there is no in-game stop, reset or retry. Drag the round gantry handles; the small cyan ticks show the current physical gantry. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls.",
+      "natural_language_by_interaction": {
+        "full": "Steer one rigid colored rod assembly until every colored tip center lies inside its matching ring in FRONT, SIDE and TOP. Start with IGNITE FOUNDRY; after ignition, each accepted gantry control advances the dies by one fixed 20 ms step and waiting leaves the current pose and rings unchanged. Simultaneous fit builds fusion; lost fit drains it. Build full fusion, then CERTIFY CASTING. An early submission or 4,500 unfused control steps ends the episode. Preparation is safe; there is no in-game stop, reset or retry. Drag the round gantry handles; the small cyan ticks show the current physical gantry. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls.",
+        "simplified": "Steer one rigid colored rod assembly until every colored tip center lies inside its matching ring in FRONT, SIDE and TOP. Start with IGNITE FOUNDRY; after ignition, each accepted gantry control advances the dies by one fixed 20 ms step and waiting leaves the current pose and rings unchanged. Simultaneous fit builds fusion; lost fit drains it. Build full fusion, then CERTIFY CASTING. An early submission or 4,500 unfused control steps ends the episode. Preparation is safe; there is no in-game stop, reset or retry. Click a gantry rail to set its latched target; the small cyan ticks show the current physical gantry. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls."
+      }
+    },
+    "3": {
+      "label": "medium",
+      "parameters": {
+        "rod_count": 5,
+        "active_axes": 4,
+        "tolerance": 0.29,
+        "span_ms": 5200,
+        "translation_amplitude": 1.2,
+        "yaw_amplitude": 0.55,
+        "pitch_amplitude": 0,
+        "servo_speed": 2.8,
+        "servo_acceleration": 14.0,
+        "shared_speed": 7.0,
+        "fusion_seconds": 7.0,
+        "leak_rate": 1.5
+      },
+      "summary": "Yaw changes projected shape while translation continues.",
+      "natural_language": "Steer one rigid colored rod assembly until every colored tip center lies inside its matching ring in FRONT, SIDE and TOP. Start with IGNITE FOUNDRY; after ignition, each accepted gantry control advances the dies by one fixed 20 ms step and waiting leaves the current pose and rings unchanged. Simultaneous fit builds fusion; lost fit drains it. Build full fusion, then CERTIFY CASTING. An early submission or 4,500 unfused control steps ends the episode. Preparation is safe; there is no in-game stop, reset or retry. Drag the round gantry handles; the small cyan ticks show the current physical gantry. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls.",
+      "natural_language_by_interaction": {
+        "full": "Steer one rigid colored rod assembly until every colored tip center lies inside its matching ring in FRONT, SIDE and TOP. Start with IGNITE FOUNDRY; after ignition, each accepted gantry control advances the dies by one fixed 20 ms step and waiting leaves the current pose and rings unchanged. Simultaneous fit builds fusion; lost fit drains it. Build full fusion, then CERTIFY CASTING. An early submission or 4,500 unfused control steps ends the episode. Preparation is safe; there is no in-game stop, reset or retry. Drag the round gantry handles; the small cyan ticks show the current physical gantry. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls.",
+        "simplified": "Steer one rigid colored rod assembly until every colored tip center lies inside its matching ring in FRONT, SIDE and TOP. Start with IGNITE FOUNDRY; after ignition, each accepted gantry control advances the dies by one fixed 20 ms step and waiting leaves the current pose and rings unchanged. Simultaneous fit builds fusion; lost fit drains it. Build full fusion, then CERTIFY CASTING. An early submission or 4,500 unfused control steps ends the episode. Preparation is safe; there is no in-game stop, reset or retry. Click a gantry rail to set its latched target; the small cyan ticks show the current physical gantry. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls."
+      }
+    },
+    "4": {
+      "label": "hard",
+      "parameters": {
+        "rod_count": 6,
+        "active_axes": 5,
+        "tolerance": 0.26,
+        "span_ms": 4800,
+        "translation_amplitude": 1.2,
+        "yaw_amplitude": 0.55,
+        "pitch_amplitude": 0.45,
+        "servo_speed": 2.6,
+        "servo_acceleration": 12.0,
+        "shared_speed": 6.0,
+        "fusion_seconds": 7.0,
+        "leak_rate": 1.5
+      },
+      "summary": "Pitch adds a second noncommuting rotation and stronger projected occlusion.",
+      "natural_language": "Steer one rigid colored rod assembly until every colored tip center lies inside its matching ring in FRONT, SIDE and TOP. Start with IGNITE FOUNDRY; after ignition, each accepted gantry control advances the dies by one fixed 20 ms step and waiting leaves the current pose and rings unchanged. Simultaneous fit builds fusion; lost fit drains it. Build full fusion, then CERTIFY CASTING. An early submission or 4,500 unfused control steps ends the episode. Preparation is safe; there is no in-game stop, reset or retry. Drag the round gantry handles; the small cyan ticks show the current physical gantry. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls.",
+      "natural_language_by_interaction": {
+        "full": "Steer one rigid colored rod assembly until every colored tip center lies inside its matching ring in FRONT, SIDE and TOP. Start with IGNITE FOUNDRY; after ignition, each accepted gantry control advances the dies by one fixed 20 ms step and waiting leaves the current pose and rings unchanged. Simultaneous fit builds fusion; lost fit drains it. Build full fusion, then CERTIFY CASTING. An early submission or 4,500 unfused control steps ends the episode. Preparation is safe; there is no in-game stop, reset or retry. Drag the round gantry handles; the small cyan ticks show the current physical gantry. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls.",
+        "simplified": "Steer one rigid colored rod assembly until every colored tip center lies inside its matching ring in FRONT, SIDE and TOP. Start with IGNITE FOUNDRY; after ignition, each accepted gantry control advances the dies by one fixed 20 ms step and waiting leaves the current pose and rings unchanged. Simultaneous fit builds fusion; lost fit drains it. Build full fusion, then CERTIFY CASTING. An early submission or 4,500 unfused control steps ends the episode. Preparation is safe; there is no in-game stop, reset or retry. Click a gantry rail to set its latched target; the small cyan ticks show the current physical gantry. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls."
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "parameters": {
+        "rod_count": 7,
+        "active_axes": 5,
+        "tolerance": 0.22,
+        "span_ms": 4400,
+        "translation_amplitude": 1.3,
+        "yaw_amplitude": 0.65,
+        "pitch_amplitude": 0.55,
+        "servo_speed": 2.4,
+        "servo_acceleration": 10.0,
+        "shared_speed": 4.5,
+        "fusion_seconds": 7.0,
+        "leak_rate": 1.5
+      },
+      "summary": "Seven asymmetric rods, five changing degrees of freedom, narrow rings and coupled actuator power require sustained 3D pose correction.",
+      "natural_language": "Steer one rigid colored rod assembly until every colored tip center lies inside its matching ring in FRONT, SIDE and TOP. Start with IGNITE FOUNDRY; after ignition, each accepted gantry control advances the dies by one fixed 20 ms step and waiting leaves the current pose and rings unchanged. Simultaneous fit builds fusion; lost fit drains it. Build full fusion, then CERTIFY CASTING. An early submission or 4,500 unfused control steps ends the episode. Preparation is safe; there is no in-game stop, reset or retry. Drag the round gantry handles; the small cyan ticks show the current physical gantry. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls.",
+      "natural_language_by_interaction": {
+        "full": "Steer one rigid colored rod assembly until every colored tip center lies inside its matching ring in FRONT, SIDE and TOP. Start with IGNITE FOUNDRY; after ignition, each accepted gantry control advances the dies by one fixed 20 ms step and waiting leaves the current pose and rings unchanged. Simultaneous fit builds fusion; lost fit drains it. Build full fusion, then CERTIFY CASTING. An early submission or 4,500 unfused control steps ends the episode. Preparation is safe; there is no in-game stop, reset or retry. Drag the round gantry handles; the small cyan ticks show the current physical gantry. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls.",
+        "simplified": "Steer one rigid colored rod assembly until every colored tip center lies inside its matching ring in FRONT, SIDE and TOP. Start with IGNITE FOUNDRY; after ignition, each accepted gantry control advances the dies by one fixed 20 ms step and waiting leaves the current pose and rings unchanged. Simultaneous fit builds fusion; lost fit drains it. Build full fusion, then CERTIFY CASTING. An early submission or 4,500 unfused control steps ends the episode. Preparation is safe; there is no in-game stop, reset or retry. Click a gantry rail to set its latched target; the small cyan ticks show the current physical gantry. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls."
+      }
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Drag the physical gantry handles to command translation and rotation."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Click a gantry rail to command the same target. No tracking, interception, or automatic fit."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  },
+  "timing_rule": {
+    "mode": "action_stepped",
+    "action_tick_ms": 20,
+    "wait_behavior": "stable_until_deliberate_control",
+    "advances_on": "accepted_gantry_action"
+  }
+}

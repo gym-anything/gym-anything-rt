@@ -1,0 +1,66 @@
+{
+  "env_folder": "ballast_lantern_env",
+  "all_tasks": [
+    "ballast_lantern_d1_full_seed_0001",
+    "ballast_lantern_d1_simplified_seed_0001",
+    "ballast_lantern_d2_full_seed_0001",
+    "ballast_lantern_d2_simplified_seed_0001",
+    "ballast_lantern_d3_full_seed_0001",
+    "ballast_lantern_d3_simplified_seed_0001",
+    "ballast_lantern_d4_full_seed_0001",
+    "ballast_lantern_d4_simplified_seed_0001",
+    "ballast_lantern_d5_full_seed_0001",
+    "ballast_lantern_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "ballast_lantern_d1_full_seed_0001",
+    "ballast_lantern_d1_simplified_seed_0001",
+    "ballast_lantern_d2_full_seed_0001",
+    "ballast_lantern_d2_simplified_seed_0001",
+    "ballast_lantern_d3_full_seed_0001",
+    "ballast_lantern_d3_simplified_seed_0001",
+    "ballast_lantern_d4_full_seed_0001",
+    "ballast_lantern_d4_simplified_seed_0001",
+    "ballast_lantern_d5_full_seed_0001",
+    "ballast_lantern_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "ballast_lantern_d5_full_seed_0001"
+    ],
+    "full": [
+      "ballast_lantern_d1_full_seed_0001",
+      "ballast_lantern_d2_full_seed_0001",
+      "ballast_lantern_d3_full_seed_0001",
+      "ballast_lantern_d4_full_seed_0001",
+      "ballast_lantern_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "ballast_lantern_d1_simplified_seed_0001",
+      "ballast_lantern_d2_simplified_seed_0001",
+      "ballast_lantern_d3_simplified_seed_0001",
+      "ballast_lantern_d4_simplified_seed_0001",
+      "ballast_lantern_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "ballast_lantern_d1_full_seed_0001",
+      "ballast_lantern_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "ballast_lantern_d2_full_seed_0001",
+      "ballast_lantern_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "ballast_lantern_d3_full_seed_0001",
+      "ballast_lantern_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "ballast_lantern_d4_full_seed_0001",
+      "ballast_lantern_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "ballast_lantern_d5_full_seed_0001",
+      "ballast_lantern_d5_simplified_seed_0001"
+    ]
+  }
+}

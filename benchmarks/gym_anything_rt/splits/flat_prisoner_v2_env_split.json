@@ -1,0 +1,66 @@
+{
+  "env_folder": "flat_prisoner_v2_env",
+  "all_tasks": [
+    "flat_prisoner_v2_d1_full_seed_0001",
+    "flat_prisoner_v2_d1_simplified_seed_0001",
+    "flat_prisoner_v2_d2_full_seed_0001",
+    "flat_prisoner_v2_d2_simplified_seed_0001",
+    "flat_prisoner_v2_d3_full_seed_0001",
+    "flat_prisoner_v2_d3_simplified_seed_0001",
+    "flat_prisoner_v2_d4_full_seed_0001",
+    "flat_prisoner_v2_d4_simplified_seed_0001",
+    "flat_prisoner_v2_d5_full_seed_0001",
+    "flat_prisoner_v2_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "flat_prisoner_v2_d1_full_seed_0001",
+    "flat_prisoner_v2_d1_simplified_seed_0001",
+    "flat_prisoner_v2_d2_full_seed_0001",
+    "flat_prisoner_v2_d2_simplified_seed_0001",
+    "flat_prisoner_v2_d3_full_seed_0001",
+    "flat_prisoner_v2_d3_simplified_seed_0001",
+    "flat_prisoner_v2_d4_full_seed_0001",
+    "flat_prisoner_v2_d4_simplified_seed_0001",
+    "flat_prisoner_v2_d5_full_seed_0001",
+    "flat_prisoner_v2_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "flat_prisoner_v2_d5_full_seed_0001"
+    ],
+    "full": [
+      "flat_prisoner_v2_d1_full_seed_0001",
+      "flat_prisoner_v2_d2_full_seed_0001",
+      "flat_prisoner_v2_d3_full_seed_0001",
+      "flat_prisoner_v2_d4_full_seed_0001",
+      "flat_prisoner_v2_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "flat_prisoner_v2_d1_simplified_seed_0001",
+      "flat_prisoner_v2_d2_simplified_seed_0001",
+      "flat_prisoner_v2_d3_simplified_seed_0001",
+      "flat_prisoner_v2_d4_simplified_seed_0001",
+      "flat_prisoner_v2_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "flat_prisoner_v2_d1_full_seed_0001",
+      "flat_prisoner_v2_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "flat_prisoner_v2_d2_full_seed_0001",
+      "flat_prisoner_v2_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "flat_prisoner_v2_d3_full_seed_0001",
+      "flat_prisoner_v2_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "flat_prisoner_v2_d4_full_seed_0001",
+      "flat_prisoner_v2_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "flat_prisoner_v2_d5_full_seed_0001",
+      "flat_prisoner_v2_d5_simplified_seed_0001"
+    ]
+  }
+}

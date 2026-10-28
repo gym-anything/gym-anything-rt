@@ -1,0 +1,38 @@
+{
+  "mechanic_id": "rising_causeway_v2",
+  "created": "2026-09-30",
+  "source_anchors": [
+    "VGE-482",
+    "VGE-483",
+    "VGE-484"
+  ],
+  "source_records": "outputs/selection_round4_20260906/inputs/dashboard/data/entries/10.json",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Q.U.B.E.",
+    "https://qube.fandom.com/wiki/Cubes",
+    "https://qube.fandom.com/wiki/Terminal"
+  ],
+  "transformation": "Three staged red bridge spans, reversible yellow ramp pillars and a primed blue contact spring become independently drifting support geometry. An inertial motor courier must reach and compress the spring, then commit an aimed ballistic impulse into a moving curved delivery bay. Wheels cannot steer after release. Recent motion traces and a rolling six-second actuator/wind plan expose the outcome-affecting evolution.",
+  "original_work": true,
+  "asset_status": "procedural_original_no_third_party_media",
+  "license_note": "Source mechanics only. No Q.U.B.E. code, levels, characters, art, sound or media bundled.",
+  "implementation_boundary": "Motion seeds and geometry needed for local render/physics ship to the browser. This is an explicitly screenshot-only task and static play is inspectable. Grading replays primitive control events independently.",
+  "implementation_revision": "visible-contact-measurements-v5",
+  "observation_revision": "The original charts/traces remain. Passive contact instruments show complete physical coordinates, velocity, control latches and spring/bay/wind segment anchors; no seed, suggested aim or interception is displayed.",
+  "revision_history": [
+    {
+      "revision": "readable-motion-charts-v3",
+      "observation_revision": "Separate labelled raw-position and acceleration charts; no recommended aim or interception computation. Spring feedback now preserves released/delivered state after flight."
+    },
+    {
+      "revision": "refresh-dependent-architecture-v4",
+      "change": "D1–D3 drift spans are 5800 ms so the initial six-second chart is less effective as a complete traversal plan. Width, authority, wind, flight rules and the D5 profile are preserved.",
+      "validation": "Privileged numerical, raster and exact HTTP native evidence are separately labelled in evidence_docs. Shared paused endpoint/frame findings remain external blockers."
+    },
+    {
+      "revision": "visible-contact-measurements-v5",
+      "change": "Supply decision-relevant physical measurements during loaded contact while preserving every physical profile, control, collision rule and grader. This repairs the bounded-visible-window evidence gap.",
+      "validation": "New target-focused rendering, replay and static-play checks are recorded separately. Affected native source validation is queued under the existing admission policy; old v4 runs retain their hashes. Shared-runtime findings are separate from construction, under the October 2 clarification. Independent review and human/model calibration remain distinct."
+    }
+  ]
+}

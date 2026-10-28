@@ -1,0 +1,65 @@
+{
+  "description": "Tune caller waveforms against a reference and complete a finite phase-lock test on the one authentic carrier.",
+  "difficulty": "medium",
+  "env_id": "gym_anything_rt.wrong_number_nonrealtime_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/wrong_number_nonrealtime_d3_full_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/wrong_number_nonrealtime_d3_full_seed_0001/setup_task.sh"
+  },
+  "id": "wrong_number_nonrealtime_d3_full_seed_0001@0.2",
+  "init": {
+    "max_steps": 500,
+    "reward_type": "sparse",
+    "timeout_sec": 600
+  },
+  "metadata": {
+    "asset_manifest": "environments/wrong_number_nonrealtime_env/provenance.json",
+    "benchmark": "gym_anything_rt",
+    "control_condition": {
+      "difficulty": 3,
+      "difficulty_parameters": {
+        "drift_milli_values": [
+          -650,
+          -580,
+          580,
+          650
+        ],
+        "final_window_samples": 8,
+        "impostor_distortion_max_milli": 2250,
+        "impostor_distortion_min_milli": 1650,
+        "initial_skew_max": 4,
+        "initial_skew_min": -4,
+        "line_count": 5,
+        "maximum_sample_gap_ms": 190,
+        "minimum_final_lock_samples": 5,
+        "minimum_lock_samples": 23,
+        "phase_steps": 24,
+        "phase_tolerance_milli_steps": 1450,
+        "sample_ms": 120,
+        "skew_max": 4,
+        "skew_min": -4,
+        "skew_tolerance_milli_steps": 1000,
+        "trial_ms": 3600
+      },
+      "interaction": "full",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "wrong_number_nonrealtime"
+  },
+  "name": "Wrong Number · Static Lock Counterpart · Difficulty 3 · Full Interaction",
+  "natural_language": "Patch one carrier, align its two visible wave controls, and sustain the lock test.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "waveform-tuning",
+    "closed-loop-control",
+    "sustained-lock"
+  ],
+  "version": "0.2"
+}

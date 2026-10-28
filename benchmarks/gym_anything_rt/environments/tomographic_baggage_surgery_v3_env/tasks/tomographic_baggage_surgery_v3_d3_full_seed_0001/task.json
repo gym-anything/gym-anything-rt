@@ -1,0 +1,59 @@
+{
+  "description": "Tomographic Baggage Surgery V3: steer an inertial probe through independently moving 3D apertures, grip the backmost relic, and withdraw it cleanly.",
+  "difficulty": "medium",
+  "env_id": "gym_anything_rt.tomographic_baggage_surgery_v3_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/tomographic_baggage_surgery_v3_d3_full_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/tomographic_baggage_surgery_v3_d3_full_seed_0001/setup_task.sh"
+  },
+  "id": "tomographic_baggage_surgery_v3_d3_full_seed_0001@0.2",
+  "init": {
+    "max_steps": 600,
+    "reward_type": "sparse",
+    "timeout_sec": 600
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/tomographic_baggage_surgery_v3_v0.json",
+    "benchmark": "gym_anything_rt",
+    "capabilities": [
+      "visual understanding: 3D",
+      "temporal understanding and memory",
+      "reasoning and planning"
+    ],
+    "capability_configuration": {
+      "difficulty": 5,
+      "interaction": "full"
+    },
+    "control_condition": {
+      "difficulty": 3,
+      "difficulty_parameters": {
+        "amplitude": 1.65,
+        "aperture": 0.88,
+        "damping": 9,
+        "gain": 24,
+        "gates": 3,
+        "span_ms": 4400,
+        "speed": 0.6
+      },
+      "interaction": "full",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "tomographic_baggage_surgery_v3"
+  },
+  "name": "Tomographic Baggage Surgery V3 · Difficulty 3 · Full Interaction",
+  "natural_language": "Use only screenshots and visible controls in this task webpage. Inspect the numbered transverse slices to reveal each concealed aperture; acquired tracks remain visible and live. Scanning is safe before START and does not pause an active run. Guide the probe through moving baggage apertures, grip the pink backmost relic, then guide it out cleanly. Contact with a solid, an empty grip, exhausted time, or a rejected sealed report: the first failure ends the episode. Dashed trails show the next 1.2 seconds. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM, or page-state inspection; the terminal, shell, Python, address bar, URL or query edits, reload or navigation, browser extensions, external applications, hidden state, or unrelated tabs.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "tomographic_baggage_surgery_v3",
+    "3d-probe",
+    "moving-apertures"
+  ],
+  "version": "0.2"
+}

@@ -1,0 +1,504 @@
+{
+  "pairs": [
+    {
+      "name": "After Hours at the Reliquary",
+      "real_time_environment": "after_hours_at_the_reliquary_v2_env",
+      "non_real_time_environment": "after_hours_at_the_reliquary_nonrealtime_env"
+    },
+    {
+      "name": "Anthill Front",
+      "real_time_environment": "anthill_front_env",
+      "non_real_time_environment": "anthill_front_nonrealtime_env"
+    },
+    {
+      "name": "Apothecary Dead Reckoning",
+      "real_time_environment": "apothecary_dead_reckoning_v3_env",
+      "non_real_time_environment": "apothecary_dead_reckoning_v3_nonrealtime_env"
+    },
+    {
+      "name": "Ballast Lantern",
+      "real_time_environment": "ballast_lantern_env",
+      "non_real_time_environment": "ballast_lantern_nonrealtime_env"
+    },
+    {
+      "name": "Bandaged Rose Window",
+      "real_time_environment": "bandaged_rose_window_v3_env",
+      "non_real_time_environment": "bandaged_rose_window_v3_nonrealtime_env"
+    },
+    {
+      "name": "Blind Dice Courier",
+      "real_time_environment": "blind_dice_courier_v2_env",
+      "non_real_time_environment": "blind_dice_courier_nonrealtime_env"
+    },
+    {
+      "name": "Gyroscopic Tilt Board",
+      "real_time_environment": "board_game_captcha_v2_env",
+      "non_real_time_environment": "board_game_captcha_nonrealtime_env"
+    },
+    {
+      "name": "Bomb Manual From Hell",
+      "real_time_environment": "bomb_manual_from_hell_v2_env",
+      "non_real_time_environment": "bomb_manual_from_hell_nonrealtime_env"
+    },
+    {
+      "name": "Branch Repair",
+      "real_time_environment": "branch_repair_v3_env",
+      "non_real_time_environment": "branch_repair_v3_nonrealtime_env"
+    },
+    {
+      "name": "Bureaucratic Signature Trap",
+      "real_time_environment": "bureaucratic_signature_trap_v3_env",
+      "non_real_time_environment": "bureaucratic_signature_trap_v3_nonrealtime_env"
+    },
+    {
+      "name": "Cell Gatekeeper",
+      "real_time_environment": "cell_gatekeeper_v2_env",
+      "non_real_time_environment": "cell_gatekeeper_nonrealtime_env"
+    },
+    {
+      "name": "Charter of the Nine Cantons",
+      "real_time_environment": "charter_of_the_nine_cantons_v3_env",
+      "non_real_time_environment": "charter_of_the_nine_cantons_v3_nonrealtime_env"
+    },
+    {
+      "name": "Circle Limit Twist",
+      "real_time_environment": "circle_limit_twist_v2_env",
+      "non_real_time_environment": "circle_limit_twist_nonrealtime_env"
+    },
+    {
+      "name": "Clockbeat Catacomb",
+      "real_time_environment": "clockbeat_catacomb_v2_env",
+      "non_real_time_environment": "clockbeat_catacomb_nonrealtime_env"
+    },
+    {
+      "name": "Clockwork Clutch Safe",
+      "real_time_environment": "clockwork_clutch_safe_v2_env",
+      "non_real_time_environment": "clockwork_clutch_safe_nonrealtime_env"
+    },
+    {
+      "name": "Clockwork Doppelgänger Customs",
+      "real_time_environment": "clockwork_doppelganger_customs_v3_env",
+      "non_real_time_environment": "clockwork_doppelganger_customs_v3_nonrealtime_env"
+    },
+    {
+      "name": "Cloudpost Circuit",
+      "real_time_environment": "cloudpost_circuit_env",
+      "non_real_time_environment": "cloudpost_circuit_nonrealtime_env"
+    },
+    {
+      "name": "Cloudstep Caddie",
+      "real_time_environment": "cloudstep_caddie_v2_env",
+      "non_real_time_environment": "cloudstep_caddie_nonrealtime_env"
+    },
+    {
+      "name": "Live Control-Flow Wiring Lab",
+      "real_time_environment": "code_to_diagram_captcha_v3_env",
+      "non_real_time_environment": "code_to_diagram_captcha_v3_nonrealtime_env"
+    },
+    {
+      "name": "Collision Chimes",
+      "real_time_environment": "collision_chimes_v2_env",
+      "non_real_time_environment": "collision_chimes_nonrealtime_env"
+    },
+    {
+      "name": "Concertina Courier",
+      "real_time_environment": "concertina_courier_v2_env",
+      "non_real_time_environment": "concertina_courier_nonrealtime_env"
+    },
+    {
+      "name": "Consent Gauntlet",
+      "real_time_environment": "consent_gauntlet_env",
+      "non_real_time_environment": "consent_gauntlet_nonrealtime_env"
+    },
+    {
+      "name": "Consequences Boss",
+      "real_time_environment": "consequences_boss_v2_env",
+      "non_real_time_environment": "consequences_boss_nonrealtime_env"
+    },
+    {
+      "name": "Coordinates by Another Name",
+      "real_time_environment": "coordinates_by_another_name_v3_env",
+      "non_real_time_environment": "coordinates_by_another_name_v3_nonrealtime_env"
+    },
+    {
+      "name": "Courtesy Junction",
+      "real_time_environment": "courtesy_junction_env",
+      "non_real_time_environment": "courtesy_junction_nonrealtime_env"
+    },
+    {
+      "name": "Crackglaze Crossing",
+      "real_time_environment": "crackglaze_crossing_v3_env",
+      "non_real_time_environment": "crackglaze_crossing_v3_nonrealtime_env"
+    },
+    {
+      "name": "CRAFTCHA: Alchemy Bench",
+      "real_time_environment": "craftcha_alchemy_bench_v2_env",
+      "non_real_time_environment": "craftcha_alchemy_bench_nonrealtime_env"
+    },
+    {
+      "name": "Crash-Deadline Hovercar",
+      "real_time_environment": "crash_deadline_hovercar_env",
+      "non_real_time_environment": "crash_deadline_hovercar_nonrealtime_env"
+    },
+    {
+      "name": "Crater Walker",
+      "real_time_environment": "crater_walker_v3_env",
+      "non_real_time_environment": "crater_walker_v3_nonrealtime_env"
+    },
+    {
+      "name": "Cursor-Controlled Constellation Hunt",
+      "real_time_environment": "cursor_constellation_hunt_v3_env",
+      "non_real_time_environment": "cursor_constellation_hunt_v3_nonrealtime_env"
+    },
+    {
+      "name": "Polarized Palimpsest",
+      "real_time_environment": "cursor_lens_reveal_env",
+      "non_real_time_environment": "cursor_lens_reveal_nonrealtime_env"
+    },
+    {
+      "name": "Dead Man's Switch",
+      "real_time_environment": "dead_mans_switch_v2_env",
+      "non_real_time_environment": "dead_mans_switch_nonrealtime_env"
+    },
+    {
+      "name": "Downsky Causeway",
+      "real_time_environment": "downsky_causeway_v2_env",
+      "non_real_time_environment": "downsky_causeway_nonrealtime_env"
+    },
+    {
+      "name": "Elastic Membrane Sorter",
+      "real_time_environment": "elastic_membrane_sorter_v2_env",
+      "non_real_time_environment": "elastic_membrane_sorter_nonrealtime_env"
+    },
+    {
+      "name": "Elbow Engine",
+      "real_time_environment": "elbow_engine_v2_env",
+      "non_real_time_environment": "elbow_engine_nonrealtime_env"
+    },
+    {
+      "name": "Ember Anvil",
+      "real_time_environment": "ember_anvil_v3_env",
+      "non_real_time_environment": "ember_anvil_v3_nonrealtime_env"
+    },
+    {
+      "name": "Facet Lantern",
+      "real_time_environment": "facet_lantern_v3_env",
+      "non_real_time_environment": "facet_lantern_v3_nonrealtime_env"
+    },
+    {
+      "name": "Firewatch Fold",
+      "real_time_environment": "firewatch_fold_v3_env",
+      "non_real_time_environment": "firewatch_fold_v3_nonrealtime_env"
+    },
+    {
+      "name": "Five-Second Rule",
+      "real_time_environment": "five_second_rule_env",
+      "non_real_time_environment": "five_second_rule_nonrealtime_env"
+    },
+    {
+      "name": "The Flat Prisoner",
+      "real_time_environment": "flat_prisoner_v2_env",
+      "non_real_time_environment": "flat_prisoner_nonrealtime_env"
+    },
+    {
+      "name": "Flip-Gate Cascade",
+      "real_time_environment": "flip_gate_cascade_v3_env",
+      "non_real_time_environment": "flip_gate_cascade_v3_nonrealtime_env"
+    },
+    {
+      "name": "Fluke Census",
+      "real_time_environment": "fluke_census_v3_env",
+      "non_real_time_environment": "fluke_census_v3_nonrealtime_env"
+    },
+    {
+      "name": "Forced-Perspective Moving Day",
+      "real_time_environment": "forced_perspective_moving_day_v2_env",
+      "non_real_time_environment": "forced_perspective_moving_day_nonrealtime_env"
+    },
+    {
+      "name": "Four-Pane Pilgrimage",
+      "real_time_environment": "four_pane_pilgrimage_v3_env",
+      "non_real_time_environment": "four_pane_pilgrimage_v3_nonrealtime_env"
+    },
+    {
+      "name": "Funeral Ritual",
+      "real_time_environment": "funeral_ritual_v2_env",
+      "non_real_time_environment": "funeral_ritual_nonrealtime_env"
+    },
+    {
+      "name": "Hearthlift Courier",
+      "real_time_environment": "hearthlift_courier_v3_env",
+      "non_real_time_environment": "hearthlift_courier_v3_nonrealtime_env"
+    },
+    {
+      "name": "Hologram Silhouette Foundry",
+      "real_time_environment": "hologram_silhouette_foundry_v2_env",
+      "non_real_time_environment": "hologram_silhouette_foundry_nonrealtime_env"
+    },
+    {
+      "name": "Horizon Relay",
+      "real_time_environment": "horizon_relay_v2_env",
+      "non_real_time_environment": "horizon_relay_nonrealtime_env"
+    },
+    {
+      "name": "Impossible Ecology",
+      "real_time_environment": "impossible_ecology_v2_env",
+      "non_real_time_environment": "impossible_ecology_nonrealtime_env"
+    },
+    {
+      "name": "Impossible Panorama",
+      "real_time_environment": "impossible_panorama_env",
+      "non_real_time_environment": "impossible_panorama_nonrealtime_env"
+    },
+    {
+      "name": "Parallax / Inertial Jigsaw Alignment",
+      "real_time_environment": "jigsaw_slider_alignment_v3_env",
+      "non_real_time_environment": "jigsaw_slider_alignment_v3_nonrealtime_env"
+    },
+    {
+      "name": "Lampwrights Program",
+      "real_time_environment": "lampwrights_program_v2_env",
+      "non_real_time_environment": "lampwrights_program_nonrealtime_env"
+    },
+    {
+      "name": "Lantern Loft",
+      "real_time_environment": "lantern_loft_v2_env",
+      "non_real_time_environment": "lantern_loft_nonrealtime_env"
+    },
+    {
+      "name": "Lanternfin Dive",
+      "real_time_environment": "lanternfin_dive_v2_env",
+      "non_real_time_environment": "lanternfin_dive_nonrealtime_env"
+    },
+    {
+      "name": "Lanternwing Roundup",
+      "real_time_environment": "lanternwing_roundup_env",
+      "non_real_time_environment": "lanternwing_roundup_nonrealtime_env"
+    },
+    {
+      "name": "The Last Carbon Isles",
+      "real_time_environment": "last_carbon_isles_v2_env",
+      "non_real_time_environment": "last_carbon_isles_nonrealtime_env"
+    },
+    {
+      "name": "Letter Rapids",
+      "real_time_environment": "letter_rapids_v2_env",
+      "non_real_time_environment": "letter_rapids_nonrealtime_env"
+    },
+    {
+      "name": "LIDAR Blacksite",
+      "real_time_environment": "lidar_blacksite_v2_env",
+      "non_real_time_environment": "lidar_blacksite_nonrealtime_env"
+    },
+    {
+      "name": "Living Scaffold",
+      "real_time_environment": "living_scaffold_v3_env",
+      "non_real_time_environment": "living_scaffold_v3_nonrealtime_env"
+    },
+    {
+      "name": "Magnetic-Stripe Purgatory",
+      "real_time_environment": "magnetic_stripe_purgatory_v3_env",
+      "non_real_time_environment": "magnetic_stripe_purgatory_v3_nonrealtime_env"
+    },
+    {
+      "name": "Five-System Verification Reactor",
+      "real_time_environment": "microgame_gauntlet_env",
+      "non_real_time_environment": "microgame_gauntlet_nonrealtime_env"
+    },
+    {
+      "name": "Isometric Voxel Extraction Mine",
+      "real_time_environment": "minecraft_block_grid_v2_env",
+      "non_real_time_environment": "minecraft_block_grid_nonrealtime_env"
+    },
+    {
+      "name": "Motion-Only Ghost Jigsaw",
+      "real_time_environment": "motion_only_ghost_jigsaw_v2_env",
+      "non_real_time_environment": "motion_only_ghost_jigsaw_nonrealtime_env"
+    },
+    {
+      "name": "Museum of Lost Gestures",
+      "real_time_environment": "museum_of_lost_gestures_v2_env",
+      "non_real_time_environment": "museum_of_lost_gestures_nonrealtime_env"
+    },
+    {
+      "name": "Occlusion Shell Swindle",
+      "real_time_environment": "occlusion_shell_swindle_v2_env",
+      "non_real_time_environment": "occlusion_shell_swindle_nonrealtime_env"
+    },
+    {
+      "name": "Parallel Grillmaster",
+      "real_time_environment": "parallel_grillmaster_v2_env",
+      "non_real_time_environment": "parallel_grillmaster_nonrealtime_env"
+    },
+    {
+      "name": "Pearl Lattice",
+      "real_time_environment": "pearl_lattice_v2_env",
+      "non_real_time_environment": "pearl_lattice_nonrealtime_env"
+    },
+    {
+      "name": "The Photograph Eats the Room",
+      "real_time_environment": "photograph_eats_the_room_v2_env",
+      "non_real_time_environment": "photograph_eats_the_room_nonrealtime_env"
+    },
+    {
+      "name": "Pocket Locksmith",
+      "real_time_environment": "pocket_locksmith_v3_env",
+      "non_real_time_environment": "pocket_locksmith_v3_nonrealtime_env"
+    },
+    {
+      "name": "Polycube Parcel",
+      "real_time_environment": "polycube_parcel_v2_env",
+      "non_real_time_environment": "polycube_parcel_nonrealtime_env"
+    },
+    {
+      "name": "Polyrhythm Customs",
+      "real_time_environment": "polyrhythm_customs_v2_env",
+      "non_real_time_environment": "polyrhythm_customs_nonrealtime_env"
+    },
+    {
+      "name": "Popup Exorcist",
+      "real_time_environment": "popup_exorcist_v3_env",
+      "non_real_time_environment": "popup_exorcist_v3_nonrealtime_env"
+    },
+    {
+      "name": "Rayglass Vault",
+      "real_time_environment": "rayglass_vault_v2_env",
+      "non_real_time_environment": "rayglass_vault_nonrealtime_env"
+    },
+    {
+      "name": "Recursive Dollhouse Smuggling",
+      "real_time_environment": "recursive_dollhouse_smuggling_v2_env",
+      "non_real_time_environment": "recursive_dollhouse_smuggling_nonrealtime_env"
+    },
+    {
+      "name": "Reflow Vitrine",
+      "real_time_environment": "reflow_vitrine_v3_env",
+      "non_real_time_environment": "reflow_vitrine_v3_nonrealtime_env"
+    },
+    {
+      "name": "Dual-Projection Sculpture Rig",
+      "real_time_environment": "relation_prompt_grounding_v3_env",
+      "non_real_time_environment": "relation_prompt_grounding_v3_nonrealtime_env"
+    },
+    {
+      "name": "Reload Interruption",
+      "real_time_environment": "reload_interruption_v2_env",
+      "non_real_time_environment": "reload_interruption_nonrealtime_env"
+    },
+    {
+      "name": "Reveal to Identify",
+      "real_time_environment": "reveal_to_identify_v2_env",
+      "non_real_time_environment": "reveal_to_identify_nonrealtime_env"
+    },
+    {
+      "name": "Four-Tab Robot Handshake",
+      "real_time_environment": "reverse_identity_gate_env",
+      "non_real_time_environment": "reverse_identity_gate_nonrealtime_env"
+    },
+    {
+      "name": "Ribbon Switchboard",
+      "real_time_environment": "ribbon_switchboard_v3_env",
+      "non_real_time_environment": "ribbon_switchboard_v3_nonrealtime_env"
+    },
+    {
+      "name": "Rising Causeway",
+      "real_time_environment": "rising_causeway_v2_env",
+      "non_real_time_environment": "rising_causeway_nonrealtime_env"
+    },
+    {
+      "name": "Rorschach / Subjective Prompt With A Fixed Rubric",
+      "real_time_environment": "rorschach_fixed_rubric_v3_env",
+      "non_real_time_environment": "rorschach_fixed_rubric_v3_nonrealtime_env"
+    },
+    {
+      "name": "Rotate The Wrong Thing Upright",
+      "real_time_environment": "rotate_wrong_thing_upright_v3_env",
+      "non_real_time_environment": "rotate_wrong_thing_upright_v3_nonrealtime_env"
+    },
+    {
+      "name": "Rotating On-Screen Keyboard",
+      "real_time_environment": "rotating_keyboard_v2_env",
+      "non_real_time_environment": "rotating_keyboard_nonrealtime_env"
+    },
+    {
+      "name": "Shadow Crime Lab",
+      "real_time_environment": "shadow_crime_lab_v3_env",
+      "non_real_time_environment": "shadow_crime_lab_v3_nonrealtime_env"
+    },
+    {
+      "name": "Slot-Reel Character Capture",
+      "real_time_environment": "slot_reel_capture_env",
+      "non_real_time_environment": "slot_reel_capture_nonrealtime_env"
+    },
+    {
+      "name": "Parallax Orchard",
+      "real_time_environment": "surreal_apple_on_tree_grid_v2_env",
+      "non_real_time_environment": "surreal_apple_on_tree_grid_nonrealtime_env"
+    },
+    {
+      "name": "Surveyors Toybox",
+      "real_time_environment": "surveyors_toybox_v2_env",
+      "non_real_time_environment": "surveyors_toybox_nonrealtime_env"
+    },
+    {
+      "name": "First Change Memory",
+      "real_time_environment": "temporal_memory_first_change_v3_env",
+      "non_real_time_environment": "temporal_memory_first_change_v3_nonrealtime_env"
+    },
+    {
+      "name": "Three-Camera Claw Machine",
+      "real_time_environment": "three_camera_claw_machine_v2_env",
+      "non_real_time_environment": "three_camera_claw_machine_nonrealtime_env"
+    },
+    {
+      "name": "Tiny FPS Customs",
+      "real_time_environment": "tiny_fps_customs_v2_env",
+      "non_real_time_environment": "tiny_fps_customs_nonrealtime_env"
+    },
+    {
+      "name": "Tomographic Baggage Surgery",
+      "real_time_environment": "tomographic_baggage_surgery_v3_env",
+      "non_real_time_environment": "tomographic_baggage_surgery_v3_nonrealtime_env"
+    },
+    {
+      "name": "Top-Face Dice Arithmetic",
+      "real_time_environment": "top_face_dice_arithmetic_v2_env",
+      "non_real_time_environment": "top_face_dice_arithmetic_nonrealtime_env"
+    },
+    {
+      "name": "Blind Corridor Oscilloscope",
+      "real_time_environment": "trace_shape_without_walls_v3_env",
+      "non_real_time_environment": "trace_shape_without_walls_v3_nonrealtime_env"
+    },
+    {
+      "name": "Two-Lamp Dyeworks",
+      "real_time_environment": "two_lamp_dyeworks_v3_env",
+      "non_real_time_environment": "two_lamp_dyeworks_v3_nonrealtime_env"
+    },
+    {
+      "name": "The Unlabeled Drawer",
+      "real_time_environment": "unlabeled_drawer_v2_env",
+      "non_real_time_environment": "unlabeled_drawer_nonrealtime_env"
+    },
+    {
+      "name": "The Unwatched Wing",
+      "real_time_environment": "unwatched_wing_v3_env",
+      "non_real_time_environment": "unwatched_wing_v3_nonrealtime_env"
+    },
+    {
+      "name": "Wonky Text Under Hostile Rendering",
+      "real_time_environment": "wonky_text_hostile_rendering_v3_env",
+      "non_real_time_environment": "wonky_text_hostile_rendering_v3_nonrealtime_env"
+    },
+    {
+      "name": "Wrong Number",
+      "real_time_environment": "wrong_number_v2_env",
+      "non_real_time_environment": "wrong_number_nonrealtime_env"
+    },
+    {
+      "name": "Zero-G Cable Autopsy",
+      "real_time_environment": "zero_g_cable_autopsy_v2_env",
+      "non_real_time_environment": "zero_g_cable_autopsy_nonrealtime_env"
+    }
+  ]
+}

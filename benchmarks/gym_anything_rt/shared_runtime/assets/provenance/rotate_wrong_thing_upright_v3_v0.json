@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "rotate_wrong_thing_upright_v3",
+  "revision": "wind-gimbal-2",
+  "source_anchors": [
+    "whats-up-image-orientation",
+    "sketcha-3d-orientation",
+    "arkose-funcaptcha-internals-crawlex"
+  ],
+  "sources": [
+    {
+      "anchor": "whats-up-image-orientation",
+      "url": "https://research.google/pubs/whats-up-captcha-a-captcha-based-on-image-orientation/",
+      "paper": "https://www.ra.ethz.ch/cdstore/www2009/proc/docs/p841.pdf"
+    },
+    {
+      "anchor": "sketcha-3d-orientation",
+      "url": "https://pixl.cs.princeton.edu/pubs/Ross_2010_SAC/index.php",
+      "paper": "https://pixl.cs.princeton.edu/pubs/Ross_2010_SAC/Ross-WWW2010.pdf"
+    },
+    {
+      "anchor": "arkose-funcaptcha-internals-crawlex",
+      "url": "https://blog.crawlex.net/blog/arkose-funcaptcha-internals/"
+    }
+  ],
+  "transformation": "Upright orientation of a rendered 3D object becomes continuous steering of powered, coupled gimbals under smooth changing loads. True rotations and camera projections, recent angle/speed evidence and a bounded load forecast replace a static orientation answer.",
+  "assets": [
+    {
+      "kind": "procedural_canvas_geometry",
+      "license": "repository code; no source images or meshes copied"
+    }
+  ],
+  "original_environment": "rotate_wrong_thing_upright_env",
+  "selection_file": "creation_audit_logs/realtime_source_remaining48_20261002/selection.json",
+  "survey_root": "outputs/selection_round4_20260906/inputs",
+  "survey_ids": []
+}

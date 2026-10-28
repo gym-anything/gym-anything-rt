@@ -1,0 +1,54 @@
+{
+  "description": "Inspect concealed plate fiducials, then keep their matching moving guides registered using inertial handles throughout a moving paper strip.",
+  "difficulty": "hard",
+  "env_id": "gym_anything_rt.wonky_text_hostile_rendering_v3_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/wonky_text_hostile_rendering_v3_d4_full_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/wonky_text_hostile_rendering_v3_d4_full_seed_0001/setup_task.sh"
+  },
+  "id": "wonky_text_hostile_rendering_v3_d4_full_seed_0001@0.2",
+  "init": {
+    "max_steps": 100,
+    "reward_type": "sparse",
+    "timeout_sec": 600
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/wonky_text_hostile_rendering_v3_v0.json",
+    "benchmark": "gym_anything_rt",
+    "capabilities": [
+      "visual understanding (2D)",
+      "temporal understanding and memory",
+      "reasoning and planning"
+    ],
+    "control_condition": {
+      "difficulty": 4,
+      "difficulty_parameters": {
+        "axes": 2,
+        "plate_count": 3,
+        "servo_ms": 300,
+        "span_ms": 8700,
+        "tolerance": 17,
+        "warp": 0.5
+      },
+      "interaction": "full",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "interaction_baseline": "full",
+    "mechanic_id": "wonky_text_hostile_rendering_v3"
+  },
+  "name": "Wonky Text Under Hostile Rendering V3 · Difficulty 4 · Full Interaction",
+  "natural_language": "Each plate has two moving guides, marked with a dot or diamond; one is a reflected ghost. Sweep the loupe over each covered plate sleeve to find its true registration stamp. Discovered stamps stay visible. Inspect and prepare before START PRESS; inspection never pauses a running press. Keep each solid handle's cross inside the guide matching that plate's stamp. The short trail shows recent drift; the dotted line and small bead show the next 600 ms. The square is your commanded position: the solid handle follows with inertia. Clean exposure accumulates only while all crosses are inside their rings; paper keeps feeding otherwise. Color separation outside a ring permanently spoils the paper. Finish 24 seconds of clean exposure within 40 seconds, before the spoil gauge fills. There is one attempt; an early submission ends it.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "wonky_text_hostile_rendering_v3",
+    "real-time"
+  ],
+  "version": "0.2"
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "cloudpost_circuit",
+  "baseline": {"difficulty": 4, "interaction": "full", "real_time": "live"},
+  "difficulty": {
+    "1": {"label": "very_easy", "summary": "Two widely spaced, slow seals with a wide contact radius and responsive steering.", "parameters": {"target_count": 2, "spacing": 126, "lateral_span": 30, "vertical_span": 22, "flight_speed": 1.55, "turn_step": 0.34, "contact_radius": 19, "scenery_count": 8}},
+    "2": {"label": "easy", "summary": "Three seals introduce moderate lateral and vertical changes while retaining a forgiving contact radius.", "parameters": {"target_count": 3, "spacing": 112, "lateral_span": 46, "vertical_span": 34, "flight_speed": 1.78, "turn_step": 0.30, "contact_radius": 16, "scenery_count": 12}},
+    "3": {"label": "medium", "summary": "Four seals are distributed through a deeper route with larger 3D heading corrections and a smaller contact region.", "parameters": {"target_count": 4, "spacing": 101, "lateral_span": 63, "vertical_span": 47, "flight_speed": 2.05, "turn_step": 0.27, "contact_radius": 14, "scenery_count": 17}},
+    "4": {"label": "hard", "summary": "Baseline: five seals occupy a long zig-zagging volume; speed, turn response and contact radius require repeated visual correction.", "parameters": {"target_count": 5, "spacing": 92, "lateral_span": 78, "vertical_span": 59, "flight_speed": 2.30, "turn_step": 0.24, "contact_radius": 12, "scenery_count": 22}},
+    "5": {"label": "very_hard", "summary": "Seven seals arrive faster through a taller, wider route with the narrowest world-space contact radius and slower heading response.", "parameters": {"target_count": 7, "spacing": 80, "lateral_span": 96, "vertical_span": 72, "flight_speed": 2.65, "turn_step": 0.21, "contact_radius": 10, "scenery_count": 30}}
+  },
+  "interaction": {
+    "simplified": {"implemented": true, "summary": "Use visible turn, climb, dive, and level trim buttons that adjust the flight vector."},
+    "full": {"implemented": true, "summary": "Move the pointer through the flight field to steer the plane continuously."}
+  },
+  "real_time": {"play_time_seconds": 150, "observation_window_ms": 600, "frames_per_observation": 6}
+}

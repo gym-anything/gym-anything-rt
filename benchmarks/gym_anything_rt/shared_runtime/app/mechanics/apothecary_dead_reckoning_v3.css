@@ -1,0 +1,43 @@
+body[data-mechanic="apothecary_dead_reckoning_v3"] { margin:0; overflow:hidden; background:radial-gradient(ellipse at 40% 20%,#243a31,#101914 70%); color:#e1d4ad; font-family:Georgia,serif; }
+body[data-mechanic="apothecary_dead_reckoning_v3"] #app { display:flex; align-items:center; justify-content:center; width:100vw; height:100vh; min-height:0; padding:0; }
+.apoth2 { box-sizing:border-box; position:relative; width:min(1260px,calc(100vw - 28px)); padding:18px 20px; border:1px solid #907c4c; box-shadow:0 20px 80px #0008,inset 0 0 0 5px #0d1712; background:linear-gradient(110deg,#1e2a22,#13201a); user-select:none; }
+.apoth2 header { display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #736848; padding:0 0 12px; }
+.apoth2 h1 { margin:5px 0 0; font:normal 28px Georgia,serif; color:#f0e5c8; }
+.apoth2 small { font:10px/1.35 ui-monospace,monospace; letter-spacing:.04em; color:#a5ad91; }
+.apoth2 header aside { font:13px ui-monospace,monospace; color:#cbb271; }
+.apoth2-order { display:flex; align-items:center; gap:12px; margin:10px 0 14px; font-size:14px; }
+.apoth2-order span { color:#e5d5a0; }
+.apoth2-order em { color:#859879; font-style:normal; }
+.apoth2-order b { margin-left:auto; max-width:330px; font:12px/1.3 ui-sans-serif,sans-serif; font-weight:normal; color:#bacbb5; }
+.apoth2 main { display:grid; grid-template-columns:minmax(0,1fr) 260px; gap:18px; }
+.apoth2-map-frame { min-width:0; align-self:center; border:5px solid #59492d; box-shadow:0 6px 20px #0006; background:#d3bd90; }
+#apoth2-map { display:block; width:100%; height:auto; aspect-ratio:840/460; }
+#apoth2-potency { padding:11px; text-align:center; background:#15281f; color:#b6d0b1; font:12px ui-monospace,monospace; }
+.apoth2-bench { padding:10px 12px; border:1px solid #665e40; background:linear-gradient(#293128,#17231c); }
+.apoth2-jars { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:7px; }
+.apoth2 button { color:#e2d5ad; background:#17251e; border:1px solid #766b49; cursor:pointer; }
+.apoth2 button:hover { border-color:#d3b767; }
+.apoth2-jars button { padding:8px 2px; font:12px Georgia; touch-action:none; }
+.apoth2-jars button i { display:block; font:25px Georgia; color:var(--herb); }
+.apoth2-jars button small { display:block; margin-top:5px; font-size:8px; color:#a2ac90; }
+.apoth2-jars button.selected { border-color:var(--herb); box-shadow:inset 0 0 0 2px var(--herb); }
+.apoth2-jars button.held { box-shadow:0 0 18px var(--herb); }
+.apoth2-mortar { position:relative; display:grid; grid-template-columns:50px 1fr; gap:3px 8px; align-items:center; margin:12px 0; padding:9px 5px; border:1px dashed #9e9368; background:radial-gradient(ellipse,#4a5848,#1f2c23); min-height:52px; }
+.apoth2-mortar span { grid-row:1/3; text-align:center; font:48px Georgia; color:#c1b996; }
+.apoth2-mortar b { color:#d9d1aa; font:14px Georgia; }
+.apoth2-mortar small { font-size:9px; letter-spacing:0; }
+.apoth2 label { display:block; position:relative; margin:0 0 16px; font:11px ui-monospace,monospace; color:#c6cbb0; }
+.apoth2 label b { float:right; color:#dfc278; }
+.apoth2-track { position:relative; margin:13px 8px 8px; height:24px; border:1px solid #77866a; background:linear-gradient(90deg,#1c2d23,#61745b); touch-action:none; cursor:pointer; }
+.apoth2-track::before { content:''; position:absolute; left:0; right:0; top:11px; border-top:1px solid #d0c69277; }
+.apoth2-track i { position:absolute; top:-3px; height:30px; width:22px; margin-left:-11px; border:1px solid #e7d3a1; border-radius:9px; box-sizing:border-box; background:linear-gradient(90deg,#756246,#d6c18e,#756246); box-shadow:2px 3px 5px #0008; }
+.apoth2 footer { display:flex; gap:12px; align-items:stretch; margin-top:14px; min-height:42px; border-top:1px solid #665e40; padding-top:12px; }
+.apoth2 .readout { flex:1; align-self:center; font:12px/1.4 ui-sans-serif,sans-serif; color:#b9c8b0; background:none; }
+.apoth2 footer button { padding:8px 15px; font:11px ui-monospace,monospace; }
+.apoth2 button:disabled { opacity:.4; cursor:default; }
+.apoth2-verdict { position:absolute; z-index:20; left:24%; right:24%; top:41%; padding:22px; text-align:center; border:2px solid #ccbd87; background:#14291fee; box-shadow:0 12px 50px #0009; pointer-events:none; }
+.apoth2-verdict[hidden] { display:none; }
+.apoth2-verdict strong { display:block; font:35px Georgia; letter-spacing:.1em; color:#dfe9b2; }
+.apoth2-verdict span { display:block; font:14px Georgia; margin-top:9px; }
+.apoth2-verdict[data-status="fail"] { border-color:#bb6853; background:#361c19ee; }
+@media (max-height:750px) { .apoth2 { padding:14px 18px; } .apoth2 h1 { font-size:24px; } .apoth2-bench { padding-block:6px; } .apoth2 label { margin-bottom:12px; } .apoth2 header { padding-bottom:8px; } .apoth2 footer { margin-top:9px; padding-top:8px; } }

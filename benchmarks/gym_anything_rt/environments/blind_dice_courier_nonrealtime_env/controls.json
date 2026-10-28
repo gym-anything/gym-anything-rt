@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "blind_dice_courier_nonrealtime",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "One fixed aperture between the die and dock, with any face accepted; route and clearance are the constraints.",
+      "natural_language": "Roll the die through the single fixed opening to the dock. Any face is accepted. One press settles one square in 0.4 seconds. Keep the whole tipping die inside the opening until it clears. Shutter contact or an incomplete submission ends the episode. Waiting between rolls does not change the aperture. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to or interact with pre-existing, unrelated, blank, or browser-settings tabs. Tabs opened by visible task controls are allowed only if they are part of this task, using their visible controls only.",
+      "parameters": {
+        "columns": 5,
+        "rows": 5,
+        "gate_columns": [
+          2
+        ],
+        "gap_height": 2.55,
+        "sweep_ms": 6000,
+        "roll_ms": 400,
+        "face_count": 0,
+        "shutters": 1,
+        "orientation_visibility": "always",
+        "scanner_count": 0,
+        "pillar_count": 0
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "One top-face gate adds orientation planning to fixed-aperture clearance. Faces stay visible and the route has no pillars.",
+      "natural_language": "Roll the die through the single fixed face gate to the dock. Match the marked top face on arrival. Faces remain visible. One press settles one square in 0.6 seconds. Keep the whole tipping die inside the opening until it clears. Shutter contact, a wrong face, or an incomplete submission ends the episode. Waiting between rolls does not change the aperture. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to or interact with pre-existing, unrelated, blank, or browser-settings tabs. Tabs opened by visible task controls are allowed only if they are part of this task, using their visible controls only.",
+      "parameters": {
+        "columns": 7,
+        "rows": 5,
+        "gate_columns": [
+          3
+        ],
+        "gap_height": 2.45,
+        "sweep_ms": 7000,
+        "roll_ms": 600,
+        "face_count": 1,
+        "shutters": 1,
+        "orientation_visibility": "always",
+        "scanner_count": 0,
+        "pillar_count": 0
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Hidden orientation between three scanners combines fixed-aperture clearance with route-dependent cube state.",
+      "natural_language": "Deliver the labelled die through every fixed face gate to the green dock. One press settles it one square in 0.9 seconds. Match each gate\u2019s top face (and east face when marked) on arrival, and keep the whole tipping die inside every fixed opening until it clears. Scanners reveal sealed faces. The fixed aperture rows remain visible. A shutter contact, wrong face, or incomplete submission ends this episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to or interact with pre-existing, unrelated, blank, or browser-settings tabs. Tabs opened by visible task controls are allowed only if they are part of this task, using their visible controls only.",
+      "parameters": {
+        "columns": 15,
+        "rows": 7,
+        "gate_columns": [
+          3,
+          7,
+          11
+        ],
+        "gap_height": 2.3,
+        "sweep_ms": 9000,
+        "roll_ms": 900,
+        "face_count": 1,
+        "shutters": 1,
+        "orientation_visibility": "scanners",
+        "scanner_count": 3,
+        "pillar_count": 2
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Dual-face gates and fewer scanners constrain the available rows and detours through fixed apertures.",
+      "natural_language": "Deliver the labelled die through every fixed face gate to the green dock. One press settles it one square in 0.9 seconds. Match each gate\u2019s top face (and east face when marked) on arrival, and keep the whole tipping die inside every fixed opening until it clears. Scanners reveal sealed faces. The fixed aperture rows remain visible. A shutter contact, wrong face, or incomplete submission ends this episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to or interact with pre-existing, unrelated, blank, or browser-settings tabs. Tabs opened by visible task controls are allowed only if they are part of this task, using their visible controls only.",
+      "parameters": {
+        "columns": 15,
+        "rows": 7,
+        "gate_columns": [
+          3,
+          7,
+          11
+        ],
+        "gap_height": 2.25,
+        "sweep_ms": 8500,
+        "roll_ms": 900,
+        "face_count": 2,
+        "shutters": 1,
+        "orientation_visibility": "scanners",
+        "scanner_count": 2,
+        "pillar_count": 3
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Three pairs of fixed shutter slats, dual-face gates and one scanner couple clearance to orientation and routing.",
+      "natural_language": "Deliver the labelled die through every fixed face gate to the green dock. One press settles it one square in 0.9 seconds. Match each gate\u2019s top face (and east face when marked) on arrival, and keep the whole tipping die inside every fixed opening until it clears. Scanners reveal sealed faces. The fixed aperture rows remain visible. A shutter contact, wrong face, or incomplete submission ends this episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to or interact with pre-existing, unrelated, blank, or browser-settings tabs. Tabs opened by visible task controls are allowed only if they are part of this task, using their visible controls only.",
+      "parameters": {
+        "columns": 15,
+        "rows": 7,
+        "gate_columns": [
+          3,
+          7,
+          11
+        ],
+        "gap_height": 2.15,
+        "sweep_ms": 8000,
+        "roll_ms": 900,
+        "face_count": 2,
+        "shutters": 2,
+        "orientation_visibility": "scanners",
+        "scanner_count": 1,
+        "pillar_count": 4
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Click cardinal roll buttons. Same roll duration, orientation and collision rules with fixed apertures."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Press WASD or arrow keys; each distinct press starts one complete physical quarter roll."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 360,
+    "observation_window_ms": 300,
+    "frames_per_observation": 4
+  }
+}

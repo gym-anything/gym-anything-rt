@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "tomographic_baggage_surgery_v3",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Two wide moving layers, slow approach and responsive steering.",
+      "parameters": {
+        "gates": 2,
+        "aperture": 1.1,
+        "amplitude": 1.55,
+        "span_ms": 5200,
+        "speed": 0.55,
+        "gain": 28,
+        "damping": 10
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Smaller apertures and faster changing motion require closer prediction.",
+      "parameters": {
+        "gates": 2,
+        "aperture": 0.96,
+        "amplitude": 1.6,
+        "span_ms": 4700,
+        "speed": 0.58,
+        "gain": 26,
+        "damping": 10
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "Three independent depths compete for two-axis alignment; steering has more inertia.",
+      "parameters": {
+        "gates": 3,
+        "aperture": 0.88,
+        "amplitude": 1.65,
+        "span_ms": 4400,
+        "speed": 0.6,
+        "gain": 24,
+        "damping": 9
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Four closely spaced layers and a larger range of motion require earlier changes between incompatible alignments.",
+      "parameters": {
+        "gates": 4,
+        "aperture": 0.8,
+        "amplitude": 1.7,
+        "span_ms": 4100,
+        "speed": 0.62,
+        "gain": 22,
+        "damping": 8
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Four narrower layers, faster independent bends and slower damping combine transverse prediction, inertia and loaded withdrawal.",
+      "parameters": {
+        "gates": 4,
+        "aperture": 0.72,
+        "amplitude": 1.75,
+        "span_ms": 3600,
+        "speed": 0.64,
+        "gain": 20,
+        "damping": 8
+      }
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Drag the two-axis command handle; Space closes the clamp. Numbered transverse slice buttons reveal the same concealed apertures and retain live tracks; inspection does not pause execution."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Click a position on the same command pad; GRIP RELIC closes the clamp. Identical servo, world, timing and clearance. Numbered transverse slice buttons reveal the same concealed apertures and retain live tracks; inspection does not pause execution."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  }
+}

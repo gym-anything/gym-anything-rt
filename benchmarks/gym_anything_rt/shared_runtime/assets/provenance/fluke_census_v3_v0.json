@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "fluke_census_v3",
+  "title": "Fluke Census V3",
+  "source_anchors": [
+    "GWP-156",
+    "COG-237",
+    "COG-114",
+    "XCOG-100",
+    "XCOG-101"
+  ],
+  "sources": [
+    {
+      "id": "GWP-156",
+      "url": "https://www.zooniverse.org/projects/tedcheese/whales-as-individuals",
+      "mechanic": "Whale fluke individual recognition and tip/V landmarks."
+    },
+    {
+      "id": "COG-237",
+      "url": "https://www.lumosity.com/en/brain-games/tidal-treasures",
+      "mechanic": "Self-ordered selection of identities independent of their changing position."
+    },
+    {
+      "id": "COG-114",
+      "url": "https://creyos.com/online-cognitive-tasks/token-search",
+      "mechanic": "Remember previously collected identities and avoid revisits."
+    },
+    {
+      "id": "XCOG-100",
+      "url": "https://doi.org/10.1371/journal.pcbi.1014266",
+      "mechanic": "Forage through multiple targets and distractors."
+    },
+    {
+      "id": "XCOG-101",
+      "url": "https://doi.org/10.1037/xge0001652",
+      "mechanic": "Hybrid identity foraging and costly incorrect collections."
+    }
+  ],
+  "transformation": "Restore specimen sampling through the existing inertial camera. Exact neutral survey silhouettes conceal the seed-specific mapping from fluke shape to species name. Click a whole clear specimen in the live camera to reveal its name and WANTED/OFF LIST status safely; the field key retains all learned species shapes. Empty, clipped or obscured samples are recoverable. Preserve V2 numerical profiles, trajectories, camera physics, photography, landmarks and first-failure commitments. No probe quota, arbitrary unlock or source presentation assets. Field-key cards sort by displayed species name rather than hidden species index, so card position does not disclose the concealed mapping.",
+  "assets": {
+    "kind": "procedural canvas geometry",
+    "third_party_assets": []
+  },
+  "calibration": "Human and model calibration pending.",
+  "source_v2": "fluke_census_v2_env",
+  "original_v1": "fluke_census_env",
+  "limitations": "Source leads are inherited from V2, not newly reviewed research foundations. V3 browser automation is construction evidence; human approval, model calibration and native action-API equivalence are not established."
+}

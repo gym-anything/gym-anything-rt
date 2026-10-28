@@ -1,0 +1,21 @@
+{
+  "mechanic_id": "crater_walker_v3",
+  "source_anchors": [
+    "XAGT-352"
+  ],
+  "source_record": "outputs/selection_round4_20260906/inputs/dashboard/data/entries/20h.json#XAGT-352",
+  "source_urls": [
+    "https://github.com/google-deepmind/dm_control/blob/main/dm_control/suite/quadruped.py",
+    "https://github.com/google-deepmind/dm_control/blob/main/dm_control/suite/README.md",
+    "https://arxiv.org/abs/1801.00690"
+  ],
+  "transformation": "A four-foot robot escapes an uneven crater through shifting contact supports, finite-duration toe strokes and inertial weight shifting. Original procedural artwork and reduced model, not a wrapper of dm_control.",
+  "assets": "All artwork is procedural canvas geometry; no copied source media or models.",
+  "original_environment_preserved": "crater_walker_env",
+  "source_license": "Apache-2.0; idea only, no vendored source runtime",
+  "limitations": [
+    "Reduced actuator/contact model, not full rigid-body dynamics.",
+    "Human calibration and paid model evaluations not performed.",
+    "Native HTTP validation recorded separately."
+  ]
+}

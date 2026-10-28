@@ -1,0 +1,71 @@
+{
+  "description": "Steer a moving vehicle with the keyboard while dwelling the cursor over correct visual regions long enough to validate them before impact.",
+  "difficulty": "very_hard",
+  "env_id": "gym_anything_rt.crash_deadline_hovercar_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/crash_deadline_hovercar_d5_simplified_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/crash_deadline_hovercar_d5_simplified_seed_0001/setup_task.sh"
+  },
+  "id": "crash_deadline_hovercar_d5_simplified_seed_0001@0.2",
+  "init": {
+    "max_steps": 900,
+    "reward_type": "sparse",
+    "timeout_sec": 600
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/incubator_full_build_v1.json",
+    "benchmark": "gym_anything_rt",
+    "control_condition": {
+      "difficulty": 5,
+      "difficulty_parameters": {
+        "check_count": 6,
+        "deadline_tick": 360,
+        "finish_progress": 1760,
+        "first_window_tick": 18,
+        "minimum_window_slack_ticks": 12,
+        "obstacle_bypass_margin": 18,
+        "obstacle_count": 8,
+        "required_tick_max": 14,
+        "required_ticks": [
+          13,
+          14
+        ],
+        "road_amplitude_max": 64,
+        "road_amplitude_min": 52,
+        "road_half_width": 102,
+        "road_margin": 48,
+        "road_period_max": 165,
+        "road_period_min": 135,
+        "target_motion_scale": 1.2,
+        "target_orbit_scale": 1.18,
+        "target_radius": 27,
+        "target_window_slack_ticks": 38,
+        "window_duration_ticks": 52,
+        "window_profile": "generated",
+        "window_stride_ticks": 44
+      },
+      "interaction": "simplified",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "crash_deadline_hovercar",
+    "variant_count": 12400000000,
+    "variant_count_kind": "course curvature, obstacle offsets, target motifs, target orbits, dwell windows, phases, and visual palette"
+  },
+  "name": "Crash-Deadline Hovercar · Difficulty 5 · Simplified Interaction",
+  "natural_language": "Clear all six fast moving hover checks while steering the narrow eight-barrier course. Regulate speed so the late overlapping locks complete before the deadline.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "crash_deadline_hovercar",
+    "divided-attention",
+    "hover-dwell",
+    "keyboard-control"
+  ],
+  "version": "0.2"
+}

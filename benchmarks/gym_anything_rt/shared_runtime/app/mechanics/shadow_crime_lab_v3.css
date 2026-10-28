@@ -1,0 +1,33 @@
+body[data-mechanic="shadow-crime-lab-v2"] { background:#171e21; color:#eee4cf; }
+.scv2 { width:min(1210px,calc(100vw - 32px)); background:#e5dec9; color:#2a3335; border:2px solid #637072; box-shadow:0 25px 80px #0009; }
+.scv2 header { display:flex; justify-content:space-between; align-items:center; padding:14px 22px; border-bottom:4px solid #293337; }
+.scv2 header p { font:11px ui-monospace,monospace; letter-spacing:.12em; margin:0 0 6px; color:#83664e; }
+.scv2 h1 { font:40px/1 Georgia,serif; margin:0; }
+.scv2 header>span { padding:9px 16px; background:#bd6448; color:#fff0d4; font:13px/1.5 ui-monospace,monospace; }
+.scv2-rules { padding:10px 22px; background:#293337; color:#e4dec8; font:13px/1.4 system-ui,sans-serif; }
+.scv2 main { display:grid; grid-template-columns:minmax(0,1fr) 238px; gap:12px; padding:12px; background:#212a2d; }
+.scv2-stage { position:relative; min-width:0; align-self:center; }
+#scv2-canvas { display:block; width:100%; height:440px; touch-action:none; cursor:crosshair; }
+.scv2 aside { padding:14px; background:#c9c3ae; border:1px solid #8c9186; }
+.scv2 aside>p { margin:0 0 9px; font:11px ui-monospace,monospace; letter-spacing:.12em; }
+.scv2 h2 { font:26px/1.1 Georgia,serif; margin:0 0 18px; }
+.scv2-meter { margin:12px 0; font:12px ui-monospace,monospace; }
+.scv2-meter>label { font-weight:700; }
+.scv2-meter>div { height:12px; margin:8px 0 5px; background:#293337; border:1px solid #fff7db; }
+.scv2-meter i { display:block; height:100%; background:#ec754e; }
+.scv2-meter[data-camera="1"] i { background:#447dd1; }
+.scv2-meter small { display:block; min-height:14px; font-size:10px; margin-top:6px; color:#665844; }
+.scv2-instruction { border-top:1px solid #959c91; padding-top:10px; font:12px/1.45 system-ui,sans-serif; }
+.scv3-probe { display:block; width:100%; height:88px; margin-top:6px; border:1px solid #959c91; }
+.scv3-record { display:block; width:100%; margin-top:6px; padding:3px; color:#534b3c; background:#eee7d3; border:1px solid #959c91; font:10px ui-monospace,monospace; }
+.scv2 button { border:1px solid #4b5048; border-radius:0; padding:13px 16px; color:#ffefd1; background:#ac593e; font:700 12px ui-monospace,monospace; cursor:pointer; }
+#scv2-start { width:100%; margin:12px 0 8px; }
+.scv2 button:disabled { opacity:.55;cursor:default; }
+.scv2 footer { display:flex; align-items:center; justify-content:space-between; padding:8px 12px 8px 22px; border-top:4px solid #293337; min-height:52px; }
+.scv2 .readout { font:12px ui-monospace,monospace; }
+.scv2-verdict { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; background:#492b22ed; color:#ffe2c5; pointer-events:none; }
+.scv2-verdict[data-visible="false"] { display:none; }
+.scv2-verdict[data-pass="true"] { background:#193e36ed; color:#d3ffe5; }
+.scv2-verdict b { font:90px Georgia,serif; }
+.scv2-verdict span { font:14px ui-monospace,monospace; letter-spacing:.08em; }
+@media (max-height:800px) { .scv2 header { padding:10px 22px; }.scv2 h1 { font-size:33px; }.scv2 main { padding:9px; } }

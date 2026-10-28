@@ -1,0 +1,58 @@
+{
+  "description": "Inspect concealed channel sections with pointer sonar, retain their measured outline, and trace between autonomously deforming walls with inertial steering.",
+  "difficulty": "easy",
+  "env_id": "gym_anything_rt.trace_shape_without_walls_v3_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/trace_shape_without_walls_v3_d2_simplified_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/trace_shape_without_walls_v3_d2_simplified_seed_0001/setup_task.sh"
+  },
+  "id": "trace_shape_without_walls_v3_d2_simplified_seed_0001@0.2",
+  "init": {
+    "max_steps": 500,
+    "reward_type": "sparse",
+    "timeout_sec": 600
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/trace_shape_without_walls_v3_v0.json",
+    "benchmark": "gym_anything_rt",
+    "capabilities": [
+      "visual_understanding_2d",
+      "temporal_understanding_and_memory",
+      "reasoning_and_planning"
+    ],
+    "control_condition": {
+      "difficulty": 2,
+      "difficulty_parameters": {
+        "amplitude": 90,
+        "bends": 6,
+        "curve": 62,
+        "radius": 56,
+        "response": 7.5,
+        "sonar": 210,
+        "span_ms": 8500,
+        "speed": 29,
+        "wind": 22
+      },
+      "interaction": "simplified",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "trace_shape_without_walls_v3"
+  },
+  "name": "Blind Corridor Oscilloscope V3 · Difficulty 2 · Simplified Interaction",
+  "natural_language": "Move the pointer across the scope to inspect concealed channel sections. Amber dashed outlines retain the first scan; green walls and echoes show current motion in scanned sections. Inspection also works during flight. Launch the probe and keep it between the green channel walls until it reaches EXIT. The probe advances automatically, has inertia, and the walls and current keep changing. Drag to steer in full mode; click a desired height in simplified mode. Preview scans and recoverable steering corrections are allowed. A wall touch or rejected CERTIFY TRACE ends the episode. The 180-second task limit includes preview. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network, source, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload, navigation, browser extensions, external applications, or hidden implementation access. Do not interact with unrelated, blank, settings, or pre-existing non-task tabs.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "trace_shape_without_walls_v3",
+    "sonar",
+    "inertial-control",
+    "real-time"
+  ],
+  "version": "0.2"
+}

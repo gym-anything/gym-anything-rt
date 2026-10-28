@@ -1,0 +1,66 @@
+{
+  "env_folder": "four_pane_pilgrimage_v3_env",
+  "all_tasks": [
+    "four_pane_pilgrimage_v3_d1_full_seed_0001",
+    "four_pane_pilgrimage_v3_d1_simplified_seed_0001",
+    "four_pane_pilgrimage_v3_d2_full_seed_0001",
+    "four_pane_pilgrimage_v3_d2_simplified_seed_0001",
+    "four_pane_pilgrimage_v3_d3_full_seed_0001",
+    "four_pane_pilgrimage_v3_d3_simplified_seed_0001",
+    "four_pane_pilgrimage_v3_d4_full_seed_0001",
+    "four_pane_pilgrimage_v3_d4_simplified_seed_0001",
+    "four_pane_pilgrimage_v3_d5_full_seed_0001",
+    "four_pane_pilgrimage_v3_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "four_pane_pilgrimage_v3_d1_full_seed_0001",
+    "four_pane_pilgrimage_v3_d1_simplified_seed_0001",
+    "four_pane_pilgrimage_v3_d2_full_seed_0001",
+    "four_pane_pilgrimage_v3_d2_simplified_seed_0001",
+    "four_pane_pilgrimage_v3_d3_full_seed_0001",
+    "four_pane_pilgrimage_v3_d3_simplified_seed_0001",
+    "four_pane_pilgrimage_v3_d4_full_seed_0001",
+    "four_pane_pilgrimage_v3_d4_simplified_seed_0001",
+    "four_pane_pilgrimage_v3_d5_full_seed_0001",
+    "four_pane_pilgrimage_v3_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "four_pane_pilgrimage_v3_d5_full_seed_0001"
+    ],
+    "full": [
+      "four_pane_pilgrimage_v3_d1_full_seed_0001",
+      "four_pane_pilgrimage_v3_d2_full_seed_0001",
+      "four_pane_pilgrimage_v3_d3_full_seed_0001",
+      "four_pane_pilgrimage_v3_d4_full_seed_0001",
+      "four_pane_pilgrimage_v3_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "four_pane_pilgrimage_v3_d1_simplified_seed_0001",
+      "four_pane_pilgrimage_v3_d2_simplified_seed_0001",
+      "four_pane_pilgrimage_v3_d3_simplified_seed_0001",
+      "four_pane_pilgrimage_v3_d4_simplified_seed_0001",
+      "four_pane_pilgrimage_v3_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "four_pane_pilgrimage_v3_d1_full_seed_0001",
+      "four_pane_pilgrimage_v3_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "four_pane_pilgrimage_v3_d2_full_seed_0001",
+      "four_pane_pilgrimage_v3_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "four_pane_pilgrimage_v3_d3_full_seed_0001",
+      "four_pane_pilgrimage_v3_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "four_pane_pilgrimage_v3_d4_full_seed_0001",
+      "four_pane_pilgrimage_v3_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "four_pane_pilgrimage_v3_d5_full_seed_0001",
+      "four_pane_pilgrimage_v3_d5_simplified_seed_0001"
+    ]
+  }
+}

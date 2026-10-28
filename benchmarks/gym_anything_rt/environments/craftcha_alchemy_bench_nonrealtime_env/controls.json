@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "craftcha_alchemy_bench_nonrealtime",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "parameters": {"raw_count": 3, "radius": 28, "motion_span_ms": 6500, "hot_lifetime_ms": 60000, "tree": "chain"},
+      "summary": "3 starting reagents; same 6.5s motion profile and 60s hot-blend lifetime, advanced only by accepted merges.",
+      "natural_language": "Study the formula. Open the storm, then merge every pictured pair into the Stormglass heart. Reagents hold their current positions while you decide; each accepted merge advances the bench by a fixed 5 seconds. Dotted forecasts and solid wakes show the deterministic snapshot path. New blends must form for 5 seconds before reuse; their blue inner ring shows readiness. Hot blends crystallize when their rings empty. Selecting empty space with no reagent held is harmless. You may change your aim before placing or releasing. A missed release, wrong or premature mixture, crystallized blend, or rejected certification ends the episode. Certify only the complete heart.\n\nSolve only from screenshots and visible controls in the task webpage."
+    },
+    "2": {
+      "label": "easy",
+      "parameters": {"raw_count": 4, "radius": 27, "motion_span_ms": 5600, "hot_lifetime_ms": 48000, "tree": "balanced"},
+      "summary": "4 starting reagents; same 5.6s motion profile and 48s hot-blend lifetime, advanced only by accepted merges.",
+      "natural_language": "Study the formula. Open the storm, then merge every pictured pair into the Stormglass heart. Reagents hold their current positions while you decide; each accepted merge advances the bench by a fixed 5 seconds. Dotted forecasts and solid wakes show the deterministic snapshot path. New blends must form for 5 seconds before reuse; their blue inner ring shows readiness. Hot blends crystallize when their rings empty. Selecting empty space with no reagent held is harmless. You may change your aim before placing or releasing. A missed release, wrong or premature mixture, crystallized blend, or rejected certification ends the episode. Certify only the complete heart.\n\nSolve only from screenshots and visible controls in the task webpage."
+    },
+    "3": {
+      "label": "medium",
+      "parameters": {"raw_count": 6, "radius": 26, "motion_span_ms": 4800, "hot_lifetime_ms": 36000, "tree": "balanced"},
+      "summary": "6 starting reagents; same 4.8s motion profile and 36s hot-blend lifetime, advanced only by accepted merges.",
+      "natural_language": "Study the formula. Open the storm, then merge every pictured pair into the Stormglass heart. Reagents hold their current positions while you decide; each accepted merge advances the bench by a fixed 5 seconds. Dotted forecasts and solid wakes show the deterministic snapshot path. New blends must form for 5 seconds before reuse; their blue inner ring shows readiness. Hot blends crystallize when their rings empty. Selecting empty space with no reagent held is harmless. You may change your aim before placing or releasing. A missed release, wrong or premature mixture, crystallized blend, or rejected certification ends the episode. Certify only the complete heart.\n\nSolve only from screenshots and visible controls in the task webpage."
+    },
+    "4": {
+      "label": "hard",
+      "parameters": {"raw_count": 8, "radius": 25, "motion_span_ms": 4300, "hot_lifetime_ms": 26000, "tree": "balanced"},
+      "summary": "8 starting reagents; same 4.3s motion profile and 26s hot-blend lifetime, advanced only by accepted merges.",
+      "natural_language": "Study the formula. Open the storm, then merge every pictured pair into the Stormglass heart. Reagents hold their current positions while you decide; each accepted merge advances the bench by a fixed 5 seconds. Dotted forecasts and solid wakes show the deterministic snapshot path. New blends must form for 5 seconds before reuse; their blue inner ring shows readiness. Hot blends crystallize when their rings empty. Selecting empty space with no reagent held is harmless. You may change your aim before placing or releasing. A missed release, wrong or premature mixture, crystallized blend, or rejected certification ends the episode. Certify only the complete heart.\n\nSolve only from screenshots and visible controls in the task webpage."
+    },
+    "5": {
+      "label": "very_hard",
+      "parameters": {"raw_count": 10, "radius": 24, "motion_span_ms": 3600, "hot_lifetime_ms": 18000, "tree": "balanced"},
+      "summary": "10 starting reagents; same 3.6s motion profile and 18s hot-blend lifetime, advanced only by accepted merges.",
+      "natural_language": "Study the formula. Open the storm, then merge every pictured pair into the Stormglass heart. Reagents hold their current positions while you decide; each accepted merge advances the bench by a fixed 5 seconds. Dotted forecasts and solid wakes show the deterministic snapshot path. New blends must form for 5 seconds before reuse; their blue inner ring shows readiness. Hot blends crystallize when their rings empty. Selecting empty space with no reagent held is harmless. You may change your aim before placing or releasing. A missed release, wrong or premature mixture, crystallized blend, or rejected certification ends the episode. Certify only the complete heart.\n\nSolve only from screenshots and visible controls in the task webpage."
+    }
+  },
+  "interaction": {
+    "full": {"implemented": true, "summary": "Hold and drag a reagent; release inside its partner in the current snapshot. No auto aim."},
+    "simplified": {"implemented": true, "summary": "Click a reagent to carry it, then click inside its partner in the current snapshot. No auto aim."}
+  },
+  "real_time": {"play_time_seconds": 210, "observation_window_ms": 800, "frames_per_observation": 6},
+  "timing": {
+    "mode": "action_triggered_snapshot",
+    "action_step_ms": 5000,
+    "autonomous_progress_while_waiting": false,
+    "note": "A successful merge applies one fixed transition, then leaves a stable decision snapshot. The live runner and paused runner use the same rule."
+  }
+}

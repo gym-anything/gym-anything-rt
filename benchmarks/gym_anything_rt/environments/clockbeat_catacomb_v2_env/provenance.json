@@ -1,0 +1,24 @@
+{
+  "name": "Clockbeat Catacomb V2",
+  "original_mechanic": "clockbeat_catacomb",
+  "mechanic_id": "clockbeat_catacomb_v2",
+  "source_anchors": [
+    "VGE-765"
+  ],
+  "source_manifest": "shared_runtime/assets/provenance/clockbeat_catacomb_v0.json",
+  "transformation": "Sentries receive changing seeded intentions on each beat. The current intention is visible; the previous short repeating schedule and future-intent cues have been removed.",
+  "validation_status": "automated_checks_passed_human_validation_pending",
+  "human_validation": "pending",
+  "model_evaluation": "pending",
+  "capability_labels": "inherited, pending V2 review",
+  "automated_validation": {
+    "live_configurations_passed": 10,
+    "d5_full_continuous_reference_video": true,
+    "independent_verifier_passed": true,
+    "static_browser_grade_passed": true,
+    "paused_clock_passed": true,
+    "failure_regeneration_passed": true,
+    "evidence": "evidence/incubator_batch_realtime6_v2_v1",
+    "report": "../docs/realtime6-v2-construction-20260923.md"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "motion_only_ghost_jigsaw_v2",
+  "source_anchors": [
+    "nextgen-captchas-benchmark/Spooky_Jigsaw"
+  ],
+  "survey_ids": [],
+  "source_urls": [
+    "https://github.com/MetaAgentX/NextGen-CAPTCHAs"
+  ],
+  "upstream_commit": "d5abfb4b4f578bf2e517c2691ea0e841f6c2c15e",
+  "original_generator": "captcha_generation/generate_spooky_jigsaw.py",
+  "transformation": "Opposite-moving grain retains motion-only fragment recognition. Independent nonrepeating moving frames, changing orientation and an inertial carriage turn untimed reassembly into closed-loop pose tracking.",
+  "assets": "Original procedural linework and grain, drawn in canvas; no copied code, GIFs or artwork.",
+  "license": "Source idea from MIT licensed repository; original benchmark implementation.",
+  "human_calibration": "pending",
+  "model_evaluation": "not run",
+  "status": "prototype_visual_candidate"
+}

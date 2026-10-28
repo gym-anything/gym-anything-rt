@@ -1,0 +1,25 @@
+body[data-mechanic="ribbon-switchboard-v3"] { background: #092022; color: #f0e5d1; }
+.rs2-shell { position: relative; width: min(1150px, 96vw); border: 1px solid #587065; border-radius: 16px; background: #122a2b; box-shadow: 0 24px 80px #0008; overflow: hidden; font: 14px/1.4 system-ui,sans-serif; }
+.rs2-head { display: flex; align-items: center; justify-content: space-between; padding: 12px 24px; background: #203a37; border-bottom: 1px solid #627664; }
+.rs2-head p { font: 11px monospace; letter-spacing: 2px; color: #b8c6b4; margin: 0 0 3px; }
+.rs2-head h1 { font: 30px Georgia,serif; margin: 0; color: #f2d9aa; }
+.rs2-start { padding: 12px 18px; border: 1px solid #e3c592; border-radius: 8px; background: #ecd1a2; color: #19302c; font: bold 13px monospace; cursor: pointer; }
+.rs2-start:disabled { opacity: .5; cursor: default; }
+.rs2-rules { padding: 8px 24px; color: #d6e0cc; font-size: 13px; }
+.rs2-rules strong { color: #f6d49a; font-weight: 500; }
+.rs2-instruments { display: flex; gap: 26px; padding: 0 24px 6px; }
+.rs2-instruments > div { flex: 1; display: grid; grid-template-columns: 1fr 115px; gap: 3px 12px; align-items: center; font: 11px monospace; }
+.rs2-instruments span { color: #b4c5ba; }
+.rs2-instruments b { text-align: right; color: #afd49b; font-size: 10px; }
+.rs2-instruments [data-off="yes"] b { color: #ff9287; }
+.rs2-heat { height: 7px; background: #062023; border: 1px solid #688479; grid-column: 1 / 3; grid-row: 2; overflow: hidden; border-radius: 3px; }
+.rs2-heat i { display: block; height: 100%; background: #f07867; }
+.rs2-canvas { display: block; width: calc(100% - 30px); height: auto; margin: 0 15px; touch-action: none; user-select: none; cursor: crosshair; }
+.rs2-shell footer { padding: 8px 24px 12px; }
+.rs2-progress { position: relative; height: 16px; background: #092123; border: 1px solid #607a6b; margin-bottom: 6px; }
+.rs2-progress i { display: block; height: 100%; background: #60764e; }
+.rs2-progress span { position: absolute; inset: 0; text-align: center; font: 10px/15px monospace; }
+.rs2-shell .readout { font: 11px monospace; color: #d4dfcc; min-height: 15px; }
+.rs2-stamp:not(:empty) { position: absolute; left: 22%; right: 12%; top: 47%; padding: 24px; background: #142a28f2; border: 3px solid #eacf9e; text-align: center; font: bold 24px Georgia,serif; pointer-events: none; }
+.rs2-stamp[data-state="fail"] { color: #ffa397; border-color: #f48070; }
+.rs2-stamp[data-state="pass"] { color: #d7ecb9; border-color: #b4d498; }

@@ -1,0 +1,111 @@
+{
+  "mechanic_id": "reveal_to_identify_v2",
+  "source_anchors": [
+    "GWP-002",
+    "GWP-003"
+  ],
+  "sources": [
+    {
+      "title": "Peekaboom: A Game for Locating Objects in Images",
+      "url": "https://www.cs.cmu.edu/~biglou/Peekaboom.pdf",
+      "authors": [
+        "Luis von Ahn",
+        "Ruoran Liu",
+        "Manuel Blum"
+      ],
+      "year": 2006,
+      "read_coverage": "all ten pages including references; no appendix in PDF"
+    }
+  ],
+  "transformation": "Peekaboom circular reveal/localization become optical certification, inertial scanner interception, nonperiodic state-based flow, and visible load-release valve changes. Persistent calibration and realized-switch records preserve all older information relevant to future forces.",
+  "assets": "Original canvas vector silhouettes and CSS; no source imagery, game assets or source code copied.",
+  "revision": "moving-darkroom-7",
+  "evidence": "environments/reveal_to_identify_v2_env/evidence_docs",
+  "human_calibration": "pending",
+  "downstream_model_evaluation": "not authorized; none launched",
+  "native_oracle": "24 sampled complete native HTTP solutions covering all 20 difficulty/interface/mode profiles; five-second refreshed stationary probe executed",
+  "native_oracle_coverage": {
+    "revision": "moving-darkroom-7",
+    "native_complete_solutions": 24,
+    "retained_rejected_diagnostic_episodes": 4,
+    "new_native_solutions_this_phase": 8,
+    "live": {
+      "seed801": [
+        "D1/full",
+        "D1/simplified",
+        "D2/full",
+        "D2/simplified",
+        "D3/full",
+        "D3/simplified",
+        "D4/full",
+        "D4/simplified",
+        "D5/full",
+        "D5/simplified"
+      ],
+      "seed802": [
+        "D5/full",
+        "D5/simplified"
+      ]
+    },
+    "paused": {
+      "seed803": [
+        "D1/full",
+        "D1/simplified",
+        "D5/full",
+        "D5/simplified"
+      ],
+      "seed811": [
+        "D2/full",
+        "D2/simplified",
+        "D3/full",
+        "D3/simplified",
+        "D4/full",
+        "D4/simplified"
+      ],
+      "r6-strict-boundary": [
+        "D1/full",
+        "D1/simplified"
+      ]
+    },
+    "actual_seed_suffix": ":refresh:1",
+    "supplemental_native_cases": 9,
+    "supplemental_status": "Completed; see hash-bound actual execution records.",
+    "privileged_planning": true,
+    "action_delivery": "unchanged downstream HTTP POST /act on Flame-1",
+    "frozen_contract_verified": false,
+    "pending_human_calibration": true,
+    "downstream_model_evaluation": "not authorized; none launched",
+    "current_focused_test_passes": 43,
+    "new_rejected_diagnostic_episodes": 1,
+    "approved_supplemental_cases_completed": 9,
+    "refreshed_stationary_probe": {
+      "executed": true,
+      "episode_passed": false,
+      "actual_seed": "auditor-20261001-d1-case0:refresh:1",
+      "original_bare_seed_world_reproduced": false
+    },
+    "strict_clock_corroboration_cases": 2,
+    "covered_difficulty_interaction_mode_combinations": 20,
+    "remaining_required_native_profiles": [],
+    "supplemental_bindings": "checks/native-supplemental-bindings.json",
+    "unchanged_gameplay_tests_reused": 40,
+    "current_evidence_regressions_passed": 3,
+    "new_evidence_regression_passes": 1,
+    "shared_native_window_disagreements_this_phase": 2,
+    "all_requested_observation_windows_exact": false
+  },
+  "evidence_archive": "/tmp/wcb-realtime-source-four-20260930/reveal_to_identify_v2_env/evidence",
+  "evidence_index": "environments/reveal_to_identify_v2_env/evidence_docs/README.md",
+  "construction_status": "Required task evidence complete; independent construction review pending. Shared runtime findings remain separate.",
+  "shared_runtime_findings": {
+    "paused_endpoint_image_lag_ms": [
+      70,
+      70,
+      70
+    ],
+    "complete_frozen_contract_verified": false,
+    "historical_clock_discrepancy_retained": true,
+    "task_side_workaround_added": false,
+    "construction_scope": "October 2 clarification: shared-runtime repairs are not task construction prerequisites."
+  }
+}

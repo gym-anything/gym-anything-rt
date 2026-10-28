@@ -1,0 +1,32 @@
+{
+  "mechanic_id": "zero_g_cable_autopsy_v2",
+  "revision": "moving-isolation-flexible-cable-v1",
+  "source_anchors": [
+    "research/collection/sources/captcha-rpg/gordian-knot",
+    "https://www.playstation.com/en-gb/games/tentacular/"
+  ],
+  "source_urls": [
+    "https://heyyeh.itch.io/captcha-rpg",
+    "https://www.playstation.com/en-gb/games/tentacular/"
+  ],
+  "original_env_preserved": "zero_g_cable_autopsy_env",
+  "packaging_revisions": [
+    {
+      "date": "2026-10-04",
+      "audit_defect": "The variations split advertised ten nonexistent _tpaused task IDs.",
+      "repair": "Keep the ten materialized difficulty/interface task IDs; live and paused execution use the framework time_mode setting on those same IDs.",
+      "regression": "Resolve every advertised task ID through the installed Gym-Anything from_config loader and metadata parser, without starting a sandbox."
+    }
+  ],
+  "transformation": "Gordian-knot knife manipulation and paired compliant physical manipulation become live isolation and cuff dissection on a Verlet/PBD cable. Original procedural artwork; no commercial game assets.",
+  "survey_ids": [],
+  "source_limitations": [
+    "The supplied pick has no survey_ids.",
+    "The supplied collected notes file does not exist on this machine.",
+    "Initial en-gb requests timed out; the same publisher en-vn page was read. On the resumed October 4 turn the exact supplied en-gb page was successfully read in full. Earlier failures are retained."
+  ],
+  "calibration": {
+    "human": "unmeasured",
+    "model": "unmeasured"
+  }
+}

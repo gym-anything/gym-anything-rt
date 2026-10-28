@@ -1,0 +1,66 @@
+{
+  "env_folder": "polyrhythm_customs_nonrealtime_env",
+  "all_tasks": [
+    "polyrhythm_customs_nonrealtime_d1_full_seed_0001",
+    "polyrhythm_customs_nonrealtime_d1_simplified_seed_0001",
+    "polyrhythm_customs_nonrealtime_d2_full_seed_0001",
+    "polyrhythm_customs_nonrealtime_d2_simplified_seed_0001",
+    "polyrhythm_customs_nonrealtime_d3_full_seed_0001",
+    "polyrhythm_customs_nonrealtime_d3_simplified_seed_0001",
+    "polyrhythm_customs_nonrealtime_d4_full_seed_0001",
+    "polyrhythm_customs_nonrealtime_d4_simplified_seed_0001",
+    "polyrhythm_customs_nonrealtime_d5_full_seed_0001",
+    "polyrhythm_customs_nonrealtime_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "polyrhythm_customs_nonrealtime_d1_full_seed_0001",
+    "polyrhythm_customs_nonrealtime_d1_simplified_seed_0001",
+    "polyrhythm_customs_nonrealtime_d2_full_seed_0001",
+    "polyrhythm_customs_nonrealtime_d2_simplified_seed_0001",
+    "polyrhythm_customs_nonrealtime_d3_full_seed_0001",
+    "polyrhythm_customs_nonrealtime_d3_simplified_seed_0001",
+    "polyrhythm_customs_nonrealtime_d4_full_seed_0001",
+    "polyrhythm_customs_nonrealtime_d4_simplified_seed_0001",
+    "polyrhythm_customs_nonrealtime_d5_full_seed_0001",
+    "polyrhythm_customs_nonrealtime_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "polyrhythm_customs_nonrealtime_d5_full_seed_0001"
+    ],
+    "full": [
+      "polyrhythm_customs_nonrealtime_d1_full_seed_0001",
+      "polyrhythm_customs_nonrealtime_d2_full_seed_0001",
+      "polyrhythm_customs_nonrealtime_d3_full_seed_0001",
+      "polyrhythm_customs_nonrealtime_d4_full_seed_0001",
+      "polyrhythm_customs_nonrealtime_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "polyrhythm_customs_nonrealtime_d1_simplified_seed_0001",
+      "polyrhythm_customs_nonrealtime_d2_simplified_seed_0001",
+      "polyrhythm_customs_nonrealtime_d3_simplified_seed_0001",
+      "polyrhythm_customs_nonrealtime_d4_simplified_seed_0001",
+      "polyrhythm_customs_nonrealtime_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "polyrhythm_customs_nonrealtime_d1_full_seed_0001",
+      "polyrhythm_customs_nonrealtime_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "polyrhythm_customs_nonrealtime_d2_full_seed_0001",
+      "polyrhythm_customs_nonrealtime_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "polyrhythm_customs_nonrealtime_d3_full_seed_0001",
+      "polyrhythm_customs_nonrealtime_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "polyrhythm_customs_nonrealtime_d4_full_seed_0001",
+      "polyrhythm_customs_nonrealtime_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "polyrhythm_customs_nonrealtime_d5_full_seed_0001",
+      "polyrhythm_customs_nonrealtime_d5_simplified_seed_0001"
+    ]
+  }
+}

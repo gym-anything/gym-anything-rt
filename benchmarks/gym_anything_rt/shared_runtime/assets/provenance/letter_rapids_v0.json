@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "letter_rapids",
+  "source_anchors": [
+    "XCOG-049",
+    "XCOG-050",
+    "XCOG-038",
+    "XCOG-039"
+  ],
+  "sources": [
+    {
+      "title": "Dasher Project",
+      "url": "https://github.com/dasher-project"
+    },
+    {
+      "title": "dasher-web",
+      "url": "https://github.com/dasher-project/dasher-web"
+    },
+    {
+      "title": "Dasher: A Gesture-Driven Data Entry Interface for Mobile Computing",
+      "url": "https://doi.org/10.1080/07370024.2002.9667314"
+    },
+    {
+      "title": "Speed-dependent automatic zooming for browsing large documents",
+      "url": "https://www.microsoft.com/en-us/research/publication/speed-dependent-automatic-zooming-browsing-large-documents-3/"
+    },
+    {
+      "title": "OrthoZoom scroller",
+      "url": "https://doi.org/10.1145/1124772.1124776"
+    }
+  ],
+  "assets": [],
+  "notes": "Original HTML, CSS, and canvas rendering. Sources ground continuous two-axis pointing, probability-sized nested letter regions, rightward advance, leftward correction, and speed-dependent zoom/control; no source code, artwork, model data, or bundled assets are copied."
+}

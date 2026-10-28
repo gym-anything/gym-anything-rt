@@ -1,0 +1,66 @@
+{
+  "env_folder": "reverse_identity_gate_env",
+  "all_tasks": [
+    "reverse_identity_gate_d1_full_seed_0001",
+    "reverse_identity_gate_d1_simplified_seed_0001",
+    "reverse_identity_gate_d2_full_seed_0001",
+    "reverse_identity_gate_d2_simplified_seed_0001",
+    "reverse_identity_gate_d3_full_seed_0001",
+    "reverse_identity_gate_d3_simplified_seed_0001",
+    "reverse_identity_gate_d4_full_seed_0001",
+    "reverse_identity_gate_d4_simplified_seed_0001",
+    "reverse_identity_gate_d5_full_seed_0001",
+    "reverse_identity_gate_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "reverse_identity_gate_d1_full_seed_0001",
+    "reverse_identity_gate_d1_simplified_seed_0001",
+    "reverse_identity_gate_d2_full_seed_0001",
+    "reverse_identity_gate_d2_simplified_seed_0001",
+    "reverse_identity_gate_d3_full_seed_0001",
+    "reverse_identity_gate_d3_simplified_seed_0001",
+    "reverse_identity_gate_d4_full_seed_0001",
+    "reverse_identity_gate_d4_simplified_seed_0001",
+    "reverse_identity_gate_d5_full_seed_0001",
+    "reverse_identity_gate_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "reverse_identity_gate_d5_full_seed_0001"
+    ],
+    "full": [
+      "reverse_identity_gate_d1_full_seed_0001",
+      "reverse_identity_gate_d2_full_seed_0001",
+      "reverse_identity_gate_d3_full_seed_0001",
+      "reverse_identity_gate_d4_full_seed_0001",
+      "reverse_identity_gate_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "reverse_identity_gate_d1_simplified_seed_0001",
+      "reverse_identity_gate_d2_simplified_seed_0001",
+      "reverse_identity_gate_d3_simplified_seed_0001",
+      "reverse_identity_gate_d4_simplified_seed_0001",
+      "reverse_identity_gate_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "reverse_identity_gate_d1_full_seed_0001",
+      "reverse_identity_gate_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "reverse_identity_gate_d2_full_seed_0001",
+      "reverse_identity_gate_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "reverse_identity_gate_d3_full_seed_0001",
+      "reverse_identity_gate_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "reverse_identity_gate_d4_full_seed_0001",
+      "reverse_identity_gate_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "reverse_identity_gate_d5_full_seed_0001",
+      "reverse_identity_gate_d5_simplified_seed_0001"
+    ]
+  }
+}

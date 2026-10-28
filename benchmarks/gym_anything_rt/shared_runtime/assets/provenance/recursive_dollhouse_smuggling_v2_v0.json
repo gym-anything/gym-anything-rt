@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "recursive_dollhouse_smuggling_v2",
+  "source_anchors": [
+    "https://www.vertigo-games.com/games/a-fishermans-tale/"
+  ],
+  "survey_ids": [],
+  "source_urls": [
+    "https://www.vertigo-games.com/games/a-fishermans-tale/"
+  ],
+  "source_selection": "creation_audit_logs/realtime_source_remaining48_20261002/selection.json",
+  "original_preserved": true,
+  "transformation": "Original cabinet art and recursive synchronized coordinate copies. Parcels enlarge after passing physical moving frames. Independent smooth shutter drift and sideways wind turn preplanned transport into closed-loop inertial steering.",
+  "assets": "Original canvas geometry and CSS; no commercial art, names, characters, music or code copied.",
+  "status": "prototype_visual_candidate",
+  "human_validation": "not_run",
+  "model_evaluation": "not_run"
+}

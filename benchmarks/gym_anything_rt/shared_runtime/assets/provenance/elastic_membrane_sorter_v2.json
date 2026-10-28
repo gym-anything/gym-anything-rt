@@ -1,0 +1,14 @@
+{
+  "mechanic_id": "elastic_membrane_sorter_v2",
+  "name": "Elastic Membrane Sorter V2",
+  "derived_from": "elastic_membrane_sorter",
+  "source_anchors": [
+    "captcha-royale/balance",
+    "captcha-royale/overlap",
+    "nextgen-captchas/Layered_Stack"
+  ],
+  "transformation": "Preserves the ordered-ring membrane courses, wells, damping, five difficulty profiles and direct post-drag or simplified slider controls. Each post has a bounded smooth seeded tension drift that changes the actual surface and acceleration. Its marker and mesh show the current tension. Active resets, falls and subsequent marbles continue rolling immediately while retaining the drift phase. Open outer edges return a fallen marble to its course start and clear its ring progress.",
+  "assets": "Canvas and CSS drawn locally from the original repository design. No new external images.",
+  "human_validation": "pending",
+  "model_evaluation": "pending"
+}

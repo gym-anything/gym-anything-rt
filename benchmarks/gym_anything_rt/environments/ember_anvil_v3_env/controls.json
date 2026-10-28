@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "ember_anvil_v3",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "Low relief and broad hot intervals; translating carriage still requires fresh contact tracking.",
+      "parameters": {
+        "cap": 2,
+        "relief": false,
+        "scramble": 3,
+        "excess": 1,
+        "travel_x": 65,
+        "travel_y": 25,
+        "rotation": 0.1,
+        "motion_span_ms": 4300,
+        "heat_span_ms": 6500,
+        "workable": 0.4
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "Greater displacement and rotating coordinates require estimating local direction during aim.",
+      "parameters": {
+        "cap": 2,
+        "relief": false,
+        "scramble": 6,
+        "excess": 1,
+        "travel_x": 85,
+        "travel_y": 35,
+        "rotation": 0.2,
+        "motion_span_ms": 3800,
+        "heat_span_ms": 5500,
+        "workable": 0.48
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "A through-eye and raised shoulder couple draw/upset choices to vertical headroom; narrower heat opportunities.",
+      "parameters": {
+        "cap": 3,
+        "relief": true,
+        "scramble": 10,
+        "excess": 1,
+        "travel_x": 105,
+        "travel_y": 42,
+        "rotation": 0.32,
+        "motion_span_ms": 3100,
+        "heat_span_ms": 4700,
+        "workable": 0.54
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "No spare metal; larger pose changes and shorter independent heating intervals require more timely interception.",
+      "parameters": {
+        "cap": 3,
+        "relief": true,
+        "scramble": 15,
+        "excess": 0,
+        "travel_x": 120,
+        "travel_y": 45,
+        "rotation": 0.42,
+        "motion_span_ms": 2700,
+        "heat_span_ms": 4100,
+        "workable": 0.6
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Four-height relief with a through-eye; nonperiodic translation, rotation and independently changing cell heat combine spatial routing with predictive contact.",
+      "parameters": {
+        "cap": 4,
+        "relief": true,
+        "scramble": 22,
+        "excess": 0,
+        "travel_x": 135,
+        "travel_y": 48,
+        "rotation": 0.52,
+        "motion_span_ms": 2300,
+        "heat_span_ms": 3600,
+        "workable": 0.66
+      }
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Drag the physical hammer from its dock onto a moving contact face. Click target die squares to gauge concealed layers; measurements persist in both modes without stopping the forge."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Click the same moving contact face; no auto-aim or automatic timing. Click target die squares to gauge concealed layers; measurements persist in both modes without stopping the forge."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  }
+}

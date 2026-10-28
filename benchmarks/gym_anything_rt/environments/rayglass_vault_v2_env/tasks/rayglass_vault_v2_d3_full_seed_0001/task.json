@@ -1,0 +1,66 @@
+{
+  "description": "Probe hidden optical routes, patch colored lamps, and keep inertial mirrors feeding several independently moving receivers.",
+  "difficulty": "medium",
+  "env_id": "gym_anything_rt.rayglass_vault_v2_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/rayglass_vault_v2_d3_full_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/rayglass_vault_v2_d3_full_seed_0001/setup_task.sh"
+  },
+  "id": "rayglass_vault_v2_d3_full_seed_0001@0.2",
+  "init": {
+    "max_steps": 900,
+    "reward_type": "sparse",
+    "timeout_sec": 900
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/rayglass_vault_v2_v0.json",
+    "benchmark": "gym_anything_rt",
+    "capabilities": [
+      "visual understanding: 2D",
+      "temporal understanding and memory",
+      "reasoning and planning",
+      "exploration and interface understanding"
+    ],
+    "capability_configuration": {
+      "difficulty": 5,
+      "interaction": "full"
+    },
+    "control_condition": {
+      "difficulty": 3,
+      "difficulty_parameters": {
+        "bead_count": 3,
+        "channels": 2,
+        "charge_seconds": 6,
+        "heat_limit_seconds": 4,
+        "receiver_height": 40,
+        "servo_acceleration": 180,
+        "servo_speed": 28,
+        "shared_slew_budget": 42,
+        "size": 5,
+        "speed_max": 75,
+        "speed_min": 30,
+        "speed_span_ms": 1800
+      },
+      "interaction": "full",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "rayglass_vault_v2"
+  },
+  "name": "Rayglass Vault V2 · Difficulty 3 · Full Interaction",
+  "natural_language": "Probe the opaque cabinet ports: H is absorbed, R returns to entry, paired numbers identify an exit. Patch each colored lamp to a port that reaches its numbered receiver. Start the optical run and steer every mirror so its beam remains inside the moving receiver. Charge leaks quickly when light misses; a full red heat bar ends the attempt. All receivers must be fully charged together to unlock the seal key. Stored charge then stays stable, but the receivers keep moving. Insert the whole seal key inside AMBER's moving opening; a miss ends the attempt. Routing probes before START are safe. There is no in-game stop, reset or retry. Drag each lamp socket onto a cabinet port; drag the round trim handles. When charged, drag the seal key from the cabinet into AMBER's opening. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or any other implementation or hidden-state access. Do not switch to pre-existing, unrelated, blank or browser-settings tabs. Tabs opened by a visible task control are allowed only when part of this task, using their visible controls.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "rayglass_vault_v2",
+    "active-sensing",
+    "optics",
+    "continuous-control"
+  ],
+  "version": "0.2"
+}

@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "hearthlift_courier_v3",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "2.8 by 2.8 support tops; lateral amplitude 1.7; height amplitude 0.35; motor span 2400ms; inherited velocity fraction 0.35.",
+      "parameters": {
+        "lift_count": 3,
+        "deck_width": 2.8,
+        "depth_width": 2.8,
+        "lateral_amplitude": 1.7,
+        "height_amplitude": 0.35,
+        "motor_span_ms": 2400,
+        "rise": 0.35,
+        "depth_turn": 0.0,
+        "inherit": 0.35,
+        "gap": 5.3
+      },
+      "natural_language_by_interaction": {
+        "full": "Load the ember crate and wake the lifts. Carry it across the moving lift stacks. Drag the courier in the overhead chart toward an intended landing spot and release to hop. E burns the crate. The aim sets speed for a nominal 1.6s hop; elevation and inherited lift motion change the landing. Click a moving lift top in the overhead chart to inspect its concealed motor survey. Its next 3.2s of motion then appears in both views and stays live once inspected. Inspect safely from the quay before hopping; inspection does not launch the courier or pause the lifts. Land inside a top, burn at the hearth, and certify. Falling or releasing away from the hearth ends the episode. A rejected CERTIFY DELIVERY also ends the episode. Aim previews, canceled aims and rejected out-of-range aims remain recoverable. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed.",
+        "simplified": "Load the ember crate and wake the lifts. Carry it across the moving lift stacks. Click the courier in the overhead chart, then click an intended landing spot to hop. BURN CRATE releases the crate. CANCEL AIM cancels aiming. The aim sets speed for a nominal 1.6s hop; elevation and inherited lift motion change the landing. Click a moving lift top in the overhead chart to inspect its concealed motor survey. Its next 3.2s of motion then appears in both views and stays live once inspected. Inspect safely from the quay before hopping; inspection does not launch the courier or pause the lifts. Land inside a top, burn at the hearth, and certify. Falling or releasing away from the hearth ends the episode. A rejected CERTIFY DELIVERY also ends the episode. Aim previews, canceled aims and rejected out-of-range aims remain recoverable. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed."
+      },
+      "natural_language": "Load the ember crate and wake the lifts. Carry it across the moving lift stacks. Set a coordinate hop in the overhead chart: drag the courier and release in Full, or click the courier then the landing coordinate in Simplified. Release the crate with E in Full or BURN CRATE in Simplified. The aim sets speed for a nominal 1.6s hop; elevation and inherited lift motion change the landing. Click a moving lift top in the overhead chart to inspect its concealed motor survey. Its next 3.2s of motion then appears in both views and stays live once inspected. Inspect safely from the quay before hopping; inspection does not launch the courier or pause the lifts. Land inside a top, burn at the hearth, and certify. Falling or releasing away from the hearth ends the episode. A rejected CERTIFY DELIVERY also ends the episode. Aim previews, canceled aims and rejected out-of-range aims remain recoverable. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed."
+    },
+    "2": {
+      "label": "easy",
+      "summary": "2.5 by 2.5 support tops; lateral amplitude 1.9; height amplitude 0.5; motor span 2350ms; inherited velocity fraction 0.5.",
+      "parameters": {
+        "lift_count": 3,
+        "deck_width": 2.5,
+        "depth_width": 2.5,
+        "lateral_amplitude": 1.9,
+        "height_amplitude": 0.5,
+        "motor_span_ms": 2350,
+        "rise": 0.45,
+        "depth_turn": 0.7,
+        "inherit": 0.5,
+        "gap": 5.3
+      },
+      "natural_language_by_interaction": {
+        "full": "Load the ember crate and wake the lifts. Carry it across the moving lift stacks. Drag the courier in the overhead chart toward an intended landing spot and release to hop. E burns the crate. The aim sets speed for a nominal 1.6s hop; elevation and inherited lift motion change the landing. Click a moving lift top in the overhead chart to inspect its concealed motor survey. Its next 3.2s of motion then appears in both views and stays live once inspected. Inspect safely from the quay before hopping; inspection does not launch the courier or pause the lifts. Land inside a top, burn at the hearth, and certify. Falling or releasing away from the hearth ends the episode. A rejected CERTIFY DELIVERY also ends the episode. Aim previews, canceled aims and rejected out-of-range aims remain recoverable. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed.",
+        "simplified": "Load the ember crate and wake the lifts. Carry it across the moving lift stacks. Click the courier in the overhead chart, then click an intended landing spot to hop. BURN CRATE releases the crate. CANCEL AIM cancels aiming. The aim sets speed for a nominal 1.6s hop; elevation and inherited lift motion change the landing. Click a moving lift top in the overhead chart to inspect its concealed motor survey. Its next 3.2s of motion then appears in both views and stays live once inspected. Inspect safely from the quay before hopping; inspection does not launch the courier or pause the lifts. Land inside a top, burn at the hearth, and certify. Falling or releasing away from the hearth ends the episode. A rejected CERTIFY DELIVERY also ends the episode. Aim previews, canceled aims and rejected out-of-range aims remain recoverable. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed."
+      },
+      "natural_language": "Load the ember crate and wake the lifts. Carry it across the moving lift stacks. Set a coordinate hop in the overhead chart: drag the courier and release in Full, or click the courier then the landing coordinate in Simplified. Release the crate with E in Full or BURN CRATE in Simplified. The aim sets speed for a nominal 1.6s hop; elevation and inherited lift motion change the landing. Click a moving lift top in the overhead chart to inspect its concealed motor survey. Its next 3.2s of motion then appears in both views and stays live once inspected. Inspect safely from the quay before hopping; inspection does not launch the courier or pause the lifts. Land inside a top, burn at the hearth, and certify. Falling or releasing away from the hearth ends the episode. A rejected CERTIFY DELIVERY also ends the episode. Aim previews, canceled aims and rejected out-of-range aims remain recoverable. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed."
+    },
+    "3": {
+      "label": "medium",
+      "summary": "2.2 by 2.2 support tops; lateral amplitude 2.0; height amplitude 0.65; motor span 2300ms; inherited velocity fraction 0.65.",
+      "parameters": {
+        "lift_count": 3,
+        "deck_width": 2.2,
+        "depth_width": 2.2,
+        "lateral_amplitude": 2.0,
+        "height_amplitude": 0.65,
+        "motor_span_ms": 2300,
+        "rise": 0.55,
+        "depth_turn": 1.0,
+        "inherit": 0.65,
+        "gap": 5.3
+      },
+      "natural_language_by_interaction": {
+        "full": "Load the ember crate and wake the lifts. Carry it across the moving lift stacks. Drag the courier in the overhead chart toward an intended landing spot and release to hop. E burns the crate. The aim sets speed for a nominal 1.6s hop; elevation and inherited lift motion change the landing. Click a moving lift top in the overhead chart to inspect its concealed motor survey. Its next 3.2s of motion then appears in both views and stays live once inspected. Inspect safely from the quay before hopping; inspection does not launch the courier or pause the lifts. Land inside a top, burn at the hearth, and certify. Falling or releasing away from the hearth ends the episode. A rejected CERTIFY DELIVERY also ends the episode. Aim previews, canceled aims and rejected out-of-range aims remain recoverable. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed.",
+        "simplified": "Load the ember crate and wake the lifts. Carry it across the moving lift stacks. Click the courier in the overhead chart, then click an intended landing spot to hop. BURN CRATE releases the crate. CANCEL AIM cancels aiming. The aim sets speed for a nominal 1.6s hop; elevation and inherited lift motion change the landing. Click a moving lift top in the overhead chart to inspect its concealed motor survey. Its next 3.2s of motion then appears in both views and stays live once inspected. Inspect safely from the quay before hopping; inspection does not launch the courier or pause the lifts. Land inside a top, burn at the hearth, and certify. Falling or releasing away from the hearth ends the episode. A rejected CERTIFY DELIVERY also ends the episode. Aim previews, canceled aims and rejected out-of-range aims remain recoverable. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed."
+      },
+      "natural_language": "Load the ember crate and wake the lifts. Carry it across the moving lift stacks. Set a coordinate hop in the overhead chart: drag the courier and release in Full, or click the courier then the landing coordinate in Simplified. Release the crate with E in Full or BURN CRATE in Simplified. The aim sets speed for a nominal 1.6s hop; elevation and inherited lift motion change the landing. Click a moving lift top in the overhead chart to inspect its concealed motor survey. Its next 3.2s of motion then appears in both views and stays live once inspected. Inspect safely from the quay before hopping; inspection does not launch the courier or pause the lifts. Land inside a top, burn at the hearth, and certify. Falling or releasing away from the hearth ends the episode. A rejected CERTIFY DELIVERY also ends the episode. Aim previews, canceled aims and rejected out-of-range aims remain recoverable. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed."
+    },
+    "4": {
+      "label": "hard",
+      "summary": "1.95 by 2.0 support tops; lateral amplitude 2.1; height amplitude 0.8; motor span 2250ms; inherited velocity fraction 0.8.",
+      "parameters": {
+        "lift_count": 4,
+        "deck_width": 1.95,
+        "depth_width": 2.0,
+        "lateral_amplitude": 2.1,
+        "height_amplitude": 0.8,
+        "motor_span_ms": 2250,
+        "rise": 0.65,
+        "depth_turn": 1.2,
+        "inherit": 0.8,
+        "gap": 5.3
+      },
+      "natural_language_by_interaction": {
+        "full": "Load the ember crate and wake the lifts. Carry it across the moving lift stacks. Drag the courier in the overhead chart toward an intended landing spot and release to hop. E burns the crate. The aim sets speed for a nominal 1.6s hop; elevation and inherited lift motion change the landing. Click a moving lift top in the overhead chart to inspect its concealed motor survey. Its next 3.2s of motion then appears in both views and stays live once inspected. Inspect safely from the quay before hopping; inspection does not launch the courier or pause the lifts. Land inside a top, burn at the hearth, and certify. Falling or releasing away from the hearth ends the episode. A rejected CERTIFY DELIVERY also ends the episode. Aim previews, canceled aims and rejected out-of-range aims remain recoverable. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed.",
+        "simplified": "Load the ember crate and wake the lifts. Carry it across the moving lift stacks. Click the courier in the overhead chart, then click an intended landing spot to hop. BURN CRATE releases the crate. CANCEL AIM cancels aiming. The aim sets speed for a nominal 1.6s hop; elevation and inherited lift motion change the landing. Click a moving lift top in the overhead chart to inspect its concealed motor survey. Its next 3.2s of motion then appears in both views and stays live once inspected. Inspect safely from the quay before hopping; inspection does not launch the courier or pause the lifts. Land inside a top, burn at the hearth, and certify. Falling or releasing away from the hearth ends the episode. A rejected CERTIFY DELIVERY also ends the episode. Aim previews, canceled aims and rejected out-of-range aims remain recoverable. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed."
+      },
+      "natural_language": "Load the ember crate and wake the lifts. Carry it across the moving lift stacks. Set a coordinate hop in the overhead chart: drag the courier and release in Full, or click the courier then the landing coordinate in Simplified. Release the crate with E in Full or BURN CRATE in Simplified. The aim sets speed for a nominal 1.6s hop; elevation and inherited lift motion change the landing. Click a moving lift top in the overhead chart to inspect its concealed motor survey. Its next 3.2s of motion then appears in both views and stays live once inspected. Inspect safely from the quay before hopping; inspection does not launch the courier or pause the lifts. Land inside a top, burn at the hearth, and certify. Falling or releasing away from the hearth ends the episode. A rejected CERTIFY DELIVERY also ends the episode. Aim previews, canceled aims and rejected out-of-range aims remain recoverable. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed."
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "1.8 by 1.85 support tops; lateral amplitude 2.2; height amplitude 0.95; motor span 2200ms; inherited velocity fraction 1.0.",
+      "parameters": {
+        "lift_count": 5,
+        "deck_width": 1.8,
+        "depth_width": 1.85,
+        "lateral_amplitude": 2.2,
+        "height_amplitude": 0.95,
+        "motor_span_ms": 2200,
+        "rise": 0.7,
+        "depth_turn": 1.4,
+        "inherit": 1.0,
+        "gap": 5.3
+      },
+      "natural_language_by_interaction": {
+        "full": "Load the ember crate and wake the lifts. Carry it across the moving lift stacks. Drag the courier in the overhead chart toward an intended landing spot and release to hop. E burns the crate. The aim sets speed for a nominal 1.6s hop; elevation and inherited lift motion change the landing. Click a moving lift top in the overhead chart to inspect its concealed motor survey. Its next 3.2s of motion then appears in both views and stays live once inspected. Inspect safely from the quay before hopping; inspection does not launch the courier or pause the lifts. Land inside a top, burn at the hearth, and certify. Falling or releasing away from the hearth ends the episode. A rejected CERTIFY DELIVERY also ends the episode. Aim previews, canceled aims and rejected out-of-range aims remain recoverable. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed.",
+        "simplified": "Load the ember crate and wake the lifts. Carry it across the moving lift stacks. Click the courier in the overhead chart, then click an intended landing spot to hop. BURN CRATE releases the crate. CANCEL AIM cancels aiming. The aim sets speed for a nominal 1.6s hop; elevation and inherited lift motion change the landing. Click a moving lift top in the overhead chart to inspect its concealed motor survey. Its next 3.2s of motion then appears in both views and stays live once inspected. Inspect safely from the quay before hopping; inspection does not launch the courier or pause the lifts. Land inside a top, burn at the hearth, and certify. Falling or releasing away from the hearth ends the episode. A rejected CERTIFY DELIVERY also ends the episode. Aim previews, canceled aims and rejected out-of-range aims remain recoverable. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed."
+      },
+      "natural_language": "Load the ember crate and wake the lifts. Carry it across the moving lift stacks. Set a coordinate hop in the overhead chart: drag the courier and release in Full, or click the courier then the landing coordinate in Simplified. Release the crate with E in Full or BURN CRATE in Simplified. The aim sets speed for a nominal 1.6s hop; elevation and inherited lift motion change the landing. Click a moving lift top in the overhead chart to inspect its concealed motor survey. Its next 3.2s of motion then appears in both views and stays live once inspected. Inspect safely from the quay before hopping; inspection does not launch the courier or pause the lifts. Land inside a top, burn at the hearth, and certify. Falling or releasing away from the hearth ends the episode. A rejected CERTIFY DELIVERY also ends the episode. Aim previews, canceled aims and rejected out-of-range aims remain recoverable. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, hidden state, or unrelated tabs. Only tabs opened by a visible task control as part of the task are allowed."
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Drag the courier on the overhead aim chart and release to set a ballistic velocity; E burns the carried crate. Sparse drags and pointer capture are supported. In either mode, click a moving top to inspect its motor survey; discovered rails stay live."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Click the courier then any chart position to set the same ballistic velocity; CANCEL AIM replaces Escape and BURN CRATE replaces E. No automatic interception or targeting by object identity. In either mode, click a moving top to inspect its motor survey; discovered rails stay live."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 240,
+    "observation_window_ms": 600,
+    "frames_per_observation": 4
+  },
+  "capabilities": {
+    "visual_understanding": "3D",
+    "temporal_understanding_and_memory": true,
+    "reasoning_and_planning": true,
+    "exploration_and_interface_understanding": false
+  },
+  "calibration_status": "provisional parameters; human and agent calibration pending"
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "relation_prompt_grounding_v3",
+  "environment": "Dual-Projection Sculpture Rig V3",
+  "source_anchors": [
+    "logic-captcha-media-examples-2024",
+    "visual-reasoning-captcha-vtt",
+    "arkose-funcaptcha-internals-crawlex"
+  ],
+  "source_urls": [
+    "https://nypost.com/2024/04/23/tech/youre-not-dreaming-those-im-not-a-robot-captcha-tests-are-getting-harder/",
+    "https://github.com/xiaer1/ViRC",
+    "https://blog.crawlex.net/blog/arkose-funcaptcha-internals/"
+  ],
+  "transformation": "Spatial visual relation and viewpoint prompts become an original two-view 3D reconstruction rig with continuously drifting motor carriages, shared-tension translations, and irreversible geometric exposures.",
+  "assets": "Original procedural canvas/vector geometry, no copied source media or external runtime.",
+  "original_environment_preserved": true,
+  "source_selection": "creation_audit_logs/realtime_source_remaining48_20261002/selection.json",
+  "survey_ids": [],
+  "calibration": {
+    "human": "not run",
+    "model": "not run"
+  }
+}

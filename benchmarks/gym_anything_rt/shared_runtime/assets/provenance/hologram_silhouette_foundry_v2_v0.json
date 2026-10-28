@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "hologram_silhouette_foundry_v2",
+  "revision": "moving-three-die-v2-separated-motion",
+  "source_anchors": [
+    "nextgen-captchas/3D_Viewpoint",
+    "nextgen-captchas/Layered_Stack",
+    "captcha-royale/cubefolding"
+  ],
+  "source_urls": [
+    "https://github.com/MetaAgentX/NextGen-CAPTCHAs",
+    "https://sean-reid.github.io/captcha-royale/"
+  ],
+  "transformation": "Colored 3D topology, layer ordering and folded orientation become continuous rigid casting alignment in three orthographic dies. The new moving-die physics is original.",
+  "third_party_presentation_assets": false,
+  "status": "prototype_visual_candidate",
+  "revisions": [
+    {
+      "revision": "moving-three-die-v1",
+      "status": "rejected",
+      "reason": "D1 parked preparation passed 96/100 sampled instances"
+    },
+    {
+      "revision": "moving-three-die-v2-separated-motion",
+      "change": "Consecutive cubic waypoints have at least 1.6 world units XY separation, preserving smooth observable motion"
+    }
+  ]
+}

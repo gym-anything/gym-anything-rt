@@ -1,0 +1,73 @@
+{
+  "description": "Pick up ordinary objects and release them against surfaces so their physical scale becomes their apparent screen size, turning tiny signs into bridges and huge crates into slot-sized keys.",
+  "difficulty": "easy",
+  "env_id": "gym_anything_rt.forced_perspective_moving_day_nonrealtime_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/forced_perspective_moving_day_nonrealtime_d2_full_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/forced_perspective_moving_day_nonrealtime_d2_full_seed_0001/setup_task.sh"
+  },
+  "id": "forced_perspective_moving_day_nonrealtime_d2_full_seed_0001@0.2",
+  "init": {
+    "max_steps": 1000,
+    "reward_type": "sparse",
+    "timeout_sec": 600
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/incubator_full_build_v1.json",
+    "benchmark": "gym_anything_rt",
+    "control_condition": {
+      "difficulty": 2,
+      "difficulty_parameters": {
+        "avatar_radius": 0.3,
+        "bridge_min_scale": 1.75,
+        "depth_maximum": 13.5,
+        "depth_minimum": 2,
+        "depth_step": 0.5,
+        "dolly_drift_speed": 0.75,
+        "door_half_gap": 1.45,
+        "door_motion_extent": 2,
+        "door_motion_segment_ticks": 120,
+        "focal_choices": [
+          480,
+          520
+        ],
+        "gap": [
+          11.8,
+          14.7
+        ],
+        "move_step": 0.27,
+        "pick_radius_px": 40,
+        "projection_tolerance": 0.1,
+        "slot_max_scale": 0.63,
+        "slot_size": [
+          2,
+          2
+        ],
+        "yaw_abs_max": 0.018,
+        "yaw_abs_min": 0.008
+      },
+      "interaction": "full",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "forced_perspective_moving_day_nonrealtime",
+    "variant_count": 11600000000,
+    "variant_count_kind": "mirror, camera yaw, focal length, palette, projected object positions, depth-scale ratios, and seeded fixed doorway/dolly initial layout"
+  },
+  "name": "Forced-Perspective Moving Day · Difficulty 2 · Full Interaction",
+  "natural_language": "Preserve each object's screen size while changing depth. Fit the crate in the floor slot, span the void with the sign, and guide the camera body through the unlocked doorway.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "forced_perspective_moving_day_nonrealtime",
+    "forced-perspective",
+    "scale-manipulation",
+    "rigid-body-placement"
+  ],
+  "version": "0.2"
+}

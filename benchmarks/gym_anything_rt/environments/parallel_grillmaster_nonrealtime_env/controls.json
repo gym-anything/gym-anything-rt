@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "parallel_grillmaster_nonrealtime",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "3 foods with seeded heat cues; ±1800 serving tolerance; 1 concurrent start. Each start has a finite cook transition and settles in the golden window.",
+      "natural_language": "Watch the seeded heat response during each finite cook transition and serve every food when its bar reaches its golden window. A settled food remains in that window while you decide. One spoiled item ends the attempt.",
+      "parameters": {
+        "food_count": 3,
+        "target_times_ms": [
+          8000,
+          9000,
+          10000
+        ],
+        "tolerance_ms_values": [
+          1800,
+          2000
+        ],
+        "parallel_start_count": 1,
+        "parallel_start_window_ms": null
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "6 foods with seeded heat cues; ±1150 serving tolerance; 1 concurrent start. Each start has a finite cook transition and settles in the golden window.",
+      "natural_language": "Watch the seeded heat response during each finite cook transition and serve every food when its bar reaches its golden window. A settled food remains in that window while you decide. One spoiled item ends the attempt.",
+      "parameters": {
+        "food_count": 6,
+        "target_times_ms": [
+          8000,
+          9000,
+          10000,
+          11000,
+          12000,
+          13000
+        ],
+        "tolerance_ms_values": [
+          1150,
+          1250,
+          1350
+        ],
+        "parallel_start_count": 1,
+        "parallel_start_window_ms": null
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "6 foods with seeded heat cues; ±950 serving tolerance; 3 concurrent starts. Each start has a finite cook transition and settles in the golden window.",
+      "natural_language": "Start at least 3 foods within 2.6 seconds. Watch the seeded heat response during each finite cook transition and serve every food when its bar reaches its golden window. A settled food remains in that window while you decide. One spoiled item ends the attempt.",
+      "parameters": {
+        "food_count": 6,
+        "target_times_ms": [
+          8000,
+          9000,
+          10000,
+          11000,
+          12000,
+          13000
+        ],
+        "tolerance_ms_values": [
+          950,
+          1050
+        ],
+        "parallel_start_count": 3,
+        "parallel_start_window_ms": 2600
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "6 foods with seeded heat cues; ±750 serving tolerance; 6 concurrent starts. Each start has a finite cook transition and settles in the golden window.",
+      "natural_language": "Start at least 6 foods within 3 seconds. Watch the seeded heat response during each finite cook transition and serve every food when its bar reaches its golden window. A settled food remains in that window while you decide. One spoiled item ends the attempt.",
+      "parameters": {
+        "food_count": 6,
+        "target_times_ms": [
+          8000,
+          9000,
+          10000,
+          11000,
+          12000,
+          13000
+        ],
+        "tolerance_ms_values": [
+          750,
+          850
+        ],
+        "parallel_start_count": 6,
+        "parallel_start_window_ms": 3000
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "8 foods with seeded heat cues; ±550 serving tolerance; 8 concurrent starts. Each start has a finite cook transition and settles in the golden window.",
+      "natural_language": "Start at least 8 foods within 3.2 seconds. Watch the seeded heat response during each finite cook transition and serve every food when its bar reaches its golden window. A settled food remains in that window while you decide. One spoiled item ends the attempt.",
+      "parameters": {
+        "food_count": 8,
+        "target_times_ms": [
+          8000,
+          9000,
+          10000,
+          11000,
+          12000,
+          13000,
+          14000,
+          15000
+        ],
+        "tolerance_ms_values": [
+          550,
+          650
+        ],
+        "parallel_start_count": 8,
+        "parallel_start_window_ms": 3200
+      }
+    }
+  },
+  "interaction": {
+    "simplified": {
+      "implemented": true,
+      "summary": "Select a food, then click its destination zone."
+    },
+    "full": {
+      "implemented": true,
+      "summary": "Drag each food directly from the raw order to the live grill and then to the serving tray."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 600,
+    "observation_window_ms": 240,
+    "frames_per_observation": 4
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "description": "An action-stepped source-derived LiDAR/camera survey: keep linked oriented 3D cuboids fitted to concurrently moving and turning toy scans.",
+  "difficulty": "very_easy",
+  "env_id": "gym_anything_rt.surveyors_toybox_nonrealtime_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/surveyors_toybox_nonrealtime_d1_full_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/surveyors_toybox_nonrealtime_d1_full_seed_0001/setup_task.sh"
+  },
+  "id": "surveyors_toybox_nonrealtime_d1_full_seed_0001@0.2",
+  "init": {
+    "max_steps": 1000,
+    "reward_type": "sparse",
+    "timeout_sec": 600
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/surveyors_toybox_v2_v0.json",
+    "benchmark": "gym_anything_rt",
+    "capabilities": [
+      "3D visual understanding",
+      "Temporal understanding and memory",
+      "Reasoning and planning"
+    ],
+    "control_condition": {
+      "difficulty": 1,
+      "difficulty_parameters": {
+        "center_tolerance": 0.6,
+        "distractor_count": 1,
+        "extent_tolerance": 0.18,
+        "forecast_ms": 2400,
+        "iou_min": 0.55,
+        "moving_axes": 2,
+        "point_count": 52,
+        "span_ms": 22000,
+        "target_count": 1,
+        "yaw_amplitude": 0,
+        "yaw_tolerance": 24
+      },
+      "interaction": "full",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "surveyors_toybox_nonrealtime",
+    "variant_count": 1000000000000000000,
+    "variant_count_kind": "seeded cuboids, scan returns and nonrepeating 3D paths"
+  },
+  "name": "Surveyors Toybox V2 · Difficulty 1 · Full Interaction",
+  "natural_language": "Link each tug portrait to its matching camera subject. Fit each 3D cuboid using both camera plates and the sparse scan. Start the action-stepped survey; while idle, the visible scene stays stable. Each completed existing control advances one fixed 20 ms step, and you must keep all cuboids centered, sized and oriented on their moving tugs until the simultaneous-fit bar fills. Start commits camera links; wrong links, ten continuous seconds lost, 90 seconds of action-stepped survey time, or incomplete certification ends the single-attempt episode. Use only visible controls.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "surveyors_toybox_nonrealtime",
+    "3d-cuboid",
+    "lidar",
+    "non-real-time",
+    "sensor-fusion"
+  ],
+  "version": "0.2"
+}

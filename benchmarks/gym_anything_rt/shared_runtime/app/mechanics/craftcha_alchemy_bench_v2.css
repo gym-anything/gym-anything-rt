@@ -1,0 +1,37 @@
+body[data-mechanic="stormglass-alchemy"] {background: #08121f; color: #eee9d3;}
+body[data-mechanic="stormglass-alchemy"] .app-shell {max-width:none; padding:8px;}
+.stormglass-bench {box-sizing:border-box; width:min(1240px,calc(100vw - 16px),calc((100vh - 16px)*1.86)); margin:auto; padding:18px; border:1px solid #425866; background:radial-gradient(ellipse at 30% 0%,#253948,#111f2d 70%); box-shadow:0 20px 70px #0007; font:14px/1.4 Arial,sans-serif;}
+.sg-head {display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;}
+.sg-head small,.sg-formula small {font-size:11px; letter-spacing:2px; color:#93b1b5;}
+.sg-head h1 {font:normal 31px/1.1 Georgia,serif; margin:5px 0; color:#f4dfac;}
+.sg-head p {margin:0; color:#b8c7c8;}
+.sg-head aside {display:grid; gap:8px; text-align:right; font-size:12px; letter-spacing:1px; color:#efc889;}
+.sg-head aside span {color:#b9ccd0;}
+.sg-rules {padding:9px 14px; border:1px solid #50606a; background:#0f202d; color:#dbe7e6; font-size:14px; margin-bottom:12px;}
+.sg-main {display:grid; grid-template-columns:minmax(0,880px) minmax(260px,1fr); gap:18px;}
+.sg-world {min-width:0;}
+#stormglass-canvas {width:100%; height:auto; display:block; touch-action:none; cursor:crosshair; border:1px solid #49606d; box-sizing:border-box;}
+.sg-legend {display:grid; gap:2px; padding:8px 0 0; color:#aec4c8; font-size:12px;}
+.sg-legend b {color:#e3c893; letter-spacing:1px;}
+.sg-formula {border:1px solid #54615d; background:#e3d8b9; color:#263c45; padding:10px;}
+.sg-formula header {border-bottom:1px solid #8e9d97; margin-bottom:8px; padding-bottom:8px;}
+.sg-formula small {color:#506867; font-size:10px;}
+.sg-formula h2 {font:normal 22px Georgia,serif; margin:6px 0 0;}
+.sg-recipe {display:flex; align-items:center; gap:5px; height:32px; margin:2px 0; padding:0 3px; border-left:3px solid transparent;}
+.sg-recipe.sg-available {border-left-color:#286756; background:#f8f0d655;}
+.sg-recipe.sg-made {opacity:.55;}
+.sg-recipe em {font-style:normal; font-size:14px;}
+.sg-recipe>span:last-child:not(.sg-badge) {font-size:11px; margin-left:3px; white-space:nowrap;}
+.sg-badge {background:var(--reagent); color:#142333; border:1px solid #52666e; border-radius:50%; display:inline-grid; place-items:center; width:27px; height:27px; min-width:27px; font:700 20px Georgia,serif;}
+.sg-formula p {font-size:11px; color:#53675e; border-top:1px solid #96a399; padding-top:8px; margin:8px 0 0;}
+.sg-foot {display:grid; grid-template-columns:170px 1fr 170px; align-items:center; gap:14px; margin-top:12px; border-top:1px solid #4e6064; padding-top:10px;}
+.sg-foot button {height:45px; border:1px solid #e0bb77; background:#d7b579; color:#1d303a; font-size:12px; font-weight:bold; letter-spacing:1px; cursor:pointer;}
+.sg-foot button:disabled {opacity:.45; cursor:default;}
+.sg-foot>div {text-align:center;}
+.sg-foot .readout {font-size:13px; color:#d3dfda;}
+.sg-foot .readout[data-status="passed"] {color:#aff0d3;}
+.sg-foot .readout[data-status="error"] {color:#ff9f8c;}
+#stormglass-remaining {font-size:11px; color:#9daeb4;}
+.stormglass-bench[data-status="failed"] {border-color:#ef9a87;}
+.stormglass-bench[data-status="passed"] {border-color:#a6e5cb;}
+@media(max-width:1100px) {.stormglass-bench {padding:14px;} .sg-main {grid-template-columns:minmax(0,1fr) 250px;gap:12px;} .sg-recipe>span:last-child:not(.sg-badge) {font-size:10px;} .sg-badge {width:25px;height:25px;min-width:25px;} }

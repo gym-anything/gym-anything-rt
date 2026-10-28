@@ -1,0 +1,63 @@
+{
+  "description": "A live circulating rhythm score: track independently varying belts and moving inspection bands while coordinating tap and hold inputs.",
+  "difficulty": "easy",
+  "env_id": "gym_anything_rt.polyrhythm_customs_v2_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/polyrhythm_customs_v2_d2_simplified_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/polyrhythm_customs_v2_d2_simplified_seed_0001/setup_task.sh"
+  },
+  "id": "polyrhythm_customs_v2_d2_simplified_seed_0001@0.2",
+  "init": {
+    "max_steps": 500,
+    "reward_type": "sparse",
+    "timeout_sec": 600
+  },
+  "metadata": {
+    "benchmark": "gym_anything_rt",
+    "capabilities": [
+      "visual_understanding_2d",
+      "temporal_understanding_and_memory",
+      "reasoning_and_planning"
+    ],
+    "control_condition": {
+      "difficulty": 2,
+      "difficulty_parameters": {
+        "band_half_width": 49,
+        "gate_drift": 20,
+        "gate_span_ms": 5100,
+        "hold_fraction": 0.25,
+        "hold_length_max": 125,
+        "hold_length_min": 100,
+        "lane_count": 2,
+        "miss_allowance": 6,
+        "notes_per_lane": 4,
+        "speed": 64,
+        "speed_span_ms": 2900,
+        "speed_variation": 0.25
+      },
+      "interaction": "simplified",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "design_revision": "circulating-score-v2",
+    "mechanic_id": "polyrhythm_customs_v2"
+  },
+  "name": "Polyrhythm Customs V2 · Difficulty 2 · Simplified Interaction",
+  "natural_language": "Clear every circulating note. Press when its filled head is inside its moving gold band; for a ribbon, hold until the hollow tail reaches gold, then release. Missed notes return, but more than 6 missed passes ends the episode. A wrong stamp or mistimed release ends this episode. Click a lane pad to press; click it again to release. Several pads may stay pressed. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network/source/DOM/page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or hidden-state access. Do not switch to any unrelated, blank, settings, or pre-existing non-task tab. A task-opened tab is allowed only if part of this task, using its visible controls.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "linux",
+    "browser",
+    "visual-puzzle",
+    "gym-anything-rt",
+    "real-time",
+    "rhythm",
+    "concurrent-control"
+  ],
+  "version": "0.2"
+}

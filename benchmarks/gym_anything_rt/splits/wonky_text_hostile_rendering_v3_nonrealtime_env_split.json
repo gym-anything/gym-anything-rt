@@ -1,0 +1,66 @@
+{
+  "env_folder": "wonky_text_hostile_rendering_v3_nonrealtime_env",
+  "all_tasks": [
+    "wonky_text_hostile_rendering_v3_nonrealtime_d1_full_seed_0001",
+    "wonky_text_hostile_rendering_v3_nonrealtime_d1_simplified_seed_0001",
+    "wonky_text_hostile_rendering_v3_nonrealtime_d2_full_seed_0001",
+    "wonky_text_hostile_rendering_v3_nonrealtime_d2_simplified_seed_0001",
+    "wonky_text_hostile_rendering_v3_nonrealtime_d3_full_seed_0001",
+    "wonky_text_hostile_rendering_v3_nonrealtime_d3_simplified_seed_0001",
+    "wonky_text_hostile_rendering_v3_nonrealtime_d4_full_seed_0001",
+    "wonky_text_hostile_rendering_v3_nonrealtime_d4_simplified_seed_0001",
+    "wonky_text_hostile_rendering_v3_nonrealtime_d5_full_seed_0001",
+    "wonky_text_hostile_rendering_v3_nonrealtime_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "wonky_text_hostile_rendering_v3_nonrealtime_d1_full_seed_0001",
+    "wonky_text_hostile_rendering_v3_nonrealtime_d1_simplified_seed_0001",
+    "wonky_text_hostile_rendering_v3_nonrealtime_d2_full_seed_0001",
+    "wonky_text_hostile_rendering_v3_nonrealtime_d2_simplified_seed_0001",
+    "wonky_text_hostile_rendering_v3_nonrealtime_d3_full_seed_0001",
+    "wonky_text_hostile_rendering_v3_nonrealtime_d3_simplified_seed_0001",
+    "wonky_text_hostile_rendering_v3_nonrealtime_d4_full_seed_0001",
+    "wonky_text_hostile_rendering_v3_nonrealtime_d4_simplified_seed_0001",
+    "wonky_text_hostile_rendering_v3_nonrealtime_d5_full_seed_0001",
+    "wonky_text_hostile_rendering_v3_nonrealtime_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "wonky_text_hostile_rendering_v3_nonrealtime_d5_full_seed_0001"
+    ],
+    "full": [
+      "wonky_text_hostile_rendering_v3_nonrealtime_d1_full_seed_0001",
+      "wonky_text_hostile_rendering_v3_nonrealtime_d2_full_seed_0001",
+      "wonky_text_hostile_rendering_v3_nonrealtime_d3_full_seed_0001",
+      "wonky_text_hostile_rendering_v3_nonrealtime_d4_full_seed_0001",
+      "wonky_text_hostile_rendering_v3_nonrealtime_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "wonky_text_hostile_rendering_v3_nonrealtime_d1_simplified_seed_0001",
+      "wonky_text_hostile_rendering_v3_nonrealtime_d2_simplified_seed_0001",
+      "wonky_text_hostile_rendering_v3_nonrealtime_d3_simplified_seed_0001",
+      "wonky_text_hostile_rendering_v3_nonrealtime_d4_simplified_seed_0001",
+      "wonky_text_hostile_rendering_v3_nonrealtime_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "wonky_text_hostile_rendering_v3_nonrealtime_d1_full_seed_0001",
+      "wonky_text_hostile_rendering_v3_nonrealtime_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "wonky_text_hostile_rendering_v3_nonrealtime_d2_full_seed_0001",
+      "wonky_text_hostile_rendering_v3_nonrealtime_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "wonky_text_hostile_rendering_v3_nonrealtime_d3_full_seed_0001",
+      "wonky_text_hostile_rendering_v3_nonrealtime_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "wonky_text_hostile_rendering_v3_nonrealtime_d4_full_seed_0001",
+      "wonky_text_hostile_rendering_v3_nonrealtime_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "wonky_text_hostile_rendering_v3_nonrealtime_d5_full_seed_0001",
+      "wonky_text_hostile_rendering_v3_nonrealtime_d5_simplified_seed_0001"
+    ]
+  }
+}

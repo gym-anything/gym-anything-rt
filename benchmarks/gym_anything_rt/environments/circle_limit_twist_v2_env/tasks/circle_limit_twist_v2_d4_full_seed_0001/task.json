@@ -1,0 +1,60 @@
+{
+  "description": "Restore every heptagon to one color within the visible twist allowance. Drag the disc to counter the changing flow. A turn only works while the face center lies inside the central aperture and the 1.2-second detent has settled. The flow continues during holds and dragging. An incomplete certification or spent twist allowance ends the episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or other hidden-state access. Do not switch to unrelated, blank, pre-existing, or browser-settings tabs.",
+  "difficulty": "hard",
+  "env_id": "gym_anything_rt.circle_limit_twist_v2_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/circle_limit_twist_v2_d4_full_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/circle_limit_twist_v2_d4_full_seed_0001/setup_task.sh"
+  },
+  "id": "circle_limit_twist_v2_d4_full_seed_0001@0.2",
+  "init": {
+    "max_steps": 180,
+    "reward_type": "sparse",
+    "timeout_sec": 600
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/circle_limit_twist_v2_v0.json",
+    "benchmark": "gym_anything_rt",
+    "capabilities": [
+      "visual understanding: 2D",
+      "temporal understanding and memory",
+      "reasoning and planning",
+      "exploration and interface understanding"
+    ],
+    "capability_configuration": {
+      "difficulty": 5,
+      "interaction": "full"
+    },
+    "control_condition": {
+      "difficulty": 4,
+      "difficulty_parameters": {
+        "activation_radius": 0.18,
+        "face_count": 14,
+        "flow_amplitude": 0.73,
+        "flow_span_ms": 2200,
+        "move_budget": 12,
+        "scramble_length": 6
+      },
+      "interaction": "full",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "circle_limit_twist_v2"
+  },
+  "name": "Circle Limit Twist V2 · Difficulty 4 · Full Interaction",
+  "natural_language": "Restore every heptagon to one color within the visible twist allowance. Drag the disc to counter the changing flow. A turn only works while the face center lies inside the central aperture and the 1.2-second detent has settled. The flow continues during holds and dragging. An incomplete certification or spent twist allowance ends the episode. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console, debugger, inspector, network or source inspection, DOM or page-state inspection, terminal, shell, Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, or other hidden-state access. Do not switch to unrelated, blank, pre-existing, or browser-settings tabs.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "hyperbolic-geometry",
+    "mobius-pan",
+    "twisty-puzzle",
+    "mouse"
+  ],
+  "version": "0.2"
+}

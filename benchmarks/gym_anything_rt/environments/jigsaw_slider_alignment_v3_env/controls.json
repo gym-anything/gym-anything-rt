@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "jigsaw_slider_alignment_v3",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "One fragment: changing translation, inertial response and \u00b122px registration; rotation and coupling are inactive.",
+      "natural_language": "Test each horizontal drive before clamping: it may follow or reverse your hand. Compare HAND X with the destination square, then steer using the discovered direction. Track the unrotating moving aperture, clamp the fragment when its rim is green, and keep steering while the seam closes. Rotation is locked.",
+      "parameters": {
+        "piece_count": 1,
+        "position_tolerance": 22,
+        "angle_tolerance": 180,
+        "velocity_tolerance": 65,
+        "angular_velocity_tolerance": 180,
+        "spring": 0,
+        "stiffness": 30,
+        "damping": 10,
+        "span_min_ms": 3800,
+        "span_max_ms": 5400,
+        "rotation_amplitude": 0
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "1 simultaneous fragments, \u00b119px / \u00b113\u00b0 registration, coupling 0; changing translation and rotation, inertial response.",
+      "natural_language": "Test each horizontal drive before clamping: it may follow or reverse your hand. Compare HAND X with the destination square, then steer using the discovered direction. Track every moving aperture, then clamp all fragments and keep steering while the seam closes.",
+      "parameters": {
+        "piece_count": 1,
+        "position_tolerance": 19,
+        "angle_tolerance": 13,
+        "velocity_tolerance": 55,
+        "angular_velocity_tolerance": 35,
+        "spring": 0,
+        "stiffness": 27,
+        "damping": 9,
+        "span_min_ms": 3600,
+        "span_max_ms": 5200,
+        "rotation_amplitude": 32
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "2 simultaneous fragments, \u00b117px / \u00b111\u00b0 registration, coupling 2; changing translation and rotation, inertial response.",
+      "natural_language": "Test each horizontal drive before clamping: it may follow or reverse your hand. Compare HAND X with the destination square, then steer using the discovered direction. Track every moving aperture, then clamp all fragments and keep steering while the seam closes.",
+      "parameters": {
+        "piece_count": 2,
+        "position_tolerance": 17,
+        "angle_tolerance": 11,
+        "velocity_tolerance": 50,
+        "angular_velocity_tolerance": 30,
+        "spring": 2,
+        "stiffness": 24,
+        "damping": 9,
+        "span_min_ms": 3400,
+        "span_max_ms": 4900,
+        "rotation_amplitude": 38
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "3 simultaneous fragments, \u00b115px / \u00b19\u00b0 registration, coupling 3; changing translation and rotation, inertial response.",
+      "natural_language": "Test each horizontal drive before clamping: it may follow or reverse your hand. Compare HAND X with the destination square, then steer using the discovered direction. Track every moving aperture, then clamp all fragments and keep steering while the seam closes.",
+      "parameters": {
+        "piece_count": 3,
+        "position_tolerance": 15,
+        "angle_tolerance": 9,
+        "velocity_tolerance": 45,
+        "angular_velocity_tolerance": 27,
+        "spring": 3,
+        "stiffness": 22,
+        "damping": 8,
+        "span_min_ms": 3200,
+        "span_max_ms": 4600,
+        "rotation_amplitude": 42
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "3 simultaneous fragments, \u00b112px / \u00b17\u00b0 registration, coupling 4; changing translation and rotation, inertial response.",
+      "natural_language": "Test each horizontal drive before clamping: it may follow or reverse your hand. Compare HAND X with the destination square, then steer using the discovered direction. Track every moving aperture, then clamp all fragments and keep steering while the seam closes.",
+      "parameters": {
+        "piece_count": 3,
+        "position_tolerance": 12,
+        "angle_tolerance": 7,
+        "velocity_tolerance": 40,
+        "angular_velocity_tolerance": 24,
+        "spring": 4,
+        "stiffness": 20,
+        "damping": 8,
+        "span_min_ms": 3000,
+        "span_max_ms": 4400,
+        "rotation_amplitude": 48
+      }
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Drag fragments and turn dials. A horizontal command reveals each seeded direct or reversed transmission; its response remains visible."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Click lane destinations and dial angles. The same seeded transmissions, measured responses and moving world apply."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 300,
+    "frames_per_observation": 4
+  }
+}

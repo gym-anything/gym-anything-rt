@@ -1,0 +1,66 @@
+{
+  "env_folder": "museum_of_lost_gestures_v2_env",
+  "all_tasks": [
+    "museum_of_lost_gestures_v2_d1_full_seed_0001",
+    "museum_of_lost_gestures_v2_d1_simplified_seed_0001",
+    "museum_of_lost_gestures_v2_d2_full_seed_0001",
+    "museum_of_lost_gestures_v2_d2_simplified_seed_0001",
+    "museum_of_lost_gestures_v2_d3_full_seed_0001",
+    "museum_of_lost_gestures_v2_d3_simplified_seed_0001",
+    "museum_of_lost_gestures_v2_d4_full_seed_0001",
+    "museum_of_lost_gestures_v2_d4_simplified_seed_0001",
+    "museum_of_lost_gestures_v2_d5_full_seed_0001",
+    "museum_of_lost_gestures_v2_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "museum_of_lost_gestures_v2_d1_full_seed_0001",
+    "museum_of_lost_gestures_v2_d1_simplified_seed_0001",
+    "museum_of_lost_gestures_v2_d2_full_seed_0001",
+    "museum_of_lost_gestures_v2_d2_simplified_seed_0001",
+    "museum_of_lost_gestures_v2_d3_full_seed_0001",
+    "museum_of_lost_gestures_v2_d3_simplified_seed_0001",
+    "museum_of_lost_gestures_v2_d4_full_seed_0001",
+    "museum_of_lost_gestures_v2_d4_simplified_seed_0001",
+    "museum_of_lost_gestures_v2_d5_full_seed_0001",
+    "museum_of_lost_gestures_v2_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "museum_of_lost_gestures_v2_d5_full_seed_0001"
+    ],
+    "full": [
+      "museum_of_lost_gestures_v2_d1_full_seed_0001",
+      "museum_of_lost_gestures_v2_d2_full_seed_0001",
+      "museum_of_lost_gestures_v2_d3_full_seed_0001",
+      "museum_of_lost_gestures_v2_d4_full_seed_0001",
+      "museum_of_lost_gestures_v2_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "museum_of_lost_gestures_v2_d1_simplified_seed_0001",
+      "museum_of_lost_gestures_v2_d2_simplified_seed_0001",
+      "museum_of_lost_gestures_v2_d3_simplified_seed_0001",
+      "museum_of_lost_gestures_v2_d4_simplified_seed_0001",
+      "museum_of_lost_gestures_v2_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "museum_of_lost_gestures_v2_d1_full_seed_0001",
+      "museum_of_lost_gestures_v2_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "museum_of_lost_gestures_v2_d2_full_seed_0001",
+      "museum_of_lost_gestures_v2_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "museum_of_lost_gestures_v2_d3_full_seed_0001",
+      "museum_of_lost_gestures_v2_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "museum_of_lost_gestures_v2_d4_full_seed_0001",
+      "museum_of_lost_gestures_v2_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "museum_of_lost_gestures_v2_d5_full_seed_0001",
+      "museum_of_lost_gestures_v2_d5_simplified_seed_0001"
+    ]
+  }
+}

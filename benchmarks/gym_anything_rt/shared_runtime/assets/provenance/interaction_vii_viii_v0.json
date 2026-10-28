@@ -1,0 +1,89 @@
+{
+  "collection": "interaction_vii_viii_v0",
+  "created": "2026-07-14",
+  "scope": "Ten newly selected interaction-first mechanics created after the historical Incubator and Interaction III–VI queues were fully implemented.",
+  "policy": "Survey artifacts seed mechanics only. All shipped presentation, geometry, simulation code, and grading logic are original procedural HTML, CSS, canvas, JavaScript, or Python. No third-party media is redistributed.",
+  "mechanics": {
+    "specular_lighthouse_relay": {
+      "sources": [
+        "research/collection/sources/captcha-royale",
+        "research/collection/sources/nextgen-captchas-benchmark"
+      ],
+      "influence": "Mirror matching, coupled gears, and shadow-direction geometry.",
+      "transformation": "A live four-stage analytic reflection bench with three adjustable gimbals and sustained ordered receiver locks."
+    },
+    "wind_tunnel_seed_courier": {
+      "sources": [
+        "research/collection/sources/opencaptchaworld-benchmark",
+        "research/collection/sources/captchaware"
+      ],
+      "influence": "Path finding, held controls, and moving-object collection.",
+      "transformation": "A fixed-step spatial force field with fan falloff, persistent momentum, swept gate crossings, and geometric dock capture."
+    },
+    "hologram_silhouette_foundry": {
+      "sources": [
+        "research/collection/sources/nextgen-captchas-benchmark",
+        "research/collection/sources/captcha-royale"
+      ],
+      "influence": "3D viewpoint, layered stacks, box folding, and spatial reasoning.",
+      "transformation": "An inverse 3D construction bench with linked orthographic occupancy masks and manipulable intangible rods."
+    },
+    "orbital_docking_customs": {
+      "sources": [
+        "research/collection/sources/opencaptchaworld-benchmark",
+        "research/collection/sources/neal-im-not-a-robot"
+      ],
+      "influence": "Coordinate placement, path finding, and frustrating parking controls.",
+      "transformation": "A finite-fuel impulse-and-coast rendezvous requiring matched position, relative speed, and attitude."
+    },
+    "gravity_room_freight": {
+      "sources": [
+        "research/collection/sources/captcha-royale",
+        "research/collection/sources/opencaptchaworld-benchmark"
+      ],
+      "influence": "Rotation and path-tracing tasks.",
+      "transformation": "A procedurally searched rotating-gravity room whose capsule slides through ordered airlocks under world-frame changes."
+    },
+    "floodgate_archive_rescue": {
+      "sources": [
+        "research/collection/sources/opencaptchaworld-benchmark",
+        "research/collection/sources/captchaware",
+        "research/collection/sources/captcha-rpg"
+      ],
+      "influence": "Path finding, fishing, blocking, and delivery interactions.",
+      "transformation": "A mass-conserving multi-vault lock system with pumps, equalization, floating evidence transfer, and flood limits."
+    },
+    "elastic_membrane_sorter": {
+      "sources": [
+        "research/collection/sources/captcha-royale",
+        "research/collection/sources/nextgen-captchas-benchmark"
+      ],
+      "influence": "Balance, overlap, and layered-surface reasoning.",
+      "transformation": "A four-post damped membrane whose live slope routes three persistent marbles into assigned wells."
+    },
+    "pheromone_dispatch": {
+      "sources": [
+        "research/collection/sources/neal-im-not-a-robot",
+        "research/collection/sources/captchaware"
+      ],
+      "influence": "Runaway-target capture, fishing, and continuous grass interaction.",
+      "transformation": "A resampled continuous field that indirectly routes a carrier swarm around salt obstacles through pickup and delivery."
+    },
+    "clockwork_clutch_safe": {
+      "sources": [
+        "research/collection/sources/captcha-royale",
+        "research/collection/sources/captcha-rpg"
+      ],
+      "influence": "Gear prediction, clock reading, and inertial time wheels.",
+      "transformation": "A live coupled-ratio gear train with timed clutch releases and a simultaneous three-phase terminal window."
+    },
+    "marionette_checkpoint": {
+      "sources": [
+        "research/collection/sources/nextgen-captchas-benchmark",
+        "research/collection/sources/captcha-rpg"
+      ],
+      "influence": "3D viewpoint, fingertip targeting, and character dragging.",
+      "transformation": "A four-string coupled kinematic puppet with sustained sequential limb checkpoints."
+    }
+  }
+}

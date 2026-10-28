@@ -1,0 +1,66 @@
+{
+  "env_folder": "charter_of_the_nine_cantons_v3_nonrealtime_env",
+  "all_tasks": [
+    "charter_of_the_nine_cantons_v3_nonrealtime_d1_full_seed_0001",
+    "charter_of_the_nine_cantons_v3_nonrealtime_d1_simplified_seed_0001",
+    "charter_of_the_nine_cantons_v3_nonrealtime_d2_full_seed_0001",
+    "charter_of_the_nine_cantons_v3_nonrealtime_d2_simplified_seed_0001",
+    "charter_of_the_nine_cantons_v3_nonrealtime_d3_full_seed_0001",
+    "charter_of_the_nine_cantons_v3_nonrealtime_d3_simplified_seed_0001",
+    "charter_of_the_nine_cantons_v3_nonrealtime_d4_full_seed_0001",
+    "charter_of_the_nine_cantons_v3_nonrealtime_d4_simplified_seed_0001",
+    "charter_of_the_nine_cantons_v3_nonrealtime_d5_full_seed_0001",
+    "charter_of_the_nine_cantons_v3_nonrealtime_d5_simplified_seed_0001"
+  ],
+  "test_tasks": [
+    "charter_of_the_nine_cantons_v3_nonrealtime_d1_full_seed_0001",
+    "charter_of_the_nine_cantons_v3_nonrealtime_d1_simplified_seed_0001",
+    "charter_of_the_nine_cantons_v3_nonrealtime_d2_full_seed_0001",
+    "charter_of_the_nine_cantons_v3_nonrealtime_d2_simplified_seed_0001",
+    "charter_of_the_nine_cantons_v3_nonrealtime_d3_full_seed_0001",
+    "charter_of_the_nine_cantons_v3_nonrealtime_d3_simplified_seed_0001",
+    "charter_of_the_nine_cantons_v3_nonrealtime_d4_full_seed_0001",
+    "charter_of_the_nine_cantons_v3_nonrealtime_d4_simplified_seed_0001",
+    "charter_of_the_nine_cantons_v3_nonrealtime_d5_full_seed_0001",
+    "charter_of_the_nine_cantons_v3_nonrealtime_d5_simplified_seed_0001"
+  ],
+  "additional_splits": {
+    "d5_full": [
+      "charter_of_the_nine_cantons_v3_nonrealtime_d5_full_seed_0001"
+    ],
+    "full": [
+      "charter_of_the_nine_cantons_v3_nonrealtime_d1_full_seed_0001",
+      "charter_of_the_nine_cantons_v3_nonrealtime_d2_full_seed_0001",
+      "charter_of_the_nine_cantons_v3_nonrealtime_d3_full_seed_0001",
+      "charter_of_the_nine_cantons_v3_nonrealtime_d4_full_seed_0001",
+      "charter_of_the_nine_cantons_v3_nonrealtime_d5_full_seed_0001"
+    ],
+    "simplified": [
+      "charter_of_the_nine_cantons_v3_nonrealtime_d1_simplified_seed_0001",
+      "charter_of_the_nine_cantons_v3_nonrealtime_d2_simplified_seed_0001",
+      "charter_of_the_nine_cantons_v3_nonrealtime_d3_simplified_seed_0001",
+      "charter_of_the_nine_cantons_v3_nonrealtime_d4_simplified_seed_0001",
+      "charter_of_the_nine_cantons_v3_nonrealtime_d5_simplified_seed_0001"
+    ],
+    "d1": [
+      "charter_of_the_nine_cantons_v3_nonrealtime_d1_full_seed_0001",
+      "charter_of_the_nine_cantons_v3_nonrealtime_d1_simplified_seed_0001"
+    ],
+    "d2": [
+      "charter_of_the_nine_cantons_v3_nonrealtime_d2_full_seed_0001",
+      "charter_of_the_nine_cantons_v3_nonrealtime_d2_simplified_seed_0001"
+    ],
+    "d3": [
+      "charter_of_the_nine_cantons_v3_nonrealtime_d3_full_seed_0001",
+      "charter_of_the_nine_cantons_v3_nonrealtime_d3_simplified_seed_0001"
+    ],
+    "d4": [
+      "charter_of_the_nine_cantons_v3_nonrealtime_d4_full_seed_0001",
+      "charter_of_the_nine_cantons_v3_nonrealtime_d4_simplified_seed_0001"
+    ],
+    "d5": [
+      "charter_of_the_nine_cantons_v3_nonrealtime_d5_full_seed_0001",
+      "charter_of_the_nine_cantons_v3_nonrealtime_d5_simplified_seed_0001"
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "description": "Steer a luminous articulated fish through real three-dimensional water by coordinating signed tail and fin torques.",
+  "difficulty": "very_hard",
+  "env_id": "gym_anything_rt.lanternfin_dive_nonrealtime_env@0.1",
+  "hooks": {
+    "post_task": "/workspace/tasks/lanternfin_dive_nonrealtime_d5_simplified_seed_0001/export_result.sh",
+    "pre_task": "/workspace/tasks/lanternfin_dive_nonrealtime_d5_simplified_seed_0001/setup_task.sh"
+  },
+  "id": "lanternfin_dive_nonrealtime_d5_simplified_seed_0001@0.2",
+  "init": {
+    "max_steps": 1200,
+    "reward_type": "sparse",
+    "timeout_sec": 900
+  },
+  "metadata": {
+    "asset_manifest": "shared_runtime/assets/provenance/lanternfin_dive_v0.json",
+    "benchmark": "gym_anything_rt",
+    "control_condition": {
+      "difficulty": 5,
+      "difficulty_parameters": {
+        "angular_damping": 0.82,
+        "arrival_radius": 0.095,
+        "hold_ticks": 18,
+        "initial_pitch": -0.29,
+        "initial_roll": -0.34,
+        "initial_yaw": 0.38,
+        "linear_damping": 0.93,
+        "speed_limit": 0.03,
+        "target_depth": 0.76,
+        "target_distance": 1.78,
+        "target_height": 0.48,
+        "thrust_gain": 0.028,
+        "torque_gain": 0.022,
+        "upright_tolerance": 0.12
+      },
+      "interaction": "simplified",
+      "real_time": "live"
+    },
+    "controlled_task_version": 1,
+    "mechanic_id": "lanternfin_dive_nonrealtime"
+  },
+  "name": "Lanternfin Dive V2 · Baseline Hard · Full Interaction · Difficulty 5 · Simplified Interaction",
+  "natural_language": "Pilot the lanternfin to the far pearl through depth. Counter the initial roll and pitch, alternate propulsive strokes with reversals, and keep the fish upright and nearly still inside the pearl.",
+  "success": {
+    "mode": "program",
+    "spec": {
+      "program": "verifier.py::verify_task"
+    }
+  },
+  "tags": [
+    "gym-anything-rt",
+    "lanternfin_dive_nonrealtime",
+    "3d-fluid-control",
+    "articulated-propulsion",
+    "closed-loop-control"
+  ],
+  "version": "0.2"
+}

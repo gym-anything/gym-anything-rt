@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "mechanic_id": "unlabeled_drawer_v2",
+  "baseline": {
+    "difficulty": 5,
+    "interaction": "full",
+    "real_time": "live"
+  },
+  "difficulty": {
+    "1": {
+      "label": "very_easy",
+      "summary": "One of two attributes; two wide moving mouths and one live lane.",
+      "natural_language": "Discover the cabinet rule through calibration feedback, then start the belt and file every moving specimen into the matching moving drawer mouth. Holding or selecting a filing tab does not stop the belt. A release into the cabinet that misses a mouth, a wrong file, lost specimen or early seal ends the case. Release back onto the belt to cancel safely. Calibration feedback and interrupted or returned uncommitted tabs are safe corrections. The first committed failure ends the episode; later attempts cannot earn a pass. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, implementation or hidden-state access. Do not interact with unrelated, blank or browser-settings tabs. Task-created tabs may be used only through their visible controls.",
+      "parameters": {
+        "family": "literal",
+        "feature_pool": 2,
+        "drawers": 2,
+        "lanes": 1,
+        "mouth_width": 220,
+        "motion_amplitude": 240,
+        "motion_span_ms": 11000,
+        "life_ms": 18000,
+        "spacing_ms": 10000,
+        "nuisance": 0.05
+      }
+    },
+    "2": {
+      "label": "easy",
+      "summary": "One of four attributes; faster narrower mouths require better tracking.",
+      "natural_language": "Discover the cabinet rule through calibration feedback, then start the belt and file every moving specimen into the matching moving drawer mouth. Holding or selecting a filing tab does not stop the belt. A release into the cabinet that misses a mouth, a wrong file, lost specimen or early seal ends the case. Release back onto the belt to cancel safely. Calibration feedback and interrupted or returned uncommitted tabs are safe corrections. The first committed failure ends the episode; later attempts cannot earn a pass. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, implementation or hidden-state access. Do not interact with unrelated, blank or browser-settings tabs. Task-created tabs may be used only through their visible controls.",
+      "parameters": {
+        "family": "literal",
+        "feature_pool": 4,
+        "drawers": 2,
+        "lanes": 1,
+        "mouth_width": 190,
+        "motion_amplitude": 260,
+        "motion_span_ms": 9500,
+        "life_ms": 16000,
+        "spacing_ms": 8500,
+        "nuisance": 0.2
+      }
+    },
+    "3": {
+      "label": "medium",
+      "summary": "An unknown equality relation across two attributes; two live lanes overlap.",
+      "natural_language": "Discover the cabinet rule through calibration feedback, then start the belt and file every moving specimen into the matching moving drawer mouth. Holding or selecting a filing tab does not stop the belt. A release into the cabinet that misses a mouth, a wrong file, lost specimen or early seal ends the case. Release back onto the belt to cancel safely. Calibration feedback and interrupted or returned uncommitted tabs are safe corrections. The first committed failure ends the episode; later attempts cannot earn a pass. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, implementation or hidden-state access. Do not interact with unrelated, blank or browser-settings tabs. Task-created tabs may be used only through their visible controls.",
+      "parameters": {
+        "family": "relation",
+        "feature_pool": 4,
+        "drawers": 2,
+        "lanes": 2,
+        "mouth_width": 162,
+        "motion_amplitude": 280,
+        "motion_span_ms": 8500,
+        "life_ms": 14000,
+        "spacing_ms": 4800,
+        "nuisance": 0.35
+      }
+    },
+    "4": {
+      "label": "hard",
+      "summary": "Two attributes jointly define four classes; four independent moving mouths.",
+      "natural_language": "Discover the cabinet rule through calibration feedback, then start the belt and file every moving specimen into the matching moving drawer mouth. Holding or selecting a filing tab does not stop the belt. A release into the cabinet that misses a mouth, a wrong file, lost specimen or early seal ends the case. Release back onto the belt to cancel safely. Calibration feedback and interrupted or returned uncommitted tabs are safe corrections. The first committed failure ends the episode; later attempts cannot earn a pass. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, implementation or hidden-state access. Do not interact with unrelated, blank or browser-settings tabs. Task-created tabs may be used only through their visible controls.",
+      "parameters": {
+        "family": "two_bits",
+        "feature_pool": 4,
+        "drawers": 4,
+        "lanes": 2,
+        "mouth_width": 140,
+        "motion_amplitude": 300,
+        "motion_span_ms": 7500,
+        "life_ms": 12500,
+        "spacing_ms": 4000,
+        "nuisance": 0.5
+      }
+    },
+    "5": {
+      "label": "very_hard",
+      "summary": "Two unknown attribute pairs jointly define four classes; three overlapping lanes, narrower mouths and faster smoothly changing motion.",
+      "natural_language": "Discover the cabinet rule through calibration feedback, then start the belt and file every moving specimen into the matching moving drawer mouth. Holding or selecting a filing tab does not stop the belt. A release into the cabinet that misses a mouth, a wrong file, lost specimen or early seal ends the case. Release back onto the belt to cancel safely. Calibration feedback and interrupted or returned uncommitted tabs are safe corrections. The first committed failure ends the episode; later attempts cannot earn a pass. Solve only from screenshots and visible controls in the task webpage. Do not use code, scripts, automation, Developer Tools, console/debugger/inspector/network/source/DOM/page-state inspection, terminal/shell/Python, address-bar or URL/query edits, reload/navigation, browser extensions, external applications, implementation or hidden-state access. Do not interact with unrelated, blank or browser-settings tabs. Task-created tabs may be used only through their visible controls.",
+      "parameters": {
+        "family": "two_relations",
+        "feature_pool": 4,
+        "drawers": 4,
+        "lanes": 3,
+        "mouth_width": 118,
+        "motion_amplitude": 320,
+        "motion_span_ms": 7000,
+        "life_ms": 11500,
+        "spacing_ms": 3100,
+        "nuisance": 0.7
+      }
+    }
+  },
+  "interaction": {
+    "full": {
+      "implemented": true,
+      "summary": "Drag a filing tab from its moving specimen and release it inside a moving drawer mouth; specimen continues on the belt."
+    },
+    "simplified": {
+      "implemented": true,
+      "summary": "Click the same moving specimen, then click inside the same moving drawer mouth. Same geometry, clock, concept and failure rules."
+    }
+  },
+  "real_time": {
+    "play_time_seconds": 180,
+    "observation_window_ms": 800,
+    "frames_per_observation": 6
+  }
+}
